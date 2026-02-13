@@ -7,7 +7,7 @@ import FreeConsultationForm from "../free-consultation-form";
 
 const DetailFormSection = () => {
   return (
-    <div className="container pb-[60px] -mt-[200px]">
+    <div className="container pb-[60px] -mt-[150px]">
       <div className="relative bg-[#161616] rounded-2xl py-[70px] px-[30px]">
         <Image
           className="absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-[90%]"

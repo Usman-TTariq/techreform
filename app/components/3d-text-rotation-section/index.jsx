@@ -160,7 +160,7 @@ const ThreeDTextRotationSection = () => {
               }
             }
           `}</style>
-            <div className="relative -mt-[150px]">
+            <div className="relative -mt-[150px] z-10">
                 <Image
                     src="/images/remove.png"
                     alt=""

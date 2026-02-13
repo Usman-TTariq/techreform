@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
+import Image from "next/image";
 
 const WhatWeDoSection = () => {
   const solutions = [
@@ -31,7 +32,14 @@ const WhatWeDoSection = () => {
     },
   ];
   return (
-    <div className="container relative pb-[60px]">
+    <div className="container relative pb-[120px]">
+      <Image
+        className="w-[50%] absolute -top-[40%] left-[0%]"
+        src="/images/whatwedobk.png"
+        alt="Hero Background"
+        width={1000}
+        height={1000}
+      />
       <div className="grid grid-cols-12 gap-5">
         <div className="col-span-5">
           <div className="pb-[40px]">
@@ -100,7 +108,7 @@ const WhatWeDoSection = () => {
                         href="/"
                         className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[16px]"
                       >
-                        Learn More <ArrowRight className="w-[16px]"/>
+                        Learn More <ArrowRight className="w-[16px]" />
                       </Link>
                     </div>
                   </div>

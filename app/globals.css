@@ -76,6 +76,16 @@ body {
   }
 }
 
+.phone-wrapper .PhoneInputCountrySelect {
+  color: #000 !important;
+  background-color: #fff;
+}
+
+.phone-wrapper .PhoneInputCountrySelect option {
+  background-color: #000 !important;
+  color: #fff;
+}
+
 .module-border-wrap {
   width: 170px;
   padding: 2px;
@@ -91,3 +101,14 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.10),
     0 20px 50px rgba(0, 0, 0, 0.35);
 }
+
+.benefit-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), #9340FF);
+}
+
+.benefit-module {
+  background: #141414;
+}
+
+

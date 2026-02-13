@@ -45,7 +45,7 @@ const HeroSection = () => {
                             <span className="text-white">Digitize Your Business</span><br /><span className="text-[#F74B1C]">with Our Digital Solutions</span>
                         </div>
                         <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                            We help businesses with advanced App Development solutions <br />
+                            We help businesses with advanced app development solutions <br />
                             for effective business management and growth.
                         </div>
                         <div className="pt-[30px]">

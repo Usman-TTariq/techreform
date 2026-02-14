@@ -11,23 +11,23 @@ import CostIcon from "../what-we-do-section/svg/cost-icon";
 const WhatWeDoMobileSection = () => {
     const solutions = [
         {
-            title: "Cost-effectiveness",
-            desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+            title: "AI And ML",
+            desc: "We embed ML models and AI APIs in mobile apps to automate decisions, personalize journeys, and keep control with human review paths always.",
             icon: <CostIcon className="w-[30px]" />,
         },
         {
-            title: "InnovativeTechnology",
-            desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+            title: "IOT",
+            desc: "IoT connectivity brings sensor and device data into mobile workflows, enabling tracking, alerts, and remote actions in real time reliably.",
             icon: <CostIcon className="w-[20px]" />,
         },
         {
-            title: "Cost-effectiveness",
-            desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+            title: "CI/CD & Automation",
+            desc: "CI/CD and automated QA run tests on every change, speeding releases while preventing regressions across iOS and Android versions too.",
             icon: <CostIcon className="w-[20px]" />,
         },
         {
-            title: "Cost-effectiveness",
-            desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+            title: "Zero-Trust Security",
+            desc: "Zero-trust security uses encryption, least privilege access, and secure storage, reducing breach risk and audit friction for regulated teams too.",
             icon: <CostIcon className="w-[20px]" />,
         },
     ];

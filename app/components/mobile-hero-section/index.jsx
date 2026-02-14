@@ -34,7 +34,7 @@ const MobileHeroSection = () => {
                 <div className="grid grid-cols-12 pt-[120px]">
                     <div className="col-span-6">
                         <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
-                            <span className="text-white">Mobile</span>
+                            <span className="text-white">Mobile </span>
                             <span className="text-[#F74B1C]">App</span><br/>
                             <span className="text-[#F74B1C]">Development</span><br/>
                             <span className="text-[#fff]">Solutions</span><br/>

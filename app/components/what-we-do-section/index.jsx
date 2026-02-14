@@ -11,23 +11,23 @@ import Image from "next/image";
 const WhatWeDoSection = () => {
   const solutions = [
     {
-      title: "Cost-effectiveness",
-      desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+      title: "Client-First Delivery",
+      desc: "We prioritize your goals, timelines, and product vision, and offer scalable digital products that fit your current business scale and growth plan.",
       icon: <CostIcon className="w-[30px]" />,
     },
     {
-      title: "InnovativeTechnology",
-      desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+      title: "Specialized Mobile Expertise",
+      desc: "Our iOS and Android development experts build enterprise mobile app solutions with high performance, security, and scalability to meet your users' needs.",
       icon: <CostIcon className="w-[20px]" />,
     },
     {
-      title: "Cost-effectiveness",
-      desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+      title: "Flexible Team Scaling",
+      desc: "We connect you with vetted engineers and dedicated development teams that integrate seamlessly into your workflow and adapt to your needs.",
       icon: <CostIcon className="w-[20px]" />,
     },
     {
-      title: "Cost-effectiveness",
-      desc: "We offer affordable digital solutions that help you reduce costs and improve your bottom line.",
+      title: "Proven Enterprise Experience",
+      desc: "We understand the technical aspects of building WRM and HRMS. Our specialist can effectively handle complex workflows, data security, and long-term scalability needs.",
       icon: <CostIcon className="w-[20px]" />,
     },
   ];
@@ -42,20 +42,18 @@ const WhatWeDoSection = () => {
       />
       <div className="grid grid-cols-12 gap-5">
         <div className="col-span-5">
-          <div className="pb-[40px]">
+          <div className="pb-[20px]">
             <CapsuleLabel firstWord="What" secondWord="We" thirdWord="Do" />
           </div>
           <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
-            <span className="text-white">Simplifying</span>
+            <span className="text-white">Building</span>
             <br />
-            <span className="text-[#F74B1C]">Digital Solutions</span>
+            <span className="text-[#F74B1C]">Scalable Apps with </span>
             <br />
-            <span className="text-white">for a complex world.</span>
+            <span className="text-white">Teams You Can Trust</span>
           </div>
           <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-            Tech Reforms empowers businesses with smart, secure, and scalable
-            digital solutions. From cloud to mobile, security to advanced tech —
-            we transform ideas into reliable technology.
+            Our digital agency develops and scales mobile and e-commerce solutions with the ultimate blend of expert engineers, proven processes, and flexible teams aligned to your business goals.
           </div>
           <div className="pt-[30px]">
             <Button text="Learn More" icon={false} />
@@ -90,8 +88,8 @@ const WhatWeDoSection = () => {
               }}
             >
               {solutions.map((solution, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white border-2 border-[#7724C1] rounded-2xl p-[30px]">
+                <SwiperSlide key={index} className="!h-full">
+                  <div className="bg-white !h-full min-h-[420px] border-2 border-[#7724C1] rounded-2xl p-[30px]">
                     <div className="pb-[20px]">
                       <div className="w-[70px] h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                         {solution.icon}

@@ -11,7 +11,7 @@ const HeroSection = () => {
                 width={1000}
                 height={1000}
             />
-            <Image
+            <Image 
                 className="absolute -top-[5%] right-[200px] w-[30%]"
                 src="/images/frame.png"
                 alt="Hero Background"

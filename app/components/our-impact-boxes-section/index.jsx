@@ -34,7 +34,7 @@ const OurImpactBoxesSection = () => {
               height={1000}
             />
             <div className="text-[46px] max-2xl:text-[36px] font-britanicaBlack leading-[40px] text-black text-center transition-all duration-300 group-hover:text-white">
-              20+ Years
+              20+
             </div>
             <div className=" font-britanicaRegular text-[#373636] text-[22px] max-2xl:text-[18px] text-center transition-all duration-300 group-hover:text-white">
               Years of Experience

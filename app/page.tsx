@@ -7,6 +7,7 @@ import TransformingIdeas from "./components/transforming-ideas";
 import DetailFormSection from "./components/detail-form-section";
 import ThreeDTextRotationSection from "./components/3d-text-rotation-section";
 import TestimonialSection from "./components/testimonial-section";
+import Marquee from "./components/marquee";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ReviewSections />
       <WhatWeDoSection/>
       <TransformingIdeas/>
+      <Marquee />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
       <DetailFormSection/>

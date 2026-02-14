@@ -14,9 +14,12 @@ const About = () => {
   return (
     <div>
       <Header />
-      <GeneralHeroSection />
+      <GeneralHeroSection firstWord="We" secondWord="Create Marketing" thirdWord="That" forthWord="Drives Real" fifthWord="Growth" para=" We don’t just run campaigns — we build brands, tell powerful
+              stories, and deliver measurable results. By combining strategy,
+              creativity, and data, we help businesses stand out, connect with
+              their audience, and grow with confidence." buttonText="Schedule a Free Consultation"/>
       <OurImpactBoxesSection />
-      <FounderMsgSection />
+      {/* <FounderMsgSection /> */}
       <AboutWeDoSection />
       <OurValuesSection />
       <WhyTechReformsSection />

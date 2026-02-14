@@ -56,9 +56,9 @@ const OurValuesSection = () => {
         </div>
         <div className="grid grid-cols-12 gap-3 pt-[52px]">
           {values.map((value, index) => (
-            <div className="col-span-3" key={index}>
-              <div className="bg-[#0000004a] py-[20px] px-6 border rounded-xl border-[#ffffff6b]">
-                <div className="text-[32px] max-2xl:text-[24px] font-britanicaBlack leading-[40px] text-white">
+            <div className="col-span-3 h-full" key={index}>
+              <div className="bg-[#0000004a] h-full flex flex-col justify-between py-[20px] px-6 border rounded-xl border-[#ffffff6b]">
+                <div className="text-[32px] max-2xl:text-[26px] font-britanicaBlack leading-[40px] text-white">
                   {value?.title}
                 </div>
                 <div className=" font-britanicaRegular text-[#fff] text-[16px] max-2xl:text-[18px] pt-[12px]">

@@ -16,17 +16,17 @@ const DetailFormSection = () => {
           width={1000}
           height={1000}
         />
-        <div className="grid grid-cols-12 gap-3 relative z-10">
+        <div className="grid grid-cols-12 gap-1 relative z-10">
           <div className="col-span-4 my-auto">
             <div className="pb-[10px]">
               <CapsuleLabel firstWord="Contact" secondWord="Us" />
             </div>
-            <div className="font-britanicaBlack text-[38px] leading-[45px] font-black">
+            <div className="font-britanicaBlack text-[28px] leading-[35px] font-black">
               <span className="text-white">Partner with Us for</span>
               <br />
-              <span className="text-[#F74B1C]">Comprehensive</span>
+              <span className="text-[#F74B1C]">Custom App Development and</span>
               <br />
-              <span className="text-white">Digital Solutions</span>
+              <span className="text-white">Better Resource Management</span>
             </div>
             <div className="flex items-center justify-start gap-2 py-[30px]">
               <Image
@@ -43,7 +43,7 @@ const DetailFormSection = () => {
                 (213) 262-5357
               </div>
             </div>
-            <div className="relative p-[1px] rounded-2xl benefit-border-wrap mr-[30px]">
+            <div className="relative p-[1px] rounded-2xl benefit-border-wrap mr-[10px]">
               <Image
                 className="absolute -bottom-[20px] -right-[10px] w-[40px]"
                 src="/images/redirectarrow.png"
@@ -60,37 +60,37 @@ const DetailFormSection = () => {
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Client-oriented</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Native Builds</div>
                     </div>
                   </div>
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Client-oriented</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Release Management</div>
                     </div>
                   </div>
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Competent</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Game Mechanics</div>
                     </div>
                   </div>
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Results-driven</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Commerce Enablement</div>
                     </div>
                   </div>
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Problem-solving</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Team Extension</div>
                     </div>
                   </div>
                   <div className="col-span-6">
                     <div className="flex items-center justify-start gap-2">
                       <div className="w-[8px] h-[8px] bg-[#9340FF] rounded-full"></div>
-                      <div className="text-white font-britanicaRegular text-[16px]">Transparent</div>
+                      <div className="text-white font-britanicaRegular text-[16px] max-2xl:text-[14px]">Backend Engineering</div>
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const DetailFormSection = () => {
           </div>
           <div className="col-span-4 my-auto">
             <div className="pl-[30px]">
-              <div className="font-britanicaBlack text-[38px] leading-[45px] font-black">
+              <div className="font-britanicaBlack text-[32px] leading-[45px] font-black">
                 <span className="text-white">What </span>
                 <span className="text-[#F74B1C]">happens</span>
                 <br />

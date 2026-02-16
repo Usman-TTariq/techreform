@@ -193,7 +193,7 @@ const FreeConsultationForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-[#F74B1C] font-britanicaExtraBold text-[20px] text-[#fff] px-4 py-3 w-full rounded-full disabled:opacity-70 disabled:cursor-not-allowed"
+            className="bg-[#F74B1C] cursor-pointer font-britanicaExtraBold text-[20px] text-[#fff] px-4 py-3 w-full rounded-full disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {isLoading ? "Sending..." : "Get Instant Quote"}
           </button>

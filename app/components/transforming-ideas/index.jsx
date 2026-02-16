@@ -25,38 +25,35 @@ const TransformingIdeas = () => {
       <div className="container pb-[80px] relative z-10">
 
         <div className="font-britanicaBlack text-[50px] leading-[52px] font-black text-center pb-[50px]">
-          <span className="text-white">Transforming </span>
-          <span className="text-[#F74B1C]">Ideas</span>
+          <span className="text-white">Scale Your Business </span>
+          <span className="text-[#F74B1C]">with</span>
           <br />
-          <span className="text-white">into Technology</span>
+          <span className="text-white">Growth-Focused Services</span>
         </div>
         <div className="grid grid-cols-12 gap-3">
           <div className="col-span-4">
-            <div className="-mt-[50px]">
+            <div className="-mt-[70px]">
               <div className="pb-[10px]">
-                <CapsuleLabel firstWord="How" secondWord="We" thirdWord="Do" />
+                <CapsuleLabel firstWord="Our" secondWord="Services" />
               </div>
               <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                Tech Reforms is your trusted partner in data security and cloud
-                technology, committed to transforming your business operations to
-                save you time and money.
+                Our digital solutions are made to offer high-end features that help you scale up and get consistent results with well-managed expert teams, user-friendly mobile apps, and intuitive e-commerce solutions.
               </div>
               <div className="pt-[30px]">
-                <Button text="Get Started" icon={false} />
+                <Button text="Explore Our Services" icon={false} />
               </div>
             </div>
           </div>
-          <div className="col-span-3">
-            <div className="bg-white border-2 border-[#0E0E0E] rounded-4xl py-[0px] px-[20px]">
+          <div className="col-span-3 f-full">
+            <div className="bg-white border-2 border-[#0E0E0E] rounded-4xl py-[0px] px-[20px] h-full">
               <div className="font-britanicaRegular font-semibold text-[50px] text-[#F74B1C]">
                 01
               </div>
               <div className="text-[24px] font-britanicaBlack text-black pb-[0px]">
-                Cloud Solutions
+                Mobile App Development
               </div>
               <div className="font-britanicaRegular text-[#373636] text-[16px] pb-[20px]">
-                With our expertise in cloud technologies, we can help you find the
-                right cloud solutions that meet your business needs and goals.
+                We offer optimized mobile apps with strong architecture, intuitive UX, and performance-focused engineering to boost accessibility.
               </div>
               <div className=" pb-[20px]">
                 <Link
@@ -82,10 +79,10 @@ const TransformingIdeas = () => {
                   02
                 </div>
                 <div className="text-[24px] font-britanicaBlack text-white pb-[0px]">
-                  Software <br /> Development
+                  E-Commerce <br /> Solutions
                 </div>
                 <div className="font-britanicaRegular text-white text-[16px] pb-[20px]">
-                  Our software development services can help you establish an impactful online presence and reach your target audience effectively.
+                  Access eCommerce development at its best. Get intuitive platforms focused on conversions, scalability, and seamless user journeys with secure payments, inventory, and analytics systems.
                 </div>
                 <div className=" pb-[20px]">
                   <Link
@@ -114,10 +111,10 @@ const TransformingIdeas = () => {
                   03
                 </div>
                 <div className="text-[24px] font-britanicaBlack text-white pb-[0px]">
-                  Privacy & Security
+                  Staff Augmentation
                 </div>
                 <div className="font-britanicaRegular text-[#fff] text-[16px] pb-[20px]">
-                  Protecting Your Data with Cutting-Edge Privacy and Security Solutions. Ensure your information is secure and your privacy maintained.
+                  Access our vetted engineers through specialized staff augmentation. Our engineers work as your remote development team to help you scale quickly while maintaining full control over app development and delivery.
                 </div>
                 <div className=" pb-[20px]">
                   <Link
@@ -136,10 +133,10 @@ const TransformingIdeas = () => {
                 04
               </div>
               <div className="text-[24px] font-britanicaBlack text-black pb-[0px]">
-                Mobile Development
+                Game Development
               </div>
               <div className="font-britanicaRegular text-[#373636] text-[16px] pb-[20px]">
-                We can help you create a customized mobile app that aligns with your brand and goals, with expertise in various mobile platforms.
+                We develop immersive games designed to drive user retention through optimized performance, smooth mechanics, scalable backends, and engaging experiences.
               </div>
               <div className=" pb-[20px]">
                 <Link
@@ -157,10 +154,10 @@ const TransformingIdeas = () => {
                 05
               </div>
               <div className="text-[24px] font-britanicaBlack text-white pb-[0px]">
-                Digital Marketing
+                WRM
               </div>
               <div className="font-britanicaRegular text-[#fff] text-[16px] pb-[20px]">
-                Our experts can identify vulnerabilities, assess risks, and implement robust security measures to safeguard your systems and data.
+                WRM simply manages workflows, work assignments, reporting, and real-time insights to improve overall productivity and operational efficiency.
               </div>
               <div className=" pb-[20px]">
                 <Link
@@ -178,10 +175,10 @@ const TransformingIdeas = () => {
                 06
               </div>
               <div className="text-[24px] font-britanicaBlack text-black pb-[0px]">
-                Advanced Technology
+                HRMS
               </div>
               <div className="font-britanicaRegular text-[#373636] text-[16px] pb-[20px]">
-                Unlock potential with Advanced Technology. Our cutting-edge solutions drive innovation, enhance efficiency, and transform your business.
+                HRMS simplifies with a centralized system. It handles employee data, payroll, attendance, and performance management to help you automate HR processes and make better decisions.
               </div>
               <div className=" pb-[20px]">
                 <Link

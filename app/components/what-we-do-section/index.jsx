@@ -7,6 +7,9 @@ import "swiper/css";
 import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
+import PersonBook from "./svg/person-book";
+import Square from "./svg/square";
+import PersonBook2 from "./svg/person-bbok-2";
 
 const WhatWeDoSection = () => {
   const solutions = [
@@ -18,17 +21,17 @@ const WhatWeDoSection = () => {
     {
       title: "Specialized Mobile Expertise",
       desc: "Our iOS and Android development experts build enterprise mobile app solutions with high performance, security, and scalability to meet your users' needs.",
-      icon: <CostIcon className="w-[20px]" />,
+      icon: <PersonBook className="w-[35px]" />,
     },
     {
       title: "Flexible Team Scaling",
       desc: "We connect you with vetted engineers and dedicated development teams that integrate seamlessly into your workflow and adapt to your needs.",
-      icon: <CostIcon className="w-[20px]" />,
+      icon: <Square className="w-[40px]" />,
     },
     {
       title: "Proven Enterprise Experience",
       desc: "We understand the technical aspects of building WRM and HRMS. Our specialist can effectively handle complex workflows, data security, and long-term scalability needs.",
-      icon: <CostIcon className="w-[20px]" />,
+      icon: <PersonBook2 className="w-[36px]" />,
     },
   ];
   return (

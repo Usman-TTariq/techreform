@@ -42,7 +42,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-12 pt-[120px]">
                     <div className="col-span-6">
                         <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
-                            <span className="text-white">Digitize Your Business</span><br /><span className="text-[#F74B1C]">with Our Digital Solutions</span>
+                            <span className="text-white">Digitize Your Business</span><br /><span className="text-[#F74B1C]">Through Innovation</span>
                         </div>
                         <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
                             We help businesses with advanced app development solutions <br />

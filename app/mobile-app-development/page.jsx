@@ -11,6 +11,8 @@ import DetailFormSection from "../components/detail-form-section";
 import StepperFrom from "../components/stepper-from";
 import Footer from "../components/footer";
 
+export const dynamic = "force-dynamic";
+
 const Mobile = () => {
     return (
         <div>

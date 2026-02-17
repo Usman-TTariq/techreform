@@ -120,13 +120,13 @@ const Header = () => {
 
     return (
         <div
-            className="sticky top-0 w-full relative backdrop-blur-sm overflow-hidden"
+            className="sticky top-0 z-30 w-full relative backdrop-blur-sm"
             onMouseLeave={() => setActiveDropdown(null)}
         >
-            {/* Full-width dropdown panel – visible when any nav item is hovered */}
+            {/* Full-width dropdown panel – visible below nav when any item is hovered */}
             {activeDropdown && MEGA_MENU[activeDropdown] && (
                 <div
-                    className="w-full absolute top-[90px] left-0 border border-white/20 bg-[#0a0a0a]/98 backdrop-blur-sm min-h-[160px] p-5 shadow-xl"
+                    className="absolute top-full left-0 right-0 z-40 border-t border-white/20 bg-[#0a0a0a]/98 backdrop-blur-sm min-h-[160px] p-5 shadow-xl"
                     onMouseEnter={() => setActiveDropdown(activeDropdown)}
                 >
                     <div className="container">

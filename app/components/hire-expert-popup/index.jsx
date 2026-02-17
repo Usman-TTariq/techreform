@@ -91,22 +91,14 @@ const HireExpertPopup = ({ open, onClose }) => {
                     <X className="w-5 h-5" />
                 </button>
 
-                {/* Top: phone images */}
-                <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center gap-2 sm:gap-3 py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
+                {/* Top: phone image (iPhone 13 Pro Double Front) */}
+                <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
                     <Image
-                        src={getImagePath("/images/iphone13.png")}
+                        src={encodeURI(getImagePath("/images/iPhone 13 Pro - Double Front - Dark.png"))}
                         alt=""
-                        width={100}
-                        height={180}
-                        className="w-auto h-[110px] sm:h-[130px] object-contain drop-shadow-lg"
-                        unoptimized
-                    />
-                    <Image
-                        src={getImagePath("/images/phones.png")}
-                        alt=""
-                        width={140}
-                        height={100}
-                        className="w-auto h-[80px] sm:h-[100px] object-contain drop-shadow-lg hidden sm:block"
+                        width={280}
+                        height={160}
+                        className="w-auto h-[110px] sm:h-[140px] object-contain drop-shadow-lg"
                         unoptimized
                     />
                 </div>

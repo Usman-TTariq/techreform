@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 import { getImagePath } from "../../utils/imagePath";
 
 const CaseStudiesSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[80px]">
             <div className="container relative px-4 sm:px-4">
@@ -47,7 +52,7 @@ const CaseStudiesSection = () => {
                             Discover our 100+ real-world case studies that display our work ethic and the quality of our intuitive mobile apps. Our process goes beyond basic mobile development. See how our solutions drive user engagement, improve retention, and offer high-yield results.
                         </div>
                         <div className="pt-6 sm:pt-[30px]">
-                            <Button text="Check The Full Case" icon={false} />
+                            <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
                     </div>
                 </div>
@@ -77,11 +82,12 @@ const CaseStudiesSection = () => {
                             Explore our future-friendly apps that offer optimal results, user-friendly interfaces while having the ability to scale further with your brand.
                         </div>
                         <div className="pt-6 sm:pt-[30px]">
-                            <Button text="Check The Full Case" icon={false} />
+                            <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 }

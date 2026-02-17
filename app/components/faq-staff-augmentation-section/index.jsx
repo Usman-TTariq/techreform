@@ -7,86 +7,28 @@ import { ChevronDown } from "lucide-react";
 const FAQ_ITEMS = [
     {
         id: 1,
-        question: "What is staff augmentation meaning?",
+        question: "How fast can you provide a developer?",
         answer: (
             <>
-                Staff augmentation meaning refers to a flexible outsourcing strategy where businesses hire external professionals to temporarily fill skill gaps within their existing teams. Instead of full-time hiring, companies use staff augmentation services to access specialized talent for specific projects or timeframes.
+                In most cases, we can provide qualified developers within 1–2 weeks depending on the required skill set and experience.
             </>
         ),
     },
     {
         id: 2,
-        question: "What is the cost of IT staff augmentation services?",
+        question: "Can I increase or reduce the team anytime?",
         answer: (
             <>
-                The cost depends on factors such as expertise level, project complexity, duration, and technology stack. Estimated monthly ranges are:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Junior-Level Professionals:</strong> $2,000 – $4,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Mid-Level Professionals:</strong> $4,000 – $8,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Senior-Level Experts:</strong> $8,000 onward</span>
-                    </li>
-                </ul>
-                <p className="mt-4">For an accurate estimate tailored to your requirements, contact our IT staff augmentation services experts.</p>
+                Yes, our staff augmentation model is flexible. You can scale your team up or down based on your project needs.
             </>
         ),
     },
     {
         id: 3,
-        question: "How quickly can you provide augmented staff?",
+        question: "Will the developer work in my time zone?",
         answer: (
             <>
-                Depending on the required skill set, we can typically provide pre-vetted candidates within 1–2 weeks. For highly specialized roles, the process may take slightly longer.
-            </>
-        ),
-    },
-    {
-        id: 4,
-        question: "Do you offer customized staff augmentation services?",
-        answer: (
-            <>
-                Yes, we provide fully customized staff augmentation services based on your project requirements. Our services include:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>IT Staff Augmentation</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Dedicated Developers</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Project-Based Hiring</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Remote Development Teams</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>QA & Testing Specialists</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>DevOps Engineers</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>UI/UX Designers</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Full-Stack Developers</span>
-                    </li>
-                </ul>
+                Absolutely, we schedule our remote developers in your preferred US time zone to ensure smooth communication and real-time collaboration.
             </>
         ),
     },

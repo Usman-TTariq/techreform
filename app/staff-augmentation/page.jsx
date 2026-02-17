@@ -16,10 +16,10 @@ const StaffAugmentation = () => {
     return (
         <div>
             <Header />
-            <GeneralHeroSection firstWord="Hire" secondWord="Expert Staff Augmentation" thirdWord="" forthWord="Services" fifthWord="in the USA" para="Looking for a flexible and cost-effective way to scale your team without long-term hiring commitments?"
-                para2="Tech Reforms is a trusted provider of staff augmentation services designed to help businesses quickly access top-tier talent. Whether you need short-term support or long-term technical expertise, our IT staff augmentation services allow you to expand your workforce efficiently and accelerate project delivery."
-                para3="Our scalable hiring solutions empower startups, growing businesses, and enterprises to meet deadlines, reduce operational costs, and stay competitive."
-                buttonText="Hire Augmented Staff Today"
+            <GeneralHeroSection firstWord="IT Staff Augmentation" secondWord="Services" thirdWord="in the" forthWord="USA" fifthWord="| Hire Dedicated Developers" para="Looking for a flexible and cost-effective way to scale your team without long-term hiring commitments?"
+                para2="Tech Reforms is a trusted provider of staff augmentation services curated to help businesses access top-tier talent at affordable rates. From short-term support to long-term technical assistance, we have it all!"
+                para3="So, expand your workforce with our reliable IT staff augmentation solutions."
+                buttonText="Hire Experts Today"
             />
             <OurImpactBoxesSection />
             <StaffAugmentationDevelopmentSection />
@@ -30,7 +30,7 @@ const StaffAugmentation = () => {
             <FaqStaffAugmentationSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection formIntro="Every hire impacts your project timeline and budget. Get a quick consultation and resource estimate by filling out this form. Our experts will help you scale your development team faster and reduce software development costs." />
             <Footer />
         </div>
     )

@@ -13,22 +13,22 @@ const WhatWeDoStaffAugmentationSection = () => {
     const solutions = [
         {
             title: "Requirement Analysis",
-            desc: "Our process begins by understanding your technical requirements, team structure, and business objectives. We identify skill gaps and define the ideal candidate profile for your project.",
+            desc: "We start by getting to know your business, your technical requirements, and your team structure. Our goal is to identify the gaps and the expertise you need to find the right fit for your project and company culture.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Talent Sourcing & Screening",
-            desc: "We carefully screen and shortlist candidates based on technical expertise, industry experience, and cultural fit. Only the top professionals are presented for your approval.",
+            title: "Finding the Right Talent",
+            desc: "We carefully source and screen professionals based on their technical skills, industry experience, and communication abilities. We offer both certified software engineers and niche specialists, so you can hire without worry.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Onboarding & Integration",
-            desc: "Selected professionals are onboarded quickly and integrated into your team. We ensure seamless communication, collaboration, and alignment with your existing workflows.",
+            title: "Quick Onboarding",
+            desc: "Once you select your preferred resources, we handle the entire onboarding process quickly and without complication. Our skilled team members integrate seamlessly into your existing workflows, tools, and communication channels through our flexible software team extension model.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Ongoing Support & Optimization",
-            desc: "We provide continuous support to ensure performance, productivity, and scalability. As your needs evolve, we help you scale your augmented team accordingly.",
+            title: "Facilitate Scaling",
+            desc: "Our partnership doesn't end after onboarding. We provide ongoing support to further optimize performance, productivity, and long-term growth. As your business evolves, we help you scale your augmented team up or down with ease.",
             icon: <AiIcon className="w-[40px]" />,
         },
     ];
@@ -48,11 +48,9 @@ const WhatWeDoStaffAugmentationSection = () => {
                         <CapsuleLabel firstWord="Our" secondWord="Staff Augmentation" thirdWord="Process" />
                     </div>
                     <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words">
-                        <span className="text-white">Streamlined Process For</span>
+                        <span className="text-white">Optimized Process For</span>
                         <br />
                         <span className="text-[#F74B1C]">High-Performance Team Expansion</span>
-                        <br />
-                        <span className="text-white">With Scalable Engagement Models</span>
                     </div>
                     <div className="pt-5 sm:pt-[30px]">
                         <Button text="Learn More" icon={false} />

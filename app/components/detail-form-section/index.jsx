@@ -5,7 +5,7 @@ import CapsuleLabel from "../common/capsule-label";
 import Image from "next/image";
 import FreeConsultationForm from "../free-consultation-form";
 
-const DetailFormSection = () => {
+const DetailFormSection = ({ formIntro }) => {
   return (
     <div id="contact" className="container pb-10 sm:pb-12 md:pb-[60px] -mt-8 sm:-mt-12 md:-mt-[100px] lg:-mt-[150px] px-4 sm:px-4">
       <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-visible">
@@ -86,6 +86,11 @@ const DetailFormSection = () => {
             </div>
           </div>
           <div className="col-span-12 lg:col-span-4 order-2">
+            {formIntro && (
+              <p className="font-britanicaRegular text-white/85 text-sm sm:text-base mb-4 sm:mb-6">
+                {formIntro}
+              </p>
+            )}
             <FreeConsultationForm />
           </div>
           <div className="col-span-12 lg:col-span-4 my-auto order-3 pt-6 lg:pt-0 min-w-0 pl-2 sm:pl-0">

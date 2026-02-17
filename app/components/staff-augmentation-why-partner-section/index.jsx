@@ -9,18 +9,23 @@ import AiIcon from "../advanced-technology-section/svg/ai-icon";
 
 const whyPartner = [
     {
-        title: "Flexible & Scalable Workforce",
-        desc: "Hire expert professionals without long-term commitments. Scale your team up or down based on project demands.",
+        title: "Flexible Workforce",
+        desc: "Hire an experienced NDA-protected development team without long-term commitments. Easily scale your workforce based on project timelines and business demands.",
         icon: <AiIcon className="w-[40px]" />,
     },
     {
         title: "Cost-Effective Solutions",
-        desc: "Reduce recruitment costs, overhead expenses, and onboarding time with our efficient IT staff augmentation services model.",
+        desc: "Reduce recruitment costs, overhead, and lengthy hiring processes with our hassle-free model, which lets you scale with top talent faster without the hefty price tags.",
         icon: <AiIcon className="w-[40px]" />,
     },
     {
         title: "Industry-Focused Expertise",
-        desc: "Our professionals bring experience across industries including fintech, healthcare, e-commerce, SaaS, and enterprise systems — ensuring domain-specific expertise tailored to your business.",
+        desc: "Our experts bring hands-on experience across diverse industries, including fintech, healthcare, e-commerce, SaaS, and enterprise systems, to deliver actionable plans and error-free execution for 98% client retention rate.",
+        icon: <AiIcon className="w-[40px]" />,
+    },
+    {
+        title: "Secure and Compliant",
+        desc: "We prioritize data protection and confidentiality. All of our teams operate under strict security standards, and we follow ISO/GDPR-compliant development practices to safeguard your data.",
         icon: <AiIcon className="w-[40px]" />,
     },
 ];
@@ -39,13 +44,12 @@ const StaffAugmentationWhyPartnerSection = () => {
                 {/* Mobile: text first. Desktop: cards left (order-1), text right (order-2) */}
                 <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
                     <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words">
-                        <span className="text-[#F74B1C]">Why Partner </span>
+                        <span className="text-[#F74B1C]">Why Choose </span>
                         <br />
-                        <span className="text-white"> With Us</span>
+                        <span className="text-white">Us?</span>
                     </div>
                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">
-                        As a leading provider of staff augmentation services, we pride ourselves on delivering reliable, high-performing professionals who drive real business results. Our solutions are flexible, transparent, and designed to support both short-term projects and long-term growth strategies. <br />
-                        Start your journey toward a smarter, more efficient workforce by partnering with a trusted IT staff augmentation provider.
+                        As a trusted provider of accessible, expert IT staff augmentation services, we deliver reliable, high-performing professionals who create measurable impact. No matter what you need, we offer it all, from specialized Fintech development and Healthcare IT outsourcing to a SaaS development team extension.
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">

@@ -17,7 +17,7 @@ const Products = () => {
     return (
         <div>
             <Header />
-            <GeneralHeroSection firstWord="Simplify" secondWord="HR" thirdWord="Empower" forthWord="Your" fifthWord="Workforce" para="Manage your people, processes, and performance from one powerful HR platform. Our HRMS helps businesses reduce manual work, improve employee experience, and make smarter HR decisions — all in one place." buttonText="Request a Demo" />
+            <GeneralHeroSection firstWord="Simplify" secondWord="HR" thirdWord="Empower" forthWord="Your" fifthWord="Workforce" para="Manage your people, processes, and performance from one powerful HR platform. Our HRMS helps businesses reduce manual work, improve employee experience, and make smarter HR decisions — all in one place." buttonText="Request a Demo" compact />
             <ProductDashboardSection />
             <ParagraphSection />
             <HRSolutionSection />

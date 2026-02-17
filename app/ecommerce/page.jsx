@@ -20,6 +20,7 @@ const Ecommerce = () => {
 Tech Reforms is a pioneering e-commerce development agency that offers an accessible e-commerce platform. Our SEO-friendly, conversion-focused app framework is designed for small and scaling businesses to grow faster in the market.
 "
                 buttonText="Hire Expert Developers Today"
+                compact
             />
             <OurImpactBoxesSection />
             <EcommerceDevelopmentSection />

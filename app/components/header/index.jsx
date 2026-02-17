@@ -4,7 +4,7 @@ import Link from "next/link";
 import MainLogo from "./svg/MainLogo";
 import Button from "../common/button";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const DROPDOWN_ITEMS = [
     { key: "mobile", label: "Mobile", href: "/mobile-app-development" },
@@ -119,7 +119,7 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [expandedMobileKey, setExpandedMobileKey] = useState(null);
     const [mobileNavVisible, setMobileNavVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    const lastScrollYRef = useRef(0);
     const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
@@ -134,6 +134,14 @@ const Header = () => {
     }, [mobileMenuOpen]);
 
     useEffect(() => {
+        if (!isMobileView) return;
+        document.body.style.paddingTop = mobileNavVisible || mobileMenuOpen ? "72px" : "0";
+        return () => {
+            document.body.style.paddingTop = "";
+        };
+    }, [isMobileView, mobileNavVisible, mobileMenuOpen]);
+
+    useEffect(() => {
         const checkMobile = () => setIsMobileView(window.innerWidth < 1024);
         checkMobile();
         window.addEventListener("resize", checkMobile);
@@ -142,26 +150,34 @@ const Header = () => {
 
     useEffect(() => {
         if (!isMobileView) return;
+        let ticking = false;
         const handleScroll = () => {
-            const y = window.scrollY;
-            if (y <= 80) {
-                setMobileNavVisible(true);
-            } else if (y > lastScrollY) {
-                setMobileNavVisible(false);
-            } else {
-                setMobileNavVisible(true);
-            }
-            setLastScrollY(y);
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                const y = window.scrollY;
+                const last = lastScrollYRef.current;
+                if (y <= 60) {
+                    setMobileNavVisible(true);
+                } else if (y > last) {
+                    setMobileNavVisible(false);
+                } else {
+                    setMobileNavVisible(true);
+                }
+                lastScrollYRef.current = y;
+                ticking = false;
+            });
         };
         window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [isMobileView, lastScrollY]);
+    }, [isMobileView]);
 
     const hideNav = isMobileView && !mobileNavVisible && !mobileMenuOpen;
 
     return (
         <div
-            className={`sticky top-0 z-40 w-full relative backdrop-blur-sm bg-[#0a0a0a]/95 transition-transform duration-300 ease-out ${hideNav ? "-translate-y-full" : "translate-y-0"} lg:!translate-y-0`}
+            className={`fixed lg:sticky top-0 left-0 right-0 z-40 w-full backdrop-blur-sm bg-[#0a0a0a]/95 transition-transform duration-300 ease-out ${hideNav ? "-translate-y-full" : "translate-y-0"} lg:!translate-y-0`}
             onMouseLeave={() => setActiveDropdown(null)}
         >
             {/* Desktop: full-width dropdown below nav */}

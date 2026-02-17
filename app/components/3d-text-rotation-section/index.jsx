@@ -16,7 +16,7 @@ const ThreeDTextRotationSection = () => {
               --td-perspective: 1800px;
               --td-shape-w: 160px;
               --td-shape-h: 200px;
-              --td-radius: 220px;
+              --td-radius: 160px;
               --td-cell-fs: 7vw;
               --td-cell-w: 12px;
               --td-cell-h: 80px;

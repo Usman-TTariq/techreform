@@ -10,7 +10,7 @@ const MobileHeroSection = () => {
     return (
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
-                className="absolute top-[15%] sm:top-0 left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[25%] sm:left-[60%] max-w-[200px] sm:max-w-none"
+                className="absolute top-[15%] sm:top-0 left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[25%] sm:left-[60%] max-w-[200px] sm:max-w-none hidden sm:block"
                 src="/images/mobilehero.png"
                 alt=""
                 width={1000}
@@ -37,7 +37,7 @@ const MobileHeroSection = () => {
                     <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">in USA</div>
                 </div>
                 <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
-                    <div className="col-span-12 lg:col-span-6 min-w-0">
+                    <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
                         <div className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
                             <span className="text-white">Custom Mobile </span>
                             <span className="text-[#F74B1C]">App Development Company</span>
@@ -51,6 +51,16 @@ const MobileHeroSection = () => {
                             <Button text="Hire Expert App Developers Today" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
                     </div>
+                </div>
+                {/* Mobile only: phone image below text */}
+                <div className="sm:hidden flex justify-center pt-6 pb-4">
+                    <Image
+                        className="w-[70%] max-w-[280px] h-auto"
+                        src="/images/mobilehero.png"
+                        alt=""
+                        width={1000}
+                        height={1000}
+                    />
                 </div>
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />

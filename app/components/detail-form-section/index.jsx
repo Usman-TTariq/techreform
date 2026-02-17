@@ -8,7 +8,7 @@ import FreeConsultationForm from "../free-consultation-form";
 const DetailFormSection = () => {
   return (
     <div id="contact" className="container pb-10 sm:pb-12 md:pb-[60px] -mt-8 sm:-mt-12 md:-mt-[100px] lg:-mt-[150px] px-4 sm:px-4">
-      <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-hidden">
+      <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-visible">
         <Image
           className="absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-[100%] md:w-[90%] object-cover opacity-60 md:opacity-100"
           src="/images/formbk.png"
@@ -88,48 +88,48 @@ const DetailFormSection = () => {
           <div className="col-span-12 lg:col-span-4 order-2">
             <FreeConsultationForm />
           </div>
-          <div className="col-span-12 lg:col-span-4 my-auto order-3 pt-6 lg:pt-0">
-            <div className="pl-0 md:pl-6 lg:pl-[30px]">
-              <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[28px] md:text-[32px] md:leading-[45px] font-black">
+          <div className="col-span-12 lg:col-span-4 my-auto order-3 pt-6 lg:pt-0 min-w-0 pl-2 sm:pl-0">
+            <div className="pl-0 md:pl-6 lg:pl-[30px] overflow-visible">
+              <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[28px] md:text-[32px] md:leading-[45px] font-black break-words">
                 <span className="text-white">What </span>
                 <span className="text-[#F74B1C]">happens</span>
                 <br />
                 <span className="text-white">next?</span>
               </div>
               <div className="pt-6 sm:pt-[30px]">
-                <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-8 sm:pl-[30px] pb-5 sm:pb-[30px]">
+                <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-10 sm:pl-[30px] pb-5 sm:pb-[30px] min-w-0">
                   <Image
-                    className="absolute -top-1 -left-5 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px]"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
                     src="/images/step1.png"
                     alt=""
                     width={35}
                     height={35}
                   />
-                  <div className="text-white font-britanicaRegular text-[16px] sm:text-[18px] md:text-[22px] leading-snug">
+                  <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We Schedule a call at your convenience
                   </div>
                 </div>
-                <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-8 sm:pl-[30px] pb-5 sm:pb-[30px]">
+                <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-10 sm:pl-[30px] pb-5 sm:pb-[30px] min-w-0">
                   <Image
-                    className="absolute -top-1 -left-5 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px]"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
                     src="/images/step2.png"
                     alt=""
                     width={35}
                     height={35}
                   />
-                  <div className="text-white font-britanicaRegular text-[16px] sm:text-[18px] md:text-[22px] leading-snug">
+                  <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We do a discovery and consulting meeting
                   </div>
                 </div>
-                <div className="relative flex justify-start items-start pl-8 sm:pl-[30px] pb-0">
+                <div className="relative flex justify-start items-start pl-10 sm:pl-[30px] pb-0 min-w-0">
                   <Image
-                    className="absolute -top-1 -left-5 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px]"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
                     src="/images/step3.png"
                     alt=""
                     width={35}
                     height={35}
                   />
-                  <div className="text-white font-britanicaRegular text-[16px] sm:text-[18px] md:text-[22px] leading-snug">
+                  <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We prepare a proposal
                   </div>
                 </div>

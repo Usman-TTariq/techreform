@@ -15,7 +15,7 @@ const OurImpactBoxesSection = () => {
   const [activeCard, setActiveCard] = useState(0);
 
   return (
-    <div className="container relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[150px] pt-2 sm:pt-10 md:pt-[50px] px-4 sm:px-4">
+    <div className="container relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[150px] pt-0 sm:pt-10 md:pt-[50px] px-4 sm:px-4">
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
         src="/images/reviewEllipse.png"

@@ -12,6 +12,9 @@ import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 
+// Avoid oversized static fallback (ISR page > 19 MB); render on demand
+export const dynamic = "force-dynamic";
+
 const StaffAugmentation = () => {
     return (
         <div>

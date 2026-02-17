@@ -1,61 +1,69 @@
+"use client";
+
 import Image from "next/image";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
+import { useState } from "react";
 
 const HeroSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
-        <div className="relative h-[110vh]">
+        <div className="relative w-full min-w-0 min-h-[85vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-16 sm:pb-12 md:pb-0 overflow-hidden bg-[#0E0E0E]">
+            {/* Laptop: mobile par pehle wali position (55%), sm+ same */}
             <Image
-                className="absolute top-0 left-[50%] translate-x-[-50%] w-[70%]"
+                className="absolute top-[55%] sm:top-[38%] md:top-[30%] lg:top-[20%] left-[50%] translate-x-[-50%] w-[70%] sm:w-[78%] md:w-[75%] lg:w-[70%] max-w-[300px] sm:max-w-none"
                 src="/images/herolaptop.png"
-                alt="Hero Background"
-                width={1000}
-                height={1000}
-            />
-            <Image 
-                className="absolute -top-[5%] right-[200px] w-[30%]"
-                src="/images/frame.png"
-                alt="Hero Background"
+                alt=""
                 width={1000}
                 height={1000}
             />
             <Image
-                className="absolute bottom-0 left-[0px] w-[30%]"
-                src="/images/frame2.png"
-                alt="Hero Background"
+                className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
+                src="/images/frame.png"
+                alt=""
                 width={1000}
                 height={1000}
             />
-            <div className="container relative z-10">
-                <div className="absolute top-[0%] right-[200px] module-border-wrap">
-                    <div className="bg-neutral-950 rounded-4xl px-[30px] py-[10px] glass-card">
-                        <div className="text-[36px] font-semibold tracking-tight text-white font-britanicaExtraBold">98%</div>
-                        <div className="text-[18px] font-light leading-tight text-white pb-[40px] font-britanicaRegular">
+            <Image
+                className="absolute bottom-0 left-0 w-[20%] sm:w-[28%] md:w-[30%] hidden sm:block"
+                src="/images/frame2.png"
+                alt=""
+                width={1000}
+                height={1000}
+            />
+            <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw]">
+                {/* 98% box: mobile par aur neeche, sm+ par top-right */}
+                <div className="absolute top-[94%] right-3 sm:top-[12%] sm:right-8 md:right-12 lg:right-[200px] module-border-wrap w-[95px] sm:w-auto z-0">
+                    <div className="bg-neutral-950 rounded-2xl md:rounded-4xl px-3 py-2 sm:px-4 md:px-[30px] md:py-[10px] glass-card">
+                        <div className="text-[22px] sm:text-[32px] md:text-[36px] font-semibold tracking-tight text-white font-britanicaExtraBold">98%</div>
+                        <div className="text-[11px] sm:text-[16px] md:text-[18px] font-light leading-tight text-white pb-2 sm:pb-4 md:pb-[40px] font-britanicaRegular">
                             Customer<br />Satisfaction
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-[50%] translate-y-[90%] right-[0px]">
-                    <div className="text-[30px] font-britanicaBlack text-white capitalize leading-[34px]">we reinvent</div>
-                    <div className="text-[30px] font-britanicaBlack text-white capitalize leading-[34px]">business via</div>
-                    <div className="text-[30px] font-britanicaBlack text-white capitalize leading-[34px]">digital transformation</div>
+                {/* "We reinvent" - hide on smallest, show from sm */}
+                <div className="absolute top-[72%] sm:top-[50%] translate-y-[90%] right-4 sm:right-8 lg:right-0 hidden sm:block">
+                    <div className="text-[14px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">we reinvent</div>
+                    <div className="text-[14px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">business via</div>
+                    <div className="text-[14px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">digital transformation</div>
                 </div>
-                <div className="grid grid-cols-12 pt-[120px]">
-                    <div className="col-span-6">
-                        <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
+                <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
+                    <div className="col-span-12 lg:col-span-6">
+                        <div className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[46px] lg:text-[50px] lg:leading-[52px] font-black">
                             <span className="text-white">Digitize Your Business</span><br /><span className="text-[#F74B1C]">Through Innovation</span>
                         </div>
-                        <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                            We help businesses with advanced app development solutions <br />
-                            for effective business management and growth.
+                        <div className="font-britanicaRegular text-[14px] sm:text-[18px] md:text-[20px] font-regular text-white pt-3 sm:pt-[22px] max-w-xl">
+                            We help businesses with advanced app development solutions for effective business management and growth.
                         </div>
-                        <div className="pt-[30px]">
-                            <Button text="Schedule a Free Consultation" icon={false} />
+                        <div className="pt-5 sm:pt-[30px]">
+                            <Button text="Schedule a Free Consultation" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
-    )
+    );
 }
 
 export default HeroSection;

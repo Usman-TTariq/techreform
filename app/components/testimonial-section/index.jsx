@@ -42,26 +42,26 @@ const testimonials = [
 ];
 
 const TestimonialCard = ({ name, role, quote }) => (
-  <div className="testimonial-card h-full min-h-[320px] rounded-2xl p-6 md:p-8 flex flex-col relative bg-[#2E2E2E]">
+  <div className="testimonial-card h-full min-h-[280px] sm:min-h-[320px] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col relative bg-[#2E2E2E]">
     <div className="flex-1 flex flex-col min-h-0">
-      <p className="font-britanicaExtraBold text-white !text-[34px] fonnt-bold md:text-2xl capitalize tracking-tight">
+      <p className="font-britanicaExtraBold text-white text-[22px] sm:text-[28px] md:text-[34px] font-bold capitalize tracking-tight">
         {name}
       </p>
-      <p className="text-white/90 text-sm md:text-base font-britanicaRegular mt-1 uppercase">
+      <p className="text-white/90 text-xs sm:text-sm md:text-base font-britanicaRegular mt-1 uppercase">
         {role}
       </p>
       <p
-        className="testimonial-quote font-britanicaRegular text-white mt-4 flex-1 text-sm md:text-base leading-relaxed opacity-80"
+        className="testimonial-quote font-britanicaRegular text-white mt-3 sm:mt-4 flex-1 text-[13px] sm:text-sm md:text-base leading-relaxed opacity-80"
         style={{ lineHeight: 1.6 }}
       >
         {quote}
       </p>
     </div>
-    <div className="mt-6 flex items-center">
+    <div className="mt-4 sm:mt-6 flex items-center">
       <button
         type="button"
         aria-label="Read more"
-        className="testimonial-card-btn w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-white/20 text-white"
+        className="testimonial-card-btn w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-white/20 text-white"
       >
         <svg
           width="18"
@@ -84,57 +84,57 @@ const TestimonialSection = () => {
   return (
     <div className="relative">
       <Image
-        className="absolute top-[50%] -translate-y-1/2 right-0 w-[40%]"
+        className="absolute top-[50%] -translate-y-1/2 right-0 w-[50%] sm:w-[40%] opacity-80"
         src="/images/testbk.png"
-        alt="Hero Background"
+        alt=""
         width={1000}
         height={1000}
       />
-      <div className="container relative pt-[90px] z-20">
-        <div className="bg-[#161616] rounded-xl py-[60px] pb-[0px] px-[30px] md:px-[50px] relative">
+      <div className="container relative pt-12 sm:pt-16 md:pt-[90px] z-20 px-4 sm:px-4">
+        <div className="bg-[#161616] rounded-xl py-8 sm:py-12 md:py-[60px] pb-0 px-4 sm:px-6 md:px-[30px] lg:px-[50px] relative overflow-hidden">
           <Image
-            className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[90%] h-full object-cover"
+            className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[100%] sm:w-[90%] h-full object-cover opacity-60 sm:opacity-100"
             src="/images/testimonialbk.png"
             alt=""
             width={1000}
             height={1000}
           />
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-            <div>
+          <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end gap-4 text-center sm:text-left">
+            <div className="order-2 sm:order-1">
               <CapsuleLabel firstWord="OUR" secondWord="TESTIMONIALS" />
             </div>
-            <div className="font-britanicaBlack text-[36px] md:text-[50px] leading-[42px] md:leading-[52px] font-black text-right">
+            <div className="font-britanicaBlack text-[28px] sm:text-[36px] md:text-[50px] leading-tight sm:leading-[42px] md:leading-[52px] font-black order-1 sm:order-2 text-center sm:text-right">
               <span className="text-white">Our Work</span>
               <br />
               <span className="text-[#F74B1C]">Speaks For Us</span>
             </div>
           </div>
-          <div style={styles.page}>
+          <div style={styles.page} className="pt-6 sm:pt-8 md:pt-10">
             <Swiper
               modules={[EffectCoverflow, Pagination]}
               effect="coverflow"
               loop={true}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={1.2}
-              spaceBetween={16}
+              slidesPerView={1}
+              spaceBetween={12}
               coverflowEffect={{
-                rotate: 8,
+                rotate: 6,
                 stretch: 0,
-                depth: 80,
-                modifier: 1.2,
+                depth: 60,
+                modifier: 1.15,
                 slideShadows: true,
               }}
               pagination={{ clickable: true }}
               breakpoints={{
-                480: { slidesPerView: 2 },
-                640: { slidesPerView: 2.5 },
-                768: { slidesPerView: 3 },
-                1024: { slidesPerView: 4 },
-                1280: { slidesPerView: 3 },
+                480: { slidesPerView: 1.15, spaceBetween: 14 },
+                640: { slidesPerView: 1.5, spaceBetween: 16 },
+                768: { slidesPerView: 2, spaceBetween: 16 },
+                1024: { slidesPerView: 2.5, spaceBetween: 16 },
+                1280: { slidesPerView: 3, spaceBetween: 16 },
               }}
               className="testimonial-swiper"
-              style={{ width: "100%", paddingTop: 40, paddingBottom: 50 }}
+              style={{ width: "100%", paddingTop: 24, paddingBottom: 40 }}
             >
               {testimonials.map((t, idx) => (
                 <SwiperSlide key={idx}>

@@ -91,9 +91,9 @@ const FreeConsultationForm = () => {
   };
 
   return (
-    <div className="rounded-xl bg-black p-[20px]">
+    <div className="rounded-xl bg-black p-4 sm:p-5 md:p-[20px]">
       <form onSubmit={handleSubmit}>
-        <div className="pb-[10px] flex items-center justify-center">
+        <div className="pb-2 sm:pb-[10px] flex items-center justify-center">
           <CapsuleLabel firstWord="Schedule a free consultation" secondWord="" />
         </div>
 
@@ -193,7 +193,7 @@ const FreeConsultationForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-[#F74B1C] cursor-pointer font-britanicaExtraBold text-[20px] text-[#fff] px-4 py-3 w-full rounded-full disabled:opacity-70 disabled:cursor-not-allowed"
+            className="bg-[#F74B1C] cursor-pointer font-britanicaExtraBold text-base sm:text-[18px] md:text-[20px] text-[#fff] px-4 py-3 w-full rounded-full disabled:opacity-70 disabled:cursor-not-allowed min-h-[48px]"
           >
             {isLoading ? "Sending..." : "Get Instant Quote"}
           </button>

@@ -11,15 +11,28 @@ const ThreeDTextRotationSection = () => {
             <style>{`
             /* Responsive vars — mobile first, Tailwind breakpoints */
             .td-wrapper {
-              --td-scene-w: 180px;
-              --td-scene-h: 120px;
-              --td-perspective: 2200px;
-              --td-shape-w: 200px;
-              --td-shape-h: 240px;
-              --td-radius: 320px;
-              --td-cell-fs: 8vw;
-              --td-cell-w: 14px;
-              --td-cell-h: 100px;
+              --td-scene-w: 140px;
+              --td-scene-h: 100px;
+              --td-perspective: 1800px;
+              --td-shape-w: 160px;
+              --td-shape-h: 200px;
+              --td-radius: 220px;
+              --td-cell-fs: 7vw;
+              --td-cell-w: 12px;
+              --td-cell-h: 80px;
+            }
+            @media (min-width: 480px) {
+              .td-wrapper {
+                --td-scene-w: 160px;
+                --td-scene-h: 110px;
+                --td-perspective: 2000px;
+                --td-shape-w: 180px;
+                --td-shape-h: 220px;
+                --td-radius: 260px;
+                --td-cell-fs: 7.5vw;
+                --td-cell-w: 14px;
+                --td-cell-h: 90px;
+              }
             }
             @media (min-width: 640px) {
               .td-wrapper {
@@ -89,11 +102,23 @@ const ThreeDTextRotationSection = () => {
 
             .td-wrapper {
               width: 100%;
-              height: 800px;
-              min-height: 800px;
+              height: 420px;
+              min-height: 420px;
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+            @media (min-width: 480px) {
+              .td-wrapper { height: 520px; min-height: 520px; }
+            }
+            @media (min-width: 640px) {
+              .td-wrapper { height: 600px; min-height: 600px; }
+            }
+            @media (min-width: 768px) {
+              .td-wrapper { height: 700px; min-height: 700px; }
+            }
+            @media (min-width: 1024px) {
+              .td-wrapper { height: 800px; min-height: 800px; }
             }
             .td-scene {
               width: var(--td-scene-w);
@@ -144,8 +169,7 @@ const ThreeDTextRotationSection = () => {
               top: 50%;
               margin-left: calc(var(--td-cell-w) / -2);
               margin-top: calc(var(--td-cell-h) / -2);
-            //   font-size: var(--td-cell-fs);
-              font-size: 6vw;
+              font-size: var(--td-cell-fs);
               font-weight: 800;
               color: white;
               // text-transform: uppercase;
@@ -160,17 +184,17 @@ const ThreeDTextRotationSection = () => {
               }
             }
           `}</style>
-            <div className="relative -mt-[150px] z-10">
+            <div className="relative -mt-8 sm:-mt-16 md:-mt-[100px] lg:-mt-[150px] z-10 overflow-hidden">
                 <Image
                     src="/images/remove.png"
                     alt=""
                     width={280}
                     height={360}
-                    className="absolute -top-[20%] left-0 w-[25%]"
-                />  
-                <div className="container relative">
+                    className="absolute -top-[10%] sm:-top-[20%] left-0 w-[35%] sm:w-[30%] md:w-[25%] max-w-[140px] sm:max-w-none opacity-90"
+                />
+                <div className="container relative px-4 sm:px-4">
                     <div className="grid grid-cols-12 justify-center items-center">
-                        <div className="col-span-12 m-auto">
+                        <div className="col-span-12 m-auto max-w-[100vw]">
                             <div className="td-wrapper">
                                 <div className="td-scene">
                                     <div className="td-carousel">

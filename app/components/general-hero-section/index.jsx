@@ -1,27 +1,27 @@
 import Image from "next/image";
 import Button from "../common/button";
 
-const GeneralHeroSection = ({firstWord, secondWord, thirdWord, forthWord, fifthWord, para, para2, para3, buttonText}) => {
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, para, para2, para3, buttonText }) => {
   return (
-    <div className="relative h-[80vh]">
+    <div className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] pb-12 md:pb-0">
       <Image
-        className="absolute -top-[10%] right-[100px] w-[35%]"
+        className="absolute -top-[10%] right-4 w-[28%] sm:w-[32%] md:right-12 md:w-[35%] lg:right-[100px] hidden sm:block"
         src="/images/frame.png"
-        alt="Hero Background"
+        alt=""
         width={1000}
         height={1000}
       />
       <Image
-        className="absolute -bottom-[15%] left-[0px] w-[30%]"
+        className="absolute -bottom-[15%] left-0 w-[28%] sm:w-[30%] hidden sm:block"
         src="/images/frame2.png"
-        alt="Hero Background"
+        alt=""
         width={1000}
         height={1000}
       />
-      <div className="container relative z-10">
-        <div className="grid grid-cols-12 pt-[100px]">
+      <div className="container relative z-10 px-4 sm:px-4">
+        <div className="grid grid-cols-12 pt-[60px] sm:pt-[80px] md:pt-[100px]">
           <div className="col-span-12 text-center">
-            <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
+            <div className="font-britanicaBlack text-[28px] leading-[1.2] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black">
               <span className="text-white">{firstWord} </span>
               <span className="text-[#F74B1C]">{secondWord} </span>
               <span className="text-white">{thirdWord}</span>
@@ -30,13 +30,13 @@ const GeneralHeroSection = ({firstWord, secondWord, thirdWord, forthWord, fifthW
               <span className="text-[#F74B1C]">{fifthWord}</span>
             </div>
           </div>
-          <div className="col-span-8 col-start-3 text-center ">
-            <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-              {para} <br />
-              {para2} <br />
+          <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
+            <div className="font-britanicaRegular text-[15px] sm:text-[17px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-3xl mx-auto">
+              {para && <>{para} <br /></>}
+              {para2 && <>{para2} <br /></>}
               {para3}
             </div>
-            <div className="pt-[30px] flex justify-center">
+            <div className="pt-6 sm:pt-[30px] flex justify-center">
               <Button text={buttonText} icon={false} />
             </div>
           </div>

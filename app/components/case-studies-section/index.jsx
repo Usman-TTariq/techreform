@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import { getImagePath } from "../../utils/imagePath";
 
 const CaseStudiesSection = () => {
     return (
@@ -25,7 +26,7 @@ const CaseStudiesSection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-[280px] md:max-w-none mx-auto"
-                                src="/images/iphone13.png"
+                                src={getImagePath("/images/iphone13.png")}
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -36,7 +37,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full my-auto"
-                                src="/images/phones.png"
+                                src={getImagePath("/images/phones.png")}
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -55,7 +56,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="/images/backphone1.png"
+                                src={getImagePath("/images/backphone1.png")}
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -66,7 +67,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="/images/phones1.png"
+                                src={getImagePath("/images/phones1.png")}
                                 alt=""
                                 width={1000}
                                 height={1000}

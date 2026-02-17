@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { getImagePath } from "../../utils/imagePath";
 
 const INPUT_CLASS =
     "w-full min-w-0 px-3 sm:px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/15 text-white font-britanicaRegular text-[14px] placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#F74B1C]/50 focus:border-[#F74B1C] transition-colors box-border";
@@ -93,7 +94,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                 {/* Top: phone images */}
                 <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center gap-2 sm:gap-3 py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
                     <Image
-                        src="/images/iphone13.png"
+                        src={getImagePath("/images/iphone13.png")}
                         alt=""
                         width={100}
                         height={180}
@@ -101,7 +102,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                         unoptimized
                     />
                     <Image
-                        src="/images/phones.png"
+                        src={getImagePath("/images/phones.png")}
                         alt=""
                         width={140}
                         height={100}

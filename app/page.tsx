@@ -22,7 +22,7 @@ export default function Home() {
       <FaqHomeSection />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
-      <DetailFormSection/>
+      <DetailFormSection formIntro={undefined} />
       <Footer />
     </div>
   );

@@ -1,5 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import FooterLogo from "./svg/footer-logo";
+
+const FOOTER_LINKS = [
+    { label: "Solutions", href: "/mobile-app-development" },
+    { label: "Company", href: "/about" },
+    { label: "Portfolio", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Resource", href: "#" },
+];
 
 const Footer = () => {
     return (
@@ -35,18 +44,25 @@ const Footer = () => {
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12 md:col-span-6">
                         <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-start gap-3 sm:gap-6 md:gap-12 pb-10 sm:pb-16 md:pb-[100px]">
-                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white">Solutions</div>
-                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white">Company</div>
-                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white">Portfolio</div>
-                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white">Blog</div>
-                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white">Resource</div>
+                            {FOOTER_LINKS.map(({ label, href }) => (
+                                <Link
+                                    key={label}
+                                    href={href}
+                                    className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white hover:text-[#F74B1C] transition-colors"
+                                >
+                                    {label}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
                 <div className="min-w-0">
-                    <div className="font-britanicaRegular text-[18px] sm:text-[24px] md:text-[32px] font-regular text-white break-all sm:break-normal">
-                        info@techreforms.com
-                    </div>
+                    <a
+                    href="mailto:info@techreforms.com"
+                    className="font-britanicaRegular text-[18px] sm:text-[24px] md:text-[32px] font-regular text-white break-all sm:break-normal hover:text-[#F74B1C] transition-colors inline-block"
+                >
+                    info@techreforms.com
+                </a>
                     <div className="w-full max-w-[100%] min-w-0 pt-1">
                         <FooterLogo className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] h-auto" />
                     </div>

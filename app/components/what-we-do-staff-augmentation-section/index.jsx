@@ -34,62 +34,64 @@ const WhatWeDoStaffAugmentationSection = () => {
     ];
 
     return (
-        <div className="container relative pb-[120px]">
+        <div className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
             <Image
-                className="w-[50%] absolute -top-[40%] left-[0%]"
+                className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
                 src="/images/whatwedobk.png"
-                alt="Background"
+                alt=""
                 width={1000}
                 height={1000}
             />
-            <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-5">
-                    <div className="pb-[40px]">
+            <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
+                <div className="col-span-12 md:col-span-5 min-w-0 order-1">
+                    <div className="pb-6 sm:pb-[40px]">
                         <CapsuleLabel firstWord="Our" secondWord="Staff Augmentation" thirdWord="Process" />
                     </div>
-                    <div className="font-britanicaBlack text-[42px] leading-[45px] font-black">
+                    <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words">
                         <span className="text-white">Streamlined Process For</span>
                         <br />
                         <span className="text-[#F74B1C]">High-Performance Team Expansion</span>
                         <br />
                         <span className="text-white">With Scalable Engagement Models</span>
                     </div>
-                    <div className="pt-[30px]">
+                    <div className="pt-5 sm:pt-[30px]">
                         <Button text="Learn More" icon={false} />
                     </div>
                 </div>
-                <div className="col-span-7">
+                <div className="col-span-12 md:col-span-7 min-w-0 order-2">
                     <Swiper
-                        spaceBetween={10}
-                        slidesPerView={2.2}
+                        spaceBetween={12}
+                        slidesPerView={1}
                         breakpoints={{
-                            640: { slidesPerView: 1.2, spaceBetween: 10 },
+                            480: { slidesPerView: 1.2, spaceBetween: 12 },
+                            640: { slidesPerView: 1.2, spaceBetween: 12 },
                             768: { slidesPerView: 1.8, spaceBetween: 10 },
                             1024: { slidesPerView: 1.8, spaceBetween: 10 },
                             1280: { slidesPerView: 2.1, spaceBetween: 10 },
                             1530: { slidesPerView: 2.1, spaceBetween: 10 },
                         }}
+                        className="!overflow-visible"
                     >
                         {solutions.map((solution, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white border-2 !h-full min-h-[420px] border-[#7724C1] rounded-2xl p-[30px]">
-                                    <div className="pb-[20px]">
-                                        <div className="w-[70px] h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
-                                            {solution.icon}
+                                <div className="bg-white border-2 h-full min-h-0 md:!min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                    <div className="pb-3 sm:pb-[20px]">
+                                        <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
+                                            <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
                                         </div>
                                     </div>
-                                    <div className="text-[24px] font-britanicaBlack text-black pb-[10px]">
+                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">
                                         {solution.title}
                                     </div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[16px] pb-[30px]">
+                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">
                                         {solution.desc}
                                     </div>
                                     <div>
                                         <Link
                                             href="/staff-augmentation"
-                                            className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[16px]"
+                                            className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                                         >
-                                            Learn More <ArrowRight className="w-[16px]" />
+                                            Learn More <ArrowRight className="w-4 sm:w-[16px]" />
                                         </Link>
                                     </div>
                                 </div>

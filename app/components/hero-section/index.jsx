@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
             <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw]">
                 {/* 98% box: mobile par aur neeche, sm+ par top-right */}
-                <div className="absolute top-[94%] right-3 sm:top-[12%] sm:right-8 md:right-12 lg:right-[200px] module-border-wrap w-[95px] sm:w-auto z-0">
+                <div className="absolute top-[96%] left-4 right-auto sm:top-[12%] sm:left-auto sm:right-8 md:right-12 lg:right-[200px] module-border-wrap w-[95px] sm:w-auto z-0">
                     <div className="bg-neutral-950 rounded-2xl md:rounded-4xl px-3 py-2 sm:px-4 md:px-[30px] md:py-[10px] glass-card">
                         <div className="text-[22px] sm:text-[32px] md:text-[36px] font-semibold tracking-tight text-white font-britanicaExtraBold">98%</div>
                         <div className="text-[11px] sm:text-[16px] md:text-[18px] font-light leading-tight text-white pb-2 sm:pb-4 md:pb-[40px] font-britanicaRegular">

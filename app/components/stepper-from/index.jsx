@@ -132,27 +132,27 @@ const StepperFrom = () => {
   };
 
   return (
-    <section className="container relative z-20 py-16 md:py-24">
-      <div className="rounded-2xl bg-[#1a1a1a] border border-white/10 p-6 md:p-10 lg:p-12">
+    <section className="container relative z-20 py-10 sm:py-16 md:py-24 px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
+      <div className="rounded-2xl bg-[#1a1a1a] border border-white/10 p-4 sm:p-6 md:p-10 lg:p-12">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-12">
-          <h2 className="font-britanicaBlack text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight">
+        <div className="text-center mb-6 sm:mb-10 md:mb-12">
+          <h2 className="font-britanicaBlack text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight break-words">
             Calculate the <span className="text-[#F74B1C]">ROI</span> of Your Mobile{" "}
             <span className="text-[#F74B1C]">App Development Project</span>
           </h2>
-          <p className="font-britanicaRegular text-white/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+          <p className="font-britanicaRegular text-white/70 text-sm sm:text-base md:text-lg mt-3 sm:mt-4 max-w-full sm:max-w-2xl mx-auto px-0">
           Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form.
           </p>
         </div>
 
         {/* Stepper navigation */}
-        <div className="rounded-xl bg-gradient-to-r from-purple-600 to-purple-800 p-4 md:p-5 mb-10">
-          <div className="flex items-center justify-between gap-2">
+        <div className="rounded-xl bg-gradient-to-r from-purple-600 to-purple-800 p-3 sm:p-4 md:p-5 mb-6 sm:mb-10">
+          <div className="flex items-start justify-between gap-0.5 sm:gap-2">
             {STEPS.map((step, index) => (
-              <div key={step.number} className="flex items-center flex-1 min-w-0">
-                <div className="flex flex-col items-center flex-shrink-0">
+              <div key={step.number} className="flex items-center flex-1 min-w-0 justify-center">
+                <div className="flex flex-col items-center flex-shrink-0 min-w-0">
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center font-britanicaExtraBold text-sm ${
+                    className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-britanicaExtraBold text-[10px] sm:text-sm shrink-0 ${
                       currentStep >= index + 1
                         ? "bg-white/20 text-white border-2 border-white"
                         : "bg-transparent text-white/80 border-2 border-white/50"
@@ -160,13 +160,13 @@ const StepperFrom = () => {
                   >
                     {step.number}
                   </div>
-                  <span className="font-britanicaRegular text-white text-xs mt-1 truncate max-w-[70px] md:max-w-none">
+                  <span className="font-britanicaRegular text-white text-[10px] sm:text-xs mt-1 text-center leading-tight w-[52px] sm:w-auto sm:max-w-[70px] md:max-w-none break-words line-clamp-2">
                     {step.label}
                   </span>
                 </div>
                 {index < STEPS.length - 1 && (
                   <div
-                    className="flex-1 h-0 border-t border-dashed border-white/40 mx-1 md:mx-2 min-w-[8px]"
+                    className="hidden sm:block flex-1 min-h-0 border-t border-dashed border-white/40 mx-0.5 md:mx-2 min-w-[4px] mt-4 sm:mt-5"
                     aria-hidden
                   />
                 )}
@@ -177,20 +177,20 @@ const StepperFrom = () => {
 
         {/* Step 1: Development Costs */}
         {currentStep === 1 && (
-          <div className="relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
-              <h3 className="font-britanicaBlack text-2xl md:text-3xl font-black text-white">
+          <div className="relative min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <h3 className="font-britanicaBlack text-xl sm:text-2xl md:text-3xl font-black text-white">
                 Development Costs
               </h3>
-              <span className="rounded-lg border border-purple-500/60 bg-purple-500/10 px-3 py-1.5 font-britanicaRegular text-white text-sm">
+              <span className="rounded-lg border border-purple-500/60 bg-purple-500/10 px-2.5 py-1 sm:px-3 sm:py-1.5 font-britanicaRegular text-white text-xs sm:text-sm shrink-0">
                 Step 1 of 5 · Development Costs
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {/* Initial Development Cost */}
               <div>
-                <label className="block font-britanicaRegular text-white text-base mb-2">
+                <label className="block font-britanicaRegular text-white text-sm sm:text-base mb-1.5 sm:mb-2 break-words">
                   Initial Development Cost ($) <span className="text-[#F74B1C]">(Required)</span>
                 </label>
                 <input
@@ -199,7 +199,7 @@ const StepperFrom = () => {
                   value={formData.initialCost}
                   onChange={handleChange}
                   placeholder="$100.00"
-                  className="w-full rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-base px-4 py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="w-full min-w-0 rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-sm sm:text-base px-3 sm:px-4 py-2.5 sm:py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
                 <p className="font-britanicaRegular text-white/50 text-xs mt-1.5">
                   One-time cost to build your app
@@ -208,7 +208,7 @@ const StepperFrom = () => {
 
               {/* Monthly Maintenance Cost */}
               <div>
-                <label className="block font-britanicaRegular text-white text-base mb-2">
+                <label className="block font-britanicaRegular text-white text-sm sm:text-base mb-1.5 sm:mb-2 break-words">
                   Monthly Maintenance Cost ($) <span className="text-[#F74B1C]">(Required)</span>
                 </label>
                 <input
@@ -217,7 +217,7 @@ const StepperFrom = () => {
                   value={formData.monthlyMaintenance}
                   onChange={handleChange}
                   placeholder="$0.00"
-                  className="w-full rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-base px-4 py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="w-full min-w-0 rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-sm sm:text-base px-3 sm:px-4 py-2.5 sm:py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
                 <p className="font-britanicaRegular text-white/50 text-xs mt-1.5">
                   Servers, updates, support per month
@@ -226,14 +226,14 @@ const StepperFrom = () => {
 
               {/* App Complexity */}
               <div>
-                <label className="block font-britanicaRegular text-white text-base mb-2">
+                <label className="block font-britanicaRegular text-white text-sm sm:text-base mb-1.5 sm:mb-2">
                   App Complexity
                 </label>
                 <select
                   name="appComplexity"
                   value={formData.appComplexity}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-base px-4 py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none cursor-pointer"
+                  className="w-full min-w-0 rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-sm sm:text-base px-3 sm:px-4 py-2.5 sm:py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none cursor-pointer"
                   style={selectStyle}
                 >
                   <option value="">Select App Complexity</option>
@@ -248,14 +248,14 @@ const StepperFrom = () => {
 
               {/* Platform */}
               <div>
-                <label className="block font-britanicaRegular text-white text-base mb-2">
+                <label className="block font-britanicaRegular text-white text-sm sm:text-base mb-1.5 sm:mb-2">
                   Platform
                 </label>
                 <select
                   name="platform"
                   value={formData.platform}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-base px-4 py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none cursor-pointer"
+                  className="w-full min-w-0 rounded-lg bg-[#2E2E2E] border border-white/20 text-white text-sm sm:text-base px-3 sm:px-4 py-2.5 sm:py-3 font-britanicaRegular focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none cursor-pointer"
                   style={selectStyle}
                 >
                   <option value="">Select Platform</option>
@@ -266,7 +266,7 @@ const StepperFrom = () => {
               </div>
             </div>
 
-            <div className="flex justify-end mt-10">
+            <div className="flex justify-end mt-6 sm:mt-10">
               <button
                 type="button"
                 onClick={() => setCurrentStep(2)}
@@ -283,17 +283,17 @@ const StepperFrom = () => {
 
         {/* Step 2: Revenue Model */}
         {currentStep === 2 && (
-          <div className="relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
-              <h3 className="font-britanicaBlack text-2xl md:text-3xl font-black text-white">
+          <div className="relative min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <h3 className="font-britanicaBlack text-xl sm:text-2xl md:text-3xl font-black text-white">
                 Revenue Model
               </h3>
-              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-3 py-1.5 font-britanicaRegular text-white text-sm">
+              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-2.5 py-1 sm:px-3 sm:py-1.5 font-britanicaRegular text-white text-xs sm:text-sm shrink-0">
                 Step 2 of 5 · Revenue Model
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {/* Monetization Strategy */}
               <div>
                 <label className="block font-britanicaRegular text-white text-base mb-2">
@@ -388,17 +388,17 @@ const StepperFrom = () => {
 
         {/* Step 3: Marketing & Operations */}
         {currentStep === 3 && (
-          <div className="relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
-              <h3 className="font-britanicaBlack text-2xl md:text-3xl font-black text-white">
+          <div className="relative min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <h3 className="font-britanicaBlack text-xl sm:text-2xl md:text-3xl font-black text-white">
                 Marketing & Operations
               </h3>
-              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-3 py-1.5 font-britanicaRegular text-white text-sm">
+              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-2.5 py-1 sm:px-3 sm:py-1.5 font-britanicaRegular text-white text-xs sm:text-sm shrink-0">
                 Step 3 of 5 · Marketing & Operations
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {/* Monthly Marketing Budget */}
               <div>
                 <label className="block font-britanicaRegular text-white text-base mb-2">
@@ -494,17 +494,17 @@ const StepperFrom = () => {
 
         {/* Step 4: Your Contact Details */}
         {currentStep === 4 && (
-          <div className="relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
-              <div>
-                <h3 className="font-britanicaBlack text-2xl md:text-3xl font-black text-white">
+          <div className="relative min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <div className="min-w-0">
+                <h3 className="font-britanicaBlack text-xl sm:text-2xl md:text-3xl font-black text-white">
                   Your Contact Details
                 </h3>
-                <p className="font-britanicaRegular text-white/60 text-sm mt-2">
+                <p className="font-britanicaRegular text-white/60 text-xs sm:text-sm mt-1.5 sm:mt-2">
                   We&apos;ll send you a copy of this 3-year ROI summary.
                 </p>
               </div>
-              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-3 py-1.5 font-britanicaRegular text-white text-sm shrink-0">
+              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-2.5 py-1 sm:px-3 sm:py-1.5 font-britanicaRegular text-white text-xs sm:text-sm shrink-0">
                 Step 4 of 5 · Your Contact Details
               </span>
             </div>
@@ -585,18 +585,18 @@ const StepperFrom = () => {
 
         {/* Step 5: Results */}
         {currentStep === 5 && (
-          <div className="relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
-              <h3 className="font-britanicaBlack text-2xl md:text-3xl font-black text-white">
+          <div className="relative min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <h3 className="font-britanicaBlack text-xl sm:text-2xl md:text-3xl font-black text-white">
                 3-Year ROI Results
               </h3>
-              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-3 py-1.5 font-britanicaRegular text-white text-sm shrink-0">
+              <span className="rounded-lg border border-[#F74B1C]/60 bg-[#F74B1C]/10 px-2.5 py-1 sm:px-3 sm:py-1.5 font-britanicaRegular text-white text-xs sm:text-sm shrink-0">
                 Step 5 of 5 · Results
               </span>
             </div>
 
             {/* Summary cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
               <div className="rounded-xl bg-gradient-to-br from-purple-600 to-purple-800 p-5">
                 <p className="font-britanicaRegular text-white/90 text-sm">Total 3-Year ROI</p>
                 <p className="font-britanicaBlack text-xl md:text-2xl font-black text-white mt-1">

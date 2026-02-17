@@ -8,7 +8,7 @@ import { useState } from "react";
 const MobileHeroSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
     return (
-        <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-12 md:pb-0 overflow-hidden bg-[#0E0E0E]">
+        <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
                 className="absolute top-[15%] sm:top-0 left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[25%] sm:left-[60%] max-w-[200px] sm:max-w-none"
                 src="/images/mobilehero.png"

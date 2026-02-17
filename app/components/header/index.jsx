@@ -120,7 +120,7 @@ const Header = () => {
 
     return (
         <div
-            className="sticky top-0 z-30 w-full relative backdrop-blur-sm"
+            className="sticky top-0 w-full relative backdrop-blur-sm overflow-hidden"
             onMouseLeave={() => setActiveDropdown(null)}
         >
             {/* Full-width dropdown panel – visible when any nav item is hovered */}

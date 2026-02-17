@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 export const metadata: Metadata = {
   title: "TechReforms - Digital Agency",
   description: "TechReforms - Elevate Your Digital Success With Tech Reforms",
+  robots: { index: false, follow: false },
 };
 
 const britanicaRegular = localFont({

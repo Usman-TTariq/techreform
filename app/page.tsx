@@ -7,6 +7,7 @@ import TransformingIdeas from "./components/transforming-ideas";
 import DetailFormSection from "./components/detail-form-section";
 import ThreeDTextRotationSection from "./components/3d-text-rotation-section";
 import TestimonialSection from "./components/testimonial-section";
+import FaqHomeSection from "./components/faq-home-section";
 import Marquee from "./components/marquee";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatWeDoSection/>
       <TransformingIdeas/>
       <Marquee />
+      <FaqHomeSection />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
       <DetailFormSection/>

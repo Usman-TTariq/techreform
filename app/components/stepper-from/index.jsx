@@ -141,8 +141,7 @@ const StepperFrom = () => {
             <span className="text-[#F74B1C]">App Development Project</span>
           </h2>
           <p className="font-britanicaRegular text-white/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-            Every dollar you invest matters. Quickly estimate the return on investment for your
-            upcoming app in just a few minutes.
+          Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form.
           </p>
         </div>
 

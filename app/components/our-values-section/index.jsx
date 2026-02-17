@@ -6,15 +6,11 @@ const OurValuesSection = () => {
   const values = [
     {
       title: "People-Driven Marketing",
-      desc: "We put people at the center of every strategy, creating marketing that connects, engages,",
-    },
-    {
-      title: "Purposeful Creativity",
-      desc: "Creativity should do more than look good — it should drive action, impact, and results.",
+      desc: "Development isn’t just about logistics; it's about delivering efficiency that is accessible as well. Tech Reforms simplifies usability through modern design and seamless innovation.",
     },
     {
       title: "Performance Mindset",
-      desc: "Every decision we make is guided by results, efficiency, and continuous optimization.",
+      desc: "Every phase of the development and design process is done with intent in mind. We value what the user requires, whether it’s efficiency, an awe-inspiring visual, or smooth gameplay.",
     },
     {
       title: "Long-Term Partnerships",
@@ -47,16 +43,14 @@ const OurValuesSection = () => {
           </div>
           <div className="col-span-8 col-start-3 text-center ">
             <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-              We believe great marketing is built on clarity, purpose, and
-              performance. Every brand has the potential to grow, but real
-              success comes from understanding people, making smart decisions,
-              and executing with consistency.
+              We believe great marketing is built on three main aspects: clarity, purpose, and performance. At Tech Reform, we believe that every brand has the potential to grow and achieve real success through simplified, user-centric technology.
+
             </div>
           </div>
         </div>
         <div className="grid grid-cols-12 gap-3 pt-[52px]">
           {values.map((value, index) => (
-            <div className="col-span-3 h-full" key={index}>
+            <div className="col-span-4 h-full" key={index}>
               <div className="bg-[#0000004a] h-full flex flex-col justify-between py-[20px] px-6 border rounded-xl border-[#ffffff6b]">
                 <div className="text-[32px] max-2xl:text-[26px] font-britanicaBlack leading-[40px] text-white">
                   {value?.title}

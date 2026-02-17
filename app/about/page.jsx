@@ -14,10 +14,13 @@ const About = () => {
   return (
     <div>
       <Header />
-      <GeneralHeroSection firstWord="We" secondWord="Create Marketing" thirdWord="That" forthWord="Drives Real" fifthWord="Growth" para=" We don’t just run campaigns — we build brands, tell powerful
+      <GeneralHeroSection firstWord="We" secondWord="Bring Smart Business" thirdWord="Solutions" forthWord="To Your" fifthWord="Doorsteps" para=" We don’t just run campaigns — we build brands, tell powerful
               stories, and deliver measurable results. By combining strategy,
               creativity, and data, we help businesses stand out, connect with
-              their audience, and grow with confidence." buttonText="Schedule a Free Consultation"/>
+              their audience, and grow with confidence." buttonText="Schedule a Free Consultation"
+        para2="We help high-potential brands to scale faster through innovative developmental services and high-impact marketing strategies. Our products and solutions are all built for growth, visibility, and revenue. Our approach blends strategy, creativity, and performance to position your brand where it wins attention and trust."
+        para3="From putting your business on the digital map with an intuitive website, to boosting business visibility with paid advertising and social media."
+      />
       <OurImpactBoxesSection />
       {/* <FounderMsgSection /> */}
       <AboutWeDoSection />

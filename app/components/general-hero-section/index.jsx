@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../common/button";
 
-const GeneralHeroSection = ({firstWord, secondWord, thirdWord, forthWord, fifthWord, para, buttonText}) => {
+const GeneralHeroSection = ({firstWord, secondWord, thirdWord, forthWord, fifthWord, para, para2, para3, buttonText}) => {
   return (
     <div className="relative h-[80vh]">
       <Image
@@ -32,7 +32,9 @@ const GeneralHeroSection = ({firstWord, secondWord, thirdWord, forthWord, fifthW
           </div>
           <div className="col-span-8 col-start-3 text-center ">
             <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-              {para}
+              {para} <br />
+              {para2} <br />
+              {para3}
             </div>
             <div className="pt-[30px] flex justify-center">
               <Button text={buttonText} icon={false} />

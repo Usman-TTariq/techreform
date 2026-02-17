@@ -4,6 +4,7 @@ import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import AppDevelopmentSection from "../components/app-development-section";
 import WhatWeDoMobileSection from "../components/advanced-technology-section";
 import CaseStudiesSection from "../components/case-studies-section";
+import FaqSection from "../components/faq-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
@@ -20,6 +21,7 @@ const Mobile = () => {
             <StepperFrom />
             <WhatWeDoMobileSection />
             <CaseStudiesSection />
+            <FaqSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
             <DetailFormSection />

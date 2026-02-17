@@ -18,22 +18,31 @@ const AboutWeDoSection = () => {
             <div>
               <CapsuleLabel firstWord="WHAT" secondWord="WE" thirdWord="DO" />
               <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                We help ambitious brands scale faster through high-impact
-                marketing strategies built for growth, visibility, and revenue.
-                Our approach blends strategy, creativity, and performance to
-                position your brand where it wins attention and trust.
+                All of our services are constructed to offer business operations and digital conversion optimization. We focus on actions that:
+              </div>
+              <ul className="list-none mt-3 space-y-2 font-britanicaRegular text-[20px] text-white">
+                <li className="flex gap-2">
+                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+                  <span>Drive Real Results</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+                  <span>Qualified Leads</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+                  <span>Stronger Engagement</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+                  <span>Higher Sales</span>
+                </li>
+              </ul>
+              <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
+                Every website, app, and marketing campaign is designed to perform.
               </div>
               <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                From paid advertising and social media to content and conversion
-                optimization, we focus on actions that drive real results —
-                qualified leads, stronger engagement, and higher sales. Every
-                campaign is designed to perform, not just look good.
-              </div>
-              <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                We don’t believe in generic marketing. We build tailored,
-                data-driven solutions that turn attention into action and
-                customers into long-term revenue, helping your business grow
-                with confidence and clarity.
+                We don&apos;t believe in cookie-cutter digital solutions. Instead, we build tailored, data-driven services that turn visitors into repeat customers, then translate that transition into long-term revenue, helping your business grow with confidence and clarity.
               </div>
             </div>
           </div>

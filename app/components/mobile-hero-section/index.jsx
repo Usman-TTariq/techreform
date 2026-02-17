@@ -33,17 +33,19 @@ const MobileHeroSection = () => {
                 </div>
                 <div className="grid grid-cols-12 pt-[120px]">
                     <div className="col-span-6">
-                        <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
-                            <span className="text-white">Mobile </span>
-                            <span className="text-[#F74B1C]">App</span><br/>
-                            <span className="text-[#F74B1C]">Development</span><br/>
-                            <span className="text-[#fff]">Solutions</span><br/>
+                        <div className="font-britanicaBlack text-[48px] leading-[52px] font-black">
+                            <span className="text-white">Custom Mobile </span>
+                            <span className="text-[#F74B1C]"></span><br />
+                            <span className="text-[#F74B1C]">App Development Company</span><br />
+                            <span className="text-[#fff]">in the USA</span><br />
                         </div>
-                        <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                        Our mobile app development firm partners with <br/> innovative startups and tech-driven businesses to <br/> create apps that are reliable, high-performing, and <br/> seamless across all devices and operating systems.
+                        <div className="font-britanicaRegular text-[18px] max-2xl:text-[16px] font-regular text-white pt-[22px]">
+                            Are you looking for a futuristic mobile app development services<br /> that can build innovative mobile applications for your scaling businesses? <br />
+                            With years of experience in creating immersive and highly <br /> functional apps, Tech Reforms brings scalable mobile app solutions <br /> to your doorstep. Partner with us to get reliable, high-performing,<br /> seamless apps across all devices.<br />
+
                         </div>
                         <div className="pt-[30px]">
-                            <Button text="Schedule a Free Consultation" icon={false} />
+                            <Button text="Hire Expert App Developers Today" icon={false} />
                         </div>
                     </div>
                 </div>

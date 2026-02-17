@@ -6,31 +6,55 @@ import "swiper/css";
 import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
-import CostIcon from "../what-we-do-section/svg/cost-icon";
+import AiIcon from "./svg/ai-icon";
 
 const WhatWeDoMobileSection = () => {
     const solutions = [
         {
-            title: "AI And ML",
-            desc: "We embed ML models and AI APIs in mobile apps to automate decisions, personalize journeys, and keep control with human review paths always.",
-            icon: <CostIcon className="w-[30px]" />,
+            title: "Requirement Gathering",
+            desc: "Our process starts with a detailed requirements-gathering session. This helps our experts scope the app's goal, target audience, and technical requirements.",
+            icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "IOT",
-            desc: "IoT connectivity brings sensor and device data into mobile workflows, enabling tracking, alerts, and remote actions in real time reliably.",
-            icon: <CostIcon className="w-[20px]" />,
+            title: "UI/UX Mockups",
+            desc: "Our certified designers then develop the perfect UI/UX that not only offers seamless navigation but also actively engages users through high accessibility and a satisfying interface.",
+            icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "CI/CD & Automation",
-            desc: "CI/CD and automated QA run tests on every change, speeding releases while preventing regressions across iOS and Android versions too.",
-            icon: <CostIcon className="w-[20px]" />,
+            title: "App Development",
+            desc: "During Development, we focus all our resources on building scalable, secure, high-performance mobile applications using the latest frameworks and clean code practices.",
+            icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Zero-Trust Security",
-            desc: "Zero-trust security uses encryption, least privilege access, and secure storage, reducing breach risk and audit friction for regulated teams too.",
-            icon: <CostIcon className="w-[20px]" />,
+            title: "Quality Testing",
+            desc: "We perform a comprehensive mobile app testing and deployment process to gain bug-free performance, security compliance, and cross-device compatibility.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Ongoing Support",
+            desc: "Lastly, the maintenance and support phase begins. This is where we review all technical details one last time to ensure optimal performance monitoring, security enhancements, and optimal end-to-end app development.",
+            icon: <AiIcon className="w-[40px]" />,
         },
     ];
+
+    const solutionss = [
+        {
+            title: "Expert Development Team",
+            desc: "Hire Mobile App Developers from our dedicated team of expert developers. They deliver high-performance app solutions with proven expertise, faster workflows, and scalable architecture.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Secure & Scalable Architecture",
+            desc: "We build all our mobile apps on a secure architecture that delivers data protection, high performance, reliability, and improved scalability for growing startups and enterprises.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Industry-Focused Solutions",
+            desc: "Our Industry-specific mobile applications are designed to meet your business needs, address unique market demands via higher user engagement, and accelerate digital transformation.",
+            icon: <AiIcon className="w-[40px]" />,
+        }
+    ];
+
     return (
         <div className="container relative pb-[120px]">
             <Image
@@ -43,14 +67,14 @@ const WhatWeDoMobileSection = () => {
             <div className="grid grid-cols-12 gap-5">
                 <div className="col-span-5">
                     <div className="pb-[40px]">
-                        <CapsuleLabel firstWord="What" secondWord="We" thirdWord="Do" />
+                        <CapsuleLabel firstWord="Our" secondWord="App Development" thirdWord="Process" />
                     </div>
-                    <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
-                        <span className="text-white">Advanced</span>
+                    <div className="font-britanicaBlack text-[42px] leading-[45px] font-black">
+                        <span className="text-white">Simplified Process of</span>
                         <br />
-                        <span className="text-[#F74B1C]">Technologies to</span>
+                        <span className="text-[#F74B1C]">Building Scalable Apps</span>
                         <br />
-                        <span className="text-white">for a complex world.</span>
+                        <span className="text-white">Through Smart Strategies</span>
                     </div>
                     {/* <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
             Tech Reforms empowers businesses with smart, secure, and scalable
@@ -91,7 +115,7 @@ const WhatWeDoMobileSection = () => {
                         >
                             {solutions.map((solution, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="bg-white border-2 border-[#7724C1] rounded-2xl p-[30px]">
+                                    <div className="bg-white border-2 !h-full min-h-[420px] border-[#7724C1] rounded-2xl p-[30px]">
                                         <div className="pb-[20px]">
                                             <div className="w-[70px] h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 {solution.icon}
@@ -148,9 +172,9 @@ const WhatWeDoMobileSection = () => {
                                 },
                             }}
                         >
-                            {solutions.map((solution, index) => (
+                            {solutionss.map((solution, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="bg-white border-2 border-[#7724C1] rounded-2xl p-[30px]">
+                                    <div className="bg-white !h-full min-h-[420px] border-2 border-[#7724C1] rounded-2xl p-[30px]">
                                         <div className="pb-[20px]">
                                             <div className="w-[70px] h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 {solution.icon}
@@ -180,15 +204,15 @@ const WhatWeDoMobileSection = () => {
                     {/* <div className="pb-[40px]">
                         <CapsuleLabel firstWord="What" secondWord="We" thirdWord="Do" />
                     </div> */}
-                    <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
+                    <div className="font-britanicaBlack text-[50px] leading-[55px] font-black">
                         {/* <span className="text-white">Advanced</span>
                         <br /> */}
-                        <span className="text-[#F74B1C]">Mobile Development </span>
+                        <span className="text-[#F74B1C]">Why Partner </span>
                         <br />
-                        <span className="text-white">Services</span>
+                        <span className="text-white"> With Us</span>
                     </div>
                     <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                        Game apps that keep players engaged, paying, and returning. We shape mechanics, progression, and content updates around your audience. Expect smooth play, fair rewards, and store launches handled end-to-end today.
+                        We take pride in delivering high-performance app solutions built on a secure architecture. Each application we build is designed to meet the current industry standard for dynamic mobile app development in the USA.
                     </div>
                     {/* <div className="pt-[30px]">
                         <Button text="Learn More" icon={false} />

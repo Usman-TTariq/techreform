@@ -2,7 +2,7 @@ import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 
-const AppDevelopmentSection = () => {
+const EcommerceDevelopmentSection = () => {
     return (
         <div className="relative pb-[120px]">
             <div className="container relative">
@@ -16,11 +16,11 @@ const AppDevelopmentSection = () => {
                             />
                         </div>
                         <div className="font-britanicaBlack text-[42px] leading-[52px] font-black">
-                            <span className="text-white">Hire Our Native & Hybrid App </span>
-                            <span className="text-[#F74B1C]">Development Experts </span>
+                            <span className="text-white">Simple & Secure </span>
+                            <span className="text-[#F74B1C]">e-Commerce Website Development</span>
                             <br />
-                            <span className="text-[#F74B1C]">For User-Centric Apps with </span>
-                            <span className="text-white">Secure Mobile App Architecture</span>
+                            <span className="text-[#F74B1C]">For High </span>
+                            <span className="text-white">Conversion and Sales</span>
                         </div>
                     </div>
                     <div className="col-span-8 col-start-3 text-center ">
@@ -37,16 +37,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="E-commerce platform"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    Game App Development
+                                    Custom e-commerce website development
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                    Get an enterprise-grade mobile game solution that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
+                                    We offer high-yielding ecommerce solutions that are fast, secure, and user-friendly. All features are customized to your business requirements and logistics.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -61,16 +61,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Online store"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    iOS App Development
+                                    Shopify and WooCommerce
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                    Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance mobile apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
+                                    We set up professional Shopify and WooCommerce stores that offer complete design, product uploads, and payment integration.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -85,16 +85,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Custom e-commerce"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    Android App Development
+                                    Mobile Responsible Design
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                Partner up with our results-driven Android app development company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
+                                    All e-commerce websites are highly responsible for the phone to deliver high conversion rates, whether on desktop or mobile.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -109,7 +109,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user1.png"
-                                alt="Hero Background"
+                                alt="E-commerce solution"
                                 width={1000}
                                 height={1000}
                             />
@@ -120,7 +120,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user2.png"
-                                alt="Hero Background"
+                                alt="E-commerce solution"
                                 width={1000}
                                 height={1000}
                             />
@@ -131,7 +131,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user3.png"
-                                alt="Hero Background"
+                                alt="E-commerce solution"
                                 width={1000}
                                 height={1000}
                             />
@@ -140,7 +140,7 @@ const AppDevelopmentSection = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default AppDevelopmentSection;
+export default EcommerceDevelopmentSection;

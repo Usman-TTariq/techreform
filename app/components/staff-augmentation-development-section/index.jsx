@@ -2,7 +2,7 @@ import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 
-const AppDevelopmentSection = () => {
+const StaffAugmentationDevelopmentSection = () => {
     return (
         <div className="relative pb-[120px]">
             <div className="container relative">
@@ -16,17 +16,17 @@ const AppDevelopmentSection = () => {
                             />
                         </div>
                         <div className="font-britanicaBlack text-[42px] leading-[52px] font-black">
-                            <span className="text-white">Hire Our Native & Hybrid App </span>
-                            <span className="text-[#F74B1C]">Development Experts </span>
-                            <br />
-                            <span className="text-[#F74B1C]">For User-Centric Apps with </span>
-                            <span className="text-white">Secure Mobile App Architecture</span>
+                            <span className="text-white">Simple & Scalable </span>
+                            <span className="text-[#F74B1C]">Staff Augmentation Services </span>
+                            {/* <br />
+                            <span className="text-[#F74B1C]">Experts for </span>
+                            <span className="text-white">Flexible, Scalable Teams</span> */}
                         </div>
                     </div>
                     <div className="col-span-8 col-start-3 text-center ">
-                        <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
-                            We develop scalable mobile applications with intuitive UI/UX design, a feature-rich development approach, and ongoing support after launch. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
-                        </div>
+                        {/* <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
+                            We provide reliable staff augmentation services that help organizations fill skill gaps with highly qualified professionals. Our flexible engagement models ensure you get the right talent at the right time — without the complexities of traditional hiring.
+                        </div> */}
                     </div>
                 </div>
                 <div className="grid grid-cols-12 gap-4 pt-[52px]">
@@ -37,16 +37,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Dedicated talent"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    Game App Development
+                                    For Faster Delivery and Higher Productivity
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                    Get an enterprise-grade mobile game solution that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
+                                    We provide reliable staff augmentation services that help organizations fill skill gaps with highly qualified professionals. Our flexible engagement models ensure you get the right talent at the right time — without the complexities of traditional hiring
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -61,16 +61,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Flexible engagement"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    iOS App Development
+                                    IT Staff Augmentation
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                    Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance mobile apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
+                                    Our IT staff augmentation services give you access to skilled developers, engineers, designers, QA specialists, DevOps experts, and project managers. We help you scale your tech team quickly while maintaining full control over your project.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -85,16 +85,16 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Quick scaling"
                                         width={1000}
                                         height={1000}
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[24px] font-regular text-white text-left pb-[5px]">
-                                    Android App Development
+                                    Dedicated Development Teams
                                 </div>
                                 <div className="font-britanicaRegular text-[14px] font-regular text-white text-left">
-                                Partner up with our results-driven Android app development company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
+                                    Need long-term support? Our dedicated professionals work as an extension of your in-house team, aligned with your goals, processes, and culture.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} />
@@ -109,7 +109,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user1.png"
-                                alt="Hero Background"
+                                alt="Staff augmentation"
                                 width={1000}
                                 height={1000}
                             />
@@ -120,7 +120,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user2.png"
-                                alt="Hero Background"
+                                alt="Staff augmentation"
                                 width={1000}
                                 height={1000}
                             />
@@ -131,7 +131,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[90%] m-auto"
                                 src="/images/user3.png"
-                                alt="Hero Background"
+                                alt="Staff augmentation"
                                 width={1000}
                                 height={1000}
                             />
@@ -140,7 +140,7 @@ const AppDevelopmentSection = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default AppDevelopmentSection;
+export default StaffAugmentationDevelopmentSection;

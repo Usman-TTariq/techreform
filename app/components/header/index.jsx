@@ -118,6 +118,9 @@ const Header = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [expandedMobileKey, setExpandedMobileKey] = useState(null);
+    const [mobileNavVisible, setMobileNavVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
         if (mobileMenuOpen) {
@@ -130,9 +133,35 @@ const Header = () => {
         };
     }, [mobileMenuOpen]);
 
+    useEffect(() => {
+        const checkMobile = () => setIsMobileView(window.innerWidth < 1024);
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
+
+    useEffect(() => {
+        if (!isMobileView) return;
+        const handleScroll = () => {
+            const y = window.scrollY;
+            if (y <= 80) {
+                setMobileNavVisible(true);
+            } else if (y > lastScrollY) {
+                setMobileNavVisible(false);
+            } else {
+                setMobileNavVisible(true);
+            }
+            setLastScrollY(y);
+        };
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [isMobileView, lastScrollY]);
+
+    const hideNav = isMobileView && !mobileNavVisible && !mobileMenuOpen;
+
     return (
         <div
-            className="sticky top-0 z-30 w-full relative backdrop-blur-sm bg-[#0a0a0a]/95"
+            className={`sticky top-0 z-40 w-full relative backdrop-blur-sm bg-[#0a0a0a]/95 transition-transform duration-300 ease-out ${hideNav ? "-translate-y-full" : "translate-y-0"} lg:!translate-y-0`}
             onMouseLeave={() => setActiveDropdown(null)}
         >
             {/* Desktop: full-width dropdown below nav */}

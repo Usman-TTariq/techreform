@@ -134,8 +134,11 @@ const Header = () => {
     }, [mobileMenuOpen]);
 
     useEffect(() => {
-        if (!isMobileView) return;
-        document.body.style.paddingTop = mobileNavVisible || mobileMenuOpen ? "72px" : "0";
+        if (isMobileView) {
+            document.body.style.paddingTop = mobileNavVisible || mobileMenuOpen ? "72px" : "0";
+        } else {
+            document.body.style.paddingTop = "80px";
+        }
         return () => {
             document.body.style.paddingTop = "";
         };
@@ -177,7 +180,7 @@ const Header = () => {
 
     return (
         <div
-            className={`fixed lg:sticky top-0 left-0 right-0 z-40 w-full backdrop-blur-sm bg-[#0a0a0a]/95 transition-transform duration-300 ease-out ${hideNav ? "-translate-y-full" : "translate-y-0"} lg:!translate-y-0`}
+            className={`fixed top-0 left-0 right-0 z-40 w-full backdrop-blur-sm bg-[#0a0a0a]/95 transition-transform duration-300 ease-out ${hideNav ? "-translate-y-full" : "translate-y-0"}`}
             onMouseLeave={() => setActiveDropdown(null)}
         >
             {/* Desktop: full-width dropdown below nav */}

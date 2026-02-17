@@ -98,6 +98,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                         width={100}
                         height={180}
                         className="w-auto h-[110px] sm:h-[130px] object-contain drop-shadow-lg"
+                        unoptimized
                     />
                     <Image
                         src="/images/phones.png"
@@ -105,6 +106,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                         width={140}
                         height={100}
                         className="w-auto h-[80px] sm:h-[100px] object-contain drop-shadow-lg hidden sm:block"
+                        unoptimized
                     />
                 </div>
 

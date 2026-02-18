@@ -29,7 +29,7 @@ const MEGA_MENU = {
                 heading: "Services",
                 items: [
                     { label: "App Development", href: "/mobile-app-development" },
-                    { label: "Game App Development", href: "#" },
+                    { label: "Game App Development", href: "/game-development" },
                     { label: "MVP Startup Development", href: "#" },
                     { label: "AR Development", href: "#" },
                     { label: "VR Development", href: "#" },

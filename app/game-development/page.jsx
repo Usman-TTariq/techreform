@@ -23,8 +23,6 @@ const GameDevelopment = () => {
                 thirdWord="USA"
                 forthWord=""
                 fifthWord="for Mobile, PC & Console"
-                fifthWordWhite
-                sixthWord="| Custom Game Development Company"
                 para="Looking for professional game development services in the USA?"
                 para2="Tech Reforms is a trusted custom game development company delivering end-to-end solutions for mobile, PC, and console platforms. We design and develop high-performance, scalable games tailored to your target audience and business goals."
                 para3="Planning to hire game developers in the USA? Our expert team specializes in 2D and 3D mobile game development, immersive PC gaming experiences, and advanced console game solutions. From concept to launch, we build engaging, revenue-driven games that players love and businesses grow with."

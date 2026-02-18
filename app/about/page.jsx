@@ -10,6 +10,10 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import Footer from "../components/footer";
 
+export const metadata = {
+  alternates: { canonical: "/about" },
+};
+
 const About = () => {
   return (
     <div>

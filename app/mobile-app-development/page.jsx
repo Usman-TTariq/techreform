@@ -13,6 +13,10 @@ import Footer from "../components/footer";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  alternates: { canonical: "/mobile-app-development" },
+};
+
 const Mobile = () => {
     return (
         <div>

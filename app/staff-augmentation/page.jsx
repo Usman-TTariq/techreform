@@ -15,6 +15,10 @@ import DetailFormSection from "../components/detail-form-section";
 // Avoid oversized static fallback (ISR page > 19 MB); render on demand
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  alternates: { canonical: "/staff-augmentation" },
+};
+
 const StaffAugmentation = () => {
     return (
         <div>

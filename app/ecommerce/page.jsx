@@ -12,6 +12,10 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import GeneralHeroSection from "../components/general-hero-section";
 
+export const metadata = {
+  alternates: { canonical: "/ecommerce" },
+};
+
 const Ecommerce = () => {
     return (
         <div>

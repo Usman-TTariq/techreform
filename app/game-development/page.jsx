@@ -13,6 +13,10 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  alternates: { canonical: "/game-development" },
+};
+
 const GameDevelopment = () => {
     return (
         <div>

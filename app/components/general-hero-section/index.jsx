@@ -19,14 +19,14 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
         height={1000}
       />
       <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
-        <div className={`grid grid-cols-12 ${compact ? "pt-4 sm:pt-[80px] md:pt-[100px]" : "pt-8 sm:pt-[80px] md:pt-[100px]"}`}>
+        <div className={`grid grid-cols-12 ${compact ? "pt-10 sm:pt-[100px] md:pt-[120px]" : "pt-12 sm:pt-[100px] md:pt-[120px]"}`}>
           <div className="col-span-12 text-center min-w-0">
             <div className="font-britanicaBlack text-[22px] leading-[1.25] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black break-words">
               <span className="text-white">{firstWord} </span>
               <span className="text-[#F74B1C]">{secondWord} </span>
-              <span className="text-white">{thirdWord}</span>
+              <span className="text-white">{thirdWord} </span>
+              <span className="text-white">{forthWord}</span>
               <br />
-              <span className="text-white">{forthWord} </span>
               <span className="text-[#F74B1C]">{fifthWord}</span>
             </div>
           </div>

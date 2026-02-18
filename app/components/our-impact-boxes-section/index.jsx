@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const cards = [
   { value: "20+", label: "Years of Experience", rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]" },
-  { value: "150+", label: "Inhouse App Experts", rounded: "" },
+  { value: "150+", label: "In-house App Experts", rounded: "" },
   { value: "30+", label: "Industry Verticals", rounded: "" },
   { value: "350+", label: "Live Apps", rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]" },
 ];

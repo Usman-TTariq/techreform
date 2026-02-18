@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
@@ -31,8 +32,42 @@ const whyPartner = [
 ];
 
 const StaffAugmentationWhyPartnerSection = () => {
+    const sectionRef = useRef(null);
+    const swiperRef = useRef(null);
+    const [swiperReady, setSwiperReady] = useState(false);
+
+    useEffect(() => {
+        const section = sectionRef.current;
+        const swiper = swiperRef.current;
+        if (!section || !swiper || !swiperReady) return;
+
+        const handleWheel = (e) => {
+            const rect = section.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+            const inView = rect.top < viewportHeight * 0.8 && rect.bottom > viewportHeight * 0.2;
+            if (!inView) return;
+
+            if (e.deltaY > 0) {
+                if (!swiper.isBeginning) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slidePrev();
+                }
+            } else if (e.deltaY < 0) {
+                if (!swiper.isEnd) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slideNext();
+                }
+            }
+        };
+
+        window.addEventListener("wheel", handleWheel, { passive: false, capture: true });
+        return () => window.removeEventListener("wheel", handleWheel, { capture: true });
+    }, [swiperReady]);
+
     return (
-        <div className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
+        <div ref={sectionRef} className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
                 src="/images/whatwedobk.png"
@@ -54,33 +89,35 @@ const StaffAugmentationWhyPartnerSection = () => {
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">
                     <Swiper
-                        spaceBetween={12}
+                        onSwiper={(swiper) => { swiperRef.current = swiper; swiper.slideTo(1, 0); setSwiperReady(true); }}
+                        initialSlide={1}
+                        spaceBetween={20}
                         slidesPerView={1}
                         breakpoints={{
-                            480: { slidesPerView: 1.2, spaceBetween: 12 },
-                            640: { slidesPerView: 1.2, spaceBetween: 12 },
-                            768: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1024: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1280: { slidesPerView: 2.1, spaceBetween: 10 },
-                            1530: { slidesPerView: 2.1, spaceBetween: 10 },
+                            480: { slidesPerView: 1, spaceBetween: 16 },
+                            640: { slidesPerView: 1.1, spaceBetween: 16 },
+                            768: { slidesPerView: 1.5, spaceBetween: 18 },
+                            1024: { slidesPerView: 2, spaceBetween: 20 },
+                            1280: { slidesPerView: 2, spaceBetween: 24 },
+                            1530: { slidesPerView: 2, spaceBetween: 24 },
                         }}
-                        className="!overflow-visible"
+                        className="!overflow-visible [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex [&_.swiper-slide]:items-stretch"
                     >
                         {whyPartner.map((solution, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-white h-full min-h-0 md:!min-h-[420px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
-                                    <div className="pb-3 sm:pb-[20px]">
+                            <SwiperSlide key={index} className="!flex !items-stretch">
+                                <div className="bg-white border-2 w-[300px] sm:w-[320px] md:w-[340px] h-[420px] sm:h-[440px] md:h-[460px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col shrink-0 min-w-0 overflow-hidden">
+                                    <div className="pb-3 sm:pb-[20px] shrink-0">
                                         <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
                                             <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
                                         </div>
                                     </div>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">
+                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words shrink-0 min-w-0">
                                         {solution.title}
                                     </div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">
+                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-h-0 min-w-0 overflow-y-auto overflow-x-hidden pb-4 sm:pb-[30px] break-words">
                                         {solution.desc}
                                     </div>
-                                    <div>
+                                    <div className="shrink-0 pt-2">
                                         <Link
                                             href="/staff-augmentation"
                                             className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"

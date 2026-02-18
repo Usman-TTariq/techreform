@@ -5,6 +5,8 @@ import { useState } from "react";
 
 const ReviewSections = () => {
   const [activeCard, setActiveCard] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const displayedCard = hoveredIndex !== null ? hoveredIndex : activeCard;
 
   const cards = [
     {
@@ -46,6 +48,8 @@ const ReviewSections = () => {
             <div
               role="button"
               tabIndex={0}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
@@ -53,17 +57,17 @@ const ReviewSections = () => {
                 }
               }}
               onClick={() => setActiveCard(activeCard === index ? null : index)}
-              className={`group relative h-full rounded-2xl py-10 sm:py-12 md:py-16 lg:py-[80px] px-5 sm:px-6 md:px-[30px] transition-all duration-300 cursor-pointer touch-manipulation ${card.rounded} ${activeCard === index ? "bg-[#7724C1]" : "bg-white"} hover:bg-[#7724C1]`}
+              className={`group relative h-full rounded-2xl py-10 sm:py-12 md:py-16 lg:py-[80px] px-5 sm:px-6 md:px-[30px] transition-all duration-300 cursor-pointer touch-manipulation ${card.rounded} ${displayedCard === index ? "bg-[#7724C1]" : "bg-white"}`}
             >
               <Image
-                className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${activeCard === index ? "opacity-100" : "opacity-0"} group-hover:opacity-100`}
+                className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
                 src="/images/hover-logo.png"
                 alt=""
                 width={1000}
                 height={1000}
               />
               <Image
-                className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${activeCard === index ? "opacity-100" : "opacity-0"} group-hover:opacity-100 ${index === 3 ? "rounded-tr-[130px]" : ""}`}
+                className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
                 src="/images/hovertext.png"
                 alt=""
                 width={1000}
@@ -73,7 +77,7 @@ const ReviewSections = () => {
                 <>
                   <div>
                     <Image
-                      className={`w-[40%] m-auto transition-all duration-300 ${activeCard === index ? "brightness-[15]" : ""} group-hover:brightness-[15]`}
+                      className={`w-[40%] m-auto transition-all duration-300 ${displayedCard === index ? "brightness-[15]" : ""}`}
                       src="/images/clutch-logo.png"
                       alt=""
                       width={1000}
@@ -82,14 +86,14 @@ const ReviewSections = () => {
                   </div>
                   <div className="flex items-center justify-center gap-2 pt-2 sm:pt-[10px]">
                     <Image
-                      className={`w-[80px] sm:w-[100px] transition-all duration-300 ${activeCard === index ? "brightness-[2]" : ""} group-hover:brightness-[2]`}
+                      className={`w-[80px] sm:w-[100px] transition-all duration-300 ${displayedCard === index ? "brightness-[2]" : ""}`}
                       src="/images/stars.png"
                       alt=""
                       width={1000}
                       height={1000}
                     />
                     <div
-                      className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] transition-all duration-300 ${activeCard === index ? "text-white" : "text-[#373636]"} group-hover:text-white`}
+                      className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] transition-all duration-300 ${displayedCard === index ? "text-white" : "text-[#373636]"}`}
                     >
                       20K reviews
                     </div>
@@ -98,12 +102,12 @@ const ReviewSections = () => {
               ) : (
                 <>
                   <div
-                    className={`text-[36px] sm:text-[40px] md:text-[46px] max-2xl:text-[36px] font-britanicaBlack leading-tight text-center transition-all duration-300 ${activeCard === index ? "text-white" : "text-black"} group-hover:text-white`}
+                    className={`text-[36px] sm:text-[40px] md:text-[46px] max-2xl:text-[36px] font-britanicaBlack leading-tight text-center transition-all duration-300 ${displayedCard === index ? "text-white" : "text-black"}`}
                   >
                     {card.value}
                   </div>
                   <div
-                    className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] text-center transition-all duration-300 ${activeCard === index ? "text-white" : "text-[#373636]"} group-hover:text-white`}
+                    className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] text-center transition-all duration-300 ${displayedCard === index ? "text-white" : "text-[#373636]"}`}
                   >
                     {card.label}
                   </div>

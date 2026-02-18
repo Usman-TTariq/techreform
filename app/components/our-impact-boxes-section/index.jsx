@@ -12,7 +12,7 @@ const cards = [
 ];
 
 const OurImpactBoxesSection = () => {
-  const [activeCard, setActiveCard] = useState(null);
+  const [activeCard, setActiveCard] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const displayedCard = hoveredIndex !== null ? hoveredIndex : activeCard;
 

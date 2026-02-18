@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import GeneralHeroSection from "../components/general-hero-section";
+import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import ProductDashboardSection from "../components/product-dashboard-section";
 import ParagraphSection from "../components/paragraph-section";
 import HRSolutionSection from "../components/hr-solution-section";
@@ -18,6 +19,7 @@ const Products = () => {
         <div>
             <Header />
             <GeneralHeroSection firstWord="Simplify" secondWord="HR" thirdWord="Empower" forthWord="Your" fifthWord="Workforce" para="Manage your people, processes, and performance from one powerful HR platform. Our HRMS helps businesses reduce manual work, improve employee experience, and make smarter HR decisions — all in one place." buttonText="Request a Demo" compact />
+            <OurImpactBoxesSection />
             <ProductDashboardSection />
             <ParagraphSection />
             <HRSolutionSection />

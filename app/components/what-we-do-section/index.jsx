@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+
+import { useRef, useEffect, useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
@@ -14,6 +15,40 @@ import PersonBook2 from "./svg/person-bbok-2";
 
 const WhatWeDoSection = () => {
   const [popupOpen, setPopupOpen] = useState(false);
+  const sectionRef = useRef(null);
+  const swiperRef = useRef(null);
+  const [swiperReady, setSwiperReady] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const swiper = swiperRef.current;
+    if (!section || !swiper || !swiperReady) return;
+
+    const handleWheel = (e) => {
+      const rect = section.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const inView = rect.top < viewportHeight * 0.8 && rect.bottom > viewportHeight * 0.2;
+      if (!inView) return;
+
+      if (e.deltaY > 0) {
+        if (!swiper.isEnd) {
+          e.preventDefault();
+          e.stopPropagation();
+          swiper.slideNext();
+        }
+      } else if (e.deltaY < 0) {
+        if (!swiper.isBeginning) {
+          e.preventDefault();
+          e.stopPropagation();
+          swiper.slidePrev();
+        }
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, [swiperReady]);
+
   const solutions = [
     {
       title: "Client-First Delivery",
@@ -37,7 +72,7 @@ const WhatWeDoSection = () => {
     },
   ];
   return (
-    <div className="container relative pb-12 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4 overflow-hidden">
+    <div ref={sectionRef} className="container relative pb-12 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4 overflow-hidden">
       <Image
         className="w-[80%] sm:w-[60%] md:w-[50%] absolute -top-[15%] sm:-top-[40%] left-0 opacity-50 sm:opacity-60"
         src="/images/whatwedobk.png"
@@ -67,6 +102,7 @@ const WhatWeDoSection = () => {
         <div className="col-span-12 lg:col-span-7 order-1 lg:order-2 min-w-0">
           <div className="overflow-hidden">
             <Swiper
+              onSwiper={(swiper) => { swiperRef.current = swiper; setSwiperReady(true); }}
               spaceBetween={16}
               slidesPerView={1.05}
               breakpoints={{

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Top USA Digital Agency for App & eCommerce",
   description: "TechReforms – Premier digital agency offering mobile app development, scalable e-commerce solutions, & staff augmentation to grow your business online.",
   robots: { index: false, follow: false },
+  verification: {
+    google: "DEnRN5PHSUcsA77Lwd1AqNPCP0nLQx3TldzPqDsJSnA",
+  },
 };
 
 const britanicaRegular = localFont({

@@ -31,7 +31,7 @@ const CaseStudiesSection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-[280px] md:max-w-none mx-auto"
-                                src={getImagePath("/images/iphone13.png")}
+                                src={getImagePath("/images/iPhone13.png")}
                                 alt=""
                                 width={1000}
                                 height={1000}

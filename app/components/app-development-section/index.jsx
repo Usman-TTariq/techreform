@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 
 const AppDevelopmentSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[120px]">
             <div className="container relative px-4 sm:px-4">
@@ -45,7 +50,7 @@ const AppDevelopmentSection = () => {
                                     Get an enterprise-grade mobile game solution that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +74,7 @@ const AppDevelopmentSection = () => {
                                     Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance mobile apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
                                 </div>
                                 <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -93,7 +98,7 @@ const AppDevelopmentSection = () => {
                                 Partner up with our results-driven Android app development company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
                                 </div>
                                 <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -135,6 +140,7 @@ const AppDevelopmentSection = () => {
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     )
 }

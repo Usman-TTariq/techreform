@@ -1,14 +1,17 @@
 "use client";
+
+import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
 import AiIcon from "./svg/ai-icon";
+import HireExpertPopup from "../hire-expert-popup";
 
 const WhatWeDoMobileSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     const solutions = [
         {
             title: "Requirement Gathering",
@@ -82,7 +85,7 @@ const WhatWeDoMobileSection = () => {
             we transform ideas into reliable technology.
           </div> */}
                     <div className="pt-6 sm:pt-[30px]">
-                        <Button text="Learn More" icon={false} />
+                        <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
                 <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
@@ -132,12 +135,13 @@ const WhatWeDoMobileSection = () => {
                                             {solution.desc}
                                         </div>
                                         <div>
-                                            <Link
-                                                href="/"
+                                            <button
+                                                type="button"
+                                                onClick={() => setPopupOpen(true)}
                                                 className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                                             >
                                                 Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                            </Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -195,12 +199,13 @@ const WhatWeDoMobileSection = () => {
                                             {solution.desc}
                                         </div>
                                         <div>
-                                            <Link
-                                                href="/"
+                                            <button
+                                                type="button"
+                                                onClick={() => setPopupOpen(true)}
                                                 className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                                             >
                                                 Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                            </Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -223,6 +228,7 @@ const WhatWeDoMobileSection = () => {
                 </div>
 
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

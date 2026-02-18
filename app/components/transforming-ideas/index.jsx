@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Button from "../common/button";
 import CapsuleLabel from "../common/capsule-label";
-import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
+import HireExpertPopup from "../hire-expert-popup";
 
 const TransformingIdeas = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className="relative overflow-hidden">
       <Image
@@ -39,7 +42,11 @@ const TransformingIdeas = () => {
                 Our digital solutions are made to offer high-end features that help you scale up and get consistent results with well-managed expert teams, user-friendly mobile apps, and intuitive e-commerce solutions.
               </div>
               <div className="pt-6 sm:pt-[30px]">
-                <Button text="Explore Our Services" icon={false} />
+                <Button
+                  text="Explore Our Services"
+                  icon={false}
+                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                />
               </div>
             </div>
           </div>
@@ -51,9 +58,9 @@ const TransformingIdeas = () => {
                 We offer optimized mobile apps with strong architecture, intuitive UX, and performance-focused engineering to boost accessibility.
               </div>
               <div className="pb-4 sm:pb-[20px]">
-                <Link href="/" className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                   Learn More <ArrowRight className="w-[16px]" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -73,9 +80,9 @@ const TransformingIdeas = () => {
                   Access eCommerce development at its best. Get intuitive platforms focused on conversions, scalability, and seamless user journeys with secure payments, inventory, and analytics systems.
                 </div>
                 <div className="pb-4 sm:pb-[20px]">
-                  <Link href="/" className="text-white hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                  <button type="button" onClick={() => setPopupOpen(true)} className="text-white hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                     Learn More <ArrowRight className="w-[16px]" />
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -98,9 +105,9 @@ const TransformingIdeas = () => {
                   Access our vetted engineers through specialized staff augmentation. Our engineers work as your remote development team to help you scale quickly while maintaining full control over app development and delivery.
                 </div>
                 <div className="pb-4 sm:pb-[20px]">
-                  <Link href="/" className="text-[#fff] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                  <button type="button" onClick={() => setPopupOpen(true)} className="text-[#fff] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                     Learn More <ArrowRight className="w-[16px]" />
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -113,9 +120,9 @@ const TransformingIdeas = () => {
                 We develop immersive games designed to drive user retention through optimized performance, smooth mechanics, scalable backends, and engaging experiences.
               </div>
               <div className="pb-4 sm:pb-[20px]">
-                <Link href="/" className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                   Learn More <ArrowRight className="w-[16px]" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -127,9 +134,9 @@ const TransformingIdeas = () => {
                 WRM simply manages workflows, work assignments, reporting, and real-time insights to improve overall productivity and operational efficiency.
               </div>
               <div className="pb-4 sm:pb-[20px]">
-                <Link href="/" className="text-[#fff] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#fff] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                   Learn More <ArrowRight className="w-[16px]" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -141,14 +148,15 @@ const TransformingIdeas = () => {
                 HRMS simplifies with a centralized system. It handles employee data, payroll, attendance, and performance management to help you automate HR processes and make better decisions.
               </div>
               <div className="pb-4 sm:pb-[20px]">
-                <Link href="/" className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#0E0E0E] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                   Learn More <ArrowRight className="w-[16px]" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
     </div>
   );
 };

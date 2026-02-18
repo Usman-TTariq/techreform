@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 
 const StaffAugmentationDevelopmentSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
             <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border">
@@ -46,7 +51,7 @@ const StaffAugmentationDevelopmentSection = () => {
                                     We provide straightforward staff augmentation services that connect businesses with skilled resources and close proficiency gaps through industry-proven expertise. Our flexible engagement models scout the perfect talent for you, without the complexities of traditional hiring.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -70,7 +75,7 @@ const StaffAugmentationDevelopmentSection = () => {
                                     Hire skilled developers, engineers, designers, QA specialists, DevOps experts, and project managers via Tech Reforms. We help you scale your tech team quickly while offering you full control over the project.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -94,7 +99,7 @@ const StaffAugmentationDevelopmentSection = () => {
                                     Need long-term support? Our IT staff augmentation in the USA provides dedicated professionals who work as an extension of your in-house team, aligned with your goals, processes, and culture.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -118,7 +123,7 @@ const StaffAugmentationDevelopmentSection = () => {
                                     From short-term projects to complex enterprise initiatives, we provide urgent offshore developers across all U.S. regions who integrate seamlessly into your workflows and deliver immediate value.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -160,6 +165,7 @@ const StaffAugmentationDevelopmentSection = () => {
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

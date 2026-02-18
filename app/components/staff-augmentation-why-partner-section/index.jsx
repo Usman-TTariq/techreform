@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
+import HireExpertPopup from "../hire-expert-popup";
 
 const whyPartner = [
     {
@@ -35,6 +36,7 @@ const StaffAugmentationWhyPartnerSection = () => {
     const sectionRef = useRef(null);
     const swiperRef = useRef(null);
     const [swiperReady, setSwiperReady] = useState(false);
+    const [popupOpen, setPopupOpen] = useState(false);
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -131,6 +133,7 @@ const StaffAugmentationWhyPartnerSection = () => {
                     </Swiper>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

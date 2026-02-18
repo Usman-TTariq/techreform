@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
+import HireExpertPopup from "../hire-expert-popup";
 
 const WHY_CHOOSE = [
     {
@@ -31,6 +32,7 @@ const GameDevelopmentWhyChooseSection = () => {
     const sectionRef = useRef(null);
     const swiperRef = useRef(null);
     const [swiperReady, setSwiperReady] = useState(false);
+    const [popupOpen, setPopupOpen] = useState(false);
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -113,12 +115,13 @@ const GameDevelopmentWhyChooseSection = () => {
                                         {item.desc}
                                     </div>
                                     <div className="shrink-0 pt-2">
-                                        <Link
-                                            href="/game-development"
+                                        <button
+                                            type="button"
+                                            onClick={() => setPopupOpen(true)}
                                             className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                                         >
                                             Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -126,6 +129,7 @@ const GameDevelopmentWhyChooseSection = () => {
                     </Swiper>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

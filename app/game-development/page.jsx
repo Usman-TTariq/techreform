@@ -18,14 +18,16 @@ const GameDevelopment = () => {
         <div>
             <Header />
             <GeneralHeroSection
-                firstWord="Game Development Services "
+                firstWord="Game Development Company "
                 secondWord="in the "
                 thirdWord="USA"
                 forthWord=""
-                fifthWord="| Custom Game Development Company"
+                fifthWord="for Mobile, PC & Console"
+                fifthWordWhite
+                sixthWord="| Custom Game Development Company"
                 para="Looking for professional game development services in the USA?"
-                para2="Tech Reforms is a leading game development company that aims to offer premium end-to-end solutions across mobile, PC, and console platforms. As a trusted custom game development firm, we help businesses design, develop, and launch high-performance games customized to your target audience."
-                para3="Are you looking to hire game developers in the USA? We can help! Our experienced team specializes in 2D and 3D mobile games, high-resolution PC games, and advanced console gaming solutions. We focus on building scalable and revenue-driven gaming experiences that players love."
+                para2="Tech Reforms is a trusted custom game development company delivering end-to-end solutions for mobile, PC, and console platforms. We design and develop high-performance, scalable games tailored to your target audience and business goals."
+                para3="Planning to hire game developers in the USA? Our expert team specializes in 2D and 3D mobile game development, immersive PC gaming experiences, and advanced console game solutions. From concept to launch, we build engaging, revenue-driven games that players love and businesses grow with."
                 buttonText="Hire Expert Game Developers"
             />
             <OurImpactBoxesSection />

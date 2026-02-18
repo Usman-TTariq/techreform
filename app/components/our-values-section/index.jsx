@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Button from "../common/button";
 import CapsuleLabel from "../common/capsule-label";
+import HireExpertPopup from "../hire-expert-popup";
 
 const OurValuesSection = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
   const values = [
     {
       title: "People-Driven Marketing",
@@ -58,13 +63,14 @@ const OurValuesSection = () => {
                   {value?.desc}
                 </div>
                 <div className="pt-5 sm:pt-6 md:pt-[32px]">
-                  <Button text="Learn More" icon={false} />
+                  <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
     </div>
   );
 };

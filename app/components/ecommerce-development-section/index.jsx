@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 
 const EcommerceDevelopmentSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
             <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border">
@@ -49,7 +54,7 @@ const EcommerceDevelopmentSection = () => {
                                     We offer high-yielding ecommerce solutions that are fast, secure, and user-friendly. All features are customized to your business requirements and logistics.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -63,7 +68,7 @@ const EcommerceDevelopmentSection = () => {
                                 <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Shopify and WooCommerce</div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">We set up professional Shopify and WooCommerce stores that offer complete design, product uploads, and payment integration.</div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -77,7 +82,7 @@ const EcommerceDevelopmentSection = () => {
                                 <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Mobile Responsible Design</div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">All e-commerce websites are highly responsible for the phone to deliver high conversion rates, whether on desktop or mobile.</div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} />
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>
@@ -101,6 +106,7 @@ const EcommerceDevelopmentSection = () => {
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

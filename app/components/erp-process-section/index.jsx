@@ -11,7 +11,26 @@ import Image from "next/image";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
 
-const WhatWeDoStaffAugmentationSection = () => {
+const STEPS = [
+    {
+        title: "Requirement Analysis",
+        desc: "We begin by understanding how your business operates. We analyse your workflows, challenges, and existing systems. Our goal is to identify gaps and define the right features that fit your industry and company culture.",
+    },
+    {
+        title: "Solution Architecture and Planning",
+        desc: "Next, we design your custom enterprise software development strategy based on scalability, integrations, and long-term growth. Our team has hands-on expertise in SAP development services, Oracle ERP, Microsoft Dynamics ERP, Odoo ERP, and NetSuite ERP, ensuring the right platform for your needs.",
+    },
+    {
+        title: "Development and Integration",
+        desc: "Once everything is approved, we move into development. Our team builds and connects your system using our flexible ERP integration services model. This includes smooth ERP integration with CRM and accounting software, ensuring all your tools work together seamlessly.",
+    },
+    {
+        title: "Post-Deployment Support",
+        desc: "After launch, we stay with you. Through continued ERP consulting services, we optimize performance, improve efficiency, and help your system grow alongside your business.",
+    },
+];
+
+const ErpProcessSection = () => {
     const sectionRef = useRef(null);
     const swiperRef = useRef(null);
     const [swiperReady, setSwiperReady] = useState(false);
@@ -25,9 +44,7 @@ const WhatWeDoStaffAugmentationSection = () => {
         const handleWheel = (e) => {
             const rect = section.getBoundingClientRect();
             const viewportHeight = window.innerHeight;
-            // Section is "active" when a good part of it is visible (e.g. top in upper 80% of viewport)
             const inView = rect.top < viewportHeight * 0.8 && rect.bottom > viewportHeight * 0.2;
-
             if (!inView) return;
 
             if (e.deltaY > 0) {
@@ -49,29 +66,6 @@ const WhatWeDoStaffAugmentationSection = () => {
         return () => window.removeEventListener("wheel", handleWheel);
     }, [swiperReady]);
 
-    const solutions = [
-        {
-            title: "Requirement Analysis",
-            desc: "We start by getting to know your business, your technical requirements, and your team structure. Our goal is to identify the gaps and the expertise you need to find the right fit for your project and company culture.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "Finding the Right Talent",
-            desc: "We carefully source and screen professionals based on their technical skills, industry experience, and communication abilities. We offer both certified software engineers and niche specialists, so you can hire without worry.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "Quick Onboarding",
-            desc: "Once you select your preferred resources, we handle the entire onboarding process quickly and without complication. Our skilled team members integrate seamlessly into your existing workflows, tools, and communication channels through our flexible software team extension model.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "Facilitate Scaling",
-            desc: "Our partnership doesn't end after onboarding. We provide ongoing support to further optimize performance, productivity, and long-term growth. As your business evolves, we help you scale your augmented team up or down with ease.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-    ];
-
     return (
         <div ref={sectionRef} className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
             <Image
@@ -84,12 +78,12 @@ const WhatWeDoStaffAugmentationSection = () => {
             <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
                 <div className="col-span-12 md:col-span-5 min-w-0 order-1">
                     <div className="pb-6 sm:pb-[40px]">
-                        <CapsuleLabel firstWord="Our" secondWord="Staff Augmentation" thirdWord="Process" />
+                        <CapsuleLabel firstWord="OUR" secondWord="ERP DEVELOPMENT" thirdWord="PROCESS" />
                     </div>
                     <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words">
-                        <span className="text-white">Optimized Process For</span>
+                        <span className="text-white">Optimized Process for</span>
                         <br />
-                        <span className="text-[#F74B1C]">High-Performance Team Expansion</span>
+                        <span className="text-[#F74B1C]">High-Performance Enterprise Solutions</span>
                     </div>
                     <div className="pt-5 sm:pt-[30px]">
                         <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
@@ -110,7 +104,7 @@ const WhatWeDoStaffAugmentationSection = () => {
                         }}
                         className="!overflow-visible"
                     >
-                        {solutions.map((solution, index) => (
+                        {STEPS.map((step, index) => (
                             <SwiperSlide key={index} className="!h-auto">
                                 <div className="bg-white border-2 w-[300px] sm:w-[320px] md:w-[340px] h-[420px] sm:h-[440px] md:h-[460px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col shrink-0 min-w-0 overflow-hidden">
                                     <div className="pb-3 sm:pb-[20px] shrink-0">
@@ -119,10 +113,10 @@ const WhatWeDoStaffAugmentationSection = () => {
                                         </div>
                                     </div>
                                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words shrink-0 min-w-0">
-                                        {solution.title}
+                                        {step.title}
                                     </div>
                                     <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-h-0 min-w-0 overflow-y-auto overflow-x-hidden pb-4 sm:pb-[30px] break-words">
-                                        {solution.desc}
+                                        {step.desc}
                                     </div>
                                     <div className="shrink-0 pt-2">
                                         <button
@@ -144,4 +138,4 @@ const WhatWeDoStaffAugmentationSection = () => {
     );
 };
 
-export default WhatWeDoStaffAugmentationSection;
+export default ErpProcessSection;

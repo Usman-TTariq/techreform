@@ -102,7 +102,7 @@ const MEGA_MENU = {
     },
     products: {
         sidebar: [{ label: "Products" }],
-        sections: [{ heading: "Products", items: [{ label: "Our Products", href: "/products" }] }],
+        sections: [{ heading: "Products", items: [{ label: "Our Products", href: "/products" }, { label: "ERP", href: "/erp" }] }],
     },
     portfolio: {
         sidebar: [{ label: "Work" }],

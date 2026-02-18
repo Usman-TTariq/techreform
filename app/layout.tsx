@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import AutoPopupOnLoad from "./components/auto-popup-on-load";
 
 export const metadata: Metadata = {
   title: "Top USA Digital Agency for App & eCommerce",
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html lang="en" className={`${britanicaRegular.variable} ${britanicaExtraBold.variable} ${britanicaBlack.variable}`}>
       <body className="antialiased">
         {children}
+        <AutoPopupOnLoad />
       </body>
     </html>
   );

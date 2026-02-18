@@ -1,10 +1,11 @@
 "use client";
+import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 import CostIcon from "./svg/cost-icon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
 import PersonBook from "./svg/person-book";
@@ -12,6 +13,7 @@ import Square from "./svg/square";
 import PersonBook2 from "./svg/person-bbok-2";
 
 const WhatWeDoSection = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
   const solutions = [
     {
       title: "Client-First Delivery",
@@ -59,7 +61,7 @@ const WhatWeDoSection = () => {
             Our digital agency develops and scales mobile and e-commerce solutions with the ultimate blend of expert engineers, proven processes, and flexible teams aligned to your business goals.
           </div>
           <div className="pt-6 sm:pt-[30px]">
-            <Button text="Learn More" icon={false} />
+            <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
           </div>
         </div>
         <div className="col-span-12 lg:col-span-7 order-1 lg:order-2 min-w-0">
@@ -91,12 +93,13 @@ const WhatWeDoSection = () => {
                       {solution.desc}
                     </div>
                     <div>
-                      <Link
-                        href="/"
+                      <button
+                        type="button"
+                        onClick={() => setPopupOpen(true)}
                         className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                       >
                         Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -105,6 +108,7 @@ const WhatWeDoSection = () => {
           </div>
         </div>
       </div>
+      <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
     </div>
   );
 };

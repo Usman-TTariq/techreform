@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, para, para2, para3, buttonText, compact }) => {
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact }) => {
+  const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className={`relative w-full min-w-0 overflow-hidden ${compact ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[70vh] md:min-h-[80vh]" : "min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] pb-8 sm:pb-12 md:pb-0"}`}>
       <Image
@@ -27,7 +32,13 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
               <span className="text-white">{thirdWord} </span>
               <span className="text-white">{forthWord}</span>
               <br />
-              <span className="text-[#F74B1C]">{fifthWord}</span>
+              <span className={fifthWordWhite ? "text-white" : "text-[#F74B1C]"}>{fifthWord}</span>
+              {sixthWord != null && sixthWord !== "" && (
+                <>
+                  <br />
+                  <span className="text-[#F74B1C]">{sixthWord}</span>
+                </>
+              )}
             </div>
           </div>
           <div className="col-span-12 md:col-span-8 md:col-start-3 text-center min-w-0 flex flex-col items-center">
@@ -38,12 +49,13 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
             </div>
             <div className="pt-4 sm:pt-[30px] w-full flex justify-center items-center">
               <div className="w-full max-w-[320px] sm:max-w-none mx-auto flex justify-center">
-                <Button text={buttonText} icon={false} />
+                <Button text={buttonText} icon={false} onClick={() => buttonText && setPopupOpen(true)} />
               </div>
             </div>
           </div>
         </div>
       </div>
+      {buttonText && <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />}
     </div>
   );
 };

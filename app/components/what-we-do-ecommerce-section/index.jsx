@@ -1,15 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
+import HireExpertPopup from "../hire-expert-popup";
 
 const WhatWeDoEcommerceSection = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
     const solutions = [
         {
             title: "Requirement Analysis",
@@ -73,7 +75,7 @@ const WhatWeDoEcommerceSection = () => {
                         <span className="text-white">With Advanced Features</span>
                     </div>
                     <div className="pt-5 sm:pt-[30px]">
-                        <Button text="Learn More" icon={false} />
+                        <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2">
@@ -101,9 +103,9 @@ const WhatWeDoEcommerceSection = () => {
                                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">{solution.title}</div>
                                     <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
                                     <div>
-                                        <Link href="/ecommerce" className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                        <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                                             Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -138,9 +140,9 @@ const WhatWeDoEcommerceSection = () => {
                                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">{solution.title}</div>
                                     <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
                                     <div>
-                                        <Link href="/ecommerce" className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                        <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
                                             Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -159,6 +161,7 @@ const WhatWeDoEcommerceSection = () => {
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

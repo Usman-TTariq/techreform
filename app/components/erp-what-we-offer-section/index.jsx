@@ -8,24 +8,24 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const CARDS = [
     {
-        title: "Custom Game Solutions",
-        desc: "We offer end-to-end custom game development tailored to your concept, audience, and monetization strategy. As a trusted game development agency, we transform ideas into interactive gaming experiences using the latest technologies and engines.",
+        title: "Custom ERP Development",
+        desc: "We design and build custom ERP solutions that integrate your core business processes into a single, unified system. Instead of forcing your operations into rigid software with unified patterns, we create more flexible ERP system development solutions that adapt to how you work. The result? Better efficiency, clearer insights, and smoother workflows, without the limitations of off-the-shelf tools.",
     },
     {
-        title: "Mobile Game Development",
-        desc: "Our team develops exciting iOS and Android games that are fun to play and built to perform smoothly. We focus on creating engaging experiences while also helping you generate revenue through smart monetization strategies.",
+        title: "ERP Implementation Services",
+        desc: "Looking to launch or upgrade your ERP system? You can hire ERP developers, consultants, integration specialists, QA professionals, and project managers through Tech Reforms. We make deploying enterprise resource planning software simple and structured, giving you full visibility and control over the implementation process and ERP system customization.",
     },
     {
-        title: "PC and Console Game Development",
-        desc: "As a reliable PC Game Development Company, we build high-quality PC and console games designed to deliver rich visuals and immersive gameplay. From detailed environments to smooth mechanics, we focus on building gaming experiences that feel engaging, polished, and ready for modern platforms.",
+        title: "Dedicated Development Teams",
+        desc: "Need long-term support? Our ERP consulting services provide dedicated experts who work closely with your internal team. They align with your goals, systems, and workflows to deliver scalable ERP solutions for growing businesses that evolve as your company expands.",
     },
     {
-        title: "Cross-Platform Game Solutions",
-        desc: "We provide cross-platform game development to make sure your game runs seamlessly across devices and operating systems, and offers maximum reach and player engagement.",
+        title: "Cloud ERP Development and Migration",
+        desc: "Whether you're upgrading legacy systems or moving to the cloud, we handle everything from ERP migration services to advanced cloud-based ERP solutions. Our team supports modern SaaS ERP development to help you build flexible, accessible systems that keep your business connected anywhere, anytime.",
     },
 ];
 
-const GameDevelopmentWhatWeOfferSection = () => {
+const ErpWhatWeOfferSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
@@ -36,8 +36,8 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <CapsuleLabel firstWord="WHAT" secondWord="WE" thirdWord="OFFER" />
                         </div>
                         <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[52px] font-black break-words">
-                            <span className="text-white">Secure and Innovative </span>
-                            <span className="text-[#F74B1C]">Game Development Services</span>
+                            <span className="text-white">Comprehensive and Scalable </span>
+                            <span className="text-[#F74B1C]">ERP Solutions Providers</span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user1.png"
-                                alt="Game development"
+                                alt="ERP"
                                 width={1000}
                                 height={1000}
                             />
@@ -86,7 +86,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user2.png"
-                                alt="Game development"
+                                alt="ERP"
                                 width={1000}
                                 height={1000}
                             />
@@ -97,7 +97,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user3.png"
-                                alt="Game development"
+                                alt="ERP"
                                 width={1000}
                                 height={1000}
                             />
@@ -110,4 +110,4 @@ const GameDevelopmentWhatWeOfferSection = () => {
     );
 };
 
-export default GameDevelopmentWhatWeOfferSection;
+export default ErpWhatWeOfferSection;

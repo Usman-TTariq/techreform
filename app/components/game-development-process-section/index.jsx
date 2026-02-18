@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
+import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
     {
@@ -33,6 +34,7 @@ const GameDevelopmentProcessSection = () => {
     const sectionRef = useRef(null);
     const swiperRef = useRef(null);
     const [swiperReady, setSwiperReady] = useState(false);
+    const [popupOpen, setPopupOpen] = useState(false);
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -84,7 +86,7 @@ const GameDevelopmentProcessSection = () => {
                         <span className="text-[#F74B1C]">High-Quality Game Creation</span>
                     </div>
                     <div className="pt-5 sm:pt-[30px]">
-                        <Button text="Learn More" icon={false} />
+                        <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2">
@@ -117,12 +119,13 @@ const GameDevelopmentProcessSection = () => {
                                         {step.desc}
                                     </div>
                                     <div className="shrink-0 pt-2">
-                                        <Link
-                                            href="/game-development"
+                                        <button
+                                            type="button"
+                                            onClick={() => setPopupOpen(true)}
                                             className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
                                         >
                                             Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -130,6 +133,7 @@ const GameDevelopmentProcessSection = () => {
                     </Swiper>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

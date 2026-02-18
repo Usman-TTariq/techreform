@@ -3,8 +3,8 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 export const metadata: Metadata = {
-  title: "TechReforms - Digital Agency",
-  description: "TechReforms - Elevate Your Digital Success With Tech Reforms",
+  title: "Top USA Digital Agency for App & eCommerce",
+  description: "TechReforms – Premier digital agency offering mobile app development, scalable e-commerce solutions, & staff augmentation to grow your business online.",
   robots: { index: false, follow: false },
 };
 

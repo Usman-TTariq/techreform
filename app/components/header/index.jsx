@@ -97,12 +97,30 @@ const MEGA_MENU = {
         ],
     },
     staff: {
-        sidebar: [{ label: "Services" }],
-        sections: [{ heading: "Services", items: [{ label: "Staff Augmentation", href: "/staff-augmentation" }] }],
+        sidebar: [{ label: "Our Services" }],
+        sections: [
+            {
+                heading: "Our Services",
+                items: [
+                    { label: "Staff Augmentation", href: "/staff-augmentation" },
+                    { label: "Top App Developers", href: null },
+                    { label: "Hire Flutter Developer", href: null },
+                    { label: "Hire Java Developer", href: null },
+                    { label: "Hire Magento Developer", href: null },
+                    { label: "Hire Python Developer", href: null },
+                    { label: "Hire Laravel Developer", href: null },
+                    { label: "Hire Node Js Developer", href: null },
+                    { label: "Hire Spring Boot Developer", href: null },
+                    { label: "Power BI Developer", href: null },
+                    { label: "Golang Developer", href: null },
+                    { label: "LLM Developer", href: null },
+                ],
+            },
+        ],
     },
     products: {
-        sidebar: [{ label: "Products" }],
-        sections: [{ heading: "Products", items: [{ label: "Our Products", href: "/products" }, { label: "ERP", href: "/erp" }] }],
+        sidebar: [{ label: "Our Products" }],
+        sections: [{ heading: "Our Products", items: [{ label: "ERP", href: "/erp" }] }],
     },
     portfolio: {
         sidebar: [{ label: "Work" }],
@@ -211,12 +229,18 @@ const Header = () => {
                                             <ul className="flex flex-col gap-1.5">
                                                 {items.map(({ label, href }) => (
                                                     <li key={label}>
-                                                        <Link
-                                                            href={href}
-                                                            className="text-white/80 font-britanicaRegular text-[14px] hover:text-[#f74b1c] transition-colors"
-                                                        >
-                                                            {label}
-                                                        </Link>
+                                                        {href ? (
+                                                            <Link
+                                                                href={href}
+                                                                className="text-white/80 font-britanicaRegular text-[14px] hover:text-[#f74b1c] transition-colors"
+                                                            >
+                                                                {label}
+                                                            </Link>
+                                                        ) : (
+                                                            <span className="text-white/60 font-britanicaRegular text-[14px] cursor-not-allowed">
+                                                                {label}
+                                                            </span>
+                                                        )}
                                                     </li>
                                                 ))}
                                             </ul>
@@ -348,13 +372,19 @@ const Header = () => {
                                                                 <ul className="flex flex-col gap-0.5">
                                                                     {items.map(({ label: subLabel, href: subHref }) => (
                                                                         <li key={subLabel}>
-                                                                            <Link
-                                                                                href={subHref}
-                                                                                onClick={() => setMobileMenuOpen(false)}
-                                                                                className="block py-2 px-2 text-white/90 font-britanicaRegular text-[14px] hover:text-[#F74B1C] rounded-md transition-colors"
-                                                                            >
-                                                                                {subLabel}
-                                                                            </Link>
+                                                                            {subHref ? (
+                                                                                <Link
+                                                                                    href={subHref}
+                                                                                    onClick={() => setMobileMenuOpen(false)}
+                                                                                    className="block py-2 px-2 text-white/90 font-britanicaRegular text-[14px] hover:text-[#F74B1C] rounded-md transition-colors"
+                                                                                >
+                                                                                    {subLabel}
+                                                                                </Link>
+                                                                            ) : (
+                                                                                <span className="block py-2 px-2 text-white/60 font-britanicaRegular text-[14px] cursor-not-allowed">
+                                                                                    {subLabel}
+                                                                                </span>
+                                                                            )}
                                                                         </li>
                                                                     ))}
                                                                 </ul>

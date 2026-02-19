@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +12,52 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const WhatWeDoMobileSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
+    const row1Ref = useRef(null);
+    const row2Ref = useRef(null);
+    const swiper1Ref = useRef(null);
+    const swiper2Ref = useRef(null);
+    const [swiper1Ready, setSwiper1Ready] = useState(false);
+    const [swiper2Ready, setSwiper2Ready] = useState(false);
+
+    useEffect(() => {
+        const row1 = row1Ref.current;
+        const row2 = row2Ref.current;
+        const swiper1 = swiper1Ref.current;
+        const swiper2 = swiper2Ref.current;
+        if (!row1 || !row2 || !swiper1 || !swiper2 || !swiper1Ready || !swiper2Ready) return;
+
+        const handleWheel = (e) => {
+            const rect1 = row1.getBoundingClientRect();
+            const rect2 = row2.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+            const inView1 = rect1.top < viewportHeight * 0.8 && rect1.bottom > viewportHeight * 0.2;
+            const inView2 = rect2.top < viewportHeight * 0.8 && rect2.bottom > viewportHeight * 0.2;
+            if (!inView1 && !inView2) return;
+
+            const vpCenter = viewportHeight / 2;
+            const center1 = rect1.top + rect1.height / 2;
+            const center2 = rect2.top + rect2.height / 2;
+            const useFirst = !inView2 || (inView1 && Math.abs(center1 - vpCenter) <= Math.abs(center2 - vpCenter));
+            const swiper = useFirst ? swiper1 : swiper2;
+
+            if (e.deltaY > 0) {
+                if (!swiper.isEnd) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slideNext();
+                }
+            } else if (e.deltaY < 0) {
+                if (!swiper.isBeginning) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slidePrev();
+                }
+            }
+        };
+
+        window.addEventListener("wheel", handleWheel, { passive: false });
+        return () => window.removeEventListener("wheel", handleWheel);
+    }, [swiper1Ready, swiper2Ready]);
     const solutions = [
         {
             title: "Requirement Gathering",
@@ -88,9 +134,10 @@ const WhatWeDoMobileSection = () => {
                         <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
-                <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
-                    <div>
+                <div ref={row1Ref} className="col-span-12 lg:col-span-7 order-1 lg:order-2 min-w-0">
+                    <div className="overflow-hidden">
                         <Swiper
+                            onSwiper={(swiper) => { swiper1Ref.current = swiper; setSwiper1Ready(true); }}
                             spaceBetween={16}
                             slidesPerView={1.05}
                             breakpoints={{
@@ -151,12 +198,13 @@ const WhatWeDoMobileSection = () => {
                 </div>
             </div>
             <div className="grid grid-cols-12 gap-5 pt-10 sm:pt-16 md:pt-[70px]">
-                <div className="col-span-12 lg:col-span-7">
-                    <div>
+                <div ref={row2Ref} className="col-span-12 lg:col-span-7 min-w-0">
+                    <div className="overflow-hidden">
                         <Swiper
+                            onSwiper={(swiper) => { swiper2Ref.current = swiper; setSwiper2Ready(true); }}
                             spaceBetween={16}
                             slidesPerView={1.05}
-                            initialSlide={solutions.length - 1}
+                            initialSlide={solutionss.length - 1}
                             breakpoints={{
                                 480: {
                                     slidesPerView: 1.2,

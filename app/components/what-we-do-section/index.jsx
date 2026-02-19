@@ -103,20 +103,20 @@ const WhatWeDoSection = () => {
           <div className="overflow-hidden">
             <Swiper
               onSwiper={(swiper) => { swiperRef.current = swiper; setSwiperReady(true); }}
-              spaceBetween={16}
+              spaceBetween={12}
               slidesPerView={1.05}
               breakpoints={{
-                480: { slidesPerView: 1.2, spaceBetween: 14 },
-                640: { slidesPerView: 1.3, spaceBetween: 14 },
-                768: { slidesPerView: 1.8, spaceBetween: 12 },
+                480: { slidesPerView: 1.2, spaceBetween: 12 },
+                640: { slidesPerView: 1.2, spaceBetween: 12 },
+                768: { slidesPerView: 1.8, spaceBetween: 10 },
                 1024: { slidesPerView: 1.8, spaceBetween: 10 },
                 1280: { slidesPerView: 2.1, spaceBetween: 10 },
                 1530: { slidesPerView: 2.1, spaceBetween: 10 },
               }}
             >
               {solutions.map((solution, index) => (
-                <SwiperSlide key={index} className="!h-full">
-                  <div className="bg-white !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                <SwiperSlide key={index} className="!h-auto">
+                  <div className="bg-white !h-full h-[420px] sm:h-[460px] md:h-[500px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
                     <div className="pb-3 sm:pb-[20px]">
                       <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                         {solution.icon}

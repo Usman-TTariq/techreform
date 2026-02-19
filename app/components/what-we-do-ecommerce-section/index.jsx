@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +12,52 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const WhatWeDoEcommerceSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
+    const row1Ref = useRef(null);
+    const row2Ref = useRef(null);
+    const swiper1Ref = useRef(null);
+    const swiper2Ref = useRef(null);
+    const [swiper1Ready, setSwiper1Ready] = useState(false);
+    const [swiper2Ready, setSwiper2Ready] = useState(false);
+
+    useEffect(() => {
+        const row1 = row1Ref.current;
+        const row2 = row2Ref.current;
+        const swiper1 = swiper1Ref.current;
+        const swiper2 = swiper2Ref.current;
+        if (!row1 || !row2 || !swiper1 || !swiper2 || !swiper1Ready || !swiper2Ready) return;
+
+        const handleWheel = (e) => {
+            const rect1 = row1.getBoundingClientRect();
+            const rect2 = row2.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+            const inView1 = rect1.top < viewportHeight * 0.8 && rect1.bottom > viewportHeight * 0.2;
+            const inView2 = rect2.top < viewportHeight * 0.8 && rect2.bottom > viewportHeight * 0.2;
+            if (!inView1 && !inView2) return;
+
+            const vpCenter = viewportHeight / 2;
+            const center1 = rect1.top + rect1.height / 2;
+            const center2 = rect2.top + rect2.height / 2;
+            const useFirst = !inView2 || (inView1 && Math.abs(center1 - vpCenter) <= Math.abs(center2 - vpCenter));
+            const swiper = useFirst ? swiper1 : swiper2;
+
+            if (e.deltaY > 0) {
+                if (!swiper.isEnd) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slideNext();
+                }
+            } else if (e.deltaY < 0) {
+                if (!swiper.isBeginning) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slidePrev();
+                }
+            }
+        };
+
+        window.addEventListener("wheel", handleWheel, { passive: false });
+        return () => window.removeEventListener("wheel", handleWheel);
+    }, [swiper1Ready, swiper2Ready]);
     const solutions = [
         {
             title: "Requirement Analysis",
@@ -78,76 +124,82 @@ const WhatWeDoEcommerceSection = () => {
                         <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
-                <div className="col-span-12 md:col-span-7 min-w-0 order-2">
-                    <Swiper
-                        spaceBetween={12}
-                        slidesPerView={1}
-                        breakpoints={{
-                            480: { slidesPerView: 1.2, spaceBetween: 12 },
-                            640: { slidesPerView: 1.2, spaceBetween: 12 },
-                            768: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1024: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1280: { slidesPerView: 2.1, spaceBetween: 10 },
-                            1530: { slidesPerView: 2.1, spaceBetween: 10 },
-                        }}
-                        className="!overflow-visible"
-                    >
-                        {solutions.map((solution, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-white border-2 h-full min-h-0 md:!min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
-                                    <div className="pb-3 sm:pb-[20px]">
-                                        <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
-                                            <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                <div ref={row1Ref} className="col-span-12 md:col-span-7 min-w-0 order-2">
+                    <div className="overflow-hidden">
+                        <Swiper
+                            onSwiper={(swiper) => { swiper1Ref.current = swiper; setSwiper1Ready(true); }}
+                            spaceBetween={12}
+                            slidesPerView={1.05}
+                            breakpoints={{
+                                480: { slidesPerView: 1.2, spaceBetween: 12 },
+                                640: { slidesPerView: 1.2, spaceBetween: 12 },
+                                768: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1024: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1280: { slidesPerView: 2.1, spaceBetween: 12 },
+                                1530: { slidesPerView: 2.1, spaceBetween: 12 },
+                                1536: { slidesPerView: 2.1, spaceBetween: 12 },
+                            }}
+                        >
+                            {solutions.map((solution, index) => (
+                                <SwiperSlide key={index} className="!h-full">
+                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                        <div className="pb-3 sm:pb-[20px]">
+                                            <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
+                                                <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                                            </div>
+                                        </div>
+                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight">{solution.title}</div>
+                                        <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
+                                        <div>
+                                            <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                                            </button>
                                         </div>
                                     </div>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">{solution.title}</div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
-                                    <div>
-                                        <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
-                                            Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-12 gap-6 sm:gap-5 pt-8 sm:pt-12 md:pt-[70px] relative z-10">
-                <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">
-                    <Swiper
-                        spaceBetween={12}
-                        slidesPerView={1}
-                        initialSlide={solutions.length - 1}
-                        breakpoints={{
-                            480: { slidesPerView: 1.2, spaceBetween: 12 },
-                            640: { slidesPerView: 1.2, spaceBetween: 12 },
-                            768: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1024: { slidesPerView: 1.8, spaceBetween: 10 },
-                            1280: { slidesPerView: 2.1, spaceBetween: 10 },
-                            1530: { slidesPerView: 2.1, spaceBetween: 10 },
-                        }}
-                        className="!overflow-visible"
-                    >
-                        {whyPartner.map((solution, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-white h-full min-h-0 md:!min-h-[420px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
-                                    <div className="pb-3 sm:pb-[20px]">
-                                        <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
-                                            <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                <div ref={row2Ref} className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">
+                    <div className="overflow-hidden">
+                        <Swiper
+                            onSwiper={(swiper) => { swiper2Ref.current = swiper; setSwiper2Ready(true); }}
+                            spaceBetween={12}
+                            slidesPerView={1.05}
+                            initialSlide={whyPartner.length - 1}
+                            breakpoints={{
+                                480: { slidesPerView: 1.2, spaceBetween: 12 },
+                                640: { slidesPerView: 1.2, spaceBetween: 12 },
+                                768: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1024: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1280: { slidesPerView: 2.1, spaceBetween: 12 },
+                                1530: { slidesPerView: 2.1, spaceBetween: 12 },
+                                1536: { slidesPerView: 2.1, spaceBetween: 12 },
+                            }}
+                        >
+                            {whyPartner.map((solution, index) => (
+                                <SwiperSlide key={index} className="!h-full">
+                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                        <div className="pb-3 sm:pb-[20px]">
+                                            <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
+                                                <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                                            </div>
+                                        </div>
+                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight">{solution.title}</div>
+                                        <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
+                                        <div>
+                                            <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                                            </button>
                                         </div>
                                     </div>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words">{solution.title}</div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
-                                    <div>
-                                        <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
-                                            Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
                 <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
                     <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words">

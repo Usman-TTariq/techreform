@@ -17,7 +17,7 @@ const CaseStudiesErpSection = () => {
                         <CapsuleLabel firstWord="CASE" secondWord="STUDIES" />
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-6 sm:gap-8 md:gap-12 pt-8 sm:pt-12 md:pt-[70px]">
+                <div className="grid grid-cols-12 gap-0 sm:gap-8 md:gap-12 pt-8 sm:pt-12 md:pt-[70px]">
                     <div className="col-span-12 md:col-span-6 min-w-0 order-1">
                         <div className="h-full flex items-center justify-center">
                             <Image

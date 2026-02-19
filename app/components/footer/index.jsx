@@ -3,7 +3,7 @@ import Link from "next/link";
 import FooterLogo from "./svg/footer-logo";
 
 const FOOTER_LINKS = [
-    { label: "Solutions", href: "/mobile-app-development" },
+    { label: "Mobile", href: "/mobile-app-development" },
     { label: "Company", href: "/about" },
     { label: "Portfolio", href: "#" },
     { label: "Blog", href: "#" },
@@ -28,9 +28,12 @@ const Footer = () => {
                 height={1000}
             />
             <div className="container relative z-10 px-4 w-full max-w-[100vw] box-border">
+                <div className="w-[250px] max-sm:hidden max-sm:w-[20px] h-[250px] max-sm:h-[20px] right-[5%] max-2xl:w-[200px] max-2xl:h-[200px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute top-[40%] max-sm:top-[70%] max-2xl:top-[45%] -translate-y-1/2 pointer-events-none">
+
+                </div>
                 <Image
-                    className="w-[20%] sm:w-[26%] md:w-[24%] absolute top-[50%] -translate-y-1/2 right-2 sm:right-0 opacity-70 sm:opacity-80 md:opacity-100 pointer-events-none"
-                    src="/images/footercircle.png"
+                    className="footer-dot-spin w-[20%] sm:w-[26%] md:w-[20%] absolute top-[70%] -translate-y-1/2 right-2 sm:right-0 opacity-70 sm:opacity-80 md:opacity-100 pointer-events-none"
+                    src="/images/footerdot.png"
                     alt=""
                     width={1000}
                     height={1000}
@@ -64,7 +67,7 @@ const Footer = () => {
                     info@techreforms.com
                 </a>
                     <div className="w-full max-w-[100%] min-w-0 pt-1">
-                        <FooterLogo className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] h-auto" />
+                        <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[400px] lg:max-w-[450px] h-auto" />
                     </div>
                 </div>
                 <div className="pt-8 sm:pt-[40px]">

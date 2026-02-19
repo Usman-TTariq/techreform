@@ -92,7 +92,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                 </button>
 
                 {/* Top: phone image (iPhone 13 Pro Double Front) */}
-                <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
+                {/* <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
                     <Image
                         src={encodeURI(getImagePath("/images/iPhone 13 Pro - Double Front - Dark.png"))}
                         alt=""
@@ -101,10 +101,10 @@ const HireExpertPopup = ({ open, onClose }) => {
                         className="w-auto h-[110px] sm:h-[140px] object-contain drop-shadow-lg"
                         unoptimized
                     />
-                </div>
+                </div> */}
 
                 {/* Scrollable form area */}
-                <div className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden">
+                <div className="hire-expert-popup-scroll flex-1 min-h-0 overflow-y-auto overflow-x-hidden">
                     <div className="p-4 sm:p-6 pt-2 min-w-0">
                         <h3 className="font-britanicaBlack text-white text-[20px] sm:text-[24px] leading-tight font-black mb-1">
                             Hire Expert App Developers
@@ -122,7 +122,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                 <button
                                     type="button"
                                     onClick={resetAndClose}
-                                    className="rounded-full bg-[#F74B1C] text-white font-britanicaExtraBold text-[15px] py-3 px-6 hover:bg-[#e64418] transition-colors"
+                                    className="rounded-full cursor-pointer bg-[#F74B1C] text-white font-britanicaExtraBold text-[15px] py-3 px-6 hover:bg-[#e64418] transition-colors"
                                 >
                                     Close
                                 </button>
@@ -197,14 +197,14 @@ const HireExpertPopup = ({ open, onClose }) => {
                                     <button
                                         type="button"
                                         onClick={resetAndClose}
-                                        className="flex-1 py-3.5 px-5 rounded-full border border-white/25 text-white font-britanicaRegular text-[15px] hover:bg-white/10 transition-colors"
+                                        className="flex-1 cursor-pointer py-3.5 px-5 rounded-full border border-white/25 text-white font-britanicaRegular text-[15px] hover:bg-white/10 transition-colors"
                                     >
                                         Cancel
                                     </button>
                                     <button
                                         type="submit"
                                         disabled={isLoading}
-                                        className="flex-1 py-3.5 px-5 rounded-full bg-[#F74B1C] text-white font-britanicaExtraBold text-[15px] hover:bg-[#e64418] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                                        className="flex-1 py-3.5 cursor-pointer px-5 rounded-full bg-[#F74B1C] text-white font-britanicaExtraBold text-[15px] hover:bg-[#e64418] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                                     >
                                         {isLoading ? "Sending..." : "Submit & Get a Callback"}
                                     </button>

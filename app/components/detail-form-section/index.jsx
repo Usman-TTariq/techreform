@@ -104,36 +104,39 @@ const DetailFormSection = ({ formIntro = undefined }) => {
               <div className="pt-6 sm:pt-[30px]">
                 <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-10 sm:pl-[30px] pb-5 sm:pb-[30px] min-w-0">
                   <Image
-                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step1.png"
                     alt=""
                     width={35}
                     height={35}
                   />
+                  <div className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10 rounded-full bg-[radial-gradient(circle,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_86%)]"></div>
                   <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We Schedule a call at your convenience
                   </div>
                 </div>
                 <div className="relative flex justify-start items-start border-l border-[#F74B1C] border-dashed pl-10 sm:pl-[30px] pb-5 sm:pb-[30px] min-w-0">
                   <Image
-                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step2.png"
                     alt=""
                     width={35}
                     height={35}
                   />
+                  <div className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10 rounded-full bg-[radial-gradient(circle,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_86%)]"></div>
                   <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We do a discovery and consulting meeting
                   </div>
                 </div>
                 <div className="relative flex justify-start items-start pl-10 sm:pl-[30px] pb-0 min-w-0">
                   <Image
-                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10"
+                    className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step3.png"
                     alt=""
                     width={35}
                     height={35}
                   />
+                  <div className="absolute -top-0.5 left-0 sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-10 rounded-full bg-[radial-gradient(circle,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_86%)]"></div>
                   <div className="text-white font-britanicaRegular text-[14px] sm:text-[18px] md:text-[22px] leading-snug break-words min-w-0">
                     We prepare a proposal
                   </div>

@@ -114,4 +114,30 @@ body {
   background: #141414;
 }
 
+/* Hire Expert popup: orange thumb + dark track (match first image) */
+.hire-expert-popup-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #3a221b rgba(0, 0, 0, 0.35);
+}
+.hire-expert-popup-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.hire-expert-popup-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+.hire-expert-popup-scroll::-webkit-scrollbar-thumb {
+  background: #523d37;
+  border-radius: 3px;
+}
+.hire-expert-popup-scroll::-webkit-scrollbar-thumb:hover {
+  background: #0f0704;
+}
 
+@keyframes footer-dot-spin {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+.footer-dot-spin {
+  animation: footer-dot-spin 20s linear infinite;
+}

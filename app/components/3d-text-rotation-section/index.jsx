@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useMemo } from "react";
 
 const ThreeDTextRotationSection = () => {
-    const text = "contact us contact us";
+    const text = "contact us contact us contact us ";
     const letters = useMemo(() => text.split(""), [text]);
 
     return (
@@ -16,7 +16,7 @@ const ThreeDTextRotationSection = () => {
               --td-perspective: 1800px;
               --td-shape-w: 160px;
               --td-shape-h: 200px;
-              --td-radius: 160px;
+              --td-radius: 140px;
               --td-cell-fs: 7vw;
               --td-cell-w: 12px;
               --td-cell-h: 80px;
@@ -28,7 +28,7 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 2000px;
                 --td-shape-w: 180px;
                 --td-shape-h: 220px;
-                --td-radius: 260px;
+                --td-radius: 220px;
                 --td-cell-fs: 7.5vw;
                 --td-cell-w: 14px;
                 --td-cell-h: 90px;
@@ -41,7 +41,7 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 2600px;
                 --td-shape-w: 280px;
                 --td-shape-h: 320px;
-                --td-radius: 320px;
+                --td-radius: 280px;
                 --td-cell-fs: 7vw;
                 --td-cell-w: 18px;
                 --td-cell-h: 120px;
@@ -54,7 +54,7 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 2800px;
                 --td-shape-w: 340px;
                 --td-shape-h: 380px;
-                --td-radius: 320px;
+                --td-radius: 280px;
                 --td-cell-fs: 6vw;
                 --td-cell-w: 20px;
                 --td-cell-h: 130px;
@@ -67,7 +67,7 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 3000px;
                 --td-shape-w: 400px;
                 --td-shape-h: 440px;
-                --td-radius: 320px;
+                --td-radius: 280px;
                 --td-cell-fs: 5vw;
                 --td-cell-w: 22px;
                 --td-cell-h: 140px;
@@ -80,7 +80,7 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 3200px;
                 --td-shape-w: 440px;
                 --td-shape-h: 480px;
-                --td-radius: 320px;
+                --td-radius: 280px;
                 --td-cell-fs: 4.5vw;
                 --td-cell-w: 24px;
                 --td-cell-h: 150px;
@@ -93,8 +93,8 @@ const ThreeDTextRotationSection = () => {
                 --td-perspective: 3400px;
                 --td-shape-w: 480px;
                 --td-shape-h: 520px;
-                --td-radius: 320px;
-                --td-cell-fs: 4vw;
+                --td-radius: 340px;
+                --td-cell-fs: 6vw;
                 --td-cell-w: 26px;
                 --td-cell-h: 160px;
               }
@@ -144,9 +144,9 @@ const ThreeDTextRotationSection = () => {
               margin-left: calc(var(--td-shape-w) / -2);
               margin-top: calc(var(--td-shape-h) / -2);
               transform: translateZ(0);
+              transform-style: preserve-3d;
               pointer-events: none;
               filter: drop-shadow(0 12px 32px rgba(0,0,0,0.5));
-              z-index: 1;
               animation: td-rotate-counter 20s linear infinite;
             }
             .td-shape img {
@@ -198,13 +198,13 @@ const ThreeDTextRotationSection = () => {
                             <div className="td-wrapper">
                                 <div className="td-scene">
                                     <div className="td-carousel">
-                                        {/* Central gradient shape — at z=0 so rotating text passes in front and behind */}
+                                        {/* Logo at z=0 so text ring (translateZ(radius)) passes in front and behind by 3D depth */}
                                         <div className="td-shape" aria-hidden>
                                             <Image
                                                 src="/images/vector.png"
                                                 alt=""
-                                                width={280}
-                                                height={360}
+                                                width={250}
+                                                height={300}
                                                 className="w-full h-full object-contain"
                                             />
                                         </div>

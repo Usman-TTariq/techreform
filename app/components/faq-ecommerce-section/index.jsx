@@ -98,9 +98,9 @@ const FaqEcommerceSection = () => {
     const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
 
     return (
-        <section className="relative py-8 sm:py-12 md:py-[60px] bg-[#0E0E0E] overflow-hidden">
-            <div className="container px-4 sm:px-4 w-full max-w-[100vw] box-border">
-                <div className="grid grid-cols-12 gap-6 sm:gap-8">
+        <section className="relative py-8 sm:py-12 md:py-[60px] bg-[#0E0E0E] overflow-x-hidden">
+            <div className="container px-4 sm:px-4 w-full max-w-[100vw] box-border min-w-0">
+                <div className="grid grid-cols-12 gap-6 max-sm:gap-0">
                     <div className="col-span-12 lg:col-span-4 min-w-0">
                         <CapsuleLabel firstWord="FAQ" secondWord="" />
                         <h2 className="font-britanicaBlack text-[28px] sm:text-[36px] md:text-[42px] leading-[1.15] font-black pt-4 break-words">
@@ -109,8 +109,8 @@ const FaqEcommerceSection = () => {
                             <span className="text-[#F74B1C]">Questions</span>
                         </h2>
                     </div>
-                    <div className="col-span-12 lg:col-span-8 min-w-0">
-                        <div className="flex flex-col gap-3">
+                    <div className="col-span-12 lg:col-span-8 min-w-0 max-sm:pt-4">
+                        <div className="flex flex-col gap-3 min-w-0">
                             {FAQ_ITEMS.map((item) => {
                                 const isOpen = openId === item.id;
                                 return (
@@ -123,7 +123,7 @@ const FaqEcommerceSection = () => {
                                             onClick={() => setOpenId(isOpen ? null : item.id)}
                                             className="w-full cursor-pointer flex items-center justify-between gap-3 py-3 sm:py-4 px-4 sm:px-5 text-left min-w-0"
                                         >
-                                            <span className="font-britanicaExtraBold text-[15px] sm:text-[17px] text-white pr-3 sm:pr-4 break-words">
+                                            <span className="font-britanicaExtraBold text-[15px] sm:text-[17px] text-white pr-3 sm:pr-4 min-w-0 break-words">
                                                 {item.question}
                                             </span>
                                             <ChevronDown
@@ -134,7 +134,7 @@ const FaqEcommerceSection = () => {
                                             className={`grid transition-[grid-template-rows] duration-200 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
                                         >
                                             <div className="overflow-hidden">
-                                                <div className="font-britanicaRegular text-[14px] sm:text-[16px] text-white/85 leading-relaxed pb-4 sm:pb-5 px-4 sm:px-5 pt-0 border-t border-white/10">
+                                                <div className="font-britanicaRegular text-[14px] sm:text-[16px] text-white/85 leading-relaxed pb-4 sm:pb-5 px-4 sm:px-5 pt-0 border-t border-white/10 break-words min-w-0">
                                                     {item.answer}
                                                 </div>
                                             </div>

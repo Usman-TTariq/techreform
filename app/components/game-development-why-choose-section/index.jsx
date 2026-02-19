@@ -85,7 +85,8 @@ const GameDevelopmentWhyChooseSection = () => {
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">
-                    <Swiper
+               <div className="overflow-hidden">
+               <Swiper
                         onSwiper={(swiper) => { swiperRef.current = swiper; swiper.slideTo(1, 0); setSwiperReady(true); }}
                         initialSlide={1}
                         spaceBetween={20}
@@ -111,7 +112,7 @@ const GameDevelopmentWhyChooseSection = () => {
                                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words shrink-0 min-w-0">
                                         {item.title}
                                     </div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-h-0 min-w-0 overflow-y-auto overflow-x-hidden pb-4 sm:pb-[30px] break-words">
+                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-w-0 pb-4 sm:pb-[30px] break-words">
                                         {item.desc}
                                     </div>
                                     <div className="shrink-0 pt-2">
@@ -127,6 +128,7 @@ const GameDevelopmentWhyChooseSection = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
+               </div>
                 </div>
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />

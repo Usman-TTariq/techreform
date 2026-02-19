@@ -75,16 +75,26 @@ const FreeConsultationForm = () => {
 
     setIsLoading(true);
     try {
-      // Replace with your API endpoint or form service
-      // await fetch("/api/consultation", { method: "POST", body: JSON.stringify({ ...formData, phone }) });
-      await new Promise((r) => setTimeout(r, 800)); // Simulate submit
+      const res = await fetch("/api/consultation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, phone }),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
 
       setFormData({ name: "", businessName: "", email: "", message: "" });
       setPhone("");
       setErrors({});
       setSubmitSuccess(true);
     } catch (err) {
-      setErrors((prev) => ({ ...prev, submit: "Something went wrong. Please try again." }));
+      setErrors((prev) => ({
+        ...prev,
+        submit: err.message || "Something went wrong. Please try again.",
+      }));
     } finally {
       setIsLoading(false);
     }

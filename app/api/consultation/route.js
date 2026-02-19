@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 // Use RESEND_FROM_EMAIL after verifying techreforms.com at https://resend.com/domains
 // Until then, Resend's verified address works for testing (you can only send TO your own email on free tier)
 const FROM_EMAIL =
@@ -10,6 +8,15 @@ const FROM_EMAIL =
 
 export async function POST(request) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "Email service not configured. Set RESEND_API_KEY in .env" },
+        { status: 503 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
     const body = await request.json();
     const { name, businessName, email, phone, message } = body;
 

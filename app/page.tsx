@@ -24,10 +24,10 @@ export default function Home() {
       <WhatWeDoSection/>
       <TransformingIdeas/>
       <Marquee />
-      <FaqHomeSection />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
       <DetailFormSection formIntro={undefined} />
+      <FaqHomeSection />
       <Footer />
     </div>
   );

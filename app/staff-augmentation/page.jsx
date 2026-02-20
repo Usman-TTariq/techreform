@@ -30,7 +30,7 @@ const StaffAugmentation = () => {
             />
             <OurImpactBoxesSection />
             <StaffAugmentationDevelopmentSection />
-            <StepperFrom />
+            {/* <StepperFrom /> */}
             <WhatWeDoStaffAugmentationSection />
             <StaffAugmentationWhyPartnerSection />
             <CaseStudiesStaffAugmentationSection />

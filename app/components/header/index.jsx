@@ -30,10 +30,9 @@ const MEGA_MENU = {
                 items: [
                     { label: "App Development", href: "/mobile-app-development" },
                     { label: "Game App Development", href: "/game-development" },
-                    { label: "MVP Startup Development", href: "#" },
+                    { label: "MVP Startup Development", href: "/mvp" },
                     { label: "AR Development", href: "#" },
                     { label: "VR Development", href: "#" },
-                    { label: "Ipad App Development", href: "#" },
                     { label: "App Maintenance Support", href: "#" },
                     { label: "Web App Development", href: "#" },
                     { label: "Apps for Startup", href: "#" },

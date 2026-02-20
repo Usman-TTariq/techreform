@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import GeneralHeroSection from "../components/general-hero-section";
+import WhoWeAreGame from "../components/who-we-are-game";
 import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import GameDevelopmentWhatWeOfferSection from "../components/game-development-what-we-offer-section";
 import GameDevelopmentProcessSection from "../components/game-development-process-section";
@@ -32,6 +33,7 @@ const GameDevelopment = () => {
                 // para3="Planning to hire game developers in the USA? Our expert team specializes in 2D and 3D mobile game development, immersive PC gaming experiences, and advanced console game solutions. From concept to launch, we build engaging, revenue-driven games that players love and businesses grow with."
                 buttonText="Hire Expert Game Developers"
             />
+            <WhoWeAreGame />
             <OurImpactBoxesSection />
             <GameDevelopmentWhatWeOfferSection />
             <GameDevelopmentProcessSection />

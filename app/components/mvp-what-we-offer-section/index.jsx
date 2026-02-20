@@ -8,24 +8,24 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const CARDS = [
     {
-        title: "Custom Game Solutions",
-        desc: "We offer end-to-end custom game development tailored to your concept, audience, and monetization strategy. As a trusted game development agency, we transform ideas into interactive gaming experiences using the latest technologies and engines.",
+        title: "MVP Strategy and Validation",
+        desc: "We provide expert MVP consulting for startups to process, refine, define core features, and simply prioritize value-adding functionality. Our product validation services provide simple, hassle-free early product testing to keep your concept relevant prior to development.",
     },
     {
-        title: "Mobile Game Development",
-        desc: "Our team develops exciting iOS and Android games that are fun to play and built to perform smoothly. We focus on creating engaging experiences while also helping you generate revenue through smart monetization strategies.",
+        title: "Custom MVP Development",
+        desc: "Our custom MVP development helps us focus on presenting secure solutions and performance-driven applications. We built an intuitive startup website and App MVP, even a custom software MVP for Entrepreneurs.",
     },
     {
-        title: "PC and Console Game Development",
-        desc: "As a reliable PC Game Development Company, we build high-quality PC and console games designed to deliver rich visuals and immersive gameplay. From detailed environments to smooth mechanics, we focus on building gaming experiences that feel engaging, polished, and ready for modern platforms.",
+        title: "Agile and Lean Product Development",
+        desc: "Our experts follow a simplified iterative process for Agile MVP development and lean product development. This helps us implement continuous improvements and faster feedback cycles. Our iterative product development model, your MVP evolves based on real user insights.",
     },
     {
-        title: "Cross-Platform Game Solutions",
-        desc: "We provide cross-platform game development to make sure your game runs seamlessly across devices and operating systems, and offers maximum reach and player engagement.",
+        title: "Rapid Prototyping and MVP Prototype Development",
+        desc: "Development doesn’t begin instantly; there is a detailed prototyping process involved to make sure the product we deliver is what the client wants. Our experts visualize the product via Startup App Prototypes. This MVP Prototype Development service equips teams to test app credibility.",
     },
 ];
 
-const GameDevelopmentWhatWeOfferSection = () => {
+const MvpWhatWeOfferSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
@@ -36,8 +36,8 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <CapsuleLabel firstWord="WHAT" secondWord="WE" thirdWord="OFFER" />
                         </div>
                         <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[52px] font-black break-words">
-                            <span className="text-white">Secure and Innovative </span>
-                            <span className="text-[#F74B1C]">Game Development Services</span>
+                            <span className="text-white">End-to-End MVP </span>
+                            <span className="text-[#F74B1C]">Development Solutions</span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user1.png"
-                                alt="Game development"
+                                alt="MVP"
                                 width={1000}
                                 height={1000}
                             />
@@ -86,7 +86,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user2.png"
-                                alt="Game development"
+                                alt="MVP"
                                 width={1000}
                                 height={1000}
                             />
@@ -97,7 +97,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                             <Image
                                 className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
                                 src="/images/user3.png"
-                                alt="Game development"
+                                alt="MVP"
                                 width={1000}
                                 height={1000}
                             />
@@ -110,4 +110,4 @@ const GameDevelopmentWhatWeOfferSection = () => {
     );
 };
 
-export default GameDevelopmentWhatWeOfferSection;
+export default MvpWhatWeOfferSection;

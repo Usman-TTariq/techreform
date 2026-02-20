@@ -129,7 +129,7 @@ const StaffAugmentationDevelopmentSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-4 sm:gap-4 pt-8 sm:pt-12 md:pt-[90px] items-center justify-center">
+                {/* <div className="grid grid-cols-12 gap-4 sm:gap-4 pt-8 sm:pt-12 md:pt-[90px] items-center justify-center">
                     <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
                         <div>
                             <Image
@@ -163,7 +163,7 @@ const StaffAugmentationDevelopmentSection = () => {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>

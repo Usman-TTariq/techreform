@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 <Image
                     className="footer-dot-spin w-[20%] sm:w-[26%] md:w-[20%] absolute top-[70%] -translate-y-1/2 right-2 sm:right-0 opacity-70 sm:opacity-80 md:opacity-100 pointer-events-none"
-                    src="/images/footerdot.png"
+                    src="/images/circlewithdot.png"
                     alt=""
                     width={1000}
                     height={1000}

@@ -28,7 +28,7 @@ Tech Reforms is a pioneering e-commerce development agency that offers an access
             />
             <OurImpactBoxesSection />
             <EcommerceDevelopmentSection />
-            <StepperFrom />
+            {/* <StepperFrom /> */}
             <WhatWeDoEcommerceSection />
             <CaseStudiesEcommerceSection />
             <FaqEcommerceSection />

@@ -23,10 +23,17 @@ const CaseStudiesEcommerceSection = () => {
                 <div className="grid grid-cols-12 gap-0 sm:gap-8 md:gap-12 pt-8 sm:pt-12 md:pt-[70px] ">
                     <div className="col-span-12 md:col-span-6 min-w-0 order-1">
                         <div className="h-full flex items-center justify-center">
-                            <Image
+                            {/* <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/ec.png"
                                 alt=""
+                                width={1000}
+                                height={1000}
+                            /> */}
+                             <Image
+                                className="w-full max-w-full h-auto"
+                                src="/images/aa1.png"
+                                alt="Staff augmentation case study"
                                 width={1000}
                                 height={1000}
                             />
@@ -34,10 +41,17 @@ const CaseStudiesEcommerceSection = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 min-w-0 my-auto order-2">
                         <div>
-                            <Image
+                            {/* <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/ec2.png"
                                 alt=""
+                                width={1000}
+                                height={1000}
+                            /> */}
+                             <Image
+                                className="w-full max-w-full h-auto"
+                                src="/images/aa3.png"
+                                alt="Staff augmentation case study"
                                 width={1000}
                                 height={1000}
                             />

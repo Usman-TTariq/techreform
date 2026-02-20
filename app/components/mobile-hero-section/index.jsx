@@ -35,7 +35,7 @@ const MobileHeroSection = () => {
                 <div className="absolute top-[52%] sm:top-[50%] translate-y-[90%] right-4 sm:right-8 lg:right-0 hidden sm:block">
                     <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">Leading App</div>
                     <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">Developers</div>
-                    <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white capitalize leading-tight">in USA</div>
+                    <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-britanicaBlack text-white leading-tight">in The USA</div>
                 </div>
                 <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
@@ -43,7 +43,7 @@ const MobileHeroSection = () => {
                             <span className="text-white">Custom Mobile </span>
                             <span className="text-[#F74B1C]">App Development Company</span>
                             <br />
-                            <span className="text-white">in the USA</span>
+                            <span className="text-white">in The USA</span>
                         </div>
                         <div className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
                             Are you looking for futuristic mobile app development services that can build innovative mobile applications for your scaling businesses? With years of experience in creating immersive and highly functional apps, Tech Reforms brings scalable mobile app solutions to your doorstep. Partner with us to get reliable, high-performing, seamless apps across all devices.

@@ -10,6 +10,7 @@ import FaqErpSection from "../components/faq-erp-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import WhoWeAreErp from "../components/who-we-are-erp";
 
 export const dynamic = "force-dynamic";
 
@@ -22,16 +23,15 @@ const Erp = () => {
         <div>
             <Header />
             <GeneralHeroSection
-                firstWord="Custom ERP Development Services"
+                firstWord="Custom ERP Development Company"
                 secondWord=""
                 thirdWord=""
                 forthWord=""
                 fifthWord="| Hire Enterprise Resource Planning Software Developer"
-                para="Looking for a smarter way to manage your business operations with a system built specifically for you?"
-                para2="Tech Reforms is a trusted ERP software development company that helps businesses build scalable, fully custom ERP systems at competitive rates. No matter what you need, ERP implementation services, advanced cloud ERP development, or seamless system integration, we handle it all."
-                para3="Let's simplify your business operations and drive long-term growth through our reliable custom ERP development services and deep expertise in enterprise resource planning software."
-                buttonText="Hire ERP Experts Today"
+                para="Looking for a smarter way to manage your business operations with a system built specifically for you? Tech Reforms can help you streamline operations and automate workflows effectively!"
+                // buttonText="Hire ERP Experts Today"
             />
+            <WhoWeAreErp />
             <OurImpactBoxesSection />
             <ErpWhatWeOfferSection />
             <ErpProcessSection />

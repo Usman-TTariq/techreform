@@ -13,6 +13,8 @@ import DetailFormSection from "../components/detail-form-section";
 // import WhoWeAreErp from "../components/who-we-are-erp";
 import WhoWeAreMvp from "../components/who-we-are-mvp";
 
+export const dynamic = "force-dynamic";
+
 const MvpPage = () => {
     return (
         <div>

@@ -11,9 +11,12 @@ import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import GeneralHeroSection from "../components/general-hero-section";
+import EcommerceTabsSection from "../components/ecommerce-tabs-section";
+import WhatMakesEcommerce from "../components/what-makes-ecommerce";
+import EcommerceCta from "../components/ecommerce-cta";
 
 export const metadata = {
-  alternates: { canonical: "/ecommerce" },
+    alternates: { canonical: "/ecommerce" },
 };
 
 const Ecommerce = () => {
@@ -29,9 +32,12 @@ Tech Reforms is a pioneering e-commerce development agency that offers an access
             <OurImpactBoxesSection />
             <EcommerceDevelopmentSection />
             {/* <StepperFrom /> */}
+            <EcommerceTabsSection />
             <WhatWeDoEcommerceSection />
             <CaseStudiesEcommerceSection />
+            <WhatMakesEcommerce />
             <FaqEcommerceSection />
+            <EcommerceCta />
             <TestimonialSection />
             <ThreeDTextRotationSection />
             <DetailFormSection />

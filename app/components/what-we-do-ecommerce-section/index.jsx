@@ -60,43 +60,43 @@ const WhatWeDoEcommerceSection = () => {
     }, [swiper1Ready, swiper2Ready]);
     const solutions = [
         {
-            title: "Requirement Analysis",
-            desc: "Our process starts by understanding industry requirements and major competitors to curate a custom strategy that serves your target audience effectively.",
+            title: "Magento (Adobe Commerce)",
+            desc: "At Tech Reforms, we help businesses build powerful online stores via Magento. If you’re looking for a platform that can handle large product catalogs, multiple stores, and advanced features, Magento is exactly the framework you need to tailor to your business needs.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Planning and Stretegy",
-            desc: "We cultivate our approach and development process on platform selection. This includes WooCommerce, Shopify, and custom features.",
+            title: "Kentico Solutions",
+            desc: "We use Kentico to create websites that offer more than appealing looks. We build comprehensive digital solutions that help businesses connect more effectively with their customers. Our Kentico e-commerce platforms come with optimized management.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Testing and Optimization",
-            desc: "During development, our experts focus on testing each feature before the launch. This is done to ensure that speed, security, and performance meet requirements.",
+            title: "Zend (Laminas) Development",
+            desc: "We use the Zend Framework for businesses that need secure, dependable web applications and customized solutions. Our goal is simple: to create systems that run smoothly and support your growth over time.",
             icon: <AiIcon className="w-[40px]" />,
         },
-        {
-            title: "Launch Support",
-            desc: "Lastly, the maintenance and support phase begins after launch, with updates and ongoing maintenance to ensure your store grows effectively.",
-            icon: <AiIcon className="w-[40px]" />,
-        }
+        // {
+        //     title: "Launch Support",
+        //     desc: "Lastly, the maintenance and support phase begins after launch, with updates and ongoing maintenance to ensure your store grows effectively.",
+        //     icon: <AiIcon className="w-[40px]" />,
+        // }
     ];
 
     const whyPartner = [
         {
-            title: "Dynamic E-commerce Platforms",
-            desc: "Hire Expert E-commerce Developers to get hassle-free development of e-commerce platforms that offer high conversion and sales.",
+            title: "WooCommerce Development",
+            desc: "Want to turn your WordPress site into an online store? We make it easy with WooCommerce. At Tech Reforms, we design and develop user-friendly eCommerce websites that are simple to manage and ready to grow with your business.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "High Visibility",
-            desc: "Every e-commerce platform requires consistent traffic to offer high sales or profits. Our post-launch supports and marketing solutions help get and maintain high visibility.",
+            title: "Open-Cart Framework Solutions",
+            desc: "We also work with leading open-source technologies to build flexible, cost-effective eCommerce platforms. This means you get a solution that’s customizable, scalable, and built around your unique business goals.",
             icon: <AiIcon className="w-[40px]" />,
         },
-        {
-            title: "Industry-Focused Solutions",
-            desc: "Our Industry-specific e-commerce apps are designed to meet your business needs, address unique market demands, and drive higher user engagement.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
+        // {
+        //     title: "Industry-Focused Solutions",
+        //     desc: "Our Industry-specific e-commerce apps are designed to meet your business needs, address unique market demands, and drive higher user engagement.",
+        //     icon: <AiIcon className="w-[40px]" />,
+        // },
     ];
 
     return (
@@ -142,7 +142,7 @@ const WhatWeDoEcommerceSection = () => {
                         >
                             {solutions.map((solution, index) => (
                                 <SwiperSlide key={index} className="!h-full">
-                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                    <div className="bg-white border-2 !h-full min-h-[460px] max-2xl:min-h-[520px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
                                         <div className="pb-3 sm:pb-[20px]">
                                             <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
@@ -175,14 +175,14 @@ const WhatWeDoEcommerceSection = () => {
                                 640: { slidesPerView: 1.2, spaceBetween: 12 },
                                 768: { slidesPerView: 1.8, spaceBetween: 12 },
                                 1024: { slidesPerView: 1.8, spaceBetween: 12 },
-                                1280: { slidesPerView: 2.1, spaceBetween: 12 },
-                                1530: { slidesPerView: 2.1, spaceBetween: 12 },
-                                1536: { slidesPerView: 2.1, spaceBetween: 12 },
+                                1280: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1530: { slidesPerView: 1.8, spaceBetween: 12 },
+                                1536: { slidesPerView: 1.8, spaceBetween: 12 },
                             }}
                         >
                             {whyPartner.map((solution, index) => (
                                 <SwiperSlide key={index} className="!h-full">
-                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                    <div className="bg-white border-2 !h-full min-h-[460px] max-2xl:min-h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
                                         <div className="pb-3 sm:pb-[20px]">
                                             <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
@@ -208,8 +208,8 @@ const WhatWeDoEcommerceSection = () => {
                         <span className="text-white"> With Us</span>
                     </div>
                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">
-                    As a leading E-commerce platform development agency, we take pride in the platforms we deliver. Modern designs, an easy-to-understand user flow, and SEO-friendly end-to-end e-commerce websites.<br/>
-                    So, begin your journey to the smartest and most accessible dedicated team of scalable app developers by clicking a few buttons and paying an upfront fee.
+                        As a leading E-commerce platform development agency, we take pride in the platforms we deliver. Modern designs, an easy-to-understand user flow, and SEO-friendly end-to-end e-commerce websites.<br />
+                        So, begin your journey to the smartest and most accessible dedicated team of scalable app developers by clicking a few buttons and paying an upfront fee.
                     </div>
                 </div>
             </div>

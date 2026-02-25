@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   ...(basePath && { basePath, assetPrefix: basePath }),
   images: {
     // Serve images directly from public so they load on all deployment platforms
-    unoptimized: true,
+    unoptimized: false,
   },
 };
 

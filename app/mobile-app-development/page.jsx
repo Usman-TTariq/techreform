@@ -10,6 +10,8 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import StepperFrom from "../components/stepper-from";
 import Footer from "../components/footer";
+import HowWeBuildMobileSection from "../components/how-we-build-mobile-section";
+import WaitingForYouMobile from "../components/waiting-for-you-mobile";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +27,8 @@ const Mobile = () => {
             <OurImpactBoxesSection />
             <AppDevelopmentSection />
             <StepperFrom />
+            {/* <HowWeBuildMobileSection /> */}
+            {/* <WaitingForYouMobile/> */}
             <WhatWeDoMobileSection />
             <CaseStudiesSection />
             <FaqSection />

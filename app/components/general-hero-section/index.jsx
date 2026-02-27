@@ -5,7 +5,7 @@ import Image from "next/image";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact }) => {
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord }) => {
   const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className={`relative w-full min-w-0 overflow-hidden ${compact ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[60vh] md:min-h-[60vh]" : "min-h-[60vh] sm:min-h-[60vh] md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0"}`}>
@@ -28,6 +28,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
           <div className="col-span-12 text-center min-w-0">
             <div className="font-britanicaBlack text-[22px] leading-[1.25] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black break-words">
               <span className="text-white">{firstWord} </span>
+              {breakAfterFirstWord && <br />}
               <span className="text-[#F74B1C]">{secondWord} </span>
               <span className="text-white">{thirdWord} </span>
               <span className="text-white">{forthWord}</span>

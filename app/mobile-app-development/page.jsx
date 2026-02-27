@@ -12,6 +12,12 @@ import StepperFrom from "../components/stepper-from";
 import Footer from "../components/footer";
 import HowWeBuildMobileSection from "../components/how-we-build-mobile-section";
 import WaitingForYouMobile from "../components/waiting-for-you-mobile";
+import IndustriesMobile from "../components/industries-mobile";
+import FacilitiesMobile from "../components/facilities-mobile";
+import AnalyticsMobile from "../components/analytics-mobile";
+import AppIntegrationMobile from "../components/app-integration-mobile";
+import OurClientsMobile from "../components/our-clients-mobile";
+import TechnologyStackMobile from "../components/technology-stack-mobile";
 
 export const dynamic = "force-dynamic";
 
@@ -27,8 +33,14 @@ const Mobile = () => {
             <OurImpactBoxesSection />
             <AppDevelopmentSection />
             <StepperFrom />
-            {/* <HowWeBuildMobileSection /> */}
-            {/* <WaitingForYouMobile/> */}
+            <HowWeBuildMobileSection />
+            <WaitingForYouMobile/>
+            <IndustriesMobile/>
+            <FacilitiesMobile/>
+            <AnalyticsMobile />
+            <AppIntegrationMobile />
+            <OurClientsMobile />
+            <TechnologyStackMobile />
             <WhatWeDoMobileSection />
             <CaseStudiesSection />
             <FaqSection />

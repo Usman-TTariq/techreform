@@ -11,7 +11,7 @@ const DROPDOWN_ITEMS = [
     { key: "ecommerce", label: "Ecommerce", href: "/ecommerce" },
     { key: "staff", label: "Staff Augmentation", href: "/staff-augmentation" },
     { key: "products", label: "Products", href: "/products" },
-    { key: "portfolio", label: "Portfolio", href: "#" },
+    { key: "portfolio", label: "Portfolio", href: "/portfolio" },
     { key: "company", label: "Company", href: "/about" },
 ];
 
@@ -269,14 +269,14 @@ const Header = () => {
                                 >
                                     {href === "#" ? (
                                         <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
-                                            {label} <ChevronDown className="w-[14px]" />
+                                            {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
                                         </span>
                                     ) : (
                                         <Link
                                             href={href}
                                             className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer"
                                         >
-                                            {label} <ChevronDown className="w-[14px]" />
+                                            {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
                                         </Link>
                                     )}
                                 </li>

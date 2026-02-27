@@ -33,17 +33,6 @@ const WaitingForYouMobile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-5 max-lg:col-span-12">
-                            <div>
-                                {/* <Image
-                                    className="w-[100%] scale-125 origin-center"
-                                    src="/images/waiting.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                /> */}
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

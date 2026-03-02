@@ -9,7 +9,7 @@ import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import Button from "../common/button";
 import Image from "next/image";
 
-const IndustriesMobile = () => {
+const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCol, para }) => {
     const industries = [
         {
             title: "Financing",
@@ -66,15 +66,34 @@ const IndustriesMobile = () => {
             <div className="container">
                 <div className="">
                     <div className="grid grid-cols-12 justify-between gap-4">
-                        <div className="col-span-2 max-lg:col-span-12">
+                        <div className={`col-span-2 max-lg:col-span-12 ${secondCol}`}>
                             <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
+                            {
+                                para && (
+                                    <div className="font-britanicaRegular text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                                        {para}
+                                    </div>
+                                )
+                            }
                         </div>
-                        <div className="col-span-10 max-lg:col-span-12">
+                        <div className={`col-span-10 max-lg:col-span-12 ${thirdCol}`}>
                             <div className="flex justify-end">
-                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[42px] font-black pb-4 sm:pb-[26px] text-left">
-                                    <span className="text-[#F74B1C]">Industries </span>
-                                    <span className="text-white">We Have </span>
-                                    <span className="text-[#F74B1C]">Served</span>
+                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-right">
+                                    {
+                                        firstWord && (
+                                            <span className="text-[#F74B1C]">{firstWord} </span>
+                                        )
+                                    }
+                                    {
+                                        secondWord && (
+                                            <span className="text-white">{secondWord} </span>
+                                        )
+                                    }
+                                    {
+                                        thirdWord && (
+                                            <span className="text-[#F74B1C]">{thirdWord} </span>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>

@@ -33,11 +33,11 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
               <span className="text-white">{thirdWord} </span>
               <span className="text-white">{forthWord}</span>
               <br />
-              <span className={fifthWordWhite ? "text-white" : "text-[#F74B1C]"}>{fifthWord}</span>
+              <span className={fifthWordWhite ? "text-white" : "text-[#F74B1C]"}>{fifthWord} </span>
               {sixthWord != null && sixthWord !== "" && (
                 <>
-                  <br />
-                  <span className="text-[#F74B1C]">{sixthWord}</span>
+                  {/* <br /> */}
+                  <span className="text-[#fff]">{sixthWord}</span>
                 </>
               )}
             </div>

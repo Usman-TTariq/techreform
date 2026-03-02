@@ -35,7 +35,7 @@ const Mobile = () => {
             <StepperFrom />
             <HowWeBuildMobileSection />
             <WaitingForYouMobile/>
-            <IndustriesMobile/>
+            <IndustriesMobile firstWord="We Have" secondWord="Served" thirdWord="Industries" />
             <FacilitiesMobile/>
             <AnalyticsMobile />
             <AppIntegrationMobile />

@@ -2,14 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterLogo from "./svg/footer-logo";
 
-const FOOTER_LINKS = [
-    { label: "Mobile", href: "/mobile-app-development" },
-    { label: "Company", href: "/about" },
-    { label: "Portfolio", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Resource", href: "#" },
-];
-
 const Footer = () => {
     return (
         <footer className="relative w-full min-w-0 pt-10 sm:pt-12 md:pt-[60px] overflow-hidden bg-[#0E0E0E]">
@@ -28,7 +20,7 @@ const Footer = () => {
                 height={1000}
             />
             <div className="container relative z-10 px-4 w-full max-w-[100vw] box-border">
-                <div className="w-[250px] max-sm:hidden max-sm:w-[20px] h-[250px] max-sm:h-[20px] right-[5%] max-2xl:w-[200px] max-2xl:h-[200px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute top-[40%] max-sm:top-[70%] max-2xl:top-[45%] -translate-y-1/2 pointer-events-none">
+                {/* <div className="w-[250px] max-sm:hidden max-sm:w-[20px] h-[250px] max-sm:h-[20px] right-[5%] max-2xl:w-[200px] max-2xl:h-[200px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute top-[40%] max-sm:top-[70%] max-2xl:top-[45%] -translate-y-1/2 pointer-events-none">
 
                 </div>
                 <Image
@@ -37,39 +29,100 @@ const Footer = () => {
                     alt=""
                     width={1000}
                     height={1000}
-                />
-                <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[30px] md:text-[40px] lg:text-[50px] lg:leading-[42px] font-black pr-0 sm:pr-0">
-                    <span className="text-white">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
-                </div>
-                <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-3 sm:pt-4 md:pt-[22px] max-w-[90%] sm:max-w-none">
-                    Let’s take your brand to the next level. Get in touch!
-                </div>
-                <div className="grid grid-cols-12 gap-4">
-                    <div className="col-span-12 md:col-span-6">
-                        <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-start gap-3 sm:gap-6 md:gap-12 pb-10 sm:pb-16 md:pb-[100px]">
-                            {FOOTER_LINKS.map(({ label, href }) => (
-                                <Link
-                                    key={label}
-                                    href={href}
-                                    className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white hover:text-[#F74B1C] transition-colors"
-                                >
-                                    {label}
-                                </Link>
-                            ))}
+                /> */}
+                <div className="flex items-center justify-between">
+                    <div className="min-w-0">
+                        <a
+                            href="mailto:info@techreforms.com"
+                            className="font-britanicaRegular text-[18px] sm:text-[20px] md:text-[28px] font-regular text-white break-all sm:break-normal hover:text-[#F74B1C] transition-colors inline-block"
+                        >
+                            info@techreforms.com
+                        </a>
+                        <div className="w-full max-w-[100%] min-w-0 pt-1">
+                            <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[450px] h-auto" />
+                        </div>
+                    </div>
+                    <div>
+                        <div className="font-britanicaBlack text-[16px] leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
+                            <span className="text-white">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
+                        </div>
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 text-right">
+                            Let’s take your brand to the next level. Get in touch!
                         </div>
                     </div>
                 </div>
-                <div className="min-w-0">
-                    <a
-                    href="mailto:info@techreforms.com"
-                    className="font-britanicaRegular text-[18px] sm:text-[24px] md:text-[32px] font-regular text-white break-all sm:break-normal hover:text-[#F74B1C] transition-colors inline-block"
-                >
-                    info@techreforms.com
-                </a>
-                    <div className="w-full max-w-[100%] min-w-0 pt-1">
-                        <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[400px] lg:max-w-[450px] h-auto" />
+                <div className="grid grid-cols-12 gap-6 sm:gap-8 pt-[20px]">
+                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
+                            Mobile Services
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/mobile-app-development" className="hover:text-[#F74B1C] transition-colors">App Development</Link></li>
+                            <li><Link href="/game-development" className="hover:text-[#F74B1C] transition-colors">Game App Development</Link></li>
+                            <li><Link href="/mvp" className="hover:text-[#F74B1C] transition-colors">MVP Development</Link></li>
+                            <li><Link href="/mobile-app-development#ar" className="hover:text-[#F74B1C] transition-colors">AR Development</Link></li>
+                            <li><Link href="/mobile-app-development#vr" className="hover:text-[#F74B1C] transition-colors">VR Development</Link></li>
+                            <li><Link href="/mobile-app-development#maintenance" className="hover:text-[#F74B1C] transition-colors">App Maintenance Support</Link></li>
+                            <li><Link href="/lp/app" className="hover:text-[#F74B1C] transition-colors">Web App Development</Link></li>
+                            <li><Link href="/mobile-app-development#startup" className="hover:text-[#F74B1C] transition-colors">Apps For Startup</Link></li>
+                        </ul>
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-6 text-left">
+                            Products
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/erp" className="hover:text-[#F74B1C] transition-colors">ERP</Link></li>
+                            <li><Link href="/products" className="hover:text-[#F74B1C] transition-colors">HRMS</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
+                            Staff Services
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/staff-augmentation" className="hover:text-[#F74B1C] transition-colors">Staff Augmentation</Link></li>
+                            <li><Link href="/staff-augmentation#flutter" className="hover:text-[#F74B1C] transition-colors">Hire Flutter Developer</Link></li>
+                            <li><Link href="/staff-augmentation#java" className="hover:text-[#F74B1C] transition-colors">Hire Java Developer</Link></li>
+                            <li><Link href="/staff-augmentation#magento" className="hover:text-[#F74B1C] transition-colors">Hire Magento Developer</Link></li>
+                            <li><Link href="/staff-augmentation#python" className="hover:text-[#F74B1C] transition-colors">Hire Python Developer</Link></li>
+                            <li><Link href="/staff-augmentation#laravel" className="hover:text-[#F74B1C] transition-colors">Hire Laravel Developer</Link></li>
+                            <li><Link href="/staff-augmentation#node" className="hover:text-[#F74B1C] transition-colors">Hire Node Js Developer</Link></li>
+                            <li><Link href="/staff-augmentation#spring-boot" className="hover:text-[#F74B1C] transition-colors">Hire Spring Boot Developer</Link></li>
+                            <li><Link href="/staff-augmentation#power-bi" className="hover:text-[#F74B1C] transition-colors">Power Bi Developer</Link></li>
+                            <li><Link href="/staff-augmentation#golang" className="hover:text-[#F74B1C] transition-colors">Golang Developer</Link></li>
+                            <li><Link href="/staff-augmentation#llm" className="hover:text-[#F74B1C] transition-colors">LLM Developer</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
+                            E-commerce Services
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">E-Commerce Solutions</Link></li>
+                            <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">Online Store</Link></li>
+                        </ul>
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-6 text-left">
+                            Company
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/about" className="hover:text-[#F74B1C] transition-colors">About Us</Link></li>
+                            <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li>
+                            <li><Link href="/blog" className="hover:text-[#F74B1C] transition-colors">Blog</Link></li>
+                            <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li>
+                            <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li>
+                            <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
+                            Get In Touch
+                        </div>
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2">
+                            <a href="mailto:info@techreforms.com" className="hover:text-[#F74B1C] transition-colors">info@techreforms.com</a>
+                        </div>
                     </div>
                 </div>
+
                 <div className="pt-8 sm:pt-[40px]">
                     <Image
                         className="w-full"
@@ -82,7 +135,11 @@ const Footer = () => {
                         <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-2 sm:order-1">
                             Copyright © 2026 Tech Reforms. All rights reserved.
                         </div>
-                        <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-1 sm:order-2">Terms & Conditions  |  Privacy Policy</div>
+                        <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-1 sm:order-2">
+                            <Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link>
+                            <span className="mx-2">|</span>
+                            <Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link>
+                        </div>
                     </div>
                 </div>
             </div>

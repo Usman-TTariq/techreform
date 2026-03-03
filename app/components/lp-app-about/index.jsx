@@ -12,20 +12,19 @@ const LpAppAbout = () => {
                             <CapsuleLabel firstWord="ABOUT" secondWord="US" />
                         </div>
                         <div className="font-britanicaBlack text-[26px] leading-tight sm:text-[34px] md:text-[40px] lg:text-[42px] lg:leading-[52px] font-black">
-                            <span className="text-white">We Are </span>
-                            <span className="text-[#F74B1C]">Mobile App </span>
+                            <span className="text-white">Smart Mobile </span>
+                            <span className="text-[#F74B1C]">Development for </span>
                             <span className="text-white"></span>
                             <br />
-                            <span className="text-[#F74B1C]">Development </span>
-                            <span className="text-[#fff]">Services?</span>
+                            <span className="text-[#F74B1C]">High Scalability </span>
+                            <span className="text-[#fff]">and Speed</span>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
                         <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            As a leading mobile app development company in the USA, we provide quality solutions. Our agile approach brings your app idea to life with speed. Our team includes consultants, designers, developers, and QA specialists for every development stage.
+                        Tech Reforms launches custom iOS and Android apps 10x faster, at lower cost, with a hassle-free approach. We are a leading mobile app development agency providing tailored solutions for your business.
                         </div>
                     </div>
-
                 </div>
                 <div className="pt-[80px]">
                     <Image

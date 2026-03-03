@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef, useEffect } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Image from "next/image";
@@ -8,27 +7,20 @@ import ArrowIcon from "./svg/arrow-icon";
 const LpAppServices = () => {
     const sectionRef = useRef(null);
     const columnRef = useRef(null);
-    const sectionInViewRef = useRef(false);
-
-    useEffect(() => {
-        const section = sectionRef.current;
-        if (!section) return;
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    sectionInViewRef.current = entry.isIntersecting;
-                });
-            },
-            { threshold: 0.2, rootMargin: "0px" }
-        );
-        observer.observe(section);
-        return () => observer.disconnect();
-    }, []);
+    const sectionCompletedRef = useRef(false);
 
     useEffect(() => {
         const handleWheel = (e) => {
+            if (sectionCompletedRef.current) return;
+
+            const section = sectionRef.current;
             const col = columnRef.current;
-            if (!col || !sectionInViewRef.current) return;
+            if (!section || !col) return;
+
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionAtTop = sectionTop <= 0;
+
+            if (!sectionAtTop) return;
 
             const { scrollTop, clientHeight, scrollHeight } = col;
             const atTop = scrollTop <= 0;
@@ -40,6 +32,8 @@ const LpAppServices = () => {
                 if (!atBottom) {
                     col.scrollTop += delta;
                     e.preventDefault();
+                } else {
+                    sectionCompletedRef.current = true;
                 }
             } else if (e.deltaY < 0) {
                 if (!atTop) {
@@ -60,13 +54,13 @@ const LpAppServices = () => {
             description: "Get your idea analyzed and mapped into practical, actionable steps to build your app, with a better understanding of its technology stack, monetization models, and go-to-market plan.",
             features: [
                 {
-                    title: "Product roadmapping",
+                    title: "Product Roadmapping",
                 },
                 {
-                    title: "Tech architecture design",
+                    title: "Tech Architecture Design",
                 },
                 {
-                    title: "Feasibility analysis",
+                    title: "Feasibility Analysis",
                 }
             ]
         },
@@ -77,13 +71,13 @@ const LpAppServices = () => {
             description: "Build apps with simple, modern, and easy-to-understand, intuitive interfaces and experiences, grounded in the behavior and preferences of your core audiences.",
             features: [
                 {
-                    title: "Wireframing & prototyping",
+                    title: "Wireframing & Prototyping",
                 },
                 {
-                    title: "Responsive & accessible design",
+                    title: "Responsive Design",
                 },
                 {
-                    title: "UX audits & user journey mapping",
+                    title: "UX Audits & User Journey Mapping",
                 }
             ]
         },
@@ -94,13 +88,13 @@ const LpAppServices = () => {
             description: "Develop high-performance mobile applications that are custom-made specifically for iOS and Android platforms.",
             features: [
                 {
-                    title: "Custom iOS app development",
+                    title: "Custom IOS App Development",
                 },
                 {
-                    title: "Responsive & accessible design",
+                    title: "Personalized Android app development",
                 },
                 {
-                    title: "UX audits & user journey mapping",
+                    title: "Platform-Specific Optimization",
                 }
             ]
         },
@@ -182,7 +176,7 @@ const LpAppServices = () => {
             description: "Publish with a worry with expert guidance on store compliance and visibility improvement for better app store engagement.",
             features: [
                 {
-                    title: "App Store & Google Play submission",
+                    title: "App Store & Google Play Submission",
                 },
                 {
                     title: "ASO (App Store Optimization)",
@@ -195,81 +189,86 @@ const LpAppServices = () => {
     ]
 
     return (
-        <div ref={sectionRef} className="relative pb-[150px]">
-            <div className="container relative">
-                <div className="grid grid-cols-12 justify-between gap-4">
-                    <div className="col-span-8 max-lg:col-span-12">
-                        <div className="flex justify-start">
-                            <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
-                                <span className="text-[#F74B1C]">End-to-End </span>
-                                <span className="text-white">Custom Mobile</span>
-                                <br />
-                                <span className="text-[#fff]">Application Development</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-4 max-lg:col-span-12">
-                        <div className="flex justify-end items-end flex-col">
-                            <CapsuleLabel firstWord="OUR" secondWord="SERVICES" />
-                            <div className="font-britanicaRegular text-[14px] text-right sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
-                                We engineer tailored mobile experiences that solve real business challenges. We offer services that adapt to your goals.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-8 pt-[10px]">
-                    <div className="col-span-4">
-                        <div>
-                            <Image
-                                className="w-full"
-                                src="/images/lp-app-services.png"
-                                alt=""
-                                width={1000}
-                                height={1000}
-                            />
-                            <div className="flex justify-end">
-                                <ArrowIcon className="w-[100px]" />
-                            </div>
+        <div className="min-h-[100vh]">
+            <div
+                ref={sectionRef}
+                className="sticky top-0 min-h-screen relative pb-[150px]"
+            >
+                <div className="container relative">
+                    <div className="grid grid-cols-12 justify-between gap-4">
+                        <div className="col-span-8 max-lg:col-span-12">
                             <div className="flex justify-start">
                                 <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
-                                    <span className="text-[#F74B1C]">6 More </span>
-                                    <span className="text-white">Sections</span>
+                                    <span className="text-[#F74B1C]">End-to-End </span>
+                                    <span className="text-white">Custom Mobile</span>
                                     <br />
-                                    <span className="text-[#fff]">On Scroll</span>
+                                    <span className="text-[#fff]">Application Development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-span-4 max-lg:col-span-12">
+                            <div className="flex justify-end items-end flex-col">
+                                <CapsuleLabel firstWord="OUR" secondWord="SERVICES" />
+                                <div className="font-britanicaRegular text-[14px] text-right sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                                    We offer real solutions with apps tailored specifically to your brand, not old cookie-cutter solutions wrapped in a new wrapping under the pretense of innovation.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div ref={columnRef} className="col-span-8 max-h-[730px] overflow-y-auto overflow-x-hidden scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-                        <div className="pb-2">
-                            {
-                                services.map((service, index) => (
-                                    <div key={index} className="bg-[3C3C3C] rounded-xl px-[40px] py-[30px] border border-[#7724C1] mb-[20px]">
-                                        <div>
-                                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-[#F74B1C]  max-w-full leading-relaxed">
-                                                {service.title}
-                                            </div>
-                                            <div className="font-britanicaBlack flex items-center gap-3 text-[40px] leading-tight md:leading-[52px] font-black break-words">
-                                                <span className="text-white">{service.heading1}</span>
-                                                <span className="text-[#F74B1C]">{service.heading2}</span>
-                                            </div>
-                                            <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
-                                                {service.description}
-                                            </div>
-                                            <div className="flex flex-wrap justify-start items-center gap-4 pt-[30px]">
-                                                {service.features?.map((feature, featureIndex) => (
-                                                    <div key={featureIndex} className="">
-                                                        <span className="inline-flex items-center gap-3 rounded-full bg-[linear-gradient(90deg,rgb(245_133_226_/_42%)_0%,rgba(147,64,255,0.52)_50%,rgb(147_61_132)_100%)] px-5 py-2.5 text-white capitalize shadow-[0_0_12px_rgba(119,36,193,0.4)]">
-                                                            <span className="h-2 w-2 shrink-0 rounded-full bg-white"></span>
-                                                            {feature.title}
-                                                        </span>
-                                                    </div>
-                                                ))}
+                    <div className="grid grid-cols-12 gap-8 pt-[10px]">
+                        <div className="col-span-4">
+                            <div>
+                                <Image
+                                    className="w-full"
+                                    src="/images/lp-app-services.png"
+                                    alt=""
+                                    width={1000}
+                                    height={1000}
+                                />
+                                <div className="flex justify-end">
+                                    <ArrowIcon className="w-[100px]" />
+                                </div>
+                                <div className="flex justify-start">
+                                    <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
+                                        <span className="text-[#F74B1C]">6 More </span>
+                                        <span className="text-white">Sections</span>
+                                        <br />
+                                        <span className="text-[#fff]">On Scroll</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div ref={columnRef} className="col-span-8 max-h-[730px] overflow-y-auto overflow-x-hidden scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                            <div className="pb-2">
+                                {
+                                    services.map((service, index) => (
+                                        <div key={index} className="bg-[3C3C3C] rounded-xl px-[40px] py-[30px] border border-[#7724C1] mb-[20px]">
+                                            <div>
+                                                <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-[#F74B1C]  max-w-full leading-relaxed">
+                                                    {service.title}
+                                                </div>
+                                                <div className="font-britanicaBlack flex items-center gap-3 text-[40px] leading-tight md:leading-[52px] font-black break-words">
+                                                    <span className="text-white">{service.heading1}</span>
+                                                    <span className="text-[#F74B1C]">{service.heading2}</span>
+                                                </div>
+                                                <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
+                                                    {service.description}
+                                                </div>
+                                                <div className="flex flex-wrap justify-start items-center gap-4 pt-[30px]">
+                                                    {service.features?.map((feature, featureIndex) => (
+                                                        <div key={featureIndex} className="">
+                                                            <span className="inline-flex items-center gap-3 rounded-full bg-[linear-gradient(90deg,rgb(245_133_226_/_42%)_0%,rgba(147,64,255,0.52)_50%,rgb(147_61_132)_100%)] px-5 py-2.5 text-white capitalize shadow-[0_0_12px_rgba(119,36,193,0.4)]">
+                                                                <span className="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                                                                {feature.title}
+                                                            </span>
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))
-                            }
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

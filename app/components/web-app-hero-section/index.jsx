@@ -2,16 +2,18 @@ import Image from "next/image";
 import GeneralHeroSection from "../general-hero-section";
 import FreeConsultationForm from "../free-consultation-form";
 
-const WebAppHeroSection = () => {
+const WebAppHeroSection = ({ autoHeight }) => {
     return (
-        <div className="relative">
-            <GeneralHeroSection firstWord="Custom" secondWord="Mobile Application" thirdWord="" forthWord="" fifthWord="Development" sixthWord="Services" para="Tailored mobile solutions designed to elevate your business operations and user engagement."
-                buttonText="Request a Free Quote"
+        <div className="relative bg-[#00000033]">
+            <GeneralHeroSection firstWord="Custom" secondWord="Mobile Application Development" thirdWord="" forthWord="" fifthWord="for iOS & Android" sixthWord="Fast, Scalable & Affordable" para="Custom Intuitive mobile solutions designed for easier monetization, accessibility, and high user engagement."
+                buttonText="Book a Free App Strategy Call"
                 compact
+                space={true}
+                autoHeight={autoHeight}
             />
-            <div className="container relative -mt-[150px]">
+            <div className="container relative -mt-[60px]">
                 <div className="grid grid-cols-12 gap-6">
-                    <div className="col-span-8 my-auto">
+                    <div className="col-span-8 mt-auto">
                         <div>
                             <Image
                                 className="w-full"
@@ -22,7 +24,7 @@ const WebAppHeroSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-span-4">
+                    <div className="col-span-4 translate-y-[30px]">
                         <FreeConsultationForm />
                     </div>
                 </div>

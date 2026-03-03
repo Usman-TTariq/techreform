@@ -110,6 +110,11 @@ body {
   background: linear-gradient(to right, rgba(255, 0, 0, 0), #9340FF);
 }
 
+.benefit-border-wrap2 {
+  background: linear-gradient(to right, #F74B1C, #7724C1);
+  position: relative;
+}
+
 .benefit-module {
   background: #141414;
 }

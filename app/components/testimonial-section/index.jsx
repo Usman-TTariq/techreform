@@ -82,7 +82,7 @@ const TestimonialCard = ({ name, role, quote }) => (
 
 const TestimonialSection = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Image
         className="absolute top-[50%] -translate-y-1/2 right-0 w-[50%] sm:w-[40%] opacity-80"
         src="/images/testbk.png"

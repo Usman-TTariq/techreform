@@ -5,10 +5,15 @@ import Image from "next/image";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord }) => {
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
   const [popupOpen, setPopupOpen] = useState(false);
+  const heightClass = autoHeight
+    ? "pt-6 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
+    : compact
+      ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[60vh] md:min-h-[60vh]"
+      : "min-h-[60vh] sm:min-h-[60vh] md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0";
   return (
-    <div className={`relative w-full min-w-0 overflow-hidden ${compact ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[60vh] md:min-h-[60vh]" : "min-h-[60vh] sm:min-h-[60vh] md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0"}`}>
+    <div className={`relative w-full min-w-0 overflow-hidden ${heightClass}`}>
       <Image
         className="absolute -top-[10%] right-4 w-[28%] sm:w-[32%] md:right-12 md:w-[35%] lg:right-[100px] hidden sm:block"
         src="/images/frame.png"
@@ -34,6 +39,9 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
               <span className="text-white">{forthWord}</span>
               <br />
               <span className={fifthWordWhite ? "text-white" : "text-[#F74B1C]"}>{fifthWord} </span>
+              {
+                space && <br/>
+              }
               {sixthWord != null && sixthWord !== "" && (
                 <>
                   {/* <br /> */}

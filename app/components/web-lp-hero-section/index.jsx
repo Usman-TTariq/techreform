@@ -8,7 +8,7 @@ import Image from "next/image";
 const WebLPHeroSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
     return (
-        <div className="relative">
+        <div className="relative pb-[100px] max-sm:pb-[0px]">
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="/images/frame.png"
@@ -24,8 +24,8 @@ const WebLPHeroSection = () => {
                 height={1000}
             />
             <div className="container relative">
-                <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
-                    <div className="col-span-8 max-xl:col-span-7 my-auto">
+                <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] max-sm:pt-[20px] relative z-20">
+                    <div className="col-span-8 max-xl:col-span-7 max-sm:col-span-12 my-auto">
                         <div className="pb-4 sm:pb-[20px]">
                             <CapsuleLabel firstWord="CUSTOM " secondWord="WEB" thirdWord="DEVELOPMENT" />
                         </div>
@@ -45,40 +45,40 @@ const WebLPHeroSection = () => {
                         <div className="pt-5 sm:pt-[30px]">
                             <Button text="Schedule a Free Consultation" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
-                        <div className="grid grid-cols-12 pt-[30px]">
+                        <div className="grid grid-cols-12 pt-[30px] max-sm:pt-[10px]">
                             <div className="col-span-4">
                                 <div>
-                                    <div className="font-britanicaBlack text-[44px] font-black">
+                                    <div className="font-britanicaBlack text-[44px] max-sm:text-[20px] font-black">
                                         <span className="text-[#F74B1C]">20K+</span>
                                     </div>
-                                    <div className="font-britanicaRegular text-[20px] font-regular text-white -mt-[10px]">
+                                    <div className="font-britanicaRegular text-[20px] max-sm:text-[16px] font-regular text-white -mt-[10px]">
                                         Amazing graduates
                                     </div>
                                 </div>
                             </div>
                             <div className="col-span-3">
                                 <div>
-                                    <div className="font-britanicaBlack text-[44px] font-black">
+                                    <div className="font-britanicaBlack text-[44px] max-sm:text-[20px] font-black">
                                         <span className="text-[#F74B1C]">97%</span>
                                     </div>
-                                    <div className="font-britanicaRegular text-[20px] font-regular text-white -mt-[10px]">
+                                    <div className="font-britanicaRegular text-[20px] max-sm:text-[16px] font-regular text-white -mt-[10px]">
                                         Hiring rate
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-3">
-                                <div>
-                                    <div className="font-britanicaBlack text-[44px] font-black">
+                            <div className="col-span-3 max-sm:col-span-5">
+                                <div className="max-sm:text-end">
+                                    <div className="font-britanicaBlack text-[44px] max-sm:text-[20px] font-black">
                                         <span className="text-[#F74B1C]">195+</span>
                                     </div>
-                                    <div className="font-britanicaRegular text-[20px] font-regular text-white -mt-[10px]">
+                                    <div className="font-britanicaRegular text-[20px] max-sm:text-[16px] font-regular text-white -mt-[10px]">
                                         Corporate Partners
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-4 max-xl:col-span-5 my-auto">
+                    <div className="col-span-4 max-xl:col-span-5 max-sm:col-span-12 my-auto">
                         <FreeConsultationForm />
                     </div>
                 </div>

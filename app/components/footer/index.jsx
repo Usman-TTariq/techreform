@@ -4,7 +4,7 @@ import FooterLogo from "./svg/footer-logo";
 
 const Footer = () => {
     return (
-        <footer className="relative w-full min-w-0 pt-10 sm:pt-12 md:pt-[60px] overflow-hidden bg-[#0E0E0E]">
+        <footer className="relative w-full min-w-0 pt-10 sm:pt-12 md:pt-[60px] overflow-hidden bg-[#0E0E0E] max-sm:pt-[0px]">
             <Image
                 className="absolute top-0 left-0 w-[40%] sm:w-[30%] md:w-[25%]"
                 src="/images/footerbk1.png"
@@ -30,7 +30,7 @@ const Footer = () => {
                     width={1000}
                     height={1000}
                 /> */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-4">
                     <div className="min-w-0">
                         <a
                             href="mailto:info@techreforms.com"
@@ -43,10 +43,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="font-britanicaBlack text-[16px] leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
-                            <span className="text-white">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
+                        <div className="font-britanicaBlack max-sm:text-center text-[16px] leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
+                            <span className="text-white max-sm:text-center">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
                         </div>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 text-right">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 text-right max-sm:text-center">
                             Let’s take your brand to the next level. Get in touch!
                         </div>
                     </div>

@@ -94,21 +94,21 @@ const LpAppWhyCustom = () => {
     const content = TAB_CONTENT[activeTab];
 
     return (
-        <div className="relative text-white pb-[100px]">
+        <div className="relative text-white pb-[100px] max-sm:pb-[40px]">
             <div className="container">
-                <div className="rounded-xl border border-[#7724C1] bg-[#3c3c3c4f] px-6 sm:px-8 md:px-[40px] py-6 sm:py-8 md:py-[30px] shadow-[0_0_24px_rgba(119,36,193,0.12)]">
+                <div className="rounded-xl border border-[#7724C1] bg-[#3c3c3c4f] px-6 max-sm:px-3 sm:px-8 md:px-[40px] py-6 sm:py-8 md:py-[30px] shadow-[0_0_24px_rgba(119,36,193,0.12)]">
                     {/* Header: capsule + intro left, title right */}
                     <div className="grid grid-cols-12 gap-4 items-start">
                         <div className="col-span-12 lg:col-span-6">
                             <div className="flex justify-start pb-2">
                                 <CapsuleLabel firstWord="ADVANCED" secondWord="TECHNOLOGIES" />
                             </div>
-                            <p className="font-britanicaRegular text-[13px] sm:text-[20px] text-white/90 ">
+                            <p className="font-britanicaRegular text-[13px] sm:text-[20px] text-white/90 max-sm:text-center">
                                 Let's see what makes custom mobile application <br /> development services the need of the hour
                             </p>
                         </div>
-                        <div className="col-span-12 lg:col-span-6 flex lg:justify-end">
-                            <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[28px] md:text-[36px] lg:text-[52px] lg:leading-[55px] font-black text-left lg:text-right">
+                        <div className="col-span-12 lg:col-span-6 flex lg:justify-end max-sm:justify-center">
+                            <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[28px] md:text-[36px] lg:text-[52px] lg:leading-[55px] font-black text-left max-sm:text-center lg:text-right">
                                 <span className="text-white">Why </span>
                                 <span className="text-[#F74B1C]">Custom Mobile </span>
                                 <br />
@@ -126,7 +126,7 @@ const LpAppWhyCustom = () => {
                                     <button
                                         key={tab.id}
                                         onClick={() => setActiveTab(index)}
-                                        className={`rounded-xl px-[30px] py-2.5 text-[11px] sm:text-[14px] cursor-pointer font-semibold transition-colors capitalize ${activeTab === index
+                                        className={`rounded-xl max-sm:w-full px-[30px] py-2.5 text-[11px] sm:text-[14px] cursor-pointer font-semibold transition-colors capitalize ${activeTab === index
                                             ? "bg-[#F74B1C] text-white shadow-[0_0_12px_rgba(247,75,28,0.35)]"
                                             : "bg-[#474747] text-white hover:bg-[#555]"
                                             }`}

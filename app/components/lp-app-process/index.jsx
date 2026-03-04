@@ -25,7 +25,7 @@ const LpAppprocess = () => {
     },
   ];
   return (
-    <div className="relative pb-[100px]">
+    <div className="relative pb-[100px] max-sm:pb-[40px]">
       <div className="container">
         <div className="grid grid-cols-12">
           <div className="col-span-12 text-center">
@@ -48,13 +48,13 @@ const LpAppprocess = () => {
         </div>
         <div className="grid grid-cols-12 gap-3 pt-[40px]">
           {processes.map((process, index) => (
-            <div key={index} className="col-span-3">
+            <div key={index} className="col-span-3 max-sm:col-span-12">
               <div className="flex justify-center">
                 <div className="border border-[#B96BFE] rounded-2xl p-5">
                   <ClaendarIcon className="w-[30px] h-[30px]" />
                 </div>
               </div>
-              <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-center py-1 sm:py-[10px]">
+              <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[20px] xl:text-[20px] 2xl:text-[24px] font-regular text-white text-center py-1 sm:py-[10px]">
                 {process.title}
               </div>
               <div className="font-britanicaRegular text-[16px] font-regular text-white text-center">
@@ -63,7 +63,7 @@ const LpAppprocess = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center pt-[50px]">
+        <div className="flex justify-center pt-[50px] max-sm:pt-[20px]">
             <Button text="Schedule a Free Consultation" icon={false} onClick={() => buttonText && setPopupOpen(true)} />
         </div>
       </div>

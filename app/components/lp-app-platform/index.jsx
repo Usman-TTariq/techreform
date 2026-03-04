@@ -28,7 +28,7 @@ const LpAppPlatform = () => {
                 <div className="grid grid-cols-12 pt-[40px] gap-4">
                     <div className="col-span-12 lg:col-span-6">
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4 mb-[20px]">
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
                                 <div className="flex justify-center">
                                     <div className="border border-[#B96BFE] rounded-2xl p-3">
                                         <ClaendarIcon className="w-[25px] h-[25px]" />
@@ -46,7 +46,7 @@ const LpAppPlatform = () => {
                             </div>
                         </div>
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4 mb-[20px]">
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
                                 <div className="flex justify-center">
                                     <div className="border border-[#B96BFE] rounded-2xl p-3">
                                         <ClaendarIcon className="w-[25px] h-[25px]" />
@@ -84,7 +84,7 @@ const LpAppPlatform = () => {
                             />
                         </div>
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4 mb-[20px]">
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
                                 <div className="flex justify-center">
                                     <div className="border border-[#B96BFE] rounded-2xl p-3">
                                         <ClaendarIcon className="w-[25px] h-[25px]" />
@@ -102,7 +102,7 @@ const LpAppPlatform = () => {
                             </div>
                         </div>
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4">
-                            <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
                                 <div className="flex justify-center">
                                     <div className="border border-[#B96BFE] rounded-2xl p-3">
                                         <ClaendarIcon className="w-[25px] h-[25px]" />

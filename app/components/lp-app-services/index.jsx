@@ -189,16 +189,16 @@ const LpAppServices = () => {
     ]
 
     return (
-        <div className="min-h-[100vh]">
+        <div className="min-h-[100vh] max-sm:h-auto">
             <div
                 ref={sectionRef}
-                className="sticky top-0 min-h-screen relative pb-[150px]"
+                className="sticky top-0 min-h-screen relative pb-[150px] max-sm:pb-[30px]"
             >
                 <div className="container relative">
                     <div className="grid grid-cols-12 justify-between gap-4">
                         <div className="col-span-8 max-lg:col-span-12">
                             <div className="flex justify-start">
-                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
+                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left max-sm:text-center">
                                     <span className="text-[#F74B1C]">End-to-End </span>
                                     <span className="text-white">Custom Mobile</span>
                                     <br />
@@ -207,19 +207,19 @@ const LpAppServices = () => {
                             </div>
                         </div>
                         <div className="col-span-4 max-lg:col-span-12">
-                            <div className="flex justify-end items-end flex-col">
+                            <div className="flex justify-end max-sm:justify-center items-end max-sm:items-center flex-col">
                                 <CapsuleLabel firstWord="OUR" secondWord="SERVICES" />
-                                <div className="font-britanicaRegular text-[14px] text-right sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                                <div className="font-britanicaRegular max-sm:text-center max-sm:pb-3 text-[14px] text-right sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
                                     We offer real solutions with apps tailored specifically to your brand, not old cookie-cutter solutions wrapped in a new wrapping under the pretense of innovation.
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="grid grid-cols-12 gap-8 pt-[10px]">
-                        <div className="col-span-4">
+                        <div className="col-span-4 max-sm:col-span-8">
                             <div>
                                 <Image
-                                    className="w-full"
+                                    className="w-full max-sm:mx-auto"
                                     src="/images/lp-app-services.png"
                                     alt=""
                                     width={1000}
@@ -228,7 +228,7 @@ const LpAppServices = () => {
                                 <div className="flex justify-end">
                                     <ArrowIcon className="w-[100px]" />
                                 </div>
-                                <div className="flex justify-start">
+                                <div className="flex justify-start max-sm:hidden">
                                     <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
                                         <span className="text-[#F74B1C]">6 More </span>
                                         <span className="text-white">Sections</span>
@@ -238,7 +238,7 @@ const LpAppServices = () => {
                                 </div>
                             </div>
                         </div>
-                        <div ref={columnRef} className="col-span-8 max-h-[730px] overflow-y-auto overflow-x-hidden scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                        <div ref={columnRef} className="col-span-8 max-sm:col-span-10 max-h-[730px] overflow-y-auto overflow-x-hidden scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                             <div className="pb-2">
                                 {
                                     services.map((service, index) => (
@@ -247,9 +247,9 @@ const LpAppServices = () => {
                                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-[#F74B1C]  max-w-full leading-relaxed">
                                                     {service.title}
                                                 </div>
-                                                <div className="font-britanicaBlack flex items-center gap-3 text-[40px] leading-tight md:leading-[52px] font-black break-words">
-                                                    <span className="text-white">{service.heading1}</span>
-                                                    <span className="text-[#F74B1C]">{service.heading2}</span>
+                                                <div className="font-britanicaBlack max-sm:flex-col max-sm:items-start max-sm:justify-center max-sm:items-center flex items-center gap-3 text-[40px] max-sm:text-[20px] leading-tight md:leading-[52px] font-black break-words">
+                                                    <span className="text-white max-sm:text-center">{service.heading1}</span>
+                                                    <span className="text-[#F74B1C] max-sm:text-center">{service.heading2}</span>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
                                                     {service.description}
@@ -257,8 +257,8 @@ const LpAppServices = () => {
                                                 <div className="flex flex-wrap justify-start items-center gap-4 pt-[30px]">
                                                     {service.features?.map((feature, featureIndex) => (
                                                         <div key={featureIndex} className="">
-                                                            <span className="inline-flex items-center gap-3 rounded-full bg-[linear-gradient(90deg,rgb(245_133_226_/_42%)_0%,rgba(147,64,255,0.52)_50%,rgb(147_61_132)_100%)] px-5 py-2.5 text-white capitalize shadow-[0_0_12px_rgba(119,36,193,0.4)]">
-                                                                <span className="h-2 w-2 shrink-0 rounded-full bg-white"></span>
+                                                            <span className="inline-flex items-center gap-3 max-sm:text-[12px] rounded-full bg-[linear-gradient(90deg,rgb(245_133_226_/_42%)_0%,rgba(147,64,255,0.52)_50%,rgb(147_61_132)_100%)] px-5 py-2.5 text-white capitalize shadow-[0_0_12px_rgba(119,36,193,0.4)]">
+                                                                <span className="h-2 w-2 max-sm:text-[10px] shrink-0 rounded-full bg-white"></span>
                                                                 {feature.title}
                                                             </span>
                                                         </div>

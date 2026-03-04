@@ -62,7 +62,7 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
     ];
 
     return (
-        <div className="relative pb-[150px]">
+        <div className="relative pb-[150px] max-sm:pb-[30px]">
             <div className="container">
                 <div className="">
                     <div className="grid grid-cols-12 justify-between gap-4">
@@ -70,15 +70,15 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
                             <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
                             {
                                 para && (
-                                    <div className="font-britanicaRegular text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                                    <div className="font-britanicaRegular max-sm:text-center text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
                                         {para}
                                     </div>
                                 )
                             }
                         </div>
                         <div className={`col-span-10 max-lg:col-span-12 ${thirdCol}`}>
-                            <div className="flex justify-end">
-                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-right">
+                            <div className="flex justify-end max-sm:justify-center">
+                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-right max-sm:text-center">
                                     {
                                         firstWord && (
                                             <span className="text-[#F74B1C]">{firstWord} </span>
@@ -98,12 +98,18 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
                             </div>
                         </div>
                     </div>
-                    <div className="pt-[40px]">
+                    <div className="pt-[40px] max-sm:pt-[10px]">
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar]}
                             spaceBetween={15}
-                            slidesPerView={4}
+                            slidesPerView={1}
                             navigation
+                            breakpoints={{
+                                0: { slidesPerView: 1 },
+                                640: { slidesPerView: 2 },
+                                768: { slidesPerView: 3 },
+                                1024: { slidesPerView: 4 },
+                            }}
                         >
                             {
                                 industries.map((industry, index) => (
@@ -128,13 +134,13 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left max-sm:text-center pb-1 sm:pb-[5px]">
                                                     {industry.title}
                                                 </div>
-                                                <div className="font-britanicaRegular text-[16px] font-regular text-white text-left">
+                                                <div className="font-britanicaRegular text-[16px] font-regular text-white text-left max-sm:text-center">
                                                     {industry.description}
                                                 </div>
-                                                <div className="pt-[30px] flex justify-start">
+                                                <div className="pt-[30px] flex justify-start max-sm:justify-center">
                                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                                 </div>
                                             </div>

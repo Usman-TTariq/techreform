@@ -21,7 +21,7 @@ const LpAppPartnership = () => {
         },
     ]
     return (
-        <div className="relative pb-[100px]">
+        <div className="relative pb-[100px] max-sm:pb-[30px]">
             <div className="container">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12 text-center">

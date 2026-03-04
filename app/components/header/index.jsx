@@ -286,7 +286,7 @@ const Header = () => {
 
                     {/* Desktop CTA – hidden on small screens */}
                     <div className="hidden lg:block flex-shrink-0">
-                        <Button icon={true} />
+                        <Button icon={true} onClick={() => window.location.href = "tel:+12132625357"} />
                     </div>
 
                     {/* Mobile: hamburger button */}
@@ -415,7 +415,7 @@ const Header = () => {
                         className="flex-shrink-0 border-t border-white/15 bg-[#0a0a0a] pt-4 px-4 pb-4"
                         style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom, 0px) + 1rem)" }}
                     >
-                        <Button icon={true} />
+                        <Button icon={true} onClick={() => window.location.href = "tel:+12132625357"} />
                     </div>
                     {/* Extra solid strip so no transparency at bottom on any device */}
                     <div className="flex-shrink-0 h-[env(safe-area-inset-bottom,0px)] min-h-[8px] bg-[#0a0a0a]" aria-hidden />

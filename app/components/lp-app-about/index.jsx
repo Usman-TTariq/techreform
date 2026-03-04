@@ -3,7 +3,7 @@ import CapsuleLabel from "../common/capsule-label";
 
 const LpAppAbout = () => {
     return (
-        <div className="relative pt-[100px] mb-[160px]">
+        <div className="relative pt-[100px] max-sm:pt-[60px] mb-[160px] max-sm:mb-[50px]">
             
             <div className="container relative z-10">
                 <div className="grid grid-cols-12">
@@ -26,7 +26,7 @@ const LpAppAbout = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-[80px]">
+                <div className="pt-[80px] max-sm:pt-[40px]">
                     <Image
                         className="w-full"
                         src="/images/bulletpoints.png"

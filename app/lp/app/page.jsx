@@ -24,8 +24,8 @@ const AppLPPage = () => {
       <LpAppServices />
       <IndustriesMobile
         secondWord="Impact of Mobile Application Development Across Industries"
-        secondCol="!col-span-4"
-        thirdCol="!col-span-8"
+        secondCol="!col-span-4 max-sm:!col-span-12"
+        thirdCol="!col-span-8 max-sm:!col-span-12"
         para="From enhancing customer engagement to modernizing legacy systems, industry-specific mobile solutions are enabling organizations to adapt and thrive in an increasingly digital world."
       />
       <LpAppprocess/>

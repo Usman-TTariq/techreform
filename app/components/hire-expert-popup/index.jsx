@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { getImagePath } from "../../utils/imagePath";
+import PhoneInput from "react-phone-number-input";
+import { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 const INPUT_CLASS =
     "w-full min-w-0 px-3 sm:px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/15 text-white font-britanicaRegular text-[14px] placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#F74B1C]/50 focus:border-[#F74B1C] transition-colors box-border";
@@ -17,10 +18,10 @@ const HireExpertPopup = ({ open, onClose }) => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        phone: "",
         company: "",
         message: "",
     });
+    const [phone, setPhone] = useState("");
     const [errors, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -44,7 +45,8 @@ const HireExpertPopup = ({ open, onClose }) => {
         if (!formData.name?.trim()) newErrors.name = "Name is required";
         if (!formData.email?.trim()) newErrors.email = "Email is required";
         else if (!validateEmail(formData.email.trim())) newErrors.email = "Enter a valid email";
-        if (!formData.phone?.trim()) newErrors.phone = "Phone is required";
+        if (!phone?.trim()) newErrors.phone = "Phone is required";
+        else if (!isValidPhoneNumber(phone.trim())) newErrors.phone = "Please enter a valid phone number";
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -55,13 +57,32 @@ const HireExpertPopup = ({ open, onClose }) => {
         if (!validate()) return;
         setIsLoading(true);
         try {
-            // await fetch("/api/hire-request", { method: "POST", body: JSON.stringify(formData) });
-            await new Promise((r) => setTimeout(r, 600));
-            setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+            const res = await fetch("/api/consultation", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: formData.name.trim(),
+                    businessName: formData.company.trim(),
+                    email: formData.email.trim(),
+                    phone: phone.trim(),
+                    message: formData.message.trim(),
+                }),
+            });
+            const data = await res.json().catch(() => ({}));
+
+            if (!res.ok) {
+                throw new Error(data.error || "Something went wrong. Please try again.");
+            }
+
+            setFormData({ name: "", email: "", company: "", message: "" });
+            setPhone("");
             setErrors({});
             setSubmitSuccess(true);
-        } catch {
-            setErrors((prev) => ({ ...prev, submit: "Something went wrong. Please try again." }));
+        } catch (err) {
+            setErrors((prev) => ({
+                ...prev,
+                submit: err.message || "Something went wrong. Please try again.",
+            }));
         } finally {
             setIsLoading(false);
         }
@@ -106,7 +127,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                 {/* Scrollable form area */}
                 <div className="hire-expert-popup-scroll flex-1 min-h-0 overflow-y-auto overflow-x-hidden">
                     <div className="p-4 sm:p-6 pt-2 min-w-0">
-                        <h3 className="font-britanicaBlack text-white text-[20px] sm:text-[24px] leading-tight font-black mb-1">
+                        <h3 className="font-britanicaBlack text-white text-[20px] sm:text-[24px] max-sm:text-[16px] leading-tight font-black mb-1">
                             Hire Expert App Developers
                         </h3>
                         <p className="font-britanicaRegular text-white/70 text-[13px] sm:text-[14px] mb-5">
@@ -138,6 +159,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         placeholder="John Doe"
+                                        disabled={isLoading}
                                         className={`${INPUT_CLASS} ${errors.name ? "ring-2 ring-red-500 border-red-500" : ""}`}
                                     />
                                     {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name}</p>}
@@ -151,21 +173,29 @@ const HireExpertPopup = ({ open, onClose }) => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         placeholder="john@company.com"
+                                        disabled={isLoading}
                                         className={`${INPUT_CLASS} ${errors.email ? "ring-2 ring-red-500 border-red-500" : ""}`}
                                     />
                                     {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email}</p>}
                                 </div>
                                 <div>
                                     <label htmlFor="popup-phone" className={LABEL_CLASS}>Phone *</label>
-                                    <input
-                                        id="popup-phone"
-                                        type="tel"
-                                        name="phone"
-                                        value={formData.phone}
-                                        onChange={handleChange}
-                                        placeholder="+1 (555) 000-0000"
-                                        className={`${INPUT_CLASS} ${errors.phone ? "ring-2 ring-red-500 border-red-500" : ""}`}
-                                    />
+                                    <div
+                                        className={`phone-wrapper rounded-xl px-3 sm:px-4 py-3 bg-[#1a1a1a] border border-white/15 transition-colors ${errors.phone ? "ring-2 ring-red-500 border-red-500" : "focus-within:ring-2 focus-within:ring-[#F74B1C]/50 focus-within:border-[#F74B1C]"}`}
+                                    >
+                                        <PhoneInput
+                                            international
+                                            defaultCountry="US"
+                                            value={phone}
+                                            onChange={(v) => {
+                                                setPhone(v ?? "");
+                                                if (errors.phone) setErrors((prev) => ({ ...prev, phone: null }));
+                                            }}
+                                            disabled={isLoading}
+                                            placeholder="+1 (555) 000-0000"
+                                            className="w-full min-w-0 bg-transparent border-none text-white font-britanicaRegular text-[14px] placeholder:text-white/40 focus:outline-none"
+                                        />
+                                    </div>
                                     {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone}</p>}
                                 </div>
                                 <div>
@@ -177,6 +207,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                         value={formData.company}
                                         onChange={handleChange}
                                         placeholder="Your company or project"
+                                        disabled={isLoading}
                                         className={INPUT_CLASS}
                                     />
                                 </div>
@@ -189,6 +220,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                         onChange={handleChange}
                                         rows={3}
                                         placeholder="App idea, timeline, platform (iOS/Android)..."
+                                        disabled={isLoading}
                                         className={`${INPUT_CLASS} resize-none`}
                                     />
                                 </div>

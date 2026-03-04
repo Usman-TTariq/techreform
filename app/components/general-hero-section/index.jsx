@@ -8,7 +8,7 @@ import HireExpertPopup from "../hire-expert-popup";
 const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
   const [popupOpen, setPopupOpen] = useState(false);
   const heightClass = autoHeight
-    ? "pt-6 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
+    ? "pt-0 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
     : compact
       ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[60vh] md:min-h-[60vh]"
       : "min-h-[60vh] sm:min-h-[60vh] md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0";
@@ -29,7 +29,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
         height={1000}
       />
       <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
-        <div className={`grid grid-cols-12 ${compact ? "pt-10 sm:pt-[100px] md:pt-[120px]" : "pt-12 sm:pt-[100px] md:pt-[120px]"}`}>
+        <div className={`grid grid-cols-12 ${compact ? "pt-7 sm:pt-[100px] md:pt-[120px]" : "pt-12 sm:pt-[100px] md:pt-[120px]"}`}>
           <div className="col-span-12 text-center min-w-0">
             <div className="font-britanicaBlack text-[22px] leading-[1.25] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black break-words">
               <span className="text-white">{firstWord} </span>

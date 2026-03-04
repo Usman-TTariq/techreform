@@ -32,12 +32,12 @@ const barriers = [
 
 const LpAppBarriers = () => {
     return (
-        <div className="relative pb-[100px]">
+        <div className="relative pb-[100px] max-sm:pb-[40px]">
             <div className="container">
                 <div className="grid grid-cols-12 gap-8 items-start">
-                    <div className="col-span-7 max-lg:col-span-12 my-auto">
+                    <div className="col-span-7 max-lg:col-span-12 max-sm:col-span-10 my-auto">
                         <div className="benefit-border-wrap2 p-[1px] rounded-3xl">
-                            <div className="bg-black p-[36px] rounded-3xl">
+                            <div className="bg-black p-[36px] max-sm:p-[10px] rounded-3xl">
                                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 pb-6 sm:pb-8">
                                     <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[58px] font-black text-left">
                                         <span className="text-white">Simple Solutions </span>
@@ -47,7 +47,7 @@ const LpAppBarriers = () => {
                                         <CapsuleLabel firstWord="OUR" secondWord="VALUES" />
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-sm:grid-cols-1">
                                     {barriers.map((item, index) => {
                                         return (
                                             <div
@@ -81,7 +81,7 @@ const LpAppBarriers = () => {
 
 
                     </div>
-                    <div className="col-span-5 my-auto">
+                    <div className="col-span-5 my-auto max-sm:col-span-8 max-sm:col-start-2">
                         <div>
                             <Image
                                 className="w-full"

@@ -52,19 +52,19 @@ const LpAppHire = () => {
     ];
 
     return (
-        <div className="relative pb-[100px]">
+        <div className="relative pb-[100px] max-sm:pb-[40px]">
             <div className="container">
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12 lg:col-span-6 my-auto">
-                        <div className="flex justify-start pb-2">
+                        <div className="flex justify-start max-sm:justify-center pb-2">
                             <CapsuleLabel firstWord="AI" secondWord="DEVELOPER" />
                         </div>
-                        <p className="font-britanicaRegular text-[13px] sm:text-[16px] text-white">
+                        <p className="font-britanicaRegular text-[13px] sm:text-[16px] text-white max-sm:text-center">
                             Businesses must stay updated on new technologies. <br /> Our experts leverage AI for app development to <br /> transform industries and enhance user experiences.
                         </p>
                     </div>
-                    <div className="col-span-12 lg:col-span-6 flex lg:justify-end my-auto">
-                        <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[28px] md:text-[36px] lg:text-[52px] lg:leading-[55px] font-black text-left lg:text-right">
+                    <div className="col-span-12 lg:col-span-6 flex lg:justify-end max-sm:justify-center my-auto">
+                        <div className="font-britanicaBlack text-[22px] max-sm:text-center leading-tight sm:text-[28px] md:text-[36px] lg:text-[52px] lg:leading-[55px] font-black text-left lg:text-right">
                             <span className="text-white">Hire an </span>
                             <span className="text-[#F74B1C]">Artificial</span>
                             <br />
@@ -73,12 +73,12 @@ const LpAppHire = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-4 pt-[50px] items-start">
+                <div className="grid grid-cols-12 gap-4 pt-[50px] items-start max-sm:pt-[20px]">
                     {
                         developers.map((developer, index) => (
-                            <div className="col-span-12 lg:col-span-4 pb-[40px] h-full" key={index}>
+                            <div className="col-span-12 lg:col-span-4 pb-[40px] h-full max-sm:pb-[10px]" key={index}>
                                 <div className="h-full flex flex-col justify-between">
-                                    <div className="w-full h-[2px] bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)]"></div>
+                                    <div className="w-full max-sm:mb-5 h-[2px] bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)]"></div>
                                     <div className="flex items-center gap-6">
                                         <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[75px] font-regular text-[#9340FF] text-left pb-1 sm:pb-[5px]">{developer.number}</div>
                                         <div>

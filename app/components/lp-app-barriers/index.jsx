@@ -34,8 +34,8 @@ const LpAppBarriers = () => {
     return (
         <div className="relative pb-[100px] max-sm:pb-[40px]">
             <div className="container">
-                <div className="grid grid-cols-12 gap-8 items-start">
-                    <div className="col-span-7 max-lg:col-span-12 max-sm:col-span-10 my-auto">
+                <div className="grid grid-cols-12 gap-8 max-sm:gap-0">
+                    <div className="col-span-7 max-sm:col-span-12 my-auto">
                         <div className="benefit-border-wrap2 p-[1px] rounded-3xl">
                             <div className="bg-black p-[36px] max-sm:p-[10px] rounded-3xl">
                                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 pb-6 sm:pb-8">
@@ -43,7 +43,7 @@ const LpAppBarriers = () => {
                                         <span className="text-white">Simple Solutions </span>
                                         <span className="text-[#F74B1C]">for Common Issues</span>
                                     </div>
-                                    <div className="shrink-0 pt-[16px]">
+                                    <div className="pt-[16px]">
                                         <CapsuleLabel firstWord="OUR" secondWord="VALUES" />
                                     </div>
                                 </div>

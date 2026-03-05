@@ -54,6 +54,19 @@ export default function RootLayout({
             gtag('config', 'G-BMLP34G3M0');
           `}
         </Script>
+        <Script id="livechat-config" strategy="afterInteractive">
+          {`
+            window.__lc = window.__lc || {};
+            window.__lc.license = 19562587;
+            window.__lc.integration_name = "manual_onboarding";
+            window.__lc.product_name = "livechat";
+          `}
+        </Script>
+        <Script
+          id="livechat-widget"
+          strategy="afterInteractive"
+          src="https://cdn.livechatinc.com/tracking.js"
+        />
       </head>
       <body className="antialiased">
         {children}

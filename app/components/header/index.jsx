@@ -7,12 +7,12 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const DROPDOWN_ITEMS = [
-    { key: "mobile", label: "Mobile", href: "/mobile-app-development" },
-    { key: "ecommerce", label: "Ecommerce", href: "/ecommerce" },
-    { key: "staff", label: "Staff Augmentation", href: "/staff-augmentation" },
-    { key: "products", label: "Products", href: "/products" },
-    { key: "portfolio", label: "Portfolio", href: "/portfolio" },
-    { key: "company", label: "Company", href: "/about" },
+    { key: "mobile", label: "Mobile" },
+    { key: "ecommerce", label: "Ecommerce" },
+    { key: "staff", label: "Staff Augmentation" },
+    { key: "products", label: "Products" },
+    { key: "portfolio", label: "Portfolio" },
+    { key: "company", label: "Company" },
 ];
 
 const MEGA_MENU = {
@@ -121,10 +121,10 @@ const MEGA_MENU = {
         sidebar: [{ label: "Our Products" }],
         sections: [{ heading: "Our Products", items: [{ label: "ERP", href: "/erp" }] }],
     },
-    portfolio: {
-        sidebar: [{ label: "Work" }],
-        sections: [{ heading: "Portfolio", items: [{ label: "Case Studies", href: "#" }] }],
-    },
+    // portfolio: {
+    //     sidebar: [{ label: "Work" }],
+    //     sections: [{ heading: "Portfolio", items: [{ label: "Case Studies", href: "#" }] }],
+    // },
     company: {
         sidebar: [{ label: "Company" }],
         sections: [{ heading: "Company", items: [{ label: "About Us", href: "/about" }, { label: "Contact", href: "#" }] }],
@@ -267,19 +267,28 @@ const Header = () => {
                                     onMouseEnter={() => setActiveDropdown(key)}
                                     className="relative"
                                 >
-                                    {href === "#" ? (
-                                        <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
-                                            {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
-                                        </span>
-                                    ) : (
-                                        <Link
-                                            href={href}
-                                            className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer"
-                                        >
-                                            {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
-                                        </Link>
-                                    )}
+                                    <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                        {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
+                                    </span>
                                 </li>
+                                // <li
+                                //     key={key}
+                                //     onMouseEnter={() => setActiveDropdown(key)}
+                                //     className="relative"
+                                // >
+                                //     {href === "#" ? (
+                                //         <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                //             {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
+                                //         </span>
+                                //     ) : (
+                                //         <Link
+                                //             href={href}
+                                //             className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer"
+                                //         >
+                                //             {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
+                                //         </Link>
+                                //     )}
+                                // </li>
                             ))}
                         </ul>
                     </nav>
@@ -397,13 +406,16 @@ const Header = () => {
                                                 {label}
                                             </span>
                                         ) : (
-                                            <Link
-                                                href={href}
-                                                onClick={() => setMobileMenuOpen(false)}
-                                                className="block py-3.5 px-3 text-white font-britanicaRegular text-[15px] hover:bg-white/8 hover:text-[#F74B1C] rounded-lg transition-colors min-h-[48px] flex items-center"
-                                            >
-                                                {label}
-                                            </Link>
+                                            // <Link
+                                            //     href={href}
+                                            //     onClick={() => setMobileMenuOpen(false)}
+                                            //     className="block py-3.5 px-3 text-white font-britanicaRegular text-[15px] hover:bg-white/8 hover:text-[#F74B1C] rounded-lg transition-colors min-h-[48px] flex items-center"
+                                            // >
+                                            //     {label}
+                                            // </Link>
+                                            <span className="block py-3.5 px-3 text-white/90 font-britanicaRegular text-[15px]">
+                                            {label}
+                                        </span>
                                         )}
                                     </li>
                                 );

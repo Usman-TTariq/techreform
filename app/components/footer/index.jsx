@@ -32,15 +32,15 @@ const Footer = () => {
                 /> */}
                 <div className="flex items-center justify-between max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-4">
                     <div className="min-w-0">
-                        <a
+                        {/* <a
                             href="mailto:info@techreforms.com"
                             className="font-britanicaRegular text-[18px] sm:text-[20px] md:text-[28px] font-regular text-white break-all sm:break-normal hover:text-[#F74B1C] transition-colors inline-block"
                         >
                             info@techreforms.com
-                        </a>
-                        <div className="w-full max-w-[100%] min-w-0 pt-1">
+                        </a> */}
+                        <Link href="/" className="block w-full max-w-[100%] min-w-0">
                             <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[450px] h-auto" />
-                        </div>
+                        </Link>
                     </div>
                     <div>
                         <div className="font-britanicaBlack max-sm:text-center text-[16px] leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
@@ -50,6 +50,15 @@ const Footer = () => {
                             Let’s take your brand to the next level. Get in touch!
                         </div>
                     </div>
+                </div>
+                <div>
+                    <Image
+                        className="w-full pt-8"
+                        src="/images/footerline.png"
+                        alt=""
+                        width={1000}
+                        height={1000}
+                    />
                 </div>
                 <div className="grid grid-cols-12 gap-6 sm:gap-8 pt-[20px]">
                     <div className="col-span-12 sm:col-span-6 md:col-span-3">
@@ -71,7 +80,7 @@ const Footer = () => {
                         </div>
                         <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
                             <li><Link href="/erp" className="hover:text-[#F74B1C] transition-colors">ERP</Link></li>
-                            <li><Link href="/products" className="hover:text-[#F74B1C] transition-colors">HRMS</Link></li>
+                            {/* <li><Link href="/products" className="hover:text-[#F74B1C] transition-colors">HRMS</Link></li> */}
                         </ul>
                     </div>
                     <div className="col-span-12 sm:col-span-6 md:col-span-3">
@@ -100,25 +109,99 @@ const Footer = () => {
                             <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">E-Commerce Solutions</Link></li>
                             <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">Online Store</Link></li>
                         </ul>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-6 text-left">
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
                             Company
                         </div>
                         <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
                             <li><Link href="/about" className="hover:text-[#F74B1C] transition-colors">About Us</Link></li>
-                            <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li>
+                            {/* <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li> */}
                             <li><Link href="/blog" className="hover:text-[#F74B1C] transition-colors">Blog</Link></li>
-                            <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li>
-                            <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li>
-                            <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li>
+                            {/* <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li> */}
+                            {/* <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li> */}
+                            {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
+                            {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
+                        </ul>
+                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
+                            LP
+                        </div>
+                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
+                            <li><Link href="/lp/app" className="hover:text-[#F74B1C] transition-colors">lp app</Link></li>
+                            {/* <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li> */}
+                            <li><Link href="/lp/web" className="hover:text-[#F74B1C] transition-colors">lp web</Link></li>
+                            {/* <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li> */}
+                            {/* <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li> */}
+                            {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
+                            {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
                         </ul>
                     </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
+                    <div className="col-span-12 sm:col-span-6 md:col-span-3 relative">
+                        <div className="w-[120px] h-[120px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute bottom-[0%] right-[80px] max-sm:right-[40px] max-sm:bottom-[-3%] pointer-events-none">
+                        </div>
+                        <Image
+                            className="footer-dot-spin w-[20%] sm:w-[26%] md:w-[45%] absolute bottom-[-20%] right-0 pointer-events-none"
+                            src="/images/circlewithdot.png"
+                            alt=""
+                            width={1000}
+                            height={1000}
+                        />
                         <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
                             Get In Touch
                         </div>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2">
-                            <a href="mailto:info@techreforms.com" className="hover:text-[#F74B1C] transition-colors">info@techreforms.com</a>
+                        <div className="flex items-center gap-0 translate-x-[-11px]">
+                            <div>
+                                <Image
+                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
+                                    src="/images/phone-icon.png"
+                                    alt=""
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                                <a href="tel:+12132625357" className="hover:text-[#F74B1C] transition-colors">For Support: (213) 262-5357</a>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-14px]">
+                            <div>
+                                <Image
+                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
+                                    src="/images/phone-icon.png"
+                                    alt=""
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                                <a href="tel:+12132625357" className="hover:text-[#F74B1C] transition-colors">For Sales: (213) 262-5357</a>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-28px]">
+                            <div>
+                                <Image
+                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
+                                    src="/images/mail-icon.png"
+                                    alt=""
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                                <a href="mailto:info@techreforms.com" className="hover:text-[#F74B1C] transition-colors">info@techreforms.com</a>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-32px]">
+                            <div className="shrink-0">
+                                <Image
+                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
+                                    src="/images/location.png"
+                                    alt=""
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                                <div className="">8502 Preston Rd. Inglewood, Maine 98380</div>
+                            </div>
                         </div>
                     </div>
                 </div>

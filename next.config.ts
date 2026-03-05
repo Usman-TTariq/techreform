@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
   images: {
     // Serve images directly from public so they load on all deployment platforms
     unoptimized: false,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
   },
 };
 

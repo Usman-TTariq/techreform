@@ -10,11 +10,11 @@ const LpWebWorks = () => {
                         <div>
                             <Image
                                 className="w-full scale-250 max-sm:scale-100 max-sm:pt-[0px] relative z-10 pt-[50px]"
-                                style={{ transformOrigin: 'left' }}
-                                src="/images/laptop2.png"
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772733988/Laptop2_ueqicm.png"
                                 alt="Facilities Background"
                                 width={1000}
                                 height={1000}
+                                style={{ transformOrigin: 'left' }}
                             />
                         </div>
                     </div>

@@ -16,22 +16,22 @@ const TITLE_GRADIENT = {
 const cards = [
     {
         title: "Custom Website Application Development",
-        description: "We build tailored web applications that align with your brand and support unique business processes—from ERP and CRM to eCommerce and online training platforms.",
-        highlighted: true,
+        description: "We build everything from simple web apps to complex enterprise solutions. Our experts customize ERP, e-commerce, CRM, gaming, and training platforms to match your business goals.",
+        highlighted: false,
     },
     {
         title: "Diverse Coding Experience",
-        description: "Our team brings expertise across modern stacks and frameworks, delivering scalable, maintainable code that fits your technical requirements.",
+        description: "Our full-stack developers handle database design, web development, integrations, and cloud solutions. We bring broad technical expertise to build reliable, scalable software applications.",
         highlighted: false,
     },
     {
         title: "No Cookie-Cutter Solutions",
-        description: "Every project is scoped and designed for your goals. We avoid templates and one-size-fits-all approaches to ensure your product stands out.",
+        description: "We don’t use one-size-fits-all templates. Our team selects and customizes the right tools, technologies, and frameworks to meet your specific business objectives.",
         highlighted: false,
     },
     {
         title: "Content Management Systems",
-        description: "We design and integrate CMS solutions so you can manage content with ease while keeping performance and security a priority.",
+        description: "We integrate or build custom CMS solutions that let you easily manage and update website content while gaining flexibility, reliability, and long-term control.",
         highlighted: false,
     },
 ];
@@ -54,7 +54,7 @@ const LpWebHere = () => {
                         <span className="text-white">Build Your Dream Web App</span>
                     </div>
                     <p className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] text-white/90 pt-4 max-w-3xl mx-auto leading-relaxed">
-                        Our web development services can build a web application suited to your business needs. We design engaging and user-friendly web applications and websites that optimize the user experience. We deliver high-quality solutions for optimal business outcomes.
+                        Our web development services create web applications tailored to your business needs. We design simple, user-friendly websites and web apps that improve the user experience and help you achieve better business results with reliable, high-quality solutions.
                     </p>
                 </div>
 

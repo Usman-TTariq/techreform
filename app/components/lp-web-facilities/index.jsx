@@ -2,6 +2,7 @@
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
+import HireExpertPopup from "../hire-expert-popup";
 import { useState } from "react";
 
 const LpWebFacilities = () => {
@@ -30,14 +31,15 @@ const LpWebFacilities = () => {
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
                         <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            Off-the-shelf solutions might seem like the easier option, but in the long run, custom web applications give businesses an advantage by delivering tailored design, performance, and scalability. From seamless integrations to optimized performance, our development team transforms your vision into a fully functional platform built for success.
+                            We aim to offer smart, conversion-ready solutions that combine innovation, technical expertise, and a client-first mindset. Our scalable apps are built simply to support your current growth and future plans. From mobile and e-commerce to enterprise systems, our flexible teams deliver secure, high-performing solutions with clear communication, proven processes, and long-term reliability you can trust.
                         </div>
                     </div>
                 </div>
                 <div className="pt-[30px] flex justify-center">
-                    <Button text="Schedule a Free Consultation" icon={false} onClick={() => setPopupOpen(true)} />
+                    <Button text="Speak With a Developer" icon={false} onClick={() => setPopupOpen(true)} />
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import CapsuleLabel from "../common/capsule-label";
 import ClaendarIcon from "./svg/calendar-icon";
 import Button from "../common/button";
 
 const LpAppprocess = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
   const processes = [
     {
       title: "Discovery & Planning",
@@ -64,7 +63,7 @@ const LpAppprocess = () => {
           ))}
         </div>
         <div className="flex justify-center pt-[50px] max-sm:pt-[20px]">
-            <Button text="Schedule a Free Consultation" icon={false} onClick={() => buttonText && setPopupOpen(true)} />
+            <Button text="Schedule a Free Consultation" icon={false} onClick={() => { window.location.href = "tel:+12132625357"; }} />
         </div>
       </div>
     </div>

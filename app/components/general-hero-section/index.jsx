@@ -5,8 +5,17 @@ import Image from "next/image";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
+const PHONE_NUMBER = "tel:+12132625357";
+
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight, callOnClick }) => {
   const [popupOpen, setPopupOpen] = useState(false);
+  const handleButtonClick = () => {
+    if (callOnClick) {
+      window.location.href = PHONE_NUMBER;
+      return;
+    }
+    if (buttonText) setPopupOpen(true);
+  };
   const heightClass = autoHeight
     ? "pt-0 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
     : compact
@@ -60,7 +69,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
               buttonText && (
                 <div className="pt-4 sm:pt-[30px] w-full flex justify-center items-center">
                   <div className="w-full max-w-[320px] sm:max-w-none mx-auto flex justify-center">
-                    <Button text={buttonText} icon={false} onClick={() => buttonText && setPopupOpen(true)} />
+                    <Button text={buttonText} icon={false} onClick={handleButtonClick} />
                   </div>
                 </div>
               )

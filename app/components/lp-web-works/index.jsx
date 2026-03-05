@@ -48,9 +48,8 @@ const LpWebWorks = () => {
                                         <span className="text-white">Your Website Better</span>
                                     </div>
                                     <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white py-2 sm:pt-[22px] pl-[150px] max-sm:pl-[10px]">
-                                        We combine technical mastery with creative thinking to deliver a digital experience that is visually pleasing and powerful
-                                    </div>
-                                    <div className="grid grid-cols-12 pt-[20px]">
+                                        Our process is simple and straightforward; we blend creative conduct with innovative technology to offer visually pleasing websites.                                    </div>
+                                    <div className="grid grid-cols-12 pt-[20px] gap-2 max-sm:gap-0">
                                         <div className="col-span-12 md:col-span-6 pb-[40px] h-full">
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
@@ -61,7 +60,7 @@ const LpWebWorks = () => {
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">
-                                                    Our designers craft easy-to-use interfaces with strong visual appeal, guaranteed to speak to your audience.
+                                                    Avoid cookie-cutter commercial designs, and choose our easy-to-use interface with a strong visual appeal, guaranteed to speak to your audience.
                                                 </div>
                                             </div>
                                         </div>
@@ -75,7 +74,7 @@ const LpWebWorks = () => {
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">
-                                                    From front-end frameworks to back-end databases and APIs, our developers bring extensive knowledge and expertise to every layer.
+                                                    Our developers bring strong, hands-on experience with front-end frameworks, back-end databases, and APIs, resulting in a much smoother development process.
                                                 </div>
                                             </div>
                                         </div>
@@ -90,7 +89,7 @@ const LpWebWorks = () => {
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">
-                                                    Our support team monitors, maintains, refines, and scales your site as your business evolves.
+                                                    Our support team monitors and maintains your site even after the launch to help your business scale and gain consistent results.
                                                 </div>
                                             </div>
                                         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const WebDevelopmentServices = () => {
     return (
@@ -16,7 +17,7 @@ const WebDevelopmentServices = () => {
                     width={1000}
                     height={1000}
                 />
-                <div className="get-started-btn absolute max-sm:hidden cursor-pointer top-[50%] left-[50%] rounded-full translate-x-[-50%] p-[20px] translate-y-[-50%] z-20 bg-[#444444] transition-colors duration-300">
+                <Link href="/" className="get-started-btn absolute max-sm:hidden cursor-pointer top-[50%] left-[50%] rounded-full translate-x-[-50%] p-[20px] translate-y-[-50%] z-20 bg-[#444444] transition-colors duration-300 block hover:bg-[#555]">
                     <div className="font-britanicaRegular text-center text-[15px] sm:text-[18px] md:text-[28px] font-bold text-[#fff] leading-[30px]">
                         Get<br />Started <br />
                         <Image
@@ -27,7 +28,7 @@ const WebDevelopmentServices = () => {
                             height={1000}
                         />
                     </div>
-                </div>
+                </Link>
                 <div className="grid grid-cols-12 px-[20px] gap-6 relative z-10 pt-[90px] pb-[50px] max-sm:pt-[40px] max-sm:px-[0px]">
                     <div className="col-span-12 md:col-span-6 h-full">
                         <div className="flex justify-between max-sm:flex-col items-center gap-6 bg-[#000000] border border-[#323232] rounded-3xl p-3 h-full">
@@ -44,10 +45,10 @@ const WebDevelopmentServices = () => {
                             </div>
                             <div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[42px] font-bold text-[#fff] leading-[50px]">
-                                    Custom Web Application
+                                    Custom Website Application
                                 </div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                    Our team builds intentionally to reflect your brand and support the unique business processes that include ERP, CRM, eCommerce, Online training, and more.
+                                    Custom websites built around your business goals to increase engagement and conversions.
                                 </div>
                             </div>
                         </div>
@@ -67,10 +68,10 @@ const WebDevelopmentServices = () => {
                             </div>
                             <div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[42px] font-bold text-[#fff] leading-[50px]">
-                                    Scalable Architecture
+                                    E-Commerce Development
                                 </div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                    Our web applications are designed to adapt to your business; whether you’re scaling operations, expanding features, or adding users, performance remains seamless.
+                                    Access secure, scalable online stores and e-commerce platforms with smooth checkout, product management, and integrated payment.
                                 </div>
                             </div>
                         </div>
@@ -90,10 +91,10 @@ const WebDevelopmentServices = () => {
                             </div>
                             <div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[42px] font-bold text-[#fff] leading-[50px]">
-                                    Enterprise-Grade Security
+                                    Responsive & Mobile-Friendly Design
                                 </div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                    We implement advanced security protocols to protect your data, customers, and operations from threats and breaches.
+                                    Gain design websites that look and perform amazingly on every screen, regardless of the user's device, for a better and seamless browsing experience.
                                 </div>
                             </div>
                         </div>
@@ -113,10 +114,10 @@ const WebDevelopmentServices = () => {
                             </div>
                             <div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[42px] font-bold text-[#fff] leading-[50px]">
-                                    Mobile-Ready & Responsive
+                                    Web Application Development
                                 </div>
                                 <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                    Capture leads and engage users across all screen sizes with fully optimized, mobile-first designs.
+                                    Streamline business logistics with dynamic web apps featuring interactive features, real-time functionality, and robust backend systems.
                                 </div>
                             </div>
                         </div>

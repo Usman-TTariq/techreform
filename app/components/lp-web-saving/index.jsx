@@ -42,7 +42,7 @@ const LpWebSaving = () => {
                                         </div>
                                     </div>
                                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                        Our one-stop-shop model offers on-premise and nearshore <br /> development options suited to meet your business needs.
+                                        We offer on-premise and nearshore development options that are custom-made to meet all of your business needs.
                                     </div>
                                 </div>
                                 <div>
@@ -73,7 +73,7 @@ const LpWebSaving = () => {
                                         </div>
                                     </div>
                                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                        Get to market faster and have an edge on the competition. You have complete scalability to ramp up, down, or change skills.
+                                        Launch Faster With Agile & Scalable Development
                                     </div>
                                 </div>
                                 <div>
@@ -103,7 +103,7 @@ const LpWebSaving = () => {
                                         </div>
                                     </div>
                                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[16px] font-regular text-white pt-3 leading-relaxed">
-                                        Save time with our expertise in 40+ industries, offering deeper understanding.
+                                        Gain access to development expertise across 40+ industries for faster and more credible development services.
                                     </div>
                                 </div>
                                 <div>

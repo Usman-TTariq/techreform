@@ -14,51 +14,51 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const industries = [
     {
-        title: "Financing",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        title: "Healthcare",
+        description: "HIPAA-compliant websites for patient portals, optimal scheduling, and records management.",
         image: "/images/industries1.png",
         link: "/financing",
     },
     {
-        title: "Travel",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        title: "E-Commerce & Retail",
+        description: "Conversion-focused commerce platforms with secure payments, inventory, and analytics tools.",
         image: "/images/industries2.png",
         link: "/travel",
     },
     {
-        title: "E-Commerce",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        title: "FinTech",
+        description: "Secure web applications for transactions, dashboards, and financial reporting.",
         image: "/images/industries3.png",
         link: "/e-commerce",
     },
     {
         title: "Education",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        description: "Interactive web portals for courses, assessments, and student management.",
         image: "/images/industries4.png",
         link: "/education",
     },
     {
-        title: "Travel",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        title: "Logistics",
+        description: "Web systems for tracking shipments, managing fleets, and route planning.",
         image: "/images/industries1.png",
         link: "/travel",
     },
     {
-        title: "E-Commerce",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+        title: "Real Estate",
+        description: "Modern property websites with listings, virtual tours, and CRM integration.",
         image: "/images/industries3.png",
         link: "/e-commerce",
     },
     {
-        title: "Financing",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-        image: "/images/industries2.png",
-        link: "/financing",
+        title: "Education",
+        description: "Interactive web portals for courses, assessments, and student management.",
+        image: "/images/industries4.png",
+        link: "/education",
     },
     {
-        title: "Travel",
-        description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-        image: "/images/industries4.png",
+        title: "Logistics",
+        description: "Web systems for tracking shipments, managing fleets, and route planning.",
+        image: "/images/industries1.png",
         link: "/travel",
     },
 ];
@@ -72,7 +72,8 @@ const LpWebIndustries = () => {
                     <div className="col-span-4 max-lg:col-span-12">
                         <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
                         <div className="font-britanicaRegular text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
-                            From fintech to e-commerce, we deliver web and mobile solutions that drive growth across sectors.
+                            Custom web development helps your business get ahead in the competitive, ever-evolving business landscape by improving business performance, customer experiences, and adaptability.
+
                         </div>
                     </div>
                     <div className="col-span-8 max-lg:col-span-12">

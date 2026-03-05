@@ -295,7 +295,7 @@ const Header = () => {
 
                     {/* Desktop CTA – hidden on small screens */}
                     <div className="hidden lg:block flex-shrink-0">
-                        <Button icon={true} onClick={() => window.location.href = "tel:+12132625357"} />
+                        <Button text="Call Now (213) 262-5357" icon={true} onClick={() => window.location.href = "tel:+12132625357"} />
                     </div>
 
                     {/* Mobile: hamburger button */}

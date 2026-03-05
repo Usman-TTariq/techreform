@@ -40,7 +40,7 @@ const LpWebTransforming = () => {
                                 <CapsuleLabel firstWord="VAST" secondWord="SOLUTIONS" />
                             </div>
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                                Catalyze your web development journey with our cutting-edge AI solutions. From enhancing user experiences and automating development processes to optimizing content and deploying intelligent applications, our expert team harnesses the power of AI to drive innovation and success.
+                                We utilize cutting-edge AI solutions to catalyze your web development journey. We use AI as our main agent to improve user experiences and build intelligent web applications that drive efficiency, innovation, and measurable business growth.
                             </div>
                             <div className="pt-6 sm:pt-[30px]">
                                 <Button
@@ -56,7 +56,7 @@ const LpWebTransforming = () => {
                             <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</div>
                             <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">Conversational Interface to Enhance UX</div>
                             <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
-                                With our expertise in cloud technologies, we can help you find the right cloud solutions that meet your business needs and goals.
+                                We create AI-powered chatbots and conversational interfaces that improve user engagement, provide instant support, personalize interactions, and enhance overall website experience.
                             </div>
                             <div className="pb-4 sm:pb-[20px]">
                                 <button type="button" onClick={() => setPopupOpen(true)} className="text-[#0E0E0E] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
@@ -78,7 +78,8 @@ const LpWebTransforming = () => {
                                 <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-white">02</div>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">AI-Generated Content <br />Creation and Optimization</div>
                                 <div className="font-britanicaRegular text-white text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
-                                    We develop AI algorithms to streamline content creation by automatically generating articles, product descriptions, and image captions. AI optimizes content, product recommendations, and website interfaces by analyzing user behavior and demographics.
+                                    We build AI tools that generate and optimize content, including articles and product descriptions, using user data to improve relevance, engagement, and conversions.
+
                                 </div>
                                 <div className="pb-4 sm:pb-[20px]">
                                     <button type="button" onClick={() => setPopupOpen(true)} className="text-white cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
@@ -103,7 +104,7 @@ const LpWebTransforming = () => {
                                 <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</div>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">Development Process AI Automation</div>
                                 <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
-                                    We implement AI algorithms that analyze data to identify patterns and trends, enabling informed decision-making and personalized marketing.
+                                    We use AI to automate repetitive development tasks, analyze data patterns, speed up workflows, and support smarter, data-driven decisions throughout projects.
                                 </div>
                                 <div className="pb-4 sm:pb-[20px]">
                                     <button type="button" onClick={() => setPopupOpen(true)} className="text-[#fff] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
@@ -118,7 +119,7 @@ const LpWebTransforming = () => {
                             <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</div>
                             <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">AI-Driven Insights and Analytics</div>
                             <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
-                                Our AI-powered testing tools automate testing web applications, efficiently identifying bugs and security vulnerabilities. Our AI developers use TensorFlow/PyTorch development frameworks to build and deploy Machine Learning models for various web applications.
+                                Our AI solutions provide automated testing, performance monitoring, predictive analytics, and machine learning models to improve security, reliability, and strategic business insights.
                             </div>
                             <div className="pb-4 sm:pb-[20px]">
                                 <button type="button" onClick={() => setPopupOpen(true)} className="text-[#0E0E0E] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">

@@ -1,12 +1,10 @@
 "use client";
-import { useState } from "react";
 import Button from "../common/button";
 import CapsuleLabel from "../common/capsule-label";
 import FreeConsultationForm from "../free-consultation-form";
 import Image from "next/image";
 
 const WebLPHeroSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-[100px] max-sm:pb-[0px]">
             <Image
@@ -30,20 +28,20 @@ const WebLPHeroSection = () => {
                             <CapsuleLabel firstWord="CUSTOM " secondWord="WEB" thirdWord="DEVELOPMENT" />
                         </div>
                         <div className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[40px] lg:text-[45px] xl:text-[60px] lg:leading-[55px] xl:leading-[65px] font-black">
-                            <span className="text-white">A </span>
+                            <span className="text-white">Custom </span>
                             <span className="text-[#F74B1C]">Web Development</span>
                             <br />
-                            <span className="text-[#F74B1C]">Company </span>
-                            <span className="text-white">Focused on</span>
-                            <br />
-                            <span className="text-[#F74B1C]">Results, </span>
-                            <span className="text-white">Not Just Design</span>
+                            <span className="text-[#F74B1C]">That Converts </span>
+                            <span className="text-white">Visitors</span>
+                            <br />  
+                            <span className="text-[#F74B1C]">Into </span>
+                            <span className="text-white">Customers</span>
                         </div>
                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] md:text-[20px] font-regular text-white pt-3 sm:pt-[22px] max-w-xl">
-                            Our mobile app development firm partners with innovative startups and tech-driven businesses to create apps that are reliable, high-performing, and seamless across all devices and operating systems.
+                            We help startups and tech businesses build fast, reliable websites that work seamlessly on any device.
                         </div>
                         <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Schedule a Free Consultation" icon={false} onClick={() => setPopupOpen(true)} />
+                            <Button text="Contact Our Team" icon={false} onClick={() => { window.location.href = "tel:+12132625357"; }} />
                         </div>
                         <div className="grid grid-cols-12 pt-[30px] max-sm:pt-[10px]">
                             <div className="col-span-4">

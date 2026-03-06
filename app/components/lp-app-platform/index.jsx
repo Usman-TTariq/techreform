@@ -66,7 +66,7 @@ const LpAppPlatform = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="/images/bottom.png"
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820232/bottom_wzqado.png"
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -77,7 +77,7 @@ const LpAppPlatform = () => {
                         <div>
                             <Image
                                 className="w-full mb-[20px]"
-                                src="/images/top.png"
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820285/top_xu7ynr.png"
                                 alt=""
                                 width={1000}
                                 height={1000}

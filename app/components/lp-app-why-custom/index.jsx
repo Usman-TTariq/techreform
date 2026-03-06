@@ -171,7 +171,7 @@ const LpAppWhyCustom = () => {
                         <div className="col-span-12 lg:col-span-5 my-auto">
                             <Image
                                 className="w-full"
-                                src="/images/facilitiesright.png"
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820145/facilitiesright_bcajx4.png"
                                 alt=""
                                 width={1000}
                                 height={1000}

@@ -17,21 +17,21 @@ export const metadata: Metadata = {
 };
 
 const britanicaRegular = localFont({
-  src: "../public/fonts/Britanica Regular.ttf",
+  src: "../public/fonts/Britanica Regular.woff2",
   variable: "--font-britanicaRegular",
   display: "swap",
   preload: false,
 });
 
 const britanicaExtraBold = localFont({
-  src: "../public/fonts/Britanica Extra Bold.ttf",
+  src: "../public/fonts/Britanica Extra Bold.woff2",
   variable: "--font-britanicaExtraBold",
   display: "swap",
   preload: false,
 });
 
 const britanicaBlack = localFont({
-  src: "../public/fonts/Britanica Black.ttf",
+  src: "../public/fonts/Britanica Black.woff2",
   variable: "--font-britanicaBlack",
   display: "swap",
   preload: false,

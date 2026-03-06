@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="relative w-full min-w-0 min-h-[85vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-16 sm:pb-12 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             {/* Laptop: mobile par pehle wali position (55%), sm+ same */}
             <Image
-                className="absolute top-[42%] sm:top-[38%] md:top-[30%] lg:top-[20%] left-[50%] translate-x-[-50%] w-[100%] max-w-[840px] sm:w-[78%] sm:max-w-none md:w-[75%] lg:w-[70%]"
+                className="absolute top-[42%] sm:top-[38%] md:top-[30%] lg:top-[20%] left-[50%] translate-x-[-50%] w-[100%]  sm:w-[78%] sm:max-w-none md:w-[75%] lg:w-[70%]"
                 src="/images/herolaptop.png"
                 alt=""
                 width={1000}

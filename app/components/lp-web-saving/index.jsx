@@ -121,7 +121,7 @@ const LpWebSaving = () => {
                         <Image
                             className="w-full scale-150 pt-[50px]"
                             style={{ transformOrigin: 'right' }}
-                            src="/images/laptop1.png"
+                            src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820941/laptop1_ivssw7.png"
                             alt="Hero Background"
                             width={1000}
                             height={1000}

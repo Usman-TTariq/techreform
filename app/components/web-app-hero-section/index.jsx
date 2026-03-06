@@ -18,8 +18,8 @@ const WebAppHeroSection = ({ autoHeight }) => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="/images/app-hero-section.png"
-                                alt=""  
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772819797/app-hero-section_qfm8ar.png"
+                                alt=""
                                 width={1000}
                                 height={1000}
                             />

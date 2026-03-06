@@ -63,7 +63,7 @@ const LpAppprocess = () => {
           ))}
         </div>
         <div className="flex justify-center pt-[50px] max-sm:pt-[20px]">
-            <Button text="Schedule a Free Consultation" icon={false} onClick={() => { window.location.href = "tel:+12132625357"; }} />
+            <Button text="Schedule a Free Consultation" icon={false} onClick={() => { window.location.href = "tel:+15822335015"; }} />
         </div>
       </div>
     </div>

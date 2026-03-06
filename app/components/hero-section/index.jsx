@@ -19,14 +19,14 @@ const HeroSection = () => {
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
-                src="/images/frame.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772821976/frame_da1r9p.png"
                 alt=""
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[20%] sm:w-[28%] md:w-[30%] hidden sm:block"
-                src="/images/frame2.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772822480/frame2_h4xmpf.png"
                 alt=""
                 width={1000}
                 height={1000}

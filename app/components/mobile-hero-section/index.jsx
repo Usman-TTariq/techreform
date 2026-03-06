@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 import { useState } from "react";
-import { getImagePath } from "../../utils/imagePath";
+// import { getImagePath } from "../../utils/imagePath";
 
 const MobileHeroSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -12,21 +12,21 @@ const MobileHeroSection = () => {
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
                 className="absolute top-[15%] left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[35%] sm:left-[60%] max-w-[200px] sm:max-w-none hidden sm:block"
-                src={getImagePath("/images/mobilehero.png")}
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823911/mobilehero_luf4jr.png"
                 alt=""
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[22%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
-                src={getImagePath("/images/frame.png")}
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772821976/frame_da1r9p.png"
                 alt=""
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[22%] sm:w-[28%] md:w-[30%] hidden sm:block"
-                src={getImagePath("/images/frame2.png")}
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772822480/frame2_h4xmpf.png"
                 alt=""
                 width={1000}
                 height={1000}
@@ -57,7 +57,7 @@ const MobileHeroSection = () => {
                 <div className="sm:hidden flex justify-center pt-6 pb-4">
                     <Image
                         className="w-[70%] max-w-[280px] h-auto"
-                        src={getImagePath("/images/mobilehero.png")}
+                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823911/mobilehero_luf4jr.png"
                         alt=""
                         width={1000}
                         height={1000}

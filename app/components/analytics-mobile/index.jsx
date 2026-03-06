@@ -8,14 +8,14 @@ const AnalyticsMobile = () => {
         <div className="relative pb-10 sm:pb-16 md:pb-[160px] overflow-hidden w-full min-w-0">
             <Image
                 className="absolute top-[0%] left-0 w-[20%] sm:w-[20%] opacity-60 sm:opacity-100"
-                src="/images/hrbk1.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825537/hrbk1_uaqnk1.png"
                 alt=""
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[10%] right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
-                src="/images/hrbk2.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825568/hrbk2_cwziij.png"
                 alt=""
                 width={1000}
                 height={1000}
@@ -50,7 +50,7 @@ const AnalyticsMobile = () => {
                                 <div className="col-span-12 md:col-span-6 my-auto min-w-0 order-2">
                                     <Image
                                         className="w-full max-w-full h-auto"
-                                        src="/images/facilitiesright.png"
+                                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820145/facilitiesright_bcajx4.png"
                                         alt=""
                                         width={1000}
                                         height={1000}

@@ -45,19 +45,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${britanicaRegular.variable} ${britanicaExtraBold.variable} ${britanicaBlack.variable}`}>
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-BMLP34G3M0" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16723277657" strategy="afterInteractive" />
+        <Script id="google-gtag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BMLP34G3M0');
+            gtag('config', 'AW-16723277657');
           `}
         </Script>
         <Script id="livechat-config" strategy="afterInteractive">
           {`
             window.__lc = window.__lc || {};
-            window.__lc.license = 19562587;
+            window.__lc.license = 19568383;
             window.__lc.integration_name = "manual_onboarding";
             window.__lc.product_name = "livechat";
           `}

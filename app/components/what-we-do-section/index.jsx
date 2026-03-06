@@ -75,7 +75,7 @@ const WhatWeDoSection = () => {
     <div ref={sectionRef} className="container relative pb-12 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4 overflow-hidden">
       <Image
         className="w-[80%] sm:w-[60%] md:w-[50%] absolute -top-[15%] sm:-top-[40%] left-0 opacity-50 sm:opacity-60"
-        src="/images/whatwedobk.png"
+        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823012/whatwedobk_wl6wjg.png"
         alt=""
         width={1000}
         height={1000}

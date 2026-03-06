@@ -35,7 +35,7 @@ const FacilitiesMobile = () => {
                 <div className="pt-[80px]">
                     <Image
                         className="w-full"
-                        src="/images/bulletpoints.png"
+                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772819859/bulletpoints_buwrvm.png"
                         alt="Hero Background"
                         width={1000}
                         height={1000}

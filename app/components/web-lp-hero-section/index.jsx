@@ -41,7 +41,7 @@ const WebLPHeroSection = () => {
                             We help startups and tech businesses build fast, reliable websites that work seamlessly on any device.
                         </div>
                         <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Contact Our Team" icon={false} onClick={() => { window.location.href = "tel:+12132625357"; }} />
+                            <Button text="Contact Our Team" icon={false} onClick={() => { window.location.href = "tel:+15822335015"; }} />
                         </div>
                         <div className="grid grid-cols-12 pt-[30px] max-sm:pt-[10px]">
                             <div className="col-span-4">

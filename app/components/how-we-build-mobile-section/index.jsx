@@ -11,7 +11,7 @@ const HowWeBuildMobileSection = () => {
                         <div>
                             <Image
                                 className="w-[100%] scale-150"
-                                src="/images/buildmobile.png"
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825098/buildmobile_shzfmc.png"
                                 alt="Hero Background"
                                 width={1000}
                                 height={1000}

@@ -31,7 +31,7 @@ const CaseStudiesSection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-[280px] md:max-w-none mx-auto"
-                                src={getImagePath("/images/iPhone13.png")}
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png"
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -42,7 +42,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full my-auto"
-                                src={getImagePath("/images/phones.png")}
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png"
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -61,7 +61,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src={getImagePath("/images/backphone1.png")}
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825939/backphone1_koj0do.png"
                                 alt=""
                                 width={1000}
                                 height={1000}
@@ -72,7 +72,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src={getImagePath("/images/phones1.png")}
+                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772826867/phones1_gicxbe.png"
                                 alt=""
                                 width={1000}
                                 height={1000}

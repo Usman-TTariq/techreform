@@ -7,7 +7,7 @@ const CaseStudiesMvpSection = () => {
         <div className="relative pb-12 pt-22 sm:pb-16 md:pb-[80px] overflow-hidden w-full min-w-0">
             <Image
                 className="w-full h-full absolute top-0 left-0"
-                src="/images/mvpbk.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772828875/mvpbk_ftdboq.png"
                 alt="MVP case study"
                 width={1000}
                 height={1000}

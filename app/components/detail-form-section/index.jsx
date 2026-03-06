@@ -39,8 +39,8 @@ const DetailFormSection = ({ formIntro = undefined }) => {
               <div className="text-white font-britanicaRegular text-base sm:text-[18px]">
                 Call us at:{" "}
               </div>
-              <a href="tel:+12132625357" className="text-white font-britanicaRegular font-bold text-base sm:text-[18px] hover:text-[#F74B1C] transition-colors">
-                (213) 262-5357
+              <a href="tel:+15822335015" className="text-white font-britanicaRegular font-bold text-base sm:text-[18px] hover:text-[#F74B1C] transition-colors">
+                (582) 233-5015
               </a>
             </div>
             <div className="relative p-[1px] rounded-2xl benefit-border-wrap mr-0 lg:mr-[10px]">

@@ -9,7 +9,7 @@ const WaitingForYouMobile = () => {
                 <div className="relative container">
                     <Image
                         className="w-[550px] absolute top-[50%] translate-y-[-50%] right-0"
-                        src="/images/waiting.png"
+                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825261/waiting_llduse.png"
                         alt="Hero Background"
                         width={1000}
                         height={1000}
@@ -29,7 +29,7 @@ const WaitingForYouMobile = () => {
                                 </div>
                                 <div className="pt-5 sm:pt-[30px] flex gap-4 justify-start">
                                     <Button text="Get Started" icon={false} onClick={() => setPopupOpen(true)} />
-                                    <Button textClassName="!text-[#F74B1C]" className="!bg-transparent" hoverClassName="!bg-transparent" text="(213) 262-5357" icon={false} onClick={() => setPopupOpen(true)} />
+                                    <Button textClassName="!text-[#F74B1C]" className="!bg-transparent" hoverClassName="!bg-transparent" text="(582) 233-5015" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
                             </div>
                         </div>

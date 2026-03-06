@@ -5,7 +5,7 @@ import Image from "next/image";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
-const PHONE_NUMBER = "tel:+12132625357";
+const PHONE_NUMBER = "tel:+15822335015";
 
 const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight, callOnClick }) => {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -25,14 +25,14 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
     <div className={`relative w-full min-w-0 overflow-hidden ${heightClass}`}>
       <Image
         className="absolute -top-[10%] right-4 w-[28%] sm:w-[32%] md:right-12 md:w-[35%] lg:right-[100px] hidden sm:block"
-        src="/images/frame.png"
+        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772821976/frame_da1r9p.png"
         alt=""
         width={1000}
         height={1000}
       />
       <Image
         className="absolute -bottom-[15%] left-0 w-[28%] sm:w-[30%] hidden sm:block"
-        src="/images/frame2.png"
+        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772822480/frame2_h4xmpf.png"
         alt=""
         width={1000}
         height={1000}
@@ -49,7 +49,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
               <br />
               <span className={fifthWordWhite ? "text-white" : "text-[#F74B1C]"}>{fifthWord} </span>
               {
-                space && <br/>
+                space && <br />
               }
               {sixthWord != null && sixthWord !== "" && (
                 <>

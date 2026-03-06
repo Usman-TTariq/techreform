@@ -158,7 +158,7 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
-                                <a href="tel:+12132625357" className="hover:text-[#F74B1C] transition-colors">For Support: (213) 262-5357</a>
+                                <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Support: (582) 233-5015</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-14px]">
@@ -172,7 +172,7 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
-                                <a href="tel:+12132625357" className="hover:text-[#F74B1C] transition-colors">For Sales: (213) 262-5357</a>
+                                <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Sales: (582) 233-5015</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-28px]">
@@ -200,7 +200,7 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
-                                <div className="">8502 Preston Rd. Inglewood, Maine 98380</div>
+                                <div className="">811 Wilshire Boulevard, Los Angeles, CA 90017</div>
                             </div>
                         </div>
                     </div>

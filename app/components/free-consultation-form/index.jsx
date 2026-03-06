@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import CapsuleLabel from "../common/capsule-label";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
@@ -17,6 +18,7 @@ function validateEmail(email) {
 }
 
 const FreeConsultationForm = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     businessName: "",
@@ -90,6 +92,7 @@ const FreeConsultationForm = () => {
       setPhone("");
       setErrors({});
       setSubmitSuccess(true);
+      router.push("/thank-you");
     } catch (err) {
       setErrors((prev) => ({
         ...prev,

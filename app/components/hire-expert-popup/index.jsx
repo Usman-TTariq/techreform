@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -15,6 +16,7 @@ function validateEmail(email) {
 }
 
 const HireExpertPopup = ({ open, onClose }) => {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -78,6 +80,8 @@ const HireExpertPopup = ({ open, onClose }) => {
             setPhone("");
             setErrors({});
             setSubmitSuccess(true);
+            onClose();
+            router.push("/thank-you");
         } catch (err) {
             setErrors((prev) => ({
                 ...prev,

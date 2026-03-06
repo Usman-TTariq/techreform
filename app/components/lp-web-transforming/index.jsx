@@ -12,14 +12,14 @@ const LpWebTransforming = () => {
     return (
         <div className="relative overflow-hidden pt-[100px] max-sm:pt-[30px]">
             <Image
-                src="/images/idea1.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823103/idea1_pa9rf6.png"
                 alt=""
                 width={1000}
                 height={1000}
                 className="absolute -top-[20%] sm:-top-[35%] right-0 w-[55%] sm:w-[45%] hidden sm:block opacity-80"
             />
             <Image
-                src="/images/idea2.png"
+                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823128/idea2_xhfapr.png"
                 alt=""
                 width={1000}
                 height={1000}

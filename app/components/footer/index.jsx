@@ -214,7 +214,7 @@ const Footer = () => {
                             Copyright © 2026 Tech Reforms. All rights reserved.
                         </div>
                         <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-1 sm:order-2">
-                            <Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link>
+                            <Link href="/terms-conditions" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link>
                             <span className="mx-2">|</span>
                             <Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link>
                         </div>

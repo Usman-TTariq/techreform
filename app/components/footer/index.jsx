@@ -121,18 +121,13 @@ const Footer = () => {
                             {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
                             {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
                         </ul>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
+                        {/* <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
                             LP
                         </div>
                         <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
                             <li><Link href="/lp/app" className="hover:text-[#F74B1C] transition-colors">lp app</Link></li>
-                            {/* <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li> */}
                             <li><Link href="/lp/web" className="hover:text-[#F74B1C] transition-colors">lp web</Link></li>
-                            {/* <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li> */}
-                            {/* <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li> */}
-                            {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
-                            {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className="col-span-12 sm:col-span-6 md:col-span-3 relative">
                         <div className="w-[120px] h-[120px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute bottom-[0%] right-[80px] max-sm:right-[40px] max-sm:bottom-[-3%] pointer-events-none">

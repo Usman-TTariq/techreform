@@ -17,7 +17,7 @@ const WebDevelopmentServices = () => {
                     width={1000}
                     height={1000}
                 />
-                <Link href="/" className="get-started-btn absolute max-sm:hidden cursor-pointer top-[50%] left-[50%] rounded-full translate-x-[-50%] p-[20px] translate-y-[-50%] z-20 bg-[#444444] transition-colors duration-300 block hover:bg-[#555]">
+                <Link href="/" className="get-started-btn absolute max-sm:hidden cursor-pointer top-[50%] left-[50%] rounded-full translate-x-[-50%] p-[20px] translate-y-[-50%] z-20 !bg-[#f74b1c] transition-colors duration-300 block hover:bg-[#555]">
                     <div className="font-britanicaRegular text-center text-[15px] sm:text-[18px] md:text-[28px] font-bold text-[#fff] leading-[30px]">
                         Get<br />Started <br />
                         <Image

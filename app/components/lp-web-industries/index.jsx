@@ -138,7 +138,7 @@ const LpWebIndustries = () => {
                     </Swiper>
                 </div>
                 <div className="pt-5 sm:pt-[30px] flex justify-center">
-                    <Button text="Find Out More About Customized Software" icon={false} onClick={() => setPopupOpen(true)} />
+                    <Button text="Find Out More About Customized Software" icon={false} onClick={() => { if (typeof window !== "undefined" && window.LC_API?.open_chat_window) window.LC_API.open_chat_window(); }} />
                 </div>
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />

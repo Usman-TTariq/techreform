@@ -44,13 +44,13 @@ const DetailFormSection = ({ formIntro = undefined }) => {
               </a>
             </div>
             <div className="relative p-[1px] rounded-2xl benefit-border-wrap mr-0 lg:mr-[10px]">
-              <Image
+              {/* <Image
                 className="absolute -bottom-3 -right-2 sm:-bottom-[20px] sm:-right-[10px] w-8 h-8 sm:w-[40px] sm:h-[40px]"
                 src="/images/redirectarrow.png"
                 alt=""
                 width={40}
                 height={40}
-              />
+              /> */}
               <div className="benefit-module rounded-2xl py-6 sm:py-8 md:py-[40px] px-4 sm:px-[15px]">
                 <div className="flex items-center justify-start gap-1 pb-4 sm:pb-[20px]">
                   <span className="text-white font-britanicaBlack font-bold text-[20px] sm:text-[24px] md:text-[26px]">Your</span>

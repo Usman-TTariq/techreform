@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import CapsuleLabel from "../common/capsule-label";
+import Button from "../common/button";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -203,13 +204,13 @@ const FreeConsultationForm = () => {
         )}
 
         <div className="pt-2">
-          <button
+          <Button
+            text={isLoading ? "Sending..." : "Get Instant Quote"}
+            icon={false}
             type="submit"
             disabled={isLoading}
-            className="bg-[#F74B1C] cursor-pointer font-britanicaExtraBold text-base sm:text-[18px] md:text-[20px] text-[#fff] px-4 py-3 w-full rounded-full disabled:opacity-70 disabled:cursor-not-allowed min-h-[48px]"
-          >
-            {isLoading ? "Sending..." : "Get Instant Quote"}
-          </button>
+            className="w-full min-h-[48px] justify-center"
+          />
         </div>
       </form>
     </div>

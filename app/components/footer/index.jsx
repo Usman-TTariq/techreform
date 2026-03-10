@@ -132,13 +132,15 @@ const Footer = () => {
                     <div className="col-span-12 sm:col-span-6 md:col-span-3 relative">
                         <div className="w-[120px] h-[120px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute bottom-[0%] right-[80px] max-sm:right-[40px] max-sm:bottom-[-3%] pointer-events-none">
                         </div>
-                        <Image
-                            className="footer-dot-spin w-[20%] sm:w-[26%] md:w-[45%] absolute bottom-[-20%] right-0 pointer-events-none"
-                            src="/images/circlewithdot.png"
-                            alt=""
-                            width={1000}
-                            height={1000}
-                        />
+                        <Link href="/" className="block absolute bottom-[-20%] right-0 w-[20%] sm:w-[26%] md:w-[45%] cursor-pointer">
+                            <Image
+                                className="footer-dot-spin w-full"
+                                src="/images/circlewithdot.png"
+                                alt=""
+                                width={1000}
+                                height={1000}
+                            />
+                        </Link>
                         <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
                             Get In Touch
                         </div>

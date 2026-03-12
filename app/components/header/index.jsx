@@ -11,7 +11,7 @@ const DROPDOWN_ITEMS = [
     { key: "ecommerce", label: "Ecommerce" },
     { key: "staff", label: "Staff Augmentation" },
     { key: "products", label: "Products" },
-    { key: "portfolio", label: "Portfolio" },
+    { key: "portfolio", label: "Portfolio", href: "/portfolio" },
     { key: "company", label: "Company" },
 ];
 
@@ -264,12 +264,18 @@ const Header = () => {
                             {DROPDOWN_ITEMS.map(({ key, label, href }) => (
                                 <li
                                     key={key}
-                                    onMouseEnter={() => setActiveDropdown(key)}
+                                    onMouseEnter={() => href ? null : setActiveDropdown(key)}
                                     className="relative"
                                 >
-                                    <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
-                                        {label} {key !== "portfolio" && <ChevronDown className="w-[14px]" />}
-                                    </span>
+                                    {href ? (
+                                        <Link href={href} className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                            {label}
+                                        </Link>
+                                    ) : (
+                                        <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                            {label} <ChevronDown className="w-[14px]" />
+                                        </span>
+                                    )}
                                 </li>
                                 // <li
                                 //     key={key}

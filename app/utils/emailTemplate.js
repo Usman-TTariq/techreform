@@ -59,7 +59,7 @@ export function getUserConfirmationEmail(name) {
         <table style="width:100%;border-collapse:collapse;">
           <tr>
             <td style="vertical-align:top;padding-bottom:16px;width:42px;">
-              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#F74B1C,#c93a10);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">1</div>
+              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#e8234a,#c93a10,#9b30ff);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">1</div>
             </td>
             <td style="padding-bottom:16px;background-color:#1e1e1e;border-radius:8px;padding:14px;">
               <strong style="color:#ffffff;font-size:14px;">We Schedule a Call at Your Convenience</strong><br/>
@@ -69,7 +69,7 @@ export function getUserConfirmationEmail(name) {
           <tr><td colspan="2" style="height:8px;"></td></tr>
           <tr>
             <td style="vertical-align:top;padding-bottom:16px;width:42px;">
-              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">2</div>
+              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#e8234a,#c93a10,#9b30ff);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">2</div>
             </td>
             <td style="padding-bottom:16px;background-color:#1e1e1e;border-radius:8px;padding:14px;">
               <strong style="color:#ffffff;font-size:14px;">Discovery &amp; Consulting Meeting</strong><br/>
@@ -79,7 +79,7 @@ export function getUserConfirmationEmail(name) {
           <tr><td colspan="2" style="height:8px;"></td></tr>
           <tr>
             <td style="vertical-align:top;width:42px;">
-              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#7724C1,#5b1a9e);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">3</div>
+              <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#e8234a,#c93a10,#9b30ff);color:#fff;text-align:center;line-height:30px;font-size:14px;font-weight:700;">3</div>
             </td>
             <td style="background-color:#1e1e1e;border-radius:8px;padding:14px;">
               <strong style="color:#ffffff;font-size:14px;">We Prepare a Custom Proposal</strong><br/>
@@ -91,7 +91,7 @@ export function getUserConfirmationEmail(name) {
 
       <!-- CTA Button -->
       <div style="text-align:center;margin:32px 0 14px 0;">
-        <a href="${PHONE_TEL}" style="display:inline-block;background:linear-gradient(90deg,#F74B1C,#c93a10);color:#ffffff;font-size:14px;font-weight:800;letter-spacing:1px;text-decoration:none;padding:16px 40px;border-radius:30px;text-transform:uppercase;">Call a Specialist Now</a>
+        <a href="${PHONE_TEL}" style="display:inline-block;background:linear-gradient(90deg,#e8234a,#c93a10,#9b30ff);color:#ffffff;font-size:14px;font-weight:800;letter-spacing:1px;text-decoration:none;padding:16px 40px;border-radius:8px;text-transform:uppercase;">Call a Specialist Now</a>
       </div>
       <p style="text-align:center;color:#888;font-size:12px;margin:0 0 28px 0;">
         Prefer to talk now? Call us: <a href="${PHONE_TEL}" style="color:#F74B1C;font-weight:700;text-decoration:none;">${PHONE_NUMBER}</a> &nbsp;|&nbsp; Avg. Answer Time: 3 Minutes.
@@ -125,7 +125,7 @@ export function getUserConfirmationEmail(name) {
     <!-- Services bar -->
     <div style="background-color:#7724C1;padding:14px 20px;text-align:center;">
       <div style="color:#ffffff;font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Our Core Services</div>
-      <div style="color:#ffffff;font-size:12px;font-weight:600;">Mobile Apps &nbsp;&middot;&nbsp; eCommerce &nbsp;&middot;&nbsp; Staff Augmentation &nbsp;&middot;&nbsp; Game Dev &nbsp;&middot;&nbsp; WRM &nbsp;&middot;&nbsp; HRMS</div>
+      <div style="color:#ffffff;font-size:12px;font-weight:600;">Mobile Apps &nbsp;&middot;&nbsp; eCommerce &nbsp;&middot;&nbsp; Staff Augmentation &nbsp;&middot;&nbsp; Game Dev &nbsp;&middot;&nbsp; Web App</div>
     </div>
 
     <!-- Footer -->

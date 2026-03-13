@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { getUserConfirmationEmail } from "@/app/utils/emailTemplate";
 
 // Use RESEND_FROM_EMAIL after verifying techreforms.com at https://resend.com/domains
 // Until then, Resend's verified address works for testing (you can only send TO your own email on free tier)
@@ -27,17 +28,14 @@ export async function POST(request) {
       );
     }
 
-    // Thank-you email to the person who submitted the form (from info@techreforms.com)
+    const emailContent = getUserConfirmationEmail(name);
+
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: email.trim(),
-      subject: "Thank You for Connecting with Us",
-      html: `
-        <p>Hi${name?.trim() ? ` ${name.trim()}` : ""},</p>
-        <p>Thank you for scheduling a free consultation with Tech Reforms.</p>
-        <p>We've received your details and will get back to you shortly.</p>
-        <p>Best regards,<br/><strong>Tech Reforms</strong></p>
-      `,
+      subject: emailContent.subject,
+      html: emailContent.html,
+      text: emailContent.text,
     });
 
     if (error) {

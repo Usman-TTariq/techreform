@@ -9,7 +9,7 @@ function getFirstName(fullName) {
   const trimmed = fullName.trim();
   return trimmed.split(/\s+/)[0] || trimmed;
 }
-
+ 
 export function getUserConfirmationEmail(name) {
   const firstName = getFirstName(name) || "there";
   const subject =

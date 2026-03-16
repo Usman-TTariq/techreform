@@ -80,8 +80,8 @@ const WhatWeDoSection = () => {
         width={1000}
         height={1000}
       />
-      <div className="grid grid-cols-12 gap-6 lg:gap-5">
-        <div className="col-span-12 lg:col-span-5 order-2 lg:order-1">
+      <div className="grid grid-cols-12 gap-6 lg:gap-5 relative z-10">
+        <div className="col-span-12 lg:col-span-5 order-2 lg:order-1 ">
           <div className="pb-4 sm:pb-[20px]">
             <CapsuleLabel firstWord="What" secondWord="We" thirdWord="Do" />
           </div>
@@ -96,7 +96,7 @@ const WhatWeDoSection = () => {
             Our digital agency develops and scales mobile and e-commerce solutions with the ultimate blend of expert engineers, proven processes, and flexible teams aligned to your business goals.
           </div>
           <div className="pt-6 sm:pt-[30px]">
-            <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+            <Button text="Get a Quote" icon={false} onClick={() => setPopupOpen(true)} />
           </div>
         </div>
         <div className="col-span-12 lg:col-span-7 order-1 lg:order-2 min-w-0">
@@ -116,7 +116,7 @@ const WhatWeDoSection = () => {
             >
               {solutions.map((solution, index) => (
                 <SwiperSlide key={index} className="!h-auto">
-                  <div className="bg-white !h-full h-[420px] sm:h-[460px] md:h-[500px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                  <div className="bg-white cursor-pointer !h-full h-[420px] relative sm:h-[460px] md:h-[500px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                     <div className="pb-3 sm:pb-[20px]">
                       <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                         {solution.icon}
@@ -125,17 +125,19 @@ const WhatWeDoSection = () => {
                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight">
                       {solution.title}
                     </div>
-                    <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] leading-relaxed pb-4 sm:pb-[30px]">
-                      {solution.desc}
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        onClick={() => setPopupOpen(true)}
-                        className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
-                      >
-                        Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                      </button>
+                    <div className="flex flex-col justify-between items-start flex-1">
+                      <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] leading-relaxed pb-4 sm:pb-[30px]">
+                        {solution.desc}
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          onClick={() => setPopupOpen(true)}
+                          className="text-[#7724C1] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
+                        >
+                          Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>

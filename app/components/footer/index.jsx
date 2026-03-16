@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Facebook, Instagram } from "lucide-react";
 import FooterLogo from "./svg/footer-logo";
 
 const Footer = () => {
@@ -48,6 +49,18 @@ const Footer = () => {
                         </div>
                         <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 text-right max-sm:text-center">
                             Let’s take your brand to the next level. Get in touch!
+                        </div>
+                        <div className="flex flex-wrap items-center gap-x-3 mt-3 justify-end max-sm:justify-center">
+                            <Link href="https://www.facebook.com/techreforms.1/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group">
+                                <div className="w-[40px] h-[40px] bg-[#7826c3] rounded-full flex items-center justify-center">
+                                    <Facebook className="text-white group-hover:text-[#f74b1c] transition-colors" />
+                                </div>
+                            </Link>
+                            <Link href="https://www.instagram.com/tech.reforms/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group">
+                                <div className="w-[40px] h-[40px] bg-[#7826c3] flex rounded-full items-center justify-center">
+                                    <Instagram className="text-white group-hover:text-[#f74b1c] transition-colors" />
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

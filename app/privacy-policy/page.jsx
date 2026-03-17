@@ -22,106 +22,114 @@ const PrivacyPolicy = () => {
       <div className="container relative z-10 px-4 sm:px-4 py-12 sm:py-16 md:py-20 max-w-4xl mx-auto">
         <div className="font-britanicaRegular text-white/90 text-[14px] sm:text-[16px] leading-relaxed space-y-6">
           <p>
-            It is the strictly enforced policy of Tech Reforms to secure the private and personal information of each customer who interacts with our brand or visits our website. Our primary objective is to establish and maintain a gold standard of privacy protection for all our clients. This comprehensive policy outlines the precise methods we use to acquire, safeguard, and responsibly use your records.
+            The privacy of our website&apos;s users is very important to us, which is why we have developed this Privacy Policy so that you can understand how we collect, process, disclose, and use your personal information.
           </p>
           <p>
-            We gather this information with the sole, explicit consent of our clients for the purposes of delivering high-quality services, executing tailored advertising and promotional strategies, providing informative mailings, and powering the full range of technical and creative services we offer. Importantly, should a customer later decide to discontinue using Tech Reforms&apos; services, any previously provided data will continue to be rigorously protected in accordance with the protocols detailed in this policy.
+            Tech Reforms as the Data Controller of the service and personal data ensures that:
+          </p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Data shall always be collected for specified and clearly defined purposes and to the extent necessary to achieve those purposes.</li>
+            <li>Personal data shall be kept for as long as necessary to achieve these purposes.</li>
+            <li>Personal data shall be collected lawfully and fairly at all times, where appropriate, with the knowledge or consent of the data subject.</li>
+            <li>Personal data is protected with reasonable safeguards against loss or theft, as well as against unauthorized access, disclosure, copying, use or modification.</li>
+            <li>Its clients are provided with information about the rules and practices relating to personal data management.</li>
+          </ol>
+
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Privacy and Processing Information</h2>
+          <p>
+            The Controller shall, with due diligence, select and apply appropriate technical and organizational measures to protect personal data being processed. Full access to databases is granted only to persons authorized by the Controller.
+          </p>
+          <p>
+            The Controller protects personal data against unauthorized access and processing in violation of applicable regulations.
+          </p>
+          <p>
+            Visitors to <a href="https://techreforms.com" className="text-[#F74B1C] hover:underline" target="_blank" rel="noopener noreferrer">techreforms.com</a> can browse through subpages of the website without providing personal data.
           </p>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Why do We Collect Information?</h2>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Grounds for processing personal data</h2>
           <p>
-            Information gathered by Tech Reforms serves as a vital method of self-assessment and service optimization. This data is collected to ensure the highest possible service quality and to deliver to you information, updates, and solutions that are of primary interest to your specific needs. The information we gather helps us understand our client base and determine precisely what enticed them to explore our company.
+            Personal data shall be processed by the Controller in accordance with the law, in particular Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (hereinafter referred to as &apos;GDPR&apos;).
           </p>
-          <p>
-            Above all, Tech Reforms collects information to fundamentally improve the scope and quality of the services it offers, presenting clients with information and products directly relevant to their requirements. We use your data to measure our own success in delivering these services. For example, complete data and facts help us analyze the quality of the audience we have successfully attracted and understand how they navigate and utilize our digital platforms.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Personal Data Collection and Communication</h2>
-          <p>
-            Every piece of client information Tech Reforms collects is provided voluntarily by the client. The specifics of the information presented may vary depending on the exact nature of the service the client chooses.
-          </p>
-          <p>
-            For instance, non-public details, including an email address, physical location, phone number, and the business&apos;s official name, may be collected during the initial registration or signup process. Credit card information can be sent to us while you are signed up on our company&apos;s website or when providing your records over the phone. Our secure payment process is executed exclusively by trusted third-party providers, including PayPal, 2Checkout, Authorize, and Stripe. The financial partners discussed will never share or restore your specific personal information; they are entitled solely to process billing for the services we provide.
-          </p>
-          <p>
-            If our client wishes to execute a promotional campaign, we will require specific data from them, including the name, physical address, financial information, credit card details, and other related, essential information to successfully complete the task.
-          </p>
-          <p>
-            Your email address is essential to Tech Reforms so we can send you relevant updates and information about the specific offerings you have chosen. Your email is also used to keep you informed about our upcoming plans, projects, and new services that may interest you. Every promotional message sent by Tech Reforms includes a clear, immediate option to unsubscribe.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Data You Provide</h2>
-          <p>
-            It is strictly prohibited and against our core operating standards to disclose any information provided by clients on our website in an insecure or unauthorized manner. Your data, collected strictly during registration or signup, may only be used to deliver service information that is directly relevant to your needs. If you need to change, correct, or update your information, you can easily do so by sending us a message via email or a direct phone call.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Protection and Use of Personal Information</h2>
-          <p>
-            As mentioned, any information you provide is not to be shared externally. However, in the strategic event that Tech Reforms merges with another firm or is sold, your information may be transferred as a company asset. Nevertheless, no third-party company that is not explicitly contracted for service delivery has any right to acquire or utilize your personal information. Contracted third-party partners maintain a sole, limited purpose: delivering their available services to support our operations.
-          </p>
-          <p>
-            We reserve the right to disclose your information if explicitly required by law. We firmly believe that exposure is vital to secure our legal rights and to follow court requests, judicial proceedings, or any valid, lawful process served on our site.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Other Information We Collect</h2>
-          <p>
-            We do collect some additional, non-private information through the use of cookies. This anonymous data type includes your IP address, browser type, and the specific pages you visit on our site. We also monitor how users visit our website and which of the links were clicked to find the desired services. We may also send some of this data to our partners and other third parties; however, all of this information is strictly anonymous and non-discriminative.
-          </p>
-          <p>
-            A cookie is a small text file that a service provider or website transfers to your computer&apos;s hard drive via your web browser. These cookies help the service providers and the site itself to uniquely identify your browser, allowing it to remember certain relevant information for future visits.
-          </p>
-          <p>
-            These cookies may be eliminated at any time by following the &apos;help file&apos; instructions of your internet browser. In the event you do not accept our cookies, you will still have the full ability to visit our website, although your access to some personalized parts of the site may be restricted. Your activity on the site is monitored to help us in imparting to you a tailored online experience, render vital technical support, evaluate our website performance, and personalize our services according to the needs of the audience.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Data Retention</h2>
-          <p>
-            The information gathered from you is kept for a specified period, even after the partnership or the assigned work is completed. This is also applicable if you have obtained our services or just opted for them and later decide not to proceed, or if you have already consumed the services in full. In any situation, your data will remain with us for up to four (4) years following the completion of our partnership, the date you decided to reject our services, or from the time you finalized the availability of the service.
-          </p>
-          <p>
-            During the information maintenance time, as stated, our clients can erase their data from our database by contacting us directly via chat, email, or telephone. For that demand to be processed, the client must mention their name, telephone number, physical location, email address, business name, and business area with &quot;Remove Personally Identifiable Information&quot; clearly in the subject title. However, any information provided that is not dependent on the maintenance period (such as public testimonials or generalized business area data) cannot be erased.
-          </p>
-
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">How Long Will Tech Reforms Keep My Personal Information?</h2>
-          <p>
-            We at Tech Reforms keep the information you provided in our database for as long as it is necessary to deliver our services, or during any relevant contract you hold with us (this explains exactly which information should be kept for how long). In the case where you wish to cancel or leave your account services with Tech Reforms, your information will remain in our database for exactly one (1) year following cancellation and will be deleted automatically thereafter. During the time your data is in our systems awaiting deletion, people cannot use your personal information.
-          </p>
-          <p>
-            If you share any specific personal details with Tech Reforms, we will maintain your details until they are reasonably required for the submission.
-          </p>
-          <p>
-            Tech Reforms guarantees that it does not rent, sell, or share your personal data with other people or those who are not affiliated with our company unless you allow us to share your information with your explicit permission or under the following strict circumstances:
-          </p>
+          <p>Personal data are processed to:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>We share your data with our reliable partners who work on behalf of Tech Reforms under strict confidentiality agreements. Such companies and partners may use your data to help Tech Reforms provide services at its top quality. However, these partners or companies do not hold any right to use or share your personal information independently.</li>
-            <li>In case of responding to court orders, subpoenas, or legal process, or to defend against legal claims, or to exercise our legal rights.</li>
-            <li>Because of transparency and legal practices, it is necessary to share information to investigate, prevent, or take action for any suspected fraud, illegal activities, situations involving potential threats to the physical safety of any person, violations of Tech Reforms&apos; terms of use, or as otherwise required by law.</li>
+            <li><strong>a.</strong> answer questions addressed to the Controller through the contact forms available on the techreforms.com website, including interactive windows available on each subpage of the website (according to article 6.1.f of the GDPR);</li>
+            <li><strong>b.</strong> dispatch of marketing content, including information about planned events and workshops, business information, joining event community, newsletter or dispatch of eBooks and other information on the basis of the consent (Article 6(1)(a) of the GDPR);</li>
+            <li><strong>c.</strong> recruitment, including: to establish and maintain contact with the Candidate in relation to the application documents submitted, pursuant to Article 6(1)(b) of the GDPR, i.e. in relation to taking action at the request of the data subject before concluding a contract; carrying out and resolving the recruitment process based on Article 6(1)(b) of the GDPR, i.e. taking the necessary actions at the request of the data subject before concluding the contract - in the scope of data indicated in Article 221 §1 of the Labor Code and on the basis of the Candidate&apos;s consent, i.e. Article 6(1)(a) of the GDPR and in the scope of data beyond the catalog indicated in Article 221 §1 of the Labor Code; to take account of the Candidate&apos;s application documents in future recruitment processes on the basis of his/her voluntary agreement (Article 6(1)(a) of the GDPR).</li>
+            <li><strong>d.</strong> establishing contact in order to prepare, at the Customer&apos;s request, an offer of the Controller&apos;s services and/or products tailored to the Customer&apos;s needs (Art. 6.1.b of the GDPR),</li>
+            <li><strong>e.</strong> adapting and developing the website&apos;s functionalities, including its structure and content to the needs of Internet users, creating aggregated statistics, and preserving the security and quality of services provided by the service - based on the legitimate interest of the Controller (Article 6(1)(f) of the GDPR);</li>
+            <li><strong>f.</strong> investigation or safeguard against possible claims (according to Article 6(1)(f) of the GDPR);</li>
+            <li><strong>g.</strong> conducting statistical analysis of information about participants of our events (according to Article 6 (1) (f) of the GDPR) where the legitimate purpose is to have information about the statistics which allows us to improve our activities.</li>
           </ul>
+          <p><strong>3.</strong> Regardless of the purpose of the processing, providing the data is voluntary, however, failure to do so may prevent, depending on the specific case, the conclusion of a contract, use of selected services within the service and its functionality or receipt of marketing content.</p>
+          <p><strong>4.</strong> The User should not provide the Controller with personal data of third parties. In case of transfer of third parties&apos; data, the User is obliged to sign a declaration that s/he has the consent of third parties to transfer the data to the Controller.</p>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Third-Party Website Links</h2>
-          <p>
-            We do maintain relationships with some other websites, for instance, our advertisers, customers, business partners, and associates. We keep no control over their daily business practices or operations, just as we don&apos;t possess control over the information and policies of these third-party sites. However, you may wish to separately evaluate how they gather and utilize personal information.
-          </p>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Scope of processing of personal data</h2>
+          <p>The Controller processes personal data only to the extent necessary to achieve a strictly defined purpose, in accordance with the information indicated below:</p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Sending a message through the contact form, among others: e-mail address and telephone number and all other information that the User will provide of his/her own free will in the addressed message;</li>
+            <li>Sending newsletters, commercial and business information and e-books: name and surname, e-mail address, telephone number, among others;</li>
+            <li>Recruitment: the e-mail address from which the message was sent and the information contained in the application form;</li>
+            <li>Preparation of offers: name and surname, e-mail address, telephone number, and other information contained in the message sent through the contact form;</li>
+            <li>Customization and development of website functionality: IP addresses collected during Internet connections for technical purposes related to server administration.</li>
+          </ol>
+          <p>The Controller does not make automated decisions on the basis of data collected about Users.</p>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Security Information</h2>
-          <p>
-            Your information stored by Tech Reforms is entirely protected using industry-standard security measures. All the information is protected and secured with robust firewalls and encrypted protocols. This practice is strictly maintained to stop any unauthorized access to our valuable data. Our meticulously developed security system secures your information from being misused or altered. Highly sensitive data, such as credit card information, is highly protected through secure socket layer (SSL) technology. This system delivers encryption throughout the entire process. Our professionals are rigorously trained to protect your data. Both external and internal resources are regularly revised to ensure the continuing capability of our security processes.
-          </p>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Data retention period</h2>
+          <p>Personal data shall be kept only for the time necessary to achieve the specific purpose for which it was transmitted or to ensure compliance, as set out below:</p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Personal data collected for the purpose of answering questions asked via the contact form will be processed no longer than 12 months after the last contact;</li>
+            <li>Data collected for the purpose of sending marketing content, newsletters, commercial and business information and e-books will be processed until the withdrawal of consent by the User;</li>
+            <li>Personal data collected for the purposes of recruitment will be processed for the duration of the recruitment process, and if the Candidate agrees to leave the data for the purposes of future recruitments, they will be stored until the withdrawal of the consent, but not longer than 24 months from the date of its granting;</li>
+            <li>Personal data collected for the purposes of preparing a personalized offer for products and/or services will be processed for the duration of the offer negotiation, and after its completion for 12 months counted from the date of the last contact, or they will feed the Controller&apos;s customer database in order to execute the concluded agreement.</li>
+          </ol>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Revision Policy</h2>
-          <p>
-            Tech Reforms provides you with assurance for unlimited revisions according to your particular service packages. Our customers can ask for revisions as per the package, and there shall be no extra fee for it. However, the core concept and design will remain identical, and the customer can ask for revisions on any one of the provided options. Moreover, changes to several options are either inadmissible or will be charged discretely. The turnaround time of a standard revision would be approximately 48 to 72 hours for website design and logo, and 3 to 5 days for video animations, whereas the timeline for apps, software, and games may vary depending on the scope of the revision. Equally, the periods for development and functionality revisions may also differ depending on the scope of work.
-          </p>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Recipients of personal data</h2>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Users&apos; data may be made available to entities authorized to receive data in accordance with applicable laws, including relevant judicial authorities.</li>
+            <li>Personal data may be transferred to entities cooperating with the Controller on the basis of appropriate agreements, including selected marketing agencies and partners providing technical services (development and maintenance of IT systems and websites).</li>
+          </ol>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Protection for Children</h2>
-          <p>
-            Tech Reforms enforces a strict policy of zero information collection from anyone who is known to be under 13 years of age.
-          </p>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Rights of persons</h2>
+          <p><strong>1.</strong> The user is obliged to provide complete, current and up-to-date data.</p>
+          <p><strong>2.</strong> Every user whose personal data is processed by the Controller is entitled to:</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>a. access the data,</li>
+            <li>b. correct the data,</li>
+            <li>c. deletion of the data,</li>
+            <li>d. restrict the processing of data,</li>
+            <li>e. transfer the data,</li>
+            <li>f. object to the processing of data which takes place on the basis of the Controller&apos;s legitimate interest,</li>
+            <li>g. withdraw consent (where processing is based on consent) at any time without affecting the lawfulness of processing carried out on the basis of consent before withdrawal.</li>
+          </ul>
+          <p><strong>3.</strong> You can exercise the rights set out in the above section by sending an appropriate request, providing your user name and e-mail address to <a href="mailto:info@techreforms.com" className="text-[#F74B1C] hover:underline">info@techreforms.com</a>.</p>
+          <p><strong>4.</strong> The user has the right to appeal to the supervisory authority if he considers that the processing of personal data violates the rules of the GDPR.</p>
+          <p><strong>5.</strong> In order to unsubscribe from the communication, please select &quot;Unsubscribe&quot; button on the bottom of the e-mail you received from us, update email preferences in the second step by unchecking the types of email you do not want to receive and accept the settings. You can also contact us via <a href="mailto:info@techreforms.com" className="text-[#F74B1C] hover:underline">info@techreforms.com</a> e-mail.</p>
 
-          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Changes to this Privacy Policy</h2>
-          <p>
-            There is a possibility our policy may change over a specific period. But any change in our policy will be updated immediately and made visible to our fellow clients on <a href="https://techreforms.com/" className="text-[#F74B1C] hover:underline" target="_blank" rel="noopener noreferrer">https://techreforms.com/</a>. Also, we maintain no right to alter our core security proclamation in a way that weakens it, so it is recommended you stay connected with our website to review any updates.
-          </p>
+          <h2 className="font-britanicaBlack text-[20px] sm:text-[24px] text-white mt-10 mb-4">Cookie policy</h2>
+          <p>Tech Reforms collects data in logs, which are used only for the purposes of service administration, and these data are not transferred to third parties.</p>
+          <p><strong>1.</strong> In accordance with established practice, we store HTTP queries addressed to our server. The resources viewed are identified by their URLs. The information collected in the logs is:</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>The public IP address of the computer from which the query came,</li>
+            <li>User station name - identification implemented by http protocol, if possible,</li>
+            <li>User name given during the authorization process,</li>
+            <li>Time for the inquiry to arrive,</li>
+            <li>First line of the http request,</li>
+            <li>The http response code,</li>
+            <li>The number of bytes sent by the server,</li>
+            <li>The URL of the page previously visited by the user, in case the Company&apos;s website was accessed via a link,</li>
+            <li>Information about your browser,</li>
+            <li>Information about errors that occurred in the execution of http transactions.</li>
+          </ul>
+          <p><strong>2.</strong> This data is not connected to specific people browsing the Controller&apos;s pages.</p>
+          <p><strong>3.</strong> In order to ensure the highest quality of service, the Controller periodically analyses log files in order to determine which pages are visited most often, which web browsers are used, whether the structure of the site does not contain errors, etc.</p>
+          <p><strong>4.</strong> The collected logs are stored for 24 months as auxiliary material used to administer the service - on the basis of cookie files, statistics may be generated which do not contain any features identifying the persons visiting techreforms.com.</p>
+          <p><strong>5.</strong> The following types of cookies are used on the website:</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>a. security cookies, e.g. used to detect misuse of authentication;</li>
+            <li>b. &quot;performance&quot; cookies, enabling the collection of information on how to use the website;</li>
+            <li>c. &quot;functional&quot; cookies, enabling &quot;remembering&quot; the settings selected by the User and personalizing the User&apos;s interface, e.g. in terms of the selected language or region from which the User comes from, font size, appearance of the website, etc.</li>
+          </ul>
+          <p><strong>6.</strong> Cookies are not used to process or store personal data. They cannot be used to directly identify the User and do not make any configuration changes in the browser or telecommunication devices.</p>
         </div>
       </div>
       <Footer />

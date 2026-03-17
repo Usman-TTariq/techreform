@@ -85,8 +85,15 @@ const FAQ_ITEMS = [
     },
 ];
 
-const FaqSection = () => {
-    const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
+/**
+ * @param {Object} props
+ * @param {{ id?: number, question: string, answer: string | React.ReactNode }[]} [props.items] - Optional CMS/blog FAQ items (question + answer). When provided, used instead of default FAQ_ITEMS.
+ */
+const FaqSection = ({ items: itemsProp }) => {
+    const items = Array.isArray(itemsProp) && itemsProp.length > 0
+        ? itemsProp.map((item, i) => ({ id: i + 1, question: item.question ?? "", answer: item.answer ?? "" }))
+        : FAQ_ITEMS;
+    const [openId, setOpenId] = useState(items[0]?.id ?? null);
 
     return (
         <section className="relative py-[60px] bg-[#0E0E0E] overflow-x-hidden">
@@ -102,7 +109,7 @@ const FaqSection = () => {
                     </div>
                     <div className="col-span-12 lg:col-span-8 min-w-0 max-sm:pt-4">
                         <div className="flex flex-col gap-3 min-w-0">
-                            {FAQ_ITEMS.map((item) => {
+                            {items.map((item) => {
                                 const isOpen = openId === item.id;
                                 return (
                                     <div
@@ -126,7 +133,7 @@ const FaqSection = () => {
                                         >
                                             <div className="overflow-hidden">
                                                 <div className="font-britanicaRegular text-[16px] text-white/85 leading-relaxed pb-5 px-5 pt-0 border-t border-white/10 break-words min-w-0">
-                                                    {item.answer}
+                                                    {typeof item.answer === "string" ? <span className="whitespace-pre-line">{item.answer}</span> : item.answer}
                                                 </div>
                                             </div>
                                         </div>

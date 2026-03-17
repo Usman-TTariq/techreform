@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "strapi:dev": "cd strapi && npm run develop",
+    "strapi:build": "cd strapi && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

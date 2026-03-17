@@ -224,11 +224,11 @@ const Footer = () => {
                         width={1000}
                         height={1000}
                     />
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 py-4 sm:py-[16px]">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 py-4 sm:py-[16px] relative z-10">
                         <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-2 sm:order-1">
                             Copyright © 2026 Tech Reforms. All rights reserved.
                         </div>
-                        <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-1 sm:order-2">
+                        <div className="font-britanicaRegular text-[13px] sm:text-[16px] font-regular text-white order-1 sm:order-2 relative z-20">
                             <Link href="/terms-conditions" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link>
                             <span className="mx-2">|</span>
                             <Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link>

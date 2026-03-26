@@ -6,7 +6,7 @@ import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
-const IosCaseStudiesSection = () => {
+const ReactNativeCaseStudiesSection = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className="relative pb-12 sm:pb-16 md:pb-[80px]">
@@ -17,7 +17,7 @@ const IosCaseStudiesSection = () => {
               <span className="text-[#F74B1C]">Case Studies </span>
               <span className="text-white">That Show How Our </span>
               <br className="max-sm:hidden"/>
-              <span className="text-white">iOS Apps Perform in the </span>
+              <span className="text-white">React Native Apps Perform in the </span>
               <span className="text-[#F74B1C]">Real World </span>
             </div>
           </div>
@@ -28,27 +28,13 @@ const IosCaseStudiesSection = () => {
         <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
           <div className="col-span-12 md:col-span-6">
             <div className="h-full flex items-center justify-center">
-              <Image
-                className="w-full max-w-[280px] md:max-w-none mx-auto"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png"
-                alt=""
-                width={1000}
-                height={1000}
-              />
+              <Image className="w-full max-w-[280px] md:max-w-none mx-auto" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png" alt="" width={1000} height={1000} />
             </div>
           </div>
           <div className="col-span-12 md:col-span-6">
-            <div>
-              <Image
-                className="w-full my-auto"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png"
-                alt=""
-                width={1000}
-                height={1000}
-              />
-            </div>
+            <Image className="w-full my-auto" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png" alt="" width={1000} height={1000} />
             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
-              Explore our real-world iOS case studies that reflect clean execution, strong UX, and high performance. See how we help businesses improve user retention, app stability, and conversion outcomes.
+            Take a look at what we have built. Our portfolio includes React Native apps across mobile commerce, healthcare platforms, fintech tools, and more, each one a reflection of the care and craft our team puts into every project.
             </div>
             <div className="pt-6 sm:pt-[30px] max-sm:flex max-sm:justify-center">
               <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
@@ -61,4 +47,4 @@ const IosCaseStudiesSection = () => {
   );
 };
 
-export default IosCaseStudiesSection;
+export default ReactNativeCaseStudiesSection;

@@ -20,7 +20,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
     ? "pt-0 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
     : compact
       ? "min-h-0 pt-6 sm:pt-0 pb-4 sm:pb-12 md:pb-0 sm:min-h-[60vh] md:min-h-[60vh]"
-      : "min-h-[60vh] sm:min-h-[60vh] md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0";
+      : "min-h-auto sm:min-h-auto md:min-h-[60vh] pb-8 sm:pb-12 md:pb-0";
   return (
     <div className={`relative w-full min-w-0 overflow-hidden ${heightClass}`}>
       <Image

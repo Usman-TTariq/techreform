@@ -27,7 +27,7 @@ const WhoWeAre = ({ p1, p2, buttonText }) => {
                             />
                         </div>
                     </div>
-                    <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
+                    <div className="col-span-12 md:col-span-8 md:col-start-3 text-center ">
                         <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full">
                             {p1}
                         </div>
@@ -36,7 +36,7 @@ const WhoWeAre = ({ p1, p2, buttonText }) => {
                         </div>
                         <div className="pt-4 sm:pt-[30px] w-full flex justify-center items-center">
                             <div className="w-full max-w-[320px] sm:max-w-none mx-auto flex justify-center">
-                                <Button text={buttonText} icon={false} />
+                                <Button text={buttonText} icon={false} onClick={() => setPopupOpen(true)}/>
                             </div>
                         </div>
                     </div>

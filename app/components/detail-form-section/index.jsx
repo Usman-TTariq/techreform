@@ -18,17 +18,17 @@ const DetailFormSection = ({ formIntro = undefined }) => {
         />
         <div className="grid grid-cols-12 gap-6 md:gap-8 lg:gap-1 relative z-10">
           <div className="col-span-12 lg:col-span-4 my-auto order-1">
-            <div className="pb-2 sm:pb-[10px]">
+            <div className="pb-2 sm:pb-[10px] max-sm:flex max-sm:justify-center">
               <CapsuleLabel firstWord="Contact" secondWord="Us" />
             </div>
-            <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[26px] sm:leading-[32px] md:text-[28px] md:leading-[35px] font-black">
+            <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[26px] sm:leading-[32px] md:text-[28px] md:leading-[35px] font-black max-sm:text-center">
               <span className="text-white">Partner with Us for</span>
               <br />
               <span className="text-[#F74B1C]">Custom App Development and</span>
               <br />
               <span className="text-white">Better Resource Management</span>
             </div>
-            <div className="flex items-center justify-start gap-2 py-5 sm:py-6 md:py-[30px] flex-wrap">
+            <div className="flex items-center justify-start gap-2 py-5 sm:py-6 md:py-[30px] flex-wrap max-sm:justify-center">
               <Image
                 className="w-8 h-8 sm:w-[40px] sm:h-[40px] flex-shrink-0"
                 src="/images/callusicon.png"
@@ -95,7 +95,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
           </div>
           <div className="col-span-12 lg:col-span-4 my-auto order-3 pt-6 lg:pt-0 min-w-0 pl-2 sm:pl-0">
             <div className="pl-0 md:pl-6 lg:pl-[30px] overflow-visible">
-              <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[28px] md:text-[32px] md:leading-[45px] font-black break-words">
+              <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[28px] md:text-[32px] md:leading-[45px] font-black break-words max-sm:text-center">
                 <span className="text-white">What </span>
                 <span className="text-[#F74B1C]">happens</span>
                 <br />

@@ -8,24 +8,24 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const CARDS = [
   {
-    title: "Flutter Strategy and Consulting",
-    desc: "We define your app architecture and roadmap so you launch faster. We offer clarity of architecture, feature scope, and technology roadmap for your app. Our Flutter consulting service ensures your project starts on solid ground with the right stack, the right timeline, and a clear path to launch.",
+    title: "React Native Strategy and Consultation",
+    desc: "Our experts don’t jump into coding without clearly understanding your idea and requirements. We build our React Native consulting service on a sturdy foundation of realistic goals and a clear definition of your app's architecture. We consider all aspects, including an agreed-upon feature set that delivers real value, and a roadmap that is honest about timelines and trade-offs. Think of it as having a technical co-founder in your corner from day one.",
   },
   {
-    title: "Custom Flutter App Development",
-    desc: "Have an impeccable app idea? Is it a consumer mobile app, an enterprise tool, or an e-commerce platform? Whatever that is can be built for you. We deliver secure, scalable, and high-performance solutions for iOS and Android, built from a single codebase and aligned with your business goals.",
+    title: "Custom React Native App Development",
+    desc: "No two products are the same, and we do not treat them that way. Our team builds custom React Native apps, whether that is a consumer-facing mobile app, an internal enterprise tool, or a complex e-commerce platform, with a focus on clean architecture, native performance, and code reuse across iOS and Android.",
   },
   {
-    title: "Agile and Iterative Approach",
-    desc: "We prioritize fast feedback cycles and continuous improvement through an iterative, agile approach. We make sure your Flutter app evolves based on real user feedback and reduces waste during and after delivery.",
+    title: "Agile and Iterative Development",
+    desc: "We work in short, focused sprints. This agile approach keeps the project moving quickly while giving you regular checkpoints to review progress, provide feedback, and adjust priorities. By the time you reach launch, there should be no surprises, just a product that has been built and refined alongside you throughout the process.",
   },
   {
     title: "UI/UX Design and Prototyping",
-    desc: "Great apps start with great design. Our Flutter experts build interactive prototypes and pixel-perfect UI/UX designs before a single line of production code is written. This prototyping phase ensures the product you receive is exactly what you envisioned.",
+    desc: "Good design is not decoration; it is what makes your app worth coming back to. We invest heavily in the prototyping phase, producing interactive mockups that let you experience the product before development begins. Our UI/UX designers understand the nuances of both iOS and Android design standards, so the result feels right on every device.",
   },
 ];
 
-const FlutterWhatWeOfferSection = () => {
+const ReactNativeWhatWeOfferSection = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
@@ -36,8 +36,8 @@ const FlutterWhatWeOfferSection = () => {
               <CapsuleLabel firstWord="WHAT" secondWord="WE" thirdWord="OFFER" />
             </div>
             <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[52px] font-black break-words">
-              <span className="text-white">End-to-End Flutter </span>
-              <span className="text-[#F74B1C]">App Development Solutions</span>
+              <span className="text-white">Simplified React Native </span>
+              <span className="text-[#F74B1C]">App Development Services</span>
             </div>
           </div>
         </div>
@@ -69,4 +69,4 @@ const FlutterWhatWeOfferSection = () => {
   );
 };
 
-export default FlutterWhatWeOfferSection;
+export default ReactNativeWhatWeOfferSection;

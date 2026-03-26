@@ -4,75 +4,67 @@ import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
 
+const PHASES = [
+  "Research",
+  "Strategy",
+  "Sketching and Prototyping",
+  "Prototype Testing",
+  "Design",
+  "Development",
+  "App Testing",
+];
+
 const FAQ_ITEMS = [
   {
     id: 1,
-    question: "How long does iOS app development usually take?",
+    question: "How does iOS Application Development work?",
     answer: (
       <>
-        Timelines depend on app complexity, but most iOS projects take between
-        a few weeks to a few months from discovery to launch.
+        Our iOS App Development follows a systematic, iterative process. This way, we perform quality control on the products we build. There are seven phases in total:
+        <ul className="list-none mt-3 space-y-2 min-w-0">
+          {PHASES.map((phase) => (
+            <li key={phase} className="flex gap-2 min-w-0">
+              <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+              <span className="min-w-0 break-words">{phase}</span>
+            </li>
+          ))}
+        </ul>
       </>
     ),
   },
   {
     id: 2,
-    question: "Do you build apps for both iPhone and iPad?",
+    question: "Why Should I Invest in iOS App Development?",
     answer: (
       <>
-        Yes. We develop optimized experiences for both iPhone and iPad with
-        responsive layouts, smooth performance, and Apple-standard UX.
+        Firstly, because Apple has a loyal user base that grows by the second, choosing iOS will simply guarantee you clients who most probably would use your service. Secondly, iPhones and iPads offer an intuitive user experience you can capitalize on.
       </>
     ),
   },
   {
     id: 3,
-    question: "Can you help with App Store submission?",
+    question: "How much does iOS App Development Cost?",
     answer: (
       <>
-        Absolutely. We handle App Store readiness, compliance checks, submission,
-        and release support to make launch smooth and hassle-free.
+        There isn&apos;t a direct cost estimate for iOS development, as it depends on various factors, such as the app&apos;s development difficulty, the features, the development team&apos;s experience, and the location.
       </>
     ),
   },
   {
     id: 4,
-    question: "Do you provide maintenance after launch?",
+    question: "How much time does it take to develop an iOS App?",
     answer: (
       <>
-        Yes. We offer post-launch support including bug fixes, performance
-        improvements, OS compatibility updates, and new feature rollouts.
+        Similar to cost estimation, the time of iOS development can vary due to many factors. It can take days, sometimes even weeks or months, depending on the size, features, and coding requirements of the app.
       </>
     ),
   },
   {
     id: 5,
-    question: "What kinds of iOS apps do you build?",
+    question: "Can I monetize my iOS App?",
     answer: (
       <>
-        We build iOS applications across multiple business domains, including:
-        <ul className="list-none mt-3 space-y-2 min-w-0">
-          <li className="flex gap-2 min-w-0">
-            <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-            <span className="min-w-0 break-words">Healthcare</span>
-          </li>
-          <li className="flex gap-2 min-w-0">
-            <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-            <span className="min-w-0 break-words">Fintech</span>
-          </li>
-          <li className="flex gap-2 min-w-0">
-            <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-            <span className="min-w-0 break-words">E-commerce</span>
-          </li>
-          <li className="flex gap-2 min-w-0">
-            <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-            <span className="min-w-0 break-words">Education</span>
-          </li>
-          <li className="flex gap-2 min-w-0">
-            <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-            <span className="min-w-0 break-words">Logistics</span>
-          </li>
-        </ul>
+        App Monetization is the eventual goal of many business owners. If you plan to, make sure to finalize your monetization strategy before development starts. If you want to build an App with the aim of monetizing it, connect with our team!
       </>
     ),
   },
@@ -84,9 +76,9 @@ const FaqIosSection = () => {
     <section className="relative py-10 sm:py-12 md:py-14 lg:py-[60px] bg-[#0E0E0E] px-4 sm:px-6 overflow-x-hidden">
       <div className="container max-w-[1200px] mx-auto w-full min-w-0">
         <div className="grid grid-cols-12 gap-6 max-sm:gap-0">
-          <div className="col-span-12 lg:col-span-4">
+          <div className="col-span-12 lg:col-span-4 max-sm:flex max-sm:justify-center max-sm:flex-col max-sm:items-center">
             <CapsuleLabel firstWord="FAQ" secondWord="" />
-            <h2 className="font-britanicaBlack text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-[1.15] font-black pt-3 sm:pt-4">
+            <h2 className="font-britanicaBlack text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-[1.15] font-black pt-3 sm:pt-4 max-sm:text-center">
               <span className="text-white">Frequently Asked </span>
               <br />
               <span className="text-[#F74B1C]">Questions</span>

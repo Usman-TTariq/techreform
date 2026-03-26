@@ -19,18 +19,17 @@ const Flutter = () => {
     <>
       <Header />
       <GeneralHeroSection
-        firstWord="Scalable Flutter App Development"
+        firstWord="Flutter App Development Company"
         secondWord=""
         thirdWord=""
         forthWord=""
-        fifthWord=" | Build Once, Run Everywhere"
-        para="Looking for a fast and cost-effective way to launch apps on both Android and iOS?"
-        para2="At Tech Reforms, we build modern Flutter apps with smooth UI, strong performance, and scalable architecture tailored to your business growth."
+        fifthWord="| Build Cross-Platform Apps with Flutter"
+        para="Ship beautiful, high-performance mobile apps on iOS and Android from a single codebase, faster and more affordably than ever."
         buttonText="Get Free Consultation"
       />
       <WhoWeAre
-        p1="As a trusted Flutter app development company, we design and build cross-platform apps with clean architecture, reusable code, and reliable performance."
-        p2="From discovery and UI/UX to development, testing, and launch, our team delivers complete Flutter solutions that reduce time-to-market and support long-term growth."
+        p1="Tech Reforms is a leading Flutter app development company specializing in building beautiful, high-performance mobile apps for iOS and Android. Our team of experienced Flutter developers delivers complete Flutter solutions that reduce time-to-market and support long-term growth."
+        p2="From Flutter MVP apps to full-scale production releases, our team handles everything: concept, design, development, and deployment. We simplify the entire product lifecycle with a focus on speed, quality, and long-term scalability."
         buttonText="Hire Flutter Developers Today"
       />
       <OurImpactBoxesSection />

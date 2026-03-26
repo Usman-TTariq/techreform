@@ -44,7 +44,7 @@ const MEGA_MENU = {
                     { label: "Android", href: "#" },
                     { label: "IOS", href: "/ios" },
                     { label: "Flutter", href: "/flutter" },
-                    { label: "React Native", href: "#" },
+                    { label: "React Native", href: "/react-native" },
                     { label: "Cross Platform", href: "#" },
                     { label: "Cloud", href: "#" },
                     { label: "IOT", href: "#" },

@@ -5,74 +5,84 @@ import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
 
 const INDUSTRIES = [
-  "Fintech and Banking",
-  "SaaS Platforms",
-  "Healthcare and Telemedicine",
-  "AI-Powered Applications",
-  "E-Commerce and Retail",
-  "Logistics and Fleet Management",
+  "Fintech and digital banking",
+  "SaaS and enterprise software",
+  "Healthcare and telehealth",
+  "AI-powered mobile products",
+  "E-commerce and retail",
+  "Logistics and supply chain",
 ];
 
 const FAQ_ITEMS = [
   {
     id: 1,
-    question: "How quickly can you start on my Flutter project?",
+    question: "How quickly can you start on my React Native project?",
     answer: (
       <>
-        We typically onboard Flutter development teams within one to two weeks and
-        begin building immediately.
+        We can typically have a React Native team onboarded and up to speed
+        within one to two weeks. We like to spend that time properly reviewing
+        your brief, asking questions, and making sure we are aligned before
+        development begins.
       </>
     ),
   },
   {
     id: 2,
-    question: "Can I scale my development team?",
+    question:
+      "Can I scale the team up or down as my business requirements change over time?",
     answer: (
       <>
-        Yes. You can scale your Flutter team up or down at any point through our
-        flexible engagement model. Whether you need one developer or a full
-        Flutter team, we adapt to your needs.
+        Yes, and that flexibility is important to us. Whether you need a single
+        React Native developer to support an existing team or a full squad to
+        take ownership of the product, we can structure the engagement
+        accordingly.
       </>
     ),
   },
   {
     id: 3,
-    question: "Does Flutter produce truly native apps?",
+    question: "How does React Native compare to fully native development?",
     answer: (
       <>
-        Flutter compiles to native ARM code and uses its own rendering engine,
-        giving you near-native performance on both iOS and Android without
-        relying on web views or JavaScript bridges.
+        For the vast majority of mobile apps, React Native delivers native-like
+        performance and a user experience that is indistinguishable from fully
+        native. Where platform-specific capability is genuinely required, we
+        integrate native modules directly so you are never limited by the
+        framework.
       </>
     ),
   },
   {
     id: 4,
-    question: "Do you provide Flutter consulting?",
+    question: "Do you offer React Native consulting only, without full development?",
     answer: (
       <>
-        Absolutely. Our Flutter consulting service covers everything. We connect
-        you to experts who help you with everything from architecture decisions
-        and technology selection to code reviews and team training.
+        We do. Some clients come to us for architecture reviews, code reviews,
+        or to help scope a project before they build it. Our React Native
+        consulting service is available as a standalone engagement.
       </>
     ),
   },
   {
     id: 5,
-    question: "Do you support post-launch scaling?",
+    question: "What happens after the app launches?",
     answer: (
       <>
-        Yes. We help evolve your Flutter app into a full-scale product. We add
-        integrations and expand features to improve your apps&apos; performance.
+        We offer structured post-launch support covering performance monitoring,
+        bug resolution, third-party integrations, and ongoing feature
+        development. The level of involvement is entirely up to you, and we are
+        happy to scale back as your own team grows in confidence with the
+        codebase.
       </>
     ),
   },
   {
     id: 6,
-    question: "What industries have you worked with?",
+    question: "What industries do you serve?",
     answer: (
       <>
-        We build Flutter apps for businesses of all scales and industries:
+        We have built React Native apps for businesses across a broad range of
+        sectors, including:
         <ul className="list-none mt-3 space-y-2 min-w-0">
           {INDUSTRIES.map((item) => (
             <li key={item} className="flex gap-2 min-w-0">
@@ -88,7 +98,7 @@ const FAQ_ITEMS = [
   },
 ];
 
-const FaqFlutterSection = () => {
+const FaqReactNativeSection = () => {
   const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
   return (
     <section className="relative py-10 sm:py-12 md:py-14 lg:py-[60px] bg-[#0E0E0E] px-4 sm:px-6 overflow-x-hidden">
@@ -122,4 +132,4 @@ const FaqFlutterSection = () => {
   );
 };
 
-export default FaqFlutterSection;
+export default FaqReactNativeSection;

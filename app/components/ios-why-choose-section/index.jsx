@@ -10,21 +10,17 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const WHY_CHOOSE = [
   {
-    title: "iOS-First Engineering",
-    desc: "Our team builds native iOS apps aligned with Apple standards, ensuring high performance, clean architecture, and smooth user experiences across iPhone and iPad devices.",
+    title: "Expert Team",
+    desc: "Our iOS App Development Experts know how to build apps that are stable, scalable, and user-friendly.",
   },
   {
-    title: "Business-Focused Delivery",
-    desc: "We do not just ship features; we build products around your growth goals, user behavior, and long-term roadmap so your iOS app delivers measurable value.",
+    title: "Secure Systems",
+    desc: "We follow secure iOS App Development practices to protect your data and users.",
   },
   {
-    title: "Quality and Security",
-    desc: "From code reviews to QA cycles, we follow a rigorous process to deliver stable, secure, and production-ready iOS applications that scale with confidence.",
-  },
-  {
-    title: "End-to-End Partnership",
-    desc: "From discovery and development to App Store launch and post-release improvements, we stay with you at every stage to keep your app reliable and competitive.",
-  },
+    title: "Business-Focused Approach",
+    desc: "Every app we build is designed to support your business growth, not just look good.",
+  }
 ];
 
 const IosWhyChooseSection = () => {
@@ -77,15 +73,13 @@ const IosWhyChooseSection = () => {
       />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 pt-8 sm:pt-12 md:pt-[70px] relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
-          <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words">
-            <span className="text-[#F74B1C]">Why Choose </span>
+          <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words max-sm:text-center">
+            <span className="text-[#F74B1C]">Why Work with </span>
             <br />
-            <span className="text-white">Us?</span>
+            <span className="text-white">Tech Reforms?</span>
           </div>
-          <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">
-            We combine product thinking with iOS engineering excellence to build dependable apps
-            that perform at scale. Our approach is focused on quality delivery, clean architecture,
-            and long-term success for your mobile product.
+          <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full max-sm:text-center">
+            We focus on building apps that work in real-world conditions, not just on paper.
           </div>
         </div>
         <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">

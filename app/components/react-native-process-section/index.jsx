@@ -11,14 +11,14 @@ import AiIcon from "../advanced-technology-section/svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
-  { title: "Discovery and Planning", desc: "Every development project begins with an in-depth discovery phase. We learn your business model, target users, and success metrics. The intricate planning often equips them to have a clear product roadmap and defines the technical architecture from the get-go." },
-  { title: "UI/UX Design", desc: "Our designers craft intuitive, visually intuitive interfaces built specifically for Flutter. We deliver interactive prototypes for your review before writing a single line of developmental code. So, there are no surprises once the project is ready to launch." },
-  { title: "Flutter Development", desc: "Our engineers build your app using Flutter's powerful widget ecosystem and Dart programming language. We write clean, maintainable code and follow best practices in state management, performance, and platform integration to build better, faster apps." },
-  { title: "Testing and QA", desc: "We run comprehensive automated testing across iOS and Android devices. This is done to offer the best app experience for your app users. This way, we validate every feature against your requirements before we move to the next sprint, ensuring a polished, bug-free release." },
-  { title: "Launch and Post-Launch Support", desc: "We manage all the technicalities tied to your app store submissions and simplify the deployment pipelines. We also monitor performance before it reaches the users. After launch, we remain your long-term partner to get seamless updates and new features." },
+  { title: "Discovery and Planning", desc: "We begin with a clear understanding of your business, target users, and project goals. This helps us define the technical architecture, set a realistic scope, and create a structured development plan. Our approach ensures steady progress while maintaining high standards at every stage." },
+  { title: "UI/UX Design", desc: "Before development starts, our design team prepares detailed wireframes and interactive prototypes. This gives you a clear view of the application’s layout and functionality, along with the opportunity to share feedback and refine the user experience at an early stage." },
+  { title: "React Native Development", desc: "Our engineers turn approved designs into a functional application through React Native’s component-based architecture, along with JavaScript and TypeScript where required. We focus on clean, well-structured, and documented code, and use native modules where needed to deliver a consistent experience across platforms." },
+  { title: "Testing and Quality Assurance", desc: "Quality remains a priority throughout the development cycle. We conduct automated tests on real iOS and Android devices during each sprint. This allows early issue detection, full edge case coverage, and a stable product as new features are introduced. By delivery, the application has undergone thorough validation." },
+  { title: "Launch and Post-Launch Support", desc: "We handle app store submission and deployment to ensure a smooth release. After launch, we continue support through performance checks, bug resolution, and feature updates. This way, we treat the apps' post-launch support as a core part of the engagement, not a separate phase." },
 ];
 
-const FlutterProcessSection = () => {
+const ReactNativeProcessSection = () => {
   const sectionRef = useRef(null);
   const swiperRef = useRef(null);
   const [swiperReady, setSwiperReady] = useState(false);
@@ -45,9 +45,9 @@ const FlutterProcessSection = () => {
       <Image className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825717/whatwedobk_wisvaz.png" alt="" width={1000} height={1000} />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1">
-          <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center"><CapsuleLabel firstWord="OUR" secondWord="FLUTTER APP" thirdWord="PROCESS" /></div>
+          <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center"><CapsuleLabel firstWord="OUR" secondWord="REACT NATIVE" thirdWord="PROCESS" /></div>
           <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words max-sm:text-center">
-            <span className="text-white">A Proven Process for Building </span><span className="text-[#F74B1C]">High-Performance Flutter Apps</span>
+            <span className="text-white">Our React Native </span><span className="text-[#F74B1C]">Development Process</span>
           </div>
           <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center"><Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} /></div>
         </div>
@@ -57,7 +57,7 @@ const FlutterProcessSection = () => {
               breakpoints={{ 480: { slidesPerView: 1.2, spaceBetween: 12 }, 640: { slidesPerView: 1.2, spaceBetween: 12 }, 768: { slidesPerView: 1.8, spaceBetween: 12 }, 1024: { slidesPerView: 1.8, spaceBetween: 12 }, 1280: { slidesPerView: 2.1, spaceBetween: 12 }, 1530: { slidesPerView: 2.1, spaceBetween: 12 }, 1536: { slidesPerView: 2.1, spaceBetween: 12 } }}>
               {STEPS.map((step, index) => (
                 <SwiperSlide key={index} className="!h-full">
-                  <div className="bg-white border-2 h-[420px] sm:h-[460px] md:h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
+                  <div className="bg-white border-2 h-[420px] sm:h-[460px] md:h-[600px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                     <div className="pb-3 sm:pb-[20px] shrink-0"><div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center"><AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" /></div></div>
                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight shrink-0">{step.title}</div>
                     <div className="font-britanicaRegular text-[13px] sm:text-[16px] leading-relaxed flex-1 min-h-0 overflow-y-auto pb-4 sm:pb-[30px]">{step.desc}</div>
@@ -74,4 +74,4 @@ const FlutterProcessSection = () => {
   );
 };
 
-export default FlutterProcessSection;
+export default ReactNativeProcessSection;

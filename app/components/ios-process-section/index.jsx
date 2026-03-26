@@ -12,20 +12,24 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
   {
-    title: "Product Discovery & Planning",
-    desc: "We begin by understanding your app idea, audience, business goals, and required iOS features. This planning phase helps define the right scope, timeline, and technical direction before development starts.",
+    title: "Requirement Gathering",
+    desc: "We start by understanding your idea, users, and business needs.",
   },
   {
-    title: "UI/UX & Architecture",
-    desc: "Our team designs clean iOS-first user experiences and a scalable technical architecture. We focus on intuitive navigation, performance, and maintainable code structure for long-term app growth.",
+    title: "UI/UX Design",
+    desc: "We design clean and simple interfaces that users actually enjoy using.",
   },
   {
-    title: "Development & QA Testing",
-    desc: "Using modern iOS development standards, we build robust app features and run detailed QA cycles. We test on multiple iPhone/iPad devices to ensure smooth performance, stability, and security.",
+    title: "App Development",
+    desc: "Our developers build fast, secure apps using modern tools and best practices.",
   },
   {
-    title: "App Store Launch & Support",
-    desc: "We assist with App Store deployment, compliance checks, and release management. After launch, we provide ongoing support, updates, and optimization so your app keeps delivering value.",
+    title: "iOS App Testing and Deployment",
+    desc: "We test everything properly before launch to make sure your app runs smoothly on all devices.",
+  },
+  {
+    title: "Ongoing Support",
+    desc: "After launch, we stay with you for updates, fixes, and improvements.",
   },
 ];
 
@@ -80,15 +84,15 @@ const IosProcessSection = () => {
       />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1">
-          <div className="pb-6 sm:pb-[40px]">
+          <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center">
             <CapsuleLabel firstWord="OUR" secondWord="IOS APP" thirdWord="PROCESS" />
           </div>
-          <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words">
-            <span className="text-white">Our Process for Reliable</span>
+          <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words max-sm:text-center">
+            <span className="text-white">Simple Steps to</span>
             <br />
-            <span className="text-[#F74B1C]">iOS App Development</span>
+            <span className="text-[#F74B1C]">Build Better Apps</span>
           </div>
-          <div className="pt-5 sm:pt-[30px]">
+          <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center">
             <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
           </div>
         </div>
@@ -113,7 +117,7 @@ const IosProcessSection = () => {
             >
               {STEPS.map((step, index) => (
                 <SwiperSlide key={index} className="!h-full">
-                  <div className="bg-white border-2 h-[420px] sm:h-[460px] md:h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
+                  <div className="bg-white border-2 h-[400px] sm:h-[460px] md:h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                     <div className="pb-3 sm:pb-[20px] shrink-0">
                       <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                         <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />

@@ -26,7 +26,7 @@ const OurImpactBoxesSection = () => {
         height={1000}
       />
       <div className="grid grid-cols-12 gap-3 sm:gap-4">
-        <div className="col-span-12 pb-6 sm:pb-[30px] flex justify-center">
+        <div className="col-span-12 pb-6 sm:pb-[30px] flex justify-center max-sm:mb-[50px]">
           <CapsuleLabel firstWord="OUR" secondWord="IMPACT" />
         </div>
         {cards.map((card, index) => (

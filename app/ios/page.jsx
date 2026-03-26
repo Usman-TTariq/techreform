@@ -29,8 +29,8 @@ const IOS = () => {
                 buttonText="Get Free Consultation"
             />
             <WhoWeAre
-                p1="As a trusted iOS app development company, we create custom iPhone and iPad apps through clear planning, clean architecture, and user-first design."
-                p2="From product discovery and UI/UX to development, testing, and launch, our team handles the full iOS journey and delivers scalable apps built for long-term growth."
+                p1="As a trusted iOS app development company, we build native iPhone and iPad applications with premium features and intuitive designs that deliver a premium experience on every Apple device. Tech Reforms provides high-quality iOS development solutions for startups, growing businesses, and enterprises alike."
+                p2="From iOS apps to full-scale App Store releases, our team handles everything: concept, design, development, and deployment. We simplify the entire product lifecycle with a focus on speed, quality, and long-term scalability."
                 buttonText="Hire iOS Developers Today"
             />
             <OurImpactBoxesSection />

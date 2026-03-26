@@ -50,6 +50,6 @@ const Mobile = () => {
             <Footer />
         </div>
     )
-}
+}  
 
 export default Mobile;

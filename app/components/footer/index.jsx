@@ -82,7 +82,7 @@ const Footer = () => {
                             <li><Link href="/mobile-app-development" className="hover:text-[#F74B1C] transition-colors">App Development</Link></li>
                             <li><Link href="/game-development" className="hover:text-[#F74B1C] transition-colors">Game App Development</Link></li>
                             <li><Link href="/mvp" className="hover:text-[#F74B1C] transition-colors">MVP Development</Link></li>
-                            <li><Link href="/mobile-app-development#ar" className="hover:text-[#F74B1C] transition-colors">AR Development</Link></li>
+                            <li><Link href="/ar-development" className="hover:text-[#F74B1C] transition-colors">AR Development</Link></li>
                             <li><Link href="/mobile-app-development#vr" className="hover:text-[#F74B1C] transition-colors">VR Development</Link></li>
                             <li><Link href="/mobile-app-development#maintenance" className="hover:text-[#F74B1C] transition-colors">App Maintenance Support</Link></li>
                             <li><Link href="/lp/app" className="hover:text-[#F74B1C] transition-colors">Web App Development</Link></li>

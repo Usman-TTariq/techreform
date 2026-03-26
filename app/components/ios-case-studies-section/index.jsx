@@ -6,6 +6,12 @@ import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
+const CASE_STUDY_BULLETS = [
+  "100+ Apps Delivered",
+  "5+ Years Experience",
+  "40% Average Increase in User Engagement",
+];
+
 const IosCaseStudiesSection = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   return (
@@ -47,9 +53,14 @@ const IosCaseStudiesSection = () => {
                 height={1000}
               />
             </div>
-            <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
-              Explore our real-world iOS case studies that reflect clean execution, strong UX, and high performance. See how we help businesses improve user retention, app stability, and conversion outcomes.
-            </div>
+            <ul className="list-none font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] space-y-2 sm:space-y-3 min-w-0">
+              {CASE_STUDY_BULLETS.map((line) => (
+                <li key={line} className="flex gap-2 sm:gap-3 min-w-0">
+                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
+                  <span className="min-w-0 break-words">{line}</span>
+                </li>
+              ))}
+            </ul>
             <div className="pt-6 sm:pt-[30px] max-sm:flex max-sm:justify-center">
               <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
             </div>

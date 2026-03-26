@@ -44,7 +44,7 @@ const FlutterWhyChooseSection = () => {
         <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
           <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words max-sm:text-center"><span className="text-[#F74B1C]">Why Choose </span><br /><span className="text-white">Us?</span></div>
           <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full max-sm:text-center">
-            Being a leading Flutter development partner, we work on a pragmatic, business-first approach that combines deep technical expertise with a
+            Being a leading Flutter development partner, we work on a pragmatic, business-first approach that combines deep technical expertise with efficiency.
           </div>
         </div>
         <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">

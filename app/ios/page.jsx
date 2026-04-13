@@ -14,7 +14,7 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
-const IOS = () => {
+const IOS = () => {  
     return (
         <>
             <Header />

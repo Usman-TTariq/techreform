@@ -35,7 +35,7 @@ const MEGA_MENU = {
                     { label: "VR Development", href: "#" },
                     { label: "App Maintenance Support", href: "#" },
                     { label: "Web App Development", href: "#" },
-                    { label: "Apps for Startup", href: "#" },
+                    { label: "Apps for Startup", href: "/apps-for-startup" },
                 ],
             },
             {
@@ -53,7 +53,7 @@ const MEGA_MENU = {
             {
                 heading: "Industries",
                 items: [
-                    { label: "Retail", href: "#" },
+                    { label: "Retail", href: "/retail" },
                     { label: "Healthcare", href: "#" },
                     { label: "Real Estate", href: "#" },
                     { label: "Ecommerce", href: "/ecommerce" },
@@ -92,7 +92,7 @@ const MEGA_MENU = {
         ],
         sections: [
             { heading: "Services", items: [{ label: "Ecommerce Solutions", href: "/ecommerce" }, { label: "Online Store", href: "#" }] },
-            { heading: "Industries", items: [{ label: "Retail", href: "#" }, { label: "B2B", href: "#" }] },
+            { heading: "Industries", items: [{ label: "Retail", href: "/retail" }, { label: "B2B", href: "#" }] },
         ],
     },
     staff: {

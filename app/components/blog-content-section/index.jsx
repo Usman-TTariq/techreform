@@ -74,7 +74,7 @@ const BlogContentSection = ({ blogs = [] }) => {
                                             <div className="pt-6 sm:pt-[30px] flex justify-start">
                                                 {card.slug ? (
                                                     <Link
-                                                        href={`/blog/${card.slug}`}
+                                                        href={`/blog/${encodeURIComponent(card.slug)}`}
                                                         className="group relative overflow-hidden bg-white hover:bg-transparent rounded-full px-2 py-2 cursor-pointer flex items-center gap-0 border border-[#F74B1C] w-fit"
                                                     >
                                                         <span className="absolute inset-0 bg-[#F74B1C] origin-right scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out" />

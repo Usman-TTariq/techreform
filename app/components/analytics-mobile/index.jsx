@@ -50,7 +50,7 @@ const AnalyticsMobile = () => {
                                 <div className="col-span-12 md:col-span-6 my-auto min-w-0 order-2">
                                     <Image
                                         className="w-full max-w-full h-auto"
-                                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820145/facilitiesright_bcajx4.png"
+                                        src="https://ik.imagekit.io/sajib4aqc/Group%202147225282.png"
                                         alt=""
                                         width={1000}
                                         height={1000}

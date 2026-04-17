@@ -4,7 +4,6 @@ import CapsuleLabel from "../common/capsule-label";
 const LpAppAbout = () => {
     return (
         <div className="relative pt-[100px] max-sm:pt-[60px] mb-[160px] max-sm:mb-[50px]">
-            
             <div className="container relative z-10">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12 text-center">
@@ -29,7 +28,7 @@ const LpAppAbout = () => {
                 <div className="pt-[80px] max-sm:pt-[40px]">
                     <Image
                         className="w-full"
-                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772819859/bulletpoints_buwrvm.png"
+                        src="https://ik.imagekit.io/sajib4aqc/bulletpoints_buwrvm.webp"
                         alt="Hero Background"
                         width={1000}
                         height={1000}

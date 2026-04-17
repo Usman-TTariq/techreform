@@ -220,7 +220,7 @@ const LpAppServices = () => {
                             <div>
                                 <Image
                                     className="w-full max-sm:mx-auto"
-                                    src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772819937/lp-app-services_afq0sq.png"
+                                    src="https://ik.imagekit.io/sajib4aqc/lp-app-services_afq0sq.webp"
                                     alt=""
                                     width={1000}
                                     height={1000}

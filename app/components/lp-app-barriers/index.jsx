@@ -85,7 +85,7 @@ const LpAppBarriers = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772820013/barrier_vvr0zl.png"
+                                src="https://ik.imagekit.io/sajib4aqc/barrier_vvr0zl.webp"
                                 alt="Hero Background"
                                 width={1000}
                                 height={1000}

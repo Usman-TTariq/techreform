@@ -57,7 +57,7 @@ const ArAppFunctions = () => {
                             </div>
                             <div className="bg-white w-[350px] border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px]">
                                 <Image
-                                    src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823391/3_qsiqie.png"
+                                    src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
                                     alt=""
                                     width={1000}
                                     height={1000}

@@ -19,14 +19,14 @@ const MobileHeroSection = () => {
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[22%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
-                src="https://ik.imagekit.io/sajib4aqc/frame_da1r9p.webp"
+                src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
                 alt=""
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[22%] sm:w-[28%] md:w-[30%] hidden sm:block"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772822480/frame2_h4xmpf.png"
+                src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
                 alt=""
                 width={1000}
                 height={1000}

@@ -12,14 +12,14 @@ const TransformingIdeas = () => {
   return (
     <div className="relative overflow-hidden">
       <Image
-        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823103/idea1_pa9rf6.png"
+        src="https://ik.imagekit.io/sajib4aqc/idea1_pa9rf6.webp"
         alt=""
         width={1000}
         height={1000}
         className="absolute -top-[20%] sm:-top-[35%] right-0 w-[55%] sm:w-[45%] hidden sm:block opacity-80"
       />
       <Image
-        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823128/idea2_xhfapr.png"
+        src="https://ik.imagekit.io/sajib4aqc/idea2_xhfapr.webp"
         alt=""
         width={1000}
         height={1000}
@@ -67,7 +67,7 @@ const TransformingIdeas = () => {
           <div className="col-span-12 md:col-span-6 lg:col-span-5 h-full">
             <div className="bg-[#F74B1C] relative border-2 border-white rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] h-full overflow-hidden min-h-[280px]">
               <Image
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823328/2_hhdnmo.png"
+                src="https://ik.imagekit.io/sajib4aqc/2_hhdnmo.webp"
                 alt=""
                 width={1000}
                 height={1000}
@@ -92,7 +92,7 @@ const TransformingIdeas = () => {
           <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px] -mt-0 lg:-mt-[50px]">
               <Image
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823391/3_qsiqie.png"
+                src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
                 alt=""
                 width={1000}
                 height={1000}

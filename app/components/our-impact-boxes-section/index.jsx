@@ -21,7 +21,7 @@ const OurImpactBoxesSection = () => {
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
         src="https://ik.imagekit.io/sajib4aqc/reviewEllipse_xofccf.webp"
-        alt=""
+        alt="Supporting illustration for Tech Reforms website section"
         width={1000}
         height={1000}
       />
@@ -43,14 +43,14 @@ const OurImpactBoxesSection = () => {
               <Image
                 className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
                 src="/images/hover-logo.png"
-                alt=""
+                alt="Client or partner logo on impact stat card"
                 width={1000}
                 height={1000}
               />
               <Image
                 className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
                 src="/images/hovertext.png"
-                alt=""
+                alt="Decorative hover label graphic"
                 width={1000}
                 height={1000}
               />

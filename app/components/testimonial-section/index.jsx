@@ -86,7 +86,7 @@ const TestimonialSection = () => {
       <Image
         className="absolute top-[50%] -translate-y-1/2 right-0 w-[50%] sm:w-[40%] opacity-80"
         src="/images/testbk.png"
-        alt=""
+        alt="Soft gradient background behind testimonials"
         width={1000}
         height={1000}
       />
@@ -95,7 +95,7 @@ const TestimonialSection = () => {
           <Image
             className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[100%] sm:w-[90%] h-full object-cover opacity-60 sm:opacity-100"
             src="/images/testimonialbk.png"
-            alt=""
+            alt="Decorative background for testimonial content"
             width={1000}
             height={1000}
           />

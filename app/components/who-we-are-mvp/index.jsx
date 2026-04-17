@@ -13,7 +13,7 @@ const WhoWeAreMvp = () => {
             <Image
                 className="absolute -top-[20%] left-0 w-[50%] sm:w-[40%] md:w-[35%] opacity-60"
                 src="https://ik.imagekit.io/sajib4aqc/bk1_qqglcc.webp"
-                alt=""
+                alt="Warm orange abstract light burst behind Who We Are section"
                 width={1000}
                 height={1000}
             />

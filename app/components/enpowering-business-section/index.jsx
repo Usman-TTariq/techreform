@@ -7,7 +7,7 @@ const EnpoweringBusinessSection = () => {
             <Image
                 className="absolute -top-[25%] right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
                 src="/images/empowerbk.png"
-                alt=""
+                alt="Decorative gradient behind empowering business section"
                 width={1000}
                 height={1000}
             />
@@ -49,7 +49,7 @@ const EnpoweringBusinessSection = () => {
                             <Image
                                 className="w-full h-full object-cover"
                                 src="/images/Background.png"
-                                alt=""
+                                alt="Team collaboration and business growth background photo"
                                 width={1000}
                                 height={1000}
                             />

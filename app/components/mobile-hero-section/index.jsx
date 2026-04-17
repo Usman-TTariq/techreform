@@ -13,21 +13,21 @@ const MobileHeroSection = () => {
             <Image
                 className="absolute top-[15%] left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[35%] sm:left-[60%] max-w-[200px] sm:max-w-none hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
-                alt=""
+                alt="Supporting illustration for Tech Reforms website section"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[22%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
-                alt=""
+                alt="Decorative abstract graphic accent on hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[22%] sm:w-[28%] md:w-[30%] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
-                alt=""
+                alt="Decorative frame graphic on hero section"
                 width={1000}
                 height={1000}
             />
@@ -58,7 +58,7 @@ const MobileHeroSection = () => {
                     <Image
                         className="w-[70%] max-w-[280px] h-auto"
                         src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
-                        alt=""
+                        alt="Supporting illustration for Tech Reforms website section"
                         width={1000}
                         height={1000}
                     />

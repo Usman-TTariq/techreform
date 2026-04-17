@@ -13,7 +13,7 @@ const WhoWeAreErp = () => {
             <Image
                 className="absolute -top-[20%] left-0 w-[50%] sm:w-[40%] md:w-[35%] opacity-60"
                 src="/images/bk1.png"
-                alt=""
+                alt="Warm orange abstract light accent behind section content"
                 width={1000}
                 height={1000}
             />

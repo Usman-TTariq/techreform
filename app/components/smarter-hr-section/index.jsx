@@ -25,7 +25,7 @@ const SmarterHrSection = () => {
                                 <div className="rounded-xl h-full bg-[#7724c100] border border-[#7724C1] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 sm:p-6 md:p-[30px] py-5 sm:py-[26px]">
                                     <div className="min-w-0">
                                         <div className="pb-3 sm:pb-[20px]">
-                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="" width={60} height={60} />
+                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="Key icon representing HR or access feature" width={60} height={60} />
                                         </div>
                                         <div className="font-britanicaRegular font-bold text-[20px] sm:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">Efficiency</div>
                                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">Streamline HR processes, automate repetitive tasks, and save time.</div>
@@ -36,7 +36,7 @@ const SmarterHrSection = () => {
                                 <div className="rounded-xl h-full bg-[#7724c100] border border-[#7724C1] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 sm:p-6 md:p-[30px] py-5 sm:py-[26px]">
                                     <div className="min-w-0">
                                         <div className="pb-3 sm:pb-[20px]">
-                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="" width={60} height={60} />
+                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="Key icon representing HR or access feature" width={60} height={60} />
                                         </div>
                                         <div className="font-britanicaRegular font-bold text-[20px] sm:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">Accuracy</div>
                                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">Ensure data accuracy and minimize errors with centralized data management.</div>
@@ -45,7 +45,7 @@ const SmarterHrSection = () => {
                             </div>
                             <div className="col-span-12 h-full min-w-0">
                                 <div className="h-full">
-                                    <Image className="w-full max-w-full h-auto" src="/images/last.png" alt="" width={1000} height={1000} />
+                                    <Image className="w-full max-w-full h-auto" src="/images/last.png" alt="HR platform illustration with team and interface" width={1000} height={1000} />
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ const SmarterHrSection = () => {
                                         <Image
                                             className="w-full max-w-full h-auto"
                                             src="/images/mask.png"
-                                            alt=""
+                                            alt="Profile photo mask frame for HR testimonial"
                                             width={1000}
                                             height={1000}
                                         />
@@ -67,7 +67,7 @@ const SmarterHrSection = () => {
                                         <Image
                                             className="w-full max-w-full h-auto"
                                             src="/images/grade.png"
-                                            alt=""
+                                            alt="Performance grade badge graphic"
                                             width={1000}
                                             height={1000}
                                         />
@@ -76,7 +76,7 @@ const SmarterHrSection = () => {
                                         <Image
                                             className="w-full max-w-full h-auto"
                                             src="/images/user.png"
-                                            alt=""
+                                            alt="User profile avatar in HR section"
                                             width={1000}
                                             height={1000}
                                         />
@@ -87,7 +87,7 @@ const SmarterHrSection = () => {
                                         <Image
                                             className="w-full max-w-full h-auto"
                                             src="/images/mask1.png"
-                                            alt=""
+                                            alt="Alternate profile frame for HR testimonial"
                                             width={1000}
                                             height={1000}
                                         />
@@ -96,7 +96,7 @@ const SmarterHrSection = () => {
                                         <Image
                                             className="w-full max-w-full h-auto"
                                             src="/images/rating.png"
-                                            alt=""
+                                            alt="Star rating graphic"
                                             width={1000}
                                             height={1000}
                                         />
@@ -109,7 +109,7 @@ const SmarterHrSection = () => {
                                 <div className="rounded-xl h-full bg-[#7724c100] border border-[#7724C1] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 sm:p-6 md:p-[30px] py-5 sm:py-[26px]">
                                     <div className="min-w-0">
                                         <div className="pb-3 sm:pb-[20px]">
-                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="" width={60} height={60} />
+                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="Key icon representing HR or access feature" width={60} height={60} />
                                         </div>
                                         <div className="font-britanicaRegular font-bold text-[20px] sm:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">Efficiency</div>
                                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">Streamline HR processes, automate repetitive tasks, and save time.</div>
@@ -120,7 +120,7 @@ const SmarterHrSection = () => {
                                 <div className="rounded-xl h-full bg-[#7724c100] border border-[#7724C1] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 sm:p-6 md:p-[30px] py-5 sm:py-[26px]">
                                     <div className="min-w-0">
                                         <div className="pb-3 sm:pb-[20px]">
-                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="" width={60} height={60} />
+                                            <Image className="w-10 h-10 sm:w-[60px] sm:h-[60px]" src="/images/keyicon.png" alt="Key icon representing HR or access feature" width={60} height={60} />
                                         </div>
                                         <div className="font-britanicaRegular font-bold text-[20px] sm:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">Accuracy</div>
                                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">Ensure data accuracy and minimize errors with centralized data management.</div>

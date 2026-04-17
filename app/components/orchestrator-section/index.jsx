@@ -7,7 +7,7 @@ const OrchestratorSection = () => {
             <Image
                 className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[95%] sm:w-[80%]"
                 src="/images/orchestrator.png"
-                alt=""
+                alt="Orchestrator platform hero illustration"
                 width={1000}
                 height={1000}
             />
@@ -18,7 +18,7 @@ const OrchestratorSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/Container.png"
-                                alt=""
+                                alt="Orchestrator platform container and workflow illustration"
                                 width={1000}
                                 height={1000}
                             />

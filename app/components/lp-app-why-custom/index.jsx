@@ -172,7 +172,7 @@ const LpAppWhyCustom = () => {
                             <Image
                                 className="w-full"
                                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225282.png"
-                                alt=""
+                                alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}
                             />

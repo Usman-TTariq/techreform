@@ -221,7 +221,7 @@ const LpAppServices = () => {
                                 <Image
                                     className="w-full max-sm:mx-auto"
                                     src="https://ik.imagekit.io/sajib4aqc/lp-app-services_afq0sq.webp"
-                                    alt=""
+                                    alt="Supporting illustration for Tech Reforms website section"
                                     width={1000}
                                     height={1000}
                                 />

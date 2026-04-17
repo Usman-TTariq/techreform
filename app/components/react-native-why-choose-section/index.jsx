@@ -39,7 +39,7 @@ const ReactNativeWhyChooseSection = () => {
 
   return (
     <div ref={sectionRef} className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
-      <Image className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100" src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp" alt="" width={1000} height={1000} />
+      <Image className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100" src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp" alt="Soft purple abstract gradient background decoration" width={1000} height={1000} />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 pt-8 sm:pt-12 md:pt-[70px] relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
           <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words max-sm:text-center"><span className="text-[#F74B1C]">Why Choose </span><br /><span className="text-white">Us?</span></div>

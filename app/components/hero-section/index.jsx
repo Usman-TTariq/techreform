@@ -13,21 +13,21 @@ const HeroSection = () => {
             <Image
                 className="absolute top-[42%] sm:top-[38%] md:top-[30%] lg:top-[20%] left-[50%] translate-x-[-50%] w-[100%]  sm:w-[78%] sm:max-w-none md:w-[75%] lg:w-[70%]"
                 src="/images/herolaptop.png"
-                alt=""
+                alt="Laptop displaying business and app development visuals on hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
-                alt=""
+                alt="Decorative abstract graphic accent on hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[20%] sm:w-[28%] md:w-[30%] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
-                alt=""
+                alt="Decorative frame graphic on hero section"
                 width={1000}
                 height={1000}
             />

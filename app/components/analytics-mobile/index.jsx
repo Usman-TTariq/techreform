@@ -9,14 +9,14 @@ const AnalyticsMobile = () => {
             <Image
                 className="absolute top-[0%] left-0 w-[20%] sm:w-[20%] opacity-60 sm:opacity-100"
                 src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825537/hrbk1_uaqnk1.png"
-                alt=""
+                alt="Supporting illustration for Tech Reforms website section"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[10%] right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
                 src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825568/hrbk2_cwziij.png"
-                alt=""
+                alt="Supporting illustration for Tech Reforms website section"
                 width={1000}
                 height={1000}
             />
@@ -51,7 +51,7 @@ const AnalyticsMobile = () => {
                                     <Image
                                         className="w-full max-w-full h-auto"
                                         src="https://ik.imagekit.io/sajib4aqc/Group%202147225282.png"
-                                        alt=""
+                                        alt="Supporting illustration for Tech Reforms website section"
                                         width={1000}
                                         height={1000}
                                     />

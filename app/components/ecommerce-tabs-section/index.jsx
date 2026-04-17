@@ -217,7 +217,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt=""
+                                    alt="Shopping cart icon for ecommerce tab"
                                     width={1000}
                                     height={1000}
                                 />
@@ -226,7 +226,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt=""
+                                    alt="Shopping cart icon for ecommerce tab"
                                     width={1000}
                                     height={1000}
                                 />
@@ -235,7 +235,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt=""
+                                    alt="Shopping cart icon for ecommerce tab"
                                     width={1000}
                                     height={1000}
                                 />
@@ -244,7 +244,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt=""
+                                    alt="Shopping cart icon for ecommerce tab"
                                     width={1000}
                                     height={1000}
                                 />

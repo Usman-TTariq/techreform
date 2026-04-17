@@ -120,7 +120,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                 {/* <div className="flex-shrink-0 h-[120px] sm:h-[160px] bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e] flex items-center justify-center py-3 sm:py-4 px-3 sm:px-4 min-w-0 overflow-hidden">
                     <Image
                         src={encodeURI(getImagePath("/images/iPhone 13 Pro - Double Front - Dark.png"))}
-                        alt=""
+                        alt="Illustration supporting page content"
                         width={280}
                         height={160}
                         className="w-auto h-[110px] sm:h-[140px] object-contain drop-shadow-lg"

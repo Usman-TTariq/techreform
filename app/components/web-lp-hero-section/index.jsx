@@ -10,14 +10,14 @@ const WebLPHeroSection = () => {
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="/images/frame.png"
-                alt=""
+                alt="Decorative frame graphic on web landing hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[20%] sm:w-[28%] md:w-[30%] hidden sm:block"
                 src="/images/frame2.png"
-                alt=""
+                alt="Secondary decorative frame on web landing hero"
                 width={1000}
                 height={1000}
             />

@@ -76,7 +76,7 @@ const WhatWeDoSection = () => {
       <Image
         className="w-[60%] sm:w-[60%] md:w-[50%] absolute top-[10%] sm:-top-[20%] left-0 opacity-50 sm:opacity-60"
         src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wl6wjg.webp"
-        alt=""
+        alt="Purple gradient background decoration for services section"
         width={1000}
         height={1000}
       />

@@ -187,7 +187,7 @@ const ThreeDTextRotationSection = () => {
             <div className="relative -mt-8 sm:-mt-16 md:-mt-[100px] lg:-mt-[150px] z-10 overflow-hidden">
                 <Image
                     src="/images/remove.png"
-                    alt=""
+                    alt="Decorative graphic in 3D text rotation section"
                     width={280}
                     height={360}
                     className="absolute -top-[10%] sm:-top-[20%] left-0 w-[35%] sm:w-[30%] md:w-[25%] max-w-[140px] sm:max-w-none opacity-90"
@@ -202,7 +202,7 @@ const ThreeDTextRotationSection = () => {
                                         <div className="td-shape" aria-hidden>
                                             <Image
                                                 src="/images/vector.png"
-                                                alt=""
+                                                alt="Vector accent graphic"
                                                 width={250}
                                                 height={300}
                                                 className="w-full h-full object-contain"

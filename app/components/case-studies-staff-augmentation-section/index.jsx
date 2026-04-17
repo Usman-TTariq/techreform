@@ -30,7 +30,7 @@ const CaseStudiesStaffAugmentationSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/ec.png"
-                                alt=""
+                                alt="Ecommerce case study product mockup"
                                 width={1000}
                                 height={1000}
                             />
@@ -48,7 +48,7 @@ const CaseStudiesStaffAugmentationSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/ec2.png"
-                                alt=""
+                                alt="Ecommerce case study secondary visual"
                                 width={1000}
                                 height={1000}
                             />

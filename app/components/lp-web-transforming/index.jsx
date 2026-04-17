@@ -13,14 +13,14 @@ const LpWebTransforming = () => {
         <div className="relative overflow-hidden pt-[100px] max-sm:pt-[30px]">
             <Image
                 src="https://ik.imagekit.io/sajib4aqc/idea1_pa9rf6.webp"
-                alt=""
+                alt="Supporting illustration for Tech Reforms website section"
                 width={1000}
                 height={1000}
                 className="absolute -top-[20%] sm:-top-[35%] right-0 w-[55%] sm:w-[45%] hidden sm:block opacity-80"
             />
             <Image
                 src="https://ik.imagekit.io/sajib4aqc/idea2_xhfapr.webp"
-                alt=""
+                alt="Supporting illustration for Tech Reforms website section"
                 width={1000}
                 height={1000}
                 className="absolute -bottom-[20%] sm:-bottom-[30%] left-0 w-[60%] sm:w-[50%] hidden sm:block opacity-80"
@@ -69,7 +69,7 @@ const LpWebTransforming = () => {
                         <div className="bg-[#F74B1C] relative border-2 border-white rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] h-full overflow-hidden min-h-[280px]">
                             <Image
                                 src="/images/2.png"
-                                alt=""
+                                alt="Background photo for AI-generated content feature card"
                                 width={1000}
                                 height={1000}
                                 className="absolute top-0 left-0 w-full h-full object-cover"
@@ -95,7 +95,7 @@ const LpWebTransforming = () => {
                         <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px] -mt-0 lg:-mt-[50px]">
                             <Image
                                 src="/images/3.png"
-                                alt=""
+                                alt="Background photo for AI development automation feature card"
                                 width={1000}
                                 height={1000}
                                 className="absolute top-0 left-0 w-full h-full object-cover"
@@ -132,7 +132,7 @@ const LpWebTransforming = () => {
                         <div>
                             <Image
                                 src="/images/blocks.png"
-                                alt=""
+                                alt="Abstract blocks illustration for web development solutions"
                                 width={1000}
                                 height={1000}
                                 className="w-[90%] mx-auto"

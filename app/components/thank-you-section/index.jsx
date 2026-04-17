@@ -28,7 +28,7 @@ const ThankYouSection = () => {
                                         <Image
                                             className="absolute -top-0.5 left-0 max-sm:left-[-14px] sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                                             src="/images/step1.png"
-                                            alt=""
+                                            alt="Process step one illustration"
                                             width={35}
                                             height={35}
                                         />
@@ -41,7 +41,7 @@ const ThankYouSection = () => {
                                         <Image
                                             className="absolute -top-0.5 left-0 sm:-left-[17px] max-sm:left-[-14px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                                             src="/images/step2.png"
-                                            alt=""
+                                            alt="Process step two illustration"
                                             width={35}
                                             height={35}
                                         />
@@ -54,7 +54,7 @@ const ThankYouSection = () => {
                                         <Image
                                             className="absolute -top-0.5 left-0 sm:-left-[17px] max-sm:left-[-14px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                                             src="/images/step3.png"
-                                            alt=""
+                                            alt="Process step three illustration"
                                             width={35}
                                             height={35}
                                         />

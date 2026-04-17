@@ -24,7 +24,7 @@ const OurARExpertise = () => {
                             <Image
                                 className="w-full rounded-3xl mt-5"
                                 src="/images/expertise01.jpeg"
-                                alt=""
+                                alt="AR expertise showcase visual one"
                                 width={1000}
                                 height={1000}
                             />
@@ -70,7 +70,7 @@ const OurARExpertise = () => {
                             <Image
                                 className="w-full rounded-3xl mt-5"
                                 src="/images/expertise02.jpeg"
-                                alt=""
+                                alt="AR expertise showcase visual two"
                                 width={1000}
                                 height={1000}
                             />

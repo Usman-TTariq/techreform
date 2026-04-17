@@ -19,7 +19,7 @@ const WebAppHeroSection = ({ autoHeight }) => {
                             <Image
                                 className="w-full"
                                 src="https://ik.imagekit.io/sajib4aqc/app-hero-section_qfm8ar.webp"
-                                alt=""
+                                alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}
                             />

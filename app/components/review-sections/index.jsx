@@ -38,7 +38,7 @@ const ReviewSections = () => {
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
         src="/images/reviewEllipse.png"
-        alt=""
+        alt="Soft gradient ellipse behind customer reviews"
         width={1000}
         height={1000}
       />
@@ -62,14 +62,14 @@ const ReviewSections = () => {
               <Image
                 className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
                 src="/images/hover-logo.png"
-                alt=""
+                alt="Client or partner logo on review card"
                 width={1000}
                 height={1000}
               />
               <Image
                 className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
                 src="/images/hovertext.png"
-                alt=""
+                alt="Decorative hover label graphic"
                 width={1000}
                 height={1000}
               />
@@ -79,7 +79,7 @@ const ReviewSections = () => {
                     <Image
                       className={`w-[40%] m-auto transition-all duration-300 ${displayedCard === index ? "brightness-[15]" : ""}`}
                       src="/images/clutch-logo.png"
-                      alt=""
+                      alt="Clutch B2B ratings and reviews platform logo"
                       width={1000}
                       height={1000}
                     />
@@ -88,7 +88,7 @@ const ReviewSections = () => {
                     <Image
                       className={`w-[80px] sm:w-[100px] transition-all duration-300 ${displayedCard === index ? "brightness-[2]" : ""}`}
                       src="/images/stars.png"
-                      alt=""
+                      alt="Five star rating graphic"
                       width={1000}
                       height={1000}
                     />

@@ -6,7 +6,7 @@ const HRSolutionSection = () => {
             <Image
                 className="absolute -top-[10%] left-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
                 src="/images/drivensolbk.png"
-                alt=""
+                alt="Decorative background for HR solutions section"
                 width={1000}
                 height={1000}
             />

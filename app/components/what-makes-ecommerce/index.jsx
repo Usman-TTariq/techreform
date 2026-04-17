@@ -11,7 +11,7 @@ const WhatMakesEcommerce = () => {
                             <Image
                                 className="w-full"
                                 src="/images/wemake.png"
-                                alt=""
+                                alt="Ecommerce value proposition illustration"
                                 width={1000}
                                 height={1000}
                             />

@@ -9,14 +9,14 @@ const Footer = () => {
             <Image
                 className="absolute top-0 left-0 w-[40%] sm:w-[30%] md:w-[25%]"
                 src="/images/footerbk1.png"
-                alt=""
+                alt="Footer decorative gradient background top left"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 right-0 w-[50%] sm:w-[40%] md:w-[35%]"
                 src="/images/footerbk2.png"
-                alt=""
+                alt="Footer decorative gradient background bottom right"
                 width={1000}
                 height={1000}
             />
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Image
                     className="footer-dot-spin w-[20%] sm:w-[26%] md:w-[20%] absolute top-[70%] -translate-y-1/2 right-2 sm:right-0 opacity-70 sm:opacity-80 md:opacity-100 pointer-events-none"
                     src="/images/circlewithdot.png"
-                    alt=""
+                    alt="Animated circular graphic with center dot"
                     width={1000}
                     height={1000}
                 /> */}
@@ -68,7 +68,7 @@ const Footer = () => {
                     <Image
                         className="w-full pt-8"
                         src="/images/footerline.png"
-                        alt=""
+                        alt="Decorative horizontal divider line in footer"
                         width={1000}
                         height={1000}
                     />
@@ -149,7 +149,7 @@ const Footer = () => {
                             <Image
                                 className="footer-dot-spin w-full"
                                 src="/images/circlewithdot.png"
-                                alt=""
+                                alt="Animated circular graphic with center dot"
                                 width={1000}
                                 height={1000}
                             />
@@ -162,7 +162,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/phone-icon.png"
-                                    alt=""
+                                    alt="Phone contact icon"
                                     width={1000}
                                     height={1000}
                                 />
@@ -176,7 +176,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/phone-icon.png"
-                                    alt=""
+                                    alt="Phone contact icon"
                                     width={1000}
                                     height={1000}
                                 />
@@ -190,7 +190,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/mail-icon.png"
-                                    alt=""
+                                    alt="Email contact icon"
                                     width={1000}
                                     height={1000}
                                 />
@@ -204,7 +204,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/location.png"
-                                    alt=""
+                                    alt="Office location map pin icon"
                                     width={1000}
                                     height={1000}
                                 />
@@ -220,7 +220,7 @@ const Footer = () => {
                     <Image
                         className="w-full"
                         src="/images/footerline.png"
-                        alt=""
+                        alt="Decorative horizontal divider line in footer"
                         width={1000}
                         height={1000}
                     />

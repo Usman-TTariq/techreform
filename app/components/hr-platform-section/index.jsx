@@ -7,14 +7,14 @@ const HRPlatformSection = () => {
             <Image
                 className="absolute top-[10%] left-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
                 src="/images/hrbk1.png"
-                alt=""
+                alt="HR platform section decorative background top"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[10%] right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
                 src="/images/hrbk2.png"
-                alt=""
+                alt="HR platform section decorative background bottom"
                 width={1000}
                 height={1000}
             />
@@ -48,7 +48,7 @@ const HRPlatformSection = () => {
                                         <Image
                                             className="w-12 h-12 sm:w-[65px] sm:h-[65px] shrink-0"
                                             src="/images/hricon.png"
-                                            alt=""
+                                            alt="HR feature icon"
                                             width={65}
                                             height={65}
                                         />
@@ -65,7 +65,7 @@ const HRPlatformSection = () => {
                                         <Image
                                             className="w-12 h-12 sm:w-[65px] sm:h-[65px] shrink-0"
                                             src="/images/hricon.png"
-                                            alt=""
+                                            alt="HR feature icon"
                                             width={65}
                                             height={65}
                                         />
@@ -82,7 +82,7 @@ const HRPlatformSection = () => {
                                         <Image
                                             className="w-12 h-12 sm:w-[65px] sm:h-[65px] shrink-0"
                                             src="/images/hricon.png"
-                                            alt=""
+                                            alt="HR feature icon"
                                             width={65}
                                             height={65}
                                         />
@@ -100,7 +100,7 @@ const HRPlatformSection = () => {
                                     <Image
                                         className="w-full max-w-full h-auto"
                                         src="/images/hrright.png"
-                                        alt=""
+                                        alt="HR platform hero illustration"
                                         width={1000}
                                         height={1000}
                                     />

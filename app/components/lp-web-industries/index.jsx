@@ -116,7 +116,7 @@ const LpWebIndustries = () => {
                                                 <Image
                                                     className="w-[85px] h-[85px]"
                                                     src="/images/globe-icon.png"
-                                                    alt=""
+                                                    alt="Globe icon representing global industries coverage"
                                                     width={1000}
                                                     height={1000}
                                                 />

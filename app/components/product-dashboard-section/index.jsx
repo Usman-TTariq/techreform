@@ -6,7 +6,7 @@ const ProductDashboardSection = () => {
             <Image
                 className="absolute -bottom-[10%] right-0 w-[60%] sm:w-[40%] opacity-60 sm:opacity-100 hidden sm:block"
                 src="/images/dashboardbk.png"
-                alt=""
+                alt="Dashboard section background texture"
                 width={1000}
                 height={1000}
             />
@@ -14,28 +14,28 @@ const ProductDashboardSection = () => {
                 <Image
                     className="absolute top-[35%] -left-[4%] w-[120px] sm:w-[180px] md:w-[280px] hidden sm:block"
                     src="/images/dash1.png"
-                    alt=""
+                    alt="Product dashboard screenshot one"
                     width={1000}
                     height={1000}
                 />
                 <Image
                     className="absolute bottom-[2%] -left-[5%] w-[130px] sm:w-[200px] md:w-[300px] z-10 hidden sm:block"
                     src="/images/dash2.png"
-                    alt=""
+                    alt="Product dashboard screenshot two"
                     width={1000}
                     height={1000}
                 />
                 <Image
                     className="absolute top-[25%] -right-[5%] w-[130px] sm:w-[200px] md:w-[300px] z-10 hidden sm:block"
                     src="/images/dash3.png"
-                    alt=""
+                    alt="Product dashboard screenshot three"
                     width={1000}
                     height={1000}
                 />
                 <Image
                     className="absolute bottom-[5%] -right-[5%] w-[130px] sm:w-[200px] md:w-[300px] z-10 hidden sm:block"
                     src="/images/dash4.png"
-                    alt=""
+                    alt="Product dashboard screenshot four"
                     width={1000}
                     height={1000}
                 />

@@ -52,7 +52,7 @@ const AppIntegrationMobile = () => {
                                         <Image
                                             className="w-full"
                                             src="/images/integrationimg.png"
-                                            alt=""
+                                            alt="App integration and workflow illustration"
                                             width={1000}
                                             height={1000}
                                         />

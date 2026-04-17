@@ -12,7 +12,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
         <Image
           className="absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-[100%] md:w-[90%] object-cover opacity-60 md:opacity-100"
           src="/images/formbk.png"
-          alt=""
+          alt="Dark textured background behind contact form"
           width={1000}
           height={1000}
         />
@@ -32,7 +32,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
               <Image
                 className="w-8 h-8 sm:w-[40px] sm:h-[40px] flex-shrink-0"
                 src="/images/callusicon.png"
-                alt=""
+                alt="Phone handset icon for contact call-to-action"
                 width={40}
                 height={40}
               />
@@ -47,7 +47,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
               {/* <Image
                 className="absolute -bottom-3 -right-2 sm:-bottom-[20px] sm:-right-[10px] w-8 h-8 sm:w-[40px] sm:h-[40px]"
                 src="/images/redirectarrow.png"
-                alt=""
+                alt="Arrow icon indicating linked benefit details"
                 width={40}
                 height={40}
               /> */}
@@ -106,7 +106,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
                   <Image
                     className="absolute -top-0.5 left-0 max-sm:left-[-14px] sm:-left-[17px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step1.png"
-                    alt=""
+                    alt="Process step one illustration"
                     width={35}
                     height={35}
                   />
@@ -119,7 +119,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
                   <Image
                     className="absolute -top-0.5 left-0 sm:-left-[17px] max-sm:left-[-14px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step2.png"
-                    alt=""
+                    alt="Process step two illustration"
                     width={35}
                     height={35}
                   />
@@ -132,7 +132,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
                   <Image
                     className="absolute -top-0.5 left-0 sm:-left-[17px] max-sm:left-[-14px] w-7 h-7 sm:w-[35px] sm:h-[35px] flex-shrink-0 z-20"
                     src="/images/step3.png"
-                    alt=""
+                    alt="Process step three illustration"
                     width={35}
                     height={35}
                   />

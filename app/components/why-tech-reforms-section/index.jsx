@@ -7,14 +7,14 @@ const WhyTechReformsSection = () => {
       <Image
         className="absolute -top-[10%] left-0 w-[50%] sm:w-[40%] opacity-60"
         src="/images/bk2.png"
-        alt=""
+        alt="Purple gradient decorative background accent"
         width={1000}
         height={1000}
       />
       <Image
         className="absolute -top-[10%] right-0 w-[50%] sm:w-[40%] opacity-60"
         src="/images/bk3.png"
-        alt=""
+        alt="Blue and purple gradient decorative background"
         width={1000}
         height={1000}
       />
@@ -48,7 +48,7 @@ const WhyTechReformsSection = () => {
               <Image
                 className="w-10 h-10 sm:w-[50px] sm:h-[50px] m-auto"
                 src="/images/bulb-icon.png"
-                alt=""
+                alt="Light bulb icon highlighting innovation and ideas"
                 width={50}
                 height={50}
               />
@@ -65,7 +65,7 @@ const WhyTechReformsSection = () => {
               <Image
                 className="w-10 h-10 sm:w-[50px] sm:h-[50px] m-auto"
                 src="/images/bulb-icon.png"
-                alt=""
+                alt="Light bulb icon highlighting innovation and ideas"
                 width={50}
                 height={50}
               />
@@ -84,7 +84,7 @@ const WhyTechReformsSection = () => {
               <Image
                 className="w-full h-auto"
                 src="/images/women.png"
-                alt=""
+                alt="Professional team member photo"
                 width={1000}
                 height={1000}
               />
@@ -95,7 +95,7 @@ const WhyTechReformsSection = () => {
               <Image
                 className="w-10 h-10 sm:w-[50px] sm:h-[50px] m-auto"
                 src="/images/bulb-icon.png"
-                alt=""
+                alt="Light bulb icon highlighting innovation and ideas"
                 width={50}
                 height={50}
               />
@@ -112,7 +112,7 @@ const WhyTechReformsSection = () => {
               <Image
                 className="w-10 h-10 sm:w-[50px] sm:h-[50px] m-auto"
                 src="/images/bulb-icon.png"
-                alt=""
+                alt="Light bulb icon highlighting innovation and ideas"
                 width={50}
                 height={50}
               />

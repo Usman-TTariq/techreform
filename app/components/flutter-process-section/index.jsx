@@ -42,7 +42,7 @@ const FlutterProcessSection = () => {
 
   return (
     <div ref={sectionRef} className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
-      <Image className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100" src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp" alt="" width={1000} height={1000} />
+      <Image className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100" src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp" alt="Soft purple abstract gradient background decoration" width={1000} height={1000} />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1">
           <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center"><CapsuleLabel firstWord="OUR" secondWord="FLUTTER APP" thirdWord="PROCESS" /></div>

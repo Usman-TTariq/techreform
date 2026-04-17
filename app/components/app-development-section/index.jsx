@@ -110,7 +110,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user1.png"
-                                alt=""
+                                alt="Customer testimonial portrait"
                                 width={1000}
                                 height={1000}
                             />
@@ -121,7 +121,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user2.png"
-                                alt=""
+                                alt="Customer testimonial portrait"
                                 width={1000}
                                 height={1000}
                             />
@@ -132,7 +132,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user3.png"
-                                alt=""
+                                alt="Customer testimonial portrait"
                                 width={1000}
                                 height={1000}
                             />

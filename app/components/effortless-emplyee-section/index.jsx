@@ -6,14 +6,14 @@ const EffortlessEmployeeSection = () => {
             <Image
                 className="absolute -top-[25%] left-0 w-[60%] sm:w-[45%] opacity-60 sm:opacity-100 hidden sm:block"
                 src="/images/effort1.png"
-                alt=""
+                alt="Employee engagement illustration one"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100 hidden sm:block"
                 src="/images/effort2.png"
-                alt=""
+                alt="Employee engagement illustration two"
                 width={1000}
                 height={1000}
             />
@@ -41,15 +41,15 @@ const EffortlessEmployeeSection = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-2 sm:gap-[10px] pt-4 sm:pt-[30px]">
-                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="" width={30} height={30} />
+                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="Green checkmark icon for included feature" width={30} height={30} />
                                     <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left">Centralized document management</div>
                                 </div>
                                 <div className="flex items-center gap-2 sm:gap-[10px] pt-4 sm:pt-[30px]">
-                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="" width={30} height={30} />
+                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="Green checkmark icon for included feature" width={30} height={30} />
                                     <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left">Automated role and access assignment</div>
                                 </div>
                                 <div className="flex items-center gap-2 sm:gap-[10px] pt-4 sm:pt-[30px]">
-                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="" width={30} height={30} />
+                                    <Image className="w-6 h-6 sm:w-[30px] sm:h-[30px] shrink-0" src="/images/checkitkc.png" alt="Green checkmark icon for included feature" width={30} height={30} />
                                     <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left">Policy acknowledgment tracking</div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ const EffortlessEmployeeSection = () => {
                             <Image
                                 className="w-full h-full object-cover"
                                 src="/images/empowering.png"
-                                alt=""
+                                alt="Team empowerment and collaboration illustration"
                                 width={1000}
                                 height={1000}
                             />

@@ -67,7 +67,7 @@ const LpAppPlatform = () => {
                             <Image
                                 className="w-full"
                                 src="https://ik.imagekit.io/sajib4aqc/bottom_wzqado.webp"
-                                alt=""
+                                alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}
                             />
@@ -78,7 +78,7 @@ const LpAppPlatform = () => {
                             <Image
                                 className="w-full mb-[20px]"
                                 src="https://ik.imagekit.io/sajib4aqc/Background.png"
-                                alt=""
+                                alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}
                             />

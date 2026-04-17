@@ -71,7 +71,7 @@ const ErpProcessSection = () => {
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
                 src="/images/whatwedobk.png"
-                alt=""
+                alt="Soft purple gradient decorative background"
                 width={1000}
                 height={1000}
             />

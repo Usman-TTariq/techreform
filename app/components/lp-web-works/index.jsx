@@ -10,7 +10,7 @@ const LpWebWorks = () => {
                         <div>
                             <Image
                                 className="w-full scale-250 max-sm:scale-100 max-sm:pt-[0px] relative z-10 pt-[50px]"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772733988/Laptop2_ueqicm.png"
+                                src="https://ik.imagekit.io/sajib4aqc/Laptop2_ueqicm.webp"
                                 alt="Facilities Background"
                                 width={1000}
                                 height={1000}

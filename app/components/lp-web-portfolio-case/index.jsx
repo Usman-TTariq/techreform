@@ -36,7 +36,7 @@ const LpWebPortfolioCase = () => {
                         <div className="pb-[10px]">
                             <Image
                                 className="w-[100%]"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772821110/port3_taye1m.png"
+                                src="https://ik.imagekit.io/sajib4aqc/port3_taye1m.webp"
                                 alt="Apex Fitness Portfolio Project"
                                 width={1000}
                                 height={1000}

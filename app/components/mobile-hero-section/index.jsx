@@ -39,12 +39,12 @@ const MobileHeroSection = () => {
                 </div>
                 <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
-                        <div className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
+                        <h1 className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
                             <span className="text-white">Custom Mobile </span>
                             <span className="text-[#F74B1C]">App Development Company</span>
                             <br />
                             <span className="text-white">in The USA</span>
-                        </div>
+                        </h1>
                         <div className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
                             Are you looking for futuristic mobile app development services that can build innovative mobile applications for your scaling businesses? With years of experience in creating immersive and highly functional apps, Tech Reforms brings scalable mobile app solutions to your doorstep. Partner with us to get reliable, high-performing, seamless apps across all devices.
                         </div>

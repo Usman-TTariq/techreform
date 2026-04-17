@@ -49,7 +49,7 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 />
-                                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</div>
+                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</h6>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">SCENE DETECTION</div>
                                 <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     Our AR applications analyze real-world environments through the camera, convert captured visuals into coordinate-based data, and generate accurate depth maps to ensure precise and realistic 3D model placement.
@@ -64,7 +64,7 @@ const ArAppFunctions = () => {
                                     className="absolute top-0 left-0 w-full h-full object-cover"
                                 />
                                 <div className="relative z-10">
-                                    <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</div>
+                                    <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
                                     <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</div>
                                     <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                         In addition to scene understanding, our AR applications can be trained to recognize specific 2D images and real-world 3D objects, enhancing them with relevant text or 3D model data directly on the device screen.
@@ -81,7 +81,7 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 /> */}
-                                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</div>
+                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</h6>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">MOTION TRACKING</div>
                                 <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     Our motion tracking solutions enable precise object placement and interaction within AR environments. We work closely with your team, ensuring seamless integration and optimal performance.
@@ -95,7 +95,7 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 /> */}
-                                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</div>
+                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</h6>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">LIGHT ESTIMATION</div>
                                 <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                 Our light estimation techniques ensure that virtual objects interact realistically with real-world lighting conditions. We use advanced rendering methods and algorithms to create believable AR experiences with shadows, reflections, and ambient lighting.

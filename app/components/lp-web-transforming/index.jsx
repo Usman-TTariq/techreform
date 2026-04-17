@@ -53,7 +53,7 @@ const LpWebTransforming = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 lg:col-span-3 h-full">
                         <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] h-full">
-                            <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</div>
+                            <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</h6>
                             <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">Conversational Interface to Enhance UX</div>
                             <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                 We create AI-powered chatbots and conversational interfaces that improve user engagement, provide instant support, personalize interactions, and enhance overall website experience.
@@ -75,7 +75,7 @@ const LpWebTransforming = () => {
                                 className="absolute top-0 left-0 w-full h-full object-cover"
                             />
                             <div className="relative z-10">
-                                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-white">02</div>
+                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-white">02</h6>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">AI-Generated Content <br />Creation and Optimization</div>
                                 <div className="font-britanicaRegular text-white text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     We build AI tools that generate and optimize content, including articles and product descriptions, using user data to improve relevance, engagement, and conversions.
@@ -101,7 +101,7 @@ const LpWebTransforming = () => {
                                 className="absolute top-0 left-0 w-full h-full object-cover"
                             />
                             <div className="relative z-10">
-                                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</div>
+                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
                                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">Development Process AI Automation</div>
                                 <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     We use AI to automate repetitive development tasks, analyze data patterns, speed up workflows, and support smarter, data-driven decisions throughout projects.
@@ -116,7 +116,7 @@ const LpWebTransforming = () => {
                     </div>
                     <div className="col-span-12 sm:col-span-6 lg:col-span-3">
                         <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] mt-0">
-                            <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</div>
+                            <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</h6>
                             <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">AI-Driven Insights and Analytics</div>
                             <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                 Our AI solutions provide automated testing, performance monitoring, predictive analytics, and machine learning models to improve security, reliability, and strategic business insights.

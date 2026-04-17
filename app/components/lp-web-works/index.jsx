@@ -54,7 +54,7 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">01</div>
+                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">01</h6>
                                                     <div>
                                                         <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Custom Design</div>
                                                     </div>
@@ -68,7 +68,7 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">02</div>
+                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">02</h6>
                                                     <div>
                                                         <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Full-Stack Expertise</div>
                                                     </div>
@@ -83,7 +83,7 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">03</div>
+                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">03</h6>
                                                     <div>
                                                         <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Optimization & Support</div>
                                                     </div>

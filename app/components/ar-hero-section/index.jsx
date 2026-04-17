@@ -27,12 +27,12 @@ const ArHeroSection = () => {
             <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
                 <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
-                        <div className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
+                        <h1 className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
                             <span className="text-white">Custom Augmented Reality </span>
                             <span className="text-[#F74B1C]">App Development Services</span>
                             <br />
                             <span className="text-white">for Businesses</span>
-                        </div>
+                        </h1>
                         <div className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
                             We provide professional Augmented Reality App Development Services that help businesses build immersive and interactive digital experiences. Our experienced AR developers create scalable applications across mobile, web, and wearable platforms using modern AR frameworks and 3D technologies.
                         </div>

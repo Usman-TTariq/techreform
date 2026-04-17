@@ -40,7 +40,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
       <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
         <div className={`grid grid-cols-12 ${compact ? "pt-7 sm:pt-[100px] md:pt-[120px]" : "pt-12 sm:pt-[100px] md:pt-[120px]"}`}>
           <div className="col-span-12 text-center min-w-0">
-            <div className="font-britanicaBlack text-[22px] leading-[1.25] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black break-words">
+            <h1 className="font-britanicaBlack text-[22px] leading-[1.25] sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[52px] font-black break-words">
               <span className="text-white">{firstWord} </span>
               {breakAfterFirstWord && <br />}
               <span className="text-[#F74B1C]">{secondWord} </span>
@@ -57,7 +57,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
                   <span className="text-[#fff]">{sixthWord}</span>
                 </>
               )}
-            </div>
+            </h1>
           </div>
           <div className="col-span-12 md:col-span-8 md:col-start-3 text-center min-w-0 flex flex-col items-center">
             <div className="font-britanicaRegular text-[14px] sm:text-[17px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full sm:max-w-3xl mx-auto leading-relaxed w-full">

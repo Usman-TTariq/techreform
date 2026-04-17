@@ -52,7 +52,7 @@ const TransformingIdeas = () => {
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3 h-full">
             <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] h-full">
-              <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</div>
+              <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</h6>
               <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">Mobile App Development</div>
               <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                 We offer optimized mobile apps with strong architecture, intuitive UX, and performance-focused engineering to boost accessibility.
@@ -74,7 +74,7 @@ const TransformingIdeas = () => {
                 className="absolute top-0 left-0 w-full h-full object-cover"
               />
               <div className="relative z-10">
-                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-white">02</div>
+                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-white">02</h6>
                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">E-Commerce <br /> Solutions</div>
                 <div className="font-britanicaRegular text-white text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                   Access eCommerce development at its best. Get intuitive platforms focused on conversions, scalability, and seamless user journeys with secure payments, inventory, and analytics systems.
@@ -99,7 +99,7 @@ const TransformingIdeas = () => {
                 className="absolute top-0 left-0 w-full h-full object-cover"
               />
               <div className="relative z-10">
-                <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</div>
+                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
                 <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">Staff Augmentation</div>
                 <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                   Access our vetted engineers through specialized staff augmentation. Our engineers work as your remote development team to help you scale quickly while maintaining full control over app development and delivery.
@@ -114,7 +114,7 @@ const TransformingIdeas = () => {
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] mt-0 lg:mt-[50px]">
-              <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</div>
+              <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</h6>
               <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">Game Development</div>
               <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                 We develop immersive games designed to drive user retention through optimized performance, smooth mechanics, scalable backends, and engaging experiences.
@@ -128,7 +128,7 @@ const TransformingIdeas = () => {
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <div className="bg-transparent border-2 border-[#3b3b3b] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px]">
-              <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">05</div>
+              <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">05</h6>
               <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">WRM</div>
               <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                 WRM simply manages workflows, work assignments, reporting, and real-time insights to improve overall productivity and operational efficiency.
@@ -142,7 +142,7 @@ const TransformingIdeas = () => {
           </div>
           <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <div className="bg-white border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-5 sm:py-6 px-4 sm:px-[20px] mt-0 lg:mt-[50px]">
-              <div className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">06</div>
+              <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">06</h6>
               <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">HRMS</div>
               <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                 HRMS simplifies with a centralized system. It handles employee data, payroll, attendance, and performance management to help you automate HR processes and make better decisions.

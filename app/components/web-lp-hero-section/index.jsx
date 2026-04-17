@@ -27,7 +27,7 @@ const WebLPHeroSection = () => {
                         <div className="pb-4 sm:pb-[20px]">
                             <CapsuleLabel firstWord="CUSTOM " secondWord="WEB" thirdWord="DEVELOPMENT" />
                         </div>
-                        <div className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[40px] lg:text-[45px] xl:text-[60px] lg:leading-[55px] xl:leading-[65px] font-black">
+                        <h1 className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[40px] lg:text-[45px] xl:text-[60px] lg:leading-[55px] xl:leading-[65px] font-black">
                             <span className="text-white">Custom </span>
                             <span className="text-[#F74B1C]">Web Development</span>
                             <br />
@@ -36,7 +36,7 @@ const WebLPHeroSection = () => {
                             <br />  
                             <span className="text-[#F74B1C]">Into </span>
                             <span className="text-white">Customers</span>
-                        </div>
+                        </h1>
                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] md:text-[20px] font-regular text-white pt-3 sm:pt-[22px] max-w-xl">
                             We help startups and tech businesses build fast, reliable websites that work seamlessly on any device.
                         </div>

@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <HeroSection />
+      <HeroSection />  
       <ReviewSections />
       <WhatWeDoSection/>
       <TransformingIdeas/>

@@ -49,9 +49,9 @@ const HeroSection = () => {
                 </div>
                 <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
                     <div className="col-span-12 lg:col-span-6">
-                        <div className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[46px] lg:text-[50px] lg:leading-[52px] font-black">
+                        <h1 className="font-britanicaBlack text-[26px] leading-[1.2] sm:text-[36px] md:text-[46px] lg:text-[50px] lg:leading-[52px] font-black">
                             <span className="text-white">Digitize Your Business</span><br /><span className="text-[#F74B1C]">Through Innovation</span>
-                        </div>
+                        </h1>
                         <div className="font-britanicaRegular text-[14px] sm:text-[18px] md:text-[20px] font-regular text-white pt-3 sm:pt-[22px] max-w-xl">
                             We help businesses with advanced app development solutions for effective business management and growth.
                         </div>

@@ -25,7 +25,7 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
     <div className={`relative w-full min-w-0 overflow-hidden ${heightClass}`}>
       <Image
         className="absolute -top-[10%] right-4 w-[28%] sm:w-[32%] md:right-12 md:w-[35%] lg:right-[100px] hidden sm:block"
-        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772821976/frame_da1r9p.png"
+        src="https://ik.imagekit.io/sajib4aqc/frame_da1r9p.webp"
         alt=""
         width={1000}
         height={1000}

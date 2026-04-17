@@ -12,7 +12,7 @@ const WhoWeAreStartup = () => {
     <div className="relative pb-12 sm:pb-16 md:pb-[120px]">
       <Image
         className="absolute -top-[20%] left-0 w-[50%] sm:w-[40%] md:w-[35%] opacity-60"
-        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772827382/bk1_qqglcc.png"
+        src="https://ik.imagekit.io/sajib4aqc/bk1_qqglcc.webp"
         alt=""
         width={1000}
         height={1000}

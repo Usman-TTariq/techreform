@@ -12,7 +12,7 @@ const MobileHeroSection = () => {
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
                 className="absolute top-[15%] left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[35%] sm:left-[60%] max-w-[200px] sm:max-w-none hidden sm:block"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823911/mobilehero_luf4jr.png"
+                src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
                 alt=""
                 width={1000}
                 height={1000}
@@ -57,7 +57,7 @@ const MobileHeroSection = () => {
                 <div className="sm:hidden flex justify-center pt-6 pb-4">
                     <Image
                         className="w-[70%] max-w-[280px] h-auto"
-                        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772823911/mobilehero_luf4jr.png"
+                        src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
                         alt=""
                         width={1000}
                         height={1000}

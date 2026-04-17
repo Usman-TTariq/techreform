@@ -67,7 +67,7 @@ const MvpWhyChooseSection = () => {
         <div ref={sectionRef} className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825717/whatwedobk_wisvaz.png"
+                src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp"
                 alt=""
                 width={1000}
                 height={1000}

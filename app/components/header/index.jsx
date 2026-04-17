@@ -92,7 +92,7 @@ const MEGA_MENU = {
         ],
         sections: [
             { heading: "Services", items: [{ label: "Ecommerce Solutions", href: "/ecommerce" }, { label: "Online Store", href: "#" }] },
-            { heading: "Industries", items: [{ label: "Retail", href: "/retail" }, { label: "B2B", href: "#" }] },
+            { heading: "Industries", items: [ { label: "B2B", href: "#" }] },
         ],
     },
     staff: {

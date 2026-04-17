@@ -104,7 +104,7 @@ const PortfolioOne = () => {
             <div className="pb-[10px]">
               <Image
                 className="w-[100%]"
-                src="/images/port3.png"
+                src="https://ik.imagekit.io/sajib4aqc/port3_taye1m.webp"
                 alt="Portfolio Project"
                 width={1000}
                 height={1000}

@@ -7,6 +7,11 @@ import DevelopingARSoftware from "../components/developing-ar-software"
 import OurARExpertise from "../components/our-ar-expertise"
 import ArProcess from "../components/ar-process"
 import HowWeDoAr from "../components/how-we-do-ar"
+import Marquee from "../components/marquee"
+import TestimonialSection from "../components/testimonial-section"
+import ThreeDTextRotationSection from "../components/3d-text-rotation-section"
+import DetailFormSection from "../components/detail-form-section"
+import FaqHomeSection from "../components/faq-home-section"
 
 const ArDevelopment = () => {
     return (
@@ -19,6 +24,11 @@ const ArDevelopment = () => {
             <OurARExpertise />
             <ArProcess />
             <HowWeDoAr />
+            <Marquee />
+            <TestimonialSection />
+            <ThreeDTextRotationSection />
+            <DetailFormSection formIntro={undefined} />
+            <FaqHomeSection />
             <Footer />
         </>
     )

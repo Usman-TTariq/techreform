@@ -28,7 +28,7 @@ const ArProcess = () => {
     <div className="relative py-[100px] max-sm:pb-[40px]">
       <Image
         className="absolute top-0 left-0 w-full h-full"
-        src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1774466862/Group_2147225173_jgjyrf.png"
+        src="https://ik.imagekit.io/sajib4aqc/Group%202147225255.png"
         alt=""
         width={1000}
         height={1000}

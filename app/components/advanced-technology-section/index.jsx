@@ -115,10 +115,10 @@ const WhatWeDoMobileSection = () => {
             />
             <div className="grid grid-cols-12 gap-6 lg:gap-5">
                 <div className="col-span-12 lg:col-span-5 order-2 lg:order-1">
-                    <div className="pb-6 sm:pb-[40px]">
+                    <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center">
                         <CapsuleLabel firstWord="Our" secondWord="App Development" thirdWord="Process" />
                     </div>
-                    <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[34px] md:text-[40px] lg:text-[42px] lg:leading-[45px] font-black">
+                    <div className="font-britanicaBlack text-[28px] leading-tight max-sm:text-center sm:text-[34px] md:text-[40px] lg:text-[42px] lg:leading-[45px] font-black">
                         <span className="text-white">Simplified Process of</span>
                         <br />
                         <span className="text-[#F74B1C]">Building Scalable Apps</span>
@@ -130,7 +130,7 @@ const WhatWeDoMobileSection = () => {
             digital solutions. From cloud to mobile, security to advanced tech —
             we transform ideas into reliable technology.
           </div> */}
-                    <div className="pt-6 sm:pt-[30px]">
+                    <div className="pt-6 sm:pt-[30px] max-sm:flex max-sm:justify-center">
                         <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                     </div>
                 </div>
@@ -262,12 +262,12 @@ const WhatWeDoMobileSection = () => {
                     </div>
                 </div>
                 <div className="col-span-12 lg:col-span-5">
-                    <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[55px] font-black">
+                    <div className="font-britanicaBlack text-[28px] max-sm:text-center leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[55px] font-black">
                         <span className="text-[#F74B1C]">Why Partner </span>
-                        <br />
+                        <br className="max-sm:hidden"/>
                         <span className="text-white"> With Us</span>
                     </div>
-                    <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
+                    <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
                         We take pride in delivering high-performance app solutions built on a secure architecture. Each application we build is designed to meet the current industry standard for dynamic mobile app development in the USA.
                     </div>
                     {/* <div className="pt-[30px]">

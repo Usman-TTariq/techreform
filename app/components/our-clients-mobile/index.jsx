@@ -3,8 +3,8 @@ import CapsuleLabel from "../common/capsule-label";
 
 const OurClientsMobile = () => {
     return (
-        <div className="relative bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)] py-[2px] mb-[120px]">
-            <div className="bg-black py-[120px]">
+        <div className="relative bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)] py-[2px] mb-[120px] max-sm:mb-[0px]">
+            <div className="bg-black py-[120px] max-sm:py-[50px]">
                 <div className="container relative z-10">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 text-center">
@@ -24,8 +24,8 @@ const OurClientsMobile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-12 gap-10 pt-14">
-                        <div className="col-span-12 md:col-span-3">
+                    <div className="grid grid-cols-12 gap-10 max-sm:gap-[0px] pt-14 max-sm:pt-[30px]">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[120px]"
@@ -36,7 +36,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[200px]"
@@ -47,7 +47,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[200px]"
@@ -58,7 +58,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[100px]"
@@ -69,7 +69,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[200px]"
@@ -80,7 +80,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[150px]"
@@ -91,7 +91,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[100px]"
@@ -102,7 +102,7 @@ const OurClientsMobile = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-span-12 md:col-span-3">
+                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
                             <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
                                 <Image
                                     className="w-[100px]"

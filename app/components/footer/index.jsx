@@ -44,8 +44,8 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div>
-                        <div className="font-britanicaBlack max-sm:text-center text-[16px] leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
-                            <span className="text-white max-sm:text-center">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
+                        <div className="font-britanicaBlack max-sm:text-center text-[16px] max-xl:text-right leading-tight sm:text-[20px] md:text-[30px] lg:text-[42px] lg:leading-[42px] font-black pr-0 sm:pr-0">
+                            <span className="text-white max-sm:text-center max-xl:text-right">READY TO GROW YOUR BRAND?</span><br /><span className="text-[#F74B1C]"></span>
                         </div>
                         <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 text-right max-sm:text-center">
                             Let’s take your brand to the next level. Get in touch!
@@ -167,7 +167,7 @@ const Footer = () => {
                                     height={1000}
                                 />
                             </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] max-2xl:!text-[14px] font-regular text-white translate-x-[-8px]">
                                 <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Support: (582) 233-5015</a>
                             </div>
                         </div>
@@ -181,7 +181,7 @@ const Footer = () => {
                                     height={1000}
                                 />
                             </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] max-2xl:!text-[14px] font-regular text-white translate-x-[-8px]">
                                 <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Sales: (582) 233-5015</a>
                             </div>
                         </div>

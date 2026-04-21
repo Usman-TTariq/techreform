@@ -84,7 +84,7 @@ const ReviewSections = () => {
                       height={1000}
                     />
                   </div>
-                  <div className="flex items-center justify-center gap-2 pt-2 sm:pt-[10px]">
+                  <div className="flex items-center justify-center gap-2 pt-2 sm:pt-[10px] max-2xl:flex-col">
                     <Image
                       className={`w-[80px] sm:w-[100px] transition-all duration-300 ${displayedCard === index ? "brightness-[2]" : ""}`}
                       src="/images/stars.png"

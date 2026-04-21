@@ -255,12 +255,12 @@ const Header = () => {
             <div className="container py-4 sm:py-[22px] lg:py-[30px] relative max-w-[1140px] max-xl:!px-0 max-sm:!px-[16px]">
                 <div className="flex items-center justify-between gap-4">
                     <Link href="/" className="flex-shrink-0">
-                        <MainLogo className="w-[140px] sm:w-[160px] lg:w-[160px] max-xl:w-[140px]" />
+                        <MainLogo className="w-[140px] sm:w-[160px] lg:w-[160px] max-xl:!w-[120px]" />
                     </Link>
 
                     {/* Desktop nav – hidden on mobile/tablet */}
                     <nav className="hidden lg:block">
-                        <ul className="flex items-center gap-6 text-white font-britanicaRegular text-[18px] max-xl:text-[16px]">
+                        <ul className="flex items-center gap-6 text-white font-britanicaRegular text-[18px] max-xl:text-[12px] max-2xl:text-[16px] ">
                             {DROPDOWN_ITEMS.map(({ key, label, href }) => (
                                 <li
                                     key={key}

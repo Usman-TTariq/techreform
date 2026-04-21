@@ -28,11 +28,11 @@ const FlutterCaseStudiesSection = () => {
         <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
           <div className="col-span-12 md:col-span-6">
             <div className="h-full flex items-center justify-center">
-              <Image className="w-full max-w-[280px] md:max-w-none mx-auto" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png" alt="iPhone mockup showing mobile app case study screens" width={1000} height={1000} />
+              <Image className="w-full max-w-[280px] md:max-w-none mx-auto" src="/images/iphone.png" alt="iPhone mockup showing mobile app case study screens" width={1000} height={1000} />
             </div>
           </div>
           <div className="col-span-12 md:col-span-6">
-            <Image className="w-full my-auto" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png" alt="Multiple smartphone mockups for app case studies" width={1000} height={1000} />
+            <Image className="w-full my-auto" src="/images/phones.png" alt="Multiple smartphone mockups for app case studies" width={1000} height={1000} />
             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
               Explore our recent Flutter projects that have streamlined business operations. Find the services that match your requirement and launch polished apps, grow their user base, and generate revenue across iOS, Android, and beyond.
             </div>

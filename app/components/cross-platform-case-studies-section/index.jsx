@@ -30,7 +30,7 @@ const CrossPlatformCaseStudiesSection = () => {
             <div className="h-full flex items-center justify-center">
               <Image
                 className="w-full max-w-[280px] md:max-w-none mx-auto"
-                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png"
+                src="/images/iphone.png"
                 alt="iPhone mockup showing mobile app case study screens"
                 width={1000}
                 height={1000}
@@ -40,7 +40,7 @@ const CrossPlatformCaseStudiesSection = () => {
           <div className="col-span-12 md:col-span-6">
             <Image
               className="w-full my-auto"
-              src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png"
+              src="/images/phones.png"
               alt="Multiple smartphone mockups for app case studies"
               width={1000}
               height={1000}

@@ -3,7 +3,7 @@ import CapsuleLabel from "../common/capsule-label";
 
 const FacilitiesMobile = () => {
     return (
-        <div className="relative pt-[100px] mb-[160px]">
+        <div className="relative pt-[100px] max-sm:pt-[40px] mb-[160px] max-sm:mb-[50px]">
             <Image
                 className="w-full absolute top-0 left-0 h-full"
                 src="/images/facilitiesbk.png"
@@ -32,7 +32,7 @@ const FacilitiesMobile = () => {
                     </div>
 
                 </div>
-                <div className="pt-[80px]">
+                <div className="pt-[80px] max-sm:pt-[30px]">
                     <Image
                         className="w-full"
                         src="https://ik.imagekit.io/sajib4aqc/bulletpoints_buwrvm.webp"

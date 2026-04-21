@@ -4,7 +4,7 @@ import Button from "../common/button";
 
 const HowWeBuildMobileSection = () => {
     return (
-        <div className="relative pb-[150px]">
+        <div className="relative pb-[150px] max-sm:pb-[0px]">
             <div className="container">
                 <div className="grid grid-cols-12 gap-3">
                     <div className="col-span-5 max-lg:col-span-12">
@@ -20,7 +20,7 @@ const HowWeBuildMobileSection = () => {
                     </div>
                     <div className="col-span-7 my-auto max-lg:col-span-12">
                         <div>
-                            <div className="font-britanicaBlack text-[50px] leading-[52px] font-black">
+                            <div className="font-britanicaBlack text-[24px] leading-[1.2] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] xl:leading-[52px] font-black break-words max-lg:text-center">
                                 <span className="text-white">How We Deliver </span>
                                 <span className="text-[#F74B1C]">High-Performance Mobile Apps</span>
                             </div>

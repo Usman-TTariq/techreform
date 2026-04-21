@@ -175,3 +175,12 @@ body {
 .get-started-btn:hover {
   background-color: #F74B1C;
 }
+
+/* Industries slider: keep slide height to content (avoid tall equal-height rows on mobile) */
+.industries-mobile-swiper .swiper-slide {
+  height: auto !important;
+}
+
+.industries-mobile-swiper .swiper-wrapper {
+  align-items: stretch;
+}

@@ -22,7 +22,7 @@ const CaseStudiesGameSection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-full h-auto"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772826973/aa1_vrrudk.png"
+                                src="https://ik.imagekit.io/sajib4aqc/e6bc4f24feef9995f9fcf0fef865a2a6%201.png"
                                 alt="Game development case study"
                                 width={1000}
                                 height={1000}
@@ -33,7 +33,7 @@ const CaseStudiesGameSection = () => {
                         <div>
                             <Image
                                 className="w-full max-w-full h-auto"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772827009/aa3_xg556b.png"
+                                src="https://ik.imagekit.io/sajib4aqc/Untitled%20design%20(14)%201.png"
                                 alt="Game development case study"
                                 width={1000}
                                 height={1000}

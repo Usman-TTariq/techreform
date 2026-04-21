@@ -14,15 +14,15 @@ const CaseStudiesSection = () => {
             <div className="container relative px-4 sm:px-4">
                 <div className="grid grid-cols-12 justify-between gap-4">
                     <div className="col-span-12 lg:col-span-10">
-                        <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[42px] font-black pb-4 sm:pb-[26px] text-left">
+                        <div className="font-britanicaBlack text-[28px] max-sm:text-center leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[42px] font-black pb-4 sm:pb-[26px] text-left">
                             <span className="text-[#F74B1C]">Case Studies </span>
                             <span className="text-white">That Show How Our </span>
-                            <br />
+                            <br className="max-sm:hidden"/>
                             <span className="text-white">Apps Perform in the </span>
                             <span className="text-[#F74B1C]">Real World </span>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-2">
+                    <div className="col-span-12 lg:col-span-2 max-sm:mx-auto max-sm:text-center">
                         <CapsuleLabel firstWord="CASE" secondWord="STUDIES" />
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const CaseStudiesSection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-[280px] md:max-w-none mx-auto"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825809/iphone_bdeijn.png"
+                                src="/images/iphone.png"
                                 alt="iPhone mockup showing mobile app case study screens"
                                 width={1000}
                                 height={1000}
@@ -42,7 +42,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full my-auto"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825859/phones_djllco.png"
+                                src="/images/phones.png"
                                 alt="Multiple smartphone mockups for app case studies"
                                 width={1000}
                                 height={1000}
@@ -61,7 +61,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772825939/backphone1_koj0do.png"
+                                src="/images/backphone1.png"
                                 alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}
@@ -72,7 +72,7 @@ const CaseStudiesSection = () => {
                         <div>
                             <Image
                                 className="w-full"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772826867/phones1_gicxbe.png"
+                                src="/images/phones1.png"
                                 alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}

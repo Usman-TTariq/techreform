@@ -22,16 +22,18 @@ const AppIntegrationMobile = () => {
     ]
 
     return (
-        <div className="relative pb-[150px]">
+        <div className="relative pb-[150px] max-sm:pb-[50px]">
             <div className="container">
                 <div className="grid grid-cols-12 justify-between gap-4">
                     <div className="col-span-5 max-lg:col-span-12">
-                        <CapsuleLabel firstWord="APP" secondWord="INTEGRATION" />
-                        <div className="font-britanicaRegular pt-[18px] text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">
+                        <div className="max-sm:flex max-sm:justify-center">
+                            <CapsuleLabel firstWord="APP" secondWord="INTEGRATION" />
+                        </div>
+                        <div className="font-britanicaRegular pt-[18px] text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed max-sm:text-center">
                             Our mobile app solutions integrate advanced technologies to enhance performance, security, and user experience—delivering smarter, faster, and more engaging digital products.
                         </div>
                     </div>
-                    <div className="col-span-7 max-lg:col-span-12">
+                    <div className="col-span-7 max-lg:col-span-12 max-sm:mx-auto max-sm:text-center">
                         <div className="flex justify-end">
                             <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-left">
                                 <span className="text-white">We Integrate </span>

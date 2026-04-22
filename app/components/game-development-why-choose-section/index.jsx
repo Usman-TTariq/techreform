@@ -85,50 +85,67 @@ const GameDevelopmentWhyChooseSection = () => {
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-7 min-w-0 order-2 md:order-1">
-               <div className="overflow-hidden">
-               <Swiper
-                        onSwiper={(swiper) => { swiperRef.current = swiper; swiper.slideTo(1, 0); setSwiperReady(true); }}
-                        initialSlide={1}
-                        spaceBetween={20}
-                        slidesPerView={1}
-                        breakpoints={{
-                            480: { slidesPerView: 1, spaceBetween: 16 },
-                            640: { slidesPerView: 1.1, spaceBetween: 16 },
-                            768: { slidesPerView: 1.5, spaceBetween: 18 },
-                            1024: { slidesPerView: 2, spaceBetween: 20 },
-                            1280: { slidesPerView: 2, spaceBetween: 24 },
-                            1530: { slidesPerView: 2, spaceBetween: 24 },
-                        }}
-                        className="!overflow-visible [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex [&_.swiper-slide]:items-stretch"
-                    >
-                        {WHY_CHOOSE.map((item, index) => (
-                            <SwiperSlide key={index} className="!flex !items-stretch">
-                                <div className="bg-white border-2 w-[300px] sm:w-[320px] md:w-[340px] h-[420px] sm:h-[440px] md:h-[460px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col shrink-0 min-w-0 overflow-hidden">
-                                    <div className="pb-3 sm:pb-[20px] shrink-0">
-                                        <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
-                                            <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                    <div className="overflow-hidden">
+                        <Swiper
+                            onSwiper={(swiper) => { swiperRef.current = swiper; swiper.slideTo(1, 0); setSwiperReady(true); }}
+                            initialSlide={1}
+                            spaceBetween={16}
+                            slidesPerView={1.05}
+                            breakpoints={{
+                                480: {
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 12,
+                                },
+                                640: {
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 12,
+                                },
+                                768: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 12,
+                                },
+                                1024: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 10,
+                                },
+                                1280: {
+                                    slidesPerView: 2.1,
+                                    spaceBetween: 10,
+                                },
+                                1530: {
+                                    slidesPerView: 2.1,
+                                    spaceBetween: 10,
+                                },
+                            }}
+                        >
+                            {WHY_CHOOSE.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[420px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                        <div className="pb-3 sm:pb-[20px]">
+                                            <div className="w-[56px] h-[56px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
+                                                <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                                            </div>
+                                        </div>
+                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px]">
+                                            {item.title}
+                                        </div>
+                                        <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-5 sm:pb-[30px]">
+                                            {item.desc}
+                                        </div>
+                                        <div>
+                                            <button
+                                                type="button"
+                                                onClick={() => setPopupOpen(true)}
+                                                className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
+                                            >
+                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                                            </button>
                                         </div>
                                     </div>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words shrink-0 min-w-0">
-                                        {item.title}
-                                    </div>
-                                    <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-w-0 pb-4 sm:pb-[30px] break-words">
-                                        {item.desc}
-                                    </div>
-                                    <div className="shrink-0 pt-2">
-                                        <button
-                                            type="button"
-                                            onClick={() => setPopupOpen(true)}
-                                            className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
-                                        >
-                                            Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-               </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />

@@ -25,26 +25,26 @@ const ArHeroSection = () => {
                 height={1000}
             />
             <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
-                <div className="grid grid-cols-12 pt-12 sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
+                <div className="grid grid-cols-12 pt-[40px] sm:pt-[90px] md:pt-[100px] lg:pt-[120px] relative z-20">
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
-                        <h1 className="font-britanicaBlack text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
+                        <h1 className="font-britanicaBlack max-sm:text-center text-[24px] leading-[1.25] sm:text-[36px] md:text-[42px] lg:text-[48px] lg:leading-[52px] font-black">
                             <span className="text-white">Custom Augmented Reality </span>
-                            <span className="text-[#F74B1C]">App Development Services</span>
-                            <br />
+                            <span className="text-[#F74B1C]">App Development Services </span>
+                            <br className="max-xl:hidden"/>
                             <span className="text-white">for Businesses</span>
                         </h1>
-                        <div className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
+                        <div className="font-britanicaRegular max-sm:text-center text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
                             We provide professional Augmented Reality App Development Services that help businesses build immersive and interactive digital experiences. Our experienced AR developers create scalable applications across mobile, web, and wearable platforms using modern AR frameworks and 3D technologies.
                         </div>
-                        <div className="pt-5 sm:pt-[30px]">
+                        <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center">
                             <Button text="Hire Expert App Developers Today" icon={false} onClick={() => setPopupOpen(true)} />
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
-                        <div className="flex justify-end">
+                        <div className="flex justify-end max-sm:justify-center max-sm:pt-[40px] max-sm:pb-[20px]">
                             <Image
-                                className="w-[80%]"
-                                src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1773851023/Group_2147225265_b2neyu.png"
+                                className="w-[80%] max-sm:w-[60%]"
+                                src="https://ik.imagekit.io/sajib4aqc/Group%202147225265.png"
                                 alt="Supporting illustration for Tech Reforms website section"
                                 width={1000}
                                 height={1000}

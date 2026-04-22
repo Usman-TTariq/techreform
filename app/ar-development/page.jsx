@@ -17,7 +17,7 @@ const ArDevelopment = () => {
     return (
         <>
             <Header />
-            <ArHeroSection />
+            <ArHeroSection />          
             <ArAppFunctions />
             <ARIndustries />
             <DevelopingARSoftware />

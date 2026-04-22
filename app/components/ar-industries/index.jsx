@@ -12,63 +12,51 @@ import Image from "next/image";
 const ARIndustries = () => {
     const industries = [
         {
-            title: "Financing",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Healthcare",
+            description: "Innovate and streamline medical training, surgical simulations, and patient education with immersive AR training application development in real-time.",
             image: "/images/ar1.jpeg",
             link: "/financing"
         },
         {
-            title: "Travel",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Retail & E-commerce",
+            description: "Allow customers to virtually try products, visualize items in their space, and improve shopping experiences with augmented reality solutions for e-commerce.",
             image: "/images/ar2.jpeg",
             link: "/travel"
         },
         {
-            title: "E-Commerce",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Real Estate",
+            description: "Show interactive property walkthroughs, architectural visualizations, and custom augmented reality solutions for interior planning for potential buyers and investors.",
             image: "/images/ar3.jpeg",
             link: "/e-commerce"
         },
         {
-            title: "Education",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Manufacturing",
+            description: "Improve maintenance, assembly training, and workflow efficiency with AR-based business applications that provide guided instructions and visual overlays.",
             image: "/images/ar4.jpeg",
             link: "/education"
         },
         {
-            title: "Travel",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Education & Training",
+            description: "Create immersive learning experiences with interactive augmented reality experiences and AR simulations for schools, universities, and corporate training programs.",
             image: "/images/ar2.jpeg",
             link: "/travel"
         },
         {
-            title: "E-Commerce",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+            title: "Gaming & Entertainment",
+            description: "Develop engaging AR games, immersive storytelling experiences, and entertainment applications with advanced 3D augmented reality app development. These estimates depend on app complexity, 3D content requirements, platform support, and AR technology integration",
             image: "/images/ar4.jpeg",
             link: "/e-commerce"
-        },
-        {
-            title: "Financing",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-            image: "/images/ar2.jpeg",
-            link: "/financing"
-        },
-        {
-            title: "Travel",
-            description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-            image: "/images/ar4.jpeg",
-            link: "/travel"
-        },
+        }
     ];
 
     return (
-        <div className="relative pb-[150px] max-sm:pb-[30px]">
+        <div className="relative pt-[100px] max-sm:pt-[40px] pb-[50px] max-sm:pb-[30px]">
             <div className="container">
                 <div className="">
                     <div className="grid grid-cols-12 justify-between gap-4">
                         <div className="col-span-8 max-lg:col-span-12">
                             <div className="flex justify-start max-sm:justify-center">
-                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-left max-sm:text-center">
+                                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[45px] 2xl:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-left max-sm:text-center">
                                     <span className="text-[#F74B1C]">Industries </span>
                                     <span className="text-white">Where We Achieve</span>
                                     <br />
@@ -83,7 +71,7 @@ const ARIndustries = () => {
                                 <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
                             </div>
                             <div className="font-britanicaRegular pt-[20px] text-[18px] font-regular text-white text-left max-sm:text-center">
-                                The immersive experiences enabled by AR and VR are being widely adopted across diverse industries.
+                                Work with a leading augmented reality company to gain immersive experiences enabled by AR and VR across diverse industries.
                             </div>
                         </div>
                     </div>
@@ -103,7 +91,7 @@ const ARIndustries = () => {
                             {
                                 industries.map((industry, index) => (
                                     <SwiperSlide key={index}>
-                                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#444444] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-[20px] py-[20px]">
+                                        <div className="rounded-xl h-full max-2xl:min-h-[600px] max-sm:min-h-[400px] bg-[#7724c100] border border-[#444444] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-[20px] py-[20px]">
                                             <div className="flex flex-col justify-between h-full">
                                                 <div className="pb-[10px]">
                                                     <Image

@@ -12,21 +12,17 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
     {
-        title: "Discovery & AR Strategy",
-        desc: "We align on your AR goals, target devices (mobile, headset, web), and user journeys. Our team maps technical constraints, tracking needs, and content pipelines so your experience is feasible, scalable, and aligned with your product roadmap.",
+        title: "Content Implementation",
+        desc: "Whether you want an app that improves reality with 3D models or overlays useful information, we provide complete support in building AR content. Our designers use photos, illustrations, or even simple sketches to create detailed 3D models. At the same time, our UI/UX experts plan the layout so the AR content appears smooth and easy to view on mobile devices.",
     },
     {
-        title: "Design & Prototyping",
-        desc: "We shape spatial UI, interactions, and 3D assets so they feel natural in the real world. Early prototypes and device tests help validate tracking, performance, and UX before full production so you can iterate with confidence.",
+        title: "Regular Content Updates & Maintenance",
+        desc: "AR apps often rely on metadata, 3D models, and image recognition, which naturally need updates over time. We also provide ongoing updates and improvements to keep your app performing well. Our team ensures your app content evolves with your business and delivers a reliable experience, emphasizing scalable AR application development.",
     },
     {
-        title: "Development & QA",
-        desc: "We build with leading AR frameworks and engines, integrating sensors, occlusion, and lighting where needed. Rigorous testing across devices ensures stable tracking, smooth frame rates, and a polished experience on every supported platform.",
-    },
-    {
-        title: "Launch & Ongoing Support",
-        desc: "We help you ship to app stores or enterprise distribution and monitor real-world performance. Post-launch, we support updates, new features, and optimization so your AR product stays reliable as OS and hardware evolve.",
-    },
+        title: "Scene Understanding & Occlusion",
+        desc: "We make sure your AR app accurately recognizes objects and environments in different conditions. This allows 3D models to appear naturally within real-world scenes. Our algorithms continue learning even after launch by collecting new data during app usage, helping us improve accuracy and make the app smarter over time, which is essential for AR App Development for Retail Businesses.We build with leading AR frameworks and engines, integrating sensors, occlusion, and lighting where needed. Rigorous testing across devices ensures stable tracking, smooth frame rates, and a polished experience on every supported platform.",
+    }
 ];
 
 const HowWeDoAr = () => {
@@ -66,7 +62,7 @@ const HowWeDoAr = () => {
     }, [swiperReady]);
 
     return (
-        <div ref={sectionRef} className="container pt-[160px] relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
+        <div ref={sectionRef} className="container pt-[160px] max-sm:pt-[30px] relative pb-4 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[10%] left-0 opacity-60 sm:opacity-100"
                 src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp"
@@ -92,33 +88,50 @@ const HowWeDoAr = () => {
                     <div className="overflow-hidden">
                         <Swiper
                             onSwiper={(swiper) => { swiperRef.current = swiper; setSwiperReady(true); }}
-                            spaceBetween={12}
-                            slidesPerView={1}
+                            spaceBetween={16}
+                            slidesPerView={1.05}
                             breakpoints={{
-                                480: { slidesPerView: 1.2, spaceBetween: 12 },
-                                640: { slidesPerView: 1.2, spaceBetween: 12 },
-                                768: { slidesPerView: 1.8, spaceBetween: 10 },
-                                1024: { slidesPerView: 1.8, spaceBetween: 10 },
-                                1280: { slidesPerView: 2.1, spaceBetween: 10 },
-                                1530: { slidesPerView: 2.1, spaceBetween: 10 },
+                                480: {
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 12,
+                                },
+                                640: {
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 12,
+                                },
+                                768: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 12,
+                                },
+                                1024: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 10,
+                                },
+                                1280: {
+                                    slidesPerView: 2.1,
+                                    spaceBetween: 10,
+                                },
+                                1530: {
+                                    slidesPerView: 2.1,
+                                    spaceBetween: 10,
+                                },
                             }}
-                            className="!overflow-visible"
                         >
                             {STEPS.map((step, index) => (
-                                <SwiperSlide key={index} className="!h-auto">
-                                    <div className="bg-white border-2 w-[300px] sm:w-[320px] md:w-[340px] h-[420px] sm:h-[440px] md:h-[460px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col shrink-0 min-w-0 overflow-hidden">
-                                        <div className="pb-3 sm:pb-[20px] shrink-0">
-                                            <div className="w-12 h-12 sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center shrink-0">
+                                <SwiperSlide key={index}>
+                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[620px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                        <div className="pb-3 sm:pb-[20px]">
+                                            <div className="w-[56px] h-[56px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
                                             </div>
                                         </div>
-                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight break-words shrink-0 min-w-0">
+                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px]">
                                             {step.title}
                                         </div>
-                                        <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1 min-w-0 pb-4 sm:pb-[30px] break-words">
+                                        <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-5 sm:pb-[30px]">
                                             {step.desc}
                                         </div>
-                                        <div className="shrink-0 pt-2">
+                                        <div>
                                             <button
                                                 type="button"
                                                 onClick={() => setPopupOpen(true)}

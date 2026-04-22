@@ -8,24 +8,24 @@ import Image from "next/image";
 const ArProcess = () => {
   const processes = [
     {
-      title: "Discovery & Planning",
-      desc: "Understand client requirements and define project scope.",
+      title: "Concept Design",
+      desc: "Being an AR App Development Company, we help you validate the feasibility of your idea before full-scale development. We begin our process by creating a detailed functional specification for your future app.",
     },
     {
-      title: "Design & Prototyping",
-      desc: "Create intuitive UI/UX designs aligned with user expectations.",
+      title: "Creating 3D Content",
+      desc: "Our intuitive AR Application Development Services include a systemic approach. This approach involves crafting realistic 3D assets for your AR app. This ensures a lifelike and visually appealing user experience.",
     },
     {
-      title: "Development, Testing & QA",
-      desc: "Ensure the app is bug-free and performs seamlessly across devices",
+      title: "Front & Back-End Dev",
+      desc: "Our experts build a robust database of 3D models along with developing efficient algorithms so your app can effectively scan, retrieve, and overlay models seamlessly, without any hindrance or inaccuracy.",
     },
     {
-      title: "Deployment & Support",
-      desc: "Launch the app and provide ongoing maintenance and updates.",
+      title: "AR Integration",
+      desc: "We integrate AR capabilities into your existing software, such as training platforms or e-commerce apps. That’s how our AR development agency delivers practical and immersive solutions for all scaling businesses.",
     },
   ];
   return (
-    <div className="relative py-[100px] max-sm:pb-[40px]">
+    <div className="relative py-[100px] max-sm:pt-[30px] max-sm:pb-[40px]">
       <Image
         className="absolute top-0 left-0 w-full h-full"
         src="https://ik.imagekit.io/sajib4aqc/Group%202147225255.png"

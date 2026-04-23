@@ -32,7 +32,7 @@ const MEGA_MENU = {
                     { label: "Game App Development", href: "/game-development" },
                     { label: "MVP Startup Development", href: "/mvp" },
                     { label: "AR Development", href: "/ar-development" },
-                    { label: "VR Development", href: "#" },
+                    { label: "VR Development", href: "/vr-development" },
                     { label: "App Maintenance Support", href: "#" },
                     { label: "Web App Development", href: "#" },
                     { label: "Apps for Startup", href: "/apps-for-startup" },

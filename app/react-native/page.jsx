@@ -14,6 +14,14 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Professional react native development company for online",
+  description:
+    "Launch cross-platform iOS & Android apps with React Native — custom development, UI/UX prototyping, QA testing & full post-launch support. Work with us.",
+  keywords: ["React Native development for iOS and Android"],
+  alternates: { canonical: "/react-native" },
+};
+
 const ReactNative = () => {
   return (
     <>

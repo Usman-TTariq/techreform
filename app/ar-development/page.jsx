@@ -13,11 +13,19 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section"
 import DetailFormSection from "../components/detail-form-section"
 import FaqHomeSection from "../components/faq-home-section"
 
+export const metadata = {
+    title: "Custom AR App Development Agency For Online",
+    description:
+        "Get professional AR app development services for your business. We build scalable, immersive augmented reality apps across mobile and web.",
+    keywords: ["AR app development services"],
+    alternates: { canonical: "/ar-development" },
+}
+
 const ArDevelopment = () => {
     return (
         <>
             <Header />
-            <ArHeroSection />          
+            <ArHeroSection />
             <ArAppFunctions />
             <ARIndustries />
             <DevelopingARSoftware />

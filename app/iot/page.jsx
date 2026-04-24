@@ -14,6 +14,13 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Industrial IoT Solutions for Automation & Efficiency",
+  description:
+    "Optimize operations with industrial IoT solutions built for automation and efficiency. We enable real-time monitoring, smart devices, and data-driven systems. Upgrade your operations with IoT today!",
+  alternates: { canonical: "/iot" },
+};
+
 const IoTPage = () => {
     return (
         <>

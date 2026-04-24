@@ -15,6 +15,9 @@ import WhoWeAreErp from "../components/who-we-are-erp";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
+  title: "ERP Solutions for Streamlined Operations & Growth Systems",
+  description:
+    "Optimize workflows with advanced ERP solutions. We integrate finance, inventory and analytics into one system for better efficiency and real-time insights. Transform your operations with ERP today!",
   alternates: { canonical: "/erp" },
 };
 

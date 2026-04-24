@@ -12,6 +12,13 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Online Startup Mobile App Development Services USA",
+  description:
+    "iOS, Android & cross-platform startup app development — with consulting, UI/UX, MVP, backend & QA support. Work with our team and launch your idea today.",
+  alternates: { canonical: "/apps-for-startup" },
+};
+
 const AppsForStartup = () => {
     return (
         <>

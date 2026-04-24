@@ -14,6 +14,13 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Retail Technology Solutions for Modern Growth & Innovation",
+  description:
+    "Transform retail operations with advanced technology solutions. We deliver CRM, ERP, automation, and eCommerce systems to boost efficiency and customer experience. Elevate your retail potential today!",
+  alternates: { canonical: "/retail" },
+};
+
 const Retail = () => {
   return (
     <>

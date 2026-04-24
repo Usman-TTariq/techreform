@@ -14,6 +14,13 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Affordable Cloud Services for Growing Business Solutions",
+  description:
+    "Get low-cost cloud services designed for growing businesses. We offer secure infrastructure, migration, and scalable solutions with full support.",
+  alternates: { canonical: "/cloud" },
+};
+
 const CloudPage = () => {
   return (
     <>

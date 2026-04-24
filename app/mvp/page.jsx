@@ -15,6 +15,14 @@ import WhoWeAreMvp from "../components/who-we-are-mvp";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Top MVP Development Company for Startup Projects",
+  description:
+    "Work with a trusted MVP development company that helps startups validate ideas, reduce risk, and ship products faster. Get started today.",
+  keywords: ["MVP development company"],
+  alternates: { canonical: "/mvp" },
+};
+
 const MvpPage = () => {
     return (
         <div>

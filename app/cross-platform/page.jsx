@@ -14,6 +14,14 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Cross-Platform App Development for Startups",
+  description:
+    "Our cross-platform app development for startups uses Flutter and React Native for fast, multi-device delivery.",
+  keywords: ["cross-platform app development for startups"],
+  alternates: { canonical: "/cross-platform" },
+};
+
 const CrossPlatform = () => {
   return (
     <>

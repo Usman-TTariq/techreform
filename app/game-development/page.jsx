@@ -15,6 +15,9 @@ import DetailFormSection from "../components/detail-form-section";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
+  title: "Custom Game Development Services in the USA",
+  description:
+    "Tech Reforms is a leading client-focused game development company in the USA. We build 2D/3D mobile, PC, and console games tailored to your audience.",
   alternates: { canonical: "/game-development" },
 };
 

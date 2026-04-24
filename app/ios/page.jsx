@@ -14,6 +14,17 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Hire iOS App Developers agency for Your Business",
+  description:
+    "Scalable enterprise iOS apps built for real-world performance — custom development, secure systems, UI/UX design & App Store launch. Let's build together.",
+  keywords: [
+    "enterprise iOS app development",
+    "hire iOS app developers",
+  ],
+  alternates: { canonical: "/ios" },
+};
+
 const IOS = () => {  
     return (
         <>

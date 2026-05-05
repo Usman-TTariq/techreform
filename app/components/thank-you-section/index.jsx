@@ -8,12 +8,12 @@ const ThankYouSection = () => {
     const router = useRouter();
     return (
         <div className="relative h-[90vh] overflow-hidden z-10">
-            <Image className="absolute top-[50%] -translate-y-1/2 right-0 w-[40%]" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772831281/thankyouimg_hwhncw.png" alt="Thank You" width={1000} height={1000} />
+            <Image className="absolute top-[50%] -translate-y-1/2 right-0 w-[40%]" src="https://ik.imagekit.io/sajib4aqc/Group%202147225280.png" alt="Thank You" width={1000} height={1000} />
             <div className="container relative z-10 h-full">
                 <div className="grid grid-cols-12 h-full">
                     <div className="col-span-7 my-auto">
                         <div>
-                            <Image className="w-full" src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772832734/Group_2147225281_1_zd10gf.png" alt="Thank You" width={1000} height={1000} />
+                            <Image className="w-full" src="https://ik.imagekit.io/sajib4aqc/Group%202147225281.png" alt="Thank You" width={1000} height={1000} />
                         </div>
                         <div className="font-britanicaBlack pt-[10px] text-[26px] leading-[1.2] sm:text-[36px] md:text-[46px] lg:text-[60px] lg:leading-[52px] font-black">
                             <span className="text-white">For contacting us.</span>

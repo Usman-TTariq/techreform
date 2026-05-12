@@ -13,6 +13,15 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import FaqHomeSection from "../components/faq-home-section";
 
+export const dynamic = "force-dynamic";
+
+export const metadata = {
+    title: "VR App Development | Virtual Reality Solutions",
+    description:
+        "Need expert VR development services? TechReforms crafts immersive VR applications and extended reality (XR) experiences that engage users, enhance interaction, and drive real business growth.",
+    alternates: { canonical: "/vr-development" },
+};
+
 const VrDevelopmentPage = () => {
     return (
         <>

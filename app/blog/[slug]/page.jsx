@@ -5,7 +5,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BlogBlocksRenderer, { TableFromMarkdown } from "../../components/blog-blocks-renderer";
 import FaqSection from "../../components/faq-section";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +36,10 @@ export default async function BlogPostPage({ params }) {
   const article = slug ? await getBlogBySlug(slug) : null;
 
   if (!article) notFound();
+
+  if (article.slug && article.slug !== slug) {
+    permanentRedirect(`/blog/${article.slug}`);
+  }
 
   return (
     <div>

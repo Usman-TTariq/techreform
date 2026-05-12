@@ -15,7 +15,7 @@ import DetailFormSection from "../components/detail-form-section";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Premium Flutter App Development for Startups & Businesses",
+  title: "Premium Flutter App for Startups & Businesses",
   description:
     "Flutter MVP, custom app development, UI/UX prototyping, QA testing & post-launch support — all in one place for startups and growing businesses. Work with us.",
   alternates: { canonical: "/flutter" },

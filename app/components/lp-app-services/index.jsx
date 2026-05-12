@@ -225,7 +225,7 @@ const LpAppServices = () => {
                                     width={1000}
                                     height={1000}
                                 />
-                                <div className="flex justify-end">
+                                {/* <div className="flex justify-end">
                                     <ArrowIcon className="w-[100px]" />
                                 </div>
                                 <div className="flex justify-start max-sm:hidden">
@@ -235,7 +235,7 @@ const LpAppServices = () => {
                                         <br />
                                         <span className="text-[#fff]">On Scroll</span>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div ref={columnRef} className="col-span-8 max-sm:col-span-10 max-h-[730px] overflow-y-auto overflow-x-hidden scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">

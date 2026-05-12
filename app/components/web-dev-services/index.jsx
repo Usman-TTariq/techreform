@@ -34,7 +34,7 @@ const WebDevelopmentServices = () => {
                         <div className="flex justify-between max-sm:flex-col items-center gap-6 bg-[#000000] border border-[#323232] rounded-3xl p-3 h-full">
                             <div className="w-[220px] h-[220px] rounded-xl overflow-hidden shrink-0">
                                 <video
-                                    src="https://res.cloudinary.com/dtfy8a1wo/video/upload/v1772729977/firstvideo_x1gkgz.mp4"
+                                    src="https://ik.imagekit.io/sajib4aqc/From%20Main%20Klickpin%20CF-%20Video%20Pinterest%20-%206mwdLHeAG.mp4"
                                     className="w-full h-full object-cover"
                                     autoPlay
                                     loop
@@ -57,7 +57,7 @@ const WebDevelopmentServices = () => {
                         <div className="flex justify-between max-sm:flex-col items-center gap-6 bg-[#000000] border border-[#323232] rounded-3xl p-3 h-full">
                             <div className="w-[220px] h-[220px] rounded-xl overflow-hidden shrink-0">
                                 <video
-                                    src="https://res.cloudinary.com/dtfy8a1wo/video/upload/v1772733276/secondvideo_dc0nok.mp4"
+                                    src="https://ik.imagekit.io/sajib4aqc/vid%202.mp4"
                                     className="w-full h-full object-cover"
                                     autoPlay
                                     loop
@@ -80,7 +80,7 @@ const WebDevelopmentServices = () => {
                         <div className="flex justify-between max-sm:flex-col items-center gap-6 bg-[#000000] border border-[#323232] rounded-3xl p-3 h-full">
                             <div className="w-[220px] h-[220px] rounded-xl overflow-hidden shrink-0">
                                 <video
-                                    src="https://res.cloudinary.com/dtfy8a1wo/video/upload/v1772733393/thirdvideo_ycbqgk.mp4"
+                                    src="https://ik.imagekit.io/sajib4aqc/vid%203.mp4"
                                     className="w-full h-full object-cover"
                                     autoPlay
                                     loop
@@ -103,7 +103,7 @@ const WebDevelopmentServices = () => {
                         <div className="flex justify-between max-sm:flex-col items-center gap-6 bg-[#000000] border border-[#323232] rounded-3xl p-3 h-full">
                             <div className="w-[220px] h-[220px] rounded-xl overflow-hidden shrink-0">
                                 <video
-                                    src="https://res.cloudinary.com/dtfy8a1wo/video/upload/v1772733437/forthvideo_hmnmrx.mp4"
+                                    src="https://ik.imagekit.io/sajib4aqc/From%20Main%20Klickpin%20CF-%20Pinterest%20Video%20-%203muApHQYM.mp4"
                                     className="w-full h-full object-cover"
                                     autoPlay
                                     loop

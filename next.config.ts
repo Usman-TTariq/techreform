@@ -12,6 +12,16 @@ const nextConfig: NextConfig = {
         destination: "https://techreforms.com/:path*",
         permanent: true,
       },
+      {
+        source: "/lp/app",
+        destination: "/app-development",
+        permanent: true,
+      },
+      {
+        source: "/lp/web",
+        destination: "/website-development",
+        permanent: true,
+      },
     ];
   },
   images: {

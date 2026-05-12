@@ -11,6 +11,10 @@ const OurValuesSection = () => {
   const values = [
     {
       title: "People-Driven Marketing",
+      desc: "We make your users the center of our strategies to build mobile apps that connect, engage, and entertain your core audience.",
+    },
+    {
+      title: "Purposeful Creativity",
       desc: "Development isn’t just about logistics; it's about delivering efficiency that is accessible as well. Tech Reforms simplifies usability through modern design and seamless innovation.",
     },
     {

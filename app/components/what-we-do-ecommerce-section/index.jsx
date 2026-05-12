@@ -141,19 +141,21 @@ const WhatWeDoEcommerceSection = () => {
                             }}
                         >
                             {solutions.map((solution, index) => (
-                                <SwiperSlide key={index} className="!h-full">
-                                    <div className="bg-white border-2 !h-full min-h-[460px] max-2xl:min-h-[520px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                <SwiperSlide key={index} className="!h-auto">
+                                    <div className="bg-white cursor-pointer !h-full h-[420px] relative sm:h-[460px] md:h-[500px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                                         <div className="pb-3 sm:pb-[20px]">
                                             <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
                                             </div>
                                         </div>
                                         <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight">{solution.title}</div>
-                                        <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
-                                        <div>
-                                            <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
-                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                            </button>
+                                        <div className="flex flex-col justify-between items-start flex-1">
+                                            <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] leading-relaxed pb-4 sm:pb-[30px]">{solution.desc}</div>
+                                            <div>
+                                                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                                    Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -181,19 +183,21 @@ const WhatWeDoEcommerceSection = () => {
                             }}
                         >
                             {whyPartner.map((solution, index) => (
-                                <SwiperSlide key={index} className="!h-full">
-                                    <div className="bg-white border-2 !h-full min-h-[460px] max-2xl:min-h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
+                                <SwiperSlide key={index} className="!h-auto">
+                                    <div className="bg-white cursor-pointer !h-full h-[420px] relative sm:h-[460px] md:h-[500px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                                         <div className="pb-3 sm:pb-[20px]">
                                             <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                                                 <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
                                             </div>
                                         </div>
                                         <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight">{solution.title}</div>
-                                        <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] pb-4 sm:pb-[30px] leading-relaxed">{solution.desc}</div>
-                                        <div>
-                                            <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
-                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                            </button>
+                                        <div className="flex flex-col justify-between items-start flex-1">
+                                            <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[16px] leading-relaxed pb-4 sm:pb-[30px]">{solution.desc}</div>
+                                            <div>
+                                                <button type="button" onClick={() => setPopupOpen(true)} className="text-[#7724C1] cursor-pointer hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]">
+                                                    Learn More <ArrowRight className="w-4 sm:w-[16px]" />
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>

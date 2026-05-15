@@ -5,6 +5,10 @@ import localFont from "next/font/local";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://techreforms.com";
 
+/** Google Ads / gtag conversion ID (e.g. AW-123456789). Set NEXT_PUBLIC_GOOGLE_ADS_ID in env to change without editing code. */
+const googleAdsId =
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-16723277657";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Top USA Digital Agency for App & eCommerce",
@@ -44,13 +48,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${britanicaRegular.variable} ${britanicaExtraBold.variable} ${britanicaBlack.variable}`}>
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16723277657" strategy="afterInteractive" />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAdsId)}`}
+          strategy="afterInteractive"
+        />
         <Script id="google-gtag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-16723277657');
+            gtag('config', ${JSON.stringify(googleAdsId)});
           `}
         </Script>
         <Script id="livechat-config" strategy="afterInteractive">

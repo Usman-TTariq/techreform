@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
     title: blog.metaTitle ? `${blog.metaTitle} | Tech Reforms Blog` : `${blog.title} | Tech Reforms Blog`,
     description: blog.metaDescription || blog.excerpt || undefined,
     openGraph: blog.coverUrl ? { images: [blog.coverUrl] } : undefined,
+    ...(blog.canonicalUrl && {
+      alternates: { canonical: blog.canonicalUrl },
+    }),
   };
 }
 

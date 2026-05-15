@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /lp/web
+Disallow: /lp/app
 Allow: /
 
 Sitemap: https://techreforms.com/sitemap.xml

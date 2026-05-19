@@ -15,6 +15,30 @@ import WhoWeAreMvp from "../components/who-we-are-mvp";
 
 export const dynamic = "force-dynamic";
 
+const mvpSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "MVP Development Services",
+  "serviceType": "MVP Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/mvp",
+  "description": "Work with a trusted MVP development company that helps startups validate ideas, reduce risk, and ship products faster. Get started today.",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "MVP Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Startup MVP Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product Validation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rapid Prototyping" } }
+    ]
+  }
+};
+
 export const metadata = {
   title: "Top MVP Development Company for Startup Projects",
   description:
@@ -26,6 +50,10 @@ export const metadata = {
 const MvpPage = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(mvpSchema) }}
+            />
             <Header />
             <GeneralHeroSection
                 firstWord="Startup-Focused MVP Development Company"
@@ -45,7 +73,7 @@ const MvpPage = () => {
             <FaqMvpSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro="Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control." />
+            <DetailFormSection />
             <Footer />
         </div>
     )

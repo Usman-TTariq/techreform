@@ -15,6 +15,32 @@ import EcommerceTabsSection from "../components/ecommerce-tabs-section";
 import WhatMakesEcommerce from "../components/what-makes-ecommerce";
 import EcommerceCta from "../components/ecommerce-cta";
 
+const ecommerceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "E-Commerce Development Solutions",
+  "serviceType": "E-Commerce Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/ecommerce",
+  "description": "Looking for expert eCommerce development services? We create fast, secure and sales-focused online stores that scale your business.",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "E-Commerce Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom E-Commerce Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Online Store Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Payment Gateway Integration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inventory Management System" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce Analytics" } }
+    ]
+  }
+};
+
 export const metadata = {
     alternates: { canonical: "/ecommerce" },
 };
@@ -22,6 +48,10 @@ export const metadata = {
 const Ecommerce = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(ecommerceSchema) }}
+            />
             <Header />
             <GeneralHeroSection firstWord="Hire" secondWord="Expert E-Commerce" thirdWord="" forthWord="Web Developers" fifthWord="in the USA" para="Looking for an affordable way to digitize your business without emptying your bank account? 
 Tech Reforms is a pioneering e-commerce development agency that offers affordable e-commerce website development in the USA. Our SEO-friendly, conversion-focused framework is designed for small and scaling businesses to grow faster in the market.

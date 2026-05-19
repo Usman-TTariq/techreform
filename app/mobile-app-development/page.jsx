@@ -25,9 +25,39 @@ export const metadata = {
   alternates: { canonical: "/mobile-app-development" },
 };
 
+const mobileAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mobile App Development",
+  "serviceType": "Mobile App Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/mobile-app-development",
+  "description": "Looking for a reliable mobile app development agency? TechReforms delivers custom, affordable apps with precision, quality, and guaranteed satisfaction.",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Mobile App Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "iOS App Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Android App Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cross-Platform App Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Maintenance and Support" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apps For Startup" } }
+    ]
+  }
+};
+
 const Mobile = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileAppSchema) }}
+            />
             <Header />
             <MobileHeroSection />
             <OurImpactBoxesSection />

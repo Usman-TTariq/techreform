@@ -5,6 +5,29 @@ import Header from "../components/header";
 import BlogContentSection from "../components/blog-content-section";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = {
+  alternates: { canonical: "/blog" },
+};
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Tech Reforms Blog",
+  "url": "https://techreforms.com/blog",
+  "description": "TechReforms \u2013 Premier digital agency offering mobile app development, scalable e-commerce solutions, & staff augmentation to grow your business online.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://techreforms.com/images/hover-logo.png"
+    }
+  },
+  "inLanguage": "en-US"
+};
+
 // http://localhost:3000/api/blogs
 // http://localhost:1337/api/blogs
 // http://localhost:1337/api/blogs?populate=coverUrl
@@ -25,6 +48,10 @@ const Blog = async () => {
     }
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+            />
             <Header />
             <GeneralHeroSection
                 firstWord="Insights, "

@@ -15,6 +15,37 @@ import DetailFormSection from "../components/detail-form-section";
 // Avoid oversized static fallback (ISR page > 19 MB); render on demand
 export const dynamic = "force-dynamic";
 
+const staffAugmentationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "IT Staff Augmentation Services",
+  "serviceType": "Staff Augmentation",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/staff-augmentation",
+  "description": "Hire expert staff augmentation services to scale your team with vetted professionals, boost efficiency, and achieve project goals faster with flexible support.",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Staff Augmentation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Flutter Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Java Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Magento Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Python Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Laravel Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Node.js Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Spring Boot Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Power BI Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire Golang Developer" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hire LLM Developer" } }
+    ]
+  }
+};
+
 export const metadata = {
   alternates: { canonical: "/staff-augmentation" },
 };
@@ -22,6 +53,10 @@ export const metadata = {
 const StaffAugmentation = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(staffAugmentationSchema) }}
+            />
             <Header />
             <GeneralHeroSection firstWord="IT Staff Augmentation" secondWord="Services" thirdWord="in the" forthWord="USA" fifthWord="| Hire Dedicated Developers" para="Looking for a flexible and cost-effective way to scale your team without long-term hiring commitments?"
                 para2="Tech Reforms is a trusted provider of staff augmentation services curated to help businesses access top-tier talent at affordable rates. From short-term support to long-term technical assistance, we have it all!"

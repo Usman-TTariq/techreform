@@ -14,6 +14,31 @@ import WhoWeAreErp from "../components/who-we-are-erp";
 
 export const dynamic = "force-dynamic";
 
+const erpSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom ERP Development Solutions",
+  "serviceType": "ERP Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/erp",
+  "description": "Optimize workflows with advanced ERP solutions. We integrate finance, inventory and analytics into one system for better efficiency and real-time insights. Transform your operations with ERP today!",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "ERP Solutions",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom ERP Software Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finance Module Integration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inventory Management" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real-time Analytics Dashboard" } }
+    ]
+  }
+};
+
 export const metadata = {
   title: "ERP Solutions for Streamlined Operations & Growth Systems",
   description:
@@ -24,6 +49,10 @@ export const metadata = {
 const Erp = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(erpSchema) }}
+            />
             <Header />
             <GeneralHeroSection
                 firstWord="Custom ERP Development Company"

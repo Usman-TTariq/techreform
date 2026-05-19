@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
@@ -21,12 +22,12 @@ const AppDevelopmentSection = () => {
                             <span className="text-[#F74B1C]">Development Experts </span>
                             <br />
                             <span className="text-[#F74B1C]">For User-Centric Apps with </span>
-                            <span className="text-white">Secure Mobile App Architecture</span>
+                            <span className="text-white">Secure App Architecture</span>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
                         <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            We develop scalable mobile applications with intuitive UI/UX design, a feature-rich development approach, and ongoing support after launch. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
+                        We develop scalable apps with intuitive UI/UX design, a feature-rich development approach, and ongoing post-launch support. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@ const AppDevelopmentSection = () => {
                                     Game App Development
                                 </div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                    Get an enterprise-grade mobile game solution that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
+                                Get an enterprise-grade <Link href="/game-development" className="text-[#F74B1C] hover:underline">mobile game solution</Link> that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
                                 </div>
                                 <div className="pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
@@ -71,7 +72,7 @@ const AppDevelopmentSection = () => {
                                     iOS App Development
                                 </div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                    Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance mobile apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
+                                Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
                                 </div>
                                 <div className="pt-6 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />

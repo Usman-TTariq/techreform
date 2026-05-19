@@ -62,7 +62,7 @@ const DevelopingARSoftware = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-12 pt-[60px] max-sm:pt-[0px] gap-18 max-sm:gap-[0px]">
-                    <div className="col-span-4 max-2xl:col-span-0"></div>
+                    <div className="col-span-4 max-2xl:hidden"></div>
                     <div className="col-span-4 max-2xl:col-span-6 max-sm:col-span-12">
                         <div>
                             <div className="w-full max-sm:mb-5 max-sm:mb-[0px] h-[2px] bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)]"></div>

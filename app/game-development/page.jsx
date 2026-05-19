@@ -14,6 +14,31 @@ import DetailFormSection from "../components/detail-form-section";
 
 export const dynamic = "force-dynamic";
 
+const gameSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Game Development Services",
+  "serviceType": "Game Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "Tech Reforms",
+    "url": "https://techreforms.com"
+  },
+  "url": "https://techreforms.com/game-development",
+  "description": "Tech Reforms is a leading client-focused game development company in the USA. We build 2D/3D mobile, PC, and console games tailored to your audience.",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Game Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "2D Mobile Game Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "3D Mobile Game Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PC Game Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Console Game Development" } }
+    ]
+  }
+};
+
 export const metadata = {
   title: "Custom Game Development Services in the USA",
   description:
@@ -24,6 +49,10 @@ export const metadata = {
 const GameDevelopment = () => {
     return (
         <div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(gameSchema) }}
+            />
             <Header />
             <GeneralHeroSection
                 firstWord="Game Development Services "

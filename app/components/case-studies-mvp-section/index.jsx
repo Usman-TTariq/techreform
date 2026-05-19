@@ -5,13 +5,13 @@ import Button from "../common/button";
 const CaseStudiesMvpSection = () => {
     return (
         <div className="relative pb-12 pt-22 sm:pb-16 md:pb-[80px] overflow-hidden w-full min-w-0">
-            <Image
+            {/* <Image
                 className="w-full h-full absolute top-0 left-0"
                 src="https://res.cloudinary.com/dtfy8a1wo/image/upload/v1772828875/mvpbk_ftdboq.png"
                 alt="MVP case study"
                 width={1000}
                 height={1000}
-            />
+            /> */}
             <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border z-10">
                 <div className="grid grid-cols-12 justify-between gap-4 items-start">
                     <div className="col-span-12 md:col-span-10 min-w-0 order-1">

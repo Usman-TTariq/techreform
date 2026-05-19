@@ -48,6 +48,49 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${britanicaRegular.variable} ${britanicaExtraBold.variable} ${britanicaBlack.variable}`}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "name": "Tech Reforms",
+                  "url": "https://techreforms.com",
+                  "logo": "https://techreforms.com/images/hover-logo.png",
+                  "description": "TechReforms \u2013 Premier digital agency offering mobile app development, scalable e-commerce solutions, & staff augmentation to grow your business online.",
+                  "telephone": "+15822335015",
+                  "email": "info@techreforms.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "811 Wilshire Boulevard",
+                    "addressLocality": "Los Angeles",
+                    "addressRegion": "CA",
+                    "postalCode": "90017",
+                    "addressCountry": "US"
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/techreforms.1/",
+                    "https://www.instagram.com/tech.reforms/"
+                  ],
+                  "areaServed": "US",
+                  "foundingDate": "2023"
+                },
+                {
+                  "@type": "WebSite",
+                  "name": "Tech Reforms",
+                  "url": "https://techreforms.com",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://techreforms.com/?s={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+              ]
+            }),
+          }}
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAdsId)}`}
           strategy="afterInteractive"

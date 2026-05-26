@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 import WhoWeAre from "../components/who-we-are";
 
 export const metadata = {
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "/about" }, 
 };
 
 const About = () => {

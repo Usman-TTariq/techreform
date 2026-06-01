@@ -30,7 +30,7 @@ const EcommerceDevelopmentSection = () => {
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center min-w-0">
                         <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
-                            We develop scalable mobile applications with intuitive UI/UX design, a feature-rich development approach, and ongoing support after launch. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
+                        We develop a scalable e-commerce platform with an intuitive UI/UX design, a feature-rich development approach, and ongoing support after launch. Our expertly curated systems are built to offer cross-platform compatibility and seamless performance across devices.
                         </div>
                     </div>
                 </div>
@@ -48,10 +48,10 @@ const EcommerceDevelopmentSection = () => {
                                     />
                                 </div>
                                 <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">
-                                    Custom e-commerce website development
+                                Scalable Infrastructure
                                 </div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">
-                                    We offer high-yielding ecommerce solutions that are fast, secure, and user-friendly. All features are customized to your business requirements and logistics.
+                                Our architecture supports growing product catalogs, high traffic volumes, and secure transactions without compromising speed, stability, or performance.
                                 </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
@@ -65,8 +65,8 @@ const EcommerceDevelopmentSection = () => {
                                 <div className="pb-3 sm:pb-[20px]">
                                     <Image className="w-12 h-12 sm:w-[70px] sm:h-[70px]" src="/images/gamingicon.png" alt="App or game service icon" width={70} height={70} />
                                 </div>
-                                <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Shopify and WooCommerce</div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">We set up professional Shopify and WooCommerce stores that offer complete design, product uploads, and payment integration.</div>
+                                <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Smart Integrations</div>
+                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">We integrate payment gateways, CRM systems, ERP tools, and marketing platforms to streamline operations and enhance customer experience.                                </div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>
@@ -79,8 +79,8 @@ const EcommerceDevelopmentSection = () => {
                                 <div className="pb-3 sm:pb-[20px]">
                                     <Image className="w-12 h-12 sm:w-[70px] sm:h-[70px]" src="/images/gamingicon.png" alt="App or game service icon" width={70} height={70} />
                                 </div>
-                                <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Mobile Responsible Design</div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">All e-commerce websites are highly responsible for the phone to deliver high conversion rates, whether on desktop or mobile.</div>
+                                <div className="font-britanicaBlack font-bold text-[18px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight break-words">Performance Optimization</div>
+                                <div className="font-britanicaRegular text-[13px] sm:text-  [14px] font-regular text-white text-left leading-relaxed">Through advanced caching, clean coding standards, and continuous monitoring, we ensure fast loading speeds and reliable functionality across devices.</div>
                                 <div className="pt-4 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
                                 </div>

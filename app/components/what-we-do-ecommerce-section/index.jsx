@@ -60,18 +60,23 @@ const WhatWeDoEcommerceSection = () => {
     }, [swiper1Ready, swiper2Ready]);
     const solutions = [
         {
-            title: "Magento (Adobe Commerce)",
-            desc: "At Tech Reforms, we help businesses build powerful online stores via Magento. If you’re looking for a platform that can handle large product catalogs, multiple stores, and advanced features, Magento is exactly the framework you need to tailor to your business needs.",
+            title: "Requirement Analysis",
+            desc: "Our process starts by understanding industry requirements and major competitors to curate a custom strategy that serves your target audience effectively.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Kentico Solutions",
-            desc: "We use Kentico to create websites that offer more than appealing looks. We build comprehensive digital solutions that help businesses connect more effectively with their customers. Our Kentico e-commerce platforms come with optimized management.",
+            title: "Planning and Stretegy",
+            desc: "We cultivate our approach and development process on platform selection. This includes WooCommerce, Shopify, and custom features.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Zend (Laminas) Development",
-            desc: "We use the Zend Framework for businesses that need secure, dependable web applications and customized solutions. Our goal is simple: to create systems that run smoothly and support your growth over time.",
+            title: "Testing and Optimization",
+            desc: "During development, our experts focus on testing each feature before the launch. This is done to ensure that speed, security, and performance meet requirements.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Launch Support",
+            desc: "Lastly, the maintenance and support phase begins after launch, with updates and ongoing maintenance to ensure your store grows effectively.",
             icon: <AiIcon className="w-[40px]" />,
         },
         // {
@@ -111,7 +116,7 @@ const WhatWeDoEcommerceSection = () => {
             <div className="grid grid-cols-12 gap-6 sm:gap-5 pt-8 sm:pt-0 relative z-10">
                 <div className="col-span-12 md:col-span-5 min-w-0 order-1">
                     <div className="pb-6 sm:pb-[40px]">
-                        <CapsuleLabel firstWord="Our" secondWord="E-Commerce" thirdWord="Process" />
+                        <CapsuleLabel firstWord="Our" secondWord="Process" thirdWord="" />
                     </div>
                     <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words">
                         <span className="text-white">Seamless Process For</span>

@@ -20,6 +20,7 @@ function BlogTable({ markdown, className = "" }) {
 /**
  * Renders blog body in Strapi field order:
  * Desc → table → secondDesc → table2 → thirdDesc → table3 → forthDesc
+ * → table4 → fifthDesc → table5 → sixthDesc
  */
 export default function BlogArticleBody({ article }) {
   const hasLegacyStringContent =
@@ -41,6 +42,10 @@ export default function BlogArticleBody({ article }) {
       <BlogBlocks blocks={article.thirdDesc} className="mt-8" />
       <BlogTable markdown={article.table3} className="mt-8" />
       <BlogBlocks blocks={article.forthDesc} className="mt-8" />
+      <BlogTable markdown={article.table4} className="mt-8" />
+      <BlogBlocks blocks={article.fifthDesc} className="mt-8" />
+      <BlogTable markdown={article.table5} className="mt-8" />
+      <BlogBlocks blocks={article.sixthDesc} className="mt-8" />
     </>
   );
 }

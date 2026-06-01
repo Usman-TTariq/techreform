@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import BlogBlocksRenderer, { TableFromMarkdown } from "../../components/blog-blocks-renderer";
+import BlogArticleBody from "../../components/blog-article-body";
 import FaqSection from "../../components/faq-section";
 import { notFound, permanentRedirect } from "next/navigation";
 
@@ -75,23 +75,7 @@ export default async function BlogPostPage({ params }) {
               />
             </div>
           )}
-          {article.content && (
-            <div className="prose prose-invert prose-lg max-w-none font-britanicaRegular text-gray-300 text-[20px]">
-              {Array.isArray(article.content) ? (
-                <BlogBlocksRenderer blocks={article.content} />
-              ) : (
-                <div className="whitespace-pre-line">{article.content}</div>
-              )}
-            </div>
-          )}
-          {article.table && (
-            <TableFromMarkdown markdown={article.table} />
-          )}
-          {article.secondDesc && Array.isArray(article.secondDesc) && article.secondDesc.length > 0 && (
-            <div className="prose prose-invert prose-lg max-w-none font-britanicaRegular text-gray-300 text-[20px] mt-8">
-              <BlogBlocksRenderer blocks={article.secondDesc} />
-            </div>
-          )}
+          <BlogArticleBody article={article} />
           {article.faq && article.faq.length > 0 && (
             <div className="mt-12">
               <FaqSection items={article.faq} />

@@ -40,7 +40,7 @@ const aboutSchema = {
 };
 
 export const metadata = {
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "/about" }, 
 };
 
 const About = () => {

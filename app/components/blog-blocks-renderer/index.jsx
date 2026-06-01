@@ -1,17 +1,47 @@
 import Link from "next/link";
 
+/** Split a markdown table row; keeps empty cells (e.g. blank top-left header). */
+function splitTableRow(line) {
+  const trimmed = line.trim();
+  let cells = trimmed.split("|").map((cell) => cell.trim());
+  if (trimmed.startsWith("|")) cells = cells.slice(1);
+  if (trimmed.endsWith("|")) cells = cells.slice(0, -1);
+  return cells;
+}
+
+function isSeparatorRow(cells) {
+  return cells.length > 0 && cells.every((cell) => cell === "" || /^:?-+:?$/.test(cell));
+}
+
+function padRow(cells, columnCount) {
+  const row = [...cells];
+  while (row.length < columnCount) row.push("");
+  return row.slice(0, columnCount);
+}
+
 /**
  * Parse markdown table string into rows of cells.
  * First row = header, second = separator (skipped), rest = body.
  */
 export function parseMarkdownTable(md) {
   if (!md || typeof md !== "string") return { headers: [], rows: [] };
-  const lines = md.trim().split("\n").map((line) => line.split("|").map((cell) => cell.trim()).filter(Boolean));
-  if (lines.length === 0) return { headers: [], rows: [] };
-  const headers = lines[0];
-  const separatorIndex = lines.findIndex((line) => line.every((cell) => /^:?-+:?$/.test(cell)));
-  const bodyStart = separatorIndex >= 0 ? separatorIndex + 1 : 1;
-  const rows = lines.slice(bodyStart);
+
+  const rawLines = md
+    .trim()
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+
+  if (rawLines.length === 0) return { headers: [], rows: [] };
+
+  const parsedLines = rawLines.map(splitTableRow).filter((cells) => !isSeparatorRow(cells));
+
+  if (parsedLines.length === 0) return { headers: [], rows: [] };
+
+  const columnCount = Math.max(...parsedLines.map((row) => row.length));
+  const headers = padRow(parsedLines[0], columnCount);
+  const rows = parsedLines.slice(1).map((row) => padRow(row, columnCount));
+
   return { headers, rows };
 }
 
@@ -29,7 +59,9 @@ export function TableFromMarkdown({ markdown, className = "" }) {
         <thead>
           <tr>
             {headers.map((cell, j) => (
-              <th key={j} className={thClass}>{cell}</th>
+              <th key={j} className={thClass}>
+                {cell ? cell : "\u00A0"}
+              </th>
             ))}
           </tr>
         </thead>
@@ -145,7 +177,9 @@ export default function BlogBlocksRenderer({ blocks, className = "" }) {
                 <thead>
                   <tr>
                     {headers.map((cell, j) => (
-                      <th key={j} className={thClass}>{cell}</th>
+                      <th key={j} className={thClass}>
+                        {cell ? cell : "\u00A0"}
+                      </th>
                     ))}
                   </tr>
                 </thead>

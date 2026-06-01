@@ -72,7 +72,7 @@ const AppDevelopmentSection = () => {
                                     iOS App Development
                                 </div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Secure premium mobile experiences with our certified iOS app development services. We build secure, scalable, high-performance apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
+                                Secure premium mobile experiences with our certified <Link href="/ios" className="text-[#F74B1C] hover:underline">iOS app development</Link> services. We build secure, scalable, high-performance apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
                                 </div>
                                 <div className="pt-6 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
@@ -96,7 +96,7 @@ const AppDevelopmentSection = () => {
                                     Android App Development
                                 </div>
                                 <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Partner up with our results-driven Android app development company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
+                                Partner up with our results-driven <Link href="/mobile-app-development#" className="text-[#F74B1C] hover:underline">Android app development</Link> company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
                                 </div>
                                 <div className="pt-6 sm:pt-[30px] flex justify-start">
                                     <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />

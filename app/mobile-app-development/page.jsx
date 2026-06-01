@@ -76,7 +76,7 @@ const Mobile = () => {
             <FaqSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection formIntro="Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form." />
             <Footer />
         </div>
     )

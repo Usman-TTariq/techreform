@@ -24,16 +24,16 @@ const WhatMakesEcommerce = () => {
                                         secondWord="MAKEs"
                                     />
                                 </div>
-                                <div className="font-britanicaBlack flex items-center gap-3 max-sm:justify-center text-[24px] leading-tight  md:leading-[52px] font-black break-words">
-                                    <span className="text-white">Our</span>
-                                    <span className="text-[#F74B1C]">E-Commerce</span>
+                                <div className="font-britanicaBlack flex items-center gap-3 max-sm:justify-center text-[40px] leading-tight  md:leading-[52px] font-black break-words">
+                                    <span className="text-white">What Makes</span>
+                                    <span className="text-[#F74B1C]">Our E-Commerce</span>
                                 </div>
-                                <div className="font-britanicaBlack pt-[12px] max-sm:pt-[4px] flex items-end justify-end max-sm:justify-center gap-3 text-[24px] leading-tight  md:leading-[52px] font-black break-words">
+                                <div className="font-britanicaBlack pt-[12px] max-sm:pt-[4px] flex items-center justify-center max-sm:justify-center gap-3 text-[40px] leading-tight  md:leading-[52px] font-black break-words">
                                     <span className="text-white">Services</span>
                                     <span className="text-[#F74B1C]">Different?</span>
                                 </div>
                                 <div className="font-britanicaRegular max-sm:text-center text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
-                                    As a leading e-commerce web and app development company in the USA, we analyze your business requirements and make improvements to your business schema for business logistics optimization.
+                                We are a well-established e-commerce web and app development company in the USA, that analyses your business requirements and makes improvements to your business schema for business logistics optimization.
                                 </div>
                                 <div className="flex flex-wrap justify-start max-sm:justify-center items-center gap-6 max-sm:gap-2">
                                     <div className="pt-4 sm:pt-6">

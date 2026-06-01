@@ -27,7 +27,7 @@ const FacilitiesMobile = () => {
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
                         <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            As a leading mobile app development company in the USA, we provide quality solutions. Our agile approach brings your app idea to life with speed. Our team includes consultants, designers, developers, and QA specialists for every development stage.
+                        As a forward-thinking digital product studio based in the USA, we build impactful, scalable applications. Our establishment works on a structured workflow that works overtime to convert your vision into a sleek, easy-to-use mobile app. Our maestros: expert product consultants, UI/UX designers, developers, and quality analysts design, draft, and implement your apps for 100% validty and performance. 
                         </div>
                     </div>
 

@@ -14,6 +14,7 @@ import GeneralHeroSection from "../components/general-hero-section";
 import EcommerceTabsSection from "../components/ecommerce-tabs-section";
 import WhatMakesEcommerce from "../components/what-makes-ecommerce";
 import EcommerceCta from "../components/ecommerce-cta";
+import PlatformExpertiseSection from "../components/platform-expertise";
 
 const ecommerceSchema = {
   "@context": "https://schema.org",
@@ -64,6 +65,7 @@ Tech Reforms is a pioneering e-commerce development agency that offers affordabl
             {/* <StepperFrom /> */}
             <EcommerceTabsSection />
             <WhatWeDoEcommerceSection />
+            <PlatformExpertiseSection />
             <CaseStudiesEcommerceSection />
             <WhatMakesEcommerce />
             <FaqEcommerceSection />

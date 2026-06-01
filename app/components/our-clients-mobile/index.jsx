@@ -20,7 +20,7 @@ const OurClientsMobile = () => {
                         </div>
                         <div className="col-span-12 md:col-span-12 text-center">
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                                From startups to established enterprises, we’ve partnered with businesses of all sizes across various industries. These achievements represent only a glimpse of the impactful work we continue to deliver for our clients.
+                            We’ve worked with many businesses across industries and growth stages, both ambitious startups and established enterprises. Here are some of the many snapshots of the meaningful results we continue to create for our clients every day.
                             </div>
                         </div>
                     </div>

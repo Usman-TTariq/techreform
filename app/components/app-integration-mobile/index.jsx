@@ -4,20 +4,24 @@ import CapsuleLabel from "../common/capsule-label";
 const AppIntegrationMobile = () => {
     const integrations = [
         {
-            title: "AI & ML",
-            desc: "We utilize AI & ML technologies to build smarter mobile applications with personalized user experiences, advanced security, and intelligent automation. From predictive analytics to smart recommendations, our solutions help analyze user behavior and deliver relevant content in real time. AI integration also enhances features like chat support, translation, and voice-enabled interactions.",
+            title: "App Integration Accuracy",
+            desc: "At Tech Reforms, we don’t develop apps; We offer solutions. Our experts build apps that are 10x smarter, safer, and easier to use than average apps on the market. The end-products simply improve performance, strengthen security, and create experiences by integrating the right technology.",
+        },
+        {
+            title: "AI & Machine Learning",
+            desc: "We use AI and machine learning to help apps think ahead. Our teams build features that respond in real time. This means it offers both personalized recommendations and behavior-based insights. AI also powers chat support, smart search, translations, and voice interactions for more intuitive and useful apps.",
         },
         {
             title: "Voice Command Interface",
-            desc: "Enhance user convenience with voice-enabled functionality powered by NLP and speech recognition. We integrate seamless voice command systems that allow hands-free interaction and faster task completion. This improves accessibility and enables compatibility with smart assistants like Siri and Google Assistant.",
+            desc: "Voice features aren’t just trendy; they improve convenience and accessibility. We integrate reliable speech recognition and natural language processing, reliable navigation, and complete availability of hands-free task management. Your app can also connect smoothly with assistants like Siri and Google Assistant.",
         },
         {
             title: "AR & VR",
-            desc: "We integrate AR & VR technologies to create immersive and interactive mobile experiences. Whether it's product visualization, virtual tours, or interactive learning, these features boost engagement and provide users with a more dynamic digital environment aligned with modern trends.",
+            desc: "We integrate AR and VR in practical ways for brands that want immersive experiences. Our immersive apps can host product previews, virtual tours, training simulations, and interactive learning. The goal is simple: higher engagement and memorable digital experiences.",
         },
         {
             title: "Blockchain",
-            desc: "Our blockchain integration ensures secure, transparent, and decentralized mobile app solutions. From smart contracts to secure transactions and data protection, we implement blockchain technology to enhance trust, efficiency, and reliability in your app’s backend system.",
+            desc: "When security and transparency matter, blockchain makes a difference. We implement it for secure transactions, data protection, and smart contracts to help your app build trust and keep operations efficient behind the scenes.",
         },
     ]
 
@@ -30,7 +34,7 @@ const AppIntegrationMobile = () => {
                             <CapsuleLabel firstWord="APP" secondWord="INTEGRATION" />
                         </div>
                         <div className="font-britanicaRegular pt-[18px] text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed max-sm:text-center">
-                            Our mobile app solutions integrate advanced technologies to enhance performance, security, and user experience—delivering smarter, faster, and more engaging digital products.
+                        Our mobile app solutions come with new and intuitive technologies integrated into them for better performance, security, and user experience.
                         </div>
                     </div>
                     <div className="col-span-7 max-lg:col-span-12 max-sm:mx-auto max-sm:text-center">

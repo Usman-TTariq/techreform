@@ -22,7 +22,7 @@ const EcommerceCta = () => {
                             <span className="text-[#F74B1C]">Now!</span>
                         </div>
                         <div className="font-britanicaRegular max-sm:text-center text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full leading-relaxed">
-                            Hire our e-commerce mobile app company USA to get hassle-free e-commerce store development that matches your needs. Whether you are a startup, SME, or an enterprise-grade organization, we help you accelerate your e-commerce growth in a short period.
+                        Hire our e-commerce mobile app company USA to get hassle-free e-commerce store development that matches your needs. Whether you are a startup, SME, or an enterprise-grade organization, we help you accelerate your e-commerce growth in a short period.
                         </div>
                         <div className="pt-4 sm:pt-[30px] flex justify-start max-sm:justify-center">
                             <Button text="Hire a E-commerce Developer" icon={false} onClick={() => setPopupOpen(true)} />

@@ -88,13 +88,18 @@ const WhatWeDoEcommerceSection = () => {
 
     const whyPartner = [
         {
-            title: "WooCommerce Development",
-            desc: "Want to turn your WordPress site into an online store? We make it easy with WooCommerce. At Tech Reforms, we design and develop user-friendly eCommerce websites that are simple to manage and ready to grow with your business.",
+            title: "Dynamic Storefronts",
+            desc: "Hire Expert E-commerce Developers to get hassle-free development of e-commerce platforms that offer high conversion and sales.",
             icon: <AiIcon className="w-[40px]" />,
         },
         {
-            title: "Open-Cart Framework Solutions",
-            desc: "We also work with leading open-source technologies to build flexible, cost-effective eCommerce platforms. This means you get a solution that’s customizable, scalable, and built around your unique business goals.",
+            title: "High Visibility",
+            desc: "Every platform requires consistent traffic to offer high sales or profits. Our post-launch support and marketing solutions help get and maintain high visibility.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Industry-Focused Solutions",
+            desc: "Our Industry-specific e-commerce websites are designed to meet your business needs, address unique market demands, and drive higher user engagement.",
             icon: <AiIcon className="w-[40px]" />,
         },
         // {
@@ -217,8 +222,8 @@ const WhatWeDoEcommerceSection = () => {
                         <span className="text-white"> With Us</span>
                     </div>
                     <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">
-                        As a leading E-commerce platform development agency, we take pride in the platforms we deliver. Modern designs, an easy-to-understand user flow, and SEO-friendly end-to-end e-commerce websites.<br />
-                        So, begin your journey to the smartest and most accessible dedicated team of scalable app developers by clicking a few buttons and paying an upfront fee.
+                    As a leading E-commerce development agency, we take pride in the platforms we deliver. Modern designs, an easy-to-understand user flow, and SEO-friendly end-to-end digital solutions.<br />
+                    So, begin your journey to the smartest and most accessible team of expert developers by clicking a few buttons and paying an upfront fee.
                     </div>
                 </div>
             </div>

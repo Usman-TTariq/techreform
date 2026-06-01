@@ -15,11 +15,11 @@ const CaseStudiesSection = () => {
                 <div className="grid grid-cols-12 justify-between gap-4">
                     <div className="col-span-12 lg:col-span-10">
                         <div className="font-britanicaBlack text-[28px] max-sm:text-center leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[42px] font-black pb-4 sm:pb-[26px] text-left">
-                            <span className="text-[#F74B1C]">Case Studies </span>
-                            <span className="text-white">That Show How Our </span>
+                            <span className="text-[#F74B1C]">Case Study </span>
+                            {/* <span className="text-white">That Show How Our </span>
                             <br className="max-sm:hidden"/>
                             <span className="text-white">Apps Perform in the </span>
-                            <span className="text-[#F74B1C]">Real World </span>
+                            <span className="text-[#F74B1C]">Real World </span> */}
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-2 max-sm:mx-auto max-sm:text-center">

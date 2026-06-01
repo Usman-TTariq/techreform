@@ -86,12 +86,7 @@ const DetailFormSection = ({ formIntro = undefined }) => {
             </div>
           </div>
           <div className="col-span-12 lg:col-span-4 order-2">
-            {formIntro && (
-              <p className="font-britanicaRegular text-white/85 text-sm sm:text-base mb-4 sm:mb-6">
-                {formIntro}
-              </p>
-            )}
-            <FreeConsultationForm />
+            <FreeConsultationForm intro={formIntro} />
           </div>
           <div className="col-span-12 lg:col-span-4 my-auto order-3 pt-6 lg:pt-0 min-w-0 pl-2 sm:pl-0">
             <div className="pl-0 md:pl-6 lg:pl-[30px] overflow-visible">

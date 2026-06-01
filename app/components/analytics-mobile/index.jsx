@@ -33,13 +33,13 @@ const AnalyticsMobile = () => {
                                     <div className="flex justify-start gap-3 sm:gap-[18px] pb-6 sm:pb-[32px]">
                                         <div className="min-w-0">
                                             <div className="font-britanicaBlack font-bold text-[20px] sm:text-[28px] md:text-[32px] font-regular text-white text-left pb-1 sm:pb-[5px] break-words max-sm:text-center">
-                                                Mobile App Development - Trends & Market Growth (2020-2026)
+                                            Mobile Development Growth Statistics from (2020 to Present)
                                             </div>
                                             <div className="font-britanicaRegular text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed max-sm:text-center">
-                                                Mobile apps have transformed how businesses engage with customers, offering personalized experiences and streamlined services. Regardless of industry, a well-designed mobile app can enhance brand loyalty and drive revenue. As a leading mobile app development company, Tech Reforms ensures your app is built with a robust strategy and cutting-edge technologies.
+                                            Mobile applications have readily simple automation and tweaks. In today's competitive business landscape, one concept still remains intact: a thoughtfully built app can significantly improve customer relationships and boost revenue. As a dedicated mobile app development partner, Tech Reforms combines strategic planning with modern technologies to create future-ready solutions.
                                             </div>
                                             <div className="font-britanicaRegular pt-[30px] text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed max-sm:text-center">
-                                                Whether you need a consumer-facing app or an enterprise solution, partner with us to achieve exceptional results. Our skilled mobile app development team offers full customization to meet your specific business needs.
+                                            Regardless of the scale, we help businesses launch apps that perform. Our experienced development team tailors every feature to align perfectly with your goals, ensuring measurable impact and long-term scalability.
                                             </div>
                                         </div>
                                     </div>

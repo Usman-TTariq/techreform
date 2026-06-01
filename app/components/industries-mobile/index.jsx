@@ -14,52 +14,40 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
   const [popupOpen, setPopupOpen] = useState(false);
   const industries = [
     {
-      title: "Financing",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Health & Wellness",
+      description: "Custom applications improve patient engagement, telemedicine, appointment scheduling, and health monitoring, thereby completely innovating care delivery.",
       image: "/images/industries1.png",
       link: "/financing",
     },
     {
-      title: "Travel",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Retail",
+      description: "Scalable apps simply boost sales, track inventory accurately, offer personalized shopping, and gain customer loyalty and cohesive results.",
       image: "/images/industries2.png",
       link: "/travel",
     },
     {
-      title: "E-Commerce",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Finance",
+      description: "Secure applications enable effective payments, investments, budgeting, and financial insights, while maintaining detailed compliance and user trust.",
       image: "/images/industries3.png",
       link: "/e-commerce",
     },
     {
-      title: "Education",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Education & E-Learning",
+      description: "Interactive apps that host intuitive online courses, assessments, and learning tools for students, teachers, and institutions.",
       image: "/images/industries4.png",
       link: "/education",
     },
     {
-      title: "Travel",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Hospitality",
+      description: "Mobile solutions that simplify bookings, itinerary management, and bespoke experiences for travelers and hospitality businesses worldwide.",
       image: "/images/industries1.png",
       link: "/travel",
     },
     {
-      title: "E-Commerce",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
+      title: "Food & Beverage",
+      description: "Modern-day apps run the online ordering. It offers smart delivery tracking and loyalty programs, making it easy for both restaurants and customers.",
       image: "/images/industries3.png",
       link: "/e-commerce",
-    },
-    {
-      title: "Financing",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-      image: "/images/industries2.png",
-      link: "/financing",
-    },
-    {
-      title: "Travel",
-      description: "Revolutionize banking, payments, and investments with our cutting-edge fintech solutions.",
-      image: "/images/industries4.png",
-      link: "/travel",
     },
   ];
 

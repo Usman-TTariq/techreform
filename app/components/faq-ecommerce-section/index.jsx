@@ -7,49 +7,19 @@ import { ChevronDown } from "lucide-react";
 const FAQ_ITEMS = [
     {
         id: 1,
-        question: "What is the cost of an e-commerce website development?",
+        question: "How long will it take to build my e-commerce website?",
         answer: (
             <>
-                There isn&apos;t a fixed price, as the final cost depends on features, platform selection, integrations, and the level of customization. The estimated cost range is:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Normal Development:</strong> $2,500 – $7,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Medium Development:</strong> $7,000 – $20,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Advanced Development:</strong> $25,000 onward</span>
-                    </li>
-                </ul>
-                <p className="mt-4">For an accurate cost estimate, contact our e-commerce development experts.</p>
+                The timeline ranges from 3 to 8 weeks, depending on complexity, number of products, custom features, and required integrations. Note that if your project is custom, it may take longer than usual.
             </>
         ),
     },
     {
         id: 2,
-        question: "How long will it take to develop my e-commerce website?",
+        question: "Which e-commerce shops do you specialize in?",
         answer: (
             <>
-                The development timeline depends on the store&apos;s complexity, number of products, custom features, and integrations.
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Simple E-commerce Store:</strong> 4–6 weeks</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Medium E-commerce Store:</strong> 2–3 months</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Advanced E-commerce Platform:</strong> 4–6 months</span>
-                    </li>
-                </ul>
-                <p className="mt-4">We ensure timely delivery without compromising performance or quality.</p>
+                We work with leading platforms such as Shopify, WooCommerce, and BigCommerce. These are the most popular platforms used by major enterprises.
             </>
         ),
     },
@@ -58,37 +28,7 @@ const FAQ_ITEMS = [
         question: "Do you offer custom e-commerce development services?",
         answer: (
             <>
-                Yes, we offer fully customized e-commerce development services tailored to your business needs and operational requirements. Our services include:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Shopify Development</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>WooCommerce Development</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Magento / Adobe Commerce Development</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Custom Ecommerce Solutions</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Payment Gateway Integration</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>API Integration</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>End-to-End E-commerce Development</span>
-                    </li>
-                </ul>
+                Yes, we offer fully customized e-commerce development services tailored to your business needs and operational requirements.
             </>
         ),
     },

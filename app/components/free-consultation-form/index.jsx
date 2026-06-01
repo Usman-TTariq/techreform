@@ -18,7 +18,7 @@ function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email ?? "");
 }
 
-const FreeConsultationForm = () => {
+const FreeConsultationForm = ({ intro }) => {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
@@ -107,6 +107,11 @@ const FreeConsultationForm = () => {
   return (
     <div className="rounded-xl bg-black p-4 sm:p-5 md:p-[20px]">
       <form onSubmit={handleSubmit}>
+        {intro && (
+          <p className="font-britanicaRegular text-white/85 text-sm sm:text-base pb-4 sm:pb-5 text-center">
+            {intro}
+          </p>
+        )}
         <div className="pb-2 sm:pb-[10px] flex items-center justify-center">
           <CapsuleLabel firstWord="Schedule a free consultation" secondWord="" />
         </div>

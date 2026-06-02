@@ -10,7 +10,7 @@ const FounderMsgSection = () => {
               <Image
                 className="w-[100%]"
                 src="/images/founder-img.png"
-                alt="Hero Background"
+                alt="Portrait of Tech Reforms founder"
                 width={1000}
                 height={1000}
               />

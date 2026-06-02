@@ -28,11 +28,11 @@ const ReactNativeCaseStudiesSection = () => {
         <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
           <div className="col-span-12 md:col-span-6">
             <div className="h-full flex items-center justify-center">
-              <Image className="w-full max-w-[280px] md:max-w-none mx-auto" src="/images/iphone.png" alt="iPhone mockup showing mobile app case study screens" width={1000} height={1000} />
+              <Image className="w-full max-w-[280px] md:max-w-none mx-auto" src="/images/iphone.png" alt="iPhone mockup showing React Native app case study screens" width={1000} height={1000} />
             </div>
           </div>
           <div className="col-span-12 md:col-span-6">
-            <Image className="w-full my-auto" src="/images/phones.png" alt="Multiple smartphone mockups for app case studies" width={1000} height={1000} />
+            <Image className="w-full my-auto" src="/images/phones.png" alt="Multiple smartphone mockups for React Native app case studies" width={1000} height={1000} />
             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
             Take a look at what we have built. Our portfolio includes React Native apps across mobile commerce, healthcare platforms, fintech tools, and more, each one a reflection of the care and craft our team puts into every project.
             </div>

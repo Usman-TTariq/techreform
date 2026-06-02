@@ -1,85 +1,150 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
+import AppDevelopmentCostTable from "./app-development-cost-table";
+
+const FaqLink = ({ href, children }) => (
+    <Link href={href} className="text-[#F74B1C] hover:underline">
+        {children}
+    </Link>
+);
 
 const FAQ_ITEMS = [
     {
         id: 1,
-        question: "What is the cost of mobile app development?",
+        question: "How much does mobile app development cost in 2026?",
         answer: (
             <>
-                There isn&apos;t a definitive answer, as the final cost depends on the selected features, the domain, and development logistics. The simple cost of such a project can range from:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Normal development:</strong> $3,000–$8,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Medium development:</strong> $8,000–$20,000</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Advance Development:</strong> $25,000 onward (due to custom features, API integration, and scalable backend systems)</span>
-                    </li>
-                </ul>
-                <p className="mt-4">For further discussion of development costs, contact our expert team.</p>
+                <p>
+                    $3K–$80K+ depending on platform, features, and complexity. See our full cost breakdown below.
+                </p>
+                <AppDevelopmentCostTable />
             </>
         ),
     },
     {
         id: 2,
-        question: "How long will it take you to develop my mobile app?",
+        question: "How long does it take to build a mobile app?",
         answer: (
             <>
-                A standard app can take about a few weeks to a month, or even more, as the timeframe depends on the complexity, system OS, and the scale of the project or all.
+                <p>Timelines vary by scope:</p>
                 <ul className="list-none mt-3 space-y-2">
                     <li className="flex gap-2">
                         <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Simple App Timeframe:</strong> 4–8 weeks (basic features incorporated)</span>
+                        <span>
+                            <strong className="text-white">Simple apps:</strong> 4–8 weeks — ideal for an{" "}
+                            <FaqLink href="/mvp">MVP launch</FaqLink>
+                        </span>
                     </li>
                     <li className="flex gap-2">
                         <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Medium App Timeframe:</strong> 2–4 months (e.g. special additions such as API integration and backend development)</span>
+                        <span><strong className="text-white">Medium apps (with API/backend):</strong> 2–4 months</span>
                     </li>
                     <li className="flex gap-2">
                         <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span><strong className="text-white">Advance App Timeframe:</strong> 4–6 months (complex functionality, scalable architecture)</span>
+                        <span>
+                            <strong className="text-white">Complex/enterprise apps:</strong> 4–6 months — see our{" "}
+                            <FaqLink href="/erp">ERP development</FaqLink> approach for large-scale builds
+                        </span>
                     </li>
                 </ul>
+                <p className="mt-4">
+                    We work in agile cycles so you see real progress early — no waiting until the end to find out what you&apos;re getting.
+                </p>
             </>
         ),
     },
     {
         id: 3,
-        question: "Do you offer custom mobile app development services?",
+        question: "Do you build both iOS and Android apps?",
         answer: (
             <>
-                Yes, we definitely do offer custom app development services. Most businesses require customization to meet the requirements of certain logistics and business operations. We offer:
-                <ul className="list-none mt-3 space-y-2">
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Android Apps</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>iOS Apps</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>Customized Mobile Apps</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>A/B Testing</span>
-                    </li>
-                    <li className="flex gap-2">
-                        <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                        <span>End-to-end Development</span>
-                    </li>
-                </ul>
+                Yes. We develop native <FaqLink href="/ios">iOS (Swift)</FaqLink>, native Android (Kotlin), and{" "}
+                <FaqLink href="/cross-platform">cross-platform apps</FaqLink> using{" "}
+                <FaqLink href="/react-native">React Native</FaqLink> and <FaqLink href="/flutter">Flutter</FaqLink>. We recommend the right approach based on your audience, budget, and performance requirements.
+            </>
+        ),
+    },
+    {
+        id: 4,
+        question: "What industries do you serve?",
+        answer: (
+            <>
+                We&apos;ve built apps across{" "}
+                Health &amp; Wellness,{" "}
+                Retail, Finance, Education, Hospitality,{" "}
+                Food &amp; Beverage, and more. With 30+ industry verticals covered and{" "}
+                350+ live apps launched, we understand the unique compliance and UX demands of each sector.
+            </>
+        ),
+    },
+    {
+        id: 5,
+        question: "Do you offer custom mobile app development, or only templates?",
+        answer: (
+            <>
+                100% custom. We don&apos;t use pre-built templates. Every app is designed and developed from scratch — custom UI/UX, custom backend, tailored features — built around your specific business goals. Explore our{" "}
+                <FaqLink href="/portfolio">portfolio</FaqLink> to see recent work.
+            </>
+        ),
+    },
+    {
+        id: 6,
+        question: "What technologies do you use for mobile app development?",
+        answer: (
+            <>
+                Our stack includes <FaqLink href="/react-native">React Native</FaqLink>, <FaqLink href="/flutter">Flutter</FaqLink>,{" "}
+                <FaqLink href="/ios">Swift (iOS)</FaqLink>, Kotlin (Android), Node.js backend, and integrations with AI/ML,{" "}
+                <FaqLink href="/ar-development">AR</FaqLink>/<FaqLink href="/vr-development">VR</FaqLink>, Blockchain, and Voice Command interfaces. We pick the right stack for your use case, not the one that&apos;s easiest for us.
+            </>
+        ),
+    },
+    {
+        id: 7,
+        question: "Will my app be scalable as my business grows?",
+        answer: (
+            <>
+                Yes. Scalability is built into the architecture from day one. Whether you&apos;re launching an{" "}
+                <FaqLink href="/mvp">MVP</FaqLink> or rolling out enterprise-wide with our{" "}
+                <FaqLink href="/erp">ERP solutions</FaqLink>, we design systems that can handle growing users, features, and traffic without rebuilding.
+            </>
+        ),
+    },
+    {
+        id: 8,
+        question: "Do you provide post-launch support and maintenance?",
+        answer: (
+            <>
+                Absolutely. After launch, we offer ongoing maintenance, performance monitoring, security updates, and feature additions through{" "}
+                <FaqLink href="/staff-augmentation">staff augmentation</FaqLink> and dedicated support. You won&apos;t be left without support after go-live.
+            </>
+        ),
+    },
+    {
+        id: 9,
+        question: "Can you integrate AI features into my mobile app?",
+        answer: (
+            <>
+                Yes — AI &amp; ML is one of our core integration offerings. We build smart features like personalized recommendations, real-time responses, smart search, voice interactions, and behavior-based insights directly into your app. See our{" "}
+                AI-native mobile development capabilities for details.
+            </>
+        ),
+    },
+    {
+        id: 10,
+        question: "How do I get started with Tech Reforms?",
+        answer: (
+            <>
+                Simple — fill out the{" "}
+                <FaqLink href="/">contact form</FaqLink> or call{" "}
+                <a href="tel:+15822335015" className="text-[#F74B1C] hover:underline">
+                    (582) 233-5015
+                </a>
+                . We schedule a discovery call, run a consulting session, and prepare a detailed proposal. No commitment needed to start the conversation. You can also{" "}
+                <FaqLink href="/about">learn more about our team</FaqLink> before reaching out.
             </>
         ),
     },

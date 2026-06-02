@@ -18,6 +18,9 @@ import AnalyticsMobile from "../components/analytics-mobile";
 import AppIntegrationMobile from "../components/app-integration-mobile";
 import OurClientsMobile from "../components/our-clients-mobile";
 import TechnologyStackMobile from "../components/technology-stack-mobile";
+import FlutterVsReactNativeSection from "../components/flutter-vs-react-native-section";
+import HipaaCompliantSection from "../components/hipaa-compliant";
+import EngagementModelSection from "../components/engagement-model-section";
 
 export const dynamic = "force-dynamic";
 
@@ -62,10 +65,13 @@ const Mobile = () => {
             <MobileHeroSection />
             <OurImpactBoxesSection />
             <AppDevelopmentSection />
+            <FlutterVsReactNativeSection />
             <StepperFrom />
             <HowWeBuildMobileSection />
             <WaitingForYouMobile/>
+            <EngagementModelSection />
             <IndustriesMobile firstWord="We Have" secondWord="Served" thirdWord="Industries" />
+            <HipaaCompliantSection />
             <FacilitiesMobile/>
             <AnalyticsMobile />
             <AppIntegrationMobile />

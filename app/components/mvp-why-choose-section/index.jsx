@@ -68,7 +68,7 @@ const MvpWhyChooseSection = () => {
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
                 src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp"
-                alt="Soft purple abstract gradient background decoration"
+                alt="Decorative purple gradient behind why choose us for MVP development section"
                 width={1000}
                 height={1000}
             />

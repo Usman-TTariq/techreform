@@ -23,7 +23,7 @@ const TechnologyStackMobile = () => {
                         <Image
                             className="w-full"
                             src="/images/techstack.png"
-                            alt="Hero Background"
+                            alt="Mobile app development technology stack logos and tools"
                             width={1000}
                             height={1000}
                         />

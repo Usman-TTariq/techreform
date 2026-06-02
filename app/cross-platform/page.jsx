@@ -8,6 +8,7 @@ import CrossPlatformProcessSection from "../components/cross-platform-process-se
 import CrossPlatformWhyChooseSection from "../components/cross-platform-why-choose-section";
 import CrossPlatformCaseStudiesSection from "../components/cross-platform-case-studies-section";
 import FaqCrossPlatformSection from "../components/faq-cross-platform-section";
+import FlutterVsReactNativeSection from "../components/flutter-vs-react-native-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
@@ -44,6 +45,7 @@ const CrossPlatform = () => {
       <CrossPlatformWhatWeOfferSection />
       <CrossPlatformProcessSection />
       <CrossPlatformWhyChooseSection />
+      <FlutterVsReactNativeSection />
       <CrossPlatformCaseStudiesSection />
       <FaqCrossPlatformSection />
       <TestimonialSection />

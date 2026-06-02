@@ -67,7 +67,7 @@ const LpAppPlatform = () => {
                             <Image
                                 className="w-full"
                                 src="https://ik.imagekit.io/sajib4aqc/bottom_wzqado.webp"
-                                alt="Supporting illustration for Tech Reforms website section"
+                                alt="App platform optimization and migration services illustration"
                                 width={1000}
                                 height={1000}
                             />
@@ -78,7 +78,7 @@ const LpAppPlatform = () => {
                             <Image
                                 className="w-full mb-[20px]"
                                 src="https://ik.imagekit.io/sajib4aqc/Background.png"
-                                alt="Supporting illustration for Tech Reforms website section"
+                                alt="Cross-platform app development background graphic"
                                 width={1000}
                                 height={1000}
                             />

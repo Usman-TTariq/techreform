@@ -162,7 +162,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/phone-icon.png"
-                                    alt="Phone contact icon"
+                                    alt="Phone icon for support contact"
                                     width={1000}
                                     height={1000}
                                 />
@@ -176,7 +176,7 @@ const Footer = () => {
                                 <Image
                                     className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
                                     src="/images/phone-icon.png"
-                                    alt="Phone contact icon"
+                                    alt="Phone icon for sales contact"
                                     width={1000}
                                     height={1000}
                                 />

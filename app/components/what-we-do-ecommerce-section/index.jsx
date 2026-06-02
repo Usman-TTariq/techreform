@@ -114,7 +114,7 @@ const WhatWeDoEcommerceSection = () => {
             <Image
                 className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
                 src="/images/whatwedobk.png"
-                alt="Soft purple gradient decorative background"
+                alt="Decorative purple gradient behind ecommerce development services section"
                 width={1000}
                 height={1000}
             />

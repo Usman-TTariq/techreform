@@ -23,7 +23,7 @@ const CaseStudiesErpSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/aa1.png"
-                                alt="ERP case study"
+                                alt="ERP implementation case study dashboard showcase"
                                 width={1000}
                                 height={1000}
                             />
@@ -34,7 +34,7 @@ const CaseStudiesErpSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/aa3.png"
-                                alt="ERP case study"
+                                alt="ERP case study workflow and analytics showcase"
                                 width={1000}
                                 height={1000}
                             />

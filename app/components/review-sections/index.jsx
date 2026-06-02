@@ -11,23 +11,24 @@ const ReviewSections = () => {
   const cards = [
     {
       type: "clutch",
+      label: "Clutch reviews",
       rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]",
     },
     {
       type: "stat",
-      value: "3+ Years",
+      value: "5+ Years",
       label: "Proven Track Record",
       rounded: "",
     },
     {
       type: "stat",
-      value: "1.5k+",
+      value: "350+",
       label: "Projects We've Done",
       rounded: "",
     },
     {
       type: "stat",
-      value: "3 Mins",
+      value: "3 Mins",  
       label: "Average Answer Time",
       rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]",
     },
@@ -38,7 +39,7 @@ const ReviewSections = () => {
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
         src="/images/reviewEllipse.png"
-        alt="Soft gradient ellipse behind customer reviews"
+        alt="Soft gradient ellipse behind customer reviews section"
         width={1000}
         height={1000}
       />
@@ -62,14 +63,14 @@ const ReviewSections = () => {
               <Image
                 className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
                 src="/images/hover-logo.png"
-                alt="Client or partner logo on review card"
+                alt={`Tech Reforms logo accent for ${card.label} review card`}
                 width={1000}
                 height={1000}
               />
               <Image
                 className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
                 src="/images/hovertext.png"
-                alt="Decorative hover label graphic"
+                alt={`Decorative hover highlight for ${card.label}`}
                 width={1000}
                 height={1000}
               />
@@ -95,7 +96,7 @@ const ReviewSections = () => {
                     <div
                       className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] transition-all duration-300 ${displayedCard === index ? "text-white" : "text-[#373636]"}`}
                     >
-                      20K reviews
+                      4.9 reviews
                     </div>
                   </div>
                 </>

@@ -31,7 +31,7 @@ const IotCaseStudiesSection = () => {
               <Image
                 className="w-full max-w-[280px] md:max-w-none mx-auto"
                 src="/images/iphone.png"
-                alt="iPhone mockup showing mobile app case study screens"
+                alt="iPhone mockup showing IoT app case study screens"
                 width={1000}
                 height={1000}
               />
@@ -41,7 +41,7 @@ const IotCaseStudiesSection = () => {
             <Image
               className="w-full my-auto"
               src="/images/phones.png"
-              alt="Multiple smartphone mockups for app case studies"
+              alt="Multiple smartphone mockups for IoT app case studies"
               width={1000}
               height={1000}
             />

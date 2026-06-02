@@ -13,21 +13,21 @@ const MobileHeroSection = () => {
             <Image
                 className="absolute top-[15%] left-[50%] translate-x-[-50%] w-[45%] sm:w-[32%] md:w-[28%] lg:w-[35%] sm:left-[60%] max-w-[200px] sm:max-w-none hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
-                alt="Supporting illustration for Tech Reforms website section"
+                alt="Mobile app mockup for custom mobile app development hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[22%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
-                alt="Decorative abstract graphic accent on hero"
+                alt="Decorative abstract accent on mobile app development hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[22%] sm:w-[28%] md:w-[30%] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
-                alt="Decorative frame graphic on hero section"
+                alt="Decorative frame on mobile app development hero"
                 width={1000}
                 height={1000}
             />
@@ -59,7 +59,7 @@ const MobileHeroSection = () => {
                     <Image
                         className="w-[70%] max-w-[280px] h-auto"
                         src="https://ik.imagekit.io/sajib4aqc/mobilehero_luf4jr.webp"
-                        alt="Supporting illustration for Tech Reforms website section"
+                        alt="Mobile app mockup on mobile viewport for app development hero"
                         width={1000}
                         height={1000}
                     />

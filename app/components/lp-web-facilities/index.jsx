@@ -12,7 +12,7 @@ const LpWebFacilities = () => {
             <Image
                 className="w-full absolute top-0 left-0 h-full object-cover"
                 src="/images/facilitiesbk.png"
-                alt="Facilities Background"
+                alt="Background graphic for why choose us web development landing section"
                 width={1000}
                 height={1000}
             />

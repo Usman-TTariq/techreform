@@ -10,7 +10,7 @@ const WaitingForYouMobile = () => {
                     <Image
                         className="w-[550px] max-sm:pt-[30px] absolute top-[50%] translate-y-[-50%] right-0 max-md:relative max-md:top-0 max-md:translate-y-0  max-md:w-[70%] max-md:mx-auto"
                         src="https://ik.imagekit.io/sajib4aqc/waiting_llduse.webp"
-                        alt="Hero Background"
+                        alt="Free app estimation illustration for mobile development CTA"
                         width={1000}
                         height={1000}
                     />

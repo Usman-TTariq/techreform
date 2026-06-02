@@ -13,7 +13,7 @@ const WhoWeAreStartup = () => {
       <Image
         className="absolute -top-[20%] left-0 w-[50%] sm:w-[40%] md:w-[35%] opacity-60"
         src="https://ik.imagekit.io/sajib4aqc/bk1_qqglcc.webp"
-        alt="Warm orange abstract light burst behind Who We Are section"
+        alt="Warm orange accent behind Who We Are startup development section"
         width={1000}
         height={1000}
       />

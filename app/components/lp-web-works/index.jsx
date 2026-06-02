@@ -11,7 +11,7 @@ const LpWebWorks = () => {
                             <Image
                                 className="w-full scale-250 max-sm:scale-100 max-sm:pt-[0px] relative z-10 pt-[50px]"
                                 src="https://ik.imagekit.io/sajib4aqc/Laptop2_ueqicm.webp"
-                                alt="Facilities Background"
+                                alt="Laptop mockup for how web development works section"
                                 width={1000}
                                 height={1000}
                                 style={{ transformOrigin: 'left' }}
@@ -23,7 +23,7 @@ const LpWebWorks = () => {
                             <Image
                                 className="w-full absolute top-0 left-0 h-full"
                                 src="/images/facilitiesbk.png"
-                                alt="Facilities Background"
+                                alt="Background graphic for how it works web development section"
                                 width={1000}
                                 height={1000}
                             />

@@ -49,7 +49,7 @@ const LpAppPartnership = () => {
                                             <Image
                                                 className="w-[70px]"
                                                 src="/images/earth.png"
-                                                alt="Hero Background"
+                                                alt={`${partner.title} partnership icon`}
                                                 width={1000}
                                                 height={1000}
                                             />

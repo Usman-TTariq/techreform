@@ -119,17 +119,17 @@ const PlatformExpertiseSection = () => {
                 {/* <div className="grid grid-cols-12 gap-4 sm:gap-4 pt-8 sm:pt-12 md:pt-[90px] items-center justify-center">
                     <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
                         <div>
-                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user1.png" alt="Customer testimonial portrait" width={1000} height={1000} />
+                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user1.png" alt="Platform expertise client testimonial portrait one" width={1000} height={1000} />
                         </div>
                     </div>
                     <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
                         <div>
-                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user2.png" alt="Customer testimonial portrait" width={1000} height={1000} />
+                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user2.png" alt="Platform expertise client testimonial portrait two" width={1000} height={1000} />
                         </div>
                     </div>
                     <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
                         <div>
-                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user3.png" alt="Customer testimonial portrait" width={1000} height={1000} />
+                            <Image className="w-[90%] max-w-[200px] sm:max-w-none m-auto" src="/images/user3.png" alt="Platform expertise client testimonial portrait three" width={1000} height={1000} />
                         </div>
                     </div>
                 </div> */}

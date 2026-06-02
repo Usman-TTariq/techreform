@@ -13,14 +13,14 @@ const ArHeroSection = () => {
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[22%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
-                alt="Decorative abstract graphic accent on hero"
+                alt="Decorative abstract accent on AR development hero"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute bottom-0 left-0 w-[22%] sm:w-[28%] md:w-[30%] hidden sm:block"
                 src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
-                alt="Decorative frame graphic on hero section"
+                alt="Decorative frame on AR development hero"
                 width={1000}
                 height={1000}
             />
@@ -45,7 +45,7 @@ const ArHeroSection = () => {
                             <Image
                                 className="w-[80%] max-sm:w-[60%]"
                                 src="https://ik.imagekit.io/sajib4aqc/Group%202147225265.png"
-                                alt="Supporting illustration for Tech Reforms website section"
+                                alt="AR app development hero illustration"
                                 width={1000}
                                 height={1000}
                             />

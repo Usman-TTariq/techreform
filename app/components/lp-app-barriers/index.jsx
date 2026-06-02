@@ -86,7 +86,7 @@ const LpAppBarriers = () => {
                             <Image
                                 className="w-full"
                                 src="https://ik.imagekit.io/sajib4aqc/barrier_vvr0zl.webp"
-                                alt="Hero Background"
+                                alt="Illustration of common mobile app development barriers"
                                 width={1000}
                                 height={1000}
                             />

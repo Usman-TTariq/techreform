@@ -32,7 +32,7 @@ const CaseStudiesSection = () => {
                             <Image
                                 className="w-full max-w-[280px] md:max-w-none mx-auto"
                                 src="/images/iphone.png"
-                                alt="iPhone mockup showing mobile app case study screens"
+                                alt="iPhone mockup showing mobile app case study screens for general portfolio"
                                 width={1000}
                                 height={1000}
                             />
@@ -43,7 +43,7 @@ const CaseStudiesSection = () => {
                             <Image
                                 className="w-full my-auto"
                                 src="/images/phones.png"
-                                alt="Multiple smartphone mockups for app case studies"
+                                alt="Multiple smartphone mockups for mobile app case studies portfolio"
                                 width={1000}
                                 height={1000}
                             />
@@ -62,7 +62,7 @@ const CaseStudiesSection = () => {
                             <Image
                                 className="w-full"
                                 src="/images/backphone1.png"
-                                alt="Supporting illustration for Tech Reforms website section"
+                                alt="Case study app interface on phone mockup"
                                 width={1000}
                                 height={1000}
                             />
@@ -73,7 +73,7 @@ const CaseStudiesSection = () => {
                             <Image
                                 className="w-full"
                                 src="/images/phones1.png"
-                                alt="Supporting illustration for Tech Reforms website section"
+                                alt="Future-friendly app case study on multiple phone mockups"
                                 width={1000}
                                 height={1000}
                             />

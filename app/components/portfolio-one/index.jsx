@@ -12,7 +12,7 @@ const PortfolioOne = () => {
       <Image
         className="absolute top-[20%] right-[0px] w-[30%]"
         src="/images/bk.png"
-        alt="Portfolio Background"
+        alt="Decorative background for portfolio case studies section"
         width={1000}
         height={1000}
       />
@@ -41,7 +41,7 @@ const PortfolioOne = () => {
               <Image
                 className="w-[100%]"
                 src="/images/port1.png"
-                alt="Portfolio Project"
+                alt="TR HRMS web application portfolio screenshot"
                 width={1000}
                 height={1000}
               />
@@ -55,7 +55,7 @@ const PortfolioOne = () => {
               <Image
                 className="w-[100%]"
                 src="/images/port2.png"
-                alt="Portfolio Project"
+                alt="Finexa mobile app portfolio screenshot"
                 width={1000}
                 height={1000}
               />
@@ -105,7 +105,7 @@ const PortfolioOne = () => {
               <Image
                 className="w-[100%]"
                 src="https://ik.imagekit.io/sajib4aqc/port3_taye1m.webp"
-                alt="Portfolio Project"
+                alt="Apex Fitness mobile and web app portfolio screenshot"
                 width={1000}
                 height={1000}
               />

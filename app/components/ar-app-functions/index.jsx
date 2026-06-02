@@ -37,7 +37,7 @@ const ArAppFunctions = () => {
                     <Image
                         className="w-full scale-120 max-sm:hidden"
                         src="https://ik.imagekit.io/sajib4aqc/Group%202147225217.png"
-                        alt="AR App Functions"
+                        alt="Overview diagram of AR app functions we can build"
                         width={1000}
                         height={1000}
                     />
@@ -47,7 +47,7 @@ const ArAppFunctions = () => {
                                 <Image
                                     className="w-[280px] max-xl:hidden max-2xl:w-[190px] absolute top-[70%] max-2xl:top-[60%] -translate-y-1/2 left-[100%]"
                                     src="/images/firstpoint.png"
-                                    alt="AR App Functions"
+                                    alt="Connector graphic for Scene Detection AR function"
                                     width={1000}
                                     height={1000}
                                 />
@@ -61,14 +61,14 @@ const ArAppFunctions = () => {
                                 <Image
                                     className="w-[280px] max-xl:hidden max-2xl:w-[190px] absolute top-[70%] max-2xl:-left-[54%] -translate-y-1/2 -left-[80%] z-20"
                                     src="/images/thirdpoint.png"
-                                    alt="AR App Functions"
+                                    alt="Connector graphic for Image and Object Recognition AR function"
                                     width={1000}
                                     height={1000}
                                 />
                                 <div className="bg-white w-[350px] max-sm:w-full max-sm:hidden border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px]">
                                     <Image
                                         src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
-                                        alt="Supporting illustration for Tech Reforms website section"
+                                        alt="Background illustration for Image and Object Recognition AR function card"
                                         width={1000}
                                         height={1000}
                                         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -85,7 +85,7 @@ const ArAppFunctions = () => {
                                     <Image
                                         className="w-[280px] max-xl:hidden max-2xl:w-[180px] absolute top-[40%] -translate-y-1/2 left-[100%]"
                                         src="/images/secondpoint.png"
-                                        alt="AR App Functions"
+                                        alt="Connector graphic for Motion Tracking AR function on mobile"
                                         width={1000}
                                         height={1000}
                                     />
@@ -102,7 +102,7 @@ const ArAppFunctions = () => {
                                 <Image
                                     className="w-[280px] max-xl:hidden max-2xl:w-[180px] absolute top-[40%] -translate-y-1/2 left-[100%]"
                                     src="/images/secondpoint.png"
-                                    alt="AR App Functions"
+                                    alt="Connector graphic for Motion Tracking AR function"
                                     width={1000}
                                     height={1000}
                                 />
@@ -115,7 +115,7 @@ const ArAppFunctions = () => {
                             <div className="bg-white w-[350px] max-sm:w-full max-sm:block hidden max-sm:mb-[10px] border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px]">
                                 <Image
                                     src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
-                                    alt="Supporting illustration for Tech Reforms website section"
+                                    alt="Background illustration for Image and Object Recognition AR function card on mobile"
                                     width={1000}
                                     height={1000}
                                     className="absolute top-0 left-0 w-full h-full object-cover"
@@ -132,7 +132,7 @@ const ArAppFunctions = () => {
                                 <Image
                                     className="w-[280px] max-xl:hidden max-2xl:w-[180px] absolute top-[50%] max-2xl:top-[40%] -translate-y-1/2 -left-[80%] max-2xl:-left-[50%]"
                                     src="/images/forthpoint.png"
-                                    alt="AR App Functions"
+                                    alt="Connector graphic for Light Estimation AR function"
                                     width={1000}
                                     height={1000}
                                 />

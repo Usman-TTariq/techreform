@@ -69,7 +69,7 @@ const VrAppFunctions = () => {
                                 <div className="bg-white w-[350px] max-sm:w-full max-sm:hidden border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px]">
                                     <Image
                                         src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
-                                        alt="Supporting illustration for Tech Reforms VR section"
+                                        alt="Background illustration for VR function feature card"
                                         width={1000}
                                         height={1000}
                                         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -116,7 +116,7 @@ const VrAppFunctions = () => {
                             <div className="bg-white w-[350px] max-sm:w-full max-sm:block hidden max-sm:mb-[10px] border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl relative py-5 sm:py-6 overflow-hidden px-4 sm:px-[20px]">
                                 <Image
                                     src="https://ik.imagekit.io/sajib4aqc/3_qsiqie.webp"
-                                    alt="Supporting illustration for Tech Reforms VR section"
+                                    alt="Background illustration for VR function feature card"
                                     width={1000}
                                     height={1000}
                                     className="absolute top-0 left-0 w-full h-full object-cover"

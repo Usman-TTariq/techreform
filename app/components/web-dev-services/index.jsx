@@ -13,7 +13,7 @@ const WebDevelopmentServices = () => {
                 <Image
                     className="w-full h-full max-sm:hidden absolute top-0 left-0"
                     src="/images/servicebk.png"
-                    alt="Hero Background"
+                    alt="Background graphic for Web Development Services section"
                     width={1000}
                     height={1000}
                 />
@@ -23,7 +23,7 @@ const WebDevelopmentServices = () => {
                         <Image
                             className="w-[25px] pt-2 mx-auto"
                             src="/images/Stroke-arrow.png"
-                            alt="Hero Background"
+                            alt="Arrow icon on Get Started button"
                             width={1000}
                             height={1000}
                         />

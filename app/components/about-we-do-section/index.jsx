@@ -8,7 +8,7 @@ const AboutWeDoSection = () => {
       <Image
         className="absolute -top-[20%] right-[0px] w-[40%]"
         src="/images/bk.png"
-        alt="Hero Background"
+        alt="Decorative background for What We Do section"
         width={1000}
         height={1000}
       />
@@ -51,7 +51,7 @@ const AboutWeDoSection = () => {
               <Image
                 className="w-[100%]"
                 src="/images/about1.png"
-                alt="Hero Background"
+                alt="Team collaboration illustration for What We Do section"
                 width={1000}
                 height={1000}
               />
@@ -60,7 +60,7 @@ const AboutWeDoSection = () => {
               <Image
                 className="w-[100%]"
                 src="/images/about2.png"
-                alt="Hero Background"
+                alt="Digital solutions workspace illustration for What We Do section"
                 width={1000}
                 height={1000}
               />

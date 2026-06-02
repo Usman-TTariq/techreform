@@ -30,7 +30,7 @@ const CaseStudiesMvpSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/mvp1.png"
-                                alt="MVP case study"
+                                alt="Scalable MVP case study product showcase one"
                                 width={1000}
                                 height={1000}
                             />
@@ -41,7 +41,7 @@ const CaseStudiesMvpSection = () => {
                             <Image
                                 className="w-full max-w-full h-auto"
                                 src="/images/mvp2.png"
-                                alt="MVP case study"
+                                alt="Scalable MVP case study product showcase two"
                                 width={1000}
                                 height={1000}
                             />

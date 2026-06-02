@@ -217,7 +217,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt="Shopping cart icon for ecommerce tab"
+                                    alt="E-commerce mobile app development shopping cart illustration"
                                     width={1000}
                                     height={1000}
                                 />
@@ -226,7 +226,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt="Shopping cart icon for ecommerce tab"
+                                    alt="E-commerce web development shopping cart illustration"
                                     width={1000}
                                     height={1000}
                                 />
@@ -235,7 +235,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt="Shopping cart icon for ecommerce tab"
+                                    alt="Progressive web app for e-commerce shopping illustration"
                                     width={1000}
                                     height={1000}
                                 />
@@ -244,7 +244,7 @@ const EcommerceTabsSection = () => {
                                 <Image
                                     className="w-full"
                                     src="/images/shopnowcart.png"
-                                    alt="Shopping cart icon for ecommerce tab"
+                                    alt="E-commerce CMS solution shopping cart illustration"
                                     width={1000}
                                     height={1000}
                                 />

@@ -97,7 +97,7 @@ const ARIndustries = () => {
                                                     <Image
                                                         className="w-full rounded-2xl"
                                                         src={industry.image}
-                                                        alt="Hero Background"
+                                                        alt={`${industry.title} AR industry illustration`}
                                                         width={1000}
                                                         height={1000}
                                                     />
@@ -105,7 +105,7 @@ const ARIndustries = () => {
                                                         <Image
                                                             className="w-[85px] h-[85px]"
                                                             src="/images/globe-icon.png"
-                                                            alt="Hero Background"
+                                                            alt={`Globe icon for ${industry.title} industry`}
                                                             width={1000}
                                                             height={1000}
                                                         />

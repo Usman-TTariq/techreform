@@ -29,7 +29,7 @@ const LpAppAbout = () => {
                     <Image
                         className="w-full"
                         src="https://ik.imagekit.io/sajib4aqc/bulletpoints_buwrvm.webp"
-                        alt="Hero Background"
+                        alt="Mobile app development process bullet points infographic"
                         width={1000}
                         height={1000}
                     />

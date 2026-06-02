@@ -122,7 +122,7 @@ const LpWebSaving = () => {
                             className="w-full scale-150 pt-[50px]"
                             style={{ transformOrigin: 'right' }}
                             src="https://ik.imagekit.io/sajib4aqc/laptop1_ivssw7.webp"
-                            alt="Hero Background"
+                            alt="Laptop mockup for web development cost savings section"
                             width={1000}
                             height={1000}
                         />

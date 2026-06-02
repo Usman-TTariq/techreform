@@ -39,7 +39,7 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Icon for Game App Development service"
                                         width={1000}
                                         height={1000}
                                     />
@@ -63,7 +63,7 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Icon for iOS App Development service"
                                         width={1000}
                                         height={1000}
                                     />
@@ -87,7 +87,7 @@ const AppDevelopmentSection = () => {
                                     <Image
                                         className="w-[70px]"
                                         src="/images/gamingicon.png"
-                                        alt="Hero Background"
+                                        alt="Icon for Android App Development service"
                                         width={1000}
                                         height={1000}
                                     />
@@ -105,13 +105,87 @@ const AppDevelopmentSection = () => {
                         </div>
                     </div>
                 </div>
+                <div className="grid grid-cols-12 gap-4 pt-8 sm:pt-12 md:pt-[52px]">
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
+                            <div className="flex flex-col justify-between h-full">
+                                <div className="pb-[20px]">
+                                    <Image
+                                        className="w-[70px]"
+                                        src="/images/gamingicon.png"
+                                        alt="Icon for Game App Development service"
+                                        width={1000}
+                                        height={1000}
+                                    />
+                                </div>
+                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                Cross-Platform Apps
+                                </div>
+                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
+                                Build once, deploy everywhere. Our <Link href="/cross-platform" className="text-[#F74B1C] hover:underline">cross-platform app development</Link> uses Flutter & React Native for 95% code reuse across iOS and Android — cutting time, cost, and complexity without losing native performance.
+                                </div>
+                                <div className="pt-[30px] flex justify-start">
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
+                            <div className="flex flex-col justify-between h-full">
+                                <div className="pb-[20px]">
+                                    <Image
+                                        className="w-[70px]"
+                                        src="/images/gamingicon.png"
+                                        alt="Icon for iOS App Development service"
+                                        width={1000}
+                                        height={1000}
+                                    />
+                                </div>
+                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                MVP Development
+                                </div>
+                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
+                                Turn your idea into a working product in 4–8 weeks. Our <Link href="/mvp" className="text-[#F74B1C] hover:underline">MVP app development</Link> team builds lean, testable products that validate your concept and attract investors before full-scale investment
+                                </div>
+                                <div className="pt-6 sm:pt-[30px] flex justify-start">
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
+                            <div className="flex flex-col justify-between h-full">
+                                <div className="pb-[20px]">
+                                    <Image
+                                        className="w-[70px]"
+                                        src="/images/gamingicon.png"
+                                        alt="Icon for Android App Development service"
+                                        width={1000}
+                                        height={1000}
+                                    />
+                                </div>
+                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                AI-Powered Apps 
+                                </div>
+                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
+                                Integrate cutting-edge AI app development with LLM support, RAG pipelines, and GPT/Claude APIs — delivering smarter, faster, and more personalized mobile experiences for your users.
+                                </div>
+                                <div className="pt-6 sm:pt-[30px] flex justify-start">
+                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="grid grid-cols-12 gap-4 pt-12 sm:pt-16 md:pt-[90px] items-center justify-center">
                     <div className="col-span-12 sm:col-span-4">
                         <div>
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user1.png"
-                                alt="Customer testimonial portrait"
+                                alt="Client testimonial portrait one"
                                 width={1000}
                                 height={1000}
                             />
@@ -122,7 +196,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user2.png"
-                                alt="Customer testimonial portrait"
+                                alt="Client testimonial portrait two"
                                 width={1000}
                                 height={1000}
                             />
@@ -133,7 +207,7 @@ const AppDevelopmentSection = () => {
                             <Image
                                 className="w-[80%] sm:w-[90%] m-auto"
                                 src="/images/user3.png"
-                                alt="Customer testimonial portrait"
+                                alt="Client testimonial portrait three"
                                 width={1000}
                                 height={1000}
                             />

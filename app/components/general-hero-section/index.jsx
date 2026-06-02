@@ -26,14 +26,14 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
       <Image
         className="absolute -top-[10%] right-4 w-[28%] sm:w-[32%] md:right-12 md:w-[35%] lg:right-[100px] hidden sm:block"
         src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
-        alt="Decorative abstract graphic accent on hero"
+        alt="Decorative abstract accent on page hero"
         width={1000}
         height={1000}
       />
       <Image
         className="absolute -bottom-[15%] left-0 w-[28%] sm:w-[30%] hidden sm:block"
         src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
-        alt="Decorative frame graphic on hero section"
+        alt="Decorative frame on page hero"
         width={1000}
         height={1000}
       />

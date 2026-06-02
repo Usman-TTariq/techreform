@@ -1,6 +1,17 @@
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 
+const CLIENT_LOGOS = [
+    { name: "Travel client", src: "/images/travellogo.png", className: "w-[120px]" },
+    { name: "Octane", src: "/images/octanelogo.png", className: "w-[200px]" },
+    { name: "Life", src: "/images/lifelogo.png", className: "w-[200px]" },
+    { name: "Smile", src: "/images/smilelogo.png", className: "w-[100px]" },
+    { name: "True", src: "/images/truelogo.png", className: "w-[200px]" },
+    { name: "Cybex", src: "/images/cybexlogo.png", className: "w-[150px]" },
+    { name: "Mockup", src: "/images/mockuplogo.png", className: "w-[100px]" },
+    { name: "Precor", src: "/images/precorlogo.png", className: "w-[100px]" },
+];
+
 const OurClientsMobile = () => {
     return (
         <div className="relative bg-[linear-gradient(46deg,rgba(119,36,193,1)_0%,rgba(0,0,0,0)_100%)] py-[2px] mb-[120px] max-sm:mb-[0px]">
@@ -25,94 +36,19 @@ const OurClientsMobile = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-12 gap-10 max-sm:gap-[0px] pt-14 max-sm:pt-[30px]">
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[120px]"
-                                    src="/images/travellogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
+                        {CLIENT_LOGOS.map((client) => (
+                            <div key={client.src} className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
+                                <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
+                                    <Image
+                                        className={client.className}
+                                        src={client.src}
+                                        alt={`${client.name} client logo`}
+                                        width={1000}
+                                        height={1000}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[200px]"
-                                    src="/images/octanelogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[200px]"
-                                    src="/images/lifelogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[100px]"
-                                    src="/images/smilelogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[200px]"
-                                    src="/images/truelogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[150px]"
-                                    src="/images/cybexlogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[100px]"
-                                    src="/images/mockuplogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-3 max-sm:mb-[14px]">
-                            <div className="bg-white rounded-xl p-4 flex items-center justify-center h-full min-h-[100px]">
-                                <Image
-                                    className="w-[100px]"
-                                    src="/images/precorlogo.png"
-                                    alt="Hero Background"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

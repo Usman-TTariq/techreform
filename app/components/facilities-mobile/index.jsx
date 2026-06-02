@@ -7,7 +7,7 @@ const FacilitiesMobile = () => {
             <Image
                 className="w-full absolute top-0 left-0 h-full"
                 src="/images/facilitiesbk.png"
-                alt="Hero Background"
+                alt="Background graphic for Facilities mobile apps section"
                 width={1000}
                 height={1000}
             />
@@ -36,7 +36,7 @@ const FacilitiesMobile = () => {
                     <Image
                         className="w-full"
                         src="https://ik.imagekit.io/sajib4aqc/bulletpoints_buwrvm.webp"
-                        alt="Hero Background"
+                        alt="Facilities and workflow bullet points infographic"
                         width={1000}
                         height={1000}
                     />

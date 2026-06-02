@@ -5,6 +5,10 @@ import localFont from "next/font/local";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://techreforms.com";
 
+/** Google Analytics 4 measurement ID. Set NEXT_PUBLIC_GA_ID in env to change without editing code. */
+const googleAnalyticsId =
+  process.env.NEXT_PUBLIC_GA_ID?.trim() || "G-BMLP34G3M0";
+
 /** Google Ads / gtag conversion ID (e.g. AW-123456789). Set NEXT_PUBLIC_GOOGLE_ADS_ID in env to change without editing code. */
 const googleAdsId =
   process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-16723277657";
@@ -92,7 +96,7 @@ export default function RootLayout({
           }}
         />
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAdsId)}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAnalyticsId)}`}
           strategy="afterInteractive"
         />
         <Script id="google-gtag" strategy="afterInteractive">
@@ -100,6 +104,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', ${JSON.stringify(googleAnalyticsId)});
             gtag('config', ${JSON.stringify(googleAdsId)});
           `}
         </Script>

@@ -1,22 +1,40 @@
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 
+const CARD_IMAGE_ASPECT = "aspect-[649/207]";
+
 const AI_FEATURES = [
   {
     title: "LLM Integration",
     desc: "OpenAI, Claude, Gemini APIs. In-app AI assistants, content generation, smart search.",
+    image: "/images/llm-integration.webp",
+    width: 2036,
+    height: 1024,
+    imageFit:"banner",
   },
   {
     title: "On-Device AI",
     desc: "Core ML, TensorFlow Lite. Runs offline. Healthcare & finance privacy-safe.",
+    image: "/images/on-device-ai.webp",
+    width: 2036,
+    height: 1024,
+    imageFit: "banner",
   },
   {
     title: "RAG Systems",
     desc: "Retrieval-augmented generation for knowledge-base apps and enterprise chatbots.",
+    image: "/images/rag-systems.webp",
+    width: 2036,
+    height: 1024,
+    imageFit: "banner",
   },
   {
     title: "Predictive Analytics",
     desc: "User behavior modeling, churn prediction, demand forecasting in logistics apps.",
+    image: "/images/predictive-analysis.webp",
+    width: 2036,
+    height: 1024,
+    imageFit: "banner",
   },
 ];
 
@@ -48,14 +66,32 @@ const AppIntegrationMobile = () => {
           {AI_FEATURES.map((feature, index) => (
             <div key={index} className="col-span-12 md:col-span-6">
               <div className="rounded-xl bg-[#3c3c3c52] border border-[#ffffff30] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 h-full">
-                <div>
-                  <Image
-                    className="w-full"
-                    src="/images/integrationimg.png"
-                    alt={`${feature.title} illustration for AI-native mobile app development`}
-                    width={1000}
-                    height={1000}
-                  />
+                <div
+                  className={`${CARD_IMAGE_ASPECT} relative w-full overflow-hidden rounded-xl ${feature.imageFit === "cover" ? "bg-[#0a0a0a]" : ""}`}
+                >
+                  {feature.imageFit === "cover" ? (
+                    <>
+                      <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[38%] bg-gradient-to-r from-[#7724C1]/70 via-[#7724C1]/25 to-transparent" />
+                      <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[38%] bg-gradient-to-l from-[#7724C1]/70 via-[#7724C1]/25 to-transparent" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Image
+                          className="h-[92%] w-auto max-w-[44%] object-contain"
+                          src={feature.image}
+                          alt={`${feature.title} illustration for AI-native mobile app development`}
+                          width={feature.width}
+                          height={feature.height}
+                        />
+                      </div>
+                    </>
+                  ) : (
+                    <Image
+                      className="h-full w-full object-cover"
+                      src={feature.image}
+                      alt={`${feature.title} illustration for AI-native mobile app development`}
+                      width={feature.width}
+                      height={feature.height}
+                    />
+                  )}
                 </div>
                 <div className="font-britanicaBlack font-bold text-[16px] pt-6 sm:text-[16px] md:text-[28px] font-regular text-white text-left pb-1 sm:pb-[5px] break-words">
                   {feature.title}

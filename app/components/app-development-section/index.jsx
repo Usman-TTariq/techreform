@@ -7,8 +7,92 @@ import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
+const SERVICE_CARDS = [
+    {
+        title: "Game App Development",
+        icon: "/images/service-icons/game-app.svg",
+        iconAlt: "Game controller icon for Game App Development",
+        description: (
+            <>
+                Get an enterprise-grade{" "}
+                <Link href="/game-development" className="text-[#F74B1C] hover:underline">
+                    mobile game solution
+                </Link>{" "}
+                that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
+            </>
+        ),
+    },
+    {
+        title: "iOS App Development",
+        icon: "/images/service-icons/ios-app.svg",
+        iconAlt: "Smartphone icon for iOS App Development",
+        description: (
+            <>
+                Secure premium mobile experiences with our certified{" "}
+                <Link href="/ios" className="text-[#F74B1C] hover:underline">
+                    iOS app development
+                </Link>{" "}
+                services. We build secure, scalable, high-performance apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
+            </>
+        ),
+    },
+    {
+        title: "Android App Development",
+        icon: "/images/service-icons/android-app.svg",
+        iconAlt: "Android robot icon for Android App Development",
+        description: (
+            <>
+                Partner up with our results-driven{" "}
+                <Link href="/mobile-app-development#" className="text-[#F74B1C] hover:underline">
+                    Android app development
+                </Link>{" "}
+                company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
+            </>
+        ),
+    },
+    {
+        title: "Cross-Platform Apps",
+        icon: "/images/service-icons/cross-platform.svg",
+        iconAlt: "Overlapping platforms icon for Cross-Platform Apps",
+        description: (
+            <>
+                Build once, deploy everywhere. Our{" "}
+                <Link href="/cross-platform" className="text-[#F74B1C] hover:underline">
+                    cross-platform app development
+                </Link>{" "}
+                uses Flutter & React Native for 95% code reuse across iOS and Android — cutting time, cost, and complexity without losing native performance.
+            </>
+        ),
+    },
+    {
+        title: "MVP Development",
+        icon: "/images/service-icons/mvp-app.svg",
+        iconAlt: "Rocket icon for MVP Development",
+        description: (
+            <>
+                Turn your idea into a working product in 4–8 weeks. Our{" "}
+                <Link href="/mvp" className="text-[#F74B1C] hover:underline">
+                    MVP app development
+                </Link>{" "}
+                team builds lean, testable products that validate your concept and attract investors before full-scale investment
+            </>
+        ),
+    },
+    {
+        title: "AI-Powered Apps",
+        icon: "/images/service-icons/ai-powered.svg",
+        iconAlt: "Brain icon for AI-Powered Apps",
+        description: (
+            <>
+                Integrate cutting-edge AI app development with LLM support, RAG pipelines, and GPT/Claude APIs — delivering smarter, faster, and more personalized mobile experiences for your users.
+            </>
+        ),
+    },
+];
+
 const AppDevelopmentSection = () => {
     const [popupOpen, setPopupOpen] = useState(false);
+
     return (
         <div className="relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[120px]">
             <div className="container relative px-4 sm:px-4">
@@ -27,157 +111,39 @@ const AppDevelopmentSection = () => {
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
                         <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                        We develop scalable apps with intuitive UI/UX design, a feature-rich development approach, and ongoing post-launch support. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
+                            We develop scalable apps with intuitive UI/UX design, a feature-rich development approach, and ongoing post-launch support. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
                         </div>
                     </div>
                 </div>
                 <div className="grid grid-cols-12 gap-4 pt-8 sm:pt-12 md:pt-[52px]">
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for Game App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                    Game App Development
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Get an enterprise-grade <Link href="/game-development" className="text-[#F74B1C] hover:underline">mobile game solution</Link> that keeps the players hooked, engaged, and coming back for more. We design and develop gameplay, mechanics, and graphics based on user requirements to deliver smoother, more memorable gameplay.
-                                </div>
-                                <div className="pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for iOS App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                    iOS App Development
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Secure premium mobile experiences with our certified <Link href="/ios" className="text-[#F74B1C] hover:underline">iOS app development</Link> services. We build secure, scalable, high-performance apps with seamless UI/UX and App Store compliance to help you gain more engagement and growth.
-                                </div>
-                                <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                    {SERVICE_CARDS.map((card) => (
+                        <div key={card.title} className="col-span-12 md:col-span-6 lg:col-span-4">
+                            <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
+                                <div className="flex flex-col justify-between h-full">
+                                    <div className="pb-[20px]">
+                                        <div className="flex h-[84px] w-[84px] items-center justify-center rounded-xl bg-[#7724C1]/20 border border-[#7724C1]/25">
+                                            <Image
+                                                className="h-14 w-14"
+                                                src={card.icon}
+                                                alt={card.iconAlt}
+                                                width={56}
+                                                height={56}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                        {card.title}
+                                    </div>
+                                    <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
+                                        {card.description}
+                                    </div>
+                                    <div className="pt-6 sm:pt-[30px] flex justify-start">
+                                        <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for Android App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                    Android App Development
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Partner up with our results-driven <Link href="/mobile-app-development#" className="text-[#F74B1C] hover:underline">Android app development</Link> company to attain powerful Android apps tailored to diverse devices. Our apps come with a perfect blend of intuitive design, high performance, and Google Play compliance.
-                                </div>
-                                <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-4 pt-8 sm:pt-12 md:pt-[52px]">
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for Game App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                Cross-Platform Apps
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Build once, deploy everywhere. Our <Link href="/cross-platform" className="text-[#F74B1C] hover:underline">cross-platform app development</Link> uses Flutter & React Native for 95% code reuse across iOS and Android — cutting time, cost, and complexity without losing native performance.
-                                </div>
-                                <div className="pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for iOS App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                MVP Development
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Turn your idea into a working product in 4–8 weeks. Our <Link href="/mvp" className="text-[#F74B1C] hover:underline">MVP app development</Link> team builds lean, testable products that validate your concept and attract investors before full-scale investment
-                                </div>
-                                <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                        <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
-                            <div className="flex flex-col justify-between h-full">
-                                <div className="pb-[20px]">
-                                    <Image
-                                        className="w-[70px]"
-                                        src="/images/gamingicon.png"
-                                        alt="Icon for Android App Development service"
-                                        width={1000}
-                                        height={1000}
-                                    />
-                                </div>
-                                <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
-                                AI-Powered Apps 
-                                </div>
-                                <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
-                                Integrate cutting-edge AI app development with LLM support, RAG pipelines, and GPT/Claude APIs — delivering smarter, faster, and more personalized mobile experiences for your users.
-                                </div>
-                                <div className="pt-6 sm:pt-[30px] flex justify-start">
-                                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
                 <div className="grid grid-cols-12 gap-4 pt-12 sm:pt-16 md:pt-[90px] items-center justify-center">
                     <div className="col-span-12 sm:col-span-4">
@@ -217,7 +183,7 @@ const AppDevelopmentSection = () => {
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
-    )
-}
+    );
+};
 
 export default AppDevelopmentSection;

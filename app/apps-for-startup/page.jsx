@@ -30,7 +30,7 @@ const AppsForStartup = () => {
                 forthWord=""
                 fifthWord="| That Helps You Launch Faster"
                 para="Build, test, and scale your idea with reliable Mobile App Development for Startups designed for real users, fast growth, and long-term success."
-                buttonText="Start Your Startup App Project"
+                buttonText="Launch Your Startup App — Free Strategy Call"
             />
             <WhoWeAreStartup />
             <StartupWhatWeOfferSection />

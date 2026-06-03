@@ -32,7 +32,7 @@ const IoTPage = () => {
                 forthWord=""
                 fifthWord=" | Smart Devices. Smarter Business."
                 para="Turn physical environments into intelligent, data-driven systems with IoT development engineered for real-world reliability and long-term operational value."
-                buttonText="Talk to Our Team Today"
+                buttonText="Discuss Your IoT App Project — Free Consultation"
             />
             <WhoWeAre
                 p1="Tech Reforms is an IoT development company that believes in innovation and smarter streamlining. We offer solutions that actually work in the field. We partner with product teams, operations leaders, and founders across industries, delivering everything from early-stage connected device prototypes to large-scale Industrial IoT deployments."

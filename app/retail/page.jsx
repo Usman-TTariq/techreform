@@ -32,7 +32,7 @@ const Retail = () => {
         forthWord=""
         fifthWord="| Putting Your Store in Every Pocket"
         para="Turn your retail business into a mobile-first brand with custom retail mobile app development built around how your customers actually shop. We design and deliver retail apps that increase sales, strengthen loyalty, and give shoppers an experience worth returning to on iOS, Android, and every platform in between."
-        buttonText="Talk to Our Retail App Experts Today"
+        buttonText="Book a Free Retail App Consultation "
       />
       <WhoWeAreRetail />
       <OurImpactBoxesSection />

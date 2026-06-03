@@ -39,7 +39,7 @@ const Portfolio = () => {
             />
             <Header />
             <GeneralHeroSection firstWord="Our Project Showcase:" secondWord=" Experience Innovation Beyond Limits!" breakAfterFirstWord para="Explore our past projects and learn how we work to redefine innovation. Our entire catalogue is a testament to our commitment to providing smart web and mobile development solutions. Our main goal is to help you streamline your business operations and help you monetize smartly."
-                buttonText="Request a Demo"
+                buttonText="See Our Work — Request a Demo "
             />
             <PortfolioOne />
             <TestimonialSection />

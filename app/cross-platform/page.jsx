@@ -34,7 +34,7 @@ const CrossPlatform = () => {
         forthWord=""
         fifthWord="| One App. Every Platform"
         para="Reach your users on iOS, Android, web, and desktop, built once, deployed everywhere, without cutting corners on quality."
-        buttonText="Talk to Our Team Today"
+        buttonText="Schedule a Free Cross-Platform App Estimate "
       />
       <WhoWeAre
         p1="Tech Reforms is a cross-platform app development company that works with businesses of all sizes, from founders validating their first idea to established teams looking to expand their product's reach. We believe good software should work well everywhere, not just on one device or operating system."

@@ -6,7 +6,7 @@ const WebAppHeroSection = ({ autoHeight }) => {
     return (
         <div className="relative bg-[#00000033]">
             <GeneralHeroSection firstWord="Custom" secondWord="Mobile Application Development" thirdWord="" forthWord="" fifthWord="for iOS & Android" sixthWord="Fast, Scalable & Affordable" para="Custom Intuitive mobile solutions designed for easier monetization, accessibility, and high user engagement."
-                buttonText="Book a Free App Strategy Call"
+                buttonText="Book Your Free App Development Strategy Call"
                 compact
                 space={true}
                 autoHeight={autoHeight}

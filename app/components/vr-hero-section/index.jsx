@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
-import { useState } from "react";
+import { goToContact } from "@/app/utils/goToContact";
 
 const VrHeroSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
@@ -36,7 +34,7 @@ const VrHeroSection = () => {
                         Looking to hire VR developers? Tech Reforms provides innovative solutions built on the latest VR technologies to help you lead the market with ease. We test concepts and products using user feedback to deliver quick, simple custom virtual reality solutions. Curious? Get a quote to learn more!
                         </div>
                         <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center">
-                            <Button text="Hire Expert VR App Developers Today" icon={false} onClick={() => setPopupOpen(true)} />
+                            <Button text="Hire Expert VR App Developers Today" icon={false} onClick={goToContact} />
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
@@ -52,7 +50,6 @@ const VrHeroSection = () => {
                     </div>
                 </div>
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 };

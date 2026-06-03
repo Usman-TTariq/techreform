@@ -13,7 +13,7 @@ const VrAppFunctions = () => {
                 <div className="grid grid-cols-12 justify-between gap-4">
                     <div className="col-span-5 max-lg:col-span-12">
                         <div className="max-sm:flex max-sm:justify-center">
-                            <CapsuleLabel firstWord="OUR" secondWord="FUNCTIONS" />
+                            <CapsuleLabel firstWord="OUR" secondWord="APPROACH" />
                         </div>
                         <div className="font-britanicaRegular max-sm:text-center pt-[18px] text-[14px] sm:text-[18px] font-regular text-white text-left leading-relaxed">
                             Tech Reforms is a trusted VR Development Company that turns your imaginative dreams into immersive virtual experiences. We build practical, scalable Enterprise VR Solutions that help businesses train, engage, and innovate faster.

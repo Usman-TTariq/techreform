@@ -38,7 +38,7 @@ const Portfolio = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }}
             />
             <Header />
-            <GeneralHeroSection firstWord="Innovation Beyond Limits:" secondWord=" Discover Our Project Showcase" breakAfterFirstWord para="Explore our projects and see how we are redefining what’s possible. Our showcase highlights the innovative solutions we have developed to solve complex challenges across various industries. From intelligent analytics to seamless integrations, discover how our work drives real progress and delivers meaningful results that create a lasting impact for businesses and communities alike."
+            <GeneralHeroSection firstWord="Our Project Showcase:" secondWord=" Experience Innovation Beyond Limits!" breakAfterFirstWord para="Explore our past projects and learn how we work to redefine innovation. Our entire catalogue is a testament to our commitment to providing smart web and mobile development solutions. Our main goal is to help you streamline your business operations and help you monetize smartly."
                 buttonText="Request a Demo"
             />
             <PortfolioOne />

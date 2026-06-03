@@ -77,7 +77,7 @@ const ArAppFunctions = () => {
                                         <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
                                         <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</div>
                                         <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
-                                            With expert custom AR app development, users can train our AR applications to recognize specific 2D images and real-world 3D objects. Such immersive apps can also enhance inputs with relevant text or 3D model data directly on the device screen.
+                                        With expert custom AR app development, users can train our AR applications to recognize specific 2D images and real-world 3D objects. Such apps can also enhance inputs with relevant text or 3D model data directly on the device screen.
                                         </div>
                                     </div>
                                 </div>

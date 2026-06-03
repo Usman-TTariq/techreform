@@ -1,0 +1,197 @@
+"use client";
+
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import CapsuleLabel from "../common/capsule-label";
+import Button from "../common/button";
+import PhoneInput from "react-phone-number-input";
+import { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+
+const INPUT_STYLE =
+  "font-gliker text-[14px] bg-[#2E2E2E] text-[#fff] w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-white/40";
+const LABEL_STYLE =
+  "ml-2 rounded-lg font-gliker text-[#fff] relative z-10 inline-block text-sm font-medium bg-black p-1 px-2";
+const ERROR_INPUT = "ring-2 ring-red-500";
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email ?? "");
+}
+
+const ContactForm = () => {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [phone, setPhone] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: null }));
+    }
+  };
+
+  const validate = () => {
+    const newErrors = {};
+
+    const trimmedName = formData.name?.trim();
+    if (!trimmedName) {
+      newErrors.name = "Name is required";
+    }
+
+    const trimmedEmail = formData.email?.trim();
+    if (!trimmedEmail) {
+      newErrors.email = "Email is required";
+    } else if (!validateEmail(trimmedEmail)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    const trimmedPhone = phone?.trim();
+    if (!trimmedPhone) {
+      newErrors.phone = "Phone number is required";
+    } else if (!isValidPhoneNumber(trimmedPhone)) {
+      newErrors.phone = "Please enter a valid phone number";
+    }
+
+    const trimmedMessage = formData.message?.trim();
+    if (!trimmedMessage) {
+      newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validate()) return;
+
+    setIsLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, phone }),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+
+      setFormData({ name: "", email: "", message: "" });
+      setPhone("");
+      setErrors({});
+      router.push("/thank-you");
+    } catch (err) {
+      setErrors((prev) => ({
+        ...prev,
+        submit: err.message || "Something went wrong. Please try again.",
+      }));
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <div className="rounded-xl bg-black p-4 sm:p-5 md:p-[20px]">
+      <form onSubmit={handleSubmit}>
+        <div className="pb-2 sm:pb-[10px] flex items-center justify-center">
+          <CapsuleLabel firstWord="Send us a message" secondWord="" />
+        </div>
+
+        <div className="py-2">
+          <label htmlFor="name" className={LABEL_STYLE}>
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Type here"
+            value={formData.name}
+            onChange={handleChange}
+            disabled={isLoading}
+            className={`-mt-[16px] ${INPUT_STYLE} ${errors.name ? ERROR_INPUT : ""}`}
+          />
+          {errors.name && <p className="text-red-500 text-xs mt-1 ml-1">{errors.name}</p>}
+        </div>
+
+        <div className="py-2">
+          <label htmlFor="email" className={LABEL_STYLE}>
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Type here"
+            value={formData.email}
+            onChange={handleChange}
+            disabled={isLoading}
+            className={`-mt-[16px] ${INPUT_STYLE} ${errors.email ? ERROR_INPUT : ""}`}
+          />
+          {errors.email && <p className="text-red-500 text-xs mt-1 ml-1">{errors.email}</p>}
+        </div>
+
+        <div className="w-full py-2">
+          <label className={LABEL_STYLE}>Number</label>
+          <div
+            className={`phone-wrapper bg-[#2E2E2E] rounded-xl px-4 py-3 -mt-[8px] transition-all duration-200 ${errors.phone ? "ring-2 ring-red-500 rounded-xl" : ""}`}
+          >
+            <PhoneInput
+              international
+              defaultCountry="US"
+              value={phone}
+              onChange={(v) => {
+                setPhone(v ?? "");
+                if (errors.phone) setErrors((prev) => ({ ...prev, phone: null }));
+              }}
+              disabled={isLoading}
+              className="w-full text-[14px] text-[#fff] font-gliker bg-transparent border-none focus:outline-none"
+            />
+          </div>
+          {errors.phone && <p className="text-red-500 text-xs mt-1 ml-1">{errors.phone}</p>}
+        </div>
+
+        <div className="py-2">
+          <label htmlFor="message" className={LABEL_STYLE}>
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            placeholder="Type here"
+            value={formData.message}
+            onChange={handleChange}
+            disabled={isLoading}
+            className={`-mt-[10px] text-[14px] font-gliker bg-[#2E2E2E] text-[#fff] w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none placeholder:text-white/40 ${errors.message ? ERROR_INPUT : ""}`}
+          />
+          {errors.message && <p className="text-red-500 text-xs mt-1 ml-1">{errors.message}</p>}
+        </div>
+
+        {errors.submit && <p className="text-red-500 text-sm mb-2">{errors.submit}</p>}
+
+        <div className="pt-2">
+          <Button
+            text={isLoading ? "Sending..." : "Submit"}
+            icon={false}
+            type="submit"
+            disabled={isLoading}
+            className="w-full min-h-[48px] justify-center"
+          />
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default ContactForm;

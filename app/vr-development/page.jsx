@@ -12,6 +12,7 @@ import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import FaqHomeSection from "../components/faq-home-section";
+import VrCaseStudySection from "../components/vr-case-study-section";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +34,7 @@ const VrDevelopmentPage = () => {
             <OurVRExpertise />
             <VrProcess />
             <HowWeDoVr />
+            <VrCaseStudySection />
             <Marquee />
             <TestimonialSection />
             <ThreeDTextRotationSection />

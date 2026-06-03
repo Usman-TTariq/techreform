@@ -55,7 +55,7 @@ const GameDevelopment = () => {
             />
             <Header />
             <GeneralHeroSection
-                firstWord="Game Development Services "
+                firstWord="Professional Game Development Services "
                 secondWord="in the "
                 thirdWord="USA"
                 forthWord=""

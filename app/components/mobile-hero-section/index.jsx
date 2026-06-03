@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
-import { useState } from "react";
-// import { getImagePath } from "../../utils/imagePath";
+import { goToContact } from "@/app/utils/goToContact";
 
 const MobileHeroSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
@@ -50,7 +47,7 @@ const MobileHeroSection = () => {
                             Tech Reforms has 20 years of experience delivering innovative mobile solutions with 350+ successful app launches across industries. Our expert team builds secure and high-performing apps designed to drive user engagement, accelerate growth, and ensure long-term success on every device.
                         </div>
                         <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Hire Expert App Developers Today" icon={false} onClick={() => setPopupOpen(true)} />
+                            <Button text="Hire Expert App Developers Today" icon={false} onClick={goToContact} />
                         </div>
                     </div>
                 </div>
@@ -65,7 +62,6 @@ const MobileHeroSection = () => {
                     />
                 </div>
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 }

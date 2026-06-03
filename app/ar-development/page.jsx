@@ -12,6 +12,7 @@ import TestimonialSection from "../components/testimonial-section"
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section"
 import DetailFormSection from "../components/detail-form-section"
 import FaqHomeSection from "../components/faq-home-section"
+import ArCaseStudySection from "../components/ar-case-study-section"
 
 const arSchema = {
   "@context": "https://schema.org",
@@ -60,6 +61,7 @@ const ArDevelopment = () => {
             <OurARExpertise />
             <ArProcess />
             <HowWeDoAr />
+            <ArCaseStudySection />
             <Marquee />
             <TestimonialSection />
             <ThreeDTextRotationSection />

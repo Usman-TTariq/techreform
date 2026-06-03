@@ -1,20 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
+import { goToContact } from "@/app/utils/goToContact";
 
-const PHONE_NUMBER = "tel:+15822335015";
-
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight, callOnClick }) => {
-  const [popupOpen, setPopupOpen] = useState(false);
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
   const handleButtonClick = () => {
-    if (callOnClick) {
-      window.location.href = PHONE_NUMBER;
-      return;
-    }
-    if (buttonText) setPopupOpen(true);
+    if (buttonText) goToContact();
   };
   const heightClass = autoHeight
     ? "pt-0 sm:pt-[0px] pb-4 sm:pb-12 md:pb-0"
@@ -77,7 +69,6 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
           </div>
         </div>
       </div>
-      {buttonText && <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />}
     </div>
   );
 };

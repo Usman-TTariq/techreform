@@ -8,20 +8,20 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const CARDS = [
     {
-        title: "Custom Game Solutions",
-        desc: "We offer end-to-end custom game development tailored to your concept, audience, and monetization strategy. As a trusted game development agency, we transform ideas into interactive gaming experiences using the latest technologies and engines.",
+        title: "Custom Games",
+        desc: "We offer end-to-end custom games tailored to your concept, audience, and monetization strategy. As a trusted gaming studio, we transform ideas into interactive gaming experiences using the latest technologies and engines.",
     },
     {
-        title: "Mobile Game Development",
+        title: "Mobile Games",
         desc: "Our team develops exciting iOS and Android games that are fun to play and built to perform smoothly. We focus on creating engaging experiences while also helping you generate revenue through smart monetization strategies.",
     },
     {
-        title: "PC and Console Game Development",
+        title: "PC and Console Games",
         desc: "As a reliable PC Game Development Company, we build high-quality PC and console games designed to deliver rich visuals and immersive gameplay. From detailed environments to smooth mechanics, we focus on building gaming experiences that feel engaging, polished, and ready for modern platforms.",
     },
     {
         title: "Cross-Platform Game Solutions",
-        desc: "We provide cross-platform game development to make sure your game runs seamlessly across devices and operating systems, and offers maximum reach and player engagement.",
+        desc: "We provide development for cross-platform games that run seamlessly across devices and operating systems, and offer maximum reach and player engagement.",
     },
 ];
 
@@ -37,7 +37,7 @@ const GameDevelopmentWhatWeOfferSection = () => {
                         </div>
                         <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[52px] font-black break-words">
                             <span className="text-white">Secure and Innovative </span>
-                            <span className="text-[#F74B1C]">Game Development Services</span>
+                            <span className="text-[#F74B1C]">Interactive Development Services</span>
                         </div>
                     </div>
                 </div>

@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
-import { useState } from "react";
-// import { getImagePath } from "../../utils/imagePath";
+import { goToContact } from "@/app/utils/goToContact";
 
 const ArHeroSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
@@ -37,7 +34,7 @@ const ArHeroSection = () => {
                             We provide professional Augmented Reality App Development Services that help businesses build immersive and interactive digital experiences. Our experienced AR developers create scalable applications across mobile, web, and wearable platforms using modern AR frameworks and 3D technologies.
                         </div>
                         <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center">
-                            <Button text="Hire Expert App Developers Today" icon={false} onClick={() => setPopupOpen(true)} />
+                            <Button text="Hire Expert App Developers Today" icon={false} onClick={goToContact} />
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 min-w-0 order-1">
@@ -54,7 +51,6 @@ const ArHeroSection = () => {
                 </div>
 
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 }

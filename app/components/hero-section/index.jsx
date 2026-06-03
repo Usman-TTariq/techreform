@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
-import { useState } from "react";
+import { goToContact } from "@/app/utils/goToContact";
 
 const HeroSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative w-full min-w-0 min-h-[85vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-16 sm:pb-12 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             {/* Laptop: mobile par pehle wali position (55%), sm+ same */}
@@ -56,12 +54,11 @@ const HeroSection = () => {
                             We help businesses with advanced app development solutions for effective business management and growth.
                         </div>
                         <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Schedule a Free Consultation" icon={false} onClick={() => setPopupOpen(true)} />
+                            <Button text="Schedule a Free Consultation" icon={false} onClick={goToContact} />
                         </div>
                     </div>
                 </div>
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     );
 }

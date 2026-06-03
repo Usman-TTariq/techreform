@@ -10,7 +10,6 @@ const WebAppHeroSection = ({ autoHeight }) => {
                 compact
                 space={true}
                 autoHeight={autoHeight}
-                callOnClick
             />
             <div className="container relative -mt-[60px] max-sm:mt-0">
                 <div className="grid grid-cols-12 gap-6 max-sm:gap-0">

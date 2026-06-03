@@ -127,7 +127,7 @@ const MEGA_MENU = {
     // },
     company: {
         sidebar: [{ label: "Company" }],
-        sections: [{ heading: "Company", items: [{ label: "About Us", href: "/about" }, { label: "Contact", href: "#" }] }],
+        sections: [{ heading: "Company", items: [{ label: "About Us", href: "/about" }, { label: "Contact", href: "/contact" }] }],
     },
 };
 

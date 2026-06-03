@@ -32,6 +32,24 @@ const FAQ_ITEMS = [
             </>
         ),
     },
+    {
+        id: 4,
+        question: "How much does it cost to develop a mobile or AI-powered app?",
+        answer: (
+            <>
+                The cost varies based on features, complexity, and integrations. Basic apps are more affordable, while AI-powered or feature-rich apps require a higher investment.
+            </>
+        ),
+    },
+    {
+        id: 5,
+        question: "Will I get support after my app or game is launched?",
+        answer: (
+            <>
+                Yes, ongoing support is essential. We provide post-launch maintenance, updates, and performance optimization to keep everything running smoothly.
+            </>
+        ),
+    },
 ];
 
 const FaqGameDevelopmentSection = () => {

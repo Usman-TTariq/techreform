@@ -130,7 +130,7 @@ const Footer = () => {
                             {/* <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li> */}
                             <li><Link href="/blog" className="hover:text-[#F74B1C] transition-colors">Blog</Link></li>
                             {/* <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li> */}
-                            {/* <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li> */}
+                            <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li>
                             {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
                             {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
                         </ul>

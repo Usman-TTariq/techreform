@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
-import HireExpertPopup from "../hire-expert-popup";
 import CapsuleLabel from "../common/capsule-label";
-import { useState } from "react";
 import Button from "../common/button";
+import { goToContact } from "@/app/utils/goToContact";
 
 const WhoWeAre = ({ p1, p2, buttonText }) => {
-    const [popupOpen, setPopupOpen] = useState(false);
     return (
         <div className="relative pb-12 sm:pb-16 md:pb-[120px]">
             <Image
@@ -22,8 +20,8 @@ const WhoWeAre = ({ p1, p2, buttonText }) => {
                         <div className="flex justify-center pb-4 sm:pb-[22px]">
                             <CapsuleLabel
                                 firstWord="WHO"
-                                secondWord="WE"
-                                thirdWord="ARE"
+                                secondWord="ARE"
+                                thirdWord="WE"
                             />
                         </div>
                     </div>
@@ -34,15 +32,16 @@ const WhoWeAre = ({ p1, p2, buttonText }) => {
                         <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full">
                             {p2}
                         </div>
+                        {buttonText && (
                         <div className="pt-4 sm:pt-[30px] w-full flex justify-center items-center">
                             <div className="w-full max-w-[320px] sm:max-w-none mx-auto flex justify-center">
-                                <Button text={buttonText} icon={false} onClick={() => setPopupOpen(true)}/>
+                                <Button text={buttonText} icon={false} onClick={goToContact} />
                             </div>
                         </div>
+                        )}
                     </div>
                 </div>
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     )
 }

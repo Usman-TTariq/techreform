@@ -1,5 +1,6 @@
 "use client";
 import Button from "../common/button";
+import { goToContact } from "@/app/utils/goToContact";
 import CapsuleLabel from "../common/capsule-label";
 import FreeConsultationForm from "../free-consultation-form";
 import Image from "next/image";
@@ -41,7 +42,7 @@ const WebLPHeroSection = () => {
                             We help startups and tech businesses build fast, reliable websites that work seamlessly on any device.
                         </div>
                         <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Contact Our Team" icon={false} onClick={() => { window.location.href = "tel:+15822335015"; }} />
+                            <Button text="Contact Our Team" icon={false} onClick={goToContact} />
                         </div>
                         <div className="grid grid-cols-12 pt-[30px] max-sm:pt-[10px]">
                             <div className="col-span-4">

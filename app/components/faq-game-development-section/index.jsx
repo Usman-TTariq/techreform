@@ -1,52 +1,106 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
+import GameDevelopmentCostTable from "./game-development-cost-table";
+
+const FaqLink = ({ href, children }) => (
+    <Link href={href} className="text-[#F74B1C] hover:underline">
+        {children}
+    </Link>
+);
 
 const FAQ_ITEMS = [
     {
         id: 1,
-        question: "How long does it take to develop a game?",
-        answer: (
-            <>
-                The timeline depends on the complexity, features, and platform. Simple mobile games may take a few months, while advanced multi-platform games require longer development cycles.
-            </>
-        ),
+        question: "How much does game development cost in 2026?",
+        answer: <GameDevelopmentCostTable />,
     },
     {
         id: 2,
-        question: "Can I hire game development experts for my project?",
+        question: "How long does it take to develop a game?",
         answer: (
             <>
-                Yes, you can hire game development professionals from our experienced team for short-term or full-cycle development support.
+                The timeline depends on the complexity and features required. A simple MVP typically takes 4–8 weeks, while a full-featured game can take 3–6 months. We provide a clear project timeline before development begins.
             </>
         ),
     },
     {
         id: 3,
-        question: "Do you develop games for multiple platforms?",
+        question: "Do you build games for both iOS and Android?",
         answer: (
             <>
-                Yes, we provide cross-platform game development across mobile, PC, and console to maximize your game's reach.
+                Yes. We develop native iOS and Android apps as well as cross-platform solutions using Flutter and React Native — giving you maximum reach without doubling the budget.
             </>
         ),
     },
     {
         id: 4,
-        question: "How much does it cost to develop a mobile or AI-powered app?",
+        question: "Can I hire dedicated game developers from Tech Reforms?",
         answer: (
             <>
-                The cost varies based on features, complexity, and integrations. Basic apps are more affordable, while AI-powered or feature-rich apps require a higher investment.
+                Absolutely. You can hire dedicated Flutter, React Native, or native developers on a full-time, part-time, or project basis through our{" "}
+                <FaqLink href="/staff-augmentation">Staff Augmentation</FaqLink> model.
             </>
         ),
     },
     {
         id: 5,
-        question: "Will I get support after my app or game is launched?",
+        question: "Will you help with game design (UI/UX) as well?",
         answer: (
             <>
-                Yes, ongoing support is essential. We provide post-launch maintenance, updates, and performance optimization to keep everything running smoothly.
+                Yes, our team handles end-to-end development — from wireframes and UI/UX design to backend engineering and app store submission.
+            </>
+        ),
+    },
+    {
+        id: 6,
+        question: "Do you develop AI-powered games?",
+        answer: (
+            <>
+                Yes. We integrate AI/ML features including chatbots, recommendation engines, and intelligent automation into mobile apps across industries.
+            </>
+        ),
+    },
+    {
+        id: 7,
+        question: "What happens after my game is launched?",
+        answer: (
+            <>
+                We provide post-launch support, bug fixes, performance optimization, and feature updates. You won&apos;t be left alone after go-live.
+            </>
+        ),
+    },
+    {
+        id: 8,
+        question: "Do you sign an NDA before starting the project?",
+        answer: (
+            <>
+                Yes. We sign a Non-Disclosure Agreement before any project discussion to ensure your idea and data remain fully confidential.
+            </>
+        ),
+    },
+    {
+        id: 9,
+        question: "What industries do you serve with your game development services?",
+        answer: (
+            <>
+                We&apos;ve built apps for healthcare, eCommerce, education, fintech, logistics, real estate, and gaming — across both startups and established businesses.
+            </>
+        ),
+    },
+    {
+        id: 10,
+        question: "How do I get started?",
+        answer: (
+            <>
+                Fill out the contact form or call us at{" "}
+                <a href="tel:+15822335015" className="text-[#F74B1C] hover:underline">
+                    (582) 233-5015
+                </a>
+                . Our team will schedule a free discovery call, understand your requirements, and send you a proposal within 48 hours.
             </>
         ),
     },

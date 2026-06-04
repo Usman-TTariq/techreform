@@ -11,11 +11,21 @@ import AiIcon from "../advanced-technology-section/svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
-  { title: "Discovery and Planning", desc: "Every development project begins with an in-depth discovery phase. We learn your business model, target users, and success metrics. The intricate planning often equips them to have a clear product roadmap and defines the technical architecture from the get-go." },
-  { title: "UI/UX Design", desc: "Our designers craft intuitive, visually intuitive interfaces built specifically for Flutter. We deliver interactive prototypes for your review before writing a single line of developmental code. So, there are no surprises once the project is ready to launch." },
-  { title: "Flutter Development", desc: "Our engineers build your app using Flutter's powerful widget ecosystem and Dart programming language. We write clean, maintainable code and follow best practices in state management, performance, and platform integration to build better, faster apps." },
-  { title: "Testing and QA", desc: "We run comprehensive automated testing across iOS and Android devices. This is done to offer the best app experience for your app users. This way, we validate every feature against your requirements before we move to the next sprint, ensuring a polished, bug-free release." },
-  { title: "Launch and Post-Launch Support", desc: "We manage all the technicalities tied to your app store submissions and simplify the deployment pipelines. We also monitor performance before it reaches the users. After launch, we remain your long-term partner to get seamless updates and new features." },
+  { title: "Discovery and Planning", 
+    desc: "Every development project begins with an in-depth discovery phase. We learn your business model, target users, and success metrics. The intricate planning often equips them to have a clear product roadmap and defines the technical architecture from the get-go." 
+  },
+  { title: "UI/UX Design",
+    desc: "Our designers craft intuitive, visually intuitive interfaces built specifically for Flutter. We deliver interactive prototypes for your review before writing a single line of developmental code. So, there are no surprises once the project is ready to launch."
+   },
+  { title: "Flutter Development", 
+    desc: "Our engineers build your app using Flutter's powerful widget ecosystem and Dart programming language. We write clean, maintainable code and follow best practices in state management, performance, and platform integration to build better, faster apps."
+  },
+  { title: "Testing and QA", 
+    desc: "We run comprehensive automated testing across iOS and Android devices. This is done to offer the best app experience for your app users. This way, we validate every feature against your requirements before we move to the next sprint, ensuring a polished, bug-free release." 
+  },
+  { title: "Launch and Post-Launch Support", 
+    desc: "We manage all the technicalities tied to your app store submissions and simplify the deployment pipelines. We also monitor performance before it reaches the users. After launch, we remain your long-term partner to get seamless updates and new features. " 
+  },
 ];
 
 const FlutterProcessSection = () => {
@@ -47,7 +57,7 @@ const FlutterProcessSection = () => {
         <div className="col-span-12 md:col-span-5 min-w-0 order-1">
           <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center"><CapsuleLabel firstWord="OUR" secondWord="FLUTTER APP" thirdWord="PROCESS" /></div>
           <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words max-sm:text-center">
-            <span className="text-white">A Proven Process for Building </span><span className="text-[#F74B1C]">High-Performance Flutter Apps</span>
+            <span className="text-white">A Proven Process for Building </span><span className="text-[#F74B1C]">High-Yielding Flutter Apps</span>
           </div>
           <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center"><Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} /></div>
         </div>

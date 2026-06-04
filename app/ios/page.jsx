@@ -11,6 +11,7 @@ import WhoWeAre from "../components/who-we-are";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import IosIndustriesSection from "../components/ios-industries-section";
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +49,7 @@ const IOS = () => {
             <IosWhatWeOfferSection />
             <IosProcessSection />
             <IosWhyChooseSection />
+            <IosIndustriesSection />
             <IosCaseStudiesSection />
             <FaqIosSection />
             <TestimonialSection />

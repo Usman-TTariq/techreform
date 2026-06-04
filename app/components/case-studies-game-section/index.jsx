@@ -21,8 +21,8 @@ const CaseStudiesGameSection = () => {
                     <div className="col-span-12 md:col-span-6 min-w-0 order-1">
                         <div className="h-full flex items-center justify-center">
                             <Image
-                                className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/e6bc4f24feef9995f9fcf0fef865a2a6%201.png"
+                                className="w-full max-w-full h-auto rounded-lg"
+                                src="/images/game_dev_left_.webp"
                                 alt="Game development case study gameplay showcase"
                                 width={1000}
                                 height={1000}
@@ -32,11 +32,11 @@ const CaseStudiesGameSection = () => {
                     <div className="col-span-12 md:col-span-6 min-w-0 my-auto order-2">
                         <div>
                             <Image
-                                className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/Untitled%20design%20(14)%201.png"
+                                className="w-full max-w-40% h-40% rounded-xl"
+                                src="/images/game_dev_right_.webp"
                                 alt="Game development case study player engagement metrics"
-                                width={1000}
-                                height={1000}
+                                width={600}
+                                height={600}
                             />
                         </div>
                         <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">

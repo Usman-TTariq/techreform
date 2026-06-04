@@ -11,42 +11,42 @@ import Image from "next/image";
 import HireExpertPopup from "../hire-expert-popup";
 import { INDUSTRY_IMAGES } from "@/app/constants/industry-images";
 
-const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCol, para }) => {
+const IosIndustriesSection = ({ firstWord, secondWord, thirdWord, secondCol, thirdCol, para }) => {
   const [popupOpen, setPopupOpen] = useState(false);
   const industries = [
     {
       title: "Health & Wellness",
-      description: "Custom applications improve patient engagement, telemedicine, appointment scheduling, and health monitoring, thereby completely innovating care delivery.",
+      description: "Apps for booking, tracking, and patient engagement.",
       image: INDUSTRY_IMAGES.healthWellness,
       link: "/financing",
     },
     {
       title: "Retail",
-      description: "Scalable apps simply boost sales, track inventory accurately, offer personalized shopping, and gain customer loyalty and cohesive results.",
+      description: "Better retail experiences with smooth checkout and tracking.",
       image: INDUSTRY_IMAGES.retail,
       link: "/travel",
     },
     {
       title: "Finance",
-      description: "Secure applications enable effective payments, investments, budgeting, and financial insights, while maintaining detailed compliance and user trust.",
+      description: "Secure apps for payments and financial management.",    
       image: INDUSTRY_IMAGES.finance,
       link: "/e-commerce",
     },
     {
       title: "Education & E-Learning",
-      description: "Interactive apps that host intuitive online courses, assessments, and learning tools for students, teachers, and institutions.",
+      description: "Apps for learning, courses, and student engagement.",
       image: INDUSTRY_IMAGES.education,
       link: "/education",
     },
     {
       title: "Hospitality",
-      description: "Mobile solutions that simplify bookings, itinerary management, and bespoke experiences for travelers and hospitality businesses worldwide.",
+      description: "Booking and travel management made simple.",
       image: INDUSTRY_IMAGES.hospitality,
       link: "/travel",
     },
     {
       title: "Food & Beverage",
-      description: "Modern-day apps run the online ordering. It offers smart delivery tracking and loyalty programs, making it easy for both restaurants and customers.",
+      description: "Ordering, delivery tracking, and customer loyalty systems.",
       image: INDUSTRY_IMAGES.foodBeverage,
       link: "/e-commerce",
     },
@@ -136,4 +136,4 @@ const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCo
   );
 };
 
-export default IndustriesMobile;
+export default IosIndustriesSection;

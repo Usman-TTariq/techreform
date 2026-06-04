@@ -11,54 +11,55 @@ import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 import Button from "../common/button";
 import Image from "next/image";
 import HireExpertPopup from "../hire-expert-popup";
+import { INDUSTRY_IMAGES } from "@/app/constants/industry-images";
 
 const industries = [
     {
         title: "Healthcare",
         description: "HIPAA-compliant websites for patient portals, optimal scheduling, and records management.",
-        image: "/images/industries1.png",
+        image: INDUSTRY_IMAGES.healthWellness,
         link: "/financing",
     },
     {
         title: "E-Commerce & Retail",
         description: "Conversion-focused commerce platforms with secure payments, inventory, and analytics tools.",
-        image: "/images/industries2.png",
+        image: INDUSTRY_IMAGES.retail,
         link: "/travel",
     },
     {
         title: "FinTech",
         description: "Secure web applications for transactions, dashboards, and financial reporting.",
-        image: "/images/industries3.png",
+        image: INDUSTRY_IMAGES.finance,
         link: "/e-commerce",
     },
     {
         title: "Education",
         description: "Interactive web portals for courses, assessments, and student management.",
-        image: "/images/industries4.png",
+        image: INDUSTRY_IMAGES.education,
         link: "/education",
     },
     {
         title: "Logistics",
         description: "Web systems for tracking shipments, managing fleets, and route planning.",
-        image: "/images/industries1.png",
+        image: INDUSTRY_IMAGES.foodBeverage,
         link: "/travel",
     },
     {
         title: "Real Estate",
         description: "Modern property websites with listings, virtual tours, and CRM integration.",
-        image: "/images/industries3.png",
+        image: INDUSTRY_IMAGES.hospitality,
         link: "/e-commerce",
     },
     {
         title: "Education",
         description: "Interactive web portals for courses, assessments, and student management.",
-        image: "/images/industries4.png",
+        image: INDUSTRY_IMAGES.education,
         link: "/education",
     },
     {
         title: "Logistics",
         description: "Web systems for tracking shipments, managing fleets, and route planning.",
-        image: "/images/industries1.png",
+        image: INDUSTRY_IMAGES.foodBeverage,
         link: "/travel",
     },
 ];

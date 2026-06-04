@@ -5,7 +5,10 @@ import CapsuleLabel from "../common/capsule-label";
 import Image from "next/image";
 import FreeConsultationForm from "../free-consultation-form";
 
-const DetailFormSection = ({ formIntro = undefined }) => {
+const DEFAULT_FORM_INTRO =
+  "Every decision matters. Get a quick idea of your app's potential by filling out our simple form and speaking with our team.";
+
+const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO }) => {
   return (
     <div id="contact" className="container pb-10 sm:pb-12 md:pb-[60px] -mt-8 sm:-mt-12 md:-mt-[100px] lg:-mt-[150px] px-4 sm:px-4">
       <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-visible">

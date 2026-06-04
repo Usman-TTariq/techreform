@@ -6,7 +6,7 @@ import CapsuleLabel from "../common/capsule-label";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
-const cards = [
+const DEFAULT_CARDS = [
   {
     value: "350+",
     label: "Live Apps",
@@ -39,7 +39,7 @@ const cards = [
   },
 ];
 
-const OurImpactBoxesSection = () => {
+const OurImpactBoxesSection = ({ cards = DEFAULT_CARDS }) => {
   const [activeCard, setActiveCard] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const displayedCard = hoveredIndex !== null ? hoveredIndex : activeCard;
@@ -97,6 +97,7 @@ const OurImpactBoxesSection = () => {
               >
                 {card.label}
               </div>
+              {card.action && (
               <div className="pt-3 sm:pt-4 flex justify-center">
                 {card.isLink ? (
                   <Link
@@ -117,6 +118,7 @@ const OurImpactBoxesSection = () => {
                   </span>
                 )}
               </div>
+              )}
             </div>
           </div>
         ))}

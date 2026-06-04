@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
+import { goToContact } from "@/app/utils/goToContact";
 
 const CARDS = [
   {
@@ -22,7 +21,6 @@ const CARDS = [
 ];
 
 const IosWhatWeOfferSection = () => {
-  const [popupOpen, setPopupOpen] = useState(false);
   return (
     <div className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
       <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border">
@@ -61,7 +59,7 @@ const IosWhatWeOfferSection = () => {
                     {card.desc}
                   </div>
                   <div className="pt-4 sm:pt-[30px] flex justify-start max-sm:justify-center">
-                    <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+                    <Button text="Learn More" icon={false} onClick={goToContact} />
                   </div>
                 </div>
               </div>
@@ -69,7 +67,6 @@ const IosWhatWeOfferSection = () => {
           ))}
         </div>
       </div>
-      <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
     </div>
   );
 };

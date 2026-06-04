@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-const testimonials = [
+const DEFAULT_TESTIMONIALS = [
   {
     name: "John Labkins",
     role: "Partner & CEO, Healthcare Product",
@@ -80,7 +80,7 @@ const TestimonialCard = ({ name, role, quote }) => (
   </div>
 );
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ testimonials = DEFAULT_TESTIMONIALS }) => {
   return (
     <div className="relative overflow-hidden">
       <Image
@@ -137,7 +137,7 @@ const TestimonialSection = () => {
               style={{ width: "100%", paddingTop: 24, paddingBottom: 40 }}
             >
               {testimonials.map((t, idx) => (
-                <SwiperSlide key={idx}>
+                <SwiperSlide key={t.name ?? idx}>
                   <TestimonialCard {...t} />
                 </SwiperSlide>
               ))}

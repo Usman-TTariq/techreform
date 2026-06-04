@@ -13,15 +13,15 @@ const CARDS = [
   },
   {
     title: "Custom Flutter App Development",
-    desc: "Have an impeccable app idea? Is it a consumer mobile app, an enterprise tool, or an e-commerce platform? Whatever that is can be built for you. We deliver secure, scalable, and high-performance solutions for iOS and Android, built from a single codebase and aligned with your business goals.",
-  },
-  {
-    title: "Agile and Iterative Approach",
-    desc: "We prioritize fast feedback cycles and continuous improvement through an iterative, agile approach. We make sure your Flutter app evolves based on real user feedback and reduces waste during and after delivery.",
+    desc: "Have an impeccable app idea? Is it a consumer mobile app, an enterprise tool, or an e-commerce platform? Whatever that is can be built for you. We deliver secure, scalable solutions for iOS and Android, built on a single codebase and aligned with your business goals.",
   },
   {
     title: "UI/UX Design and Prototyping",
-    desc: "Great apps start with great design. Our Flutter experts build interactive prototypes and pixel-perfect UI/UX designs before a single line of production code is written. This prototyping phase ensures the product you receive is exactly what you envisioned.",
+    desc:"Great apps start with great design. Our Flutter experts build interactive prototypes and pixel-perfect UI/UX designs before a single line of production code is written. This prototyping phase ensures the product you receive is exactly what you envisioned.",
+  },
+  {
+    title: "UI/UX Design and Prototyping",
+    desc: "Your Flutter app can be the difference between market leadership and being left behind. Fill out the form to schedule a consultation and receive a project quote. Get affordable Flutter development services today.",
   },
 ];
 

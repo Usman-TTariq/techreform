@@ -11,42 +11,43 @@ import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 import Button from "../common/button";
 import Image from "next/image";
 import HireExpertPopup from "../hire-expert-popup";
+import { INDUSTRY_IMAGES } from "@/app/constants/industry-images";
 
 const DEFAULT_INDUSTRIES = [
   {
     title: "EdTech",
     description: "Our Scalable App Solutions for Startups help education platforms deliver digital learning, track student progress, and improve accessibility.",
-    image: "/images/industries1.png",
+    image: INDUSTRY_IMAGES.education,
     link: "#",
   },
   {
     title: "E-Commerce",
     description: "Startup retail apps provide personalized shopping experiences, loyalty programs, and seamless checkout systems.",
-    image: "/images/industries2.png",
+    image: INDUSTRY_IMAGES.retail,
     link: "#",
   },
   {
     title: "Healthcare",
     description: "Mobile healthcare apps enable remote care, patient monitoring, and digital health tracking with secure data management.",
-    image: "/images/industries3.png",
+    image: INDUSTRY_IMAGES.healthWellness,
     link: "#",
   },
   {
     title: "Logistics",
     description: "Apps simplify logistics operations with route optimization, delivery tracking, and real-time communication.",
-    image: "/images/industries4.png",
+    image: INDUSTRY_IMAGES.foodBeverage,
     link: "#",
   },
   {
     title: "FinTech",
     description: "Financial startup apps power secure payments, expense tracking, and modern digital banking experiences.",
-    image: "/images/industries1.png",
+    image: INDUSTRY_IMAGES.finance,
     link: "#",
   },
   {
     title: "Travel & Hospitality",
     description: "Apps streamline bookings, check-ins, and personalized travel services for better customer engagement.",
-    image: "/images/industries3.png",
+    image: INDUSTRY_IMAGES.hospitality,
     link: "#",
   },
 ];

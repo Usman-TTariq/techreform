@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import GeneralHeroSection from "../components/general-hero-section";
@@ -31,12 +32,20 @@ const Flutter = () => {
         thirdWord=""
         forthWord=""
         fifthWord="| Build Cross-Platform Apps with Flutter"
-        para="Ship beautiful, high-performance mobile apps on iOS and Android from a single codebase, faster and more affordably than ever."
+        para="Ship beautiful, fast mobile apps on iOS and Android from a single codebase, faster and more affordably than ever."
         buttonText="Obtain a Free Flutter App Development Quote `"
       />
       <WhoWeAre
-        p1="Tech Reforms is a leading Flutter app development company specializing in building beautiful, high-performance mobile apps for iOS and Android. Our team of experienced Flutter developers delivers complete Flutter solutions that reduce time-to-market and support long-term growth."
-        p2="From Flutter MVP apps to full-scale production releases, our team handles everything: concept, design, development, and deployment. We simplify the entire product lifecycle with a focus on speed, quality, and long-term scalability."
+        p1="As a trusted Flutter app development company, we build cross-platform mobile applications that look and feel native on every device. Tech Reforms delivers high-quality Flutter development solutions for startups, growing businesses, and enterprises alike."
+        p2={
+          <>
+            From Flutter{" "}
+            <Link href="/flutter-mvp" className=" text-[#F74B1C] hover:text-white transition-colors underline">
+              MVP
+            </Link>{" "}
+            apps to full-scale production releases, our team handles everything: concept, design, development, and deployment. We simplify the entire product lifecycle with a focus on speed, quality, and long-term scalability.
+          </>
+        }
         buttonText="Hire Flutter Developers Today"
       />
       <OurImpactBoxesSection />

@@ -13,20 +13,24 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
     {
-        title: "Requirement Analysis",
-        desc: "We start by understanding your game idea, who it's for, what features you need, and how you plan to monetize it. Our professional game developers carefully review the technical side and create a clear, step-by-step plan to bring your vision to life.",
+        title: "Discovery & GDD",
+        desc: "We create the Game Design Document (GDD) — defining genre, core loop, mechanics, monetization, target platform, and tech stack.",
     },
     {
-        title: "Design & Prototyping",
-        desc: "Our creative team works on the look and feel of your game. This includes all aspects of execution, from UI/UX and gameplay mechanics to characters and environments. We build early prototypes so you can see how everything comes together and make sure it feels right before full development begins.",
+        title: "Art Direction & Prototype",
+        desc: "Define visual style. Build a playable prototype in Unity/Unreal to validate the core gameplay loop before full production.",
     },
     {
-        title: "Development and Testing",
-        desc: "Using modern tools and game engines, our team handles the complete game development process. We thoroughly test our games to deliver smooth performance, stable gameplay, and a great experience across all target devices.",
+        title: "Full Production",
+        desc: "Art, animation, audio, level design, backend integration. Agile sprints, weekly builds, continuous QA throughout.",
     },
     {
-        title: "Launch with Support",
-        desc: "Once your game is live, we don't just walk away. We continue to support you with updates, improvements, and performance optimization to keep your game fresh, competitive, and engaging for players.",
+        title: "Alpha → Beta Testing",
+        desc: "Internal alpha, closed beta with real players, performance profiling, crash reporting, balance testing across devices.",
+    },
+    {
+        title: "Soft Launch & LiveOps",
+        desc: "Staged rollout in select markets, KPI monitoring, A/B testing of monetization. Full launch + post-launch content updates.",
     },
 ];
 

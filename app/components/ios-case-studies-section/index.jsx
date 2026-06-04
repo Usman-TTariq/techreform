@@ -55,9 +55,8 @@ const IosCaseStudiesSection = () => {
             </div>
             <ul className="list-none font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] space-y-2 sm:space-y-3 min-w-0">
               {CASE_STUDY_BULLETS.map((line) => (
-                <li key={line} className="flex gap-2 sm:gap-3 min-w-0">
-                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                  <span className="min-w-0 break-words">{line}</span>
+                <li key={line} className="min-w-0 break-words">
+                  {line}
                 </li>
               ))}
             </ul>

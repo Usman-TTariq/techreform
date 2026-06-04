@@ -8,15 +8,15 @@ import HireExpertPopup from "../hire-expert-popup";
 
 const CARDS = [
   {
-    title: "IoT Consulting",
-    desc: "Before committing to a direction, it pays to think it through. Our IoT consulting service gives you a structured assessment of your use case, existing infrastructure, and connectivity requirements. You leave with a clear IoT architecture recommendation and a realistic picture of what delivery looks like.",
+    title: "Expert Consulting",
+    desc: "Before committing to a direction, it pays to think it through. Our IoT consulting service gives you a structured assessment of your use case, existing infrastructure, and connectivity requirements. You leave with a clear architecture recommendation and a realistic picture of what delivery looks like.",
   },
   {
     title: "Custom IoT Solution Development",
     desc: "Every IoT project has its own constraints, environments, and goals. We build custom IoT solutions from the ground up, and cover sensor selection, firmware, backend logic, and the interface your team will actually use. No off-the-shelf templates stretched to fit.",
   },
   {
-    title: "Embedded Systems and Device Integration",
+    title: "Embedded IoT System Integration",
     desc: "Connecting physical devices to digital systems requires deep technical knowledge of both. Our engineers work across embedded systems development, IoT sensor integration, and device management, ensuring every node in your network communicates reliably and at the right frequency.",
   },
   {

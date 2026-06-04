@@ -61,7 +61,7 @@ const RetailWhatWeOfferSection = () => {
                   <div className="pb-3 sm:pb-[20px]">
                     <Image
                       className="w-12 h-12 sm:w-[70px] sm:h-[70px] max-sm:mx-auto"
-                      src="/images/gamingicon.png"
+                      src="/images/retail_card_icon.webp"
                       alt={card.title}
                       width={70}
                       height={70}

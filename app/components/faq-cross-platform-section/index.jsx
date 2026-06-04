@@ -16,16 +16,6 @@ const INDUSTRIES = [
 const FAQ_ITEMS = [
   {
     id: 1,
-    question: "Is cross-platform development suitable for my project?",
-    answer: (
-      <>
-        For the majority of mobile and multi-platform products, cross-platform development delivers excellent results at a lower cost and faster timeline than
-        building separately for each platform. During our initial consultation, we will give you a straightforward assessment of whether it is the right fit.
-      </>
-    ),
-  },
-  {
-    id: 2,
     question: "How do you handle platform differences in the design?",
     answer: (
       <>
@@ -35,7 +25,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    id: 3,
+    id: 2,
     question: "Will the app perform as well as a fully native build?",
     answer: (
       <>
@@ -45,7 +35,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    id: 4,
+    id: 3,
     question: "Can I release on iOS and Android at the same time?",
     answer: (
       <>
@@ -54,8 +44,8 @@ const FAQ_ITEMS = [
       </>
     ),
   },
-  {
-    id: 5,
+  { 
+    id: 4,
     question: "Do you offer cross-platform consulting without full development?",
     answer: (
       <>
@@ -65,7 +55,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    id: 6,
+    id: 5,
     question: "Which industries do you work with?",
     answer: (
       <>

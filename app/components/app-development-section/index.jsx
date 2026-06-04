@@ -7,11 +7,12 @@ import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
 
+const SERVICE_CARD_ICON = "/images/mobile-app-icon.webp";
+const SERVICE_CARD_ICON_ALT = "Mobile app development service icon";
+
 const SERVICE_CARDS = [
     {
         title: "Game App Development",
-        icon: "/images/service-icons/game-app.svg",
-        iconAlt: "Game controller icon for Game App Development",
         description: (
             <>
                 Get an enterprise-grade{" "}
@@ -24,8 +25,6 @@ const SERVICE_CARDS = [
     },
     {
         title: "iOS App Development",
-        icon: "/images/service-icons/ios-app.svg",
-        iconAlt: "Smartphone icon for iOS App Development",
         description: (
             <>
                 Secure premium mobile experiences with our certified{" "}
@@ -38,8 +37,6 @@ const SERVICE_CARDS = [
     },
     {
         title: "Android App Development",
-        icon: "/images/service-icons/android-app.svg",
-        iconAlt: "Android robot icon for Android App Development",
         description: (
             <>
                 Partner up with our results-driven{" "}
@@ -52,8 +49,6 @@ const SERVICE_CARDS = [
     },
     {
         title: "Cross-Platform Apps",
-        icon: "/images/service-icons/cross-platform.svg",
-        iconAlt: "Overlapping platforms icon for Cross-Platform Apps",
         description: (
             <>
                 Build once, deploy everywhere. Our{" "}
@@ -66,8 +61,6 @@ const SERVICE_CARDS = [
     },
     {
         title: "MVP Development",
-        icon: "/images/service-icons/mvp-app.svg",
-        iconAlt: "Rocket icon for MVP Development",
         description: (
             <>
                 Turn your idea into a working product in 4–8 weeks. Our{" "}
@@ -80,8 +73,6 @@ const SERVICE_CARDS = [
     },
     {
         title: "AI-Powered Apps",
-        icon: "/images/service-icons/ai-powered.svg",
-        iconAlt: "Brain icon for AI-Powered Apps",
         description: (
             <>
                 Integrate cutting-edge AI app development with LLM support, RAG pipelines, and GPT/Claude APIs — delivering smarter, faster, and more personalized mobile experiences for your users.
@@ -121,13 +112,13 @@ const AppDevelopmentSection = () => {
                             <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
                                 <div className="flex flex-col justify-between h-full">
                                     <div className="pb-[20px]">
-                                        <div className="flex h-[84px] w-[84px] items-center justify-center rounded-xl bg-[#7724C1]/20 border border-[#7724C1]/25">
+                                        <div className="flex h-[100px] w-[100px] sm:h-[110px] sm:w-[110px] items-center justify-center rounded-xl">
                                             <Image
-                                                className="h-14 w-14"
-                                                src={card.icon}
-                                                alt={card.iconAlt}
-                                                width={56}
-                                                height={56}
+                                                className="h-[68px] w-[68px] sm:h-[76px] sm:w-[76px] object-contain"
+                                                src={SERVICE_CARD_ICON}
+                                                alt={SERVICE_CARD_ICON_ALT}
+                                                width={76}
+                                                height={76}
                                             />
                                         </div>
                                     </div>

@@ -8,7 +8,8 @@ import FreeConsultationForm from "../free-consultation-form";
 const DEFAULT_FORM_INTRO =
   "Every decision matters. Get a quick idea of your app's potential by filling out our simple form and speaking with our team.";
 
-const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO }) => {
+const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO, productType = "app" }) => {
+  const developmentLabel = productType === "game" ? "Game" : "App";
   return (
     <div id="contact" className="container pb-10 sm:pb-12 md:pb-[60px] -mt-8 sm:-mt-12 md:-mt-[100px] lg:-mt-[150px] px-4 sm:px-4">
       <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-visible">
@@ -27,7 +28,7 @@ const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO }) => {
             <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[26px] sm:leading-[32px] md:text-[28px] md:leading-[35px] font-black max-sm:text-center">
               <span className="text-white">Partner with Us for</span>
               <br />
-              <span className="text-[#F74B1C]">Custom App Development and</span>
+              <span className="text-[#F74B1C]">Custom {developmentLabel} Development and</span>
               <br />
               <span className="text-white">Better Resource Management</span>
             </div>

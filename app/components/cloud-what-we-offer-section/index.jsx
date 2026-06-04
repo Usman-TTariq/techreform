@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
@@ -13,7 +14,18 @@ const CARDS = [
   },
   {
     title: "Custom Cloud Development",
-    desc: "We design and build custom cloud solutions to specification. Whether your goal is a customer-facing product, an internal business tool, or a cloud-based MVP, we keep the focus on what matters: a well-built product that performs consistently across every platform.",
+    desc: (
+      <>
+        We design and build custom cloud solutions to specification. Whether your goal is a customer-facing product, an internal business tool, or a{" "}
+        <Link
+          href="/mvp"
+          className="text-[#F74B1C] hover:text-white transition-colors underline"
+        >
+          cloud-based MVP
+        </Link>
+        , we keep the focus on what matters: a well-built product that performs consistently across every platform.
+      </>
+    ),
   },
   {
     title: "Cloud Infrastructure and DevOps",
@@ -21,7 +33,18 @@ const CARDS = [
   },
   {
     title: "Wireframing, Design, and UI/UX",
-    desc: "We get the design right before development starts. Wireframes and clickable prototypes are reviewed and approved by you first, so the look, feel, and flow of the product are agreed upon in advance.",
+    desc:
+    <>
+    We get the design right before
+    {" "}
+    <Link
+      href="/mobile-app-development"
+      className="text-[#F74B1C] hover:text-white transition-colors underline"
+    >
+      development starts
+    </Link>
+     . Wireframes and clickable prototypes are reviewed and approved by you first, so the look, feel, and flow of the product are agreed upon in advance.
+  </>
   },
 ];
 

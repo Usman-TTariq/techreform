@@ -5,12 +5,17 @@ import Header from "../components/header";
 import RetailCaseStudiesSection from "../components/retail-case-studies-section";
 import RetailProcessSection from "../components/retail-process-section";
 import RetailWhatWeOfferSection from "../components/retail-what-we-offer-section";
+import RetailAppTypesSection from "../components/retail-app-types-section";
+import RetailKeyFeaturesSection from "../components/retail-key-features-section";
 import RetailWhyChooseSection from "../components/retail-why-choose-section";
 import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import WhoWeAreRetail from "../components/who-we-are-retail";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import TechnologyStackMobile from "../components/technology-stack-mobile";
+import RetailIndustriesSection from "../components/retail-industries-section";
+import RetailCtaSection from "../components/retail-cta-section";
 
 export const dynamic = "force-dynamic";
 
@@ -37,9 +42,21 @@ const Retail = () => {
       <WhoWeAreRetail />
       <OurImpactBoxesSection />
       <RetailWhatWeOfferSection />
+      <RetailAppTypesSection />
       <RetailProcessSection />
       <RetailWhyChooseSection />
+      <RetailKeyFeaturesSection />
+      <TechnologyStackMobile
+        capsuleFirst="RETAIL"
+        capsuleSecond="TECH"
+        titleAccent="Retail App Development "
+        titleMain="Technology Stack"
+        subtitle="The Platforms and Technologies We Use to Build Retail Apps"
+        description="Our retail app developers work across the full spectrum of modern mobile technology, selecting the right tools for each retail app project's specific performance, budget, and scalability requirements."
+      />
+      <RetailIndustriesSection />
       <RetailCaseStudiesSection />
+      <RetailCtaSection />
       <FaqRetailSection />
       <TestimonialSection />
       <ThreeDTextRotationSection />

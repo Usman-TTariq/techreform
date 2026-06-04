@@ -122,7 +122,10 @@ const GameDevelopment = () => {
             <FaqGameDevelopmentSection />
             <TestimonialSection testimonials={GAME_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro="Every game idea deserves the right strategy and execution. Get a quick consultation and development estimate by filling out this form. Our experts will guide you through the best approach to build and scale your next big gaming success." />
+            <DetailFormSection
+                productType="game"
+                formIntro="Every game idea deserves the right strategy and execution. Get a quick consultation and development estimate by filling out this form. Our experts will guide you through the best approach to build and scale your next big gaming success."
+            />
             <Footer />
         </div>
     );

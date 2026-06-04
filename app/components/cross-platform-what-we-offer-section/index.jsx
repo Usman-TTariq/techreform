@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
@@ -13,7 +14,25 @@ const CARDS = [
   },
   {
     title: "Custom Cross-Platform App Development",
-    desc: "We design and build cross-platform apps to specification.  No matter what your object of development is: customer-facing product, an internal business tool, or a multi-platform MVP, we keep the focus on what matters: a well-built app that performs consistently on iOS, Android, web, and desktop.",
+    desc: (
+      <>
+        We design and build cross-platform apps to specification. No matter what your object of development is: customer-facing product, an internal business tool, or a multi-platform MVP, we keep the focus on what matters: a well-built app that performs consistently on{" "}
+        <Link
+          href="/ios"
+          className="text-[#F74B1C] hover:text-white transition-colors underline"
+        >
+          iOS
+        </Link>
+        ,{" "}
+        <Link
+          href="/mobile-app-development#"
+          className="text-[#F74B1C] hover:text-white transition-colors underline"
+        >
+          Android
+        </Link>
+        , web, and desktop.
+      </>
+    ),
   },
   {
     title: "Structured and Transparent Development",

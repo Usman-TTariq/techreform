@@ -95,6 +95,7 @@ const CrossPlatformProcessSection = () => {
                 swiperRef.current = swiper;
                 setSwiperReady(true);
               }}
+              className="[&_.swiper-wrapper]:!items-stretch"
               spaceBetween={12}
               slidesPerView={1.05}
               breakpoints={{
@@ -108,8 +109,8 @@ const CrossPlatformProcessSection = () => {
               }}
             >
               {STEPS.map((step, index) => (
-                <SwiperSlide key={index} className="!h-full">
-                  <div className="bg-white border-2 h-[420px] sm:h-[460px] md:h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
+                <SwiperSlide key={index} className="!h-auto flex">
+                  <div className="bg-white cursor-pointer w-full h-[600px] sm:h-[640px] md:h-[740px] lg:h-[550px] border-2 border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
                     <div className="pb-3 sm:pb-[20px] shrink-0">
                       <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
                         <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />

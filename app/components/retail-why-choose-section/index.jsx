@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import CapsuleLabel from "../common/capsule-label";
 import AiIcon from "../advanced-technology-section/svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
 
@@ -81,6 +82,9 @@ const RetailWhyChooseSection = () => {
       />
       <div className="grid grid-cols-12 gap-6 sm:gap-5 pt-8 sm:pt-12 md:pt-[70px] relative z-10">
         <div className="col-span-12 md:col-span-5 min-w-0 order-1 md:order-2">
+          <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center md:justify-start">
+            <CapsuleLabel firstWord="WHY" secondWord="CHOOSE" thirdWord="US" />
+          </div>
           <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[38px] md:text-[50px] md:leading-[55px] font-black break-words max-sm:text-center">
             <span className="text-[#F74B1C]">Why Choose </span>
             <span className="text-white">Us?</span>

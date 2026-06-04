@@ -28,7 +28,7 @@ const RetailCaseStudiesSection = () => {
             </div>
           </div>
           <div className="col-span-12 lg:col-span-2 max-sm:flex max-sm:justify-center">
-            <CapsuleLabel firstWord="CASE" secondWord="STUDIES" />
+            <CapsuleLabel firstWord="PORTFOLIO" secondWord="" />
           </div>
         </div>
         <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
@@ -53,14 +53,12 @@ const RetailCaseStudiesSection = () => {
                 height={1000}
               />
             </div>
-            <ul className="list-none font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] space-y-2 sm:space-y-3 min-w-0">
-              {CASE_STUDY_BULLETS.map((line) => (
-                <li key={line} className="flex gap-2 sm:gap-3 min-w-0">
-                  <span className="text-[#F74B1C] font-britanicaExtraBold shrink-0">•</span>
-                  <span className="min-w-0 break-words">{line}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
+            Browse real-world examples of how our Retail App Development services have helped brands modernize their customer experience, drive repeat purchases, and turn one-time shoppers into loyal, high-value customers.
+            </div>
+            <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-sm:text-center">
+            Every retail app we have built started with a business problem. Our solutions offer slow checkouts, abandoned carts, or disconnected loyalty programs, and end with a product that moves revenue. These are not just interfaces; they are shopping experiences engineered to convert.
+            </div>
             <div className="pt-6 sm:pt-[30px] max-sm:flex max-sm:justify-center">
               <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
             </div>

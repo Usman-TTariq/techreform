@@ -21,9 +21,9 @@ const ArCaseStudySection = () => {
                     <div className="col-span-12 md:col-span-6 min-w-0 order-1">
                         <div className="h-full flex items-center justify-center">
                             <Image
-                                className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/e6bc4f24feef9995f9fcf0fef865a2a6%201.png"
-                                alt="Game development case study gameplay showcase"
+                                className="w-full max-w-full h-auto rounded-lg"
+                                src="/images/Ar%20png.webp"
+                                alt="AR real estate case study showcase"
                                 width={1000}
                                 height={1000}
                             />
@@ -32,9 +32,9 @@ const ArCaseStudySection = () => {
                     <div className="col-span-12 md:col-span-6 min-w-0 my-auto order-2">
                         <div>
                             <Image
-                                className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/Untitled%20design%20(14)%201.png"
-                                alt="Game development case study player engagement metrics"
+                                className="w-full max-w-full h-auto rounded-xl"
+                                src="/images/AR-for-real-estate.webp"
+                                alt="AR development case study outcomes"
                                 width={1000}
                                 height={1000}
                             />

@@ -22,7 +22,7 @@ const VrCaseStudySection = () => {
                         <div className="h-full flex items-center justify-center">
                             <Image
                                 className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/e6bc4f24feef9995f9fcf0fef865a2a6%201.png"
+                                src="/images/VR%20png.webp"
                                 alt="Game development case study gameplay showcase"
                                 width={1000}
                                 height={1000}
@@ -33,8 +33,8 @@ const VrCaseStudySection = () => {
                         <div>
                             <Image
                                 className="w-full max-w-full h-auto"
-                                src="https://ik.imagekit.io/sajib4aqc/Untitled%20design%20(14)%201.png"
-                                alt="Game development case study player engagement metrics"
+                                src="/images/VR-casestudy.webp"
+                                alt="Vr development case study showcase"
                                 width={1000}
                                 height={1000}
                             />

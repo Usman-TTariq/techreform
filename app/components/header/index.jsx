@@ -6,11 +6,38 @@ import Button from "../common/button";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
+const APP_DEVELOPMENT_ITEMS = [
+    { label: "Android", href: "/mobile-app-development#" },
+    { label: "iOS", href: "/ios" },
+    { label: "Flutter", href: "/flutter" },
+    { label: "React Native", href: "/react-native" },
+    { label: "Apps for Startup", href: "/apps-for-startup" },
+    { label: "Cross Platform", href: "/cross-platform" }
+];
+
+const INDUSTRIES_ITEMS = [
+    { label: "Retail", href: "/retail" },
+    { label: "Healthcare", href: "#" },
+    { label: "Real Estate", href: "#" },
+    { label: "Ecommerce", href: "/ecommerce" },
+    { label: "Food", href: "#" },
+    { label: "Insurance", href: "#" },
+    { label: "Fintech", href: "#" },
+    { label: "Enterprise", href: "#" },
+    { label: "Dating", href: "#" },
+    { label: "Automotive", href: "#" },
+    { label: "Fitness", href: "#" },
+    { label: "Entertainment", href: "#" },
+    { label: "Event Management", href: "#" },
+    { label: "Car Wash", href: "#" },
+];
+
 const DROPDOWN_ITEMS = [
     { key: "mobile", label: "Mobile" },
     { key: "ecommerce", label: "Ecommerce" },
-    { key: "staff", label: "Staff Augmentation" },
-    { key: "products", label: "Products" },
+    { key: "staff", label: "Hire/Staff Augmentation" },
+    { key: "industries", label: "Industries" },
+    { key: "solutions", label: "Solutions" },
     { key: "portfolio", label: "Portfolio", href: "/portfolio" },
     { key: "company", label: "Company" },
 ];
@@ -19,9 +46,7 @@ const MEGA_MENU = {
     mobile: {
         sidebar: [
             { label: "Services" },
-            { label: "Technology" },
-            { label: "Industries" },
-            { label: "Solution" },
+            { label: "Native & Cross-Platform" },
             // { label: "Location" },
         ],
         sections: [
@@ -35,64 +60,35 @@ const MEGA_MENU = {
                     { label: "VR Development", href: "/vr-development" },
                     { label: "App Maintenance Support", href: "#" },
                     { label: "Web App Development", href: "#" },
-                    { label: "Apps for Startup", href: "/apps-for-startup" },
-                ],
-            },
-            {
-                heading: "Technology",
-                items: [
-                    { label: "Android", href: "#" },
-                    { label: "IOS", href: "/ios" },
-                    { label: "Flutter", href: "/flutter" },
-                    { label: "React Native", href: "/react-native" },
-                    { label: "Cross Platform", href: "/cross-platform" },
                     { label: "Cloud", href: "/cloud" },
                     { label: "IOT", href: "/iot" },
                 ],
             },
             {
-                heading: "Industries",
-                items: [
-                    { label: "Retail", href: "/retail" },
-                    { label: "Healthcare", href: "#" },
-                    { label: "Real Estate", href: "#" },
-                    { label: "Ecommerce", href: "/ecommerce" },
-                    { label: "Food", href: "#" },
-                    { label: "Insurance", href: "#" },
-                    { label: "Fintech", href: "#" },
-                    { label: "Enterprise", href: "#" },
-                    { label: "Dating", href: "#" },
-                    { label: "Automotive", href: "#" },
-                    { label: "Fitness", href: "#" },
-                    { label: "Entertainment", href: "#" },
-                    { label: "Event Management", href: "#" },
-                    { label: "Car Wash", href: "#" },
-                ],
+                heading: "Native & Cross-Platform",
+                items: APP_DEVELOPMENT_ITEMS,
             },
-            {
-                heading: "Solution",
-                items: [
-                    { label: "Doctor App", href: "#" },
-                    { label: "Taxi App", href: "#" },
-                    { label: "Grocery App", href: "#" },
-                    { label: "Delivery App", href: "#" },
-                    { label: "Travel App", href: "#" },
-                    { label: "Restaurant App", href: "#" },
-                    { label: "Education App", href: "#" },
-                    { label: "Sports App", href: "#" },
-                    { label: "Logistics App", href: "#" },
-                ],
-            },
+
+            // {
+            //     heading: "Solution",
+            //     items: [
+            //         { label: "Doctor App", href: "#" },
+            //         { label: "Taxi App", href: "#" },
+            //         { label: "Grocery App", href: "#" },
+            //         { label: "Delivery App", href: "#" },
+            //         { label: "Travel App", href: "#" },
+            //         { label: "Restaurant App", href: "#" },
+            //         { label: "Education App", href: "#" },
+            //         { label: "Sports App", href: "#" },
+            //         { label: "Logistics App", href: "#" },
+            //     ],
+            // },
         ],
     },
     ecommerce: {
-        sidebar: [
-            { label: "Services" },
-            { label: "Industries" },
-        ],
+        sidebar: [{ label: "Services" }],
         sections: [
-            { heading: "Services", items: [{ label: "Ecommerce Solutions", href: "/ecommerce" }, { label: "Online Store", href: "#" }] },
-            { heading: "Industries", items: [ { label: "B2B", href: "#" }] },
+            { heading: "Services", items: [{ label: "Ecommerce Solutions", href: "/ecommerce" }] },
         ],
     },
     staff: {
@@ -117,9 +113,27 @@ const MEGA_MENU = {
             },
         ],
     },
-    products: {
-        sidebar: [{ label: "Our Products" }],
-        sections: [{ heading: "Our Products", items: [{ label: "ERP", href: "/erp" }] }],
+    industries: {
+        sidebar: [{ label: "Industries" }],
+        sections: [{ heading: "Industries", items: INDUSTRIES_ITEMS }],
+        },
+    solutions: {
+        sidebar: [{ label: "Solutions" }],
+        sections: [{ heading: "Solutions", 
+            items: [
+                { label: "ERP", href: "/erp" },
+                { label: "Doctor App", href: "#" },
+                { label: "Taxi App", href: "#" },
+                { label: "Grocery App", href: "#" },
+                { label: "Delivery App", href: "#" },
+                { label: "Travel App", href: "#" },
+                { label: "Restaurant App", href: "#" },
+                { label: "Education App", href: "#" },
+                { label: "Fitness App", href: "#" },
+                { label: "Logistics App", href: "#" },
+                { label: "Dating App", href: "#" },
+            ] }],
+        
     },
     // portfolio: {
     //     sidebar: [{ label: "Work" }],
@@ -252,28 +266,28 @@ const Header = () => {
                 </div>
             )}
 
-            <div className="container py-4 sm:py-[22px] lg:py-[30px] relative max-w-[1140px] max-xl:!px-0 max-sm:!px-[16px]">
-                <div className="flex items-center justify-between gap-4">
+            <div className="container py-4 sm:py-5 lg:py-5 relative max-w-[1320px] px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between gap-3 lg:gap-4">
                     <Link href="/" className="flex-shrink-0">
-                        <MainLogo className="w-[140px] sm:w-[160px] lg:w-[160px] max-xl:!w-[120px]" />
+                        <MainLogo className="w-[150px] sm:w-[165px] lg:w-[175px] xl:w-[190px]" />
                     </Link>
 
                     {/* Desktop nav – hidden on mobile/tablet */}
-                    <nav className="hidden lg:block">
-                        <ul className="flex items-center gap-6 text-white font-britanicaRegular text-[18px] max-xl:text-[12px] max-2xl:text-[16px] ">
+                    <nav className="hidden lg:flex flex-1 justify-center min-w-0 px-2 xl:px-4">
+                        <ul className="flex items-center justify-center gap-3 xl:gap-4 2xl:gap-5 text-white font-britanicaRegular text-[13px] xl:text-[14px] 2xl:text-[15px]">
                             {DROPDOWN_ITEMS.map(({ key, label, href }) => (
                                 <li
                                     key={key}
                                     onMouseEnter={() => href ? null : setActiveDropdown(key)}
-                                    className="relative"
+                                    className="relative shrink-0"
                                 >
                                     {href ? (
-                                        <Link href={href} className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                        <Link href={href} className="flex items-center gap-1 whitespace-nowrap hover:text-[#f74b1c] transition-colors cursor-pointer">
                                             {label}
                                         </Link>
                                     ) : (
-                                        <span className="flex items-center gap-1 hover:text-[#f74b1c] transition-colors cursor-pointer">
-                                            {label} <ChevronDown className="w-[14px]" />
+                                        <span className="flex items-center gap-1 whitespace-nowrap hover:text-[#f74b1c] transition-colors cursor-pointer">
+                                            {label} <ChevronDown className="w-3.5 h-3.5 shrink-0" />
                                         </span>
                                     )}
                                 </li>
@@ -301,7 +315,13 @@ const Header = () => {
 
                     {/* Desktop CTA – hidden on small screens */}
                     <div className="hidden lg:block flex-shrink-0">
-                        <Button text="Call Now (582) 233-5015" icon={true} onClick={() => window.location.href = "tel:+15822335015"} />
+                        <Button
+                            text="Call Now (582) 233-5015"
+                            icon={true}
+                            className="!px-1.5"
+                            textClassName="!text-[13px] xl:!text-[14px] 2xl:!text-[16px] !px-2"
+                            onClick={() => window.location.href = "tel:+15822335015"}
+                        />
                     </div>
 
                     {/* Mobile: hamburger button */}

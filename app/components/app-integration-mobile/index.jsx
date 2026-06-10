@@ -1,21 +1,21 @@
 import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 
-const CARD_IMAGE_ASPECT = "aspect-[649/207]";
+const CARD_IMAGE_ASPECT = "aspect-[2/1] sm:aspect-[5/2] md:aspect-[649/280]";
 
 const AI_FEATURES = [
   {
     title: "LLM Integration",
     desc: "OpenAI, Claude, Gemini APIs. In-app AI assistants, content generation, smart search.",
-    image: "/images/llm-integration.webp",
+    image: "/images/LLM Integration.webp",
     width: 2036,
     height: 1024,
-    imageFit:"banner",
+    imageFit:"contain",
   },
   {
     title: "On-Device AI",
     desc: "Core ML, TensorFlow Lite. Runs offline. Healthcare & finance privacy-safe.",
-    image: "/images/on-device-ai.webp",
+    image: "/images/On-Device AI.webp",
     width: 2036,
     height: 1024,
     imageFit: "banner",
@@ -23,7 +23,7 @@ const AI_FEATURES = [
   {
     title: "RAG Systems",
     desc: "Retrieval-augmented generation for knowledge-base apps and enterprise chatbots.",
-    image: "/images/rag-systems.webp",
+    image: "/images/RAG Systems.webp",
     width: 2036,
     height: 1024,
     imageFit: "banner",
@@ -31,7 +31,7 @@ const AI_FEATURES = [
   {
     title: "Predictive Analytics",
     desc: "User behavior modeling, churn prediction, demand forecasting in logistics apps.",
-    image: "/images/predictive-analysis.webp",
+    image: "/images/Predictive Analytics.webp",
     width: 2036,
     height: 1024,
     imageFit: "banner",
@@ -62,10 +62,10 @@ const AppIntegrationMobile = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-4 pt-10">
+        <div className="grid grid-cols-12 gap-5 sm:gap-6 md:gap-8 pt-12 md:pt-16">
           {AI_FEATURES.map((feature, index) => (
             <div key={index} className="col-span-12 md:col-span-6">
-              <div className="rounded-xl bg-[#3c3c3c52] border border-[#ffffff30] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 h-full">
+              <div className="rounded-xl bg-[#3c3c3c52] border border-[#ffffff30] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-8 h-full">
                 <div
                   className={`${CARD_IMAGE_ASPECT} relative w-full overflow-hidden rounded-xl ${feature.imageFit === "cover" ? "bg-[#0a0a0a]" : ""}`}
                 >
@@ -93,10 +93,10 @@ const AppIntegrationMobile = () => {
                     />
                   )}
                 </div>
-                <div className="font-britanicaBlack font-bold text-[16px] pt-6 sm:text-[16px] md:text-[28px] font-regular text-white text-left pb-1 sm:pb-[5px] break-words">
+                <div className="font-britanicaBlack font-bold text-[18px] pt-7 sm:pt-8 sm:text-[22px] md:text-[28px] font-regular text-white text-left pb-2 sm:pb-[8px] break-words">
                   {feature.title}
                 </div>
-                <div className="font-britanicaRegular text-[14px] pb-4 sm:text-[18px] font-regular text-white text-left leading-relaxed">
+                <div className="font-britanicaRegular text-[14px] pb-2 sm:text-[16px] md:text-[18px] font-regular text-white text-left leading-relaxed">
                   {feature.desc}
                 </div>
               </div>

@@ -72,6 +72,7 @@ export const ECOMMERCE_ITEMS = [
 
 export const COMPANY_ITEMS = [
   { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Portfolio", href: "/portfolio" },
 ];

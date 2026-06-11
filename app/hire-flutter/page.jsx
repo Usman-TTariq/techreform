@@ -38,15 +38,7 @@ const HireFlutter = () => {
       <WhoWeAre
         p1="We are not a general-purpose IT agency that added Flutter to a service list. Tech Reforms was built specifically around Flutter and Dart — our developers live inside the Flutter ecosystem, stay current with every SDK release, and have shipped production apps across iOS, Android, Web, and Desktop from a single codebase.
         From MVP builds with a two-week sprint to full-scale enterprise app development with CI/CD pipelines and automated testing — we handle every phase of the Flutter product lifecycle. You stay focused on your product vision. We handle the engineering execution."
-        p2={
-          <>
-            From Flutter{" "}
-            <Link href="/flutter-mvp" className=" text-[#F74B1C] hover:text-white transition-colors underline">
-              MVP
-            </Link>{" "}
-            apps to full-scale production releases, our team handles everything: concept, design, development, and deployment. We simplify the entire product lifecycle with a focus on speed, quality, and long-term scalability.
-          </>
-        }
+        
         buttonText="Hire a Flutter DeveloperView Our Flutter Wo"
       />
       <OurImpactBoxesSection />

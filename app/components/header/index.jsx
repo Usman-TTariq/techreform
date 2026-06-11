@@ -5,32 +5,15 @@ import MainLogo from "./svg/MainLogo";
 import Button from "../common/button";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-
-const APP_DEVELOPMENT_ITEMS = [
-    { label: "Android", href: "/mobile-app-development#" },
-    { label: "iOS", href: "/ios" },
-    { label: "Flutter", href: "/flutter" },
-    { label: "React Native", href: "/react-native" },
-    { label: "Apps for Startup", href: "/apps-for-startup" },
-    { label: "Cross Platform", href: "/cross-platform" }
-];
-
-const INDUSTRIES_ITEMS = [
-    { label: "Retail", href: "/retail" },
-    { label: "Healthcare", href: "#" },
-    { label: "Real Estate", href: "#" },
-    { label: "Ecommerce", href: "/ecommerce" },
-    { label: "Food", href: "#" },
-    { label: "Insurance", href: "#" },
-    { label: "Fintech", href: "#" },
-    { label: "Enterprise", href: "#" },
-    { label: "Dating", href: "#" },
-    { label: "Automotive", href: "#" },
-    { label: "Fitness", href: "#" },
-    { label: "Entertainment", href: "#" },
-    { label: "Event Management", href: "#" },
-    { label: "Car Wash", href: "#" },
-];
+import {
+    APP_DEVELOPMENT_ITEMS,
+    COMPANY_ITEMS,
+    ECOMMERCE_ITEMS,
+    INDUSTRIES_ITEMS,
+    MOBILE_SERVICE_ITEMS,
+    SOLUTIONS_ITEMS,
+    STAFF_SERVICE_ITEMS,
+} from "@/app/constants/site-nav";
 
 const DROPDOWN_ITEMS = [
     { key: "mobile", label: "Mobile" },
@@ -52,17 +35,7 @@ const MEGA_MENU = {
         sections: [
             {
                 heading: "Services",
-                items: [
-                    { label: "App Development", href: "/mobile-app-development" },
-                    { label: "Game App Development", href: "/game-development" },
-                    { label: "MVP Startup Development", href: "/mvp" },
-                    { label: "AR Development", href: "/ar-development" },
-                    { label: "VR Development", href: "/vr-development" },
-                    { label: "App Maintenance Support", href: "#" },
-                    { label: "Web App Development", href: "#" },
-                    { label: "Cloud", href: "/cloud" },
-                    { label: "IOT", href: "/iot" },
-                ],
+                items: MOBILE_SERVICE_ITEMS,
             },
             {
                 heading: "Native & Cross-Platform",
@@ -88,7 +61,7 @@ const MEGA_MENU = {
     ecommerce: {
         sidebar: [{ label: "Services" }],
         sections: [
-            { heading: "Services", items: [{ label: "Ecommerce Solutions", href: "/ecommerce" }] },
+            { heading: "Services", items: ECOMMERCE_ITEMS },
         ],
     },
     staff: {
@@ -96,20 +69,7 @@ const MEGA_MENU = {
         sections: [
             {
                 heading: "Our Services",
-                items: [
-                    { label: "Staff Augmentation", href: "/staff-augmentation" },
-                    { label: "Top App Developers", href: null },
-                    { label: "Hire Flutter Developer", href: null },
-                    { label: "Hire Java Developer", href: null },
-                    { label: "Hire Magento Developer", href: null },
-                    { label: "Hire Python Developer", href: null },
-                    { label: "Hire Laravel Developer", href: null },
-                    { label: "Hire Node Js Developer", href: null },
-                    { label: "Hire Spring Boot Developer", href: null },
-                    { label: "Power BI Developer", href: null },
-                    { label: "Golang Developer", href: null },
-                    { label: "LLM Developer", href: null },
-                ],
+                items: STAFF_SERVICE_ITEMS,
             },
         ],
     },
@@ -119,20 +79,7 @@ const MEGA_MENU = {
         },
     solutions: {
         sidebar: [{ label: "Solutions" }],
-        sections: [{ heading: "Solutions", 
-            items: [
-                { label: "ERP", href: "/erp" },
-                { label: "Doctor App", href: "#" },
-                { label: "Taxi App", href: "#" },
-                { label: "Grocery App", href: "#" },
-                { label: "Delivery App", href: "#" },
-                { label: "Travel App", href: "#" },
-                { label: "Restaurant App", href: "#" },
-                { label: "Education App", href: "#" },
-                { label: "Fitness App", href: "#" },
-                { label: "Logistics App", href: "#" },
-                { label: "Dating App", href: "#" },
-            ] }],
+        sections: [{ heading: "Solutions", items: SOLUTIONS_ITEMS }],
         
     },
     // portfolio: {
@@ -141,7 +88,7 @@ const MEGA_MENU = {
     // },
     company: {
         sidebar: [{ label: "Company" }],
-        sections: [{ heading: "Company", items: [{ label: "About Us", href: "/about" }, { label: "Contact", href: "/contact" }] }],
+        sections: [{ heading: "Company", items: COMPANY_ITEMS.filter((item) => item.href !== "/portfolio") }],
     },
 };
 

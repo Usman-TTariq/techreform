@@ -2,6 +2,73 @@ import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
 import FooterLogo from "./svg/footer-logo";
+import {
+    APP_DEVELOPMENT_ITEMS,
+    COMPANY_ITEMS,
+    ECOMMERCE_ITEMS,
+    INDUSTRIES_ITEMS,
+    MOBILE_SERVICE_ITEMS,
+    SOLUTIONS_ITEMS,
+    STAFF_SERVICE_ITEMS,
+} from "@/app/constants/site-nav";
+
+const FOOTER_CONTACT_ITEMS = [
+    {
+        icon: "/images/phone-icon.png",
+        alt: "Phone icon for support contact",
+        content: (
+            <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">
+                <span className="block text-white/80">For Support</span>
+                <span className="whitespace-nowrap">(582) 233-5015</span>
+            </a>
+        ),
+    },
+    {
+        icon: "/images/phone-icon.png",
+        alt: "Phone icon for sales contact",
+        content: (
+            <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">
+                <span className="block text-white/80">For Sales</span>
+                <span className="whitespace-nowrap">(582) 233-5015</span>
+            </a>
+        ),
+    },
+    {
+        icon: "/images/mail-icon.png",
+        alt: "Email contact icon",
+        content: (
+            <a href="mailto:info@techreforms.com" className="hover:text-[#F74B1C] transition-colors break-all">
+                info@techreforms.com
+            </a>
+        ),
+    },
+    {
+        icon: "/images/location.png",
+        alt: "Office location map pin icon",
+        content: (
+            <span className="leading-snug">
+                811 Wilshire Boulevard, Los Angeles, CA 90017
+            </span>
+        ),
+    },
+];
+
+const FooterNavSection = ({ title, items, className = "" }) => (
+    <div className={className}>
+        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[20px] font-bold text-white pt-2 text-left">
+            {title}
+        </div>
+        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[16px] font-regular text-white pt-2 space-y-1">
+            {items.map(({ label, href }) => (
+                <li key={label}>
+                    <Link href={href} className="hover:text-[#F74B1C] transition-colors">
+                        {label}
+                    </Link>
+                </li>
+            ))}
+        </ul>
+    </div>
+);
 
 const Footer = () => {
     return (
@@ -74,78 +141,31 @@ const Footer = () => {
                     />
                 </div>
                 <div className="grid grid-cols-12 gap-6 sm:gap-8 pt-[20px]">
-                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
-                            Mobile Services
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/mobile-app-development" className="hover:text-[#F74B1C] transition-colors">App Development</Link></li>
-                            <li><Link href="/game-development" className="hover:text-[#F74B1C] transition-colors">Game App Development</Link></li>
-                            <li><Link href="/mvp" className="hover:text-[#F74B1C] transition-colors">MVP Development</Link></li>
-                            <li><Link href="/ar-development" className="hover:text-[#F74B1C] transition-colors">AR Development</Link></li>
-                            <li><Link href="/mobile-app-development#vr" className="hover:text-[#F74B1C] transition-colors">VR Development</Link></li>
-                            <li><Link href="/mobile-app-development#maintenance" className="hover:text-[#F74B1C] transition-colors">App Maintenance Support</Link></li>
-                            <li><Link href="#" className="hover:text-[#F74B1C] transition-colors">Web App Development</Link></li>
-                            <li><Link href="/mobile-app-development#startup" className="hover:text-[#F74B1C] transition-colors">Apps For Startup</Link></li>
-                        </ul>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-6 text-left">
-                            Products
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/erp" className="hover:text-[#F74B1C] transition-colors">ERP</Link></li>
-                            {/* <li><Link href="/products" className="hover:text-[#F74B1C] transition-colors">HRMS</Link></li> */}
-                        </ul>
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+                        <FooterNavSection title="Services" items={MOBILE_SERVICE_ITEMS} />
                     </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
-                            Staff Services
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/staff-augmentation" className="hover:text-[#F74B1C] transition-colors">Staff Augmentation</Link></li>
-                            <li><Link href="/staff-augmentation#flutter" className="hover:text-[#F74B1C] transition-colors">Hire Flutter Developer</Link></li>
-                            <li><Link href="/staff-augmentation#java" className="hover:text-[#F74B1C] transition-colors">Hire Java Developer</Link></li>
-                            <li><Link href="/staff-augmentation#magento" className="hover:text-[#F74B1C] transition-colors">Hire Magento Developer</Link></li>
-                            <li><Link href="/staff-augmentation#python" className="hover:text-[#F74B1C] transition-colors">Hire Python Developer</Link></li>
-                            <li><Link href="/staff-augmentation#laravel" className="hover:text-[#F74B1C] transition-colors">Hire Laravel Developer</Link></li>
-                            <li><Link href="/staff-augmentation#node" className="hover:text-[#F74B1C] transition-colors">Hire Node Js Developer</Link></li>
-                            <li><Link href="/staff-augmentation#spring-boot" className="hover:text-[#F74B1C] transition-colors">Hire Spring Boot Developer</Link></li>
-                            <li><Link href="/staff-augmentation#power-bi" className="hover:text-[#F74B1C] transition-colors">Power Bi Developer</Link></li>
-                            <li><Link href="/staff-augmentation#golang" className="hover:text-[#F74B1C] transition-colors">Golang Developer</Link></li>
-                            <li><Link href="/staff-augmentation#llm" className="hover:text-[#F74B1C] transition-colors">LLM Developer</Link></li>
-                        </ul>
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+                        <FooterNavSection title="Native & Cross-Platform" items={APP_DEVELOPMENT_ITEMS} />
                     </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-3">
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
-                            E-commerce Services
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">E-Commerce Solutions</Link></li>
-                            <li><Link href="/ecommerce" className="hover:text-[#F74B1C] transition-colors">Online Store</Link></li>
-                        </ul>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
-                            Company
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/about" className="hover:text-[#F74B1C] transition-colors">About Us</Link></li>
-                            {/* <li><Link href="/careers" className="hover:text-[#F74B1C] transition-colors">Careers</Link></li> */}
-                            <li><Link href="/blog" className="hover:text-[#F74B1C] transition-colors">Blog</Link></li>
-                            {/* <li><Link href="/#testimonials" className="hover:text-[#F74B1C] transition-colors">Testimonials</Link></li> */}
-                            <li><Link href="/contact" className="hover:text-[#F74B1C] transition-colors">Contact Us</Link></li>
-                            {/* <li><Link href="/privacy-policy" className="hover:text-[#F74B1C] transition-colors">Privacy Policy</Link></li> */}
-                            {/* <li><Link href="/terms" className="hover:text-[#F74B1C] transition-colors">Terms & Conditions</Link></li> */}
-                        </ul>
-                        {/* <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-3 text-left">
-                            LP
-                        </div>
-                        <ul className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white pt-2 space-y-1">
-                            <li><Link href="/lp/app" className="hover:text-[#F74B1C] transition-colors">lp app</Link></li>
-                            <li><Link href="/lp/web" className="hover:text-[#F74B1C] transition-colors">lp web</Link></li>
-                        </ul> */}
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+                        <FooterNavSection title="Hire / Staff Augmentation" items={STAFF_SERVICE_ITEMS} />
                     </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-3 relative">
-                        <div className="w-[120px] h-[120px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-[#7724C1] border border-[#7724C1] absolute bottom-[0%] right-[80px] max-sm:right-[40px] max-sm:bottom-[-3%] pointer-events-none">
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+                        <FooterNavSection title="Industries" items={INDUSTRIES_ITEMS} />
+                    </div>
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+                        <FooterNavSection title="Solutions" items={SOLUTIONS_ITEMS} />
+                        <FooterNavSection title="Ecommerce" items={ECOMMERCE_ITEMS} className="pt-4" />
+                        <FooterNavSection title="Company" items={COMPANY_ITEMS} className="pt-4" />
+                    </div>
+                    <div className="col-span-12 sm:col-span-6 lg:col-span-2 relative overflow-hidden pb-8 lg:pb-16">
+                        <div className="pointer-events-none absolute -bottom-6 -right-6 z-0 hidden sm:block">
+                            <div className="w-[90px] h-[90px] rounded-full bg-[#7724C1] border border-[#7724C1] opacity-80" />
                         </div>
-                        <Link href="/" className="block absolute bottom-[-20%] right-0 w-[20%] sm:w-[26%] md:w-[45%] cursor-pointer">
+                        <Link
+                            href="/"
+                            className="pointer-events-auto absolute bottom-0 right-0 z-0 hidden lg:block w-[72px] opacity-70 hover:opacity-100 transition-opacity"
+                        >
                             <Image
                                 className="footer-dot-spin w-full"
                                 src="/images/circlewithdot.png"
@@ -154,64 +174,29 @@ const Footer = () => {
                                 height={1000}
                             />
                         </Link>
-                        <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[24px] font-bold text-white pt-2 text-left">
-                            Get In Touch
-                        </div>
-                        <div className="flex items-center gap-0 translate-x-[-11px]">
-                            <div>
-                                <Image
-                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
-                                    src="/images/phone-icon.png"
-                                    alt="Phone icon for support contact"
-                                    width={1000}
-                                    height={1000}
-                                />
+
+                        <div className="relative z-10">
+                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[20px] font-bold text-white pt-2 text-left">
+                                Get In Touch
                             </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] max-2xl:!text-[14px] font-regular text-white translate-x-[-8px]">
-                                <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Support: (582) 233-5015</a>
-                            </div>
-                        </div>
-                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-14px]">
-                            <div>
-                                <Image
-                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
-                                    src="/images/phone-icon.png"
-                                    alt="Phone icon for sales contact"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] max-2xl:!text-[14px] font-regular text-white translate-x-[-8px]">
-                                <a href="tel:+15822335015" className="hover:text-[#F74B1C] transition-colors">For Sales: (582) 233-5015</a>
-                            </div>
-                        </div>
-                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-28px]">
-                            <div>
-                                <Image
-                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
-                                    src="/images/mail-icon.png"
-                                    alt="Email contact icon"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
-                                <a href="mailto:info@techreforms.com" className="hover:text-[#F74B1C] transition-colors">info@techreforms.com</a>
-                            </div>
-                        </div>
-                        <div className="flex items-center gap-0 translate-x-[-11px] translate-y-[-32px]">
-                            <div className="shrink-0">
-                                <Image
-                                    className="w-[60px] translate-y-[10px] max-sm:w-[50px]"
-                                    src="/images/location.png"
-                                    alt="Office location map pin icon"
-                                    width={1000}
-                                    height={1000}
-                                />
-                            </div>
-                            <div className="font-britanicaRegular text-[14px] sm:text-base md:text-[18px] font-regular text-white translate-x-[-8px]">
-                                <div className="">811 Wilshire Boulevard, Los Angeles, CA 90017</div>
-                            </div>
+                            <ul className="space-y-4 pt-3">
+                                {FOOTER_CONTACT_ITEMS.map((item) => (
+                                    <li key={item.alt} className="flex items-start gap-3 min-w-0">
+                                        <div className="shrink-0 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center">
+                                            <Image
+                                                className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
+                                                src={item.icon}
+                                                alt={item.alt}
+                                                width={40}
+                                                height={40}
+                                            />
+                                        </div>
+                                        <div className="font-britanicaRegular text-[13px] sm:text-[14px] md:text-[15px] font-regular text-white min-w-0 pt-1.5 leading-snug">
+                                            {item.content}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>

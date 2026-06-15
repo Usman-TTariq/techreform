@@ -14,7 +14,7 @@ export const APP_DEVELOPMENT_ITEMS = [
   { label: "Android", href: "/mobile-app-development#" },
   { label: "iOS", href: "/ios" },
   { label: "Flutter", href: "/flutter" },
-  { label: "Hire Flutter", href: "/hire-flutter" },
+  // { label: "Hire Flutter", href: "/hire-flutter" },
   { label: "React Native", href: "/react-native" },
   { label: "Apps for Startup", href: "/apps-for-startup" },
   { label: "Cross Platform", href: "/cross-platform" },

@@ -1,12 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
+import ErpDevelopmentCostTable from "./erp-development-cost-table";
+
+const FaqLink = ({ href, children }) => (
+    <Link href={href} className="text-[#F74B1C] hover:underline">
+        {children}
+    </Link>
+);
 
 const FAQ_ITEMS = [
     {
         id: 1,
+        question: "How much does custom ERP development cost in 2026?",
+        answer: (
+            <>
+                <p>
+                    $8K–$500K+ depending on business size, modules, and platform. See our full cost breakdown below.
+                </p>
+                <ErpDevelopmentCostTable />
+            </>
+        ),
+    },
+    {
+        id: 2,
         question: "How fast can you provide an ERP developer?",
         answer: (
             <>
@@ -15,7 +35,7 @@ const FAQ_ITEMS = [
         ),
     },
     {
-        id: 2,
+        id: 3,
         question: "Can I increase or reduce the development team anytime?",
         answer: (
             <>
@@ -24,7 +44,7 @@ const FAQ_ITEMS = [
         ),
     },
     {
-        id: 3,
+        id: 4,
         question: "Will the developer work in my time zone?",
         answer: (
             <>
@@ -33,20 +53,34 @@ const FAQ_ITEMS = [
         ),
     },
     {
-        id: 4,
+        id: 5,
         question: "What ERP platforms do you specialize in?",
         answer: (
             <>
-                We provide SAP development services, Oracle, Microsoft Dynamics ERP, Odoo ERP, NetSuite ERP, and tailored cloud-based ERP solutions.
+                We provide SAP development services, Oracle, Microsoft Dynamics ERP, Odoo ERP, NetSuite ERP, and tailored{" "}
+                <FaqLink href="/cloud">cloud-based ERP solutions</FaqLink>.
             </>
         ),
     },
     {
-        id: 5,
+        id: 6,
         question: "Do you offer ERP migration services?",
         answer: (
             <>
                 Yes, our ERP migration services help businesses move from legacy systems to modern cloud-based environments with minimal disruption.
+            </>
+        ),
+    },
+    {
+        id: 7,
+        question: "How do I get started with Tech Reforms?",
+        answer: (
+            <>
+                Fill out the <FaqLink href="/">contact form</FaqLink> or call{" "}
+                <a href="tel:+15822335015" className="text-[#F74B1C] hover:underline">
+                    (582) 233-5015
+                </a>
+                . We schedule a discovery call, review your modules and workflows, and prepare a detailed ERP proposal — no commitment needed to start the conversation.
             </>
         ),
     },
@@ -55,19 +89,19 @@ const FAQ_ITEMS = [
 const FaqErpSection = () => {
     const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
     return (
-        <section className="relative py-10 sm:py-12 md:py-14 lg:py-[60px] bg-[#0E0E0E] px-4 sm:px-6 overflow-x-hidden">
-            <div className="container max-w-[1200px] mx-auto w-full min-w-0">
-                <div className="grid grid-cols-12 gap-6 max-sm:gap-0">
+        <section className="relative py-[60px] bg-[#0E0E0E] overflow-x-hidden">
+            <div className="container min-w-0">
+                <div className="grid grid-cols-12 gap-8 max-sm:gap-0">
                     <div className="col-span-12 lg:col-span-4">
                         <CapsuleLabel firstWord="FAQ" secondWord="" />
-                        <h2 className="font-britanicaBlack text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-[1.15] font-black pt-3 sm:pt-4">
+                        <h2 className="font-britanicaBlack text-[36px] md:text-[42px] leading-[1.15] font-black pt-4">
                             <span className="text-white">Frequently Asked </span>
                             <br />
                             <span className="text-[#F74B1C]">Questions</span>
                         </h2>
                     </div>
                     <div className="col-span-12 lg:col-span-8 min-w-0 max-sm:pt-4">
-                        <div className="flex flex-col gap-2 sm:gap-3">
+                        <div className="flex flex-col gap-3 min-w-0">
                             {FAQ_ITEMS.map((item) => {
                                 const isOpen = openId === item.id;
                                 return (
@@ -78,9 +112,9 @@ const FaqErpSection = () => {
                                         <button
                                             type="button"
                                             onClick={() => setOpenId(isOpen ? null : item.id)}
-                                            className="w-full cursor-pointer flex items-center justify-between gap-3 sm:gap-4 py-3 sm:py-4 px-4 sm:px-5 text-left min-w-0"
+                                            className="w-full min-w-0 cursor-pointer flex items-center justify-between gap-4 py-4 px-5 text-left"
                                         >
-                                            <span className="font-britanicaExtraBold text-[15px] sm:text-[17px] text-white pr-2 sm:pr-4 min-w-0 break-words text-left">
+                                            <span className="font-britanicaExtraBold text-[17px] text-white pr-4 min-w-0 break-words">
                                                 {item.question}
                                             </span>
                                             <ChevronDown
@@ -91,8 +125,8 @@ const FaqErpSection = () => {
                                             className={`grid transition-[grid-template-rows] duration-200 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
                                         >
                                             <div className="overflow-hidden">
-                                                <div className="font-britanicaRegular text-[14px] sm:text-[16px] text-white/85 leading-relaxed pb-4 sm:pb-5 px-4 sm:px-5 pt-0 border-t border-white/10 break-words min-w-0">
-                                                    {item.answer}
+                                                <div className="font-britanicaRegular text-[16px] text-white/85 leading-relaxed pb-5 px-5 pt-0 border-t border-white/10 break-words min-w-0">
+                                                    {typeof item.answer === "string" ? <span className="whitespace-pre-line">{item.answer}</span> : item.answer}
                                                 </div>
                                             </div>
                                         </div>

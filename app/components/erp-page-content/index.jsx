@@ -5,6 +5,7 @@ import OurImpactBoxesSection from "../our-impact-boxes-section";
 import ErpWhatWeOfferSection from "../erp-what-we-offer-section";
 import ErpProcessSection from "../erp-process-section";
 import ErpWhyChooseSection from "../erp-why-choose-section";
+import ErpPlatformsTechnologiesSection from "../erp-platforms-technologies-section";
 import CaseStudiesErpSection from "../case-studies-erp-section";
 import FaqErpSection from "../faq-erp-section";
 import TestimonialSection from "../testimonial-section";
@@ -36,6 +37,7 @@ const ErpPageContent = ({
             <ErpWhatWeOfferSection />
             <ErpProcessSection />
             <ErpWhyChooseSection />
+            <ErpPlatformsTechnologiesSection />
             <CaseStudiesErpSection />
             <FaqErpSection />
             <TestimonialSection />

@@ -5,6 +5,7 @@ import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import ErpWhatWeOfferSection from "../components/erp-what-we-offer-section";
 import ErpProcessSection from "../components/erp-process-section";
 import ErpWhyChooseSection from "../components/erp-why-choose-section";
+import ErpPlatformsTechnologiesSection from "../components/erp-platforms-technologies-section";
 import CaseStudiesErpSection from "../components/case-studies-erp-section";
 import FaqErpSection from "../components/faq-erp-section";
 import TestimonialSection from "../components/testimonial-section";
@@ -68,6 +69,7 @@ const Erp = () => {
             <ErpWhatWeOfferSection />
             <ErpProcessSection />
             <ErpWhyChooseSection />
+            <ErpPlatformsTechnologiesSection />
             <CaseStudiesErpSection />
             <FaqErpSection />
             <TestimonialSection />

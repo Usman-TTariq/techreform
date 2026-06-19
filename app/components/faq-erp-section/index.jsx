@@ -90,7 +90,7 @@ const FaqErpSection = () => {
     const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
     return (
         <section className="relative py-[60px] bg-[#0E0E0E] overflow-x-hidden">
-            <div className="container min-w-0">
+            <div className="container min-w-0 max-w-full px-4 sm:px-4 overflow-x-hidden">
                 <div className="grid grid-cols-12 gap-8 max-sm:gap-0">
                     <div className="col-span-12 lg:col-span-4">
                         <CapsuleLabel firstWord="FAQ" secondWord="" />
@@ -125,7 +125,7 @@ const FaqErpSection = () => {
                                             className={`grid transition-[grid-template-rows] duration-200 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
                                         >
                                             <div className="overflow-hidden">
-                                                <div className="font-britanicaRegular text-[16px] text-white/85 leading-relaxed pb-5 px-5 pt-0 border-t border-white/10 break-words min-w-0">
+                                                <div className="font-britanicaRegular text-[16px] text-white/85 leading-relaxed pb-5 px-5 pt-0 border-t border-white/10 break-words min-w-0 max-w-full overflow-x-hidden">
                                                     {typeof item.answer === "string" ? <span className="whitespace-pre-line">{item.answer}</span> : item.answer}
                                                 </div>
                                             </div>

@@ -6,6 +6,8 @@ import ErpWhatWeOfferSection from "../components/erp-what-we-offer-section";
 import ErpProcessSection from "../components/erp-process-section";
 import ErpWhyChooseSection from "../components/erp-why-choose-section";
 import ErpPlatformsTechnologiesSection from "../components/erp-platforms-technologies-section";
+import ErpPlatformComparisonSection from "../components/erp-platform-comparison-section";
+import ErpIndustriesSection from "../components/erp-industries-section";
 import CaseStudiesErpSection from "../components/case-studies-erp-section";
 import FaqErpSection from "../components/faq-erp-section";
 import TestimonialSection from "../components/testimonial-section";
@@ -47,6 +49,38 @@ export const metadata = {
   alternates: { canonical: "/erp" },
 };
 
+const ERP_IMPACT_CARDS = [
+  {
+    value: "100+",
+    label: "ERP Implementations",
+    action: "Across 6 industries",
+    isLink: false,
+    rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]",
+  },
+  {
+    value: "4.9★",
+    label: "Clutch Rating",
+    action: "Verified reviews",
+    href: "https://clutch.co/profile/tech-reforms",
+    isLink: true,
+    rounded: "",
+  },
+  {
+    value: "$8K",
+    label: "ERP Starting Price",
+    action: "Fixed-price available",
+    isLink: false,
+    rounded: "",
+  },
+  {
+    value: "98%",
+    label: "Client Retention",
+    action: "Post-launch support",
+    isLink: false,
+    rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]",
+  },
+];
+
 const Erp = () => {
     return (
         <div>
@@ -65,16 +99,21 @@ const Erp = () => {
                 // buttonText="Hire ERP Experts Today"
             />
             <WhoWeAreErp />
-            <OurImpactBoxesSection />
+            <OurImpactBoxesSection cards={ERP_IMPACT_CARDS} />
             <ErpWhatWeOfferSection />
             <ErpProcessSection />
             <ErpWhyChooseSection />
+            <ErpPlatformComparisonSection />
+            <ErpIndustriesSection />
             <ErpPlatformsTechnologiesSection />
             <CaseStudiesErpSection />
             <FaqErpSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro="Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control." />
+            <DetailFormSection
+              productType="erp"
+              formIntro="Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control."
+            />
             <Footer />
         </div>
     );

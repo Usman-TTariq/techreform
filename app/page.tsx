@@ -26,7 +26,7 @@ export default function Home() {
       <Marquee />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
-      <DetailFormSection formIntro={undefined} />
+      <DetailFormSection />
       <FaqHomeSection />
       <Footer />
     </div>

@@ -48,7 +48,7 @@ const OurImpactBoxesSection = ({ cards = DEFAULT_CARDS }) => {
     <div className="container relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[150px] pt-0 sm:pt-10 md:pt-[50px] px-4 sm:px-4">
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
-        src="https://ik.imagekit.io/sajib4aqc/reviewEllipse_xofccf.webp"
+        src="/images/reviewEllipse.png"
         alt="Soft gradient ellipse behind Our Impact stats section"
         width={1000}
         height={1000}

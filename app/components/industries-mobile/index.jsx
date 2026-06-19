@@ -11,7 +11,14 @@ import Image from "next/image";
 import HireExpertPopup from "../hire-expert-popup";
 import { INDUSTRY_IMAGES } from "@/app/constants/industry-images";
 
-const IndustriesMobile = ({ firstWord, secondWord, thirdWord, secondCol, thirdCol, para }) => {
+const IndustriesMobile = ({
+  firstWord = "We Have",
+  secondWord = "Served",
+  thirdWord = "Industries",
+  secondCol,
+  thirdCol,
+  para,
+}) => {
   const [popupOpen, setPopupOpen] = useState(false);
   const industries = [
     {

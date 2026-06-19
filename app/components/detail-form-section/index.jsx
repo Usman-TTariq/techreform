@@ -8,8 +8,40 @@ import FreeConsultationForm from "../free-consultation-form";
 const DEFAULT_FORM_INTRO =
   "Every decision matters. Get a quick idea of your app's potential by filling out our simple form and speaking with our team.";
 
-const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO, productType = "app" }) => {
-  const developmentLabel = productType === "game" ? "Game" : "App";
+const DEFAULT_APP_BENEFITS = [
+  "Native Builds",
+  "Release Management",
+  "Game Mechanics",
+  "Commerce Enablement",
+  "Team Extension",
+  "Backend Engineering",
+];
+
+const DEFAULT_ERP_BENEFITS = [
+  "Workflow Automation",
+  "Real-time Reporting",
+  "Multi-module Integration",
+  "Data Security & Compliance",
+  "Cloud Deployment",
+  "24/7 Post-launch Support",
+];
+
+/**
+ * @param {{
+ *   formIntro?: string,
+ *   productType?: "app" | "game" | "erp",
+ *   benefits?: string[],
+ * }} props
+ */
+const DetailFormSection = ({
+  formIntro = DEFAULT_FORM_INTRO,
+  productType = "app",
+  benefits = undefined,
+}) => {
+  const developmentLabel =
+    productType === "game" ? "Game" : productType === "erp" ? "ERP" : "App";
+  const benefitItems =
+    benefits ?? (productType === "erp" ? DEFAULT_ERP_BENEFITS : DEFAULT_APP_BENEFITS);
   return (
     <div id="contact" className="container pb-10 sm:pb-12 md:pb-[60px] -mt-8 sm:-mt-12 md:-mt-[100px] lg:-mt-[150px] px-4 sm:px-4">
       <div className="relative bg-[#161616] rounded-2xl py-8 sm:py-12 md:py-[70px] px-4 sm:px-6 md:px-[30px] overflow-visible">
@@ -60,31 +92,15 @@ const DetailFormSection = ({ formIntro = DEFAULT_FORM_INTRO, productType = "app"
                   <span className="text-white font-britanicaBlack font-bold text-[20px] sm:text-[24px] md:text-[26px]">Your</span>
                   <span className="text-[#9340FF] font-britanicaBlack font-bold text-[20px] sm:text-[24px] md:text-[26px]">Benefits</span>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Native Builds</div>
-                  </div>
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Release Management</div>
-                  </div>
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Game Mechanics</div>
-                  </div>
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Commerce Enablement</div>
-                  </div>
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Team Extension</div>
-                  </div>
-                  <div className="flex items-center justify-start gap-2">
-                    <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
-                    <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px]">Backend Engineering</div>
-                  </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-2 sm:gap-y-3">
+                  {benefitItems.map((benefit) => (
+                    <div key={benefit} className="flex items-center justify-start gap-2 min-w-0">
+                      <div className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] bg-[#9340FF] rounded-full flex-shrink-0"></div>
+                      <div className="text-white font-britanicaRegular text-[14px] sm:text-[16px] leading-snug">
+                        {benefit}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

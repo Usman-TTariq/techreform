@@ -35,7 +35,7 @@ const FacilitiesMobile = () => {
                 <div className="pt-[80px] max-sm:pt-[30px]">
                     <Image
                         className="w-full"
-                        src="https://ik.imagekit.io/sajib4aqc/bulletpoints_buwrvm.webp"
+                        src="/images/bulletpoints.png"
                         alt="Facilities and workflow bullet points infographic"
                         width={1000}
                         height={1000}

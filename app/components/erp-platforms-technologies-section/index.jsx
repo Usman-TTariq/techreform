@@ -91,7 +91,7 @@ const ErpPlatformsTechnologiesSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-10 sm:pt-12 md:pt-14 border-t border-white/10 mt-10 sm:mt-12 md:mt-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-10 sm:pt-12 md:pt-14 justify-center flex">
           {TECH_STACK.map((group) => (
             <div key={group.title} className="min-w-0">
               <h3 className="font-britanicaExtraBold text-[11px] sm:text-[12px] tracking-[0.08em] text-white/70 pb-3 sm:pb-4">

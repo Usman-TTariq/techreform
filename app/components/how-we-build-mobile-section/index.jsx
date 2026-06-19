@@ -11,7 +11,7 @@ const HowWeBuildMobileSection = () => {
                         <div>
                             <Image
                                 className="w-[100%] scale-150"
-                                src="https://ik.imagekit.io/sajib4aqc/Group%20233.png"
+                                src="/images/buildmobile.png"
                                 alt="Illustration for how we build high-performing mobile apps"
                                 width={1000}
                                 height={1000}

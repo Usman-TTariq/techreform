@@ -8,14 +8,14 @@ const AnalyticsMobile = () => {
         <div className="relative pb-10 sm:pb-16 md:pb-[160px] overflow-hidden w-full min-w-0">
             <Image
                 className="absolute top-[0%] left-0 w-[20%] sm:w-[20%] opacity-60 sm:opacity-100"
-                src="https://ik.imagekit.io/sajib4aqc/Ellipse%2013.png"
+                src="/images/reviewEllipse.png"
                 alt="Decorative ellipse accent for mobile analytics section"
                 width={1000}
                 height={1000}
             />
             <Image
                 className="absolute -top-[10%] right-0 w-[50%] sm:w-[35%] opacity-60 sm:opacity-100"
-                src="https://ik.imagekit.io/sajib4aqc/Group%202147225180.png"
+                src="/images/Background.png"
                 alt="Decorative graphic accent for mobile development growth statistics"
                 width={1000}
                 height={1000}
@@ -50,7 +50,7 @@ const AnalyticsMobile = () => {
                                 <div className="col-span-12 md:col-span-6 my-auto min-w-0 order-2">
                                     <Image
                                         className="w-full max-w-full h-auto"
-                                        src="https://ik.imagekit.io/sajib4aqc/Group%202147225282.png"
+                                        src="/images/dash1.png"
                                         alt="Mobile development growth statistics chart illustration"
                                         width={1000}
                                         height={1000}

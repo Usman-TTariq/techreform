@@ -184,3 +184,48 @@ body {
 .industries-mobile-swiper .swiper-wrapper {
   align-items: stretch;
 }
+
+/* ERP industries: nav arrows outside cards, on-brand colors */
+.erp-industries-swiper {
+  position: relative;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+@media (min-width: 640px) {
+  .erp-industries-swiper {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+  }
+}
+
+.erp-industries-swiper .swiper-button-prev,
+.erp-industries-swiper .swiper-button-next {
+  color: #c380fe;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(119, 36, 193, 0.2);
+  border: 1px solid rgba(195, 128, 254, 0.45);
+  border-radius: 9999px;
+}
+
+.erp-industries-swiper .swiper-button-prev::after,
+.erp-industries-swiper .swiper-button-next::after {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.erp-industries-swiper .swiper-button-prev {
+  left: 0;
+}
+
+.erp-industries-swiper .swiper-button-next {
+  right: 0;
+}
+
+.erp-industries-swiper .swiper-button-disabled {
+  opacity: 0.35;
+}

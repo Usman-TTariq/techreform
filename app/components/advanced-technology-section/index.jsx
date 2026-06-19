@@ -77,7 +77,7 @@ const WhatWeDoMobileSection = () => {
         <div className="container relative pb-16 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4">
             <Image
                 className="w-[70%] sm:w-[60%] md:w-[50%] absolute -top-[20%] sm:-top-[40%] left-0 opacity-60"
-                src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp"
+                src="/images/whatwedobk.png"
                 alt="Decorative purple gradient behind advanced technology section"
                 width={1000}
                 height={1000}

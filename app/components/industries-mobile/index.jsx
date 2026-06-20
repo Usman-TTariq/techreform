@@ -63,23 +63,21 @@ const IndustriesMobile = ({
     <div className="relative pb-[150px] max-sm:pb-[50px]">
       <div className="container">
         <div className="">
-          <div className="grid grid-cols-12 justify-between gap-4">
-            <div className={`col-span-2 max-lg:col-span-12 max-sm:mx-auto ${secondCol}`}>
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start">
+            <div className={`col-span-12 lg:col-span-6 ${secondCol ?? ""}`}>
               <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
               {para && (
-                <div className="font-britanicaRegular max-sm:text-center text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                <p className="font-britanicaRegular max-sm:text-center text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-4 sm:pt-5 leading-relaxed break-words">
                   {para}
-                </div>
+                </p>
               )}
             </div>
-            <div className={`col-span-10 max-lg:col-span-12 ${thirdCol}`}>
-              <div className="flex justify-end max-sm:justify-center">
-                <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-right max-sm:text-center">
-                  {firstWord && <span className="text-[#F74B1C]">{firstWord} </span>}
-                  {secondWord && <span className="text-white">{secondWord} </span>}
-                  {thirdWord && <span className="text-[#F74B1C]">{thirdWord} </span>}
-                </div>
-              </div>
+            <div className={`col-span-12 lg:col-span-6 flex lg:justify-end ${thirdCol ?? ""}`}>
+              <h2 className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[1.1] font-black text-left max-lg:text-center lg:text-right w-full lg:max-w-xl">
+                {firstWord && <span className="text-[#F74B1C]">{firstWord} </span>}
+                {secondWord && <span className="text-white">{secondWord} </span>}
+                {thirdWord && <span className="text-[#F74B1C]">{thirdWord}</span>}
+              </h2>
             </div>
           </div>
           <div className="pt-[40px] max-sm:pt-[10px] industries-mobile-swiper">

@@ -99,24 +99,82 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
         headlineAccent={city.heroHeadlineAccent}
         headlineSuffix={city.heroHeadlineSuffix}
         introText={city.heroIntro}
+        ctaText={city.ctaText}
+        ctaPhone={city.ctaPhone}
       />
       <OurImpactBoxesSection />
-      <AppDevelopmentSection />
+      <AppDevelopmentSection
+        headlinePrefix={city.offerSection?.headlinePrefix}
+        headlineAccent={city.offerSection?.headlineAccent}
+        headlineSuffix={city.offerSection?.headlineSuffix}
+        stackedHeadline={city.offerSection?.stackedHeadline}
+        body={city.offerSection?.body}
+        serviceCards={city.offerSection?.cards}
+      />
       <FlutterVsReactNativeSection />
-      <StepperFrom />
-      <HowWeBuildMobileSection />
-      <WaitingForYouMobile />
-      <EngagementModelSection />
+      <StepperFrom
+        headlinePrefix={city.budgetSection?.headlinePrefix}
+        headlineAccent={city.budgetSection?.headlineAccent}
+        headlineSuffix={city.budgetSection?.headlineSuffix}
+        subtitle={city.budgetSection?.subtitle}
+      />
+      <HowWeBuildMobileSection
+        headlinePrefix={city.buildSection?.headlinePrefix}
+        headlineAccent={city.buildSection?.headlineAccent}
+        stackedHeadline={city.buildSection?.stackedHeadline}
+        paragraphs={city.buildSection?.paragraphs}
+        ctaText={city.buildSection?.ctaText}
+      />
+      <WaitingForYouMobile
+        headlinePrefix={city.estimationSection?.headlinePrefix}
+        headlineAccent={city.estimationSection?.headlineAccent}
+        headlineSuffix={city.estimationSection?.headlineSuffix}
+        stackedHeadline={city.estimationSection?.stackedHeadline}
+        body={city.estimationSection?.body}
+        ctaText={city.estimationSection?.ctaText}
+        ctaPhone={city.estimationSection?.ctaPhone}
+      />
+      <EngagementModelSection
+        headlinePrefix={city.engagementSection?.headlinePrefix}
+        headlineAccent={city.engagementSection?.headlineAccent}
+        headlineSuffix={city.engagementSection?.headlineSuffix}
+        stackedHeadline={city.engagementSection?.stackedHeadline}
+        supportingCopy={city.engagementSection?.supportingCopy}
+        models={city.engagementSection?.models}
+      />
       <IndustriesMobile
         firstWord={city.industriesFirstWord}
         secondWord={city.industriesSecondWord}
         thirdWord={city.industriesThirdWord}
         para={city.industriesIntro}
       />
-      <HipaaCompliantSection />
-      <FacilitiesMobile />
-      <AnalyticsMobile />
-      <AppIntegrationMobile />
+      <HipaaCompliantSection
+        headlinePrefix={city.hipaaSection?.headlinePrefix}
+        headlineAccent={city.hipaaSection?.headlineAccent}
+        stackedHeadline={city.hipaaSection?.stackedHeadline}
+        supportingCopy={city.hipaaSection?.supportingCopy}
+        features={city.hipaaSection?.features}
+      />
+      <FacilitiesMobile
+        headlinePrefix={city.facilitiesSection?.headlinePrefix}
+        headlineAccent={city.facilitiesSection?.headlineAccent}
+        headlineSuffix={city.facilitiesSection?.headlineSuffix}
+        stackedHeadline={city.facilitiesSection?.stackedHeadline}
+        paragraphs={city.facilitiesSection?.paragraphs}
+        ctaText={city.facilitiesSection?.ctaText}
+        ctaAction={city.facilitiesSection?.ctaAction}
+      />
+      {!city.hideAnalytics && (
+        <AnalyticsMobile
+          headlinePrefix={city.analyticsSection?.headlinePrefix}
+          headlineAccent={city.analyticsSection?.headlineAccent}
+          stackedHeadline={city.analyticsSection?.stackedHeadline}
+          title={city.analyticsSection?.title}
+          paragraphs={city.analyticsSection?.paragraphs}
+          ctaText={city.analyticsSection?.ctaText}
+        />
+      )}
+      {!city.hideAppIntegration && <AppIntegrationMobile />}
       <OurClientsMobile />
       <TechnologyStackMobile />
       <WhatWeDoMobileSection />

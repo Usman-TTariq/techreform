@@ -7,6 +7,7 @@ import ErpProcessSection from "../components/erp-process-section";
 import ErpWhyChooseSection from "../components/erp-why-choose-section";
 import ErpPlatformsTechnologiesSection from "../components/erp-platforms-technologies-section";
 import ErpPlatformComparisonSection from "../components/erp-platform-comparison-section";
+import ErpCustomVsOffShelfSection from "../components/erp-custom-vs-off-shelf-section";
 import ErpIndustriesSection from "../components/erp-industries-section";
 import CaseStudiesErpSection from "../components/case-studies-erp-section";
 import FaqErpSection from "../components/faq-erp-section";
@@ -81,6 +82,33 @@ const ERP_IMPACT_CARDS = [
   },
 ];
 
+const ERP_TESTIMONIALS = [
+  {
+    name: "Robert Hayes",
+    role: "COO — NexaManufacturing Inc.",
+    quote:
+      "TechReforms built our manufacturing ERP from scratch — inventory, production planning, and supplier management all in one system. Reduced our manual reporting time by 70%. Delivered in 14 weeks on a fixed price.",
+  },
+  {
+    name: "Sarah Kim",
+    role: "CTO — RetailBridge Group",
+    quote:
+      "Migrated our legacy system to cloud-based Odoo ERP. TechReforms handled data migration, module customization, and staff training. Zero downtime during cutover. Our ops team adopted it within 2 weeks.",
+  },
+  {
+    name: "David Moreau",
+    role: "VP Operations — FastRoute Logistics",
+    quote:
+      "We needed a logistics ERP that integrated with our fleet tracking and warehouse system. TechReforms built it in MS Dynamics and connected everything via API. Real-time visibility across 12 warehouses now.",
+  },
+  {
+    name: "Laura Wilson",
+    role: "CEO — MediCore Health Systems",
+    quote:
+      "Healthcare billing and patient management was a mess before TechReforms. They built a HIPAA-compliant ERP that connects our billing, inventory, and HR modules. Audit-ready from day one. Saved us 3 FTEs in manual work.",
+  },
+];
+
 const Erp = () => {
     return (
         <div>
@@ -106,9 +134,10 @@ const Erp = () => {
             <ErpPlatformComparisonSection />
             <ErpIndustriesSection />
             <ErpPlatformsTechnologiesSection />
+            <ErpCustomVsOffShelfSection />
             <CaseStudiesErpSection />
             <FaqErpSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={ERP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection
               productType="erp"

@@ -81,8 +81,33 @@ const SERVICE_CARDS = [
     },
 ];
 
-const AppDevelopmentSection = () => {
+const DEFAULT_HEADLINE_PREFIX = "Hire Our Native & Hybrid App ";
+const DEFAULT_HEADLINE_ACCENT = "Development Experts ";
+const DEFAULT_HEADLINE_SUFFIX = (
+    <>
+        <br />
+        <span className="text-[#F74B1C]">For User-Centric Apps with </span>
+        <span className="text-white">Secure App Architecture</span>
+    </>
+);
+const DEFAULT_BODY =
+    "We develop scalable apps with intuitive UI/UX design, a feature-rich development approach, and ongoing post-launch support. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.";
+
+const AppDevelopmentSection = ({
+    headlinePrefix,
+    headlineAccent,
+    headlineSuffix,
+    stackedHeadline = false,
+    body,
+    serviceCards,
+}) => {
     const [popupOpen, setPopupOpen] = useState(false);
+    const resolvedHeadlinePrefix = headlinePrefix ?? DEFAULT_HEADLINE_PREFIX;
+    const resolvedHeadlineAccent = headlineAccent ?? DEFAULT_HEADLINE_ACCENT;
+    const resolvedHeadlineSuffix = headlineSuffix ?? DEFAULT_HEADLINE_SUFFIX;
+    const resolvedBody = body ?? DEFAULT_BODY;
+    const resolvedServiceCards = serviceCards ?? SERVICE_CARDS;
+    const useStackedHeadline = stackedHeadline || (headlinePrefix != null && headlineAccent != null && headlineSuffix === "");
 
     return (
         <div className="relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[120px]">
@@ -92,24 +117,31 @@ const AppDevelopmentSection = () => {
                         <div className="flex justify-center pb-4 sm:pb-[22px]">
                             <CapsuleLabel firstWord="WHAT" secondWord="WE" thirdWord="OFFER" />
                         </div>
-                        <div className="font-britanicaBlack text-[26px] leading-tight sm:text-[34px] md:text-[40px] lg:text-[42px] lg:leading-[52px] font-black">
-                            <span className="text-white">Hire Our Native & Hybrid App </span>
-                            <span className="text-[#F74B1C]">Development Experts </span>
-                            <br />
-                            <span className="text-[#F74B1C]">For User-Centric Apps with </span>
-                            <span className="text-white">Secure App Architecture</span>
-                        </div>
+                        <h2 className="font-britanicaBlack text-[24px] leading-[1.2] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[42px] xl:leading-[1.2] font-black break-words max-w-5xl mx-auto px-1">
+                            {useStackedHeadline ? (
+                                <>
+                                    <span className="text-white block">{resolvedHeadlinePrefix.trim()}</span>
+                                    <span className="text-[#F74B1C] block mt-1">{resolvedHeadlineAccent.trim()}</span>
+                                </>
+                            ) : (
+                                <>
+                                    <span className="text-white">{resolvedHeadlinePrefix}</span>
+                                    <span className="text-[#F74B1C]">{resolvedHeadlineAccent}</span>
+                                    {resolvedHeadlineSuffix}
+                                </>
+                            )}
+                        </h2>
                     </div>
                     <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
-                        <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            We develop scalable apps with intuitive UI/UX design, a feature-rich development approach, and ongoing post-launch support. Our expertly curated mobile apps are built to offer cross-platform compatibility and seamless performance across devices.
+                        <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed">
+                            {resolvedBody}
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-4 pt-8 sm:pt-12 md:pt-[52px]">
-                    {SERVICE_CARDS.map((card) => (
-                        <div key={card.title} className="col-span-12 md:col-span-6 lg:col-span-4">
-                            <div className="rounded-xl h-full bg-[#7724c100] border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
+                <div className="grid grid-cols-12 gap-4 pt-8 sm:pt-12 md:pt-[52px] items-stretch">
+                    {resolvedServiceCards.map((card) => (
+                        <div key={card.title} className="col-span-12 md:col-span-6 lg:col-span-4 flex">
+                            <div className="flex h-full w-full flex-col rounded-xl border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-5 sm:p-6 md:p-[30px] py-8 sm:py-10 md:py-[46px]">
                                 <div className="flex flex-col justify-between h-full">
                                     <div className="pb-[20px]">
                                         <div className="flex h-[100px] w-[100px] sm:h-[110px] sm:w-[110px] items-center justify-center rounded-xl">
@@ -122,10 +154,10 @@ const AppDevelopmentSection = () => {
                                             />
                                         </div>
                                     </div>
-                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px]">
+                                    <div className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[24px] font-regular text-white text-left pb-1 sm:pb-[5px] leading-tight">
                                         {card.title}
                                     </div>
-                                    <div className="font-britanicaRegular text-[13px] sm:text-[14px] font-regular text-white text-left">
+                                    <div className="font-britanicaRegular flex-1 text-[13px] sm:text-[14px] font-regular text-white text-left leading-relaxed">
                                         {card.description}
                                     </div>
                                     <div className="pt-6 sm:pt-[30px] flex justify-start">

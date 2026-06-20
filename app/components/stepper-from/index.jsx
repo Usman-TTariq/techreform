@@ -85,7 +85,12 @@ const STEPS = [
   { number: "05", label: "Results" },
 ];
 
-const StepperFrom = () => {
+const StepperFrom = ({
+  headlinePrefix,
+  headlineAccent,
+  headlineSuffix,
+  subtitle,
+}) => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     // Step 1
@@ -131,17 +136,32 @@ const StepperFrom = () => {
     setSelectedYear(1);
   };
 
+  const resolvedSubtitle =
+    subtitle ??
+    "Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form.";
+  const useCustomHeadline = headlinePrefix != null && headlineAccent != null;
+
   return (
     <section className="container relative z-20 py-10 sm:py-16 md:py-24 px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden">
       <div className="rounded-2xl bg-[#1a1a1a] border border-white/10 p-4 sm:p-6 md:p-10 lg:p-12">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-10 md:mb-12">
           <h2 className="font-britanicaBlack text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight break-words">
-            Calculate the <span className="text-[#F74B1C]">ROI</span> of Your Mobile{" "}
-            <span className="text-[#F74B1C]">App Development Project</span>
+            {useCustomHeadline ? (
+              <>
+                <span className="text-white">{headlinePrefix}</span>
+                <span className="text-[#F74B1C]">{headlineAccent}</span>
+                {headlineSuffix ? <span className="text-white">{headlineSuffix}</span> : null}
+              </>
+            ) : (
+              <>
+                Calculate the <span className="text-[#F74B1C]">ROI</span> of Your Mobile{" "}
+                <span className="text-[#F74B1C]">App Development Project</span>
+              </>
+            )}
           </h2>
           <p className="font-britanicaRegular text-white/70 text-sm sm:text-base md:text-lg mt-3 sm:mt-4 max-w-full sm:max-w-2xl mx-auto px-0">
-          Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form.
+            {resolvedSubtitle}
           </p>
         </div>
 

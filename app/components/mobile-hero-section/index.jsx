@@ -8,12 +8,28 @@ const DEFAULT_HEADLINE_PREFIX = "Custom";
 const DEFAULT_HEADLINE_ACCENT = "Mobile App Development Services";
 const DEFAULT_HEADLINE_SUFFIX = "for Intuitive, High-Growth Apps";
 
+const DEFAULT_INTRO = (
+    <>
+        Looking for a trusted mobile app development firm to build powerful apps for your growing business? <br />
+        Tech Reforms has 20 years of experience delivering innovative mobile solutions with 350+ successful app launches across industries. Our expert team builds secure and high-performing apps designed to drive user engagement, accelerate growth, and ensure long-term success on every device.
+    </>
+);
+
 const MobileHeroSection = ({
     headlinePrefix = DEFAULT_HEADLINE_PREFIX,
     headlineAccent = DEFAULT_HEADLINE_ACCENT,
     headlineSuffix = DEFAULT_HEADLINE_SUFFIX,
     introText,
+    ctaText = "Hire Expert App Developers Today",
+    ctaPhone,
 }) => {
+    const introContent = Array.isArray(introText)
+        ? introText.map((paragraph, index) => (
+            <p key={index} className={index > 0 ? "pt-3 sm:pt-4" : undefined}>
+                {paragraph}
+            </p>
+        ))
+        : (introText ?? DEFAULT_INTRO);
     return (
         <div className="relative w-full min-w-0 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-4 sm:pb-8 md:pb-0 overflow-hidden bg-[#0E0E0E]">
             <Image
@@ -52,15 +68,20 @@ const MobileHeroSection = ({
                             <span className="text-white">{headlineSuffix}</span>
                         </h1>
                         <div className="font-britanicaRegular text-[14px] sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-[22px] max-w-full lg:max-w-xl leading-relaxed break-words">
-                            {introText ?? (
-                                <>
-                                    Looking for a trusted mobile app development firm to build powerful apps for your growing business? <br />
-                                    Tech Reforms has 20 years of experience delivering innovative mobile solutions with 350+ successful app launches across industries. Our expert team builds secure and high-performing apps designed to drive user engagement, accelerate growth, and ensure long-term success on every device.
-                                </>
-                            )}
+                            {introContent}
                         </div>
-                        <div className="pt-5 sm:pt-[30px]">
-                            <Button text="Hire Expert App Developers Today" icon={false} onClick={goToContact} />
+                        <div className="pt-5 sm:pt-[30px] flex flex-wrap items-center gap-3 sm:gap-4">
+                            <Button text={ctaText} icon={false} onClick={goToContact} />
+                            {ctaPhone && (
+                                <Button
+                                    text={ctaPhone}
+                                    textClassName="!text-[#F74B1C]"
+                                    className="!bg-transparent"
+                                    hoverClassName="!bg-transparent"
+                                    icon={false}
+                                    onClick={() => { window.location.href = "tel:+15822335015"; }}
+                                />
+                            )}
                         </div>
                     </div>
                 </div>

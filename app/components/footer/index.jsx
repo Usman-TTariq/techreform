@@ -7,6 +7,7 @@ import {
     COMPANY_ITEMS,
     ECOMMERCE_ITEMS,
     INDUSTRIES_ITEMS,
+    LOCATION_ITEMS,
     MOBILE_SERVICE_ITEMS,
     SOLUTIONS_ITEMS,
     STAFF_SERVICE_ITEMS,
@@ -143,6 +144,7 @@ const Footer = () => {
                 <div className="grid grid-cols-12 gap-6 sm:gap-8 pt-[20px]">
                     <div className="col-span-12 sm:col-span-6 lg:col-span-2">
                         <FooterNavSection title="Services" items={MOBILE_SERVICE_ITEMS} />
+                        <FooterNavSection title="Location" items={LOCATION_ITEMS} className="pt-4" />
                     </div>
                     <div className="col-span-12 sm:col-span-6 lg:col-span-2">
                         <FooterNavSection title="Native & Cross-Platform" items={APP_DEVELOPMENT_ITEMS} />

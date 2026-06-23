@@ -76,3 +76,7 @@ export const COMPANY_ITEMS = [
   { label: "Contact", href: "/contact" },
   { label: "Portfolio", href: "/portfolio" },
 ];
+
+export const LOCATION_ITEMS = [
+  { label: "Dallas, TX", href: "/mobile-app-development/dallas" },
+];

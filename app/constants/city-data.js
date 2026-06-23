@@ -263,6 +263,91 @@ export const CITIES = {
       ctaText: "See How We Work →",
       ctaAction: "scroll-how-we-work",
     },
+    processSection: {
+      headlinePrefix: "How We Take Your Dallas App",
+      headlineAccent: "From a Rough Idea to a Live Product —",
+      headlineSuffix: "Step by Step",
+      cards: [
+        {
+          title: "Discovery & Scoping",
+          description:
+            "Before we write a single line of code, we dig into your business goals, your target users, and the problem your Dallas app needs to solve. We map user flows, define core features, and lock the project scope so development never goes off-track. This phase typically takes 2 to 4 weeks — and every dollar spent here saves five in development rework later.",
+        },
+        {
+          title: "UI/UX Design & Prototyping",
+          description:
+            "We build clickable prototypes before development begins so you can see exactly how your app looks and behaves on a real screen. Every screen, tap, and transition is designed around how your Dallas users actually think — not how we assume they do. Design runs 3 to 6 weeks depending on complexity, and nothing moves to development until you've signed off on it.",
+        },
+        {
+          title: "Development & Architecture",
+          description:
+            "This is where your Dallas mobile app gets built — in two-week sprints using clean, documented code structured for long-term scalability. We select the right stack for your product: Swift or Kotlin for native performance, Flutter or React Native for cross-platform efficiency. You see working software at the end of every sprint, not at the end of the project.",
+        },
+        {
+          title: "QA Testing & Security Review",
+          description:
+            "QA is integrated from day one — developers never test their own code. Our QA team runs functional testing, performance testing, security audits, and device compatibility checks across iOS and Android before your Dallas app goes anywhere near the App Store or Google Play. Every bug found in testing is a crash your users never experience.",
+        },
+        {
+          title: "Launch & Post-Launch Support",
+          description:
+            "Apple App Store review takes approximately 2 days; both platforms require separate assets and legal configuration — we handle all of it. After your Dallas app goes live, we monitor performance, track user behavior, and resolve issues as they surface. Launch day is not the end of our job. It's where the real data starts coming in.",
+        },
+      ],
+    },
+    whyPartnerSection: {
+      headlinePrefix: "Why Dallas Businesses Choose",
+      headlineAccent: "Tech Reforms",
+      headlineSuffix: "as Their Mobile App Development Partner",
+      paragraphs: [
+        "Most Dallas businesses don't just need a developer — they need a team that understands their market, asks the right questions before building anything, and stays accountable long after the app goes live.",
+        "We don't take on every project that comes through the door. We work with Dallas businesses where we're confident we can deliver something that actually moves the needle — and we tell you upfront if we're not the right fit. That honesty is rare in this industry, and it's exactly why the clients who work with us come back for their next project.",
+        "Your idea deserves a team that treats it seriously. Let's talk about what we can build together.",
+      ],
+      ctaText: "Start Your Project →",
+      ctaPhone: "(582) 233-5015",
+    },
+    faqSection: {
+      headlinePrefix: "Frequently Asked Questions About",
+      headlineAccent: "Mobile App Development in Dallas",
+      items: [
+        {
+          question: "How much does it cost to build a mobile app in Dallas?",
+          answer:
+            "Mobile app development costs in Dallas typically range from $20,000 for a simple single-platform app to $200,000+ for a complex enterprise-grade product. The final number depends on your platform choice (iOS, Android, or cross-platform), the number of features, backend complexity, third-party integrations, and whether you need ongoing post-launch support. The most accurate way to get a number is to share your requirements with us directly — we provide detailed estimates broken down by phase, not a ballpark figure pulled from thin air.",
+        },
+        {
+          question: "How long does it take to develop a mobile app in Dallas?",
+          answer:
+            "A focused MVP built for a Dallas startup typically takes 8 to 16 weeks from discovery to launch. A full-featured product with complex integrations, custom UI, and enterprise security requirements can take 6 to 12 months. Discovery and scoping takes 2 to 4 weeks, UI/UX design runs 3 to 6 weeks, and QA and App Store submission add another 2 to 4 weeks on top of development. Timelines are set at the beginning of every project and tracked sprint by sprint — you always know exactly where your Dallas app stands.",
+        },
+        {
+          question: "Should I build a native app or a cross-platform app for my Dallas business?",
+          answer:
+            "It depends on your product requirements, not a blanket preference. Native apps built in Swift (iOS) or Kotlin (Android) deliver the highest performance and full access to device-specific features — the right choice for healthcare apps, fintech platforms, or any product where security and speed are non-negotiable. Cross-platform apps built in Flutter or React Native share up to 95% of code across iOS and Android, cutting your development cost and timeline significantly. We recommend the right stack after understanding your Dallas business goals — not based on what's easiest for us to build.",
+        },
+        {
+          question: "Do you build HIPAA-compliant mobile apps in Dallas?",
+          answer:
+            "Yes. Dallas healthcare businesses working with patient data, appointment systems, telemedicine platforms, or any product handling Protected Health Information (PHI) require HIPAA-compliant architecture by law. We build end-to-end encryption, role-based access control, audit logging, auto session timeouts, TLS 1.3 API connections, and Business Associate Agreements (BAA) into every healthcare app we develop in Dallas — from the first line of code, not as an afterthought.",
+        },
+        {
+          question: "What happens after my Dallas app goes live?",
+          answer:
+            "Launch day is not the finish line. The first 90 days after your Dallas app goes live are when real users surface edge cases your testing didn't catch, OS updates create compatibility issues, and user behavior reveals features that need adjustment. We offer post-launch maintenance, performance monitoring, bug resolution, and iterative feature development — so your app keeps improving based on real usage data rather than assumptions made before anyone had used it.",
+        },
+        {
+          question: "Can you add AI features to my existing Dallas mobile app?",
+          answer:
+            "Yes. We integrate large language models, RAG pipelines, on-device ML, and APIs like GPT and Claude into existing mobile apps and new builds. AI features that actually make sense for Dallas businesses include intelligent search, personalized content recommendations, automated customer support workflows, predictive analytics, and real-time data processing. We don't add AI because it sounds impressive — we add it where it solves a specific problem your users have.",
+        },
+        {
+          question: "How do I hire a mobile app developer in Dallas through Tech Reforms?",
+          answer:
+            "Start with a free consultation. You share your app idea, your business goals, and any constraints around timeline or budget. We ask the right questions, scope the project honestly, and put together a detailed proposal. If we're the right fit, we move into discovery within days — no lengthy procurement process, no committee of account managers. Just a direct conversation with the team that will actually build your Dallas app.",
+        },
+      ],
+    },
   }),
 };
 

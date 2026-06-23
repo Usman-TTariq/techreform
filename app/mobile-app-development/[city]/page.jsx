@@ -177,9 +177,19 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
       {!city.hideAppIntegration && <AppIntegrationMobile />}
       <OurClientsMobile />
       <TechnologyStackMobile />
-      <WhatWeDoMobileSection />
+      <WhatWeDoMobileSection
+        headlinePrefix={city.processSection?.headlinePrefix}
+        headlineAccent={city.processSection?.headlineAccent}
+        headlineSuffix={city.processSection?.headlineSuffix}
+        cards={city.processSection?.cards}
+        partnerSection={city.whyPartnerSection}
+      />
       <CaseStudiesSection />
-      <FaqSection />
+      <FaqSection
+        headlinePrefix={city.faqSection?.headlinePrefix}
+        headlineAccent={city.faqSection?.headlineAccent}
+        items={city.faqSection?.items}
+      />
       <TestimonialSection />
       <ThreeDTextRotationSection />
       <DetailFormSection formIntro={city.formIntro} />

@@ -152,9 +152,11 @@ const FAQ_ITEMS = [
 
 /**
  * @param {Object} props
+ * @param {string} [props.headlinePrefix]
+ * @param {string} [props.headlineAccent]
  * @param {{ id?: number, question: string, answer: string | React.ReactNode }[]} [props.items] - Optional CMS/blog FAQ items (question + answer). When provided, used instead of default FAQ_ITEMS.
  */
-const FaqSection = ({ items: itemsProp }) => {
+const FaqSection = ({ headlinePrefix, headlineAccent, items: itemsProp }) => {
     const items = Array.isArray(itemsProp) && itemsProp.length > 0
         ? itemsProp.map((item, i) => ({ id: i + 1, question: item.question ?? "", answer: item.answer ?? "" }))
         : FAQ_ITEMS;
@@ -167,9 +169,9 @@ const FaqSection = ({ items: itemsProp }) => {
                     <div className="col-span-12 lg:col-span-4">
                         <CapsuleLabel firstWord="FAQ" secondWord="" />
                         <h2 className="font-britanicaBlack text-[36px] md:text-[42px] leading-[1.15] font-black pt-4">
-                            <span className="text-white">Frequently Asked </span>
+                            <span className="text-white">{headlinePrefix ?? "Frequently Asked "}</span>
                             <br />
-                            <span className="text-[#F74B1C]">Questions</span>
+                            <span className="text-[#F74B1C]">{headlineAccent ?? "Questions"}</span>
                         </h2>
                     </div>
                     <div className="col-span-12 lg:col-span-8 min-w-0 max-sm:pt-4">

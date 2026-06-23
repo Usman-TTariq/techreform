@@ -9,8 +9,43 @@ import { ArrowRight } from 'lucide-react';
 import Image from "next/image";
 import AiIcon from "./svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
+import { goToContact } from "@/app/utils/goToContact";
 
-const WhatWeDoMobileSection = () => {
+const DEFAULT_SOLUTIONS = [
+        {
+            title: "Requirement Gathering",
+            desc: "Our process starts with a detailed requirements-gathering session. This helps our experts scope the app's goal, target audience, and technical requirements.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "UI/UX Mockups",
+            desc: "Our certified designers then develop the perfect UI/UX that not only offers seamless navigation but also actively engages users through high accessibility and a satisfying interface.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "App Development",
+            desc: "During Development, we focus all our resources on building scalable, secure, high-performance mobile applications using the latest frameworks and clean code practices.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Quality Testing",
+            desc: "We perform a comprehensive mobile app testing and deployment process to gain bug-free performance, security compliance, and cross-device compatibility.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+        {
+            title: "Ongoing Support",
+            desc: "Lastly, the maintenance and support phase begins. This is where we review all technical details one last time to ensure optimal performance monitoring, security enhancements, and optimal end-to-end app development.",
+            icon: <AiIcon className="w-[40px]" />,
+        },
+    ];
+
+const WhatWeDoMobileSection = ({
+    headlinePrefix,
+    headlineAccent,
+    headlineSuffix,
+    cards,
+    partnerSection,
+}) => {
     const [popupOpen, setPopupOpen] = useState(false);
     const row1Ref = useRef(null);
     const swiper1Ref = useRef(null);
@@ -45,33 +80,26 @@ const WhatWeDoMobileSection = () => {
         window.addEventListener("wheel", handleWheel, { passive: false });
         return () => window.removeEventListener("wheel", handleWheel);
     }, [swiper1Ready]);
-    const solutions = [
-        {
-            title: "Requirement Gathering",
-            desc: "Our process starts with a detailed requirements-gathering session. This helps our experts scope the app's goal, target audience, and technical requirements.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "UI/UX Mockups",
-            desc: "Our certified designers then develop the perfect UI/UX that not only offers seamless navigation but also actively engages users through high accessibility and a satisfying interface.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "App Development",
-            desc: "During Development, we focus all our resources on building scalable, secure, high-performance mobile applications using the latest frameworks and clean code practices.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "Quality Testing",
-            desc: "We perform a comprehensive mobile app testing and deployment process to gain bug-free performance, security compliance, and cross-device compatibility.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
-        {
-            title: "Ongoing Support",
-            desc: "Lastly, the maintenance and support phase begins. This is where we review all technical details one last time to ensure optimal performance monitoring, security enhancements, and optimal end-to-end app development.",
-            icon: <AiIcon className="w-[40px]" />,
-        },
+
+    const solutions = (cards ?? DEFAULT_SOLUTIONS).map((card) => ({
+        title: card.title,
+        desc: card.description ?? card.desc,
+        icon: card.icon ?? <AiIcon className="w-[40px]" />,
+    }));
+
+    const titlePrefix = headlinePrefix ?? "Simplified Process of";
+    const titleAccent = headlineAccent ?? "Building Scalable Apps";
+    const titleSuffix = headlineSuffix ?? "Through Smart Strategies";
+
+    const partnerHeadlinePrefix = partnerSection?.headlinePrefix ?? "Why Partner ";
+    const partnerHeadlineAccent = partnerSection?.headlineAccent ?? "";
+    const partnerHeadlineSuffix = partnerSection?.headlineSuffix ?? "With Us";
+    const partnerParagraphs = partnerSection?.paragraphs ?? [
+        "We take pride in delivering high-performance app solutions built on a secure architecture. Each application we build is designed to meet the current industry standard for dynamic mobile app development in the USA.",
+        "So, begin your journey to the smartest and most accessible dedicated team of expert app developers by clicking a few buttons and paying an upfront fee.",
     ];
+    const partnerCtaText = partnerSection?.ctaText;
+    const partnerCtaPhone = partnerSection?.ctaPhone;
 
     return (
         <div className="container relative pb-16 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4">
@@ -88,11 +116,15 @@ const WhatWeDoMobileSection = () => {
                         <CapsuleLabel firstWord="Our" secondWord="Mobile App Development" thirdWord="Process" />
                     </div>
                     <div className="font-britanicaBlack text-[28px] leading-tight max-sm:text-center sm:text-[34px] md:text-[40px] lg:text-[42px] lg:leading-[45px] font-black">
-                        <span className="text-white">Simplified Process of</span>
-                        <br />
-                        <span className="text-[#F74B1C]">Building Scalable Apps</span>
-                        <br />
-                        <span className="text-white">Through Smart Strategies</span>
+                        <span className="text-white">{titlePrefix}</span>
+                        {(titleAccent || titleSuffix) && " "}
+                        {titleAccent && (
+                            <>
+                                <span className="text-[#F74B1C]">{titleAccent}</span>
+                                {titleSuffix && " "}
+                            </>
+                        )}
+                        {titleSuffix && <span className="text-white">{titleSuffix}</span>}
                     </div>
                     {/* <div className="font-britanicaRegular text-[20px] font-regular text-white pt-[22px]">
             Tech Reforms empowers businesses with smart, secure, and scalable
@@ -168,14 +200,37 @@ const WhatWeDoMobileSection = () => {
             </div>
             <div className="pt-10 sm:pt-16 md:pt-[70px] max-w-4xl mx-auto text-center">
                 <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[55px] font-black">
-                    <span className="text-[#F74B1C]">Why Partner </span>
-                    <span className="text-white">With Us</span>
+                    <span className="text-[#F74B1C]">{partnerHeadlinePrefix}</span>
+                    {partnerHeadlineAccent && (
+                        <>
+                            <span className="text-white">{partnerHeadlineAccent}</span>
+                            {" "}
+                        </>
+                    )}
+                    <span className="text-white">{partnerHeadlineSuffix}</span>
                 </div>
-                <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                    We take pride in delivering high-performance app solutions built on a secure architecture. Each application we build is designed to meet the current industry standard for dynamic mobile app development in the USA.
-                    <br />
-                    So, begin your journey to the smartest and most accessible dedicated team of expert app developers by clicking a few buttons and paying an upfront fee.
+                <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] space-y-4 leading-relaxed">
+                    {partnerParagraphs.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                    ))}
                 </div>
+                {(partnerCtaText || partnerCtaPhone) && (
+                    <div className="pt-6 sm:pt-[30px] flex flex-wrap gap-3 sm:gap-4 justify-center">
+                        {partnerCtaText && (
+                            <Button text={partnerCtaText} icon={false} onClick={goToContact} />
+                        )}
+                        {partnerCtaPhone && (
+                            <Button
+                                text={partnerCtaPhone}
+                                textClassName="!text-[#F74B1C]"
+                                className="!bg-transparent"
+                                hoverClassName="!bg-transparent"
+                                icon={false}
+                                onClick={() => { window.location.href = "tel:+15822335015"; }}
+                            />
+                        )}
+                    </div>
+                )}
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>

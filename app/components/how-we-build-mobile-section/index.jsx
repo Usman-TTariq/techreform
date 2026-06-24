@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "../common/button";
-import { goToContact } from "@/app/utils/goToContact";
+import { openZendesk } from "@/app/utils/openZendesk";
 
 const DEFAULT_HEADLINE_PREFIX = "How We Build ";
 const DEFAULT_HEADLINE_ACCENT = "Mobile Apps That Actually Perform?";
@@ -11,7 +11,7 @@ const DEFAULT_PARAGRAPHS = [
     "We build for Android and iOS, and pick the stack that fits what you're trying to do. We work with React Native, Flutter, Kotlin, Swift, and so much more. So, it feels fast and polished, where users notice, not like a shortcut that shows.",
     "Whether you're validating an idea, rolling out something company-wide, or building something nobody's built quite your way yet, we care about the boring parts too: clear communication, careful execution, and delivery you can plan around, so your product can compete in a crowded market without feeling rushed or fragile.",
 ];
-const DEFAULT_CTA_TEXT = "Get a Free Quote";
+const DEFAULT_CTA_TEXT = "Talk to an App Developer";
 
 const HowWeBuildMobileSection = ({
     headlinePrefix,
@@ -66,7 +66,7 @@ const HowWeBuildMobileSection = ({
                             ))}
                         </div>
                         <div className="pt-5 sm:pt-[30px] max-lg:flex max-lg:justify-center">
-                            <Button text={resolvedCtaText} icon={false} onClick={goToContact} />
+                            <Button text={resolvedCtaText} icon={false} onClick={openZendesk} />
                         </div>
                     </div>
                 </div>

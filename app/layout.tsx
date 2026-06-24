@@ -121,6 +121,11 @@ export default function RootLayout({
           strategy="afterInteractive"
           src="https://cdn.livechatinc.com/tracking.js"
         />
+        <Script
+          id="ze-snippet"
+          strategy="afterInteractive"
+          src="https://static.zdassets.com/ekr/snippet.js?key=3196a1f3-1999-4162-9a9d-9a4efcf9d971"
+        />
       </head>
       <body className="antialiased">
         {children}

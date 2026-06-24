@@ -4,8 +4,23 @@ import { useRouter } from "next/navigation";
 import ThankYouText from "./svg/thank-you-text";
 import Button from "../common/button";
 
+const THANK_YOU_RETURN_PATHS = ["/app-development", "/website-development"];
+
 const ThankYouSection = () => {
     const router = useRouter();
+
+    const handleGoBack = () => {
+        const from =
+            typeof window !== "undefined"
+                ? new URLSearchParams(window.location.search).get("from")
+                : null;
+        if (from && THANK_YOU_RETURN_PATHS.includes(from)) {
+            router.push(from);
+            return;
+        }
+        router.push("/");
+    };
+
     return (
         <div className="relative h-[90vh] overflow-hidden z-10">
             <Image className="absolute top-[50%] -translate-y-1/2 right-0 w-[40%]" src="https://ik.imagekit.io/sajib4aqc/Group%202147225280.png" alt="Thank You" width={1000} height={1000} />
@@ -67,9 +82,9 @@ const ThankYouSection = () => {
                             </div>
                             <div className="pt-6 sm:pt-[30px]">
                                 <Button
-                                    text="Back To Home"
+                                    text="Go Back"
                                     icon={false}
-                                    onClick={() => router.push("/")}
+                                    onClick={handleGoBack}
                                 />
                             </div>
                         </div>

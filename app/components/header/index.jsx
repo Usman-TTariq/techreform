@@ -263,7 +263,7 @@ const Header = () => {
                     {/* Desktop CTA – hidden on small screens */}
                     <div className="hidden lg:block flex-shrink-0">
                         <Button
-                            text="Call Now (582) 233-5015"
+                            text="Call Now +1 (582) 233-5015"
                             icon={true}
                             className="!px-1.5"
                             textClassName="!text-[13px] xl:!text-[14px] 2xl:!text-[16px] !px-2"

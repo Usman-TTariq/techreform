@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import PhoneInput from "react-phone-number-input";
@@ -18,8 +18,11 @@ function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email ?? "");
 }
 
+const THANK_YOU_RETURN_PATHS = ["/app-development", "/website-development"];
+
 const FreeConsultationForm = ({ intro }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [formData, setFormData] = useState({
     name: "",
     businessName: "",
@@ -93,7 +96,8 @@ const FreeConsultationForm = ({ intro }) => {
       setPhone("");
       setErrors({});
       setSubmitSuccess(true);
-      router.push("/thank-you");
+      const returnPath = THANK_YOU_RETURN_PATHS.includes(pathname) ? pathname : null;
+      router.push(returnPath ? `/thank-you?from=${encodeURIComponent(returnPath)}` : "/thank-you");
     } catch (err) {
       setErrors((prev) => ({
         ...prev,

@@ -7,6 +7,7 @@ import Button from "../common/button";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { storeOpenAiLeadEventId } from "@/app/utils/storeOpenAiLeadEventId";
 
 const INPUT_STYLE =
   "font-gliker text-[14px] bg-[#2E2E2E] text-[#fff] w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-white/40";
@@ -89,6 +90,7 @@ const ContactForm = () => {
       setFormData({ name: "", email: "", message: "" });
       setPhone("");
       setErrors({});
+      storeOpenAiLeadEventId(data.leadEventId);
       router.push("/thank-you");
     } catch (err) {
       setErrors((prev) => ({

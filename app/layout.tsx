@@ -13,6 +13,10 @@ const googleAnalyticsId =
 const googleAdsId =
   process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-16723277657";
 
+/** OpenAI Ads measurement pixel ID for ChatGPT Ads conversion tracking. */
+const openAiAdsPixelId =
+  process.env.NEXT_PUBLIC_OPENAI_ADS_PIXEL_ID?.trim() || "CuKsAmXgngqY2poyTw9VDE";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Top USA Digital Agency for App & eCommerce",
@@ -125,6 +129,19 @@ export default function RootLayout({
           id="ze-snippet"
           strategy="afterInteractive"
           src="https://static.zdassets.com/ekr/snippet.js?key=3196a1f3-1999-4162-9a9d-9a4efcf9d971"
+        />
+        <Script id="openai-ads-pixel-init" strategy="afterInteractive">
+          {`
+            window.oaiq = window.oaiq || function () {
+              (window.oaiq.q = window.oaiq.q || []).push(arguments);
+            };
+            oaiq("init", { pixelId: ${JSON.stringify(openAiAdsPixelId)} });
+          `}
+        </Script>
+        <Script
+          id="openai-ads-pixel-sdk"
+          strategy="afterInteractive"
+          src="https://bzrcdn.openai.com/sdk/oaiq.min.js"
         />
       </head>
       <body className="antialiased">

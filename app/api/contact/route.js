@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getUserConfirmationEmail } from "@/app/utils/emailTemplate";
+import {
+  createLeadEventId,
+  sendOpenAiLeadCreatedEvent,
+} from "@/lib/openai-ads";
 
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL || "Tech Reforms <info@techreforms.com>";
@@ -57,7 +61,13 @@ export async function POST(request) {
       });
     }
 
-    return NextResponse.json({ success: true, id: data?.id });
+    const leadEventId = createLeadEventId();
+    const sourceUrl =
+      request.headers.get("referer") ||
+      `${process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://techreforms.com"}/thank-you`;
+    await sendOpenAiLeadCreatedEvent({ eventId: leadEventId, sourceUrl });
+
+    return NextResponse.json({ success: true, id: data?.id, leadEventId });
   } catch (err) {
     console.error("Contact API error:", err);
     return NextResponse.json(

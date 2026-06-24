@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getUserConfirmationEmail } from "@/app/utils/emailTemplate";
+import {
+  createLeadEventId,
+  sendOpenAiLeadCreatedEvent,
+} from "@/lib/openai-ads";
 
 // Use RESEND_FROM_EMAIL after verifying techreforms.com at https://resend.com/domains
 // Until then, Resend's verified address works for testing (you can only send TO your own email on free tier)
@@ -64,7 +68,13 @@ export async function POST(request) {
       });
     }
 
-    return NextResponse.json({ success: true, id: data?.id });
+    const leadEventId = createLeadEventId();
+    const sourceUrl =
+      request.headers.get("referer") ||
+      `${process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://techreforms.com"}/thank-you`;
+    await sendOpenAiLeadCreatedEvent({ eventId: leadEventId, sourceUrl });
+
+    return NextResponse.json({ success: true, id: data?.id, leadEventId });
   } catch (err) {
     console.error("Consultation API error:", err);
     return NextResponse.json(

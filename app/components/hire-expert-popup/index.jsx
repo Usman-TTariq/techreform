@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { storeOpenAiLeadEventId } from "@/app/utils/storeOpenAiLeadEventId";
 
 const INPUT_CLASS =
     "w-full min-w-0 px-3 sm:px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/15 text-white font-britanicaRegular text-[14px] placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#F74B1C]/50 focus:border-[#F74B1C] transition-colors box-border";
@@ -80,6 +81,7 @@ const HireExpertPopup = ({ open, onClose }) => {
             setPhone("");
             setErrors({});
             setSubmitSuccess(true);
+            storeOpenAiLeadEventId(data.leadEventId);
             onClose();
             router.push("/thank-you");
         } catch (err) {

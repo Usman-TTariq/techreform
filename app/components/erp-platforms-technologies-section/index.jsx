@@ -1,16 +1,24 @@
-import Image from "next/image";
 import {
+  Bot,
+  Boxes,
   Building2,
-  Check,
+  CircleDot,
   Cloud,
   Code2,
+  Cpu,
   Database,
+  Gamepad2,
+  Globe,
+  Glasses,
+  Headset,
   LayoutGrid,
   Package,
+  Scan,
+  Smartphone,
 } from "lucide-react";
-import CapsuleLabel from "../common/capsule-label";
+import PlatformsTechnologiesSection from "../platforms-technologies-section";
 
-const PLATFORMS = [
+const ERP_PLATFORMS = [
   { title: "SAP ERP", subtitle: "Large Enterprise", Icon: Building2 },
   { title: "Oracle ERP", subtitle: "Enterprise / Finance", Icon: Database },
   { title: "MS Dynamics 365", subtitle: "Mid-Enterprise", Icon: LayoutGrid },
@@ -19,7 +27,7 @@ const PLATFORMS = [
   { title: "Custom ERP", subtitle: "Any business size", Icon: Code2 },
 ];
 
-const TECH_STACK = [
+const ERP_TECH_STACK = [
   {
     title: "BACKEND",
     items: ["Node.js", "Python / Django", "Laravel / PHP", "Java Spring"],
@@ -38,83 +46,98 @@ const TECH_STACK = [
   },
 ];
 
-const cardClass =
-  "rounded-xl border border-[#C380FE] bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)]";
+const AR_PLATFORMS = [
+  { title: "ARKit", subtitle: "iOS AR — iPhone & iPad", Icon: Smartphone },
+  { title: "ARCore", subtitle: "Android AR — all devices", Icon: Bot },
+  { title: "WebAR", subtitle: "Browser-based AR", Icon: Globe },
+  { title: "Unity XR", subtitle: "Cross-platform AR/VR", Icon: Boxes },
+  { title: "Vuforia", subtitle: "Enterprise marker-based", Icon: Scan },
+  { title: "Microsoft MRTK", subtitle: "HoloLens development", Icon: Glasses },
+];
 
-const ErpPlatformsTechnologiesSection = () => {
-  return (
-    <section className="relative pb-12 sm:pb-16 md:pb-[120px] overflow-hidden w-full min-w-0">
-      <Image
-        className="w-[70%] sm:w-[50%] absolute -top-[30%] right-0 opacity-50 sm:opacity-70 pointer-events-none"
-        src="/images/whatwedobk.png"
-        alt=""
-        width={1000}
-        height={1000}
-        aria-hidden
-      />
+const AR_TECH_STACK = [
+  {
+    title: "AR FRAMEWORKS",
+    items: ["ARKit 6", "ARCore", "Vuforia", "8th Wall (WebAR)"],
+  },
+  {
+    title: "3D ENGINES",
+    items: ["Unity XR", "Unreal Engine 5", "Three.js", "Babylon.js"],
+  },
+  {
+    title: "3D & AI TOOLS",
+    items: ["Blender", "Maya", "TensorFlow Lite", "Core ML"],
+  },
+  {
+    title: "PLATFORMS & CLOUD",
+    items: ["iOS & Android", "HoloLens 2", "Meta Quest", "Apple Vision Pro"],
+  },
+];
 
-      <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border z-10">
-        <div className="grid grid-cols-12">
-          <div className="col-span-12 text-center min-w-0">
-            <div className="flex justify-center pb-4 sm:pb-[22px]">
-              <CapsuleLabel firstWord="ERP" secondWord="PLATFORMS" />
-            </div>
-            <h2 className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[52px] font-black break-words">
-              <span className="text-white">ERP Platforms &amp; </span>
-              <span className="text-[#F74B1C]">Technologies</span>
-              <span className="text-white"> We Work With</span>
-            </h2>
-          </div>
-        </div>
+const VR_PLATFORMS = [
+  { title: "Unity XR", subtitle: "Cross-platform VR — all headsets", Icon: Boxes },
+  { title: "Unreal Engine 5", subtitle: "PC VR — photorealistic worlds", Icon: Cpu },
+  { title: "OpenXR", subtitle: "Universal VR standard", Icon: CircleDot },
+  { title: "Meta SDK", subtitle: "Quest 2, 3 & Pro", Icon: Headset },
+  { title: "SteamVR / OpenVR", subtitle: "PC VR — HTC Vive, Valve Index", Icon: Gamepad2 },
+  { title: "Microsoft MRTK", subtitle: "HoloLens mixed reality", Icon: Glasses },
+];
 
-        <div className="grid grid-cols-12 gap-3 sm:gap-4 pt-8 sm:pt-10 md:pt-[52px]">
-          {PLATFORMS.map(({ title, subtitle, Icon }) => (
-            <div key={title} className="col-span-12 sm:col-span-6 lg:col-span-4 min-w-0">
-              <div className={`${cardClass} flex items-center gap-4 px-4 py-4 sm:px-5 sm:py-5 h-full`}>
-                <span className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#7724C1]/30 border border-[#7724C1]/50">
-                  <Icon
-                    className="h-5 w-5 sm:h-[22px] sm:w-[22px] text-[#C380FE]"
-                    strokeWidth={1.75}
-                    aria-hidden
-                  />
-                </span>
-                <div className="min-w-0">
-                  <h3 className="font-britanicaExtraBold text-[15px] sm:text-[16px] text-white leading-tight">
-                    {title}
-                  </h3>
-                  <p className="font-britanicaRegular text-[12px] sm:text-[13px] text-white/60 pt-0.5">
-                    {subtitle}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+const VR_TECH_STACK = [
+  {
+    title: "VR ENGINES",
+    items: ["Unity XR Toolkit", "Unreal Engine 5", "WebXR / A-Frame", "Godot XR"],
+  },
+  {
+    title: "SDKS & APIS",
+    items: ["Meta SDK", "SteamVR SDK", "PlayStation VR2 SDK", "OpenXR Standard"],
+  },
+  {
+    title: "3D & SIMULATION",
+    items: ["Blender", "Maya", "NVIDIA PhysX", "Havok Physics"],
+  },
+  {
+    title: "CLOUD & MULTIPLAYER",
+    items: ["Photon Network", "AWS GameLift", "Mirror Networking", "WebRTC"],
+  },
+];
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-10 sm:pt-12 md:pt-14 justify-center flex">
-          {TECH_STACK.map((group) => (
-            <div key={group.title} className="min-w-0">
-              <h3 className="font-britanicaExtraBold text-[11px] sm:text-[12px] tracking-[0.08em] text-white/70 pb-3 sm:pb-4">
-                {group.title}
-              </h3>
-              <ul className="space-y-2.5 sm:space-y-3">
-                {group.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 min-w-0">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7724C1]/30 border border-[#7724C1]/50">
-                      <Check className="h-3 w-3 text-[#C380FE]" strokeWidth={2.5} aria-hidden />
-                    </span>
-                    <span className="font-britanicaRegular text-[13px] sm:text-[14px] text-white/85 leading-snug">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+const ErpPlatformsTechnologiesSection = () => (
+  <PlatformsTechnologiesSection
+    capsuleFirst="ERP"
+    capsuleSecond="PLATFORMS"
+    headlineBefore="ERP Platforms & "
+    headlineAccent="Technologies"
+    headlineAfter=" We Work With"
+    platforms={ERP_PLATFORMS}
+    techStack={ERP_TECH_STACK}
+  />
+);
+
+export const ArFrameworksTechnologiesSection = () => (
+  <PlatformsTechnologiesSection
+    capsuleFirst="AR"
+    capsuleSecond="TECHNOLOGY"
+    headlineBefore="AR "
+    headlineAccent="Frameworks & Technologies"
+    headlineAfter=" We Build With"
+    description="We use industry-leading AR frameworks, 3D engines, and cloud platforms. The right stack is chosen based on your target device, use case, and budget."
+    platforms={AR_PLATFORMS}
+    techStack={AR_TECH_STACK}
+  />
+);
+
+export const VrFrameworksTechnologiesSection = () => (
+  <PlatformsTechnologiesSection
+    capsuleFirst="VR"
+    capsuleSecond="TECHNOLOGY"
+    headlineBefore="VR "
+    headlineAccent="Frameworks & Technologies"
+    headlineAfter=" We Build With"
+    description="We use industry-leading VR engines, SDKs, and multiplayer platforms. The right stack is chosen based on your target headset, use case, and performance requirements."
+    platforms={VR_PLATFORMS}
+    techStack={VR_TECH_STACK}
+  />
+);
 
 export default ErpPlatformsTechnologiesSection;

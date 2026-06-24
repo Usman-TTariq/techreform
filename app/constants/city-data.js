@@ -100,9 +100,9 @@ export const CITIES = {
     hideAnalytics: true,
     hideAppIntegration: true,
     hideFlutterComparison: true,
-    metaTitle: "Top Mobile App Development Services & Experts in Dallas, TX",
+    metaTitle: "Custom Mobile App Development Dallas TX | Tech Reforms",
     metaDescription:
-      "Dallas mobile app development for startups and enterprises. Custom iOS, Android, and cross-platform apps built around your business goals — design, development, launch, and support.",
+      "Looking for top-rated mobile app developers in Dallas? Tech Reforms builds premium, high-performance iOS & Android apps for local businesses.",
     heroHeadlinePrefix: "Mobile App Development Services in Dallas, TX —",
     heroHeadlineAccent: "Built Around Your Business,",
     heroHeadlineSuffix: "Not Our Convenience",

@@ -13,6 +13,40 @@ import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
 import FaqHomeSection from "../components/faq-home-section";
 import VrCaseStudySection from "../components/vr-case-study-section";
+import OurImpactBoxesSection from "../components/our-impact-boxes-section";
+import { VrFrameworksTechnologiesSection } from "../components/erp-platforms-technologies-section";
+
+const VR_IMPACT_CARDS = [
+  {
+    value: "40+",
+    label: "VR Experiences Built",
+    action: "Enterprise & Consumer",
+    isLink: false,
+    rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]",
+  },
+  {
+    value: "4.9★",
+    label: "Clutch Rating",
+    action: "Verified reviews",
+    href: "https://clutch.co/profile/tech-reforms",
+    isLink: true,
+    rounded: "",
+  },
+  {
+    value: "$35K",
+    label: "VR Starting Price",
+    action: "Fixed-price available",
+    isLink: false,
+    rounded: "",
+  },
+  {
+    value: "6",
+    label: "Headsets Supported",
+    action: "Meta.PSVR2.HTC.Valve",
+    isLink: false,
+    rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]",
+  },
+];
 
 export const dynamic = "force-dynamic";
 
@@ -55,8 +89,10 @@ const VrDevelopmentPage = () => {
         <>
             <Header />
             <VrHeroSection />
+            <OurImpactBoxesSection cards={VR_IMPACT_CARDS} />
             <VrAppFunctions />
             <VRIndustries />
+            <VrFrameworksTechnologiesSection />
             <DevelopingVRSoftware />
             <OurVRExpertise />
             <VrProcess />

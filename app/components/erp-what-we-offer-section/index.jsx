@@ -5,6 +5,46 @@ import Image from "next/image";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import HireExpertPopup from "../hire-expert-popup";
+import ImpactStatsColumns from "../impact-stats-columns";
+
+const ERP_IMPACT_STATS = [
+    {
+        metric: "70%",
+        metricTone: "default",
+        title: "Less Manual Reporting Time",
+        description:
+            "Automated dashboards and module integration eliminate manual Excel reporting across finance, HR, and inventory departments.",
+        tags: [
+            { label: "Workflow Automation", highlighted: true },
+            { label: "Real-time Reporting", highlighted: false },
+            { label: "SAP - Odoo", highlighted: false },
+        ],
+    },
+    {
+        metric: "5x",
+        metricTone: "positive",
+        title: "Faster Order Processing",
+        description:
+            "Integrated procurement, inventory, and billing cuts order-to-delivery cycle time — reducing delays and improving customer satisfaction.",
+        tags: [
+            { label: "Cost Reduction", highlighted: false },
+            { label: "Operational Efficiency", highlighted: true },
+            { label: "Multi-module ERP", highlighted: false },
+        ],
+    },
+    {
+        metric: "-40%",
+        metricTone: "negative",
+        title: "Operational Cost Reduction",
+        description:
+            "Eliminating data silos, duplicate entry, and manual errors reduces overhead costs significantly within the first 6 months post-deployment.",
+        tags: [
+            { label: "Higher Retention", highlighted: true },
+            { label: "98% Client Rate", highlighted: false },
+            { label: "Post-launch Support", highlighted: false },
+        ],
+    },
+];
 
 const CARDS = [
     {
@@ -69,41 +109,7 @@ const ErpWhatWeOfferSection = () => {
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-12 gap-4 sm:gap-4 pt-8 sm:pt-12 md:pt-[90px] items-center justify-center">
-                    <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
-                        <div>
-                            <Image
-                                className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
-                                src="/images/user1.png"
-                                alt="ERP"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                    </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
-                        <div>
-                            <Image
-                                className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
-                                src="/images/user2.png"
-                                alt="ERP"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                    </div>
-                    <div className="col-span-12 sm:col-span-6 md:col-span-4 min-w-0">
-                        <div>
-                            <Image
-                                className="w-[90%] max-w-[200px] sm:max-w-none m-auto"
-                                src="/images/user3.png"
-                                alt="ERP"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                    </div>
-                </div>
+                <ImpactStatsColumns columns={ERP_IMPACT_STATS} />
             </div>
             <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>

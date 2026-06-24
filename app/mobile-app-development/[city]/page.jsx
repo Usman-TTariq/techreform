@@ -23,6 +23,7 @@ import FlutterVsReactNativeSection from "../../components/flutter-vs-react-nativ
 import HipaaCompliantSection from "../../components/hipaa-compliant";
 import EngagementModelSection from "../../components/engagement-model-section";
 import { CITIES } from "@/app/constants/city-data";
+import { MOBILE_APP_CONTACT_BENEFITS } from "@/app/constants/mobile-app-benefits";
 
 export async function generateStaticParams() {
   return Object.keys(CITIES).map((slug) => ({ city: slug }));
@@ -194,7 +195,7 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
       />
       <TestimonialSection />
       <ThreeDTextRotationSection />
-      <DetailFormSection formIntro={city.formIntro} />
+      <DetailFormSection formIntro={city.formIntro} benefits={MOBILE_APP_CONTACT_BENEFITS} />
       <Footer />
     </div>
   );

@@ -11,8 +11,45 @@ import Marquee from "../components/marquee"
 import TestimonialSection from "../components/testimonial-section"
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section"
 import DetailFormSection from "../components/detail-form-section"
-import FaqHomeSection from "../components/faq-home-section"
+import FaqArSection from "../components/faq-ar-section"
 import ArCaseStudySection from "../components/ar-case-study-section"
+import ArTypesSection from "../components/ar-types-section"
+import { ArFrameworksTechnologiesSection } from "../components/erp-platforms-technologies-section"
+import { ArFrameworkComparisonSection } from "../components/erp-platform-comparison-section"
+import ArDevicesPlatformsSection from "../components/ar-devices-platforms-section"
+import OurImpactBoxesSection from "../components/our-impact-boxes-section"
+
+const AR_IMPACT_CARDS = [
+  {
+    value: "50+",
+    label: "AR Apps Launched",
+    action: "Ios - Android - Wearables",
+    isLink: false,
+    rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]",
+  },
+  {
+    value: "4.9★",
+    label: "Clutch Rating",
+    action: "Verified reviews",
+    href: "https://clutch.co/profile/tech-reforms",
+    isLink: true,
+    rounded: "",
+  },
+  {
+    value: "$25K",
+    label: "AR Starting Price",
+    action: "Fixed-price available",
+    isLink: false,
+    rounded: "",
+  },
+  {
+    value: "3-6 mo",
+    label: "Avg Delivery",
+    action: "End-to-end development",
+    isLink: false,
+    rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]",
+  },
+];
 
 const arSchema = {
   "@context": "https://schema.org",
@@ -82,8 +119,13 @@ const ArDevelopment = () => {
             />
             <Header />
             <ArHeroSection />
+            <OurImpactBoxesSection cards={AR_IMPACT_CARDS} />
             <ArAppFunctions />
+            <ArTypesSection />
             <ARIndustries />
+            <ArFrameworksTechnologiesSection />
+            <ArFrameworkComparisonSection />
+            <ArDevicesPlatformsSection />
             <DevelopingARSoftware />
             <OurARExpertise />
             <ArProcess />
@@ -93,7 +135,7 @@ const ArDevelopment = () => {
             <TestimonialSection testimonials={AR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection formIntro={undefined} />
-            <FaqHomeSection />
+            <FaqArSection />
             <Footer />
         </>
     )

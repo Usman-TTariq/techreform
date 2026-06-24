@@ -1,22 +1,18 @@
 import {
+  Bot,
   Building2,
   LayoutGrid,
   Package,
+  Scan,
+  Smartphone,
 } from "lucide-react";
-import Link from "next/link";
-import CapsuleLabel from "../common/capsule-label";
+import PlatformComparisonSection, {
+  RECOMMENDATION_GREEN,
+  RECOMMENDATION_ORANGE,
+  RECOMMENDATION_PURPLE,
+} from "../platform-comparison-section";
 
-const cellClass =
-  "px-3 sm:px-4 py-2.5 sm:py-3 text-center text-white border border-[#444444] font-britanicaRegular text-sm sm:text-[15px]";
-
-const RECOMMENDATION_PURPLE =
-  "border-[#C380FE] bg-[#7824c12c] text-[#E8D4FF]";
-const RECOMMENDATION_GREEN =
-  "border-[#66BB6A]/50 bg-[#66BB6A]/10 text-[#B8F5C8]";
-const RECOMMENDATION_ORANGE =
-  "border-[#FFB74D]/50 bg-[#FFB74D]/10 text-[#FFE0B2]";
-
-const PLATFORMS = [
+const ERP_PLATFORMS = [
   {
     name: "Odoo ERP",
     Icon: Package,
@@ -61,99 +57,92 @@ const PLATFORMS = [
   },
 ];
 
-const ErpPlatformComparisonSection = () => {
-  return (
-    <section className="relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[120px]">
-      <div className="container px-4 sm:px-4">
-        <div className="grid grid-cols-12">
-          <div className="col-span-12 text-center">
-            <div className="flex justify-center pb-4 sm:pb-[22px]">
-              <CapsuleLabel firstWord="PLATFORM" secondWord="COMPARISON" />
-            </div>
-            <h2 className="font-britanicaBlack text-[24px] leading-tight sm:text-[30px] md:text-[38px] lg:text-[42px] lg:leading-[52px] font-black">
-              <span className="text-white">SAP vs Oracle vs Odoo vs </span>
-              <span className="text-[#C380FE]">Custom ERP</span>
-              <span className="text-white"> — </span>
-              <span className="text-[#F74B1C]">Which Is Right for You?</span>
-            </h2>
-            <p className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] text-white/85 pt-4 sm:pt-[22px] max-w-3xl mx-auto leading-relaxed">
-              The biggest decision before ERP development is platform selection. Wrong choice = wasted
-              budget. Here is a direct comparison based on business size and budget.
-            </p>
-          </div>
-        </div>
+const AR_FRAMEWORKS = [
+  {
+    name: "ARKit — Apple iOS",
+    shortName: "ARKit",
+    Icon: Smartphone,
+    popular: false,
+    rows: [
+      { label: "Platform", value: "iOS only" },
+      { label: "Devices", value: "iPhone 6S+, iPad" },
+      { label: "Performance", value: "Best on iOS", tone: "positive" },
+      { label: "Face Tracking", value: "TrueDepth ✓", tone: "positive" },
+      { label: "LiDAR Support", value: "Yes ✓", tone: "positive" },
+      { label: "Best For", value: "iOS-first apps" },
+    ],
+    recommendation:
+      "Choose if: Your audience is primarily iPhone users or you need Apple Vision Pro support.",
+    recommendationClass: RECOMMENDATION_ORANGE,
+  },
+  {
+    name: "ARCore — Android",
+    shortName: "ARCore",
+    Icon: Bot,
+    popular: true,
+    rows: [
+      { label: "Platform", value: "Android only" },
+      { label: "Devices", value: "400M+ Android devices" },
+      { label: "Performance", value: "Best on Android", tone: "positive" },
+      { label: "Face Tracking", value: "Limited" },
+      { label: "LiDAR Support", value: "Select devices" },
+      { label: "Best For", value: "Android-first apps" },
+    ],
+    recommendation:
+      "Choose if: Your audience uses Android or you need widest device reach.",
+    recommendationClass: RECOMMENDATION_ORANGE,
+  },
+  {
+    name: "Vuforia — Enterprise",
+    shortName: "Vuforia",
+    Icon: Scan,
+    popular: false,
+    rows: [
+      { label: "Platform", value: "iOS + Android" },
+      { label: "Devices", value: "All + HoloLens" },
+      { label: "Performance", value: "Good" },
+      { label: "Marker Tracking", value: "Industry-best ✓", tone: "positive" },
+      { label: "Enterprise Ready", value: "Yes ✓", tone: "positive" },
+      { label: "Best For", value: "Industrial / training" },
+    ],
+    recommendation:
+      "Choose if: Enterprise use case, marker tracking, or cross-platform needed.",
+    recommendationClass: RECOMMENDATION_ORANGE,
+  },
+];
 
-        <div className="grid grid-cols-12 gap-4 sm:gap-6 pt-8 sm:pt-12 md:pt-[52px]">
-          {PLATFORMS.map((platform) => (
-            <div key={platform.name} className="col-span-12 lg:col-span-4">
-              <div
-                className={`h-full rounded-xl border bg-[linear-gradient(148deg,_#7724c114_0%,_#44444433_84%)] p-4 sm:p-6 md:p-[30px] ${
-                  platform.popular
-                    ? "border-[#C380FE] ring-1 ring-[#C380FE]/60"
-                    : "border-[#C380FE]"
-                }`}
-              >
-                <div className="flex items-center gap-3 pb-4 sm:pb-5 flex-wrap">
-                  <span className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-full bg-[#7724C1]/30 border border-[#7724C1]/50">
-                    <platform.Icon
-                      className="h-5 w-5 sm:h-[22px] sm:w-[22px] text-[#C380FE]"
-                      strokeWidth={1.75}
-                      aria-hidden
-                    />
-                  </span>
-                  <span className="font-britanicaBlack text-[20px] sm:text-[24px] text-white">
-                    {platform.name}
-                  </span>
-                  {platform.popular && (
-                    <span className="rounded-full border border-[#C380FE] bg-[#7724C1]/30 px-2.5 py-0.5 font-britanicaExtraBold text-[11px] sm:text-xs text-[#C380FE] uppercase tracking-wide">
-                      Popular
-                    </span>
-                  )}
-                </div>
+const ErpPlatformComparisonSection = () => (
+  <PlatformComparisonSection
+    capsuleFirst="PLATFORM"
+    capsuleSecond="COMPARISON"
+    headline={
+      <>
+        <span className="text-white">SAP vs Oracle vs Odoo vs </span>
+        <span className="text-[#C380FE]">Custom ERP</span>
+        <span className="text-white"> — </span>
+        <span className="text-[#F74B1C]">Which Is Right for You?</span>
+      </>
+    }
+    description="The biggest decision before ERP development is platform selection. Wrong choice = wasted budget. Here is a direct comparison based on business size and budget."
+    platforms={ERP_PLATFORMS}
+    ctaText="Not sure which platform is right? Tell us your business size and budget — we'll recommend the right ERP in 24 hours →"
+  />
+);
 
-                <div className="overflow-x-auto">
-                  <table className="w-full min-w-[260px] border-collapse border border-[#444444]">
-                    <thead>
-                      <tr className="bg-[#F74B1C] text-white">
-                        <th className={`${cellClass} font-britanicaExtraBold w-[45%]`}>Factor</th>
-                        <th className={`${cellClass} font-britanicaExtraBold`}>{platform.name}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {platform.rows.map((row) => (
-                        <tr key={row.label} className="bg-black">
-                          <td className={`${cellClass} font-britanicaExtraBold text-white/90`}>
-                            {row.label}
-                          </td>
-                          <td className={cellClass}>{row.value}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <p
-                  className={`mt-4 sm:mt-5 rounded-lg border px-4 py-3 text-sm sm:text-[15px] font-britanicaRegular leading-relaxed ${platform.recommendationClass}`}
-                >
-                  {platform.recommendation}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="pt-8 sm:pt-10 md:pt-12">
-          <Link
-            href="#contact"
-            className="block rounded-xl border border-[#C380FE]/60 bg-[#7824c12c] px-5 py-4 sm:px-6 sm:py-5 text-center font-britanicaRegular text-sm sm:text-base md:text-[17px] text-[#C380FE] hover:text-[#E8D4FF] hover:border-[#C380FE] transition-colors leading-relaxed"
-          >
-            Not sure which platform is right? Tell us your business size and budget — we&apos;ll
-            recommend the right ERP in 24 hours →
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-};
+export const ArFrameworkComparisonSection = () => (
+  <PlatformComparisonSection
+    capsuleFirst="FRAMEWORK"
+    capsuleSecond="COMPARISON"
+    headline={
+      <>
+        <span className="text-white">ARKit vs ARCore vs Vuforia — </span>
+        <span className="text-[#F74B1C]">Which Is Right for You?</span>
+      </>
+    }
+    description="The most common question before starting an AR project. Wrong framework = poor performance or incompatible devices."
+    platforms={AR_FRAMEWORKS}
+    ctaText="Not sure which framework is right? Tell us your target devices and use case — we'll recommend the right AR stack in 24 hours →"
+  />
+);
 
 export default ErpPlatformComparisonSection;

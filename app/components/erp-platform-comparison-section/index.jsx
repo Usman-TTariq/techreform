@@ -1,7 +1,10 @@
 import {
   Bot,
   Building2,
+  Gamepad2,
+  Glasses,
   LayoutGrid,
+  Monitor,
   Package,
   Scan,
   Smartphone,
@@ -111,6 +114,57 @@ const AR_FRAMEWORKS = [
   },
 ];
 
+const VR_PLATFORMS = [
+  {
+    name: "Standalone VR",
+    Icon: Glasses,
+    popular: true,
+    rows: [
+      { label: "Best Headset", value: "Meta Quest 3" },
+      { label: "PC Required", value: "No ✓", tone: "positive" },
+      { label: "Cost", value: "$35K – $80K", tone: "positive" },
+      { label: "Setup", value: "Simple — anywhere", tone: "positive" },
+      { label: "Graphics", value: "Good — mobile GPU" },
+      { label: "Best For", value: "Training, retail, events" },
+    ],
+    recommendation:
+      "Choose if: Mobile workforce, no PC infrastructure, wide deployment needed.",
+    recommendationClass: RECOMMENDATION_PURPLE,
+  },
+  {
+    name: "PC-Powered VR",
+    Icon: Monitor,
+    popular: false,
+    rows: [
+      { label: "Best Headset", value: "HTC Vive / Valve Index" },
+      { label: "PC Required", value: "Yes — high-end" },
+      { label: "Cost", value: "$60K – $200K" },
+      { label: "Setup", value: "Fixed location" },
+      { label: "Graphics", value: "Excellent — GPU power", tone: "positive" },
+      { label: "Best For", value: "Simulation, architecture" },
+    ],
+    recommendation:
+      "Choose if: High-fidelity simulation, fixed lab environment, maximum visual quality.",
+    recommendationClass: RECOMMENDATION_GREEN,
+  },
+  {
+    name: "Console VR",
+    Icon: Gamepad2,
+    popular: false,
+    rows: [
+      { label: "Best Headset", value: "PlayStation VR2" },
+      { label: "PC Required", value: "No — PS5 only", tone: "positive" },
+      { label: "Cost", value: "$50K – $150K" },
+      { label: "Setup", value: "PS5 + PSVR2" },
+      { label: "Graphics", value: "Very good", tone: "positive" },
+      { label: "Best For", value: "Gaming, entertainment" },
+    ],
+    recommendation:
+      "Choose if: Consumer gaming, entertainment experiences, existing PS5 user base.",
+    recommendationClass: RECOMMENDATION_ORANGE,
+  },
+];
+
 const ErpPlatformComparisonSection = () => (
   <PlatformComparisonSection
     capsuleFirst="PLATFORM"
@@ -142,6 +196,22 @@ export const ArFrameworkComparisonSection = () => (
     description="The most common question before starting an AR project. Wrong framework = poor performance or incompatible devices."
     platforms={AR_FRAMEWORKS}
     ctaText="Not sure which framework is right? Tell us your target devices and use case — we'll recommend the right AR stack in 24 hours →"
+  />
+);
+
+export const VrPlatformComparisonSection = () => (
+  <PlatformComparisonSection
+    capsuleFirst="PLATFORM"
+    capsuleSecond="COMPARISON"
+    headline={
+      <>
+        <span className="text-white">Standalone vs PC VR vs Console VR — </span>
+        <span className="text-[#F74B1C]">Which Is Right for You?</span>
+      </>
+    }
+    description="The wrong VR platform limits deployment and blows the budget. Compare standalone, PC-powered, and console VR by cost, setup, and use case before you start building."
+    platforms={VR_PLATFORMS}
+    ctaText="Not sure which VR platform fits? Tell us your use case and audience — we'll recommend the right platform in 24 hours →"
   />
 );
 

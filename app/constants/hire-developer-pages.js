@@ -1,0 +1,517 @@
+const DEFAULT_OFFER_CARDS = (rolePlural, techShort) => [
+  {
+    title: "Flexible Hiring Models",
+    desc: `Hire a ${rolePlural.slice(0, -1)} full-time, part-time, or on a project basis — whatever your sprint cycle demands. No rigid contracts. No recruitment overhead. Just the right talent, at the right scale, when you need it.`,
+    buttonText: "See Hiring Models",
+  },
+  {
+    title: `Dedicated ${rolePlural}`,
+    desc: `Our ${techShort} engineers integrate directly into your stack, follow your Git workflow, and report to your team — not to us. Production-ready code from day one.`,
+    buttonText: `Meet Our ${techShort} Team`,
+  },
+  {
+    title: "Embedded Development Teams",
+    desc: `Need more than one developer? We build ${techShort} teams aligned to your product goals — all managed as a single delivery unit embedded inside your organization.`,
+    buttonText: `Build Your ${techShort} Team`,
+  },
+  {
+    title: "On-Demand Talent",
+    desc: `Urgent delivery window? We onboard pre-vetted ${techShort} developers within 72 hours. Whether you're plugging a skill gap or scaling fast, we match engineers who hit the ground running.`,
+    buttonText: "Hire in 72 Hours",
+  },
+];
+
+const DEFAULT_PROCESS_STEPS = (techShort, vettingFocus) => [
+  {
+    title: `Step 1: ${techShort} Requirement Discovery`,
+    desc: `We map your full technical scope — architecture, integrations, tooling, and delivery timeline. The clearer the brief, the sharper the ${techShort} developer match.`,
+    buttonText: "How It Works",
+  },
+  {
+    title: `Step 2: Vetting ${techShort} Engineers`,
+    desc: `Every developer is assessed on ${vettingFocus} — not just years of experience listed on a CV.`,
+    buttonText: "Our Vetting Standards",
+  },
+  {
+    title: "Step 3: You Interview. You Decide.",
+    desc: `We shortlist the top 2–3 profiles for your review. You conduct technical interviews, evaluate cultural fit, and make the final call. No placement pressure.`,
+    buttonText: "See Candidate Profiles",
+  },
+  {
+    title: "Step 4: Onboard & Start Sprinting",
+    desc: `Your developer joins your repo, attends standups, and contributes from the first sprint. We handle contracts, NDAs, and compliance — you stay focused on shipping.`,
+    buttonText: "Get Started in 72 Hours",
+  },
+];
+
+const DEFAULT_WHY_CARDS = (techShort, stackTags) => [
+  {
+    title: `${techShort}-Focused Specialists`,
+    desc: `Our developers work primarily in ${techShort} — no generalist coders assigned to specialist work. Every engineer has delivered production systems in real client environments.`,
+    tags: stackTags.slice(0, 3),
+    buttonText: "View Developer Profiles",
+  },
+  {
+    title: "NDA-Protected Engagement",
+    desc: "Every engagement is covered by a signed NDA before work begins. Your architecture, source code, and product roadmap stay confidential — no exceptions.",
+    tags: ["IP Protection", "Signed NDA", "Confidentiality"],
+    buttonText: "See Our Security Standards",
+  },
+  {
+    title: "Flexible Engagement Models",
+    desc: "Scale your team up or down based on your sprint cycle — no long-term contracts, no hidden fees. Hire one developer or a full team for enterprise rollout.",
+    tags: ["Full-time", "Part-time", "Project-based"],
+    buttonText: "Explore Hiring Models",
+  },
+  {
+    title: "Cost-Efficient Without Compromise",
+    desc: "Hiring through Tech Reforms costs significantly less than a local full-time hire — without sacrificing code quality, communication standards, or delivery accountability.",
+    tags: ["No recruitment overhead", "Transparent pricing"],
+    buttonText: "Compare Engagement Costs",
+  },
+];
+
+const DEFAULT_FAQ_ITEMS = (roleLabel, rolePlural, techShort, stackList) => [
+  {
+    id: 1,
+    question: `What does a ${roleLabel} do?`,
+    answer: `A ${roleLabel} builds and maintains production software using ${techShort} and related technologies. At Tech Reforms, our ${rolePlural} also handle architecture decisions, API integrations, code reviews, and deployment pipelines aligned to your stack.`,
+  },
+  {
+    id: 2,
+    question: `How much does it cost to hire a ${roleLabel}?`,
+    answer: `Cost depends on experience level, engagement model, and project scope. At Tech Reforms, hiring a dedicated ${roleLabel} costs significantly less than a local US or UK hire — without compromising on code quality or communication. We offer full-time, part-time, and fixed-scope pricing.`,
+  },
+  {
+    id: 3,
+    question: `How quickly can I onboard a ${roleLabel}?`,
+    answer: `Most clients onboard within 72 hours of final selection. We maintain a pre-vetted bench — so you're not waiting for sourcing after you reach out. We shortlist 2–3 matched profiles within 24 hours.`,
+  },
+  {
+    id: 4,
+    question: "Will the developer work in my time zone?",
+    answer: "Yes. Our developers work flexible hours and align with US, UK, UAE, and Australian time zones. Most maintain a 4–6 hour daily overlap with US Eastern and Pacific time zones for friction-free collaboration.",
+  },
+  {
+    id: 5,
+    question: `What technologies do your ${rolePlural} work with?`,
+    answer: `Our ${rolePlural} are proficient in ${stackList}. For advanced projects we also cover CI/CD setup, automated testing, and production-scale performance optimization.`,
+  },
+  {
+    id: 6,
+    question: "Do you sign an NDA before starting?",
+    answer: "Yes — a signed NDA is standard before any engagement begins. We also provide IP ownership clauses confirming all code written belongs entirely to you.",
+  },
+  {
+    id: 7,
+    question: `Can I hire a full ${techShort} development team?`,
+    answer: `Yes. Tech Reforms builds dedicated teams tailored to your scope — lead developer, QA specialist, and integration engineers working as a single unit under your project manager. Scale mid-project without contract renegotiation.`,
+  },
+  {
+    id: 8,
+    question: `How do I evaluate a ${roleLabel} before hiring?`,
+    answer: "You control the evaluation entirely. After we shortlist profiles, you conduct your own technical interview and cultural fit assessment. We also offer a trial engagement period before formalizing the arrangement.",
+  },
+];
+
+function buildHirePage({
+  slug,
+  metaTitle,
+  metaDescription,
+  roleLabel,
+  rolePlural,
+  techShort,
+  specialty,
+  stackTags,
+  vettingFocus,
+  heroSecondWord,
+  heroForthWord,
+  heroPara,
+  whoWeAreP1,
+  caseCategory,
+  caseTitle,
+  caseDescription,
+  caseMetrics,
+  faqSubtitle,
+  faqStackList,
+  statsOverride,
+  caseStatsOverride,
+  processDescription,
+  whyParagraphs,
+  whyButtonText,
+  processIntroButton,
+  processHeadlineAccent,
+  whatWeOfferAccent,
+}) {
+  const roleSingular = rolePlural.endsWith("s") ? rolePlural.slice(0, -1) : roleLabel;
+
+  return {
+    slug,
+    metadata: {
+      title: metaTitle,
+      description: metaDescription,
+      alternates: { canonical: `/${slug}` },
+    },
+    hero: {
+      firstWord: "Hire ",
+      secondWord: heroSecondWord ?? `Dedicated ${rolePlural}`,
+      thirdWord: "",
+      forthWord: heroForthWord ?? "| Who Ship. Not Just Code.",
+      fifthWord: "",
+      para:
+        heroPara ??
+        `Most ${rolePlural.toLowerCase()} write clean code. Few understand your product roadmap, deployment timelines, or what a missed sprint actually costs. At Tech Reforms, you hire ${techShort} engineers who work inside your workflow — integrated, accountable, and focused on your delivery goals.`,
+      buttonText: `Hire a ${roleSingular}`,
+    },
+    whoWeAre: {
+      p1:
+        whoWeAreP1 ??
+        `We are not a general-purpose IT agency that added ${techShort} to a service list. Tech Reforms places dedicated ${techShort} specialists who live inside your ecosystem — ${specialty}. From MVP builds to enterprise systems with CI/CD and automated testing, we handle every phase. You stay focused on your product vision. We handle the engineering execution.`,
+      buttonText: `Hire a ${roleSingular}`,
+    },
+    whatWeOffer: {
+      headlineWhite: "Flexible Ways to Hire",
+      headlineAccent: whatWeOfferAccent ?? rolePlural,
+      cards: DEFAULT_OFFER_CARDS(rolePlural, techShort),
+    },
+    process: {
+      headlineWhite: "Our Proven Process to Build & Scale Your",
+      headlineAccent: processHeadlineAccent ?? `${techShort} Development Team`,
+      description:
+        processDescription ??
+        `Tech Reforms follows a precise 4-step hiring framework — built for ${techShort} projects. From requirement discovery to first sprint, every step gets the right developer inside your team without wasted time.`,
+      introButton: processIntroButton ?? `Start Your ${techShort} Project`,
+      steps: DEFAULT_PROCESS_STEPS(techShort, vettingFocus),
+    },
+    whyChoose: {
+      headlineWhite: "Why Leading Businesses Choose Tech Reforms as Their",
+      headlineAccent: `${techShort} Development Partner`,
+      paragraphs:
+        whyParagraphs ?? [
+          `Hundreds of ${rolePlural.toLowerCase()} are available online. What separates a good partner from a costly hiring mistake is accountability, technical depth, and zero-friction integration into your workflow.`,
+          `At Tech Reforms, every ${roleSingular.toLowerCase()} we place is pre-vetted on real delivery — not just syntax. You get engineers who ship, communicate, and own their sprint commitments.`,
+        ],
+      stats:
+        statsOverride ?? [
+          { value: "200+", label: `${techShort} projects delivered` },
+          { value: "72hrs", label: "Average onboarding time" },
+          { value: "98%", label: "Client retention rate" },
+        ],
+      cards: DEFAULT_WHY_CARDS(techShort, stackTags),
+      buttonText: whyButtonText ?? `Work With Our ${techShort} Team`,
+    },
+    caseStudies: {
+      headlineWhite: `Real ${techShort} Projects.`,
+      headlineAccent: "Real Results Delivered by Tech Reforms",
+      intro: `These aren't portfolio screenshots. Each case study reflects a measurable ${techShort} project outcome — delivered on time, within scope, and built to scale.`,
+      stats:
+        caseStatsOverride ?? [
+          { value: "100+", label: `${techShort} projects` },
+          { value: "50+", label: `${techShort} engineers` },
+          { value: "98%", label: "On-time delivery" },
+        ],
+      caseStudy: {
+        image: "/images/phones.png",
+        imageAlt: `${techShort} project case study mockups`,
+        category: caseCategory,
+        title: caseTitle,
+        description: caseDescription,
+        metrics: caseMetrics,
+        techTags: stackTags,
+      },
+    },
+    faq: {
+      titleWhite: `${roleLabel}`,
+      titleAccent: "FAQ",
+      subtitle: faqSubtitle ?? `Tech Reforms — Hire ${rolePlural}`,
+      items: DEFAULT_FAQ_ITEMS(roleLabel, rolePlural, techShort, faqStackList),
+    },
+  };
+}
+
+export const HIRE_FLUTTER_PAGE = buildHirePage({
+  slug: "hire-flutter",
+  metaTitle: "Hire Flutter Developers for iOS, Android & Web Apps",
+  metaDescription:
+    "Top Flutter app development company in USA. We build high-performance iOS, Android & web apps with custom cross-platform solutions. Get a free quote today!",
+  roleLabel: "Flutter Developer",
+  rolePlural: "Flutter Developers",
+  techShort: "Flutter",
+  specialty: "cross-platform iOS, Android, Web, and Desktop from a single Dart codebase",
+  stackTags: ["Flutter SDK", "Dart", "Firebase", "Stripe API"],
+  vettingFocus: "widget architecture, Flutter SDK proficiency, Firebase and REST API integration, and real-world app delivery",
+  faqStackList: "Flutter SDK, Dart, BLoC, Provider, GetX, Riverpod, Firebase, REST and GraphQL APIs, and App Store/Play Store deployment",
+  caseCategory: "E-Commerce · USA",
+  caseTitle: "Cross-Platform Shopping App Built in 10 Weeks",
+  caseDescription:
+    "The client needed a Flutter app with real-time inventory sync, payment gateway integration, and a unified codebase for iOS and Android — all within a 10-week delivery window.",
+  caseMetrics: [
+    { value: "10 wks", label: "Delivered in" },
+    { value: "40%", label: "Cost vs native" },
+    { value: "4.8★", label: "App store rating" },
+  ],
+});
+
+export const HIRE_JAVA_PAGE = buildHirePage({
+  slug: "hire-java",
+  metaTitle: "Hire Java Developers | Dedicated Enterprise Java Engineers",
+  metaDescription:
+    "Hire expert Java developers for enterprise apps, microservices, and backend systems. Pre-vetted engineers onboard in 72 hours. Full-time, part-time, or project-based.",
+  roleLabel: "Java Developer",
+  rolePlural: "Java Developers",
+  techShort: "Java",
+  specialty: "Spring, microservices, REST APIs, and enterprise-grade backend systems",
+  stackTags: ["Java 17+", "Spring Boot", "Microservices", "PostgreSQL"],
+  vettingFocus: "Spring Framework, JVM performance, microservices architecture, and enterprise API design",
+  faqStackList: "Java, Spring Boot, Spring Security, Hibernate, Kafka, PostgreSQL, Docker, and AWS deployment",
+  caseCategory: "FinTech · USA",
+  caseTitle: "Enterprise Banking API Rebuilt on Java Microservices",
+  caseDescription:
+    "A mid-size fintech needed to migrate a monolithic Java application to Spring Boot microservices — with zero downtime and PCI-compliant security throughout.",
+  caseMetrics: [
+    { value: "5 mo", label: "Delivered in" },
+    { value: "99.9%", label: "Uptime SLA" },
+    { value: "3x", label: "Deploy frequency" },
+  ],
+});
+
+export const HIRE_MAGENTO_PAGE = buildHirePage({
+  slug: "hire-magento",
+  metaTitle: "Hire Magento Developers | Certified eCommerce Experts",
+  metaDescription:
+    "Hire dedicated Magento developers for Adobe Commerce, custom modules, and high-performance eCommerce stores. Onboard in 72 hours with Tech Reforms.",
+  roleLabel: "Magento Developer",
+  rolePlural: "Magento Developers",
+  techShort: "Magento",
+  specialty: "Adobe Commerce, custom modules, theme development, and B2B/B2C storefront optimization",
+  stackTags: ["Adobe Commerce", "PHP", "Hyvä", "Elasticsearch"],
+  vettingFocus: "Magento 2 architecture, custom module development, checkout optimization, and performance tuning",
+  faqStackList: "Magento 2, Adobe Commerce, PHP, Knockout.js, GraphQL, Elasticsearch, Redis, and payment gateway integrations",
+  caseCategory: "eCommerce · USA",
+  caseTitle: "Magento Store Migration with 40% Faster Page Load",
+  caseDescription:
+    "A retail brand needed Adobe Commerce migration from Magento 1 with custom checkout, ERP sync, and mobile-optimized Hyvä theme — without losing SEO rankings.",
+  caseMetrics: [
+    { value: "14 wks", label: "Delivered in" },
+    { value: "40%", label: "Faster load time" },
+    { value: "22%", label: "Conversion lift" },
+  ],
+});
+
+export const HIRE_PYTHON_PAGE = buildHirePage({
+  slug: "hire-python",
+  metaTitle: "Hire Python Developers | Django, FastAPI & Data Engineering",
+  metaDescription:
+    "Hire expert Python developers for web apps, APIs, automation, and data pipelines. Pre-vetted engineers ready in 72 hours. Flexible engagement models.",
+  roleLabel: "Python Developer",
+  rolePlural: "Python Developers",
+  techShort: "Python",
+  specialty: "Django, FastAPI, data engineering, automation, and ML-ready backend systems",
+  stackTags: ["Django", "FastAPI", "PostgreSQL", "Celery"],
+  vettingFocus: "Python architecture, async APIs, data pipeline design, and production deployment patterns",
+  faqStackList: "Python, Django, FastAPI, Flask, Celery, Redis, PostgreSQL, Pandas, and AWS/GCP deployment",
+  caseCategory: "SaaS · USA",
+  caseTitle: "FastAPI Backend for Multi-Tenant SaaS Platform",
+  caseDescription:
+    "A SaaS startup needed a scalable Python backend with tenant isolation, Stripe billing, and real-time analytics — delivered in 12 weeks for their Series A launch.",
+  caseMetrics: [
+    { value: "12 wks", label: "Delivered in" },
+    { value: "10K+", label: "Daily API calls" },
+    { value: "99.5%", label: "API uptime" },
+  ],
+});
+
+export const HIRE_LARAVEL_PAGE = buildHirePage({
+  slug: "hire-laravel",
+  metaTitle: "Hire Laravel Developers | PHP Web App Specialists",
+  metaDescription:
+    "Hire dedicated Laravel developers for SaaS, APIs, and enterprise PHP applications. Pre-vetted Laravel engineers onboard in 72 hours with Tech Reforms.",
+  roleLabel: "Laravel Developer",
+  rolePlural: "Laravel Developers",
+  techShort: "Laravel",
+  specialty: "Laravel, Livewire, API development, and scalable PHP web applications",
+  stackTags: ["Laravel 11", "PHP 8", "MySQL", "Redis"],
+  vettingFocus: "Laravel architecture, Eloquent ORM, queue systems, API design, and security best practices",
+  faqStackList: "Laravel, PHP, Livewire, Inertia.js, MySQL, Redis, Horizon, Sanctum, and AWS deployment",
+  caseCategory: "Healthcare · USA",
+  caseTitle: "HIPAA-Compliant Patient Portal on Laravel",
+  caseDescription:
+    "A healthcare provider needed a secure Laravel portal with appointment scheduling, EHR integration, and role-based access — audited for HIPAA compliance.",
+  caseMetrics: [
+    { value: "16 wks", label: "Delivered in" },
+    { value: "HIPAA", label: "Compliant" },
+    { value: "50K+", label: "Patients served" },
+  ],
+});
+
+export const HIRE_NODE_PAGE = buildHirePage({
+  slug: "hire-node-js",
+  metaTitle: "Hire Node.js Developers | Express, NestJS & Real-Time APIs",
+  metaDescription:
+    "Hire expert Node.js developers for scalable APIs, microservices, and real-time applications. Dedicated engineers onboard in 72 hours.",
+  roleLabel: "Node.js Developer",
+  rolePlural: "Node.js Developers",
+  techShort: "Node.js",
+  specialty: "Express, NestJS, real-time APIs, and event-driven backend architecture",
+  stackTags: ["Node.js", "NestJS", "TypeScript", "MongoDB"],
+  vettingFocus: "async programming, REST/GraphQL APIs, WebSocket systems, and Node.js performance optimization",
+  faqStackList: "Node.js, Express, NestJS, TypeScript, MongoDB, PostgreSQL, Redis, Socket.io, and Docker/Kubernetes",
+  caseCategory: "Real-Time · USA",
+  caseTitle: "Real-Time Collaboration Platform on Node.js",
+  caseDescription:
+    "A remote-work SaaS needed WebSocket-based collaboration, NestJS microservices, and MongoDB sharding — supporting 5,000 concurrent users from launch.",
+  caseMetrics: [
+    { value: "10 wks", label: "Delivered in" },
+    { value: "5K", label: "Concurrent users" },
+    { value: "<100ms", label: "Message latency" },
+  ],
+});
+
+export const HIRE_SPRING_BOOT_PAGE = buildHirePage({
+  slug: "hire-spring-boot",
+  metaTitle: "Hire Spring Boot Developers | Enterprise Java Microservices",
+  metaDescription:
+    "Hire dedicated Spring Boot developers for microservices, cloud-native apps, and enterprise APIs. Pre-vetted engineers ready in 72 hours.",
+  roleLabel: "Spring Boot Developer",
+  rolePlural: "Spring Boot Developers",
+  techShort: "Spring Boot",
+  specialty: "Spring Boot microservices, cloud-native deployment, and enterprise API development",
+  stackTags: ["Spring Boot 3", "Java 17", "Kafka", "AWS"],
+  vettingFocus: "Spring Boot architecture, Spring Security, reactive programming, and cloud deployment patterns",
+  faqStackList: "Spring Boot, Spring Cloud, Spring Security, Kafka, PostgreSQL, Docker, Kubernetes, and AWS/Azure",
+  caseCategory: "Enterprise · USA",
+  caseTitle: "Spring Boot Microservices for Logistics Platform",
+  caseDescription:
+    "A logistics company needed 12 Spring Boot microservices with Kafka event streaming, real-time tracking APIs, and AWS EKS deployment — replacing a legacy monolith.",
+  caseMetrics: [
+    { value: "6 mo", label: "Delivered in" },
+    { value: "12", label: "Microservices" },
+    { value: "60%", label: "Latency reduction" },
+  ],
+});
+
+export const HIRE_POWER_BI_PAGE = buildHirePage({
+  slug: "hire-power-bi",
+  metaTitle: "Hire Power BI Developers | Dashboard & Analytics Experts",
+  metaDescription:
+    "Hire Power BI developers for dashboards, DAX modeling, and enterprise analytics. Dedicated BI engineers onboard in 72 hours with Tech Reforms.",
+  roleLabel: "Power BI Developer",
+  rolePlural: "Power BI Developers",
+  techShort: "Power BI",
+  specialty: "Power BI dashboards, DAX modeling, data warehouse integration, and executive reporting",
+  stackTags: ["Power BI", "DAX", "Azure SQL", "Data Factory"],
+  vettingFocus: "DAX optimization, data modeling, Power Query, and enterprise dashboard design",
+  faqStackList: "Power BI, DAX, Power Query, Azure Synapse, SQL Server, Data Factory, and SharePoint embedding",
+  caseCategory: "Analytics · USA",
+  caseTitle: "Executive Dashboard Suite for Multi-Brand Retailer",
+  caseDescription:
+    "A retail group needed unified Power BI dashboards across 8 brands — with real-time sales KPIs, inventory forecasting, and role-based access for 200+ users.",
+  caseMetrics: [
+    { value: "8 wks", label: "Delivered in" },
+    { value: "200+", label: "Dashboard users" },
+    { value: "8", label: "Brands unified" },
+  ],
+  processHeadlineAccent: "Power BI Analytics Team",
+  whatWeOfferAccent: "Power BI Developers",
+});
+
+export const HIRE_GOLANG_PAGE = buildHirePage({
+  slug: "hire-golang",
+  metaTitle: "Hire Golang Developers | High-Performance Backend Engineers",
+  metaDescription:
+    "Hire expert Golang developers for microservices, cloud infrastructure, and high-throughput APIs. Pre-vetted Go engineers ready in 72 hours.",
+  roleLabel: "Golang Developer",
+  rolePlural: "Golang Developers",
+  techShort: "Golang",
+  specialty: "Go microservices, cloud-native systems, and high-performance concurrent backend services",
+  stackTags: ["Go", "gRPC", "Kubernetes", "PostgreSQL"],
+  vettingFocus: "Go concurrency patterns, gRPC services, performance optimization, and cloud-native architecture",
+  faqStackList: "Go, gRPC, Gin, Echo, PostgreSQL, Redis, Docker, Kubernetes, and AWS/GCP deployment",
+  caseCategory: "Infrastructure · USA",
+  caseTitle: "Go Microservices for High-Throughput Payment Gateway",
+  caseDescription:
+    "A fintech needed a Go-based payment processing layer handling 50K transactions per minute — with gRPC inter-service communication and sub-10ms latency.",
+  caseMetrics: [
+    { value: "50K/min", label: "Transactions" },
+    { value: "<10ms", label: "Avg latency" },
+    { value: "99.99%", label: "Uptime" },
+  ],
+});
+
+export const HIRE_LLM_PAGE = buildHirePage({
+  slug: "hire-llm",
+  metaTitle: "Hire LLM Developers | AI & Large Language Model Engineers",
+  metaDescription:
+    "Hire LLM developers for RAG systems, AI agents, and production LLM integrations. Expert AI engineers onboard in 72 hours with Tech Reforms.",
+  roleLabel: "LLM Developer",
+  rolePlural: "LLM Developers",
+  techShort: "LLM",
+  specialty: "LLM integration, RAG pipelines, AI agents, and production-grade generative AI systems",
+  stackTags: ["OpenAI", "LangChain", "Python", "Vector DB"],
+  vettingFocus: "prompt engineering, RAG architecture, LLM fine-tuning, and production AI deployment",
+  faqStackList: "OpenAI, Anthropic, LangChain, LlamaIndex, Pinecone, Python, FastAPI, and MLOps pipelines",
+  caseCategory: "AI · USA",
+  caseTitle: "RAG-Powered Enterprise Knowledge Assistant",
+  caseDescription:
+    "An enterprise client needed an internal AI assistant with RAG over 50K documents — secure tenant isolation, citation tracking, and Slack/Teams integration.",
+  caseMetrics: [
+    { value: "10 wks", label: "Delivered in" },
+    { value: "50K", label: "Docs indexed" },
+    { value: "92%", label: "Answer accuracy" },
+  ],
+  processHeadlineAccent: "LLM & AI Engineering Team",
+});
+
+export const TOP_APP_DEVELOPERS_PAGE = buildHirePage({
+  slug: "top-app-developers",
+  metaTitle: "Hire Top App Developers | iOS, Android & Cross-Platform Experts",
+  metaDescription:
+    "Hire top-rated app developers for iOS, Android, Flutter, and React Native. Pre-vetted mobile engineers onboard in 72 hours. Flexible staff augmentation.",
+  roleLabel: "App Developer",
+  rolePlural: "App Developers",
+  techShort: "Mobile",
+  specialty: "iOS, Android, Flutter, React Native, and full mobile product delivery",
+  stackTags: ["iOS", "Android", "Flutter", "React Native"],
+  vettingFocus: "mobile architecture, App Store deployment, cross-platform development, and production app delivery",
+  heroSecondWord: "Top App Developers",
+  heroForthWord: "| iOS, Android & Cross-Platform",
+  heroPara:
+    "Most app developers can build a screen. Few understand your product roadmap, App Store timelines, or what a missed launch actually costs. At Tech Reforms, you hire top mobile engineers who integrate into your workflow — shipping production apps, not just prototypes.",
+  whoWeAreP1:
+    "Tech Reforms is a mobile-first development partner — not a general IT shop. Our app developers specialize in iOS (Swift), Android (Kotlin), Flutter, and React Native. From MVP launches to enterprise apps with CI/CD and automated testing, we place developers who've shipped real products in production.",
+  faqStackList: "Swift, Kotlin, Flutter, React Native, Firebase, REST APIs, App Store/Play Store deployment, and CI/CD",
+  faqSubtitle: "Tech Reforms — Hire Top App Developers",
+  caseCategory: "Mobile · USA",
+  caseTitle: "Multi-Platform App Launch in 12 Weeks",
+  caseDescription:
+    "A startup needed simultaneous iOS and Android launch with shared backend, push notifications, and in-app payments — delivered by a dedicated 4-person mobile team.",
+  caseMetrics: [
+    { value: "12 wks", label: "Delivered in" },
+    { value: "2", label: "Platforms launched" },
+    { value: "4.7★", label: "Store rating" },
+  ],
+  whatWeOfferAccent: "Top App Developers",
+  processHeadlineAccent: "Mobile Development Team",
+  whyButtonText: "Work With Our App Team",
+  statsOverride: [
+    { value: "350+", label: "Apps delivered" },
+    { value: "72hrs", label: "Average onboarding" },
+    { value: "98%", label: "Client retention" },
+  ],
+});
+
+export const HIRE_PAGES = {
+  "hire-flutter": HIRE_FLUTTER_PAGE,
+  "hire-java": HIRE_JAVA_PAGE,
+  "hire-magento": HIRE_MAGENTO_PAGE,
+  "hire-python": HIRE_PYTHON_PAGE,
+  "hire-laravel": HIRE_LARAVEL_PAGE,
+  "hire-node-js": HIRE_NODE_PAGE,
+  "hire-spring-boot": HIRE_SPRING_BOOT_PAGE,
+  "hire-power-bi": HIRE_POWER_BI_PAGE,
+  "hire-golang": HIRE_GOLANG_PAGE,
+  "hire-llm": HIRE_LLM_PAGE,
+  "top-app-developers": TOP_APP_DEVELOPERS_PAGE,
+};
+
+export const HIRE_PAGE_SLUGS = Object.keys(HIRE_PAGES);

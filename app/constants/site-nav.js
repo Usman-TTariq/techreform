@@ -22,17 +22,17 @@ export const APP_DEVELOPMENT_ITEMS = [
 
 export const STAFF_SERVICE_ITEMS = [
   { label: "Staff Augmentation", href: "/staff-augmentation" },
-  { label: "Top App Developers", href: "/staff-augmentation" },
+  { label: "Top App Developers", href: "/top-app-developers" },
   { label: "Hire Flutter Developer", href: "/hire-flutter" },
-  { label: "Hire Java Developer", href: "/staff-augmentation#java" },
-  { label: "Hire Magento Developer", href: "/staff-augmentation#magento" },
-  { label: "Hire Python Developer", href: "/staff-augmentation#python" },
-  { label: "Hire Laravel Developer", href: "/staff-augmentation#laravel" },
-  { label: "Hire Node Js Developer", href: "/staff-augmentation#node" },
-  { label: "Hire Spring Boot Developer", href: "/staff-augmentation#spring-boot" },
-  { label: "Power BI Developer", href: "/staff-augmentation#power-bi" },
-  { label: "Golang Developer", href: "/staff-augmentation#golang" },
-  { label: "LLM Developer", href: "/staff-augmentation#llm" },
+  { label: "Hire Java Developer", href: "/hire-java" },
+  { label: "Hire Magento Developer", href: "/hire-magento" },
+  { label: "Hire Python Developer", href: "/hire-python" },
+  { label: "Hire Laravel Developer", href: "/hire-laravel" },
+  { label: "Hire Node Js Developer", href: "/hire-node-js" },
+  { label: "Hire Spring Boot Developer", href: "/hire-spring-boot" },
+  { label: "Power BI Developer", href: "/hire-power-bi" },
+  { label: "Golang Developer", href: "/hire-golang" },
+  { label: "LLM Developer", href: "/hire-llm" },
 ];
 
 export const INDUSTRIES_ITEMS = [

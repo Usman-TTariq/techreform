@@ -1,9 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import CapsuleLabel from "../common/capsule-label";
 import ClaendarIcon from "../lp-app-process/svg/calendar-icon";
 import Image from "next/image";
+import HireExpertPopup from "../hire-expert-popup";
 
 const LpAppPlatform = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
+
     return (
         <div className="relative">
             <div className="container">
@@ -41,9 +47,13 @@ const LpAppPlatform = () => {
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[18px] font-regular text-white pt-4 sm:pt-[22px]">
                                 Tech Reforms aims to deliver scalable, sustainable custom mobile applications for Android and iOS. Our team focuses on building cross-platform apps for seamless performance and uninterrupted business operations.
                             </div>
-                            <div className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px]">
+                            <button
+                                type="button"
+                                onClick={() => setPopupOpen(true)}
+                                className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px] cursor-pointer hover:text-[#F74B1C] transition-colors"
+                            >
                                 Learn More <ArrowRight className="w-[22px]" />
-                            </div>
+                            </button>
                         </div>
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4 mb-[20px]">
                             <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
@@ -59,9 +69,13 @@ const LpAppPlatform = () => {
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[18px] font-regular text-white pt-4 sm:pt-[22px]">
                                 Hire Tech Reforms developers to optimize your applications for faster performance, better performance, and a better user experience. Our data migration services help you smooth transitions across all environments.
                             </div>
-                            <div className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px]">
+                            <button
+                                type="button"
+                                onClick={() => setPopupOpen(true)}
+                                className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px] cursor-pointer hover:text-[#F74B1C] transition-colors"
+                            >
                                 Learn More <ArrowRight className="w-[22px]" />
-                            </div>
+                            </button>
                         </div>
                         <div>
                             <Image
@@ -97,9 +111,13 @@ const LpAppPlatform = () => {
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[18px] font-regular text-white pt-4 sm:pt-[22px]">
                                 Tech Reforms offers advanced web solutions, from e-commerce platforms and corporate portals to business automation systems. We specialize in AI-enabled, mobile-first web applications that run seamlessly across devices and browsers.
                             </div>
-                            <div className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px]">
+                            <button
+                                type="button"
+                                onClick={() => setPopupOpen(true)}
+                                className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px] cursor-pointer hover:text-[#F74B1C] transition-colors"
+                            >
                                 Learn More <ArrowRight className="w-[22px]" />
-                            </div>
+                            </button>
                         </div>
                         <div className="border border-[#fff] bg-[#59595912] rounded-2xl p-4">
                             <div className="flex items-center gap-6 max-sm:gap-2 max-sm:flex-col max-sm:items-center">
@@ -115,13 +133,18 @@ const LpAppPlatform = () => {
                             <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[18px] font-regular text-white pt-4 sm:pt-[22px]">
                             Tech Reforms develops custom Application Programming Interfaces (APIs) to seamlessly connect your app with third-party services and extend its functionality.
                             </div>
-                            <div className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px]">
+                            <button
+                                type="button"
+                                onClick={() => setPopupOpen(true)}
+                                className="font-britanicaBlack flex items-center gap-2 font-bold text-[20px] sm:text-[22px] md:text-[20px] font-regular text-white text-left py-1 sm:py-[10px] cursor-pointer hover:text-[#F74B1C] transition-colors"
+                            >
                                 Learn More <ArrowRight className="w-[22px]" />
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
         </div>
     )
 }

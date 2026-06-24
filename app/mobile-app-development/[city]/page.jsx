@@ -111,7 +111,7 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
         body={city.offerSection?.body}
         serviceCards={city.offerSection?.cards}
       />
-      <FlutterVsReactNativeSection />
+      {!city.hideFlutterComparison && <FlutterVsReactNativeSection />}
       <StepperFrom
         headlinePrefix={city.budgetSection?.headlinePrefix}
         headlineAccent={city.budgetSection?.headlineAccent}
@@ -133,6 +133,8 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
         body={city.estimationSection?.body}
         ctaText={city.estimationSection?.ctaText}
         ctaPhone={city.estimationSection?.ctaPhone}
+        imageSrc={city.estimationSection?.imageSrc}
+        imageAlt={city.estimationSection?.imageAlt}
       />
       <EngagementModelSection
         headlinePrefix={city.engagementSection?.headlinePrefix}

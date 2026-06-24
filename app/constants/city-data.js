@@ -11,6 +11,7 @@ const cityShape = (overrides) => ({
   formIntro: "PLACEHOLDER — city-specific contact form intro",
   hideAnalytics: false,
   hideAppIntegration: false,
+  hideFlutterComparison: false,
   ...overrides,
 });
 
@@ -98,6 +99,7 @@ export const CITIES = {
     slug: "dallas",
     hideAnalytics: true,
     hideAppIntegration: true,
+    hideFlutterComparison: true,
     metaTitle: "Top Mobile App Development Services & Experts in Dallas, TX",
     metaDescription:
       "Dallas mobile app development for startups and enterprises. Custom iOS, Android, and cross-platform apps built around your business goals — design, development, launch, and support.",
@@ -177,6 +179,8 @@ export const CITIES = {
       body: "Tell us what you're building and we'll tell you exactly what it takes — timeline, budget, and the right approach for your idea. No commitment, no sales pressure, just a straight answer from a Dallas mobile app development team that's built this before.",
       ctaText: "Get Started →",
       ctaPhone: "(582) 233-5015",
+      imageSrc: "/images/dallas-idea.webp",
+      imageAlt: "Dallas mobile app idea consultation illustration",
     },
     engagementSection: {
       headlinePrefix: "Work With Our Dallas App Development Team",

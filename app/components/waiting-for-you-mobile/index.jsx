@@ -17,6 +17,9 @@ const DEFAULT_BODY =
 const DEFAULT_CTA_TEXT = "Get Started";
 const DEFAULT_CTA_PHONE = "(582) 233-5015";
 
+const DEFAULT_IMAGE = "/images/waiting.png";
+const DEFAULT_IMAGE_ALT = "Free app estimation illustration for mobile development CTA";
+
 const WaitingForYouMobile = ({
     headlinePrefix,
     headlineAccent,
@@ -25,6 +28,8 @@ const WaitingForYouMobile = ({
     body,
     ctaText,
     ctaPhone,
+    imageSrc,
+    imageAlt,
 }) => {
     const resolvedHeadlinePrefix = headlinePrefix ?? DEFAULT_HEADLINE_PREFIX;
     const resolvedHeadlineAccent = headlineAccent ?? DEFAULT_HEADLINE_ACCENT;
@@ -32,6 +37,8 @@ const WaitingForYouMobile = ({
     const resolvedBody = body ?? DEFAULT_BODY;
     const resolvedCtaText = ctaText ?? DEFAULT_CTA_TEXT;
     const resolvedCtaPhone = ctaPhone ?? DEFAULT_CTA_PHONE;
+    const resolvedImageSrc = imageSrc ?? DEFAULT_IMAGE;
+    const resolvedImageAlt = imageAlt ?? DEFAULT_IMAGE_ALT;
     const useStackedHeadline = stackedHeadline || (headlinePrefix != null && headlineAccent != null && headlineSuffix === "");
 
     return (
@@ -40,8 +47,8 @@ const WaitingForYouMobile = ({
                 <div className="relative container px-4 sm:px-4 overflow-visible">
                     <Image
                         className="pointer-events-none w-[420px] lg:w-[550px] max-sm:pt-[30px] max-lg:relative max-lg:top-0 max-lg:translate-y-0 max-lg:w-[70%] max-lg:mx-auto max-lg:mb-6 max-lg:z-auto lg:absolute lg:top-[50%] lg:right-0 lg:translate-y-[-50%] lg:z-20"
-                        src="/images/waiting.png"
-                        alt="Free app estimation illustration for mobile development CTA"
+                        src={resolvedImageSrc}
+                        alt={resolvedImageAlt}
                         width={1000}
                         height={1000}
                     />

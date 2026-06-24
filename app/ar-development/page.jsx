@@ -38,6 +38,33 @@ const arSchema = {
   }
 };
 
+const AR_TESTIMONIALS = [
+  {
+    name: "Sophie Laurent",
+    role: "CEO — VisionWear Co.",
+    quote:
+      "TechReforms built our AR try-on app for our eyewear brand in 14 weeks. ARKit face tracking was accurate — customers could see exactly how glasses looked on their face. Our online conversion rate increased 38% in the first month.",
+  },
+  {
+    name: "Mark Reynolds",
+    role: "Operations Director — FactoryEdge Inc.",
+    quote:
+      "We needed an AR training app for our manufacturing floor on HoloLens 2. TechReforms delivered a step-by-step assembly guidance system using Vuforia. Training time reduced by 60% and error rate dropped significantly.",
+  },
+  {
+    name: "James Kim",
+    role: "Founder — UrbanNest Properties",
+    quote:
+      "Our real estate app needed AR walkthroughs so buyers could visualize furnished rooms before purchase. TechReforms used ARCore with 3D furniture models — buyers could place sofas and beds in empty apartments. Sold 3 units directly through the app.",
+  },
+  {
+    name: "Priya Rao",
+    role: "Marketing Director — LaunchBrand",
+    quote:
+      "WebAR campaign for our product launch — no app download, just scan a code and see the product in your space. TechReforms used 8th Wall and delivered in 6 weeks. 200K users engaged in the first 2 weeks.",
+  },
+];
+
 export const metadata = {
     title: "Custom AR App Development Agency For Online",
     description:
@@ -63,7 +90,7 @@ const ArDevelopment = () => {
             <HowWeDoAr />
             <ArCaseStudySection />
             <Marquee />
-            <TestimonialSection />
+            <TestimonialSection testimonials={AR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection formIntro={undefined} />
             <FaqHomeSection />

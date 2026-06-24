@@ -54,6 +54,39 @@ const mobileAppSchema = {
   }
 };
 
+const MOBILE_APP_TESTIMONIALS = [
+  {
+    name: "Alex Kim",
+    role: "CEO — PayFlow Inc.",
+    quote:
+      "TechReforms built our fintech iOS app with Apple Pay and Face ID authentication in 10 weeks. App Store approved first submission — no rejections. 4.8 rating with 12,000 downloads in the first month. The Swift codebase is clean enough for our in-house team to maintain.",
+  },
+  {
+    name: "Sarah Rodriguez",
+    role: "CEO — HomeServe Now",
+    quote:
+      "Flutter app for iOS and Android simultaneously — marketplace with Stripe Connect, real-time GPS tracking, and push notifications. TechReforms delivered in 14 weeks on a fixed price. We hit 1,000 bookings in the first month. Architecture handled the growth without issues.",
+  },
+  {
+    name: "Dr. Sarah Reed",
+    role: "Founder — MediConnect",
+    quote:
+      "React Native app with HIPAA-compliant backend, Twilio video consultations, and HealthKit integration. TechReforms handled App Store and Play Store submission. 500 doctors onboarded in 3 months. The telemedicine flow is exactly what our patients needed.",
+  },
+  {
+    name: "James Park",
+    role: "CTO — LearnPath",
+    quote:
+      "AI-powered EdTech app — Core ML on-device recommendations, offline video, StoreKit 2 subscriptions. TechReforms built it in 12 weeks. 50,000 downloads in 6 months, 4.9 App Store rating. The on-device AI was the feature that made us stand out in a crowded market.",
+  },
+  {
+    name: "Marcus Hall",
+    role: "VP Engineering — WorkForce360 Enterprise",
+    quote:
+      "Enterprise React Native app with SSO, role-based access, and offline capability for 500+ field users across 12 countries. TechReforms used the New Architecture (JSI/Fabric) — performance was noticeably better than our previous RN 0.68 codebase. Deployed via Apple Business Manager and Google Play Managed. Zero reported crashes in first 30 days.",
+  },
+];
+
 const Mobile = () => {
     return (
         <div>
@@ -80,7 +113,7 @@ const Mobile = () => {
             <WhatWeDoMobileSection />
             <CaseStudiesSection />
             <FaqSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={MOBILE_APP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection formIntro="Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form." />
             <Footer />

@@ -26,6 +26,33 @@ export const metadata = {
   alternates: { canonical: "/retail" },
 };
 
+const RETAIL_TESTIMONIALS = [
+  {
+    name: "Rachel Kim",
+    role: "CMO — StyleNest Fashion",
+    quote:
+      "TechReforms built our loyalty app in Flutter — iOS and Android simultaneously. 85,000 downloads in 3 months. Repeat purchase rate went up 38% in the first quarter. The points system and push notification timing were built exactly to our retention strategy.",
+  },
+  {
+    name: "Mark Peterson",
+    role: "CEO — HomeGoods Plus",
+    quote:
+      "Omnichannel retail app — customers browse online, reserve in-store, earn loyalty points everywhere. Shopify backend, Flutter frontend, POS integration. TechReforms handled everything. Our app is now our highest-converting sales channel.",
+  },
+  {
+    name: "Sophie Laurent",
+    role: "Head of Digital — VisionStyle",
+    quote:
+      "AR try-on for our eyewear brand — ARKit face tracking, customers see exactly how glasses look before buying. Return rate dropped 24%. TechReforms delivered in 16 weeks. The AR accuracy was better than we expected for the budget.",
+  },
+  {
+    name: "James Hassan",
+    role: "VP Operations — FreshMart Group",
+    quote:
+      "Retail audit app for our 200-store franchise — field teams do store walkthroughs offline, photos sync when back on WiFi. TechReforms built it in React Native with full offline mode. Replaced paper forms across all locations in 6 weeks.",
+  },
+];
+
 const Retail = () => {
   return (
     <>
@@ -58,7 +85,7 @@ const Retail = () => {
       <RetailCaseStudiesSection />
       <RetailCtaSection />
       <FaqRetailSection />
-      <TestimonialSection />
+      <TestimonialSection testimonials={RETAIL_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

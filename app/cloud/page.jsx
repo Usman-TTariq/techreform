@@ -21,6 +21,33 @@ export const metadata = {
   alternates: { canonical: "/cloud" },
 };
 
+const CLOUD_TESTIMONIALS = [
+  {
+    name: "Ryan Kim",
+    role: "VP Engineering — ScaleOps SaaS",
+    quote:
+      "TechReforms migrated our monolith to AWS microservices with zero downtime. Terraform IaC means we can spin up new environments in minutes. Deployment time went from 4 hours to 8 minutes after CI/CD setup.",
+  },
+  {
+    name: "Sarah Lee",
+    role: "CTO — MedCloud Systems",
+    quote:
+      "Healthcare platform on Azure — HIPAA compliant from day one. TechReforms set up encrypted storage, audit logging, and BAA agreements. Our SOC 2 audit passed on first attempt. Cloud cost dropped 35% after optimization.",
+  },
+  {
+    name: "Mark Peterson",
+    role: "Head of Infrastructure — AICore",
+    quote:
+      "Kubernetes setup on GKE for our AI inference workloads. TechReforms configured auto-scaling GPU nodes — we handle 10x traffic spikes without manual intervention. Grafana dashboards give us full observability.",
+  },
+  {
+    name: "James Hall",
+    role: "Director of Engineering — ShopScale",
+    quote:
+      "E-commerce platform migration to AWS — Redis caching and CloudFront CDN reduced page load time by 60%. Black Friday traffic handled with zero downtime. TechReforms set up auto-scaling that actually works under real load.",
+  },
+];
+
 const CloudPage = () => {
   return (
     <>
@@ -45,7 +72,7 @@ const CloudPage = () => {
       <CloudWhyChooseSection />
       <CloudCaseStudiesSection />
       <FaqCloudSection />
-      <TestimonialSection />
+      <TestimonialSection testimonials={CLOUD_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

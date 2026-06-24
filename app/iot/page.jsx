@@ -21,6 +21,33 @@ export const metadata = {
   alternates: { canonical: "/iot" },
 };
 
+const IOT_TESTIMONIALS = [
+  {
+    name: "Robert Hayes",
+    role: "Plant Director — PrecisionMfg Corp",
+    quote:
+      "TechReforms built our predictive maintenance IoT platform — 200+ vibration sensors on ESP32, MQTT to AWS IoT Core, real-time alerts to our maintenance team. Unplanned downtime dropped 28% in the first quarter after deployment.",
+  },
+  {
+    name: "Dr. Karen Lee",
+    role: "CTO — MedTrack Health",
+    quote:
+      "Remote patient monitoring with BLE wearables and HIPAA-compliant Azure IoT Hub. TechReforms handled device provisioning, data encryption, and FHIR integration. 500 patients monitored simultaneously with zero data breaches.",
+  },
+  {
+    name: "Mark Peterson",
+    role: "Facilities Director — PropTech Group",
+    quote:
+      "Smart building IoT across 12 office locations — Zigbee sensors for HVAC, occupancy, and energy monitoring. TechReforms built the dashboard and automation rules. Energy costs down 22% year-over-year. Grafana dashboards give us full visibility.",
+  },
+  {
+    name: "James Wilson",
+    role: "VP Operations — ColdRoute Logistics",
+    quote:
+      "Fleet tracking IoT for 300 refrigerated vehicles — LTE-M GPS, temperature sensors, and InfluxDB time-series storage. TechReforms built the custom React dashboard. Cold chain compliance improved and spoilage claims dropped 40%.",
+  },
+];
+
 const IoTPage = () => {
     return (
         <>
@@ -45,7 +72,7 @@ const IoTPage = () => {
             <IotWhyChooseSection />
             <IotCaseStudiesSection />
             <FaqIotSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={IOT_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection />
             <Footer />

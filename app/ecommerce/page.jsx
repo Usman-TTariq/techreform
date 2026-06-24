@@ -46,6 +46,33 @@ export const metadata = {
     alternates: { canonical: "/ecommerce" },
 };
 
+const ECOMMERCE_TESTIMONIALS = [
+    {
+        name: "Rachel Kim",
+        role: "CEO — StyleNest Fashion",
+        quote:
+            "TechReforms migrated our 8,000-product WooCommerce store to Shopify Plus in 6 weeks — zero ranking loss, all 301 redirects preserved. First month on Shopify: 28% higher conversion rate. Mobile checkout speed alone made the difference.",
+    },
+    {
+        name: "Mark Peterson",
+        role: "VP Sales — BuildSupply Co.",
+        quote:
+            "Custom Magento 2 B2B store — customer-specific pricing, purchase order system, and ERP integration with SAP. TechReforms delivered in 5 months. Our wholesale team processes 300% more orders per day without extra staff.",
+    },
+    {
+        name: "Sarah Lee",
+        role: "Head of Digital — HomeDecor Plus",
+        quote:
+            "Headless Shopify with Next.js frontend — page load dropped from 4.2 seconds to 0.8 seconds. Google Core Web Vitals went green across the board. 42% improvement in organic traffic in 3 months post-launch.",
+    },
+    {
+        name: "James Hassan",
+        role: "Founder — FreshBasket",
+        quote:
+            "Grocery delivery ecommerce app — Flutter mobile + WooCommerce backend, time-slot delivery, real-time order tracking. TechReforms delivered in 14 weeks. We hit 5,000 orders per day within 3 months of launch.",
+    },
+];
+
 const Ecommerce = () => {
     return (
         <div>
@@ -70,7 +97,7 @@ Tech Reforms is a pioneering e-commerce development agency that offers affordabl
             <WhatMakesEcommerce />
             <FaqEcommerceSection />
             <EcommerceCta />
-            <TestimonialSection />
+            <TestimonialSection testimonials={ECOMMERCE_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection />
             <Footer />

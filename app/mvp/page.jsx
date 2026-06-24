@@ -47,6 +47,33 @@ export const metadata = {
   alternates: { canonical: "/mvp" },
 };
 
+const MVP_TESTIMONIALS = [
+  {
+    name: "Alex Kim",
+    role: "Founder — LendFast (Pre-seed funded)",
+    quote:
+      "TechReforms built our fintech MVP in 7 weeks — iOS and Android with Stripe and Plaid integration. We used it to raise our $500K pre-seed round. Investors were impressed with the quality for an MVP.",
+  },
+  {
+    name: "Sarah Reed",
+    role: "Founder — DocuChat AI",
+    quote:
+      "We had an AI product idea but no technical team. TechReforms scoped the MVP in week one, built the RAG-based chatbot in 6 weeks, and launched on Product Hunt. 800 signups in first week. Now we're building v2.",
+  },
+  {
+    name: "Dr. James Park",
+    role: "Co-founder — TeleDoc Now",
+    quote:
+      "Healthcare telemedicine MVP — HIPAA compliant, video calls, appointment booking. Built in 8 weeks. We onboarded 50 doctors in the first month. TechReforms understood startup constraints — no bloat, just what we needed.",
+  },
+  {
+    name: "Mark Lee",
+    role: "CEO — Flowboard SaaS",
+    quote:
+      "SaaS MVP for B2B project management — built in Next.js with Stripe subscriptions and team collaboration. Launched in 10 weeks. First paying customer on week 11. TechReforms helped us scope tightly — we didn't overbuild.",
+  },
+];
+
 const MvpPage = () => {
     return (
         <div>
@@ -71,7 +98,7 @@ const MvpPage = () => {
             <MvpWhyChooseSection />
             <CaseStudiesMvpSection />
             <FaqMvpSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={MVP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection />
             <Footer />

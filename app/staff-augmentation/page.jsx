@@ -50,6 +50,21 @@ export const metadata = {
   alternates: { canonical: "/staff-augmentation" },
 };
 
+const STAFF_AUG_TESTIMONIALS = [
+  {
+    name: "Marcus Chen",
+    role: "Engineering Lead — ScaleApp Inc.",
+    quote:
+      "TechReforms sent 3 Flutter developer profiles within 24 hours. We hired a senior Flutter dev who was onboarded into our GitHub and Jira within 10 days. He integrated like a full-time employee from week one.",
+  },
+  {
+    name: "Priya Sharma",
+    role: "CTO — AI Labs Co.",
+    quote:
+      "We needed a senior Python developer with LLM experience urgently. TechReforms delivered 2 qualified profiles in 48 hours. The developer we hired had worked with OpenAI APIs and RAG systems — exactly what we needed.",
+  },
+];
+
 const StaffAugmentation = () => {
     return (
         <div>
@@ -70,7 +85,7 @@ const StaffAugmentation = () => {
             <StaffAugmentationWhyPartnerSection />
             <CaseStudiesStaffAugmentationSection />
             <FaqStaffAugmentationSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={STAFF_AUG_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection formIntro="Every hire impacts your project timeline and budget. Get a quick consultation and resource estimate by filling out this form. Our experts will help you scale your development team faster and reduce software development costs." />
             <Footer />

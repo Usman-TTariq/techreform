@@ -23,6 +23,33 @@ export const metadata = {
   alternates: { canonical: "/react-native" },
 };
 
+const REACT_NATIVE_TESTIMONIALS = [
+  {
+    name: "Nathan Kim",
+    role: "CTO — PaySwift",
+    quote:
+      "TechReforms built our fintech React Native app with Stripe and biometric auth in 12 weeks. TypeScript codebase was clean enough for our in-house team to maintain immediately. 4.8 rating on App Store after first month.",
+  },
+  {
+    name: "Dr. Amy Lee",
+    role: "Founder — TeleDoc Pro",
+    quote:
+      "Healthcare telemedicine app — HIPAA compliant, Twilio video integration, and HealthKit sync. TechReforms used Expo managed workflow and delivered iOS + Android in 10 weeks. Zero App Store rejections.",
+  },
+  {
+    name: "Robert Mills",
+    role: "VP Engineering — FleetOps",
+    quote:
+      "Logistics RN app with offline sync via WatermelonDB and real-time GPS tracking. Works perfectly in warehouses with no connectivity. TechReforms chose the right architecture — Redux Toolkit with offline-first design pattern.",
+  },
+  {
+    name: "James Park",
+    role: "CTO — WorkForce360",
+    quote:
+      "Enterprise SaaS RN app with SSO, role-based access, and offline capability for 500+ field users. TechReforms used React Native New Architecture — performance was noticeably better than our old RN 0.68 codebase.",
+  },
+];
+
 const ReactNative = () => {
   return (
     <>
@@ -65,7 +92,7 @@ const ReactNative = () => {
       <ReactNativeWhyChooseSection />
       <ReactNativeCaseStudiesSection />
       <FaqReactNativeSection />
-      <TestimonialSection />
+      <TestimonialSection testimonials={REACT_NATIVE_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

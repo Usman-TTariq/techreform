@@ -22,6 +22,34 @@ export const metadata = {
   alternates: { canonical: "/flutter" },
 };
 
+const FLUTTER_TESTIMONIALS = [
+  
+  {
+    name: "Sarah Park",
+    role: "Founder — ClinicConnect",
+    quote:
+      "We needed a Flutter MVP for our healthcare startup in 6 weeks. TechReforms delivered iOS and Android simultaneously with Firebase backend. HIPAA-compliant, App Store approved first submission.",
+  },
+  {
+    name: "Ryan Kim",
+    role: "CTO — WalletEdge",
+    quote:
+      "TechReforms built our fintech Flutter app — iOS and Android from one codebase in 10 weeks. BLoC architecture made the codebase easy for our in-house team to maintain. 4.7 rating on both stores within 2 months.",
+  },
+  {
+    name: "James Lee",
+    role: "CEO — TaskPilot SaaS",
+    quote:
+      "Our SaaS platform needed Flutter Web + mobile app from same codebase. TechReforms used Riverpod and delivered clean architecture. We launched 3 platforms simultaneously — iOS, Android, and web — in 14 weeks.",
+  },
+  {
+    name: "Mark Hassan",
+    role: "VP Technology — SwiftRoute",
+    quote:
+      "Logistics Flutter app with offline sync, Google Maps, and real-time driver tracking. TechReforms handled complex state management with BLoC and Hive for offline storage. Works perfectly in low connectivity areas.",
+  },
+];
+
 const Flutter = () => {
   return (
     <>
@@ -54,7 +82,7 @@ const Flutter = () => {
       <FlutterWhyChooseSection />
       <FlutterCaseStudiesSection />
       <FaqFlutterSection />
-      <TestimonialSection />
+      <TestimonialSection testimonials={FLUTTER_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

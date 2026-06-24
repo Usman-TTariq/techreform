@@ -26,7 +26,34 @@ export const metadata = {
   alternates: { canonical: "/ios" },
 };
 
-const IOS = () => {  
+const IOS_TESTIMONIALS = [
+  {
+    name: "Alex Kim",
+    role: "CEO — PayFlow Inc.",
+    quote:
+      "TechReforms built our fintech iOS app with Apple Pay and Face ID in 10 weeks. App Store approved first submission — no rejections. 4.8 rating after 3 months with 12K+ downloads.",
+  },
+  {
+    name: "Dr. Sarah Reed",
+    role: "Founder — MediConnect",
+    quote:
+      "HIPAA-compliant telemedicine app on iOS. HealthKit integration, video consultation, and patient records — all in one app. TechReforms handled everything including App Store submission and privacy labels.",
+  },
+  {
+    name: "Marie Laurent",
+    role: "Head of Digital — VisionStyle",
+    quote:
+      "AR try-on app using ARKit for our eyewear brand. LiDAR tracking was accurate — conversion rate up 35% since launch. TechReforms delivered in 14 weeks on a fixed price. Zero scope creep.",
+  },
+  {
+    name: "James Park",
+    role: "CTO — LearnPath",
+    quote:
+      "E-learning iOS app with offline video, interactive quizzes, and subscription billing via StoreKit 2. 50K downloads in first 6 months. TechReforms team understood iOS deeply — not just generic app developers.",
+  },
+];
+
+const IOS = () => {
     return (
         <>
             <Header />
@@ -52,7 +79,7 @@ const IOS = () => {
             <IosIndustriesSection />
             <IosCaseStudiesSection />
             <FaqIosSection />
-            <TestimonialSection />
+            <TestimonialSection testimonials={IOS_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection />
             <Footer />

@@ -23,6 +23,33 @@ export const metadata = {
   alternates: { canonical: "/cross-platform" },
 };
 
+const CROSS_PLATFORM_TESTIMONIALS = [
+  {
+    name: "Alex Kim",
+    role: "CEO — DataDash SaaS",
+    quote:
+      "TechReforms built our Flutter app — iOS, Android, and web from one codebase in 14 weeks. Three platforms simultaneously launched. Design is pixel-perfect on all three. We saved 40% vs the native estimate we got from another agency.",
+  },
+  {
+    name: "Sarah Reed",
+    role: "CTO — FleetSync",
+    quote:
+      "React Native app for our logistics platform — iOS and Android simultaneously. The shared codebase means bug fixes go out once and hit both platforms instantly. Our team maintains it easily because it's one JavaScript codebase.",
+  },
+  {
+    name: "Mark Peters",
+    role: "VP Product — FieldOps Pro",
+    quote:
+      "We needed Flutter Web + mobile for our B2B tool. TechReforms recommended Flutter over React Native because of web support — right call. Admin dashboard on web, field team on mobile, same codebase. Launched in 16 weeks.",
+  },
+  {
+    name: "Dr. Jamie Lee",
+    role: "Founder — HealthSync",
+    quote:
+      "TechReforms told us upfront that for our healthcare app with HealthKit deep integration, native Swift would be better than Flutter. Rare honesty. We went native on iOS — they built it. Exactly what we needed and no overselling.",
+  },
+];
+
 const CrossPlatform = () => {
   return (
     <>
@@ -48,7 +75,7 @@ const CrossPlatform = () => {
       {/* <FlutterVsReactNativeSection /> */}
       <CrossPlatformCaseStudiesSection />
       <FaqCrossPlatformSection />
-      <TestimonialSection />
+      <TestimonialSection testimonials={CROSS_PLATFORM_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

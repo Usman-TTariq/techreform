@@ -11,12 +11,14 @@ import Marquee from "../components/marquee";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { VR_CONTACT_BENEFITS } from "../constants/vr-contact-benefits";
 import FaqVrSection from "../components/faq-vr-section";
 import VrCaseStudySection from "../components/vr-case-study-section";
 import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import { VrFrameworksTechnologiesSection } from "../components/erp-platforms-technologies-section";
 import { VrPlatformComparisonSection } from "../components/erp-platform-comparison-section";
 import VrDevicesPlatformsSection from "../components/vr-devices-platforms-section";
+import VrUseCasesSection from "../components/vr-use-cases-section";
 
 const VR_IMPACT_CARDS = [
   {
@@ -93,6 +95,7 @@ const VrDevelopmentPage = () => {
             <VrHeroSection />
             <OurImpactBoxesSection cards={VR_IMPACT_CARDS} />
             <VrAppFunctions />
+            <VrUseCasesSection />
             <VrDevicesPlatformsSection />
             <VRIndustries />
             <VrFrameworksTechnologiesSection />
@@ -102,11 +105,11 @@ const VrDevelopmentPage = () => {
             <VrProcess />
             <HowWeDoVr />
             <VrCaseStudySection />
+            <FaqVrSection />
             <Marquee />
             <TestimonialSection testimonials={VR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro={undefined} />
-            <FaqVrSection />
+            <DetailFormSection benefits={VR_CONTACT_BENEFITS} />
             <Footer />
         </>
     );

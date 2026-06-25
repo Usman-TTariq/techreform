@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
+import IosDevelopmentCostTable from "./ios-development-cost-table";
 
 const PHASES = [
   "Research",
@@ -17,6 +18,20 @@ const PHASES = [
 const FAQ_ITEMS = [
   {
     id: 1,
+    question: "How much does iOS App Development Cost in 2026?",
+    answer: (
+      <>
+        <p className="pb-3">
+          Transparent cost ranges by app complexity — from simple Swift + Firebase apps to
+          enterprise iOS with AWS backend. No vague estimates; plan your budget before the
+          discovery call.
+        </p>
+        <IosDevelopmentCostTable />
+      </>
+    ),
+  },
+  {
+    id: 2,
     question: "How does iOS Application Development work?",
     answer: (
       <>
@@ -33,20 +48,11 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     question: "Why Should I Invest in iOS App Development?",
     answer: (
       <>
         Firstly, because Apple has a loyal user base that grows by the second, choosing iOS will simply guarantee you clients who most probably would use your service. Secondly, iPhones and iPads offer an intuitive user experience you can capitalize on.
-      </>
-    ),
-  },
-  {
-    id: 3,
-    question: "How much does iOS App Development Cost?",
-    answer: (
-      <>
-        There isn&apos;t a direct cost estimate for iOS development, as it depends on various factors, such as the app&apos;s development difficulty, the features, the development team&apos;s experience, and the location.
       </>
     ),
   },
@@ -71,7 +77,7 @@ const FAQ_ITEMS = [
 ];
 
 const FaqIosSection = () => {
-  const [openId, setOpenId] = useState(FAQ_ITEMS[0]?.id ?? null);
+  const [openId, setOpenId] = useState(3);
   return (
     <section className="relative py-10 sm:py-12 md:py-14 lg:py-[60px] bg-[#0E0E0E] px-4 sm:px-6 overflow-x-hidden">
       <div className="container max-w-[1200px] mx-auto w-full min-w-0">

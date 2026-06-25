@@ -3,10 +3,25 @@
 import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import { ChevronDown } from "lucide-react";
+import StaffAugmentationRatesTable from "./staff-augmentation-rates-table";
 
 const FAQ_ITEMS = [
     {
         id: 1,
+        question: "What are staff augmentation rates and pricing in 2026?",
+        answer: (
+            <>
+                <p className="pb-3">
+                    Transparent hourly and monthly rates by developer level — so you can budget
+                    before your first discovery call. &ldquo;Staff augmentation cost per hour&rdquo;
+                    is one of the most searched questions we hear from buyers.
+                </p>
+                <StaffAugmentationRatesTable />
+            </>
+        ),
+    },
+    {
+        id: 2,
         question: "How fast can you provide a developer?",
         answer: (
             <>
@@ -15,7 +30,7 @@ const FAQ_ITEMS = [
         ),
     },
     {
-        id: 2,
+        id: 3,
         question: "Can I increase or reduce the team anytime?",
         answer: (
             <>
@@ -24,7 +39,7 @@ const FAQ_ITEMS = [
         ),
     },
     {
-        id: 3,
+        id: 4,
         question: "Will the developer work in my time zone?",
         answer: (
             <>

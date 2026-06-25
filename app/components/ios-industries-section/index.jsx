@@ -11,44 +11,57 @@ import Image from "next/image";
 import HireExpertPopup from "../hire-expert-popup";
 import { INDUSTRY_IMAGES } from "@/app/constants/industry-images";
 
-const IosIndustriesSection = ({ firstWord, secondWord, thirdWord, secondCol, thirdCol, para }) => {
+const IosIndustriesSection = ({
+  firstWord = "iOS Apps for",
+  secondWord = "Every",
+  thirdWord = "Industry",
+  secondCol,
+  thirdCol,
+  para = "Industry-specific iOS searches — healthcare app development, fintech iPhone apps, AR retail — convert when you show domain expertise, not just generic developers.",
+}) => {
   const [popupOpen, setPopupOpen] = useState(false);
   const industries = [
     {
-      title: "Health & Wellness",
-      description: "Apps for booking, tracking, and patient engagement.",
+      title: "Healthcare & MedTech",
+      description:
+        "HIPAA-compliant iOS apps, patient portals, telemedicine, HealthKit integration, and medical device connectivity.",
       image: INDUSTRY_IMAGES.healthWellness,
       link: "/financing",
     },
     {
-      title: "Retail",
-      description: "Better retail experiences with smooth checkout and tracking.",
-      image: INDUSTRY_IMAGES.retail,
-      link: "/travel",
-    },
-    {
-      title: "Finance",
-      description: "Secure apps for payments and financial management.",    
+      title: "Fintech & Banking",
+      description:
+        "Payment apps, investment platforms, banking dashboards, Apple Pay, Face ID biometrics, PCI DSS compliant.",
       image: INDUSTRY_IMAGES.finance,
-      link: "/e-commerce",
+      link: "/financing",
     },
     {
-      title: "Education & E-Learning",
-      description: "Apps for learning, courses, and student engagement.",
+      title: "Retail & E-Commerce",
+      description:
+        "Shopping apps, AR try-on (ARKit), loyalty programs, push notifications, and StoreKit in-app purchases.",
+      image: INDUSTRY_IMAGES.retail,
+      link: "/retail",
+    },
+    {
+      title: "EdTech & E-Learning",
+      description:
+        "Learning management, video streaming, interactive quizzes, offline content, and subscription monetization.",
       image: INDUSTRY_IMAGES.education,
       link: "/education",
     },
     {
-      title: "Hospitality",
-      description: "Booking and travel management made simple.",
+      title: "Logistics & Field Service",
+      description:
+        "Route optimization, barcode scanning, offline sync, GPS tracking, and enterprise MDM deployment for field teams.",
       image: INDUSTRY_IMAGES.hospitality,
       link: "/travel",
     },
     {
-      title: "Food & Beverage",
-      description: "Ordering, delivery tracking, and customer loyalty systems.",
+      title: "Gaming & Entertainment",
+      description:
+        "SpriteKit, SceneKit, GameKit multiplayer, Game Center leaderboards, and in-app purchase monetization.",
       image: INDUSTRY_IMAGES.foodBeverage,
-      link: "/e-commerce",
+      link: "/game-development",
     },
   ];
 
@@ -57,15 +70,15 @@ const IosIndustriesSection = ({ firstWord, secondWord, thirdWord, secondCol, thi
       <div className="container">
         <div className="">
           <div className="grid grid-cols-12 justify-between gap-4">
-            <div className={`col-span-2 max-lg:col-span-12 max-sm:mx-auto ${secondCol}`}>
+            <div className={`col-span-12 lg:col-span-5 max-lg:max-w-2xl ${secondCol}`}>
               <CapsuleLabel firstWord="OUR" secondWord="INDUSTRIES" />
               {para && (
-                <div className="font-britanicaRegular max-sm:text-center text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 leading-relaxed break-words">
+                <div className="font-britanicaRegular max-sm:text-center text-[14px] text-left sm:text-[16px] md:text-[18px] font-regular text-white pt-3 sm:pt-4 leading-relaxed break-words max-w-2xl lg:max-w-none">
                   {para}
                 </div>
               )}
             </div>
-            <div className={`col-span-10 max-lg:col-span-12 ${thirdCol}`}>
+            <div className={`col-span-12 lg:col-span-7 ${thirdCol}`}>
               <div className="flex justify-end max-sm:justify-center">
                 <div className="font-britanicaBlack text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[55px] lg:leading-[62px] font-black pb-4 sm:pb-[26px] text-right max-sm:text-center">
                   {firstWord && <span className="text-[#F74B1C]">{firstWord} </span>}

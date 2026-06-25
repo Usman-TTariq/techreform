@@ -29,7 +29,7 @@ const DEFAULT_ERP_BENEFITS = [
 /**
  * @param {{
  *   formIntro?: string,
- *   productType?: "app" | "game" | "erp",
+ *   productType?: "app" | "game" | "erp" | "ios",
  *   benefits?: string[],
  * }} props
  */
@@ -39,7 +39,13 @@ const DetailFormSection = ({
   benefits = undefined,
 }) => {
   const developmentLabel =
-    productType === "game" ? "Game" : productType === "erp" ? "ERP" : "App";
+    productType === "game"
+      ? "Game"
+      : productType === "erp"
+        ? "ERP"
+        : productType === "ios"
+          ? "iOS"
+          : "App";
   const benefitItems =
     benefits ?? (productType === "erp" ? DEFAULT_ERP_BENEFITS : DEFAULT_APP_BENEFITS);
   return (

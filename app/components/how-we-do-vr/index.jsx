@@ -5,23 +5,34 @@ import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { ArrowRight } from "lucide-react";
+import { Box, Hand, BarChart3, RefreshCw } from "lucide-react";
 import Image from "next/image";
-import AiIcon from "../advanced-technology-section/svg/ai-icon";
 import HireExpertPopup from "../hire-expert-popup";
 
 const STEPS = [
     {
         title: "VR Environment Development",
-        desc: "We create immersive virtual environments for training, product demos, and interactive experiences. Our team designs detailed 3D spaces and simple user interactions using our virtual reality development services.",
-    },
-    {
-        title: "Updates & Performance Optimization",
-        desc: "VR apps need updates to stay smooth and compatible. As a VR app development company, we provide regular improvements, fixes, and performance optimization through ongoing VR software development.",
+        desc: "We build photorealistic VR worlds in Unreal Engine 5 — leveraging Nanite virtualized geometry and Lumen global illumination for AAA-quality visuals. For standalone headsets (Meta Quest 3), we use Unity XR with aggressive draw call optimization, texture streaming, and LOD systems to maintain smooth 72fps without a PC.",
+        footerTags: "Engine: Unity XR / Unreal Engine 5 · Target: 72fps Quest, 90fps PC VR · Tools: Nanite, Lumen, LOD optimization",
+        Icon: Box,
     },
     {
         title: "User Interaction & Motion Tracking",
-        desc: "We make sure users can move and interact naturally inside VR. Our team builds smooth navigation and accurate motion tracking to deliver engaging virtual reality development services.",
+        desc: "We implement 6DOF controller tracking, natural hand tracking via Meta Hand SDK, and eye tracking on PSVR2 and Apple Vision Pro. Haptic feedback is integrated for physical realism in training simulations — users feel resistance, vibration, and texture through VR controllers. Comfort-first locomotion design prevents motion sickness.",
+        footerTags: "6DOF · Meta Hand SDK · Eye Tracking · Haptic Feedback · Comfort Locomotion",
+        Icon: Hand,
+    },
+    {
+        title: "Performance Optimization & Updates",
+        desc: "Every VR app we deliver maintains consistent frame rates — frame drops cause motion sickness and destroy immersion. We profile and optimize draw calls, shader complexity, physics calculations, and audio processing. Post-launch, we provide OS compatibility updates as Meta, Sony, and Valve release new headset firmware and SDK versions.",
+        footerTags: "Target: stable 72/90fps · Profiling: Unity Profiler, Unreal Insights · SDK updates: Meta, SteamVR, PSVR2",
+        Icon: BarChart3,
+    },
+    {
+        title: "Content Updates & LiveOps",
+        desc: "VR training libraries grow over time — new scenarios, updated procedures, and additional modules. We build content management workflows so your team can update VR content without re-submitting to app stores. Remote content delivery, A/B testing of scenarios, and analytics dashboards for training managers.",
+        footerTags: "Remote content delivery · xAPI analytics · No store resubmission for content · Training manager dashboard",
+        Icon: RefreshCw,
     },
 ];
 
@@ -117,32 +128,33 @@ const HowWeDoVr = () => {
                                 },
                             }}
                         >
-                            {STEPS.map((step, index) => (
+                            {STEPS.map((step, index) => {
+                                const StepIcon = step.Icon;
+                                return (
                                 <SwiperSlide key={index}>
-                                    <div className="bg-white border-2 !h-full min-h-[300px] sm:min-h-[380px] md:min-h-[620px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px]">
-                                        <div className="pb-3 sm:pb-[20px]">
-                                            <div className="w-[56px] h-[56px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
-                                                <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+                                    <div className="bg-white border-2 !h-full min-h-[380px] sm:min-h-[420px] md:min-h-[520px] border-[#7724C1] rounded-2xl flex flex-col overflow-hidden">
+                                        <div className="p-4 sm:p-6 md:p-[30px] flex flex-col flex-1">
+                                            <div className="pb-3 sm:pb-[20px]">
+                                                <div className="w-[56px] h-[56px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#7724C1]/15 flex items-center justify-center">
+                                                    <StepIcon className="w-6 h-6 sm:w-[32px] sm:h-[32px] text-[#7724C1]" strokeWidth={1.75} aria-hidden />
+                                                </div>
+                                            </div>
+                                            <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-snug">
+                                                {step.title}
+                                            </div>
+                                            <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] leading-relaxed flex-1">
+                                                {step.desc}
                                             </div>
                                         </div>
-                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px]">
-                                            {step.title}
-                                        </div>
-                                        <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-5 sm:pb-[30px]">
-                                            {step.desc}
-                                        </div>
-                                        <div>
-                                            <button
-                                                type="button"
-                                                onClick={() => setPopupOpen(true)}
-                                                className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
-                                            >
-                                                Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                                            </button>
+                                        <div className="bg-[#7724C1]/10 px-4 sm:px-6 md:px-[30px] py-3 sm:py-4 border-t border-[#7724C1]/20">
+                                            <p className="font-britanicaRegular text-[12px] sm:text-[13px] md:text-[14px] text-[#7724C1] leading-relaxed">
+                                                {step.footerTags}
+                                            </p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                            ))}
+                                );
+                            })}
                         </Swiper>
                     </div>
                 </div>

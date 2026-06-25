@@ -1,152 +1,142 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { Clock, FileCheck } from "lucide-react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import AiIcon from "../advanced-technology-section/svg/ai-icon";
-import HireExpertPopup from "../hire-expert-popup";
+import { goToContact } from "@/app/utils/goToContact";
 
-const STEPS = [
+const PROCESSES = [
   {
-    title: "Requirement Gathering",
-    desc: "We start by understanding your idea, users, and business needs.",
+    step: "01",
+    title: "Discovery & Tech Stack Decision",
+    desc: "We define your app concept, target users, required Apple APIs (ARKit, HealthKit, Core ML), and whether Swift native or Flutter cross-platform is the right choice. You get a detailed scope document before development starts.",
+    timeline: "1–2 weeks",
+    deliverable: "Scope doc + tech recommendation",
   },
   {
-    title: "UI/UX Design",
-    desc: "We design clean and simple interfaces that users actually enjoy using.",
+    step: "02",
+    title: "UI/UX Design — Apple HIG Compliant",
+    desc: "Wireframes and high-fidelity designs following Apple Human Interface Guidelines. Designed for all screen sizes — iPhone 15, iPad Pro, and Apple Watch. Prototypes tested before a single line of code is written.",
+    timeline: "1–3 weeks",
+    deliverable: "Figma prototypes — HIG compliant",
   },
   {
-    title: "App Development",
-    desc: "Our developers build fast, secure apps using modern tools and best practices.",
+    step: "03",
+    title: "iOS Development in Swift / SwiftUI",
+    desc: "Built in Swift 6 with SwiftUI or UIKit depending on requirements. Weekly builds delivered via TestFlight — you test on your real device throughout development. Agile sprints with continuous QA.",
+    timeline: "4–16 weeks",
+    deliverable: "Weekly TestFlight builds",
   },
   {
-    title: "iOS App Testing and Deployment",
-    desc: "We test everything properly before launch to make sure your app runs smoothly on all devices.",
+    step: "04",
+    title: "QA & Device Testing",
+    desc: "Tested on iPhone 13, 14, 15, iPad Pro, and older devices. Performance profiling with Instruments, memory leak detection, battery usage optimization. App Store Review Guidelines compliance check before submission.",
+    timeline: "1–2 weeks",
+    deliverable: "QA report + device matrix",
   },
   {
-    title: "Ongoing Support",
-    desc: "After launch, we stay with you for updates, fixes, and improvements.",
+    step: "05",
+    title: "App Store Submission & Launch",
+    desc: "We handle complete App Store submission — screenshots, metadata, privacy labels, age ratings, and review communication. We know common rejection reasons and prevent them upfront. Average approval time: 1–3 days.",
+    timeline: "1–2 weeks",
+    deliverable: "Live on App Store",
+  },
+  {
+    step: "06",
+    title: "Post-Launch Support & iOS Updates",
+    desc: "Every new iOS version can break existing apps. We provide ongoing support — iOS compatibility updates, performance monitoring, bug fixes, and new feature development. App Store rating management support included.",
+    timeline: "Ongoing",
+    deliverable: "Monthly maintenance reports",
   },
 ];
 
+const stepCardClass =
+  "group relative rounded-xl border border-[#C380FE]/50 bg-[linear-gradient(148deg,_#7724c118_0%,_#161616ee_84%)] p-5 sm:p-6 md:p-7 transition-all duration-200 hover:border-[#C380FE] hover:shadow-[0_0_20px_rgba(195,128,254,0.15)]";
+
 const IosProcessSection = () => {
-  const sectionRef = useRef(null);
-  const swiperRef = useRef(null);
-  const [swiperReady, setSwiperReady] = useState(false);
-  const [popupOpen, setPopupOpen] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const swiper = swiperRef.current;
-    if (!section || !swiper || !swiperReady) return;
-
-    const handleWheel = (e) => {
-      const rect = section.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
-      const inView =
-        rect.top < viewportHeight * 0.8 && rect.bottom > viewportHeight * 0.2;
-      if (!inView) return;
-
-      if (e.deltaY > 0) {
-        if (!swiper.isEnd) {
-          e.preventDefault();
-          e.stopPropagation();
-          swiper.slideNext();
-        }
-      } else if (e.deltaY < 0) {
-        if (!swiper.isBeginning) {
-          e.preventDefault();
-          e.stopPropagation();
-          swiper.slidePrev();
-        }
-      }
-    };
-
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => window.removeEventListener("wheel", handleWheel);
-  }, [swiperReady]);
-
   return (
-    <div
-      ref={sectionRef}
-      className="container relative pb-12 sm:pb-16 md:pb-[120px] px-4 sm:px-4 w-full max-w-[100vw] box-border overflow-hidden"
-    >
+    <section className="relative py-12 sm:py-16 md:py-[100px] overflow-hidden w-full min-w-0">
       <Image
-        className="w-[70%] sm:w-[50%] absolute -top-[40%] left-0 opacity-60 sm:opacity-100"
-        src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wisvaz.webp"
-        alt="Decorative purple gradient behind iOS app development process section"
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-50 sm:opacity-70 pointer-events-none"
+        src="https://ik.imagekit.io/sajib4aqc/Group%202147225255.png"
+        alt=""
         width={1000}
         height={1000}
+        aria-hidden
       />
-      <div className="grid grid-cols-12 gap-6 sm:gap-5 relative z-10">
-        <div className="col-span-12 md:col-span-5 min-w-0 order-1">
-          <div className="pb-6 sm:pb-[40px] max-sm:flex max-sm:justify-center">
-            <CapsuleLabel firstWord="OUR" secondWord="IOS APP" thirdWord="PROCESS" />
+
+      <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw] box-border">
+        <div className="grid grid-cols-12">
+          <div className="col-span-12 text-center min-w-0">
+            <div className="flex justify-center pb-4 sm:pb-[22px]">
+              <CapsuleLabel firstWord="OUR" secondWord="iOS" thirdWord="PROCESS" />
+            </div>
+            <h2 className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[40px] lg:text-[42px] lg:leading-[52px] font-black break-words">
+              <span className="text-white">Our iOS App </span>
+              <span className="text-[#F74B1C]">Development Process</span>
+            </h2>
           </div>
-          <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] md:leading-[45px] font-black break-words max-sm:text-center">
-            <span className="text-white">Simple Steps to</span>
-            <br />
-            <span className="text-[#F74B1C]">Build Better Apps</span>
-          </div>
-          <div className="pt-5 sm:pt-[30px] max-sm:flex max-sm:justify-center">
-            <Button text="Learn More" icon={false} onClick={() => setPopupOpen(true)} />
+          <div className="col-span-12 md:col-span-8 md:col-start-3 text-center min-w-0">
+            <p className="font-britanicaRegular text-base sm:text-[17px] md:text-[20px] text-white/85 pt-4 sm:pt-[22px] leading-relaxed">
+              A structured 6-step iOS delivery process — with timelines, deliverables, and
+              Apple-specific milestones like TestFlight betas, App Store submission, and
+              post-launch iOS compatibility support. No generic app workflow.
+            </p>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-7 min-w-0 order-2">
-          <div className="overflow-hidden">
-            <Swiper
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-                setSwiperReady(true);
-              }}
-              spaceBetween={12}
-              slidesPerView={1.05}
-              breakpoints={{
-                480: { slidesPerView: 1.2, spaceBetween: 12 },
-                640: { slidesPerView: 1.2, spaceBetween: 12 },
-                768: { slidesPerView: 1.8, spaceBetween: 12 },
-                1024: { slidesPerView: 1.8, spaceBetween: 12 },
-                1280: { slidesPerView: 2.1, spaceBetween: 12 },
-                1530: { slidesPerView: 2.1, spaceBetween: 12 },
-                1536: { slidesPerView: 2.1, spaceBetween: 12 },
-              }}
-            >
-              {STEPS.map((step, index) => (
-                <SwiperSlide key={index} className="!h-full">
-                  <div className="bg-white border-2 h-[400px] sm:h-[460px] md:h-[500px] border-[#7724C1] rounded-2xl p-4 sm:p-6 md:p-[30px] flex flex-col">
-                    <div className="pb-3 sm:pb-[20px] shrink-0">
-                      <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full bg-[#f74b1c44] flex items-center justify-center">
-                        <AiIcon className="w-6 h-6 sm:w-[40px] sm:h-[40px]" />
+
+        <div className="max-w-4xl mx-auto pt-10 sm:pt-12 md:pt-[52px]">
+          <div className="relative">
+            <div
+              className="absolute left-[19px] sm:left-[23px] top-6 bottom-6 w-px hidden sm:block"
+              aria-hidden
+            />
+            <div className="flex flex-col gap-4 sm:gap-5">
+              {PROCESSES.map((process) => (
+                <article key={process.step} className={stepCardClass}>
+                  <div className="flex gap-4 sm:gap-5">
+                    <div className="shrink-0 relative z-10">
+                      <span className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full border-2 border-[#C380FE] bg-[#7724C1]/40 font-britanicaBlack text-[13px] sm:text-[15px] text-[#C380FE] group-hover:bg-[#7724C1]/60 transition-colors">
+                        {process.step}
+                      </span>
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-britanicaBlack text-[17px] sm:text-[20px] md:text-[22px] text-white leading-snug pb-2 sm:pb-3 group-hover:text-[#F74B1C] transition-colors">
+                        {process.title}
+                      </h3>
+                      <p className="font-britanicaRegular text-[14px] sm:text-[15px] md:text-[16px] text-white/85 leading-relaxed">
+                        {process.desc}
+                      </p>
+                      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-6 pt-4 sm:pt-5">
+                        <div className="flex items-center gap-2 min-w-0">
+                          <Clock className="w-4 h-4 shrink-0 text-[#C380FE]" aria-hidden />
+                          <span className="font-britanicaRegular text-[13px] sm:text-[14px] text-[#C380FE]">
+                            <span className="text-white/60">Timeline: </span>
+                            {process.timeline}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 min-w-0">
+                          <FileCheck className="w-4 h-4 shrink-0 text-[#66BB6A]" aria-hidden />
+                          <span className="font-britanicaRegular text-[13px] sm:text-[14px] text-[#66BB6A]">
+                            <span className="text-white/60">Deliverable: </span>
+                            {process.deliverable}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2 sm:pb-[10px] leading-tight shrink-0">
-                      {step.title}
-                    </div>
-                    <div className="font-britanicaRegular text-[13px] sm:text-[16px] leading-relaxed flex-1 min-h-0 overflow-y-auto pb-4 sm:pb-[30px]">
-                      {step.desc}
-                    </div>
-                    <div className="shrink-0 pt-2">
-                      <button
-                        type="button"
-                        onClick={() => setPopupOpen(true)}
-                        className="text-[#7724C1] hover:underline flex items-center gap-2 justify-start font-bold font-britanicaRegular text-[14px] sm:text-[16px]"
-                      >
-                        Learn More <ArrowRight className="w-4 sm:w-[16px]" />
-                      </button>
-                    </div>
                   </div>
-                </SwiperSlide>
+                </article>
               ))}
-            </Swiper>
+            </div>
           </div>
         </div>
+
+        <div className="flex justify-center pt-10 sm:pt-12 md:pt-[50px]">
+          <Button text="Schedule a Free Consultation" icon={false} onClick={goToContact} />
+        </div>
       </div>
-      <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
-    </div>
+    </section>
   );
 };
 

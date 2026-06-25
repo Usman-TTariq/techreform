@@ -3,9 +3,16 @@ import Footer from "../components/footer";
 import GeneralHeroSection from "../components/general-hero-section";
 import OurImpactBoxesSection from "../components/our-impact-boxes-section";
 import StaffAugmentationDevelopmentSection from "../components/staff-augmentation-development-section";
+import HireDevelopersByRoleSection from "../components/hire-developers-by-role-section";
+import StaffAugmentationTechCoverageSection from "../components/staff-augmentation-tech-coverage-section";
 import StepperFrom from "../components/stepper-from";
 import WhatWeDoStaffAugmentationSection from "../components/what-we-do-staff-augmentation-section";
+import StaffAugmentationEngagementModelsSection from "../components/staff-augmentation-engagement-models-section";
+import StaffAugmentationHiringTimelineSection from "../components/staff-augmentation-hiring-timeline-section";
 import StaffAugmentationWhyPartnerSection from "../components/staff-augmentation-why-partner-section";
+import StaffAugmentationImpactStatsSection from "../components/staff-augmentation-impact-stats-section";
+import StaffAugmentationVsComparisonSection from "../components/staff-augmentation-vs-comparison-section";
+import StaffAugmentationIndustriesSection from "../components/staff-augmentation-industries-section";
 import CaseStudiesStaffAugmentationSection from "../components/case-studies-staff-augmentation-section";
 import FaqStaffAugmentationSection from "../components/faq-staff-augmentation-section";
 import TestimonialSection from "../components/testimonial-section";
@@ -50,6 +57,37 @@ export const metadata = {
   alternates: { canonical: "/staff-augmentation" },
 };
 
+const STAFF_AUG_IMPACT_CARDS = [
+  {
+    value: "50+",
+    label: "Active Developers",
+    action: "Vetted & ready to hire",
+    isLink: false,
+    rounded: "rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px]",
+  },
+  {
+    value: "1-2wk",
+    label: "Onboarding Time",
+    action: "Fastest in industry",
+    isLink: false,
+    rounded: "",
+  },
+  {
+    value: "$25/hr",
+    label: "Starting Rate",
+    action: "Junior to Senior",
+    isLink: false,
+    rounded: "",
+  },
+  {
+    value: "98%",
+    label: "Client Retention",
+    action: "Long-term partnerships",
+    isLink: false,
+    rounded: "rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px]",
+  },
+];
+
 const STAFF_AUG_TESTIMONIALS = [
   {
     name: "Marcus Chen",
@@ -78,11 +116,18 @@ const StaffAugmentation = () => {
                 para3="So, expand your workforce with our reliable IT staff augmentation solutions."
                 buttonText="Scale Your Team with Dedicated Developers"
             />
-            <OurImpactBoxesSection />
+            <OurImpactBoxesSection cards={STAFF_AUG_IMPACT_CARDS} />
             <StaffAugmentationDevelopmentSection />
+            <StaffAugmentationImpactStatsSection />
+            <HireDevelopersByRoleSection />
+            <StaffAugmentationTechCoverageSection />
             {/* <StepperFrom /> */}
             <WhatWeDoStaffAugmentationSection />
+            <StaffAugmentationEngagementModelsSection />
+            <StaffAugmentationHiringTimelineSection />
             <StaffAugmentationWhyPartnerSection />
+            <StaffAugmentationVsComparisonSection />
+            <StaffAugmentationIndustriesSection />
             <CaseStudiesStaffAugmentationSection />
             <FaqStaffAugmentationSection />
             <TestimonialSection testimonials={STAFF_AUG_TESTIMONIALS} />

@@ -1,6 +1,7 @@
 export const MOBILE_SERVICE_ITEMS = [
   { label: "App Development", href: "/mobile-app-development" },
   { label: "Game App Development", href: "/game-development" },
+  { label: "Hire Game Developers", href: "/hire-game-developer" },
   { label: "MVP Startup Development", href: "/mvp" },
   { label: "AR Development", href: "/ar-development" },
   { label: "VR Development", href: "/vr-development" },
@@ -23,6 +24,7 @@ export const APP_DEVELOPMENT_ITEMS = [
 export const STAFF_SERVICE_ITEMS = [
   { label: "Staff Augmentation", href: "/staff-augmentation" },
   { label: "Top App Developers", href: "/top-app-developers" },
+  { label: "Hire Game Developer", href: "/hire-game-developer" },
   { label: "Hire Flutter Developer", href: "/hire-flutter" },
   { label: "Hire Java Developer", href: "/hire-java" },
   { label: "Hire Magento Developer", href: "/hire-magento" },

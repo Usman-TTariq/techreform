@@ -41,8 +41,8 @@ const FAQ_ITEMS = [
         question: "Can I hire dedicated game developers from Tech Reforms?",
         answer: (
             <>
-                Absolutely. You can hire dedicated Flutter, React Native, or native developers on a full-time, part-time, or project basis through our{" "}
-                <FaqLink href="/staff-augmentation">Staff Augmentation</FaqLink> model.
+                Absolutely. Hire dedicated Unity, Unreal, and mobile game developers on full-time, part-time, or project basis through our{" "}
+                <FaqLink href="/hire-game-developer">Hire Game Developers</FaqLink> page.
             </>
         ),
     },

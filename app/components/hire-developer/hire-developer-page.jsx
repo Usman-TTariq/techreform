@@ -17,14 +17,14 @@ const HireDeveloperPage = ({ content }) => {
     <>
       <Header />
       <GeneralHeroSection {...content.hero} />
-      <WhoWeAre {...content.whoWeAre} />
+      {!content.hideWhoWeAre && <WhoWeAre {...content.whoWeAre} />}
       <OurImpactBoxesSection />
       <HireWhatWeOfferSection {...content.whatWeOffer} />
       <HireProcessSection {...content.process} />
       <HireWhyChooseSection {...content.whyChoose} />
       <HireCaseStudiesSection {...content.caseStudies} />
       <HireFaqSection {...content.faq} />
-      <TestimonialSection />
+      <TestimonialSection testimonials={content.testimonials} />
       <ThreeDTextRotationSection />
       <DetailFormSection />
       <Footer />

@@ -120,8 +120,9 @@ const HireWhyChooseSection = ({
                     <div className="font-britanicaRegular text-[13px] sm:text-[16px] leading-relaxed flex-1 min-h-0 overflow-y-auto">
                       {item.desc}
                     </div>
+                    {(item.tags ?? []).length > 0 && (
                     <div className="flex flex-wrap gap-2 pt-4 shrink-0">
-                      {item.tags.map((tag) => (
+                      {(item.tags ?? []).map((tag) => (
                         <span
                           key={tag}
                           className="inline-flex items-center rounded-full px-3 py-1 text-[11px] sm:text-xs font-britanicaRegular bg-[#7724C1]/15 text-[#7724C1] border border-[#7724C1]/30"
@@ -130,6 +131,7 @@ const HireWhyChooseSection = ({
                         </span>
                       ))}
                     </div>
+                    )}
                     <div className="shrink-0 pt-3">
                       <button
                         type="button"

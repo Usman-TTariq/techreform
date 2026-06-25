@@ -127,6 +127,7 @@ function buildHirePage({
   heroSecondWord,
   heroForthWord,
   heroPara,
+  heroButtonText,
   whoWeAreP1,
   caseCategory,
   caseTitle,
@@ -141,7 +142,18 @@ function buildHirePage({
   whyButtonText,
   processIntroButton,
   processHeadlineAccent,
+  processHeadlineWhite,
+  processLabel,
+  processSteps,
   whatWeOfferAccent,
+  whatWeOfferHeadlineWhite,
+  whatWeOfferCards,
+  whyHeadlineWhite,
+  whyHeadlineAccent,
+  whyCards,
+  faqItems,
+  testimonials,
+  hideWhoWeAre,
 }) {
   const roleSingular = rolePlural.endsWith("s") ? rolePlural.slice(0, -1) : roleLabel;
 
@@ -161,7 +173,7 @@ function buildHirePage({
       para:
         heroPara ??
         `Most ${rolePlural.toLowerCase()} write clean code. Few understand your product roadmap, deployment timelines, or what a missed sprint actually costs. At Tech Reforms, you hire ${techShort} engineers who work inside your workflow — integrated, accountable, and focused on your delivery goals.`,
-      buttonText: `Hire a ${roleSingular}`,
+      buttonText: heroButtonText ?? `Hire a ${roleSingular}`,
     },
     whoWeAre: {
       p1:
@@ -170,22 +182,23 @@ function buildHirePage({
       buttonText: `Hire a ${roleSingular}`,
     },
     whatWeOffer: {
-      headlineWhite: "Flexible Ways to Hire",
+      headlineWhite: whatWeOfferHeadlineWhite ?? "Flexible Ways to Hire",
       headlineAccent: whatWeOfferAccent ?? rolePlural,
-      cards: DEFAULT_OFFER_CARDS(rolePlural, techShort),
+      cards: whatWeOfferCards ?? DEFAULT_OFFER_CARDS(rolePlural, techShort),
     },
     process: {
-      headlineWhite: "Our Proven Process to Build & Scale Your",
+      label: processLabel ?? { firstWord: "OUR", secondWord: "HIRE", thirdWord: "PROCESS" },
+      headlineWhite: processHeadlineWhite ?? "Our Proven Process to Build & Scale Your",
       headlineAccent: processHeadlineAccent ?? `${techShort} Development Team`,
       description:
         processDescription ??
         `Tech Reforms follows a precise 4-step hiring framework — built for ${techShort} projects. From requirement discovery to first sprint, every step gets the right developer inside your team without wasted time.`,
       introButton: processIntroButton ?? `Start Your ${techShort} Project`,
-      steps: DEFAULT_PROCESS_STEPS(techShort, vettingFocus),
+      steps: processSteps ?? DEFAULT_PROCESS_STEPS(techShort, vettingFocus),
     },
     whyChoose: {
-      headlineWhite: "Why Leading Businesses Choose Tech Reforms as Their",
-      headlineAccent: `${techShort} Development Partner`,
+      headlineWhite: whyHeadlineWhite ?? "Why Leading Businesses Choose Tech Reforms as Their",
+      headlineAccent: whyHeadlineAccent ?? `${techShort} Development Partner`,
       paragraphs:
         whyParagraphs ?? [
           `Hundreds of ${rolePlural.toLowerCase()} are available online. What separates a good partner from a costly hiring mistake is accountability, technical depth, and zero-friction integration into your workflow.`,
@@ -193,11 +206,11 @@ function buildHirePage({
         ],
       stats:
         statsOverride ?? [
-          { value: "200+", label: `${techShort} projects delivered` },
-          { value: "72hrs", label: "Average onboarding time" },
-          { value: "98%", label: "Client retention rate" },
+          // { value: "200+", label: `${techShort} projects delivered` },
+          // { value: "72hrs", label: "Average onboarding time" },
+          // { value: "98%", label: "Client retention rate" },
         ],
-      cards: DEFAULT_WHY_CARDS(techShort, stackTags),
+      cards: whyCards ?? DEFAULT_WHY_CARDS(techShort, stackTags),
       buttonText: whyButtonText ?? `Work With Our ${techShort} Team`,
     },
     caseStudies: {
@@ -206,9 +219,9 @@ function buildHirePage({
       intro: `These aren't portfolio screenshots. Each case study reflects a measurable ${techShort} project outcome — delivered on time, within scope, and built to scale.`,
       stats:
         caseStatsOverride ?? [
-          { value: "100+", label: `${techShort} projects` },
-          { value: "50+", label: `${techShort} engineers` },
-          { value: "98%", label: "On-time delivery" },
+          // { value: "100+", label: `${techShort} projects` },
+          // { value: "50+", label: `${techShort} engineers` },
+          // { value: "98%", label: "On-time delivery" },
         ],
       caseStudy: {
         image: "/images/phones.png",
@@ -224,8 +237,10 @@ function buildHirePage({
       titleWhite: `${roleLabel}`,
       titleAccent: "FAQ",
       subtitle: faqSubtitle ?? `Tech Reforms — Hire ${rolePlural}`,
-      items: DEFAULT_FAQ_ITEMS(roleLabel, rolePlural, techShort, faqStackList),
+      items: faqItems ?? DEFAULT_FAQ_ITEMS(roleLabel, rolePlural, techShort, faqStackList),
     },
+    testimonials,
+    hideWhoWeAre: hideWhoWeAre ?? false,
   };
 }
 
@@ -272,6 +287,181 @@ export const HIRE_JAVA_PAGE = buildHirePage({
     { value: "5 mo", label: "Delivered in" },
     { value: "99.9%", label: "Uptime SLA" },
     { value: "3x", label: "Deploy frequency" },
+  ],
+  hideWhoWeAre: true,
+  heroSecondWord: "Dedicated Java Developers — Senior-Level Talent, Ready to Deploy",
+  heroForthWord: "",
+  heroPara:
+    "Whether you need a dedicated Java developer for a long-term enterprise project, a backend specialist for your fintech platform, or a senior Java engineer to lead your e-commerce architecture — Tech Reforms connects you with verified talent in 72 hours or less. Our Java developers bring hands-on experience with Spring Boot, microservices architecture, REST API development, and cloud-native backend systems. No recruitment fees. No long-term commitments. Just skilled engineers who integrate with your team from day one.",
+  heroButtonText: "Hire a Java Developer",
+  whatWeOfferHeadlineWhite: "Flexible Java Developer Hiring Models",
+  whatWeOfferAccent: "Built Around Your Project",
+  whatWeOfferCards: [
+    {
+      title: "Dedicated Java Developer Hiring",
+      desc: "Need a Java developer who works exclusively on your project? We assign a dedicated engineer who integrates directly with your team, follows your sprint cycles, and owns your backend from day one.",
+      buttonText: "Hire Dedicated Developer",
+    },
+    {
+      title: "Java Staff Augmentation",
+      desc: "Scale your existing engineering team with pre-vetted Java developers — Spring Boot specialists, microservices architects, REST API engineers — without restructuring your entire hiring pipeline.",
+      buttonText: "Scale Your Team",
+    },
+    {
+      title: "Offshore Java Development Teams",
+      desc: "Hire a full offshore Java development team for long-term enterprise projects, fintech platforms, or e-commerce backends. Senior-led, fully managed, and aligned with your timezone and delivery goals.",
+      buttonText: "Build Offshore Team",
+    },
+    {
+      title: "On-Demand Java Developers for Short-Term Projects",
+      desc: "Launching fast? We place experienced Java developers within 72 hours for short-term builds, MVP development, legacy system migration, or critical deadline-driven backend work.",
+      buttonText: "Hire in 72 Hours",
+    },
+  ],
+  processLabel: { firstWord: "OUR", secondWord: "JAVA DEVELOPER", thirdWord: "HIRING PROCESS" },
+  processHeadlineWhite: "How We Place the Right Java Developer on Your Project —",
+  processHeadlineAccent: "Fast",
+  processDescription:
+    "From technical requirement mapping to developer onboarding — our Java hiring process is built for speed, precision, and zero friction. You stay in control at every step.",
+  processIntroButton: "Start Hiring Java Developers",
+  processSteps: [
+    {
+      title: "Share Your Technical Requirements",
+      desc: "Tell us your stack, project scope, and timeline. Whether you need a Spring Boot specialist, a microservices architect, or a senior Java backend engineer — we map your exact needs before sourcing begins.",
+      buttonText: "Share Requirements",
+    },
+    {
+      title: "We Shortlist Pre-Vetted Java Developers",
+      desc: "Our team screens Java developers against your technical requirements — assessing backend expertise, framework proficiency, system design skills, and real-world project experience. No raw resumes. Only qualified profiles.",
+      buttonText: "See Shortlisted Profiles",
+    },
+    {
+      title: "You Interview and Select",
+      desc: "Review shortlisted Java developer profiles and conduct your own technical interviews. Full control stays with you — hire only the developer who meets your standards, no pressure, no lock-ins.",
+      buttonText: "Interview Candidates",
+    },
+    {
+      title: "Fast Onboarding — Developer Joins in 72 Hours",
+      desc: "Once selected, your Java developer integrates directly into your workflows, tools, and sprint cycles. No ramp-up delays. No onboarding friction. They're productive from day one.",
+      buttonText: "Onboard in 72 Hours",
+    },
+    {
+      title: "Ongoing Support and Team Flexibility",
+      desc: "Scale up, scale down, or swap developers as your project evolves. We provide continuous support throughout the engagement — ensuring delivery stays on track and your team stays aligned.",
+      buttonText: "Get Ongoing Support",
+    },
+  ],
+  whyHeadlineWhite: "Why Hire Java Developers",
+  whyHeadlineAccent: "Through Tech Reforms?",
+  whyParagraphs: [],
+  // statsOverride: [
+  //   { value: "72hrs", label: "Average placement time" },
+  //   { value: "100%", label: "NDA-protected engagements" },
+  //   { value: "Senior", label: "Vetted Java talent only" },
+  // ],
+  whyButtonText: "Hire Java Developers Today",
+  whyCards: [
+    {
+      title: "Senior-Vetted Java Talent Only",
+      desc: "Every Java developer we place is pre-screened for backend architecture, Spring Boot proficiency, and real-world delivery experience. You get engineers who've shipped production-grade systems — not just passed coding tests.",
+      tags: [],
+      buttonText: "View Developer Profiles",
+    },
+    {
+      title: "No Long-Term Hiring Commitments",
+      desc: "Hire a dedicated Java developer for a 2-week sprint or a 2-year enterprise build. Scale your team up or down as project demands shift — without recruitment overhead, notice periods, or contract penalties.",
+      tags: [],
+      buttonText: "Explore Hiring Models",
+    },
+    {
+      title: "Full Code Ownership and NDA Protection",
+      desc: "Every Java developer works under strict NDA. Your source code, architecture decisions, and proprietary systems remain 100% yours — from first commit to final delivery.",
+      tags: [],
+      buttonText: "See Our Security Standards",
+    },
+    {
+      title: "Java Developers Ready in 72 Hours",
+      desc: "No 6-week recruitment cycles. Once you confirm your requirements, we match you with a qualified Java developer — vetted, briefed, and ready to join your team within 72 hours.",
+      tags: [],
+      buttonText: "Hire in 72 Hours",
+    },
+  ],
+  faqSubtitle: "Tech Reforms — Hire Java Developers",
+  faqItems: [
+    {
+      id: 1,
+      question: "How quickly can I hire a Java developer through Tech Reforms?",
+      answer:
+        "We typically match you with a pre-vetted Java developer within 72 hours of receiving your requirements. For senior roles or specialized skills like Java microservices or Spring Boot architecture, the process may take 96 to 120 hours depending on your technical specifications.",
+    },
+    {
+      id: 2,
+      question: "What Java technologies and frameworks do your developers specialize in?",
+      answer:
+        "Our Java developers have hands-on experience with Spring Boot, Spring MVC, Hibernate, Microservices Architecture, REST API development, Apache Kafka, Docker, Kubernetes, and cloud platforms including AWS and Google Cloud. We match developers to your specific stack — not just the language.",
+    },
+    {
+      id: 3,
+      question: "Can I hire a dedicated Java developer for a long-term enterprise project?",
+      answer:
+        "Yes. We place dedicated Java developers for both short-term sprints and long-term enterprise engagements. Your developer works exclusively on your project, follows your workflows, and scales with your team as the project grows.",
+    },
+    {
+      id: 4,
+      question: "Do you provide senior Java developers for fintech and e-commerce platforms?",
+      answer:
+        "Yes. We have senior Java developers with proven experience building high-transaction fintech systems, payment gateways, e-commerce backends, and enterprise SaaS platforms. All developers are screened for domain-specific backend experience before placement.",
+    },
+    {
+      id: 5,
+      question: "What is the difference between hiring a freelance Java developer and using Java staff augmentation?",
+      answer:
+        "A freelance Java developer works independently with no accountability to your internal processes. Java staff augmentation through Tech Reforms gives you a dedicated engineer who integrates into your team structure, follows your sprint cycles, reports through your project management tools, and operates under a formal NDA — with Tech Reforms managing the HR and compliance overhead.",
+    },
+    {
+      id: 6,
+      question: "Can I hire a remote Java developer who works in my timezone?",
+      answer:
+        "Yes. We place remote Java developers across US, European, and Asian timezones. When you share your requirements, timezone alignment is factored into the matching process from day one.",
+    },
+    {
+      id: 7,
+      question: "Is my source code and intellectual property protected when I hire a Java developer through Tech Reforms?",
+      answer:
+        "Absolutely. Every Java developer placement includes a signed NDA and IP protection agreement. Your codebase, architecture, and business logic remain 100% your property throughout and after the engagement.",
+    },
+    {
+      id: 8,
+      question: "Can I scale my Java development team up or down mid-project?",
+      answer:
+        "Yes. Our Java staff augmentation model is built for flexibility. You can add developers as your project scales, reduce team size after a major release, or swap engineers if your technical requirements shift — without penalties or long notice periods.",
+    },
+  ],
+  testimonials: [
+    {
+      name: "Daniel Carter",
+      role: "CTO, PayStream Financial | New York, USA",
+      quote:
+        "We needed a senior Java developer with Spring Boot experience for our fintech platform — someone who could jump in without a 3-week handholding period. Tech Reforms placed the right engineer in under 72 hours. He was reviewing our codebase on day one and pushing production-ready code by day three.",
+    },
+    {
+      name: "Sophie Brennan",
+      role: "VP of Engineering, NexaCommerce | London, UK",
+      quote:
+        "We'd burned two months trying to hire a Java microservices developer through traditional recruitment. Tech Reforms matched us with a pre-vetted engineer in four days. No fluff, no back-and-forth. The developer understood our architecture immediately and cut our API response time by 40% within the first sprint.",
+    },
+    {
+      name: "Marcus Webb",
+      role: "Head of Technology, TradeLoop | Austin, USA",
+      quote:
+        "Our e-commerce backend was collapsing under peak traffic. We needed an experienced Java developer fast — not someone who needed three weeks of onboarding. Tech Reforms delivered. The developer they placed had handled similar scale before and knew exactly what needed to change.",
+    },
+    {
+      name: "Priya Nair",
+      role: "Engineering Manager, CloudAxis Solutions | Toronto, Canada",
+      quote:
+        "We hired two dedicated Java developers through Tech Reforms for a long-term enterprise project. Eighteen months later, both are still with us. The quality of screening was genuinely different — these weren't just Java programmers, they were backend engineers who understood system design at scale.",
+    },
   ],
 });
 

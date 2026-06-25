@@ -11,7 +11,7 @@ import Marquee from "../components/marquee";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
-import { VR_CONTACT_BENEFITS } from "../constants/vr-contact-benefits";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import FaqVrSection from "../components/faq-vr-section";
 import VrCaseStudySection from "../components/vr-case-study-section";
 import OurImpactBoxesSection from "../components/our-impact-boxes-section";
@@ -109,7 +109,7 @@ const VrDevelopmentPage = () => {
             <Marquee />
             <TestimonialSection testimonials={VR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection benefits={VR_CONTACT_BENEFITS} />
+            <DetailFormSection {...PAGE_CONTACT.vr} />
             <Footer />
         </>
     );

@@ -18,6 +18,7 @@ import FaqStaffAugmentationSection from "../components/faq-staff-augmentation-se
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 // Avoid oversized static fallback (ISR page > 19 MB); render on demand
 export const dynamic = "force-dynamic";
@@ -132,7 +133,7 @@ const StaffAugmentation = () => {
             <FaqStaffAugmentationSection />
             <TestimonialSection testimonials={STAFF_AUG_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro="Every hire impacts your project timeline and budget. Get a quick consultation and resource estimate by filling out this form. Our experts will help you scale your development team faster and reduce software development costs." />
+            <DetailFormSection {...PAGE_CONTACT.staffAugmentation} />
             <Footer />
         </div>
     )

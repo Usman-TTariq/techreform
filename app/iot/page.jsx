@@ -11,6 +11,7 @@ import FaqIotSection from "../components/faq-iot-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const dynamic = "force-dynamic";
 
@@ -74,7 +75,7 @@ const IoTPage = () => {
             <FaqIotSection />
             <TestimonialSection testimonials={IOT_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection {...PAGE_CONTACT.iot} />
             <Footer />
         </>
     );

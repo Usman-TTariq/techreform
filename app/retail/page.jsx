@@ -13,6 +13,7 @@ import WhoWeAreRetail from "../components/who-we-are-retail";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import TechnologyStackMobile from "../components/technology-stack-mobile";
 import RetailIndustriesSection from "../components/retail-industries-section";
 import RetailCtaSection from "../components/retail-cta-section";
@@ -87,7 +88,7 @@ const Retail = () => {
       <FaqRetailSection />
       <TestimonialSection testimonials={RETAIL_TESTIMONIALS} />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.retail} />
       <Footer />
     </>
   );

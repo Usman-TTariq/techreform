@@ -14,6 +14,7 @@ import FaqGameDevelopmentSection from "../components/faq-game-development-sectio
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import TechnologyStackGame from "../components/technology-stack-game";
 
 const GAME_IMPACT_CARDS = [
@@ -122,10 +123,7 @@ const GameDevelopment = () => {
             <FaqGameDevelopmentSection />
             <TestimonialSection testimonials={GAME_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection
-                productType="game"
-                formIntro="Every game idea deserves the right strategy and execution. Get a quick consultation and development estimate by filling out this form. Our experts will guide you through the best approach to build and scale your next big gaming success."
-            />
+            <DetailFormSection {...PAGE_CONTACT.gameDevelopment} />
             <Footer />
         </div>
     );

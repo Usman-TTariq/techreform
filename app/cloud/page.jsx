@@ -11,6 +11,7 @@ import FaqCloudSection from "../components/faq-cloud-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const dynamic = "force-dynamic";
 
@@ -74,7 +75,7 @@ const CloudPage = () => {
       <FaqCloudSection />
       <TestimonialSection testimonials={CLOUD_TESTIMONIALS} />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.cloud} />
       <Footer />
     </>
   );

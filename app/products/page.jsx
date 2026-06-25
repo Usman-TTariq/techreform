@@ -12,6 +12,7 @@ import SmarterHrSection from "../components/smarter-hr-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import Footer from "../components/footer";
 
 export const metadata = {
@@ -34,7 +35,7 @@ const Products = () => {
             <SmarterHrSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection {...PAGE_CONTACT.products} />
             <Footer />
         </div>
     )

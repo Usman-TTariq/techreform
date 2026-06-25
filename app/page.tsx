@@ -6,6 +6,7 @@ import ReviewSections from "./components/review-sections";
 import WhatWeDoSection from "./components/what-we-do-section";
 import TransformingIdeas from "./components/transforming-ideas";
 import DetailFormSection from "./components/detail-form-section";
+import { PAGE_CONTACT } from "./constants/page-contact-config";
 import ThreeDTextRotationSection from "./components/3d-text-rotation-section";
 import TestimonialSection from "./components/testimonial-section";
 import FaqHomeSection from "./components/faq-home-section";
@@ -26,7 +27,7 @@ export default function Home() {
       <Marquee />
       <TestimonialSection/>
       <ThreeDTextRotationSection/>
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.home} />
       <FaqHomeSection />
       <Footer />
     </div>

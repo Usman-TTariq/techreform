@@ -10,6 +10,7 @@ import LpWebTransforming from "../components/lp-web-transforming";
 import LpWebIndustries from "../components/lp-web-industries";
 import LpWebPortfolioCase from "../components/lp-web-portfolio-case";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const metadata = {
     alternates: { canonical: "/website-development" },
@@ -28,7 +29,7 @@ const WebsiteDevelopmentPage = () => {
             <LpWebTransforming />
             <LpWebIndustries />
             <LpWebPortfolioCase />
-            <DetailFormSection />
+            <DetailFormSection {...PAGE_CONTACT.websiteDevelopment} />
             <Footer />
         </>
     )

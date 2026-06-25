@@ -16,6 +16,7 @@ import {
   TOP_APP_IMPACT_CARDS,
   TOP_APP_TESTIMONIALS,
 } from "../constants/top-app-developers-content";
+import { TOP_APP_DEVELOPERS_PAGE } from "../constants/hire-developer-pages";
 
 export const dynamic = "force-dynamic";
 
@@ -41,7 +42,7 @@ const TopAppDevelopersPage = () => {
       <TopAppFaqSection />
       <TopAppCtaSection />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...TOP_APP_DEVELOPERS_PAGE.contact} />
       <Footer />
     </>
   );

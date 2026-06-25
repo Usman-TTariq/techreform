@@ -10,6 +10,7 @@ import FaqEcommerceSection from "../components/faq-ecommerce-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import GeneralHeroSection from "../components/general-hero-section";
 import EcommerceTabsSection from "../components/ecommerce-tabs-section";
 import WhatMakesEcommerce from "../components/what-makes-ecommerce";
@@ -99,7 +100,7 @@ Tech Reforms is a pioneering e-commerce development agency that offers affordabl
             <EcommerceCta />
             <TestimonialSection testimonials={ECOMMERCE_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection {...PAGE_CONTACT.ecommerce} />
             <Footer />
         </div>
     )

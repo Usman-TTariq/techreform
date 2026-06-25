@@ -21,7 +21,7 @@ import TechnologyStackMobile from "../components/technology-stack-mobile";
 import FlutterVsReactNativeSection from "../components/flutter-vs-react-native-section";
 import HipaaCompliantSection from "../components/hipaa-compliant";
 import EngagementModelSection from "../components/engagement-model-section";
-import { MOBILE_APP_CONTACT_BENEFITS } from "../constants/mobile-app-benefits";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const dynamic = "force-dynamic";
 
@@ -116,10 +116,7 @@ const Mobile = () => {
             <FaqSection />
             <TestimonialSection testimonials={MOBILE_APP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection
-                formIntro="Every dollar you invest matters. Get a rough estimate of the return on investment for your upcoming app by filling out this form."
-                benefits={MOBILE_APP_CONTACT_BENEFITS}
-            />
+            <DetailFormSection {...PAGE_CONTACT.mobileApp} />
             <Footer />
         </div>
     )

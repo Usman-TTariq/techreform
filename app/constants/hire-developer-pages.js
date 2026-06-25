@@ -114,6 +114,19 @@ const DEFAULT_FAQ_ITEMS = (roleLabel, rolePlural, techShort, stackList) => [
   },
 ];
 
+const DEFAULT_HIRE_CONTACT = (techShort, rolePlural, stackTags) => ({
+  developmentLabel: techShort,
+  formIntro: `Share your ${techShort} project scope, tech stack, and timeline. We shortlist pre-vetted ${rolePlural.toLowerCase()} within 48–72 hours — no recruitment fees, no long-term lock-in.`,
+  benefits: [
+    `Dedicated ${techShort} Developers`,
+    "48–72 Hour Developer Match",
+    stackTags[0] ? `${stackTags[0]} Expertise` : `${techShort} Architecture`,
+    stackTags[1] ? `${stackTags[1]} Integration` : "API & System Integration",
+    "NDA & Full IP Ownership",
+    "Flexible Engagement Models",
+  ],
+});
+
 function buildHirePage({
   slug,
   metaTitle,
@@ -159,6 +172,10 @@ function buildHirePage({
   faqItems,
   testimonials,
   hideWhoWeAre,
+  contactForm,
+  contactDevelopmentLabel,
+  contactFormIntro,
+  contactBenefits,
 }) {
   const roleSingular = rolePlural.endsWith("s") ? rolePlural.slice(0, -1) : roleLabel;
 
@@ -249,6 +266,16 @@ function buildHirePage({
     },
     testimonials,
     hideWhoWeAre: hideWhoWeAre ?? false,
+    contact: (() => {
+      const defaults = DEFAULT_HIRE_CONTACT(techShort, rolePlural, stackTags);
+      return (
+        contactForm ?? {
+          developmentLabel: contactDevelopmentLabel ?? defaults.developmentLabel,
+          formIntro: contactFormIntro ?? defaults.formIntro,
+          benefits: contactBenefits ?? defaults.benefits,
+        }
+      );
+    })(),
   };
 }
 

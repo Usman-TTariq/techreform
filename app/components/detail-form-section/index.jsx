@@ -31,14 +31,16 @@ const DEFAULT_ERP_BENEFITS = [
  *   formIntro?: string,
  *   productType?: "app" | "game" | "erp" | "ios",
  *   benefits?: string[],
+ *   developmentLabel?: string,
  * }} props
  */
 const DetailFormSection = ({
   formIntro = DEFAULT_FORM_INTRO,
   productType = "app",
   benefits = undefined,
+  developmentLabel,
 }) => {
-  const developmentLabel =
+  const developmentLabelFromType =
     productType === "game"
       ? "Game"
       : productType === "erp"
@@ -46,6 +48,7 @@ const DetailFormSection = ({
         : productType === "ios"
           ? "iOS"
           : "App";
+  const resolvedDevelopmentLabel = developmentLabel ?? developmentLabelFromType;
   const benefitItems =
     benefits ?? (productType === "erp" ? DEFAULT_ERP_BENEFITS : DEFAULT_APP_BENEFITS);
   return (
@@ -66,7 +69,7 @@ const DetailFormSection = ({
             <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[26px] sm:leading-[32px] md:text-[28px] md:leading-[35px] font-black max-sm:text-center">
               <span className="text-white">Partner with Us for</span>
               <br />
-              <span className="text-[#F74B1C]">Custom {developmentLabel} Development and</span>
+              <span className="text-[#F74B1C]">Custom {resolvedDevelopmentLabel} Development and</span>
               <br />
               <span className="text-white">Better Resource Management</span>
             </div>

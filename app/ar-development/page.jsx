@@ -11,6 +11,7 @@ import Marquee from "../components/marquee"
 import TestimonialSection from "../components/testimonial-section"
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section"
 import DetailFormSection from "../components/detail-form-section"
+import { PAGE_CONTACT } from "../constants/page-contact-config"
 import FaqArSection from "../components/faq-ar-section"
 import ArCaseStudySection from "../components/ar-case-study-section"
 import ArTypesSection from "../components/ar-types-section"
@@ -134,7 +135,7 @@ const ArDevelopment = () => {
             <Marquee />
             <TestimonialSection testimonials={AR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro={undefined} />
+            <DetailFormSection {...PAGE_CONTACT.ar} />
             <FaqArSection />
             <Footer />
         </>

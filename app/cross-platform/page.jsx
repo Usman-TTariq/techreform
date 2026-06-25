@@ -12,6 +12,7 @@ import FaqCrossPlatformSection from "../components/faq-cross-platform-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const dynamic = "force-dynamic";
 
@@ -77,7 +78,7 @@ const CrossPlatform = () => {
       <FaqCrossPlatformSection />
       <TestimonialSection testimonials={CROSS_PLATFORM_TESTIMONIALS} />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.crossPlatform} />
       <Footer />
     </>
   );

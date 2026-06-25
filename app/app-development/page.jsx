@@ -1,4 +1,5 @@
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import IndustriesMobile from "../components/industries-mobile";
@@ -37,7 +38,7 @@ const AppDevelopmentPage = () => {
       <LpAppPlatform />
       <TestimonialSection />
       <LpAppCase />
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.appDevelopment} />
       <Footer />
     </div>
   );

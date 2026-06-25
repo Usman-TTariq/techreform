@@ -10,6 +10,7 @@ import FaqMvpSection from "../components/faq-mvp-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 // import WhoWeAreErp from "../components/who-we-are-erp";
 import WhoWeAreMvp from "../components/who-we-are-mvp";
 
@@ -100,7 +101,7 @@ const MvpPage = () => {
             <FaqMvpSection />
             <TestimonialSection testimonials={MVP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection />
+            <DetailFormSection {...PAGE_CONTACT.mvp} />
             <Footer />
         </div>
     )

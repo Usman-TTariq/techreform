@@ -26,7 +26,7 @@ const HireDeveloperPage = ({ content }) => {
       <HireFaqSection {...content.faq} />
       <TestimonialSection testimonials={content.testimonials} />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...(content.contact ?? {})} />
       <Footer />
     </>
   );

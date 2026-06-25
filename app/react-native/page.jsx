@@ -12,6 +12,7 @@ import FaqReactNativeSection from "../components/faq-react-native-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 
 export const dynamic = "force-dynamic";
 
@@ -94,7 +95,7 @@ const ReactNative = () => {
       <FaqReactNativeSection />
       <TestimonialSection testimonials={REACT_NATIVE_TESTIMONIALS} />
       <ThreeDTextRotationSection />
-      <DetailFormSection />
+      <DetailFormSection {...PAGE_CONTACT.reactNative} />
       <Footer />
     </>
   );

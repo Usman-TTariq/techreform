@@ -1,7 +1,6 @@
 export const MOBILE_SERVICE_ITEMS = [
   { label: "App Development", href: "/mobile-app-development" },
   { label: "Game App Development", href: "/game-development" },
-  { label: "Hire Game Developers", href: "/hire-game-developer" },
   { label: "MVP Startup Development", href: "/mvp" },
   { label: "AR Development", href: "/ar-development" },
   { label: "VR Development", href: "/vr-development" },

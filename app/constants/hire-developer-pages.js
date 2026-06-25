@@ -127,6 +127,9 @@ function buildHirePage({
   heroSecondWord,
   heroForthWord,
   heroPara,
+  heroPara2,
+  heroPara3,
+  heroPara4,
   heroButtonText,
   whoWeAreP1,
   caseCategory,
@@ -134,6 +137,8 @@ function buildHirePage({
   caseDescription,
   caseMetrics,
   faqSubtitle,
+  faqTitleWhite,
+  faqTitleAccent,
   faqStackList,
   statsOverride,
   caseStatsOverride,
@@ -173,6 +178,9 @@ function buildHirePage({
       para:
         heroPara ??
         `Most ${rolePlural.toLowerCase()} write clean code. Few understand your product roadmap, deployment timelines, or what a missed sprint actually costs. At Tech Reforms, you hire ${techShort} engineers who work inside your workflow — integrated, accountable, and focused on your delivery goals.`,
+      ...(heroPara2 ? { para2: heroPara2 } : {}),
+      ...(heroPara3 ? { para3: heroPara3 } : {}),
+      ...(heroPara4 ? { para4: heroPara4 } : {}),
       buttonText: heroButtonText ?? `Hire a ${roleSingular}`,
     },
     whoWeAre: {
@@ -234,8 +242,8 @@ function buildHirePage({
       },
     },
     faq: {
-      titleWhite: `${roleLabel}`,
-      titleAccent: "FAQ",
+      titleWhite: faqTitleWhite ?? `${roleLabel}`,
+      titleAccent: faqTitleAccent ?? "FAQ",
       subtitle: faqSubtitle ?? `Tech Reforms — Hire ${rolePlural}`,
       items: faqItems ?? DEFAULT_FAQ_ITEMS(roleLabel, rolePlural, techShort, faqStackList),
     },
@@ -467,11 +475,21 @@ export const HIRE_JAVA_PAGE = buildHirePage({
 
 export const HIRE_MAGENTO_PAGE = buildHirePage({
   slug: "hire-magento",
-  metaTitle: "Hire Magento Developers | Certified eCommerce Experts",
+  metaTitle: "Hire Magento Developers in the USA | Build eCommerce That Actually Sells",
   metaDescription:
     "Hire dedicated Magento developers for Adobe Commerce, custom modules, and high-performance eCommerce stores. Onboard in 72 hours with Tech Reforms.",
   roleLabel: "Magento Developer",
   rolePlural: "Magento Developers",
+  heroSecondWord: "Magento Developers in the USA",
+  heroForthWord: "| Build eCommerce That Actually Sells",
+  heroPara:
+    "Looking to hire a Magento developer but tired of slow deliveries, missed deadlines, and developers who vanish after go-live?",
+  heroPara2:
+    "Whether you need a Magento 2 store built from scratch, a complex third-party integration, or an underperforming store fixed fast — we have the right developer ready for you.",
+  heroPara3:
+    "Vetted, experienced, and available to start within 48 hours — no hiring risk, no guesswork, just results.",
+  heroPara4:
+    "That's what Tech Reforms delivers, and that's why US businesses keep coming back to us.",
   techShort: "Magento",
   specialty: "Adobe Commerce, custom modules, theme development, and B2B/B2C storefront optimization",
   stackTags: ["Adobe Commerce", "PHP", "Hyvä", "Elasticsearch"],
@@ -486,6 +504,138 @@ export const HIRE_MAGENTO_PAGE = buildHirePage({
     { value: "40%", label: "Faster load time" },
     { value: "22%", label: "Conversion lift" },
   ],
+  whatWeOfferHeadlineWhite: "Magento Development Services",
+  whatWeOfferAccent: "Built Around Your Business",
+  whatWeOfferCards: [
+    {
+      title: "Flexible Magento Hiring Models",
+      desc: "Need one developer or an entire Magento team? We give you the flexibility to hire based on your project scope, timeline, and budget — no rigid contracts, no unnecessary overhead.",
+      buttonText: "See Hiring Models",
+    },
+    {
+      title: "Magento Store Development",
+      desc: "From Magento 2 builds to custom theme development, our developers handle your entire store setup — giving you full control over design, functionality, and performance from day one.",
+      buttonText: "Meet Our Magento Team",
+    },
+    {
+      title: "Dedicated Magento Development Teams",
+      desc: "Need ongoing Magento support? Get a dedicated developer who works exclusively on your store — aligned with your workflows, your tech stack, and your business goals.",
+      buttonText: "Build Your Magento Team",
+    },
+    {
+      title: "On-Demand Magento Expertise",
+      desc: "Whether it's a urgent bug fix, a third-party integration, or a full platform migration — our Magento developers are ready to jump in and deliver fast, without a long onboarding process.",
+      buttonText: "Hire in 72 Hours",
+    },
+  ],
+  processHeadlineWhite: "How We Deliver the Right Magento Developer —",
+  processHeadlineAccent: "Fast",
+  processSteps: [
+    {
+      title: "Finding the Right Magento Talent",
+      desc: "We don't pull from a generic pool. Every developer we match has hands-on Magento experience — store builds, custom modules, API integrations, and performance fixes. You get someone who's already solved your problem before.",
+      buttonText: "Meet Magento Developers",
+    },
+    {
+      title: "Quick Onboarding, Zero Disruption",
+      desc: "Once you approve your developer, we handle the entire onboarding. They plug directly into your existing tools, workflows, and communication channels — no ramp-up delays, no productivity loss.",
+      buttonText: "Start Onboarding",
+    },
+    {
+      title: "Full Control Over Your Project",
+      desc: "You manage the work. We handle the contract, compliance, and HR. Your Magento developer works under your direction — fully dedicated to your store, your sprint, and your deadlines.",
+      buttonText: "Take Full Control",
+    },
+    {
+      title: "Ongoing Support & Scalability",
+      desc: "Your store needs change — and your team should too. Scale your Magento development capacity up or down based on project demand, without the cost and delay of traditional hiring.",
+      buttonText: "Scale Your Team",
+    },
+  ],
+  whyHeadlineWhite: "Why Choose Tech Reforms for",
+  whyHeadlineAccent: "Magento Development?",
+  whyParagraphs: [
+    "Most businesses don't fail at Magento because of the platform — they fail because they hired the wrong developer. At Tech Reforms, we've spent years placing Magento specialists who deliver clean code, on-time releases, and stores that actually convert. This is what makes us different.",
+  ],
+  whyCards: [
+    {
+      title: "Magento-Specific Expertise",
+      desc: "Our developers don't dabble in Magento on the side. Every specialist we place has deep, hands-on experience in Magento 2 architecture, extension development, and performance optimization — built from real projects, not tutorials.",
+      tags: [],
+      buttonText: "View Magento Specialists",
+    },
+    {
+      title: "Secure & Compliant Development",
+      desc: "Every Magento developer we place follows ISO/GDPR-compliant coding practices. Your store data, customer information, and payment workflows stay protected — no shortcuts, no compliance risks.",
+      tags: [],
+      buttonText: "See Security Standards",
+    },
+    {
+      title: "Proven Track Record Across eCommerce",
+      desc: "From startup stores to enterprise-level Magento builds, our developers have handled it all. We maintain a 98% client retention rate — not because we promise results, but because we consistently deliver them.",
+      tags: [],
+      buttonText: "See Client Results",
+    },
+    {
+      title: "Flexible Engagement, Full Accountability",
+      desc: "You get a dedicated Magento developer working under your direction — with Tech Reforms handling contracts, compliance, and continuity. Scale up, scale down, or switch focus anytime without friction.",
+      tags: [],
+      buttonText: "Explore Engagement Models",
+    },
+  ],
+  faqTitleWhite: "Frequently Asked Questions About Hiring",
+  faqTitleAccent: "Magento Developers",
+  faqSubtitle: "",
+  faqItems: [
+    {
+      id: 1,
+      question: "What does a Magento developer do?",
+      answer:
+        "A Magento developer builds, customizes, and optimizes eCommerce stores on the Magento platform. This includes developing custom modules, integrating third-party APIs, fixing performance issues, handling Magento 2 migrations, and ensuring your store runs fast, secure, and conversion-ready.",
+    },
+    {
+      id: 2,
+      question: "How quickly can I hire a Magento developer through Tech Reforms?",
+      answer:
+        "Once you share your project requirements, we match you with a vetted Magento developer within 24 to 48 hours. Our pre-screened talent pool means you skip the lengthy recruitment process and get straight to building.",
+    },
+    {
+      id: 3,
+      question: "What is the difference between a Magento developer and a general PHP developer?",
+      answer:
+        "A general PHP developer understands the language — but Magento has its own architecture, module system, and eCommerce logic that takes years to master. A dedicated Magento developer knows the platform's core framework, theming structure, and extension ecosystem — reducing development time and costly mistakes.",
+    },
+    {
+      id: 4,
+      question: "Can I hire a Magento developer for a short-term project?",
+      answer:
+        "Yes. Tech Reforms offers flexible engagement models — whether you need a developer for a two-week bug fix, a three-month store build, or ongoing long-term support. You choose the timeline, and we match accordingly.",
+    },
+    {
+      id: 5,
+      question: "How do I know if the Magento developer is the right fit for my project?",
+      answer:
+        "Before placement, we align on your tech stack, project scope, and business goals. You get to evaluate the developer before committing — so there are no surprises after onboarding.",
+    },
+    {
+      id: 6,
+      question: "Do your Magento developers work on Magento 2?",
+      answer:
+        "Yes. All our Magento developers are experienced in Magento 2 — including Adobe Commerce (Magento Enterprise). Whether you need a new build, a migration from Magento 1, or advanced customization on Magento 2, we have the right specialist.",
+    },
+    {
+      id: 7,
+      question: "What industries have your Magento developers worked in?",
+      answer:
+        "Our Magento developers have delivered projects across fashion, electronics, healthcare supplies, B2B wholesale, food and beverage, and multi-vendor marketplace businesses — each with unique catalog structures, pricing logic, and integration requirements.",
+    },
+    {
+      id: 8,
+      question: "Is my store data and code secure when working with Tech Reforms?",
+      answer:
+        "Yes. Every developer placed through Tech Reforms operates under strict NDA agreements and ISO/GDPR-compliant development practices. Your codebase, customer data, and business logic stay fully protected.",
+    },
+  ],
 });
 
 export const HIRE_PYTHON_PAGE = buildHirePage({
@@ -495,6 +645,17 @@ export const HIRE_PYTHON_PAGE = buildHirePage({
     "Hire expert Python developers for web apps, APIs, automation, and data pipelines. Pre-vetted engineers ready in 72 hours. Flexible engagement models.",
   roleLabel: "Python Developer",
   rolePlural: "Python Developers",
+  heroSecondWord: "Python Developers in the USA —",
+  heroForthWord: "On-Demand, No Long-Term Contracts",
+  heroPara:
+    "Let's be honest — finding a reliable Python developer in the US market is not easy.",
+  heroPara2:
+    "You spend weeks on recruitment, burn budget on wrong hires, and still end up waiting before a single line of code gets written.",
+  heroPara3:
+    "At Tech Reforms, we place senior Python developers directly into your team — people who hit the ground running and actually deliver.",
+  heroPara4:
+    "Short sprint or long-term build — we'll match you with the right developer based on your stack, your timeline, and your budget.",
+  heroButtonText: "Let's Find Your Python Developer — Talk to Us Today",
   techShort: "Python",
   specialty: "Django, FastAPI, data engineering, automation, and ML-ready backend systems",
   stackTags: ["Django", "FastAPI", "PostgreSQL", "Celery"],
@@ -508,6 +669,139 @@ export const HIRE_PYTHON_PAGE = buildHirePage({
     { value: "12 wks", label: "Delivered in" },
     { value: "10K+", label: "Daily API calls" },
     { value: "99.5%", label: "API uptime" },
+  ],
+  whatWeOfferHeadlineWhite: "Simple, Powerful Python Hiring —",
+  whatWeOfferAccent: "Exactly How Your Business Needs It",
+  whatWeOfferCards: [
+    {
+      title: "Flexible Python Hiring Models",
+      desc: "Not every project fits the same mold. Whether you need one developer for a 2-week sprint or a full Python team for six months — we build the engagement around your timeline, your budget, and your delivery goals. No rigid contracts. No unnecessary overhead.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "Senior Python Developers, Ready to Deploy",
+      desc: "When you hire Python developers through Tech Reforms, you get engineers who already know Django, FastAPI, REST APIs, and cloud integrations. They plug into your existing workflow from day one — no ramp-up time, no hand-holding required.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "Dedicated Python Development Teams",
+      desc: "Need consistent long-term output? We build you a dedicated Python team that works exclusively on your product — aligned with your sprint cycles, your tools, and your standards. Think of them as your in-house team, without the in-house cost.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "On-Demand Python Talent Across the USA",
+      desc: "Urgent requirement? We match you with pre-vetted Python developers across all US time zones within 48 hours. From early-stage startups to enterprise-level builds — the right talent, exactly when you need it.",
+      buttonText: "Learn More",
+    },
+  ],
+  processLabel: { firstWord: "OUR", secondWord: "PYTHON", thirdWord: "HIRING PROCESS" },
+  processHeadlineWhite: "A Straightforward Process to",
+  processHeadlineAccent: "Hire Python Developers in the USA",
+  processSteps: [
+    {
+      title: "Tell Us What You Need",
+      desc: "You share your project requirements, tech stack, and timeline. That's it. We don't ask for lengthy forms or multiple rounds of back-and-forth. One conversation is enough for us to understand exactly what kind of Python developer your team needs.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "We Find the Right Python Developer",
+      desc: "Our team screens candidates based on Python proficiency, framework experience — Django, FastAPI, Flask — and real project track record. You only see developers who are genuinely qualified, not just resume-matched.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "You Interview & Select",
+      desc: "You stay in full control. Review the shortlisted Python developers, run your own technical interview, and pick the one who fits your team culture and project goals. No pressure, no forced placements.",
+      buttonText: "Learn More",
+    },
+    {
+      title: "Quick Onboarding, Immediate Output",
+      desc: "Once you finalize your developer, we handle the entire onboarding — contracts, tools access, workflow alignment. Your Python developer is ready to contribute from day one, not week three.",
+      buttonText: "Learn More",
+    },
+  ],
+  whyHeadlineWhite: "Why Choose",
+  whyHeadlineAccent: "Tech Reforms?",
+  whyParagraphs: [
+    "When you're looking to hire Python developers in the USA, the real question isn't just about cost — it's about who actually delivers. At Tech Reforms, we don't just fill positions. We place Python engineers who understand your product, match your team's pace, and contribute from the very first week. From early-stage startups to scaling SaaS platforms — we've built Python teams that ship, not just sit.",
+  ],
+  whyCards: [
+    {
+      title: "No Recruitment Delays",
+      desc: "You don't have time to spend weeks posting jobs and reviewing resumes. We shortlist the right Python developers for your project within 48 hours — so your build starts on schedule, not after it.",
+      tags: [],
+      buttonText: "Learn More",
+    },
+    {
+      title: "Python Developers Who Actually Deliver",
+      desc: "Every developer in our network is technically vetted across Django, FastAPI, Flask, and Python-based AI/ML frameworks. You get engineers with real project experience — not just impressive LinkedIn profiles.",
+      tags: [],
+      buttonText: "Learn More",
+    },
+    {
+      title: "Industry-Specific Experience",
+      desc: "Our Python developers have worked across fintech, healthcare, e-commerce, SaaS, and enterprise systems. They understand your domain, not just your tech stack — and that makes a real difference in output quality.",
+      tags: [],
+      buttonText: "Learn More",
+    },
+    {
+      title: "Cost-Effective Without Cutting Corners",
+      desc: "Hiring full-time Python developers in the USA is expensive. Our flexible model gives you senior-level talent at a fraction of the cost — with zero compromise on code quality, communication, or delivery standards.",
+      tags: [],
+      buttonText: "Learn More",
+    },
+  ],
+  faqTitleWhite: "Frequently Asked Questions About Hiring",
+  faqTitleAccent: "Python Developers",
+  faqSubtitle: "",
+  faqItems: [
+    {
+      id: 1,
+      question: "How quickly can I hire a Python developer through Tech Reforms?",
+      answer:
+        "You can have a shortlisted Python developer ready within 48 hours. Once you finalize your requirements — tech stack, project scope, and timeline — we match you with pre-vetted candidates immediately. Most clients complete their selection within 3 to 5 business days.",
+    },
+    {
+      id: 2,
+      question: "What Python frameworks do your developers specialize in?",
+      answer:
+        "Our Python developers are experienced in Django, FastAPI, Flask, Celery, and SQLAlchemy. They also work across Python-based AI and ML frameworks including TensorFlow, PyTorch, and Scikit-learn — depending on your project needs.",
+    },
+    {
+      id: 3,
+      question: "Can I hire a Python developer for a short-term project?",
+      answer:
+        "Yes. We offer flexible engagement models — from a single two-week sprint to long-term dedicated hiring. You choose the duration, and we build the arrangement around your project timeline, not a fixed contract.",
+    },
+    {
+      id: 4,
+      question: "How do you ensure the quality of Python developers?",
+      answer:
+        "Every developer goes through a multi-step vetting process — technical assessment, framework-specific testing, communication screening, and past project review. You only meet developers who have already cleared our internal quality bar.",
+    },
+    {
+      id: 5,
+      question: "Do your Python developers work in US time zones?",
+      answer:
+        "Yes. Our developers are available across EST, CST, MST, and PST time zones. Whether you need full overlap or partial overlap hours, we match you with a developer who fits your team's working schedule.",
+    },
+    {
+      id: 6,
+      question: "What industries have your Python developers worked in?",
+      answer:
+        "Our Python engineers have delivered projects across fintech, healthcare, e-commerce, SaaS, AI/ML platforms, and enterprise software systems. Industry-specific experience means faster onboarding and better output from day one.",
+    },
+    {
+      id: 7,
+      question: "Is there a minimum contract period to hire a Python developer?",
+      answer:
+        "No. There is no mandatory minimum commitment. You can start with a short engagement and scale up based on your project needs. We keep the process flexible so you stay in control of your hiring decisions.",
+    },
+    {
+      id: 8,
+      question: "How is hiring through Tech Reforms different from a freelance platform?",
+      answer:
+        "Freelance platforms give you unvetted options and zero accountability. Tech Reforms gives you pre-screened, senior-level Python developers with dedicated support, contract management, and quality assurance throughout the engagement — not just at the point of hire.",
+    },
   ],
 });
 

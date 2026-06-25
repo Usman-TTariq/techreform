@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "../common/button";
 import { goToContact } from "@/app/utils/goToContact";
 
-const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
+const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifthWord, sixthWord, fifthWordWhite, para, para2, para3, para4, buttonText, compact, breakAfterFirstWord, space, autoHeight }) => {
   const handleButtonClick = () => {
     if (buttonText) goToContact();
   };
@@ -55,7 +55,8 @@ const GeneralHeroSection = ({ firstWord, secondWord, thirdWord, forthWord, fifth
             <div className="font-britanicaRegular text-[14px] sm:text-[17px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] max-w-full sm:max-w-3xl mx-auto leading-relaxed w-full">
               {para && <>{para} <br /></>}
               {para2 && <>{para2} <br /></>}
-              {para3}
+              {para3 && <>{para3} <br /></>}
+              {para4}
             </div>
             {
               buttonText && (

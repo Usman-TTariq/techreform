@@ -53,6 +53,7 @@ const IoTPage = () => {
     return (
         <>
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="IoT Development Company"
                 secondWord=""
@@ -76,6 +77,8 @@ const IoTPage = () => {
             <TestimonialSection testimonials={IOT_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.iot} />
+            </main>
+
             <Footer />
         </>
     );

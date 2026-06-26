@@ -55,6 +55,7 @@ const DatingAppPage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(datingSchema) }}
       />
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="America's Trusted Dating App Development"
         secondWord="Company"
@@ -74,6 +75,8 @@ const DatingAppPage = () => {
       <FaqDatingSection />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.dating} />
+      </main>
+
       <Footer />
     </>
   );

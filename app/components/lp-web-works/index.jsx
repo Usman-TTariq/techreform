@@ -30,7 +30,7 @@ const LpWebWorks = () => {
                             <div className="relative z-10 pl-[15px]">
                                 <CapsuleLabel firstWord="HOW IT" secondWord="WORKS" />
                                 <div className="pl-[60px] max-sm:pl-[0px]">
-                                    <div className="font-britanicaBlack text-[26px] leading-tight sm:text-[34px] md:text-[40px] lg:text-[55px] lg:leading-[60px] font-black pt-[10px]">
+                                    <h2 className="font-britanicaBlack text-[26px] leading-tight sm:text-[34px] md:text-[40px] lg:text-[55px] lg:leading-[60px] font-black pt-[10px]">
                                         <span className="text-white">How </span>
                                         <span
                                             className="inline-block"
@@ -46,7 +46,7 @@ const LpWebWorks = () => {
                                         <span className="text-white"> Makes</span>
                                         <br />
                                         <span className="text-white">Your Website Better</span>
-                                    </div>
+                                    </h2>
                                     <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white py-2 sm:pt-[22px] pl-[150px] max-sm:pl-[10px]">
                                         Our process is simple and straightforward; we blend creative conduct with innovative technology to offer visually pleasing websites.                                    </div>
                                     <div className="grid grid-cols-12 pt-[20px] gap-2 max-sm:gap-0">
@@ -54,9 +54,9 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">01</h6>
+                                                    <span aria-hidden="true" className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">01</span>
                                                     <div>
-                                                        <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Custom Design</div>
+                                                        <h3 className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Custom Design</h3>
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">
@@ -68,9 +68,9 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">02</h6>
+                                                    <span aria-hidden="true" className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">02</span>
                                                     <div>
-                                                        <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Full-Stack Expertise</div>
+                                                        <h3 className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Full-Stack Expertise</h3>
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">
@@ -83,9 +83,9 @@ const LpWebWorks = () => {
                                             <div className="h-full flex flex-col justify-between">
                                                 <div className="w-full h-[2px] bg-[linear-gradient(46deg,#F74B1C_0%,rgba(0,0,0,0)_100%)]"></div>
                                                 <div className="flex items-center gap-3">
-                                                    <h6 className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">03</h6>
+                                                    <span aria-hidden="true" className="font-britanicaBlack font-bold text-[20px] sm:text-[22px] md:text-[35px] font-regular text-[#F74B1C] text-left pb-1 sm:pb-[5px]">03</span>
                                                     <div>
-                                                        <div className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Optimization & Support</div>
+                                                        <h3 className="font-britanicaRegular text-[13px] leading-tight sm:text-[24px] text-white text-left font-bold">Optimization & Support</h3>
                                                     </div>
                                                 </div>
                                                 <div className="font-britanicaRegular text-[13px] sm:text-[18px] text-white">

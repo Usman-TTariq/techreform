@@ -55,6 +55,7 @@ const CrossPlatform = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Cross-Platform App Development Company"
         secondWord=""
@@ -79,6 +80,8 @@ const CrossPlatform = () => {
       <TestimonialSection testimonials={CROSS_PLATFORM_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.crossPlatform} />
+      </main>
+
       <Footer />
     </>
   );

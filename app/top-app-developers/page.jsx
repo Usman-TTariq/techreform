@@ -31,6 +31,7 @@ const TopAppDevelopersPage = () => {
   return (
     <>
       <Header />
+      <main>
       <TopAppHeroSection />
       <OurImpactBoxesSection cards={TOP_APP_IMPACT_CARDS} />
       <TopAppServicesSection />
@@ -43,6 +44,8 @@ const TopAppDevelopersPage = () => {
       <TopAppCtaSection />
       <ThreeDTextRotationSection />
       <DetailFormSection {...TOP_APP_DEVELOPERS_PAGE.contact} />
+      </main>
+
       <Footer />
     </>
   );

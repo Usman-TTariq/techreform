@@ -92,6 +92,7 @@ const VrDevelopmentPage = () => {
     return (
         <>
             <Header />
+      <main>
             <VrHeroSection />
             <OurImpactBoxesSection cards={VR_IMPACT_CARDS} />
             <VrAppFunctions />
@@ -110,6 +111,8 @@ const VrDevelopmentPage = () => {
             <TestimonialSection testimonials={VR_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.vr} />
+            </main>
+
             <Footer />
         </>
     );

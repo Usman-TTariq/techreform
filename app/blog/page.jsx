@@ -53,6 +53,7 @@ const Blog = async () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="Insights, "
                 secondWord="Ideas &"
@@ -63,6 +64,8 @@ const Blog = async () => {
                 autoHeight={true}
             />
             <BlogContentSection blogs={blogs} />
+            </main>
+
             <Footer />
         </div>
     );

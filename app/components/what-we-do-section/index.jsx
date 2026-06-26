@@ -13,6 +13,10 @@ import PersonBook from "./svg/person-book";
 import Square from "./svg/square";
 import PersonBook2 from "./svg/person-bbok-2";
 
+/** ImageKit transform for decorative backgrounds (~100KB target). */
+const IK_BG = (file, width, quality = 45) =>
+  `https://ik.imagekit.io/sajib4aqc/${file}?tr=w-${width},q-${quality},f-webp`;
+
 const WhatWeDoSection = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   const sectionRef = useRef(null);
@@ -75,10 +79,12 @@ const WhatWeDoSection = () => {
     <div ref={sectionRef} className="container relative pb-12 sm:pb-20 md:pb-[100px] lg:pb-[120px] px-4 sm:px-4 overflow-hidden">
       <Image
         className="w-[60%] sm:w-[60%] md:w-[50%] absolute top-[10%] sm:-top-[20%] left-0 opacity-50 sm:opacity-60"
-        src="https://ik.imagekit.io/sajib4aqc/whatwedobk_wl6wjg.webp"
+        src={IK_BG("whatwedobk_wl6wjg.webp", 640)}
         alt="Purple gradient background decoration for services section"
-        width={1000}
-        height={1000}
+        width={640}
+        height={640}
+        quality={45}
+        sizes="(max-width: 768px) 60vw, 50vw"
       />
       <div className="grid grid-cols-12 gap-6 lg:gap-5 relative z-10">
         <div className="col-span-12 lg:col-span-5 order-2 lg:order-1 ">

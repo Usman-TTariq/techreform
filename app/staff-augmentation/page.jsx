@@ -112,6 +112,7 @@ const StaffAugmentation = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(staffAugmentationSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection firstWord="IT Staff Augmentation" secondWord="Services" thirdWord="in the" forthWord="USA" fifthWord="| Hire Dedicated Developers" para="Looking for a flexible and cost-effective way to scale your team without long-term hiring commitments?"
                 para2="Tech Reforms is a trusted provider of staff augmentation services curated to help businesses access top-tier talent at affordable rates. From short-term support to long-term technical assistance, we have it all!"
                 para3="So, expand your workforce with our reliable IT staff augmentation solutions."
@@ -134,6 +135,8 @@ const StaffAugmentation = () => {
             <TestimonialSection testimonials={STAFF_AUG_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.staffAugmentation} />
+            </main>
+
             <Footer />
         </div>
     )

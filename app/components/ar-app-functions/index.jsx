@@ -20,13 +20,13 @@ const ArAppFunctions = () => {
                     </div>
                     <div className="col-span-7 max-lg:col-span-12">
                         <div className="flex justify-end max-sm:justify-center">
-                            <div className="font-britanicaBlack max-sm:text-center text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[45px] 2xl:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-right">
+                            <h2 className="font-britanicaBlack max-sm:text-center text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[45px] 2xl:text-[55px] lg:leading-[65px] font-black pb-4 sm:pb-[26px] text-right">
                                 <span className="text-white">Functions We </span>
                                 <span className="text-[#F74B1C]">Can Build </span>
                                 <br className="max-sm:hidden" />
                                 <span className="text-[#F74B1C]">Into An </span>
                                 <span className="text-white">AR App</span>
-                            </div>
+                            </h2>
                         </div>
                         <div className="flex justify-end max-sm:justify-center">
                             <Button text="Get a Free Quote" icon={false} onClick={() => setPopupOpen(true)} />
@@ -51,8 +51,8 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 />
-                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</h6>
-                                <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">SCENE DETECTION</div>
+                                <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">01</span>
+                                <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">SCENE DETECTION</h3>
                                 <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     Our AR-based business applications analyze real-world environments using your device’s camera, convert captured visuals into coordinate-based data, and generate accurate depth maps to attain realistic 3D model placement.
                                 </div>
@@ -74,8 +74,8 @@ const ArAppFunctions = () => {
                                         className="absolute top-0 left-0 w-full h-full object-cover"
                                     />
                                     <div className="relative z-10">
-                                        <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
-                                        <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</div>
+                                        <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</span>
+                                        <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</h3>
                                         <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                         With expert custom AR app development, users can train our AR applications to recognize specific 2D images and real-world 3D objects. Such apps can also enhance inputs with relevant text or 3D model data directly on the device screen.
                                         </div>
@@ -89,8 +89,8 @@ const ArAppFunctions = () => {
                                         width={1000}
                                         height={1000}
                                     />
-                                    <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</h6>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">MOTION TRACKING</div>
+                                    <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</span>
+                                    <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">MOTION TRACKING</h3>
                                     <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                         Our motion-tracking features provide precise object placement and interactions within AR environments. As an experienced AR software development company, we collaborate with your team to deliver seamless integration for optimal performance.
                                     </div>
@@ -106,8 +106,8 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 />
-                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</h6>
-                                <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">MOTION TRACKING</div>
+                                <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">02</span>
+                                <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">MOTION TRACKING</h3>
                                 <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     Our motion-tracking features provide precise object placement and interactions within AR environments. As an experienced AR software development company, we collaborate with your team to deliver seamless integration for optimal performance.
                                 </div>
@@ -121,8 +121,8 @@ const ArAppFunctions = () => {
                                     className="absolute top-0 left-0 w-full h-full object-cover"
                                 />
                                 <div className="relative z-10">
-                                    <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</h6>
-                                    <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</div>
+                                    <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#fff]">03</span>
+                                    <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-white pb-2">IMAGE & OBJECT RECOGNITION</h3>
                                     <div className="font-britanicaRegular text-[#fff] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                         With expert custom AR app development, users can train our AR applications to recognize specific 2D images and real-world 3D objects. Such immersive apps can also enhance inputs with relevant text or 3D model data directly on the device screen.
                                     </div>
@@ -136,8 +136,8 @@ const ArAppFunctions = () => {
                                     width={1000}
                                     height={1000}
                                 />
-                                <h6 className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</h6>
-                                <div className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">LIGHT ESTIMATION</div>
+                                <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[36px] sm:text-[44px] md:text-[50px] text-[#F74B1C]">04</span>
+                                <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-britanicaBlack text-black pb-2">LIGHT ESTIMATION</h3>
                                 <div className="font-britanicaRegular text-[#373636] text-[14px] sm:text-[16px] pb-4 sm:pb-[20px]">
                                     Our apps ensure that all virtual objects interact realistically with real-world lighting conditions. We pair strategic AR development services with advanced rendering methods, light estimation techniques, and algorithms to create believable AR experiences for businesses.
                                 </div>

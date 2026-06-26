@@ -20,6 +20,7 @@ const WebsiteDevelopmentPage = () => {
     return (
         <>
             <Header />
+      <main>
             <WebLPHeroSection />
             <LpWebSaving />
             <WebDevelopmentServices />
@@ -30,6 +31,8 @@ const WebsiteDevelopmentPage = () => {
             <LpWebIndustries />
             <LpWebPortfolioCase />
             <DetailFormSection {...PAGE_CONTACT.websiteDevelopment} />
+            </main>
+
             <Footer />
         </>
     )

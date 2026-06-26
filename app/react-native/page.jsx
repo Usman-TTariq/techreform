@@ -55,6 +55,7 @@ const ReactNative = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="React Native App Development Company"
         secondWord=""
@@ -96,6 +97,8 @@ const ReactNative = () => {
       <TestimonialSection testimonials={REACT_NATIVE_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.reactNative} />
+      </main>
+
       <Footer />
     </>
   );

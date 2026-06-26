@@ -42,6 +42,7 @@ const Contact = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Get In"
         secondWord="Touch"
@@ -52,6 +53,8 @@ const Contact = () => {
         autoHeight
       />
       <ContactFormSection />
+      </main>
+
       <Footer />
     </div>  
   );

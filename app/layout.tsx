@@ -112,19 +112,6 @@ export default function RootLayout({
             gtag('config', ${JSON.stringify(googleAdsId)});
           `}
         </Script>
-        <Script id="livechat-config" strategy="afterInteractive">
-          {`
-            window.__lc = window.__lc || {};
-            window.__lc.license = 19568383;
-            window.__lc.integration_name = "manual_onboarding";
-            window.__lc.product_name = "livechat";
-          `}
-        </Script>
-        <Script
-          id="livechat-widget"
-          strategy="afterInteractive"
-          src="https://cdn.livechatinc.com/tracking.js"
-        />
         <Script
           id="ze-snippet"
           strategy="afterInteractive"

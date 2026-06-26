@@ -119,6 +119,7 @@ const ArDevelopment = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(arSchema) }}
             />
             <Header />
+      <main>
             <ArHeroSection />
             <OurImpactBoxesSection cards={AR_IMPACT_CARDS} />
             <ArAppFunctions />
@@ -137,6 +138,8 @@ const ArDevelopment = () => {
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.ar} />
             <FaqArSection />
+            </main>
+
             <Footer />
         </>
     )

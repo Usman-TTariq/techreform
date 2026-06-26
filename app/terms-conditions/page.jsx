@@ -10,6 +10,7 @@ const TermsPage = () => {
   return (
     <div>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Terms and"
         secondWord="Conditions"
@@ -99,6 +100,8 @@ const TermsPage = () => {
           </p>
         </div>
       </div>
+      </main>
+
       <Footer />
     </div>
   );

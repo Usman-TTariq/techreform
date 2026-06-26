@@ -11,7 +11,9 @@ const ThankYou = () => {
             </Script>
             <OpenAiLeadConversion />
             <Header />
+      <main>
             <ThankYouSection />
+        </main>
         </div>
     )
 }

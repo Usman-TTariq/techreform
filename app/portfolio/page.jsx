@@ -39,6 +39,7 @@ const Portfolio = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection firstWord="Our Project Showcase:" secondWord=" Experience Innovation Beyond Limits!" breakAfterFirstWord para="Explore our past projects and learn how we work to redefine innovation. Our entire catalogue is a testament to our commitment to providing smart web and mobile development solutions. Our main goal is to help you streamline your business operations and help you monetize smartly."
                 buttonText="See Our Work — Request a Demo "
             />
@@ -46,6 +47,8 @@ const Portfolio = () => {
             <TestimonialSection />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.portfolio} />
+            </main>
+
             <Footer />
         </div>
     )

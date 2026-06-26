@@ -95,6 +95,7 @@ const IOS = () => {
     return (
         <>
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="High-Performance iOS App Development"
                 secondWord=""
@@ -128,6 +129,8 @@ const IOS = () => {
                 benefits={IOS_CONTACT_BENEFITS}
                 formIntro="Tell us about your iOS app — target devices, Apple APIs needed, and timeline. We respond within 24 hours with a scope outline and ballpark estimate."
             />
+            </main>
+
             <Footer />
         </>
     )

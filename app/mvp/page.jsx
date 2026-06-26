@@ -83,6 +83,7 @@ const MvpPage = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(mvpSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="Startup-Focused MVP Development Company"
                 secondWord=""
@@ -102,6 +103,8 @@ const MvpPage = () => {
             <TestimonialSection testimonials={MVP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.mvp} />
+            </main>
+
             <Footer />
         </div>
     )

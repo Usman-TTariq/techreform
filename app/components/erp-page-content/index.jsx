@@ -24,6 +24,7 @@ const ErpPageContent = ({
     return (
         <div>
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord={heroTitle}
                 secondWord=""
@@ -43,6 +44,8 @@ const ErpPageContent = ({
             <TestimonialSection />
             <ThreeDTextRotationSection />
             <DetailFormSection formIntro={formIntro} />
+            </main>
+
             <Footer />
         </div>
     );

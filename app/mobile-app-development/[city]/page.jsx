@@ -95,6 +95,7 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileAppSchema) }}
       />
       <Header />
+      <main>
       <MobileHeroSection
         headlinePrefix={city.heroHeadlinePrefix}
         headlineAccent={city.heroHeadlineAccent}
@@ -196,6 +197,8 @@ export default async function MobileAppDevelopmentCityPage({ params }) {
       <TestimonialSection />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.mobileApp} formIntro={city.formIntro} />
+      </main>
+
       <Footer />
     </div>
   );

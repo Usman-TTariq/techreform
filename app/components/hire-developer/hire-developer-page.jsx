@@ -16,6 +16,7 @@ const HireDeveloperPage = ({ content }) => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection {...content.hero} />
       {!content.hideWhoWeAre && <WhoWeAre {...content.whoWeAre} />}
       <OurImpactBoxesSection />
@@ -27,6 +28,8 @@ const HireDeveloperPage = ({ content }) => {
       <TestimonialSection testimonials={content.testimonials} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...(content.contact ?? {})} />
+      </main>
+
       <Footer />
     </>
   );

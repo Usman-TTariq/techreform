@@ -51,6 +51,7 @@ const AppsForStartup = () => {
     return (
         <>
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="App Development for Startups"
                 secondWord=""
@@ -68,6 +69,8 @@ const AppsForStartup = () => {
             <TestimonialSection testimonials={STARTUP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.appsForStartup} />
+            </main>
+
             <Footer />
         </>
     )

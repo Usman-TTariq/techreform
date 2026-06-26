@@ -55,6 +55,7 @@ const RestaurantAppPage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema) }}
       />
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Trusted Restaurant App Development"
         secondWord="Company in the USA"
@@ -74,6 +75,8 @@ const RestaurantAppPage = () => {
       <FaqRestaurantSection />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.restaurant} />
+      </main>
+
       <Footer />
     </>
   );

@@ -82,6 +82,7 @@ const Ecommerce = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(ecommerceSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection firstWord="Hire" secondWord="Expert E-Commerce" thirdWord="" forthWord="Web Developers" fifthWord="in the USA" para="Looking for an affordable way to digitize your business without emptying your bank account? 
 Tech Reforms is a pioneering e-commerce development agency that offers affordable e-commerce website development in the USA. Our SEO-friendly, conversion-focused framework is designed for small and scaling businesses to grow faster in the market.
 "
@@ -101,6 +102,8 @@ Tech Reforms is a pioneering e-commerce development agency that offers affordabl
             <TestimonialSection testimonials={ECOMMERCE_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.ecommerce} />
+            </main>
+
             <Footer />
         </div>
     )

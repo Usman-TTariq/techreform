@@ -4,6 +4,10 @@ import Image from "next/image";
 import Button from "../common/button";
 import { goToContact } from "@/app/utils/goToContact";
 
+/** ImageKit transform for decorative hero accents (~100KB target). */
+const IK_BG = (file, width, quality = 45) =>
+  `https://ik.imagekit.io/sajib4aqc/${file}?tr=w-${width},q-${quality},f-webp`;
+
 const HeroSection = () => {
     return (
         <div className="relative w-full min-w-0 min-h-[85vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-[110vh] pb-16 sm:pb-12 md:pb-0 overflow-hidden bg-[#0E0E0E]">
@@ -12,22 +16,29 @@ const HeroSection = () => {
                 className="absolute top-[42%] sm:top-[38%] md:top-[30%] lg:top-[20%] left-[50%] translate-x-[-50%] w-[100%]  sm:w-[78%] sm:max-w-none md:w-[75%] lg:w-[70%]"
                 src="/images/herolaptop.png"
                 alt="Laptop displaying business and app development visuals on hero"
-                width={1000}
-                height={1000}
+                width={900}
+                height={900}
+                quality={60}
+                sizes="(max-width: 640px) 100vw, 75vw"
+                priority
             />
             <Image
                 className="absolute -top-[5%] right-2 sm:right-4 w-[20%] sm:w-[28%] md:right-12 md:w-[30%] lg:right-[200px] hidden sm:block"
-                src="https://ik.imagekit.io/sajib4aqc/Group%202147225267.png"
+                src={IK_BG("Group%202147225267.png", 480)}
                 alt="Decorative abstract accent on homepage hero"
-                width={1000}
-                height={1000}
+                width={480}
+                height={480}
+                quality={45}
+                sizes="(max-width: 639px) 0px, 30vw"
             />
             <Image
                 className="absolute bottom-0 left-0 w-[20%] sm:w-[28%] md:w-[30%] hidden sm:block"
-                src="https://ik.imagekit.io/sajib4aqc/frame2_h4xmpf.webp"
+                src={IK_BG("frame2_h4xmpf.webp", 480)}
                 alt="Decorative frame on homepage hero"
-                width={1000}
-                height={1000}
+                width={480}
+                height={480}
+                quality={45}
+                sizes="(max-width: 639px) 0px, 30vw"
             />
             <div className="container relative z-10 px-4 sm:px-4 w-full max-w-[100vw]">
                 {/* 98% box: mobile par aur neeche, sm+ par top-right */}

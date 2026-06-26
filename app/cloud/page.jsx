@@ -53,6 +53,7 @@ const CloudPage = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Cloud Development Company"
         secondWord=""
@@ -76,6 +77,8 @@ const CloudPage = () => {
       <TestimonialSection testimonials={CLOUD_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.cloud} />
+      </main>
+
       <Footer />
     </>
   );

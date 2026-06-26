@@ -56,12 +56,12 @@ const WhiteCard = ({ card }) => (
   <div
     className={`relative bg-white ${CARD_WIDTH} max-sm:mb-[10px] border-2 border-[#0E0E0E] rounded-2xl sm:rounded-4xl py-4 sm:py-5 lg:py-4 xl:py-6 px-4 sm:px-5`}
   >
-    <h6 className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-[#F74B1C] leading-none">
+    <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-[#F74B1C] leading-none">
       {card.number}
-    </h6>
-    <div className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-black pb-2 pt-1 leading-snug">
+    </span>
+    <h3 className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-black pb-2 pt-1 leading-snug">
       {card.title}
-    </div>
+    </h3>
     <div className="font-britanicaRegular text-[#373636] text-[13px] sm:text-[14px] lg:text-[13px] xl:text-[15px] 2xl:text-[16px] pb-3 sm:pb-4 leading-relaxed">
       {card.desc}
     </div>
@@ -73,12 +73,12 @@ const DarkCard = ({ card }) => (
   <div
     className={`relative ${CARD_WIDTH} max-sm:mb-[10px] border-2 border-[#ffffff24] rounded-2xl sm:rounded-4xl py-4 sm:py-5 lg:py-4 xl:py-6 px-4 sm:px-5 !bg-black/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md`}
   >
-    <h6 className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-[#F74B1C] leading-none">
+    <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-[#F74B1C] leading-none">
       {card.number}
-    </h6>
-    <div className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-white pb-2 pt-1 leading-snug">
+    </span>
+    <h3 className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-white pb-2 pt-1 leading-snug">
       {card.title}
-    </div>
+    </h3>
     <div className="font-britanicaRegular text-white/90 text-[13px] sm:text-[14px] lg:text-[13px] xl:text-[15px] 2xl:text-[16px] pb-3 sm:pb-4 leading-relaxed">
       {card.desc}
     </div>
@@ -98,12 +98,12 @@ const ImageCard = ({ card }) => (
       className="absolute top-0 left-0 w-full h-full object-cover"
     />
     <div className="relative z-10">
-      <h6 className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-white leading-none">
+      <span aria-hidden="true" className="font-britanicaRegular font-semibold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[50px] text-white leading-none">
         {card.number}
-      </h6>
-      <div className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-white pb-2 pt-1 leading-snug">
+      </span>
+      <h3 className="text-[15px] sm:text-[18px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] font-britanicaBlack text-white pb-2 pt-1 leading-snug">
         {card.title}
-      </div>
+      </h3>
       <div className="font-britanicaRegular text-white/90 text-[13px] sm:text-[14px] lg:text-[13px] xl:text-[15px] 2xl:text-[16px] pb-3 sm:pb-4 leading-relaxed">
         {card.desc}
       </div>
@@ -132,10 +132,10 @@ const VrAppFunctions = () => {
           </div>
           <div className="col-span-7 max-lg:col-span-12 min-w-0">
             <div className="flex justify-end max-sm:justify-center">
-              <div className="font-britanicaBlack max-sm:text-center text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[40px] xl:text-[45px] 2xl:text-[55px] lg:leading-[50px] xl:leading-[65px] font-black pb-4 sm:pb-[26px] text-right max-sm:text-center">
+              <h2 className="font-britanicaBlack max-sm:text-center text-[28px] leading-tight sm:text-[36px] md:text-[44px] lg:text-[40px] xl:text-[45px] 2xl:text-[55px] lg:leading-[50px] xl:leading-[65px] font-black pb-4 sm:pb-[26px] text-right max-sm:text-center">
                 <span className="text-white">Our End-to-End </span>
                 <span className="text-[#F74B1C]">VR Development Approach</span>
-              </div>
+              </h2>
             </div>
             <div className="flex justify-end max-sm:justify-center">
               <Button text="Get a Free Quote" icon={false} onClick={() => setPopupOpen(true)} />

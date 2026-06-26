@@ -10,6 +10,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Privacy"
         secondWord="Policy"
@@ -132,6 +133,8 @@ const PrivacyPolicy = () => {
           <p><strong>6.</strong> Cookies are not used to process or store personal data. They cannot be used to directly identify the User and do not make any configuration changes in the browser or telecommunication devices.</p>
         </div>
       </div>
+      </main>
+
       <Footer />
     </div>
   );

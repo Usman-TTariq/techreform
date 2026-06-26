@@ -8,6 +8,10 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
+/** ImageKit transform for decorative backgrounds (~100KB target). */
+const IK_BG = (file, width, quality = 45) =>
+  `https://ik.imagekit.io/sajib4aqc/${file}?tr=w-${width},q-${quality},f-webp`;
+
 const DEFAULT_TESTIMONIALS = [
   {
     name: "John Labkins",
@@ -85,19 +89,23 @@ const TestimonialSection = ({ testimonials = DEFAULT_TESTIMONIALS }) => {
     <div className="relative overflow-hidden">
       <Image
         className="absolute top-[50%] -translate-y-1/2 right-0 w-[50%] sm:w-[40%] opacity-80"
-        src="/images/testbk.png"
+        src={IK_BG("testbk.png", 640)}
         alt="Soft gradient background behind testimonials"
-        width={1000}
-        height={1000}
+        width={640}
+        height={640}
+        quality={45}
+        sizes="(max-width: 640px) 50vw, 40vw"
       />
       <div className="container relative pt-12 sm:pt-16 md:pt-[90px] z-20 px-4 sm:px-4">
         <div className="bg-[#161616] rounded-xl py-8 sm:py-12 md:py-[60px] pb-0 px-4 sm:px-6 md:px-[30px] lg:px-[50px] relative overflow-hidden">
           <Image
             className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[100%] sm:w-[90%] h-full object-cover opacity-60 sm:opacity-100"
-            src="/images/testimonialbk.png"
+            src={IK_BG("testimonialbk.png", 800)}
             alt="Decorative background for testimonial content"
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
+            quality={45}
+            sizes="(max-width: 640px) 100vw, 90vw"
           />
           <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end gap-4 text-center sm:text-left">
             <div className="order-2 sm:order-1">

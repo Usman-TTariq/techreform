@@ -96,6 +96,7 @@ const Mobile = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileAppSchema) }}
             />
             <Header />
+      <main>
             <MobileHeroSection />
             <OurImpactBoxesSection />
             <AppDevelopmentSection />
@@ -117,6 +118,8 @@ const Mobile = () => {
             <TestimonialSection testimonials={MOBILE_APP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.mobileApp} />
+            </main>
+
             <Footer />
         </div>
     )

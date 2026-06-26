@@ -47,6 +47,7 @@ export default async function BlogPostPage({ params }) {
   return (
     <div>
       <Header />
+      <main>
       <article className="min-h-screen bg-[#0E0E0E] pt-8 pb-16">
         <div className="container px-4 max-w-[800px] mx-auto">
           <Link href="/blog" className="text-[#F74B1C] font-britanicaRegular text-[18px] hover:underline mb-6 inline-block">
@@ -83,6 +84,8 @@ export default async function BlogPostPage({ params }) {
           )}
         </div>
       </article>
+      </main>
+
       <Footer />
     </div>
   );

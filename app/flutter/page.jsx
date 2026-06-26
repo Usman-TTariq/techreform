@@ -55,6 +55,7 @@ const Flutter = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Flutter App Development Company"
         secondWord=""
@@ -86,6 +87,8 @@ const Flutter = () => {
       <TestimonialSection testimonials={FLUTTER_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.flutter} />
+      </main>
+
       <Footer />
     </>
   );

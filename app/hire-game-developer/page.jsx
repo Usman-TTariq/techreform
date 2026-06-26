@@ -42,6 +42,7 @@ const HireGameDeveloperPage = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Hire "
         secondWord="Game Developers"
@@ -70,6 +71,8 @@ const HireGameDeveloperPage = () => {
         benefits={GAME_CONTACT_BENEFITS}
         formIntro="Tell us your genre, engine preference, target platform, and timeline. We match you with pre-vetted game developers within 48 hours."
       />
+      </main>
+
       <Footer />
     </>
   );

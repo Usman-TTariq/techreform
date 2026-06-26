@@ -117,6 +117,7 @@ const Erp = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(erpSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="Custom ERP Development Company"
                 secondWord=""
@@ -143,6 +144,8 @@ const Erp = () => {
               productType="erp"
               formIntro="Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control."
             />
+            </main>
+
             <Footer />
         </div>
     );

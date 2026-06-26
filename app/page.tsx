@@ -20,6 +20,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <main>
       <HeroSection />  
       <ReviewSections />
       <WhatWeDoSection/>
@@ -29,6 +30,8 @@ export default function Home() {
       <ThreeDTextRotationSection/>
       <DetailFormSection {...PAGE_CONTACT.home} />
       <FaqHomeSection />
+      </main>
+
       <Footer />
     </div>
   );

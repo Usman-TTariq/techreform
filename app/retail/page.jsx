@@ -58,6 +58,7 @@ const Retail = () => {
   return (
     <>
       <Header />
+      <main>
       <GeneralHeroSection
         firstWord="Retail App Development Company"
         secondWord=""
@@ -89,6 +90,8 @@ const Retail = () => {
       <TestimonialSection testimonials={RETAIL_TESTIMONIALS} />
       <ThreeDTextRotationSection />
       <DetailFormSection {...PAGE_CONTACT.retail} />
+      </main>
+
       <Footer />
     </>
   );

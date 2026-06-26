@@ -38,7 +38,8 @@ const ReviewSections = () => {
     <div className="container relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[150px] -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-[120px] px-4 sm:px-4">
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
-        src="/images/reviewEllipse.png"
+        // src="/images/reviewEllipse.png"
+        src="https://ik.imagekit.io/sajib4aqc/reviewEllipse.png"
         alt="Soft gradient ellipse behind customer reviews section"
         width={1000}
         height={1000}

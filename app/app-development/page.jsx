@@ -20,6 +20,7 @@ const AppDevelopmentPage = () => {
   return (
     <div>
       <Header />
+      <main>
       <WebAppHeroSection autoHeight />
       <LpAppAbout />
       <LpAppServices />
@@ -39,6 +40,8 @@ const AppDevelopmentPage = () => {
       <TestimonialSection />
       <LpAppCase />
       <DetailFormSection {...PAGE_CONTACT.appDevelopment} />
+      </main>
+
       <Footer />
     </div>
   );

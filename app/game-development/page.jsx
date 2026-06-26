@@ -99,6 +99,7 @@ const GameDevelopment = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(gameSchema) }}
             />
             <Header />
+      <main>
             <GeneralHeroSection
                 firstWord="Professional Game Development Services "
                 secondWord="in the "
@@ -124,6 +125,8 @@ const GameDevelopment = () => {
             <TestimonialSection testimonials={GAME_TESTIMONIALS} />
             <ThreeDTextRotationSection />
             <DetailFormSection {...PAGE_CONTACT.gameDevelopment} />
+            </main>
+
             <Footer />
         </div>
     );

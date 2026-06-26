@@ -65,39 +65,45 @@ const ReviewSections = () => {
               className={`group relative h-full rounded-2xl py-10 sm:py-12 md:py-16 lg:py-[80px] px-5 sm:px-6 md:px-[30px] transition-all duration-300 cursor-pointer touch-manipulation ${card.rounded} ${displayedCard === index ? "bg-[#7724C1]" : "bg-white"}`}
             >
               <Image
-                className={`w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
+                className={`w-[120px] h-auto absolute -top-[55px] left-[50%] translate-x-[-50%] transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"}`}
                 src="/images/hover-logo.png"
                 alt={`Tech Reforms logo accent for ${card.label} review card`}
-                width={1000}
-                height={1000}
+                width={160}
+                height={162}
+                sizes="120px"
+                loading="lazy"
               />
               <Image
-                className={`w-[35%] h-full absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
+                className={`w-[35%] h-auto max-h-full object-contain object-right-top absolute top-0 right-0 transition-all duration-300 ${displayedCard === index ? "opacity-100" : "opacity-0"} ${index === 3 ? "rounded-tr-[130px]" : ""}`}
                 src="/images/hovertext.png"
                 alt={`Decorative hover highlight for ${card.label}`}
-                width={1000}
-                height={1000}
+                width={127}
+                height={257}
+                sizes="35vw"
+                loading="lazy"
               />
               {card.type === "clutch" ? (
                 <>
                   <div>
                     <Image
-                      className={`w-[40%] m-auto transition-all duration-300 ${displayedCard === index ? "brightness-[15]" : ""}`}
+                      className={`w-[40%] h-auto m-auto transition-all duration-300 ${displayedCard === index ? "brightness-[15]" : ""}`}
                       src="/images/clutch-logo.png"
                       alt="Clutch B2B ratings and reviews platform logo"
-                      width={160}
-                      height={60}
+                      width={358}
+                      height={102}
                       sizes="40vw"
                       loading="lazy"
                     />
                   </div>
                   <div className="flex items-center justify-center gap-2 pt-2 sm:pt-[10px] max-2xl:flex-col">
                     <Image
-                      className={`w-[80px] sm:w-[100px] transition-all duration-300 ${displayedCard === index ? "brightness-[2]" : ""}`}
+                      className={`w-[80px] sm:w-[100px] h-auto transition-all duration-300 ${displayedCard === index ? "brightness-[2]" : ""}`}
                       src="/images/stars.png"
                       alt="Five star rating graphic"
-                      width={1000}
-                      height={1000}
+                      width={360}
+                      height={72}
+                      sizes="100px"
+                      loading="lazy"
                     />
                     <div
                       className={`font-britanicaRegular text-base sm:text-[18px] md:text-[22px] max-2xl:text-[18px] transition-all duration-300 ${displayedCard === index ? "text-white" : "text-[#373636]"}`}

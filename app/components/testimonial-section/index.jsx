@@ -51,11 +51,11 @@ const TestimonialCard = ({ name, role, quote }) => (
       <p className="font-britanicaExtraBold text-white text-[22px] sm:text-[28px] md:text-[34px] font-bold capitalize tracking-tight">
         {name}
       </p>
-      <p className="text-white/90 text-xs sm:text-sm md:text-base font-britanicaRegular mt-1 uppercase">
+      <p className="testimonial-role text-white text-sm sm:text-sm md:text-base font-britanicaRegular mt-1 uppercase">
         {role}
       </p>
       <p
-        className="testimonial-quote font-britanicaRegular text-white mt-3 sm:mt-4 flex-1 text-[13px] sm:text-sm md:text-base leading-relaxed opacity-80"
+        className="testimonial-quote font-britanicaRegular text-neutral-300 mt-3 sm:mt-4 flex-1 text-[13px] sm:text-sm md:text-base leading-relaxed"
         style={{ lineHeight: 1.6 }}
       >
         {quote}
@@ -186,7 +186,11 @@ const css = `
   }
 
   .testimonial-swiper .swiper-slide-active .testimonial-card .testimonial-quote {
-    opacity: 1 !important;
+    color: #fff !important;
+  }
+
+  .testimonial-swiper .swiper-slide-active .testimonial-card .testimonial-role {
+    color: #fff !important;
   }
 
   .swiper-container-3d .swiper-slide-shadow-left,

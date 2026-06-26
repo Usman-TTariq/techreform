@@ -60,11 +60,11 @@ export const SOLUTIONS_ITEMS = [
   { label: "Grocery App", href: "#" },
   { label: "Delivery App", href: "#" },
   { label: "Travel App", href: "#" },
-  { label: "Restaurant App", href: "#" },
+  { label: "Restaurant App", href: "/restaurant-app" },
   { label: "Education App", href: "#" },
   { label: "Fitness App", href: "#" },
   { label: "Logistics App", href: "#" },
-  { label: "Dating App", href: "#" },
+  { label: "Dating App", href: "/dating-app" },
 ];
 
 export const ECOMMERCE_ITEMS = [

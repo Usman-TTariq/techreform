@@ -21,7 +21,7 @@ const STEPS = [
     },
     {
         title: "Scene Understanding & Occlusion",
-        desc: "We make sure your AR app accurately recognizes objects and environments in different conditions. This allows 3D models to appear naturally within real-world scenes. Our algorithms continue learning even after launch by collecting new data during app usage, helping us improve accuracy and make the app smarter over time, which is essential for AR App Development for Retail Businesses.We build with leading AR frameworks and engines, integrating sensors, occlusion, and lighting where needed. Rigorous testing across devices ensures stable tracking, smooth frame rates, and a polished experience on every supported platform.",
+        desc: "We make sure your AR app accurately recognizes objects and environments in different conditions. This allows 3D models to appear naturally within real-world scenes. Our algorithms continue learning even after launch by collecting new data during app usage, helping us improve accuracy and make the app smarter over time, which is essential for AR App Development for Retail Businesses.",
     }
 ];
 

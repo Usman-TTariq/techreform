@@ -69,9 +69,9 @@ const DetailFormSection = ({
             <div className="font-britanicaBlack text-[22px] leading-tight sm:text-[26px] sm:leading-[32px] md:text-[28px] md:leading-[35px] font-black max-sm:text-center">
               <span className="text-white">Partner with Us for</span>
               <br />
-              <span className="text-[#F74B1C]">Custom {resolvedDevelopmentLabel} Development and</span>
+              <span className="text-[#F74B1C]">Custom {resolvedDevelopmentLabel} Development</span>
               <br />
-              <span className="text-white">Better Resource Management</span>
+              <span className="text-white">and Better Resource Management</span>
             </div>
             <div className="flex items-center justify-start gap-2 py-5 sm:py-6 md:py-[30px] flex-wrap max-sm:justify-center">
               <Image

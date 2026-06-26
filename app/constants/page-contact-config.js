@@ -118,6 +118,32 @@ export const PAGE_CONTACT = {
       "Post-Launch Support",
     ],
   },
+  restaurant: {
+    developmentLabel: "Restaurant App",
+    formIntro:
+      "Tell us about your restaurant app — ordering, delivery, reservations, or loyalty. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "Online Ordering & Delivery",
+      "POS & Payment Integration",
+      "Table Reservations & QR Menus",
+      "Loyalty & Rewards Programs",
+      "Multi-Location Support",
+      "Post-Launch Support",
+    ],
+  },
+  dating: {
+    developmentLabel: "Dating App",
+    formIntro:
+      "Tell us about your dating app idea — niche, matchmaking, chat, or monetization model. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "AI Matchmaking & Swipe Features",
+      "Real-Time Chat & Video Calling",
+      "Profile & Photo Verification",
+      "Subscription & Premium Plans",
+      "iOS, Android & Web",
+      "Post-Launch Support",
+    ],
+  },
   ecommerce: {
     developmentLabel: "eCommerce",
     formIntro:

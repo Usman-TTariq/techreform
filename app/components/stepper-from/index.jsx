@@ -562,16 +562,18 @@ const StepperFrom = ({
 
               {/* Phone - full width */}
               <div className="md:col-span-2">
-                <label className="block font-britanicaRegular text-white text-base mb-2">
+                <label htmlFor="stepper-phone" className="block font-britanicaRegular text-white text-base mb-2">
                   Phone
                 </label>
                 <div className="phone-wrapper rounded-lg bg-[#2E2E2E] border border-white/20 px-4 py-3 focus-within:ring-2 focus-within:ring-[#F74B1C] focus-within:border-transparent">
                   <PhoneInput
+                    id="stepper-phone"
                     international
                     defaultCountry="US"
                     value={formData.contactPhone}
                     onChange={(value) => setFormData((prev) => ({ ...prev, contactPhone: value ?? "" }))}
                     placeholder="Phone number"
+                    countrySelectProps={{ "aria-label": "Country code" }}
                     className="w-full text-white text-base font-britanicaRegular bg-transparent border-none focus:outline-none [&_input]:bg-transparent [&_input]:text-white [&_input]:text-base [&_input]:focus:outline-none"
                   />
                 </div>

@@ -215,8 +215,8 @@ const Header = () => {
 
             <div className="container py-4 sm:py-5 lg:py-5 relative max-w-[1320px] px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between gap-3 lg:gap-4">
-                    <Link href="/" className="flex-shrink-0">
-                        <MainLogo className="w-[150px] sm:w-[165px] lg:w-[175px] xl:w-[190px]" />
+                    <Link href="/" className="flex-shrink-0" aria-label="Tech Reforms home">
+                        <MainLogo className="w-[150px] sm:w-[165px] lg:w-[175px] xl:w-[190px]" aria-hidden="true" focusable="false" />
                     </Link>
 
                     {/* Desktop nav – hidden on mobile/tablet */}

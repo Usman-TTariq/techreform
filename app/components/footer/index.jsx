@@ -107,8 +107,8 @@ const Footer = () => {
                         >
                             info@techreforms.com
                         </a> */}
-                        <Link href="/" className="block w-full max-w-[100%] min-w-0">
-                            <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[450px] h-auto" />
+                        <Link href="/" className="block w-full max-w-[100%] min-w-0" aria-label="Tech Reforms home">
+                            <FooterLogo className="w-full max-w-[160px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[450px] h-auto" aria-hidden="true" focusable="false" />
                         </Link>
                     </div>
                     <div>
@@ -119,14 +119,14 @@ const Footer = () => {
                             Let’s take your brand to the next level. Get in touch!
                         </div>
                         <div className="flex flex-wrap items-center gap-x-3 mt-3 justify-end max-sm:justify-center">
-                            <Link href="https://www.facebook.com/techreforms.1/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group">
+                            <Link href="https://www.facebook.com/techreforms.1/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group" aria-label="Follow Tech Reforms on Facebook (opens in new tab)">
                                 <div className="w-[40px] h-[40px] bg-[#7826c3] rounded-full flex items-center justify-center">
-                                    <Facebook className="text-white group-hover:text-[#f74b1c] transition-colors" />
+                                    <Facebook className="text-white group-hover:text-[#f74b1c] transition-colors" aria-hidden="true" />
                                 </div>
                             </Link>
-                            <Link href="https://www.instagram.com/tech.reforms/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group">
+                            <Link href="https://www.instagram.com/tech.reforms/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-0 group" aria-label="Follow Tech Reforms on Instagram (opens in new tab)">
                                 <div className="w-[40px] h-[40px] bg-[#7826c3] flex rounded-full items-center justify-center">
-                                    <Instagram className="text-white group-hover:text-[#f74b1c] transition-colors" />
+                                    <Instagram className="text-white group-hover:text-[#f74b1c] transition-colors" aria-hidden="true" />
                                 </div>
                             </Link>
                         </div>

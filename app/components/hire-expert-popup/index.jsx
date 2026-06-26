@@ -190,6 +190,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                         className={`phone-wrapper rounded-xl px-3 sm:px-4 py-3 bg-[#1a1a1a] border border-white/15 transition-colors ${errors.phone ? "ring-2 ring-red-500 border-red-500" : "focus-within:ring-2 focus-within:ring-[#F74B1C]/50 focus-within:border-[#F74B1C]"}`}
                                     >
                                         <PhoneInput
+                                            id="popup-phone"
                                             international
                                             defaultCountry="US"
                                             value={phone}
@@ -199,6 +200,7 @@ const HireExpertPopup = ({ open, onClose }) => {
                                             }}
                                             disabled={isLoading}
                                             placeholder="+1 (555) 000-0000"
+                                            countrySelectProps={{ "aria-label": "Country code" }}
                                             className="w-full min-w-0 bg-transparent border-none text-white font-britanicaRegular text-[14px] placeholder:text-white/40 focus:outline-none"
                                         />
                                     </div>

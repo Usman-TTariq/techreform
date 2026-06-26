@@ -174,11 +174,14 @@ const FreeConsultationForm = ({ intro }) => {
         </div>
 
         <div className="w-full py-2">
-          <label className={`${LABEL_STYLE} bg-black`}>Phone</label>
+          <label htmlFor="consultation-phone" className={`${LABEL_STYLE} bg-black`}>
+            Phone
+          </label>
           <div
             className={`phone-wrapper bg-[#2E2E2E] rounded-xl px-4 py-3 -mt-[8px] transition-all duration-200 ${errors.phone ? "ring-2 ring-red-500 rounded-xl" : ""}`}
           >
             <PhoneInput
+              id="consultation-phone"
               international
               defaultCountry="US"
               value={phone}
@@ -187,6 +190,7 @@ const FreeConsultationForm = ({ intro }) => {
                 if (errors.phone) setErrors((prev) => ({ ...prev, phone: null }));
               }}
               disabled={isLoading}
+              countrySelectProps={{ "aria-label": "Country code" }}
               className="w-full text-[14px] text-[#fff] font-gliker bg-transparent border-none focus:outline-none"
             />
           </div>

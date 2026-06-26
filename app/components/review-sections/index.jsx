@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { ikUrl } from "@/app/utils/imagekit";
 
 const ReviewSections = () => {
   const [activeCard, setActiveCard] = useState(0);
@@ -38,11 +39,13 @@ const ReviewSections = () => {
     <div className="container relative pb-16 sm:pb-24 md:pb-[100px] lg:pb-[150px] -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-[120px] px-4 sm:px-4">
       <Image
         className="w-[50%] sm:w-[45%] md:w-[40%] absolute -top-[120px] sm:-top-[180px] md:-top-[250px] right-0 opacity-80"
-        // src="/images/reviewEllipse.png"
-        src="https://ik.imagekit.io/sajib4aqc/reviewEllipse.png"
+        src={ikUrl("reviewEllipse.png", 480)}
         alt="Soft gradient ellipse behind customer reviews section"
-        width={1000}
-        height={1000}
+        width={480}
+        height={480}
+        quality={45}
+        sizes="(max-width: 640px) 50vw, 40vw"
+        loading="lazy"
       />
       <div className="grid grid-cols-12 gap-3 sm:gap-4">
         {cards.map((card, index) => (
@@ -82,8 +85,10 @@ const ReviewSections = () => {
                       className={`w-[40%] m-auto transition-all duration-300 ${displayedCard === index ? "brightness-[15]" : ""}`}
                       src="/images/clutch-logo.png"
                       alt="Clutch B2B ratings and reviews platform logo"
-                      width={1000}
-                      height={1000}
+                      width={160}
+                      height={60}
+                      sizes="40vw"
+                      loading="lazy"
                     />
                   </div>
                   <div className="flex items-center justify-center gap-2 pt-2 sm:pt-[10px] max-2xl:flex-col">

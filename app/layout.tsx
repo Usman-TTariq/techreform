@@ -45,7 +45,8 @@ const britanicaBlack = localFont({
   src: "../public/fonts/Britanica Black.woff2",
   variable: "--font-britanicaBlack",
   display: "swap",
-  preload: false,
+  preload: true,
+  adjustFontFallback: "Arial",
 });
 
 export default function RootLayout({
@@ -101,9 +102,9 @@ export default function RootLayout({
         />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAnalyticsId)}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-gtag" strategy="afterInteractive">
+        <Script id="google-gtag" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -114,10 +115,10 @@ export default function RootLayout({
         </Script>
         <Script
           id="ze-snippet"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://static.zdassets.com/ekr/snippet.js?key=3196a1f3-1999-4162-9a9d-9a4efcf9d971"
         />
-        <Script id="openai-ads-pixel-init" strategy="afterInteractive">
+        <Script id="openai-ads-pixel-init" strategy="lazyOnload">
           {`
             window.oaiq = window.oaiq || function () {
               (window.oaiq.q = window.oaiq.q || []).push(arguments);
@@ -127,7 +128,7 @@ export default function RootLayout({
         </Script>
         <Script
           id="openai-ads-pixel-sdk"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://bzrcdn.openai.com/sdk/oaiq.min.js"
         />
       </head>

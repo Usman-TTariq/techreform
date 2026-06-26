@@ -229,3 +229,72 @@ body {
 .erp-industries-swiper .swiper-button-disabled {
   opacity: 0.35;
 }
+
+/* Review cards: CSS-only selection (no client JS) */
+.review-section .review-card {
+  background: #fff;
+}
+
+.review-section .review-accent {
+  opacity: 0;
+}
+
+.review-section .review-stat-value,
+.review-section .review-stat-label,
+.review-section .review-caption {
+  color: #373636;
+}
+
+.review-section .review-stat-value {
+  color: #000;
+}
+
+.review-section .review-radio:checked + .review-card {
+  background: #7724c1;
+}
+
+.review-section .review-radio:checked + .review-card .review-accent {
+  opacity: 1;
+}
+
+.review-section .review-radio:checked + .review-card .review-stat-value,
+.review-section .review-radio:checked + .review-card .review-stat-label,
+.review-section .review-radio:checked + .review-card .review-caption {
+  color: #fff;
+}
+
+.review-section .review-radio:checked + .review-card .review-clutch-logo {
+  filter: brightness(0.15);
+}
+
+.review-section .review-radio:checked + .review-card .review-stars {
+  filter: brightness(2);
+}
+
+@media (hover: hover) {
+  .review-section .review-card:hover {
+    background: #7724c1;
+  }
+
+  .review-section .review-card:hover .review-accent {
+    opacity: 1;
+  }
+
+  .review-section .review-card:hover .review-stat-value,
+  .review-section .review-card:hover .review-stat-label,
+  .review-section .review-card:hover .review-caption {
+    color: #fff;
+  }
+
+  .review-section .review-card:hover .review-stat-value {
+    color: #fff;
+  }
+
+  .review-section .review-card:hover .review-clutch-logo {
+    filter: brightness(0.15);
+  }
+
+  .review-section .review-card:hover .review-stars {
+    filter: brightness(2);
+  }
+}

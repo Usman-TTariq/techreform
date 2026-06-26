@@ -1,95 +1,80 @@
-"use client";
-
-import Image from "next/image";
-import { useState } from "react";
 import CapsuleLabel from "../common/capsule-label";
 import Button from "../common/button";
-import HireExpertPopup from "../hire-expert-popup";
-import { getImagePath } from "../../utils/imagePath";
+import Image from "next/image";
 
-const CaseStudiesSection = () => {
-    const [popupOpen, setPopupOpen] = useState(false);
-    return (
-        <div className="relative pb-12 sm:pb-16 md:pb-[80px]">
-            <div className="container relative px-4 sm:px-4">
-                <div className="grid grid-cols-12 justify-between gap-4">
-                    <div className="col-span-12 lg:col-span-10">
-                        <div className="font-britanicaBlack text-[28px] max-sm:text-center leading-tight sm:text-[36px] md:text-[44px] lg:text-[50px] lg:leading-[42px] font-black pb-4 sm:pb-[26px] text-left">
-                            <span className="text-[#F74B1C]">Case Study </span>
-                            {/* <span className="text-white">That Show How Our </span>
-                            <br className="max-sm:hidden"/>
-                            <span className="text-white">Apps Perform in the </span>
-                            <span className="text-[#F74B1C]">Real World </span> */}
-                        </div>
-                    </div>
-                    <div className="col-span-12 lg:col-span-2 max-sm:mx-auto max-sm:text-center">
-                        <CapsuleLabel firstWord="CASE" secondWord="STUDIES" />
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
-                    <div className="col-span-12 md:col-span-6">
-                        <div className="h-full flex items-center justify-center">
-                            <Image
-                                className="w-full max-w-[280px] md:max-w-none mx-auto"
-                                src="/images/iphone.png"
-                                alt="iPhone mockup showing mobile app case study screens for general portfolio"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6">
-                        <div>
-                            <Image
-                                className="w-full my-auto"
-                                src="/images/phones.png"
-                                alt="Multiple smartphone mockups for mobile app case studies portfolio"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            Discover our 100+ real-world case studies that display our work ethic and the quality of our intuitive mobile apps. Our process goes beyond basic mobile development. See how our solutions drive user engagement, improve retention, and offer high-yield results.
-                        </div>
-                        <div className="pt-6 sm:pt-[30px]">
-                            <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-6 lg:gap-12 pt-10 sm:pt-16 md:pt-[70px]">
-                    <div className="col-span-12 md:col-span-6 order-2 md:order-1">
-                        <div>
-                            <Image
-                                className="w-full"
-                                src="/images/backphone1.png"
-                                alt="Case study app interface on phone mockup"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-6 order-1 md:order-2">
-                        <div>
-                            <Image
-                                className="w-full"
-                                src="/images/phones1.png"
-                                alt="Future-friendly app case study on multiple phone mockups"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="font-britanicaRegular text-base sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px]">
-                            Explore our future-friendly apps that offer optimal results, user-friendly interfaces while having the ability to scale further with your brand.
-                        </div>
-                        <div className="pt-6 sm:pt-[30px]">
-                            <Button text="Check The Full Case" icon={false} onClick={() => setPopupOpen(true)} />
-                        </div>
-                    </div>
-                </div>
+const CaseStudiesSection = ({
+  capsule = { firstWord: "CASE", secondWord: "STUDIES" },
+  heading = {
+    accent: "Scalable Implementation ",
+    line2: "Case Studies Across Industries ",
+  },
+  primaryImage = "/images/aa1.png",
+  secondaryImage = "/images/aa3.png",
+  primaryAlt = "Case study dashboard showcase",
+  secondaryAlt = "Case study workflow and analytics showcase",
+  description = "",
+  buttonText = "CASE STUDIES",
+  buttonHref,
+}) => {
+  return (
+    <div className="relative pb-12 sm:pb-16 md:pb-[80px] overflow-hidden w-full min-w-0">
+      <div className="container relative px-4 sm:px-4 w-full max-w-[100vw] box-border">
+        <div className="grid grid-cols-12 justify-between gap-4 items-start">
+          <div className="col-span-12 md:col-span-10 min-w-0 order-1">
+            <div className="font-britanicaBlack text-[24px] leading-tight sm:text-[32px] md:text-[42px] lg:text-[50px] md:leading-[42px] font-black pb-4 sm:pb-[26px] text-left break-words">
+              {heading.accent ? (
+                <span className="text-[#F74B1C]">{heading.accent}</span>
+              ) : null}
+              {heading.line2 ? (
+                <span className="text-white">{heading.line2}</span>
+              ) : null}
             </div>
-            <HireExpertPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
+          </div>
+          <div className="col-span-12 md:col-span-2 min-w-0 order-2 md:order-2 flex justify-start md:justify-end">
+            <CapsuleLabel
+              firstWord={capsule.firstWord}
+              secondWord={capsule.secondWord}
+              thirdWord={capsule.thirdWord}
+            />
+          </div>
         </div>
-    );
-}
+        <div className="grid grid-cols-12 gap-0 sm:gap-8 md:gap-12 pt-8 sm:pt-12 md:pt-[70px]">
+          <div className="col-span-12 md:col-span-6 min-w-0 order-1">
+            <div className="h-full flex items-center justify-center">
+              <Image
+                className="w-full max-w-full h-auto"
+                src={primaryImage}
+                alt={primaryAlt}
+                width={1000}
+                height={1000}
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="col-span-12 md:col-span-6 min-w-0 my-auto order-2">
+            <div>
+              <Image
+                className="w-full max-w-full h-auto"
+                src={secondaryImage}
+                alt={secondaryAlt}
+                width={1000}
+                height={1000}
+                loading="lazy"
+              />
+            </div>
+            {description ? (
+              <div className="font-britanicaRegular text-[15px] sm:text-[18px] md:text-[20px] font-regular text-white pt-4 sm:pt-[22px] leading-relaxed max-w-full">
+                {description}
+              </div>
+            ) : null}
+            <div className="pt-5 sm:pt-[30px]">
+              <Button text={buttonText} icon={false} href={buttonHref} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default CaseStudiesSection;

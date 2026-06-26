@@ -288,4 +288,130 @@ export const PAGE_CONTACT = {
       "Post-Launch iOS Support",
     ],
   },
+  erp: {
+    productType: "erp",
+    developmentLabel: "ERP",
+    formIntro:
+      "Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control.",
+    benefits: [
+      "Workflow Automation",
+      "Real-time Reporting",
+      "Multi-module Integration",
+      "Data Security & Compliance",
+      "Cloud Deployment",
+      "24/7 Post-launch Support",
+    ],
+  },
+  doctorApp: {
+    developmentLabel: "Doctor App",
+    headingSuffix: "Better Patient Management",
+    formIntro:
+      "Tell us about your doctor app — appointment booking, telemedicine, EHR integration, or patient loyalty. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "Online Appointment Booking",
+      "Telemedicine & Video Calls",
+      "EHR / EMR Integration",
+      "E-Prescription",
+      "Multi-Location Support",
+      "Post-Launch Support",
+    ],
+  },
+  taxiApp: {
+    developmentLabel: "Taxi App",
+    headingSuffix: "Better Fleet Management",
+    formIntro:
+      "Tell us about your taxi app — booking, dispatch, fleet management, or driver onboarding. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "Real-Time GPS Tracking",
+      "Secure Payment Integration",
+      "Driver & Rider Apps",
+      "Fare Calculation & Dispatch",
+      "Multi-City Support",
+      "Post-Launch Support",
+    ],
+  },
+  groceryApp: {
+    developmentLabel: "Grocery App",
+    headingSuffix: "Better Store Management",
+    formIntro:
+      "Just tell us a bit about your grocery business — how many stores, what kind of delivery setup you're imagining — and we'll come back to you within 24 hours with an actual plan and a real estimate. No generic pitch decks.",
+    benefits: [
+      "Real-Time Inventory Sync",
+      "Fast Checkout & Multiple Payment Options",
+      "Delivery & Pickup, Your Choice",
+      "Multi-Vendor / Multi-Store Support",
+      "Built to Scale With Order Volume",
+      "We Stick Around After Launch",
+    ],
+  },
+  deliveryApp: {
+    developmentLabel: "Delivery App",
+    headingSuffix: "Better Dispatch Management",
+    formIntro:
+      "Just tell us a bit about your delivery business — what you're delivering, how many riders, which city or cities — and we'll come back to you within 24 hours with an actual plan and a real estimate. No generic pitch decks.",
+    benefits: [
+      "Live GPS Tracking for Riders & Customers",
+      "Smart Rider Assignment & Route Optimization",
+      "Secure Payment Integration",
+      "Multi-Vendor / Multi-Fleet Support",
+      "Built to Scale With Order Volume",
+      "We Stick Around After Launch",
+    ],
+  },
+  travelApp: {
+    developmentLabel: "Travel App",
+    headingSuffix: "Better Booking Management",
+    formIntro:
+      "Just tell us a bit about your travel business — what you sell, which markets you're targeting — and we'll come back to you within 24 hours with an actual plan and a real estimate. No generic pitch decks.",
+    benefits: [
+      "Real-Time Flight & Hotel Availability",
+      "Secure Payment & Multi-Currency Support",
+      "Itinerary Planning Tools",
+      "Package & Bundle Booking Support",
+      "Built to Scale During Peak Seasons",
+      "We Stick Around After Launch",
+    ],
+  },
+  educationApp: {
+    developmentLabel: "Education App",
+    headingSuffix: "Better Learning Management",
+    formIntro:
+      "Just tell us a bit about your education business — how many students, live or recorded classes, school or course platform — and we'll come back to you within 24 hours with an actual plan and a real estimate. No generic pitch decks.",
+    benefits: [
+      "Live Classes With Automatic Recording",
+      "Student Progress & Performance Tracking",
+      "Teacher, Student & Parent Dashboards",
+      "Secure Payment & Fee Management",
+      "Built to Scale During Admission Season",
+      "We Stick Around After Launch",
+    ],
+  },
+  logisticsApp: {
+    developmentLabel: "Logistics App",
+    headingSuffix: "Smarter Supply Chain Operations",
+    formIntro:
+      "Tell us about your logistics app — fleet management, delivery tracking, warehouse operations, or on-demand dispatch. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "Real-Time Fleet & Shipment Tracking",
+      "Route Optimization & Dispatch Automation",
+      "Driver App & Customer Tracking Portal",
+      "ERP, WMS & Payment Integration",
+      "Multi-City & Multi-Fleet Support",
+      "Post-Launch Support & Monitoring",
+    ],
+  },
+  fitnessApp: {
+    developmentLabel: "Fitness App",
+    headingSuffix: "Stronger Member Retention",
+    formIntro:
+      "Tell us about your fitness app — gym management, personal training, on-demand classes, or member retention. We respond within 24 hours with a tailored plan and estimate.",
+    benefits: [
+      "Class Booking & Schedule Management",
+      "Member Check-In & Subscription Billing",
+      "Workout Tracking & Progress Reports",
+      "Wearable & Payment Integration",
+      "Multi-Location & White-Label Support",
+      "Post-Launch Support & Monitoring",
+    ],
+  },
 };

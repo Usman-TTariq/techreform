@@ -32,6 +32,7 @@ const DEFAULT_ERP_BENEFITS = [
  *   productType?: "app" | "game" | "erp" | "ios",
  *   benefits?: string[],
  *   developmentLabel?: string,
+ *   headingSuffix?: string,
  * }} props
  */
 const DetailFormSection = ({
@@ -39,6 +40,7 @@ const DetailFormSection = ({
   productType = "app",
   benefits = undefined,
   developmentLabel,
+  headingSuffix = "Better Resource Management",
 }) => {
   const developmentLabelFromType =
     productType === "game"
@@ -71,7 +73,7 @@ const DetailFormSection = ({
               <br />
               <span className="text-[#F74B1C]">Custom {resolvedDevelopmentLabel} Development</span>
               <br />
-              <span className="text-white">and Better Resource Management</span>
+              <span className="text-white">and {headingSuffix}</span>
             </div>
             <div className="flex items-center justify-start gap-2 py-5 sm:py-6 md:py-[30px] flex-wrap max-sm:justify-center">
               <Image

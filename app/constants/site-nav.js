@@ -55,15 +55,15 @@ export const INDUSTRIES_ITEMS = [
 
 export const SOLUTIONS_ITEMS = [
   { label: "ERP", href: "/erp" },
-  { label: "Doctor App", href: "#" },
-  { label: "Taxi App", href: "#" },
-  { label: "Grocery App", href: "#" },
-  { label: "Delivery App", href: "#" },
-  { label: "Travel App", href: "#" },
+  { label: "Doctor App", href: "/doctor-app" },
+  { label: "Taxi App", href: "/taxi-app" },
+  { label: "Grocery App", href: "/grocery-app" },
+  { label: "Delivery App", href: "/delivery-app" },
+  { label: "Travel App", href: "/travel-app" },
   { label: "Restaurant App", href: "/restaurant-app" },
-  { label: "Education App", href: "#" },
-  { label: "Fitness App", href: "#" },
-  { label: "Logistics App", href: "#" },
+  { label: "Education App", href: "/education-app" },
+  { label: "Fitness App", href: "/fitness-app" },
+  { label: "Logistics App", href: "/logistics-app" },
   { label: "Dating App", href: "/dating-app" },
 ];
 

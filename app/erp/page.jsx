@@ -14,6 +14,7 @@ import FaqErpSection from "../components/faq-erp-section";
 import TestimonialSection from "../components/testimonial-section";
 import ThreeDTextRotationSection from "../components/3d-text-rotation-section";
 import DetailFormSection from "../components/detail-form-section";
+import { PAGE_CONTACT } from "../constants/page-contact-config";
 import WhoWeAreErp from "../components/who-we-are-erp";
 
 export const dynamic = "force-dynamic";
@@ -140,10 +141,7 @@ const Erp = () => {
             <FaqErpSection />
             <TestimonialSection testimonials={ERP_TESTIMONIALS} />
             <ThreeDTextRotationSection />
-            <DetailFormSection
-              productType="erp"
-              formIntro="Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control."
-            />
+            <DetailFormSection {...PAGE_CONTACT.erp} />
             </main>
 
             <Footer />

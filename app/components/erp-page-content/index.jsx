@@ -11,10 +11,10 @@ import FaqErpSection from "../faq-erp-section";
 import TestimonialSection from "../testimonial-section";
 import ThreeDTextRotationSection from "../3d-text-rotation-section";
 import DetailFormSection from "../detail-form-section";
+import { PAGE_CONTACT } from "../../constants/page-contact-config";
 import WhoWeAreErp from "../who-we-are-erp";
 
-const DEFAULT_FORM_INTRO =
-    "Every ERP system directly impacts your efficiency and profitability. Fill out the form for a quick consultation and project estimate. Our ERP solutions provider experts will guide you in building the best ERP software for a small business or a robust enterprise system, while keeping development timelines and costs under control.";
+const DEFAULT_FORM_INTRO = PAGE_CONTACT.erp.formIntro;
 
 const ErpPageContent = ({
     heroTitle = "Custom ERP Development Company",
@@ -43,7 +43,7 @@ const ErpPageContent = ({
             <FaqErpSection />
             <TestimonialSection />
             <ThreeDTextRotationSection />
-            <DetailFormSection formIntro={formIntro} />
+            <DetailFormSection {...PAGE_CONTACT.erp} formIntro={formIntro} />
             </main>
 
             <Footer />
